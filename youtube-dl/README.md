@@ -1,4 +1,4 @@
-# $PROJECT snap
+# youtube-dl snap
 
 This project creates a working snap of youtube-dl.
 

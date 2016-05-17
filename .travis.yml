@@ -2,4 +2,4 @@ sudo: required
 services:
   - docker
 script:
-  - ./run-ci
+  - ./ci-run

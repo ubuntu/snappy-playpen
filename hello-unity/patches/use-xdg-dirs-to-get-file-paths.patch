@@ -1,0 +1,78 @@
+Index: hello-unity-snapped/hello_unity/__init__.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/__init__.py
++++ hello-unity-snapped/hello_unity/__init__.py
+@@ -1,10 +1,20 @@
+ import os
+ from gi.repository import Gtk
++from xdg.BaseDirectory import xdg_data_dirs
+ 
+ COLOR_ICON_PATH = 'hello-unity'
+ MONO_ICON_PATH = 'hello-unity-mono-dark'
+ ATTENTION_ICON_PATH = 'hello-unity-attention'
+ 
++def get_icon_path(basename):
++    for dir in xdg_data_dirs:
++        path = '%s/pixmaps/%s.svg' % (dir, basename)
++        icon = Gtk.Image.new_from_file(path)
++        pixbuf = icon.get_pixbuf()
++        if pixbuf:
++            return path
++
++
+ class HelloUnitySection(object):
+ 
+     def get_controls(self):
+Index: hello-unity-snapped/hello_unity/soundmenu.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/soundmenu.py
++++ hello-unity-snapped/hello_unity/soundmenu.py
+@@ -2,6 +2,7 @@
+ 
+ # Used for making text translatable
+ from gettext import gettext as _
++from xdg.BaseDirectory import xdg_data_dirs
+ 
+ # Import the base UI toolkit modules
+ from gi.repository import Gdk    
+@@ -201,7 +202,9 @@ class HelloSoundMenu(hello_unity.HelloUn
+         data.props.album = "Unity Showcase"
+ 
+         # You can also set the cover art for this track
+-        data.props.art_location = Gio.File.new_for_path('/usr/share/pixmaps/%s.svg' % hello_unity.ATTENTION_ICON_PATH)
++        attention_icon = hello_unity.get_icon_path(hello_unity.ATTENTION_ICON_PATH)
++        if attention_icon:
++                data.props.art_location = Gio.File.new_for_path(attention_icon)
+ 
+         # Set the new track metadata as the current track in the sound menu
+         self.player.props.current_track = data
+Index: hello-unity-snapped/hello_unity/window.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/window.py
++++ hello-unity-snapped/hello_unity/window.py
+@@ -19,14 +19,21 @@ class HelloWindow(Gtk.Window):
+         Gtk.Window.__init__(self, title=_("Hello Unity"))
+ 
+         self.set_default_size(500, 500)
+-        self.color_icon = Gtk.Image.new_from_file('/usr/share/pixmaps/%s.svg' % hello_unity.COLOR_ICON_PATH)
+-
+-        self.set_icon(self.color_icon.get_pixbuf())
++        
++        icon_path = hello_unity.get_icon_path(hello_unity.COLOR_ICON_PATH)
++        
++        if icon_path:
++                color_icon = Gtk.Image.new_from_file(icon_path)
++                pixbuf = color_icon.get_pixbuf()
++                self.set_icon(pixbuf)
+ 
+         self.content = Gtk.VBox()
+ 
+         self.header = Gtk.HBox()
+-        self.header.pack_start(Gtk.Image.new_from_pixbuf(self.color_icon.get_pixbuf().scale_simple(64, 64,  0)), False, False, 10)
++        if icon_path:
++                img = Gtk.Image.new_from_pixbuf(pixbuf.scale_simple(64, 64,  0))
++                self.header.pack_start(img, False, False, 10)
++ 
+         intro = Gtk.Label()
+         intro.set_markup(_('''
+ <b>Hello Unity!</b>

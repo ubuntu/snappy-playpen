@@ -1,0 +1,63 @@
+name: hello-unity
+version: 0.4-snap7
+summary: Unity APIs demonstration tool
+description: Simple tool for demonstrating Unity's integration APIs
+
+apps:
+  hello-unity:
+    command: hello-unity
+    plugs: [unity7]
+
+parts:
+  upstream-src:
+    plugin: copy
+    source: lp:hello-unity
+    source-type: bzr
+    files:
+      hello-unity: opt/bin/hello-unity
+      hello-unity.svg: usr/share/pixmaps/hello-unity.svg
+      hello-unity-mono-light.svg: usr/share/pixmaps/hello-unity-mono-light.svg
+      hello-unity-attention.svg: usr/share/pixmaps/hello-unity-attention.svg
+      hello-unity-mono-dark.svg: usr/share/pixmaps/hello-unity-mono-dark.svg
+
+  patches:
+    plugin: quilt
+    source: ./patches
+    stage-packages: [python-xdg]
+    target-part: upstream-src
+    after: [upstream-src]
+
+  setup:
+    plugin: python2
+    source: ./parts/upstream-src/src/
+    build-packages:
+      - python-distutils-extra
+    after: [patches]
+
+  deps:
+    plugin: nil
+    stage-packages:
+      - python-gi
+      - gir1.2-unity-5.0
+      - gir1.2-notify-0.7
+      - gir1.2-appindicator3-0.1
+      - gir1.2-indicate-0.7
+      - gir1.2-messagingmenu-1.0
+      - gir1.2-gtk-3.0
+      - gir1.2-gtksource-3.0
+
+  integration:
+    plugin: nil
+    stage-packages:
+      - dmz-cursor-theme
+      - indicator-sound
+      - light-themes
+      - ttf-ubuntu-font-family
+    snap:
+      - usr/share
+      - -usr/share/doc
+
+  environment:
+    plugin: copy
+    files:
+      hello-unity.wrapper: bin/hello-unity

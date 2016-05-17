@@ -1,0 +1,39 @@
+Index: hello-unity-snapped/hello_unity/launcher.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/launcher.py
++++ hello-unity-snapped/hello_unity/launcher.py
+@@ -34,7 +34,7 @@ class HelloLauncher(hello_unity.HelloUni
+         
+         # Get a reference to the launcher for this application.  The .desktop
+         # file give Unity information about the Application's name and icon
+-        self.launcher = Unity.LauncherEntry.get_for_desktop_id("hello-unity.desktop")
++        self.launcher = Unity.LauncherEntry.get_for_desktop_id("hello-unity_hello-unity.desktop")
+ 
+         # Create the quicklist menu
+         quicklist = Dbusmenu.Menuitem.new()
+Index: hello-unity-snapped/hello_unity/messagemenu.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/messagemenu.py
++++ hello-unity-snapped/hello_unity/messagemenu.py
+@@ -28,7 +28,7 @@ class HelloMessageMenu(hello_unity.Hello
+     def __init__(self, window):
+ 
+         # Create an "app" to represent the Hello Unity application
+-        self.app = MessagingMenu.App.new("hello-unity.desktop")
++        self.app = MessagingMenu.App.new("hello-unity_hello-unity.desktop")
+         self.app.connect("activate-source", self.remove_indication)
+ 
+         # Register this app with the messaging menu
+Index: hello-unity-snapped/hello_unity/soundmenu.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/soundmenu.py
++++ hello-unity-snapped/hello_unity/soundmenu.py
+@@ -41,7 +41,7 @@ class HelloSoundMenu(hello_unity.HelloUn
+             self.sound_menu_settings.set_strv('blacklisted-media-players', [p for p in self.blacklisted_players if p != 'hello-unity'])
+ 
+         # Create a hello-unity music player instance
+-        self.player = Unity.MusicPlayer.new('hello-unity.desktop')
++        self.player = Unity.MusicPlayer.new('hello-unity_hello-unity.desktop')
+         self.player.props.title = _('Hello Unity')
+ 
+         # What to do when the user presses the indicator buttons

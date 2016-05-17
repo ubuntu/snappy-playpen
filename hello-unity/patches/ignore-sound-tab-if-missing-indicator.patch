@@ -1,0 +1,22 @@
+Index: hello-unity-snapped/hello_unity/window.py
+===================================================================
+--- hello-unity-snapped.orig/hello_unity/window.py
++++ hello-unity-snapped/hello_unity/window.py
+@@ -3,6 +3,7 @@
+ from gettext import gettext as _
+ 
+ from gi.repository import Gdk    
++from gi.repository import Gio
+ from gi.repository import Gtk
+ from gi.repository import GtkSource
+ 
+@@ -53,7 +54,8 @@ application can integrate with Ubuntu Un
+         self.add_section(_("Launcher"), HelloLauncher(self))
+         self.add_section(_("Indicator"), HelloIndicator(self))
+         self.add_section(_("Message Menu"), HelloMessageMenu(self))
+-        self.add_section(_("Sound Menu"), HelloSoundMenu(self))
++        if Gio.SettingsSchemaSource.get_default().lookup('com.canonical.indicator.sound', False):
++                self.add_section(_("Sound Menu"), HelloSoundMenu(self))
+         #self.add_section(_("Dash"), hello_unity.HelloUnitySection(self))
+         self.add_section(_("Notifications"), HelloNotifications(self))
+ 

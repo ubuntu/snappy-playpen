@@ -1,8 +1,15 @@
 #!/bin/sh
 
-root_dir=`pwd`
 
-for dir in `find * -type d`; do
+current_branch=`git rev-parse --abbrev-ref HEAD`
+
+projects_to_test=`find * -type d`
+if [ "$current_branch" != "master" ]; then
+    projects_to_test=`git diff --name-only master..$current_branch | sed -n 's#\(.*\)/.*#\1#p'`
+fi
+
+root_dir=`pwd`
+for dir in $projects_to_test; do
     echo "Testing $dir"
     cd ${root_dir}/$dir
     docker run -v $(pwd):/snapcraft -t sergiusens/snapcraft sh -c "cd /snapcraft && snapcraft"

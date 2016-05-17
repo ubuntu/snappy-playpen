@@ -1,0 +1,50 @@
+name: ubuntu-clock-app
+version: 3.6+snap2
+summary: Ubuntu Clock app
+description: |
+   The clock app for all Ubuntu devices
+
+apps:
+  clock:
+    command: clock
+    plugs: [unity7,opengl]
+
+parts:
+  clock:
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr, -DCLICK_MODE=off]
+    source: lp:~dpm/ubuntu-clock-app/snap-all-things
+    source-type: bzr
+    build-packages:
+      - build-essential
+      - cmake
+      - gettext
+      - intltool
+      - ubuntu-touch-sounds
+      - suru-icon-theme
+      - qml-module-qttest
+      - qml-module-qtsysteminfo
+      - qml-module-qt-labs-settings
+      - qtdeclarative5-u1db1.0
+      - qtdeclarative5-qtmultimedia-plugin
+      - qtdeclarative5-qtpositioning-plugin
+      - qtdeclarative5-ubuntu-content1
+      - qt5-default
+      - qtbase5-dev
+      - qtdeclarative5-dev
+      - qtdeclarative5-dev-tools
+      - qtdeclarative5-folderlistmodel-plugin
+      - qtdeclarative5-ubuntu-ui-toolkit-plugin
+      - xvfb
+    stage-packages:
+      - ubuntu-sdk-libs
+      - qtubuntu-desktop
+      - qml-module-qtsysteminfo
+    snap:
+      - -usr/share/doc
+      - -usr/include
+  environment:
+    plugin: copy
+    files:
+      clock.wrapper: bin/clock
+      snappy-qt5.conf: etc/xdg/qtchooser/snappy-qt5.conf

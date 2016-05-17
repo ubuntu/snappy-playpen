@@ -13,4 +13,5 @@ for dir in $projects_to_test; do
     echo "Testing $dir"
     cd ${root_dir}/$dir
     docker run -v $(pwd):/snapcraft -t sergiusens/snapcraft sh -c "cd /snapcraft && snapcraft"
+    echo "###############################################################################"
 done

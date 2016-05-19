@@ -1,0 +1,12 @@
+
+Pre-requisites
+
+Building
+
+snapcraft snap
+
+Note: Takes a very long time (an hour or more) to build, even with multiple cores.
+
+Issues
+
+Currently broken due to libGL issue https://trello.com/c/Rwt1nitw/12-libgl-access-in-snaps

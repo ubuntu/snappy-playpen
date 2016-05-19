@@ -1,0 +1,5 @@
+#!/bin/sh -x
+ARCH="x86_64-linux-gnu"
+export LIBGL_DEBUG="verbose"
+
+exec "$SNAP/mame64" $*

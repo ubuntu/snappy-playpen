@@ -1,0 +1,40 @@
+name: mame
+version: "0.173-git"
+summary: Multiple Arcade Machine Emulator (MAME)
+description: MAME is a hardware emulator. it faithfully reproduces the behaviour of
+ many arcade machines (it is not a simulation). This program is not a game
+ but can directly, through ROM images, run the complete system of these old
+ arcade machines. These ROMs are subject to copyright and it is in most of
+ the cases illegal to use them if you do not own the arcade machine.
+ .
+ This package provides the MAME binary and configuration files.
+
+apps:
+  mame:
+    command: mame
+    plugs: [network, network-bind, unity7, opengl]
+
+parts:
+  launcher:
+    plugin: copy
+    files:
+      mame: bin/mame
+  mame:
+    plugin: make
+    source-type: git
+    source: git://github.com/mamedev/mame.git
+    build-packages:
+      - libexpat1-dev
+      - libflac-dev
+      - libfontconfig1-dev
+      - libjpeg-dev
+      - libportmidi-dev
+      - qtdeclarative5-dev
+      - qtbase5-dev
+      - libsdl2-ttf-dev
+      - libsdl2-dev
+      - libsqlite3-dev
+      - libxinerama-dev
+      - python-dev
+      - zlib1g-dev
+      - libqt5core5a

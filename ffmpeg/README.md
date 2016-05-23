@@ -1,4 +1,4 @@
-# $ffmpeg snap
+# ffmpeg snap
 
 This project creates a working snap of ffmpeg.
 

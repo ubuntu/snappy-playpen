@@ -1,0 +1,60 @@
+name: kcalc
+version: 16.07.70-snap1
+summary: simple and scientific calculator
+description: KCalc is a scientific calculator.
+
+apps:
+  kcalc:
+    command: qt5-launch usr/bin/kcalc
+    plugs: [X11, unity7, opengl, network]
+
+parts:
+  upstream-src:
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr, -DCLICK_MODE=off]
+    source: http://anongit.kde.org/kcalc
+    source-type: git
+    build-packages:
+      - cmake
+      - extra-cmake-modules
+      - kdoctools-dev
+      - kinit-dev
+      - libgmp-dev
+      - libkf5config-dev
+      - libkf5configwidgets-dev
+      - libkf5guiaddons-dev
+      - libkf5i18n-dev
+      - libkf5notifications-dev
+      - libkf5xmlgui-dev
+      - xvfb
+    stage-packages:      
+      - libgmp10
+      - libkf5configcore5
+      - libkf5configgui5
+      - libkf5configwidgets5
+      - libkf5coreaddons5
+      - libkf5guiaddons5
+      - libkf5i18n5
+      - libkf5notifications5
+      - libkf5widgetsaddons5
+      - libkf5xmlgui5
+      - libqt5core5a
+      - libqt5gui5
+      - libqt5gui5-gles
+      - libqt5widgets5
+      - libqt5xml5
+
+  integration:
+    plugin: nil
+    stage-packages:
+      - dmz-cursor-theme
+      - light-themes
+      - ttf-ubuntu-font-family
+    snap:
+      - usr/share
+      - -usr/share/doc
+
+  environment:
+    plugin: copy
+    files:
+      qt5-launch: bin/qt5-launch

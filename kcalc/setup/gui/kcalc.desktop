@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=KCalc
+Exec=kcalc
+Icon=accessories-calculator
+X-DocPath=kcalc/index.html
+GenericName=Scientific Calculator
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;
+X-DBUS-ServiceName=org.kde.kcalc.desktop

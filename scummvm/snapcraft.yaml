@@ -9,9 +9,9 @@ description: |
     they were never designed!
 
 apps:
-  run:
+  scummvm:
     command: bin/scummvm-launcher
-    plugs: [x11]
+    plugs: [x11, home]
 
 parts:
   launcher:

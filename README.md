@@ -1,6 +1,6 @@
 # snappy playpen
 
-A place to test, learn and create snaps for Ubuntu.
+A place to test snapcraft, learn creating snaps and share best practices.
 
 Get started here: http://developer.ubuntu.com/desktop
 

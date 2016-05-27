@@ -1,11 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 
 current_branch=`git rev-parse --abbrev-ref HEAD`
 
 projects_to_test=`find * -maxdepth 0 -type d`
 if [ "$current_branch" != "master" ]; then
-    projects_to_test=`git diff --name-only master..$current_branch | sed -n 's#\(.*\)/.*#\1#p'`
+    p=`git diff --name-only master..$current_branch | sed -n 's#\(.*\)/.*#\1#p'`
+    projects_to_test=`echo ${p[@]//\/*} | xargs -n1 | sort -u | xargs`
 fi
 
 root_dir=`pwd`

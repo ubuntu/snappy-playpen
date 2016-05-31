@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Application
+Name=DOSBox Emulator
+Name[ca]=Emulador DOSBox
+Name[de]=DOSBox Emulator
+Name[es]=Emulador DOSBox
+Name[nl]=DOSBox Simulator
+Name[ru]=Эмулятор DOSBox
+Name[it]=DOSBox emulatore
+Name[ua]=Емулятор DOSBox
+Comment=Run old DOS applications
+Comment[ca]=Executeu antigues aplicacions DOS
+Comment[de]=Ein Emulator für alte DOS Programme
+Comment[es]=Un emulador para ejecutar antiguas aplicaciones DOS
+Comment[nl]=Een simulator om oude DOS-spellen te spelen
+Comment[ru]=Запуск старых DOS-приложений
+Comment[it]=Un emulatore per far girare vecchi giochi DOS
+Comment[ua]=Запуск старих DOS-застосувань
+Icon=${SNAP}/meta/gui/dosbox.png
+Exec=dosbox
+Terminal=false
+Categories=Game;Emulator;
+Keywords=DOS Emulator;

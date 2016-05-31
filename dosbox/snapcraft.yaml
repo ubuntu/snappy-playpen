@@ -21,6 +21,8 @@ parts:
     source-type: tar
     source: http://source.dosbox.com/dosboxsvn.tgz
     build-packages:
+      - g++
+      - make
       - libsdl1.2-dev
       - libpng12-dev
       - libsdl-net1.2-dev

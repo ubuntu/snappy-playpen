@@ -69,6 +69,9 @@ export XDG_CURRENT_DESKTOP=kde
 export QT_QPA_PLATFORMTHEME=appmenu-qt5
 export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
 
+# ensure that our HW/opengl libs are before the snap specific libs
+export LD_LIBRARY_PATH=$SNAP_LIBRARY_PATH:$LD_LIBRARY_PATH
+
 cd $SNAP
 exec "$@"
 

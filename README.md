@@ -57,6 +57,6 @@ announce these on the [snapcraft mailing list][ml].
 There's obviously the [snapcraft mailing list][ml], but there's also the
 `#snappy` [irc channel on Freenode][irc]. Get in touch and talk to us!
 
-[guidelines]: https://github.com/ubuntu/snappy-playpen/blob/master/CONTRIBUTING.md)
+[guidelines]: https://github.com/ubuntu/snappy-playpen/blob/master/CONTRIBUTING.md
 [ml]: https://lists.ubuntu.com/mailman/listinfo/snapcraft
 [irc]: http://webchat.freenode.net/?channels=snappy

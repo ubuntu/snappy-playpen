@@ -49,3 +49,5 @@ parts:
       - libopus-dev
       - libx265-dev
       - libvpx-dev
+    organize:
+      usr/local/bin: usr/bin

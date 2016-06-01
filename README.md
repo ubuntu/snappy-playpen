@@ -21,13 +21,13 @@ This is snappy playpen.
 
 ## How it all works
 
-No matter if you are
+No matter if you
 
- - involved with an upstream project who wants to get their software snapped
- - somebody who is interested in providing a snap for an app
- - working on a device which needs its software snapped
- - somebody who's curious about technology
- - thinks this is interesting
+ - are involved with an upstream project who wants to get their software snapped
+ - are somebody who is interested in providing a snap for an app
+ - are working on a device which needs its software snapped
+ - are somebody who's curious about technology
+ - think this is interesting
 
 we want you to get inolved.
 

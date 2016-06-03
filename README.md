@@ -26,7 +26,7 @@ This project currently includes the following snaps:
 
 
 If the apps is listed in the second column, you can easily install it from the
-store by just running: `sudo snapd install <snap name>`.
+store by just running: `sudo snap install <snap name>`.
 
 ## Why?
 

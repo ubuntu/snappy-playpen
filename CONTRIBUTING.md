@@ -9,6 +9,11 @@ on the projects add to it. For your project to be added, it is important that:
    - what others can learn from it
    - what the level of completion is
    - what still needs to be done
- - you update the software table in the top-level `README.md` file
+ - you update the software table in the top-level `README.md` file and
+   indicate with either `:white_check_mark:` (working) or `:red_circle:` (not
+   working) what the status of your snap is
+
+Please note that we are going to consider removing a non-working snap from the
+repo if we can't get it to work after a month without updates.
 
 Use `template.README.md` to kickstart your project.

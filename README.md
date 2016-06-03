@@ -4,8 +4,25 @@ A place to test snapcraft, learn creating snaps and share best practices.
 
 Get started here: http://developer.ubuntu.com/desktop
 
-## Current project health
-[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) (snapcraft and snappy playpen health check)
+## Current project status
+[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) (snappy playpen health check)
+
+This project currently includes the following snaps:
+
+| Software name      | Snap name in the store |
+| ------------------ | ---------------------- |
+| `atom`             | `atom-cwayne`          |
+| `dosbox`           |                        |
+| `ffmpeg`           |                        |
+| `moon-buggy`       | `moon-buggy`           |
+| `scummvm`          |                        |
+| `ubuntu-clock-app` | `ubuntu-clock-app`     |
+| `vlc`              |                        |
+| `youtube-dl`       |                        |
+
+
+If the apps is listed in the second column, you can easily install it from the
+store by just running: `sudo snapd install <snap name>`.
 
 ## Why?
 

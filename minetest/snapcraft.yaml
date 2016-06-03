@@ -1,0 +1,52 @@
+name: minetest
+version: 0.4.13
+summary: Multiplayer infinite-world block sandbox
+description: Minetest is a minecraft-inspired game written from scratch and licensed
+ under the LGPL (version 2.1 or later). It supports both survival and
+ creative modes along with multiplayer support, dynamic lighting, and an
+ "infinite" map generator.
+
+apps:
+  minetest:
+    command: minetest
+    plugs: [x11, network, network-bind, unity7, opengl, home]
+
+parts:
+  launcher:
+    plugin: copy
+    files:
+      minetest: minetest
+  minetestgame:
+    plugin: copy
+    source: https://github.com/minetest/minetest_game.git
+    files:
+      '*': 'games/minetest_game/'
+  minetest:
+    plugin: cmake
+    configflags: [-DRUN_IN_PLACE=TRUE]
+    source: https://github.com/minetest/minetest.git
+    source-type: git
+    build-packages:
+      - cmake
+      - gcc
+      - g++
+      - gettext
+      - imagemagick
+      - libbz2-dev
+      - libcurl4-gnutls-dev
+      - libfreetype6-dev
+      - libglu1-mesa-dev
+      - libirrlicht-dev
+      - libjpeg-dev
+      - libjsoncpp-dev
+      - libleveldb-dev
+      - libluajit-5.1-dev
+      - libogg-dev
+      - libopenal-dev
+      - libpng12-dev
+      - libsqlite3-dev
+      - libvorbis-dev
+      - libx11-dev
+      - zlib1g-dev
+    stage-packages:
+      - libgl1-mesa-dri

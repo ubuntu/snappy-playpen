@@ -3,3 +3,11 @@ services:
   - docker
 script:
   - ./ci-run
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/2b865aa7d4feebce4431
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: never     # options: [always|never|change] default: always

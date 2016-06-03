@@ -14,6 +14,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
 | :white_check_mark:  | `dosbox`           |                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
+| :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `minetest`         |                           |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
 | :red_circle:        | `openjdk-demo`     |                           |
@@ -23,6 +24,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[kpcil]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
 

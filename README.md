@@ -9,16 +9,17 @@ Get started here: http://developer.ubuntu.com/desktop
 
 This project currently includes the following snaps:
 
-| Software name      | Snap name in the store | Snap info          |
-| ------------------ | ---------------------- | ------------------ |
-| `atom`             | `atom-cwayne`          | [link][atom]       |
-| `dosbox`           |                        |                    |
-| `ffmpeg`           |                        |                    |
-| `moon-buggy`       | `moon-buggy`           | [link][moon-buggy] |
-| `scummvm`          |                        |                    |
-| `ubuntu-clock-app` | `ubuntu-clock-app`     | [link][clock]      |
-| `vlc`              |                        |                    |
-| `youtube-dl`       |                        |                    |
+| State               | Software name      | Snap name in the store | Snap info          |
+| ------------------- | ------------------ | ---------------------- | ------------------ |
+| :white_check_mark:  | `atom`             | `atom-cwayne`          | [link][atom]       |
+| :white_check_mark:  | `dosbox`           |                        |                    |
+| :white_check_mark:  | `ffmpeg`           |                        |                    |
+| :white_check_mark:  | `moon-buggy`       | `moon-buggy`           | [link][moon-buggy] |
+| :red_circle:        | `openjdk-demo`     |                        |                    |
+| :white_check_mark:  | `scummvm`          |                        |                    |
+| :white_check_mark:  | `ubuntu-clock-app` | `ubuntu-clock-app`     | [link][clock]      |
+| :white_check_mark:  | `vlc`              |                        |                    |
+| :white_check_mark:  | `youtube-dl`       |                        |                    |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach

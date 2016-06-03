@@ -9,16 +9,20 @@ Get started here: http://developer.ubuntu.com/desktop
 
 This project currently includes the following snaps:
 
-| Software name      | Snap name in the store |
-| ------------------ | ---------------------- |
-| `atom`             | `atom-cwayne`          |
-| `dosbox`           |                        |
-| `ffmpeg`           |                        |
-| `moon-buggy`       | `moon-buggy`           |
-| `scummvm`          |                        |
-| `ubuntu-clock-app` | `ubuntu-clock-app`     |
-| `vlc`              |                        |
-| `youtube-dl`       |                        |
+| Software name      | Snap name in the store | Snap info          |
+| ------------------ | ---------------------- | ------------------ |
+| `atom`             | `atom-cwayne`          | [link][atom]       |
+| `dosbox`           |                        |                    |
+| `ffmpeg`           |                        |                    |
+| `moon-buggy`       | `moon-buggy`           | [link][moon-buggy] |
+| `scummvm`          |                        |                    |
+| `ubuntu-clock-app` | `ubuntu-clock-app`     | [link][clock]      |
+| `vlc`              |                        |                    |
+| `youtube-dl`       |                        |                    |
+
+[atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
+[clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
 
 
 If the apps is listed in the second column, you can easily install it from the

@@ -28,6 +28,7 @@ parts:
     source-type: git
     build-packages:
       - cmake
+      - gcc
       - gettext
       - imagemagick
       - libbz2-dev

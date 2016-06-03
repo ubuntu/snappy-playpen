@@ -2,9 +2,9 @@
 
 This project create a snap for the Java Swing example applications.
 
-## Current state
+## Current State
 
-Crashes on startup because of snappy integration issues (system fonts, fontconfig, etc)
+Crashes on startup because of snappy desktop integration issues (system fonts, fontconfig, etc)
 ```
 Jun 03, 2016 6:24:52 PM FileChooserDemo main
 SEVERE: null

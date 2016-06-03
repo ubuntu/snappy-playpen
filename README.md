@@ -4,8 +4,29 @@ A place to test snapcraft, learn creating snaps and share best practices.
 
 Get started here: http://developer.ubuntu.com/desktop
 
-## Current project health
-[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) (snapcraft and snappy playpen health check)
+## Current project status
+[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) (snappy playpen health check)
+
+This project currently includes the following snaps:
+
+| Software name      | Snap name in the store | Snap info          |
+| ------------------ | ---------------------- | ------------------ |
+| `atom`             | `atom-cwayne`          | [link][atom]       |
+| `dosbox`           |                        |                    |
+| `ffmpeg`           |                        |                    |
+| `moon-buggy`       | `moon-buggy`           | [link][moon-buggy] |
+| `scummvm`          |                        |                    |
+| `ubuntu-clock-app` | `ubuntu-clock-app`     | [link][clock]      |
+| `vlc`              |                        |                    |
+| `youtube-dl`       |                        |                    |
+
+[atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
+[clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
+
+
+If the apps is listed in the second column, you can easily install it from the
+store by just running: `sudo snap install <snap name>`.
 
 ## Why?
 

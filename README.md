@@ -1,25 +1,25 @@
-# snappy playpen
+# The snappy playpen
 
 A place to test snapcraft, learn creating snaps and share best practices.
 
-Get started here: http://developer.ubuntu.com/desktop
+[Get started >](http://developer.ubuntu.com/desktop)
 
 ## Current project status
-[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) (snappy playpen health check)
+[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) - **passing** means all snaps are automatically built correctly
 
 This project currently includes the following snaps:
 
-| State               | Software name      | Snap name in the store | Snap info          |
-| ------------------- | ------------------ | ---------------------- | ------------------ |
-| :white_check_mark:  | `atom`             | `atom-cwayne`          | [link][atom]       |
-| :white_check_mark:  | `dosbox`           |                        |                    |
-| :white_check_mark:  | `ffmpeg`           |                        |                    |
-| :white_check_mark:  | `moon-buggy`       | `moon-buggy`           | [link][moon-buggy] |
-| :red_circle:        | `openjdk-demo`     |                        |                    |
-| :white_check_mark:  | `scummvm`          |                        |                    |
-| :white_check_mark:  | `ubuntu-clock-app` | `ubuntu-clock-app`     | [link][clock]      |
-| :white_check_mark:  | `vlc`              |                        |                    |
-| :white_check_mark:  | `youtube-dl`       |                        |                    |
+| State               | App                | Snap name in the store    |
+| ------------------- | ------------------ | ------------------------- |
+| :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
+| :white_check_mark:  | `dosbox`           |                           |
+| :white_check_mark:  | `ffmpeg`           |                           |
+| :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
+| :red_circle:        | `openjdk-demo`     |                           |
+| :white_check_mark:  | `scummvm`          |                           |
+| :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
+| :white_check_mark:  | `vlc`              |                           |
+| :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
@@ -38,7 +38,7 @@ best use of it together, we want to create a space, where we collectively
  - demonstrate best-practices
  - provide an incubator for new projects to be snapped
 
-This is snappy playpen.
+This is the snappy playpen.
 
 
 ## How it all works

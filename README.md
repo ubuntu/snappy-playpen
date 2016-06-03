@@ -20,6 +20,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `openjdk-demo`     |                           |
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
+| :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |
 | :white_check_mark:  | `youtube-dl`       |                           |
 
@@ -27,6 +28,7 @@ This project currently includes the following snaps:
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
+[vault]: https://uappexplorer.com/app/kpcli-elopio.elopio
 
 
 If the apps is listed in the second column, you can easily install it from the

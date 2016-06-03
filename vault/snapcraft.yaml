@@ -1,0 +1,22 @@
+name: vault-elopio
+version: 0.5.3-unreleased-20160518
+summary: Vault is a tool for securely accessing secrets.
+description: |
+  A modern system requires access to a multitude of secrets: database
+  credentials, API keys for external services, credentials for service-oriented
+  architecture communication, etc. Understanding who is accessing what secrets
+  is already very difficult and platform-specific. Adding on key rolling,
+  secure storage, and detailed audit logs is almost impossible without a custom
+  solution. This is where Vault steps in.
+
+apps:
+  vault:
+    command: bin/vault
+    plugs: [network, network-bind]
+
+parts:
+  vault:
+    plugin: go
+    go-packages:
+      - github.com/hashicorp/vault
+    build-packages: [git]

@@ -58,8 +58,11 @@ The best place to get started with `snapd` and `snapcraft` is on the
 `snapcraft init` you should be on the way to creating your first snap.
 
 In the beginning it is a good idea to use
+
 ```yaml
-confinement: devmode```
+confinement: devmode
+```
+
 in your `snapcraft.yaml` declaration. It will relax the security requirements
 so you can get your snap fully working first and then look into the
 [security bits][security] next. Just set the `confinement` value to `strict`

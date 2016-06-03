@@ -29,6 +29,7 @@ parts:
     build-packages:
       - cmake
       - gcc
+      - g++
       - gettext
       - imagemagick
       - libbz2-dev

@@ -5,7 +5,7 @@ description: SMPlayer is a free media player for Windows and Linux with built-in
 confinement: devmode
 
 apps:
-  vlc:
+  smplayer:
     command: qt5-launch usr/bin/smplayer
     plugs: [unity7, network, home]
 

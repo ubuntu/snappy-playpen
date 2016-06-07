@@ -95,14 +95,5 @@ So basically, the interfaces needed are :
       - build-essential
 ````
 
-##### Source
-
-
-
-Snapcraft.yaml
----------------
-
-
-
 [1]: https://telegram.me/EtherpadLitePlaypenSnappy
 [2]: https://github.com/ether/etherpad-lite#installation

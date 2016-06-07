@@ -164,8 +164,7 @@ parts:
             - libpoppler-glib-dev
             - libpoppler-glib8
             - libpoppler58
-            - libpython-dev
-            - libpython2.7-dev
+            - libpython-all-dev
             - librsvg2-dev
             - libsp1c2
             - libsuitesparseconfig4.4.6
@@ -181,7 +180,6 @@ parts:
             - poppler-data
             - python                # ? Not sure of how explicit dependencies need to be (popey naming g++ explicitly for instance) 
             - python-cairo-dev
-            - python-dev            # ?
             - python-gobject-2
             - python-gobject-2-dev
             - python-gtk2

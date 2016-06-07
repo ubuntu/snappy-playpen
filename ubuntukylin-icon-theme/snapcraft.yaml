@@ -9,10 +9,10 @@ description: |
  
  After that, you should find ubuntukylin-icon-theme-snap in your favourite
  theme editor (eg.: unity-tweak-tool).
+confinement: devmode
 apps:
   enable: 
    command: "cp -r $SNAP/icon-theme/ubuntukylin-icon-theme-snap /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-   confinement: devmode
    plugs:
       - home
       - unity7
@@ -20,7 +20,6 @@ apps:
   
   set:
     command: "theme-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
-    confinement: devmode
     plugs:
       - home
       - unity7
@@ -29,7 +28,6 @@ apps:
   
   disable: 
     command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-    confinement: devmode
     plugs: 
       - home
       - unity7

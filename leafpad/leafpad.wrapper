@@ -7,9 +7,6 @@ export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH:$LD_LIBRARY_PATH
 # XKB config
 export XKB_CONFIG_ROOT=$SNAP/usr/share/X11/xkb
 
-# gnome-calculator libs
-export LD_LIBRARY_PATH=$SNAP/usr/lib/gnome-calculator:$LD_LIBRARY_PATH
-
 # Mesa Libs
 export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/mesa:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/mesa-egl:$LD_LIBRARY_PATH

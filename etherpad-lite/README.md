@@ -4,6 +4,35 @@ Etherpad-lite
 This project is about creating a snap of etherpad-lite, a coillaborative text-editor.
 
 To talk and collaborate, you can join the Telegram group [Etherpad-lite-Playpen-Snappy][1]
+
+Status
+------
+
+Work in Progress. Not working
+
+Blocking point
+**************
+
+Some folders need to be copied from `parts/etherpad-lite/src` to the `./snap/` folder. Didn't find how to copy recursively a whole folder yet.
+
+ToDo
+----
+
+1.0:
+****
+
+- Made Etherpad-lite working by himself (find how to copy entire folders)
+
+2.0:
+****
+
+- Integrate MariaDB database instead of dirtydb
+
+3.0:
+****
+
+- Add a web-interface to configure/administrate etherpad-lite
+
 Original documentation
 ----------------------
 

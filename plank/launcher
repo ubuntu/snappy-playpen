@@ -121,4 +121,4 @@ fi
 # GTK modules
 export GTK_PATH=$SNAP/usr/lib/$ARCH/gtk-3.0
 
-exec $SNAP/bin/plank
+exec $SNAP/usr/bin/plank

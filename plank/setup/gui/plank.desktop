@@ -58,6 +58,6 @@ Comment[zh_TW]=極簡。
 Categories=Utility;
 Type=Application
 Exec=plank
-Icon=${SNAP}/share/icons/hicolor/128x128/apps/plank.svg
+Icon=${SNAP}/usr/share/icons/hicolor/128x128/apps/plank.svg
 Terminal=false
 NoDisplay=false

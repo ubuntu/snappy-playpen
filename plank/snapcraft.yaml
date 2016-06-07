@@ -29,8 +29,10 @@ parts:
     plugin: autotools
     source: https://git.launchpad.net/plank
     source-type: git
+    configflags: [ --prefix=/usr ]
     build-packages: 
         - gettext
+        - intltool
         - valac
         - libbamf3-dev
         - libcairo2-dev
@@ -41,7 +43,6 @@ parts:
         - libgtk-3-dev
         - libwnck-3-dev
     stage-packages:
-        - libplank1
         - libcairo2
         - libgee-0.8-2
         - libglib2.0-0

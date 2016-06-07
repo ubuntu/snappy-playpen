@@ -15,8 +15,8 @@ Work in Progress. Not working
 
 Some folders need to be copied from `parts/etherpad-lite/src` to the `./snap/` folder. Didn't find how to copy recursively a whole folder yet.
 
-ToDo
-----
+Roadmap
+-------
 
 ### 1.0:
 

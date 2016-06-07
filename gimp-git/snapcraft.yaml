@@ -1,5 +1,6 @@
 name: gimp-edge
-version: 2.9.2~git
+version: 2.9.3~git
+licence: $SNAP/gimp/src/LICENCE.txt
 summary: GNU Image Manipulation Program - www.gimp.org
 description: |
     A freely distributed program for such tasks as photo retouching, image
@@ -23,6 +24,9 @@ parts:
     babl:
         plugin: autotools
         configflags: [ --disable-docs ]
+        filesets:
+            binaries:
+            headers:
         source: git://git.gnome.org/babl
         source-type: git
         build-packages:
@@ -32,12 +36,14 @@ parts:
             - libgdk-pixbuf2.0-dev
 
     gegl:
-        #after: [ babl ]
+        after: [ babl ]
         plugin: autotools
         configflags: [ --enable-gtk-doc-html=no --enable-workshop ]
+        #filesets:
+            #binaries:
+            #headers:
         source: git://git.gnome.org/gegl
         source-type: git
-        #stage-packages:
         build-packages:
             - autoconf
             - build-essential
@@ -54,10 +60,10 @@ parts:
             - libjpeg-dev
             - libjson-glib-dev
             - liblensfun-dev
-            - liblua5.2-dev         # ?
+            - liblua5.2-dev         # ? Don't know what version is expected
             - libopenexr-dev
             - libpango1.0-dev
-            - libpng12-dev          # ?
+            - libpng12-dev          # ? Not sure about v1.2 vs v1.6
             - libraw-dev
             - librsvg2-dev
             - libsdl1.2-dev
@@ -72,9 +78,12 @@ parts:
         #stage-packages:
 
     gimp:
-        #after: [ babl, gegl, libmypaint ]
+        after: [ babl, gegl, libmypaint ]
         plugin: autotools
         configflags: [ --disable-gtk-doc ]
+        #filesets:
+            #binaries:
+            #headers:
         source: git://git.gnome.org/gimp
         source-type: git
         build-packages:
@@ -115,14 +124,14 @@ parts:
             - libffi-dev
             - libfontconfig1-dev
             - libgdk-pixbuf2.0-doc
-            - libgegl-0.3-0         # ?
-            - libgegl-dev           # ?
+            - libgegl-0.3-0         # ? Pretty sure not required, since building GEGL
+            - libgegl-dev           # ? Not sure if unneeded
             - libgfortran3
             - libglib2.0-doc
             - libgs-dev
             - libgs9
             - libgs9-common
-            - libgtk-3-dev          # ?
+            - libgtk-3-dev          # ? Fairly sure GIMP is still gtk2
             - libgtk2.0-dev
             - libgtk2.0-doc
             - libgudev-1.0-dev
@@ -137,7 +146,7 @@ parts:
             - libpango1.0-dev
             - libpaper-dev
             - libpaper1
-            - libpng12-dev          # ?
+            - libpng12-dev          # ? Not sure about v1.2 vs v1.6
             - libpoppler-dev
             - libpoppler-glib-dev
             - libpoppler-glib8
@@ -157,7 +166,7 @@ parts:
             - patchutils
             - pkg-config
             - poppler-data
-            - python                # ?
+            - python                # ? Not sure of how explicit dependencies need to be (popey naming g++ explicitly for instance) 
             - python-cairo-dev
             - python-dev            # ?
             - python-gobject-2
@@ -175,8 +184,11 @@ parts:
             - gimp-gmic
 
     libmypaint:
-        #after: [ gegl ]
+        after: [ gegl ]
         plugin: autotools
+        #filesets:
+            #binaries:
+            #headers:
         source: git://github.com/mypaint/libmypaint.git
         source-type: git
         build-packages:
@@ -184,7 +196,7 @@ parts:
             - intltool
             - libjson-c-dev
             - liblcms2-dev
-            - libpng12-dev
+            - libpng12-dev          # ? Not sure about v1.2 vs v1.6
             - librsvg2-dev
             - python-gi
 

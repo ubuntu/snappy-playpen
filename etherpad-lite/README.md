@@ -1,3 +1,10 @@
+---
+file: etherpad-lite/README.md
+title: Etherpad-lite
+author: Winael
+status: WIP. Not working
+---
+
 Etherpad-lite
 =============
 

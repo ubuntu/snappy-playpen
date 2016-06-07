@@ -10,26 +10,23 @@ Status
 
 Work in Progress. Not working
 
-Blocking point
-**************
+### Blocking point
+
 
 Some folders need to be copied from `parts/etherpad-lite/src` to the `./snap/` folder. Didn't find how to copy recursively a whole folder yet.
 
 ToDo
 ----
 
-1.0:
-****
+### 1.0:
 
 - Made Etherpad-lite working by himself (find how to copy entire folders)
 
-2.0:
-****
+### 2.0:
 
 - Integrate MariaDB database instead of dirtydb
 
-3.0:
-****
+### 3.0:
 
 - Add a web-interface to configure/administrate etherpad-lite
 

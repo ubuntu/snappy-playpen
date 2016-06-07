@@ -1,6 +1,6 @@
 name: gimp-edge
 version: 2.9.3~git
-licence: $SNAP/gimp/src/LICENCE.txt
+#licence: $SNAP/gimp/src/LICENCE.txt
 summary: GNU Image Manipulation Program - www.gimp.org
 description: |
     A freely distributed program for such tasks as photo retouching, image
@@ -21,12 +21,31 @@ plugs:
         security-template: unconfined
 
 parts:
-    babl:
+    glib:
+        plugin: autotools
+        #configflags:
+        #filesets:
+        source: git://git.gnome.org/glib
+        source-type: git
+        build-packages:
+            - build-essential
+
+    gdk-pixbuf:
+        plugin: autotools
+        #configflags:
+        #filesets:
+        source: git://git.gnome.org/gdk-pixbuf
+        source-type: git
+        build-packages:
+            - build-essential
+
+    babl: 
+        after: [ glib, gdk-pixbuf ]
         plugin: autotools
         configflags: [ --disable-docs ]
-        filesets:
-            binaries:
-            headers:
+        #filesets:
+            #binaries:
+            #headers:
         source: git://git.gnome.org/babl
         source-type: git
         build-packages:
@@ -78,7 +97,7 @@ parts:
         #stage-packages:
 
     gimp:
-        after: [ babl, gegl, libmypaint ]
+        #after: [ babl, gegl, libmypaint ]
         plugin: autotools
         configflags: [ --disable-gtk-doc ]
         #filesets:
@@ -127,7 +146,6 @@ parts:
             - libgegl-0.3-0         # ? Pretty sure not required, since building GEGL
             - libgegl-dev           # ? Not sure if unneeded
             - libgfortran3
-            - libglib2.0-doc
             - libgs-dev
             - libgs9
             - libgs9-common
@@ -184,7 +202,7 @@ parts:
             - gimp-gmic
 
     libmypaint:
-        after: [ gegl ]
+        #after: [ gegl ]
         plugin: autotools
         #filesets:
             #binaries:

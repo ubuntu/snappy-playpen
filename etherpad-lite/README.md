@@ -57,9 +57,21 @@ So basically, the interfaces needed are :
   - network-bind
   - home
 
+````yaml
+  interfaces:
+    - network
+    - network-bind
+    - home
+````
+
 ### Parts
 
 #### etherpad-lite
+
+- `plugin`: Etherpad-lite is a node.js app. So we need to use the `nodejs` plugin.
+- `source`: According to the official documentation, Etherpad-lite is host on GitHub. The source is git://github.com/ether/etherpad-lite
+- `source-subdir`: `nodejs` plugin need that source subdirectory has been specified to be able to build the part. the source of etherpad-lite will be pulled in the `src` subdirectory
+- `stage-packages`: According to the official documentation `gzip`, `git`, `curl`, `python`, `libssl-dev`, `pkg-config` and `build-essential`packages are needed to build etherpad-lite and are required by a script. 
 
 ````yaml
   etherpad-lite:
@@ -75,11 +87,6 @@ So basically, the interfaces needed are :
       - pkg-config 
       - build-essential
 ````
-
-- `plugin`: Etherpad-lite is a node.js app. So we need to use the `nodejs` plugin.
-- `source`: According to the official documentation, Etherpad-lite is host on GitHub. The source is git://github.com/ether/etherpad-lite
-- `source-subdir`: `nodejs` plugin need that source subdirectory has been specified to be able to build the part. the source of etherpad-lite will be pulled in the `src` subdirectory
-- `state-packages`: According to the official documentation `gzip`, `git`, `curl`, `python`, `libssl-dev`, `pkg-config`and `build-essential`packages are needed to build etherpad-lite. 
 
 ##### Source
 

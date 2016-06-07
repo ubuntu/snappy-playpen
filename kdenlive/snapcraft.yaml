@@ -1,0 +1,144 @@
+name: kdenlive
+version: "16.04.1-snap0"
+summary: Kdenlive
+description:  Kdenlive is an intuitive and powerful multi-track video editor, including most recent video technologies
+
+apps:
+  kdenlive:
+    command: qt5-launch usr/bin/kdenlive
+    plugs: [x11, unity7, home, opengl, network]
+
+parts:
+  ffmpeg:
+    plugin: autotools
+    configflags: [--enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libvorbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
+    source: git://source.ffmpeg.org/ffmpeg.git
+    source-type: git
+    build-packages:
+      - git
+      - g++
+      - make
+      - yasm
+      - autoconf
+      - libtool
+      - cmake
+      - pkg-config
+      - automake
+      - build-essential
+      - libass-dev
+      - libfreetype6-dev
+      - libsdl1.2-dev
+      - libtheora-dev
+      - libva-dev
+      - libvdpau-dev
+      - libvorbis-dev
+      - libxcb1-dev
+      - libxcb-shm0-dev
+      - libxcb-xfixes0-dev
+      - texinfo
+      - zlib1g-dev
+      - libx264-dev
+      - libmp3lame-dev
+      - libopus-dev
+      - libx265-dev
+      - libvpx-dev
+  upstream-src:
+    after: [ffmpeg]
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    source: git://anongit.kde.org/kdenlive.git
+    source-type: git
+    build-packages:
+      - cmake
+      - extra-cmake-modules
+      - kdoctools-dev
+      - kio-dev
+      - libkf5archive-dev
+      - libkf5bookmarks-dev
+      - libkf5config-dev
+      - libkf5configwidgets-dev
+      - libkf5coreaddons-dev
+      - libkf5crash-dev
+      - libkf5dbusaddons-dev
+      - libkf5filemetadata-dev
+      - libkf5guiaddons-dev
+      - libkf5iconthemes-dev
+      - libkf5newstuff-dev
+      - libkf5notifications-dev
+      - libkf5notifyconfig-dev
+      - libkf5plotting-dev
+      - libkf5textwidgets-dev
+      - libkf5widgetsaddons-dev
+      - libkf5xmlgui-dev
+      - libmlt++-dev
+      - libmlt-dev
+      - libqt5opengl5-dev
+      - libqt5svg5-dev
+      - libv4l-dev
+      - pkg-config
+      - qtdeclarative5-dev
+      - qtscript5-dev
+    stage-packages:
+      - kded5
+      - kinit
+      - kio
+      - melt
+      - oxygen-icon-theme
+      - qml-module-qtquick2
+      - libkf5archive5
+      - libkf5bookmarks5
+      - libkf5completion5
+      - libkf5configcore5
+      - libkf5configgui5
+      - libkf5configwidgets5
+      - libkf5coreaddons5
+      - libkf5dbusaddons5
+      - libkf5guiaddons5
+      - libkf5i18n5
+      - libkf5iconthemes5
+      - libkf5itemviews5
+      - libkf5jobwidgets5
+      - libkf5kiocore5
+      - libkf5kiofilewidgets5
+      - libkf5kiowidgets5
+      - libkf5newstuff5
+      - libkf5notifications5
+      - libkf5notifyconfig5
+      - libkf5plotting5
+      - libkf5service-bin
+      - libkf5service5
+      - libkf5solid5
+      - libkf5textwidgets5
+      - libkf5widgetsaddons5
+      - libkf5xmlgui5
+      - libmlt++3
+      - libmlt6
+      - libqt5core5a
+      - libqt5dbus5
+      - libqt5gui5
+      - libqt5network5
+      - libqt5quick5
+      - libqt5script5
+      - libqt5svg5
+      - libqt5widgets5
+      - libqt5xml5
+      - libstdc++6
+      - qml-module-qtquick-controls
+      - strace
+      - valgrind
+      - gdb
+  integration:
+    plugin: nil
+    stage-packages:
+      - dmz-cursor-theme
+      - light-themes
+      - ttf-ubuntu-font-family
+      - oxygen5-icon-theme
+    snap:
+      - usr/share
+      - -usr/share/doc
+
+  environment:
+    plugin: copy
+    files:
+      qt5-launch: bin/qt5-launch

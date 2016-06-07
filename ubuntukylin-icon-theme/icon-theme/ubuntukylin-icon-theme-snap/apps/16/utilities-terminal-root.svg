@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.999998"
+   height="15.999998"
+   id="svg13094"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="utilities-terminal-root.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="40.96"
+     inkscape:cx="10.596055"
+     inkscape:cy="7.0635879"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1033"
+     inkscape:window-x="-2"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="true"
+     inkscape:showpageshadow="false">
+    <sodipodi:guide
+       orientation="1,0"
+       position="521.71982,537.11325"
+       id="guide7209" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="601.71982,617.11325"
+       id="guide7211" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="80.000089,1058.8326"
+       id="guide7213" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="80.000089,1058.8325"
+       id="guide7215" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3131"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="0.0002329375px"
+       originy="10.999838px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs13096" />
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(9398.6162,-5035.9922)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Camada 1">
+    <path
+       id="path3042"
+       d="m -9398.6162,5036.9922 0,2 16,0 0,-2 -16,0 z m 0,3 0,8 16,0 0,-8 -16,0 z m 3,1 1,0 0,1 1,0 0,-1 1,0 0,1 2,0 0,1 -2,0 0,2 2,0 0,1 -2,0 0,1 -1,0 0,-1 -1,0 0,1 -1,0 0,-1 -2,0 0,-1 2,0 0,-2 -2,0 0,-1 2,0 0,-1 z m 1,2 0,2 1,0 0,-2 -1,0 z m -4,6 0,2 16,0 0,-2 -16,0 z"
+       style="color:#000000;fill:#c17564;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:connector-curvature="0" />
+    <path
+       style="color:#000000;fill:#404957;fill-opacity:0.23083699999999999;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -9398.6162,5036.9922 0,2 1,0 0,-1 15,0 0,-1 -16,0 z m 0,3 0,8 1,0 0,-2 0,-1 0,-2 0,-1 0,-1 2,0 1,0 1,0 1,0 10,0 0,-1 -15,0 -1,0 z m 2,3 0,1 1,0 0,-1 -1,0 z m 2,0 0,1 0,1 1,0 0,-1 0,-1 -1,0 z m 2,0 0,1 0,1 1,0 0,-1 2,0 0,-1 -1,0 -1,0 -1,0 z m -4,3 0,1 1,0 0,-1 -1,0 z m 2,0 0,1 0,1 1,0 0,-1 0,-1 -1,0 z m 2,0 0,1 0,1 1,0 0,-1 2,0 0,-1 -1,0 -1,0 -1,0 z m -6,3 0,2 1,0 0,-1 15,0 0,-1 -15,0 -1,0 z"
+       id="path3006"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

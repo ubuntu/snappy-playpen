@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg13094"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="folder-publicshare-symbolic.svg">
+  <defs
+     id="defs3002" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview3000"
+     showgrid="true"
+     inkscape:zoom="17.78125"
+     inkscape:cx="-9.0708705"
+     inkscape:cy="6.9426436"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13094"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-global="true"
+     inkscape:showpageshadow="false"
+     showborder="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2982"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#bdbdbd;fill-opacity:1;stroke:none"
+     d="M 8 0.5 C 6.6192881 0.5 5.5 1.6192881 5.5 3 C 5.5 4.3807119 6.6192881 5.5 8 5.5 C 8.8054153 5.5 9.5115302 5.1227056 9.96875 4.53125 C 10.760814 4.9793821 11.381217 5.6745757 11.71875 6.53125 C 11.834088 6.5127478 11.945739 6.5082516 12.0625 6.5 C 12.669594 6.4570959 13.286071 6.5652901 13.875 6.8125 C 13.491877 4.8898884 12.1784 3.3430959 10.4375 2.5625 C 10.228193 1.393343 9.2293646 0.5 8 0.5 z M 4.0625 3.5 C 2.8064964 4.5997741 2 6.1993893 2 8 C 2 8.1992911 2.0117339 8.3994488 2.03125 8.59375 C 1.1342345 9.3613199 0.88834464 10.690582 1.5 11.75 C 2.1903559 12.945732 3.7105184 13.346606 4.90625 12.65625 C 6.1019816 11.965894 6.5341059 10.445732 5.84375 9.25 C 5.4410424 8.5524899 4.7408255 8.1314861 4 8.03125 C 3.9999054 8.0205739 4 8.0106973 4 8 C 4 7.0575346 4.3296841 6.18363 4.875 5.5 C 4.4281164 4.9397687 4.1560843 4.2469775 4.0625 3.5 z M 12.15625 8 C 11.355705 8.0565754 10.587722 8.5026678 10.15625 9.25 C 9.7552782 9.9445036 9.7515459 10.747771 10.03125 11.4375 C 9.4383827 11.796519 8.7489494 12 8 12 C 7.7879549 12 7.5781239 11.969285 7.375 11.9375 C 7.1150708 12.607475 6.661544 13.198828 6.0625 13.65625 C 6.6718674 13.8647 7.3199994 14 8 14 C 9.3086987 14 10.516635 13.586172 11.5 12.875 C 11.508986 12.87811 11.522245 12.871998 11.53125 12.875 C 12.634391 13.24272 13.895939 12.796265 14.5 11.75 C 15.190356 10.554268 14.789482 9.0341059 13.59375 8.34375 C 13.145351 8.0848665 12.636577 7.9660548 12.15625 8 z "
+     id="path2989" />
+</svg>

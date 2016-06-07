@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   id="svg3434"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="drive-removable-media-usb.svg">
+  <defs
+     id="defs3436" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="32"
+     inkscape:cx="-0.402296"
+     inkscape:cy="11.687187"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3026"
+     showgrid="true"
+     inkscape:snap-global="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3564"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-1px"
+       originy="-1.0000021px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3439">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="device-notifier"
+     transform="translate(-1,-1027.3622)">
+    <g
+       id="g3026"
+       inkscape:label="#device">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 6,1038.3622 c 0,0.7396 0.4031,1.3727 1,1.7187 l 0,2.2813 0,0.4687 0.375,0.3125 2.8125,3.25 c -0.1073,0.3087 -0.1875,0.6236 -0.1875,0.9688 0,1.6568 1.3431,3 3,3 1.6569,0 3,-1.3432 3,-3 0,-0.3452 -0.08,-0.6601 -0.1875,-0.9688 l 2.8125,-3.25 0.375,-0.3125 0,-0.4687 0,-4 1,0 0,-4 -4,0 0,4 1,0 0,3.5312 -2.4062,2.9375 c -0.1822,-0.1147 -0.388,-0.2074 -0.5938,-0.2812 l 0,-12.1875 2,0 -3,-4 -3,4 2,0 0,12.1875 c -0.2058,0.074 -0.4116,0.1665 -0.5937,0.2812 L 9,1041.8934 l 0,-1.8125 c 0.5969,-0.346 1,-0.9791 1,-1.7187 0,-1.1046 -0.8954,-2 -2,-2 -1.1046,0 -2,0.8954 -2,2 z"
+         id="path3819"
+         sodipodi:nodetypes="scccccsssccccccccccccccccccccccsss" />
+    </g>
+  </g>
+</svg>

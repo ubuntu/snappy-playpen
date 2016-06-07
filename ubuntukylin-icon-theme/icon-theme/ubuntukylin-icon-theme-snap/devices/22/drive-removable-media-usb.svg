@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="22"
+   height="22"
+   id="svg3434"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="drive-removable-media-usb.svg">
+  <defs
+     id="defs3436" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="32"
+     inkscape:cx="-1.4804209"
+     inkscape:cy="11.843437"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3026"
+     showgrid="true"
+     inkscape:snap-global="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3564"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-1px"
+       originy="-1.0000021px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3439">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="device-notifier"
+     transform="translate(-1,-1029.3622)">
+    <g
+       id="g3026"
+       inkscape:label="#device">
+      <g
+         transform="matrix(0,-1,1,0,-1016.6949,1043.8769)"
+         id="device"
+         inkscape:label="#device"
+         style="fill:#bdbdbd;fill-opacity:1">
+        <path
+           id="path3819"
+           d="m 3.5147183,1021.6949 c -0.739604,0 -1.372707,0.4031 -1.71875,1 l -1.28125,0 -0.46875,0 -0.3125,0.375 -2.25,2.8125 c -0.3086379,-0.1073 -0.623572,-0.1875 -0.96875,-0.1875 -1.6568542,0 -3,1.3431 -3,3 0,1.6569 1.3431458,3 3,3 0.345178,0 0.6601121,-0.08 0.96875,-0.1875 l 2.25,2.8125 0.3125,0.375 0.46875,0 3,0 0,1 4,0 0,-4 -4,0 0,1 -2.53125,0 -1.9375,-2.4062 c 0.1147103,-0.1822 0.2074372,-0.388 0.28125,-0.5938 l 10.1875,0 0,2 3.9999997,-3 -3.9999997,-3 0,2 -10.1875,0 c -0.0738128,-0.2058 -0.1665397,-0.4116 -0.28125,-0.5937 l 1.9375,-2.4063 0.8125,0 c 0.346043,0.5969 0.979146,1 1.71875,1 1.104569,0 2,-0.8954 2,-2 0,-1.1046 -0.895431,-2 -2,-2 z"
+           style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>

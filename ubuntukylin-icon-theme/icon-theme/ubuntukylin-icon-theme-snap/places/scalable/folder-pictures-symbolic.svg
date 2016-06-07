@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg13094"
+   height="16"
+   width="16"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="folder-pictures-symbolic.svg">
+  <defs
+     id="defs2989" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview2987"
+     showgrid="true"
+     inkscape:zoom="41.7193"
+     inkscape:cx="5.9071377"
+     inkscape:cy="7.8117935"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13094"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3750" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero"
+     d="M 16,1 16,12 14,12 14,3 3,3 3,1 z"
+     id="path2989" />
+  <path
+     style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero"
+     d="M 0 4 L 0 15 L 13 15 L 13 4 L 0 4 z M 2 6 L 11 6 L 11 13 L 2 13 L 2 6 z "
+     id="path2987" />
+  <path
+     sodipodi:nodetypes="ccccccc"
+     inkscape:connector-curvature="0"
+     id="path2998"
+     d="M 9,7 7,10 5,8 2,13 11,13 11,8 z"
+     style="color:#000000;fill:#e0e0e0;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+</svg>

@@ -1,0 +1,76 @@
+name: ubuntukylin-icon-theme
+version: 1.0
+summary: Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono.
+description: |
+ Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono. After installations run the
+ activation command to enable it.
+ 
+ Activation command: ubuntukylin-icon-theme.enable
+ 
+ After that, you should find ubuntukylin-icon-theme-snap in your favourite
+ theme editor (eg.: unity-tweak-tool).
+apps:
+  enable: 
+   command: "cp -r $SNAP/icon-theme/ubuntukylin-icon-theme-snap /home/$USER/.icons/ubuntukylin-icon-theme-snap"
+   confinement: devmode
+   plugs:
+      - home
+      - unity7
+      - icon-theme-access
+  
+  set:
+    command: "theme-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
+    confinement: devmode
+    plugs:
+      - home
+      - unity7
+      - icon-theme-access
+      - icons-theme-set
+  
+  disable: 
+    command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
+    confinement: devmode
+    plugs: 
+      - home
+      - unity7
+      - icon-theme-access
+
+parts:
+  theme:
+    plugin: copy
+    files:
+      icon-theme: /icon-theme
+      theme-launch: /bin/theme-launch
+    stage-packages:
+      - dconf-gsettings-backend
+      - libglib2.0-bin
+    after:
+      - gschemas
+      - giomodule
+  gschemas:
+    plugin: copy
+    files:
+      gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
+  giomodule:
+    plugin: copy
+    files:
+      giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache
+
+slots:
+  icons-theme-access:
+    type: old-security
+    security-override:
+      read-paths:
+        - "/home/$USER/.icons"
+      write-paths:
+        - "/home/$USER/.icons"
+      syscalls:
+        - "mkdir"
+  icons-theme-set:
+    type: old-security
+    security-override:
+      read-paths:
+        - "/home/$USER/.icons"
+      syscalls:
+        - "gsettings"
+

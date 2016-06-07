@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   id="svg13094"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="audio-card.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="32"
+     inkscape:cx="2.730648"
+     inkscape:cy="11.880777"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="true"
+     inkscape:showpageshadow="false">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-25.000005,930.61286"
+       id="guide4700" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="576.71887,328.89388"
+       id="guide4702" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="576.71899,489.70395"
+       id="guide4706" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="54.999996,930.61286"
+       id="guide4708" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-25.000005,850.61296"
+       id="guide4710" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="536.71887,408.8938"
+       id="guide4712" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="496.71887,408.8938"
+       id="guide4714" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3216"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="-24.999951px"
+       originy="-219.00005px" />
+    <sodipodi:guide
+       orientation="-0.70710664,0.70710692"
+       position="4.0000502,-246.00005"
+       id="guide3847" />
+    <sodipodi:guide
+       orientation="0.70710594,0.70710762"
+       position="5.0000502,-245.00005"
+       id="guide3849" />
+    <sodipodi:guide
+       orientation="-0.70710681,0.70710676"
+       position="7.0000502,-212.00005"
+       id="guide3851" />
+  </sodipodi:namedview>
+  <defs
+     id="defs13096" />
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(9379.308,-4835.1988)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Camada 1">
+    <path
+       style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 5 1 L 5 4 L 4 4 L 1 4 L 1 5 L 4 5 L 4 6 L 1 6 L 1 7 L 4 7 L 4 8 L 1 8 L 1 9 L 4 9 L 4 10 L 1 10 L 1 11 L 4 11 L 4 12 L 1 12 L 1 13 L 4 13 L 4 14 L 1 14 L 1 15 L 4 15 L 4 16 L 1 16 L 1 17 L 4 17 L 4 18 L 1 18 L 1 19 L 4 19 L 4 20 L 4 23 L 5 23 L 5 20 L 6 20 L 6 23 L 7 23 L 7 20 L 8 20 L 8 23 L 9 23 L 9 20 L 10 20 L 10 23 L 11 23 L 11 20 L 12 20 L 12 23 L 13 23 L 13 20 L 14 20 L 14 23 L 15 23 L 15 20 L 16 20 L 16 23 L 17 23 L 17 20 L 18 20 L 18 23 L 19 23 L 19 20 L 20 20 L 23 20 L 23 19 L 20 19 L 20 18 L 23 18 L 23 17 L 20 17 L 20 16 L 23 16 L 23 15 L 20 15 L 20 14 L 23 14 L 23 13 L 20 13 L 20 12 L 23 12 L 23 11 L 20 11 L 20 10 L 23 10 L 23 9 L 20 9 L 20 8 L 23 8 L 23 7 L 20 7 L 20 6 L 23 6 L 23 5 L 20 5 L 20 4 L 20 1 L 19 1 L 19 4 L 18 4 L 18 1 L 17 1 L 17 4 L 16 4 L 16 1 L 15 1 L 15 4 L 14 4 L 14 1 L 13 1 L 13 4 L 12 4 L 12 1 L 11 1 L 11 4 L 10 4 L 10 1 L 9 1 L 9 4 L 8 4 L 8 1 L 7 1 L 7 4 L 6 4 L 6 1 L 5 1 z M 12.96875 5.25 L 14.125 6.25 L 14.71875 7.53125 L 14.84375 9.25 C 14.84375 9.25 15.345 10.05545 16.3125 12.03125 C 17.0133 15.01215 13.71875 15.3125 13.71875 15.3125 C 13.71875 15.3125 12.57765 15.17195 13.34375 14.78125 C 14.20615 14.34155 15.47395 13.5245 14.90625 12.3125 C 14.04615 10.5974 13.34375 10.03125 13.34375 10.03125 L 12.34375 14.03125 C 11.71935 16.84135 10.3888 17.736 9 17.625 C 5.3239 16.9621 6.9242 11.71765 10.875 13.96875 L 12.96875 5.25 z "
+       transform="translate(-9379.308,4835.1988)"
+       id="rect3001" />
+  </g>
+</svg>

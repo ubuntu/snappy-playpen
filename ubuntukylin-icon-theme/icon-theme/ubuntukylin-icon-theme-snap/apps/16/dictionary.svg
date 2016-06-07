@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.999998"
+   height="15.999998"
+   id="svg13094"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="kthesaurus.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="20.48"
+     inkscape:cx="11.845245"
+     inkscape:cy="7.980791"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="true"
+     inkscape:showpageshadow="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3131"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="0.0002329375px"
+       originy="10.999838px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs13096" />
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(9398.6162,-5035.9922)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Camada 1">
+    <g
+       transform="matrix(0.03454656,0,0,0.03454656,-9257.2175,5031.4943)"
+       id="22"
+       inkscape:label="#g3373"
+       style="fill:#212121;fill-opacity:1">
+      <g
+         id="g3829-5"
+         style="fill:#212121;fill-opacity:1" />
+    </g>
+    <path
+       style="color:#000000;fill:#ef5350;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.36001491999999979;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 1,0 1,16 15,16 15,2 3,2 3,1 15,1 15,0 z m 6.3459473,5 1.3444417,0 2.034831,5.74113 0.181681,0.363362 0.145345,0.218018 0.218018,0.109009 0.218017,0.03634 0.181682,0 0,0.508707 -3.2339278,0 0,-0.508707 0.3633626,0 0.1816813,-0.03634 0.1090088,-0.07267 0.1090088,-0.109009 0.036336,-0.181681 -0.036336,-0.218018 -0.036336,-0.181681 -0.3633626,-0.9810791 -2.3618571,0 -0.2906901,0.8357341 -0.072672,0.29069 -0.036336,0.254354 0.036336,0.181681 0.1090087,0.109009 0.1090088,0.07267 0.1816814,0.03634 0.3996988,0 0,0.508707 -2.5435384,0 0,-0.508707 0.1453451,0 0.2180176,-0.03634 L 4.8750814,11.32251 5.0567627,11.104492 5.238444,10.74113 z M 7.6729736,6.0174154 7.6003011,6.3444417 7.4549561,6.7078044 7.3459473,7.071167 7.2006022,7.4345296 6.619222,9.0696615 l 1.9984945,0 L 8.1090088,7.4708659 8,7.1438395 7.8909912,6.7441406 7.7819824,6.380778 z"
+       transform="translate(-9398.6162,5035.9922)"
+       id="rect3016"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

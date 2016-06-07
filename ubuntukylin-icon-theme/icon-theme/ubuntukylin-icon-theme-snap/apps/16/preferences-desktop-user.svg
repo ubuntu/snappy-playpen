@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16.000031"
+   height="16.000029"
+   id="svg27665"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="mugshot.svg">
+  <defs
+     id="defs27667" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="44.8"
+     inkscape:cx="4.2213095"
+     inkscape:cy="7.3235362"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-global="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="false">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-1494.2276,523.03618"
+       id="guide4179" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-1492.0847,520.17904"
+       id="guide4181" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid4279"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="6.6056504e-05px"
+       originy="592.00001px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata27670">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(3393.2465,-1650.2411)">
+    <path
+       style="color:#000000;fill:#bf360c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 8 1 C 5.2180722 1 4.6251253 3.0408931 4.6875 4.25 L 4.78125 5.28125 C 4.0029553 5.29064 4.3797584 7.3840591 4.9375 7.3125 C 5.1830356 8.2013379 5.6379478 8.7633928 6.125 9.1875 C 6.2289105 9.8763553 6.190531 10.360151 6.15625 10.96875 C 4.2548417 12.230648 1 12.474253 1 13 C 1 14.204827 3.804166 15.125 8 15.125 C 12.1958 15.125 15 14.2048 15 13 C 15 12.4743 11.74515 12.23065 9.84375 10.96875 C 9.80975 10.36015 9.7711 9.8763 9.875 9.1875 C 10.362 8.7634 10.8169 8.2013 11.0625 7.3125 C 11.6202 7.3841 11.99705 5.29125 11.21875 5.28125 L 11.3125 4.25 C 11.3749 3.0409 10.7819 1 8 1 z "
+       transform="translate(-3393.2465,1650.2411)"
+       id="rect2991" />
+    <rect
+       y="1654.2411"
+       x="-3379.2463"
+       height="5.0000081"
+       width="1.9999039"
+       id="rect3005"
+       style="color:#000000;fill:#bf360c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <rect
+       style="color:#000000;fill:#bf360c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2986"
+       width="1.9999039"
+       height="1.9999826"
+       x="-3379.2463"
+       y="1651.2411" />
+  </g>
+</svg>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   id="svg13094"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="activities.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="20.48"
+     inkscape:cx="9.2028201"
+     inkscape:cy="13.087561"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="true"
+     inkscape:showpageshadow="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3131"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="0.0002329375px"
+       originy="10.999838px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs13096" />
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(9398.6162,-5027.9922)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Camada 1">
+    <g
+       transform="matrix(0.03454656,0,0,0.03454656,-9257.2175,5031.4943)"
+       id="22"
+       inkscape:label="#g3373"
+       style="fill:#4527a0;fill-opacity:1">
+      <g
+         id="g3829-5"
+         style="fill:#4527a0;fill-opacity:1" />
+    </g>
+    <path
+       style="color:#000000;fill:#673ab7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -9380.6162,5030.9922 c -1.5587,0 -2.8224,1.1984 -2.9688,2.7187 0.6895,0.3306 1.3379,0.7754 1.9063,1.3438 0.5684,0.5684 1.0132,1.2168 1.3437,1.9062 1.5204,-0.1463 2.7188,-1.41 2.7188,-2.9687 0,-1.6569 -1.3431,-3 -3,-3 z m -12.2813,12.0312 c -1.5203,0.1464 -2.7187,1.4101 -2.7187,2.9688 0,1.6569 1.3431,3 3,3 1.5587,0 2.8224,-1.1984 2.9687,-2.7188 -0.6894,-0.3305 -1.3378,-0.7753 -1.9062,-1.3437 -0.5684,-0.5684 -1.0132,-1.2168 -1.3438,-1.9063 z"
+       id="path3773"
+       inkscape:connector-curvature="0" />
+    <path
+       transform="matrix(1.41425,-1.41425,1.41425,1.41425,-9400.7592,5041.4067)"
+       d="m 8.0002332,4.5001602 c 0,1.3807119 -1.1192882,2.5 -2.5,2.5 -1.3807119,0 -2.5,-1.1192881 -2.5,-2.5 0,-1.3807119 1.1192881,-2.5 2.5,-2.5 1.3807118,0 2.5,1.1192881 2.5,2.5 z"
+       sodipodi:ry="2.5"
+       sodipodi:rx="2.5"
+       sodipodi:cy="4.5001602"
+       sodipodi:cx="5.5002332"
+       id="path3771"
+       style="color:#000000;fill:#4527a0;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.09999989999999981;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc" />
+  </g>
+</svg>

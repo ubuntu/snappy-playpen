@@ -14,7 +14,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
 | :white_check_mark:  | `dosbox`           |                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
-|                     | `galculator`       |                           |
+| :white_check_mark:  | `galculator`       |                           |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
 | :white_check_mark:  | `minetest`         |                           |

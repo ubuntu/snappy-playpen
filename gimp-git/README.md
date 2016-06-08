@@ -7,10 +7,11 @@ from the git repositories.
 
 Not even 100% certain about the dependencies yet, probably some extra and
 perhaps some missing. There are definite environment variables which need
-to be integrated into the `snapcraft.yaml` build file (see `env.sh` and
-`env2.sh`), notably the explicit GIO library link, ACLOCAL flags, and PKG
-CONFIG PATH. Configuring the build process so that `staged parts` become
-dependencies for the later `parts` with correct library links.
+to be integrated into the `snapcraft.yaml` build file (talking with
+@kyrofa on gitter this may not be the issue), notably the explicit GIO
+library link, ACLOCAL flags, and PKG CONFIG PATH. Configuring the build
+process so that `staged parts` become dependencies for the later `parts`
+with correct library links.
 
 ---
 

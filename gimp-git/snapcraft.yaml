@@ -16,14 +16,14 @@ apps:
         command: gimp
 
 parts:
-    glib:
-        plugin: autotools
-        #configflags:
-        #filesets:
-        source: git://git.gnome.org/glib
-        source-type: git
-        build-packages:
-            - build-essential
+    #glib:
+        #plugin: autotools
+        ##configflags:
+        ##filesets:
+        #source: git://git.gnome.org/glib
+        #source-type: git
+        #build-packages:
+            #- build-essential
 
     gdk-pixbuf:
         plugin: autotools
@@ -35,7 +35,7 @@ parts:
             - build-essential
 
     babl: 
-        after: [ glib, gdk-pixbuf ]
+        after: [ 'gdk-pixbuf' ]
         plugin: autotools
         configflags: [ --disable-docs ]
         #filesets:
@@ -50,7 +50,7 @@ parts:
             - libgdk-pixbuf2.0-dev
 
     gegl:
-        after: [ babl ]
+        after: [ 'gdk-pixbuf', 'babl' ]
         plugin: autotools
         configflags: [ --enable-gtk-doc-html=no --enable-workshop ]
         #filesets:
@@ -66,6 +66,7 @@ parts:
             - libavformat-dev
             - libavutil-dev
             - libcairo2-dev
+            - libexiv2-dev
             - libfontconfig1-dev
             - libfreetype6-dev
             - libgexiv2-dev
@@ -74,7 +75,7 @@ parts:
             - libjpeg-dev
             - libjson-glib-dev
             - liblensfun-dev
-            - liblua5.2-dev         # ? Don't know what version is expected
+            - liblua5.1-0-dev       # ? Don't know what version is expected
             - libopenexr-dev
             - libpango1.0-dev
             - libpng12-dev          # ? Not sure about v1.2 vs v1.6
@@ -86,13 +87,13 @@ parts:
             - libtiff5-dev
             - libv4l-dev
             - libwebp-dev
-            - lua5.2                # ?
+            - lua5.1                # ?
             - python3-pydot
             - ruby
         #stage-packages:
 
     gimp:
-        #after: [ babl, gegl, libmypaint ]
+        after: [ 'gdk-pixbuf', 'babl', 'gegl', 'libmypaint' ]
         plugin: autotools
         configflags: [ --disable-gtk-doc ]
         #filesets:
@@ -164,7 +165,8 @@ parts:
             - libpoppler-glib-dev
             - libpoppler-glib8
             - libpoppler58
-            - libpython-all-dev
+            - libpython-dev
+            - libpython2.7-dev
             - librsvg2-dev
             - libsp1c2
             - libsuitesparseconfig4.4.6
@@ -180,6 +182,7 @@ parts:
             - poppler-data
             - python                # ? Not sure of how explicit dependencies need to be (popey naming g++ explicitly for instance) 
             - python-cairo-dev
+            - python-dev            # ?
             - python-gobject-2
             - python-gobject-2-dev
             - python-gtk2
@@ -195,7 +198,7 @@ parts:
             - gimp-gmic
 
     libmypaint:
-        #after: [ gegl ]
+        after: [ gegl ]
         plugin: autotools
         #filesets:
             #binaries:

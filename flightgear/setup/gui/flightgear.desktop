@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=FlightGear
+GenericName=Flight Simulator
+Exec=fgfs
+Terminal=false
+Categories=Game;Simulation
+Comment=open-source flight simulator
+Comment[de]=Open-Source Flugsimulator
+Comment[pt]=Simulação de Vôo
+Keywords=
+Icon=${SNAP}/meta/gui/flightgear.png

@@ -1,0 +1,129 @@
+name: flightgear
+version: "2016.2.1-svn"
+summary: FlightGear
+description: Flight Sim
+
+apps:
+  flightgear:
+    command: qt5-launch bin/fgfs --fg-root=./fgdata
+    plugs: [network, network-bind, unity7, opengl, home]
+
+parts:
+  fgdata:
+    plugin: copy
+    source: git://git.code.sf.net/p/flightgear/fgdata
+    files:
+      '*': 'fgdata/'
+  simgear:
+    plugin: cmake
+    source-type: git
+    source: git://git.code.sf.net/p/flightgear/simgear
+    build-packages:
+      - libcurl4-gnutls-dev
+      - libx11-dev
+      - libxext-dev
+      - libxi-dev
+      - libice-dev
+      - libsm-dev
+      - libxt-dev
+      - libxmu-dev
+      - zlib1g-dev
+      - libboost-dev
+      - libopenal-dev
+      - libalut-dev
+      - libexpat1-dev
+      - cmake
+      - libgl1-mesa-dev
+      - libglu1-mesa-dev
+      - freeglut3-dev
+      - libjpeg-dev
+      - libutfcpp-dev
+      - libopenscenegraph-dev
+  flightgear:
+    after: [simgear]
+    plugin: cmake
+    #configflags: [-DCMAKE_CXX_FLAGS_RELWITHDEBINFO="-g -DNDEBUG", -DCMAKE_VERBOSE_MAKEFILE=ON, -DCMAKE_INSTALL_PREFIX:PATH=/usr, -DCMAKE_INSTALL_BINDIR:PATH=games, -DFG_DATA_DIR:PATH=/usr/share/games/flightgear \, -DFGCOM_DATA_PATH=/usr/share/games/flightgear ,-DSIMGEAR_SHARED:BOOL=ON ,-DENABLE_FGADMIN=OFF ,-DENABLE_LARCSIM=ON ,-DENABLE_UIUC_MODEL=ON, -DSP_FDMS=ON, -DSYSTEM_SQLITE=ON]
+    #source-type: tar
+    #source: http://downloads.sourceforge.net/project/flightgear/release-2016.2/flightgear-2016.2.1.tar.bz2
+    source-type: git
+    source: git://git.code.sf.net/p/flightgear/flightgear
+    build-packages:
+      - libx11-dev
+      - libxext-dev
+      - libxi-dev
+      - libice-dev
+      - libsm-dev
+      - libxt-dev
+      - libxmu-dev
+      - zlib1g-dev
+      - libboost-dev
+      - libopenal-dev
+      - libalut-dev
+      - imagemagick
+      - libplib-dev
+      - cmake
+      - libgl1-mesa-dev
+      - libglu1-mesa-dev
+      - freeglut3-dev
+      - libjpeg-dev
+      - libpng16-dev
+      - libopenscenegraph-dev
+      - libsimgear-dev
+      - libsqlite3-dev
+      - libudev-dev
+      - libdbus-1-dev
+      - libgsm1-dev
+      - libspeex-dev
+      - libspeexdsp-dev
+      - flite1-dev
+      - libhtsengine-dev
+      - g++
+      - make
+    stage-packages:
+      - libboost-system1.58.0
+      - libc6
+      - libexiv2-14
+      - libfftw3-double3
+      - libgcc1
+      - libgomp1
+      - libgsl2
+      - libilmbase12
+      - libjpeg8
+      - libkf5archive5
+      - libkf5completion5
+      - libkf5configcore5
+      - libkf5configgui5
+      - libkf5coreaddons5
+      - libkf5guiaddons5
+      - libkf5i18n5
+      - libkf5itemviews5
+      - libkf5widgetsaddons5
+      - libkf5windowsystem5
+      - liblcms2-2
+      - libopencolorio1v5
+      - libopenexr22
+      - libopenjpeg5
+      - libpng12-0
+      - libqt5concurrent5
+      - libqt5core5a
+      - libqt5dbus5
+      - libqt5gui5
+      - libqt5network5
+      - libqt5printsupport5
+      - libqt5qml5
+      - libqt5quick5
+      - libqt5svg5
+      - libqt5widgets5
+      - libqt5x11extras5
+      - libqt5xml5
+      - libstdc++6
+      - libtiff5
+      - libx11-6
+      - libxcb1
+      - libxi6
+      - zlib1g
+      - libgl1-mesa-dri
+  environment:
+    plugin: copy
+    files:
+      qt5-launch: bin/qt5-launch

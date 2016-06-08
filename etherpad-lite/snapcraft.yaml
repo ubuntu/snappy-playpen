@@ -1,7 +1,7 @@
 name: etherpad-lite-unofficial
 version: 0.1
 summary: Etherpad-lite, really-real time collaborative editor
-description: | 
+description: |
   Etherpad allows you to edit documents collaboratively in real-time, much like
   a live multi-player editor that runs in your browser. Write articles, press
   releases, to-do lists, etc. together with your friends, fellow students or
@@ -11,8 +11,8 @@ confinement: devmode
 apps:
   etherpad-lite:
     command: bin/runpad
-    daemon: simple
-    plugs: [network, network-bind]
+    #daemon: simple
+    plugs: [home, network, network-bind]
 
 parts:
   etherpad-lite:
@@ -27,11 +27,6 @@ parts:
       - libssl-dev
       - pkg-config
       - build-essential
-  etherpad-lite-settings:
-    plugin: copy
-    source: git://github.com/ether/etherpad-lite
-    files:
-      settings.json.template: etc/settings.json
   wrapper-and-config:
     plugin: make
     source: .

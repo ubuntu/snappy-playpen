@@ -3,4 +3,4 @@
 set -x
 
 cd $SNAP_DATA
-exec  $SNAP/bin/etherpad-lite --settings $PWD/etc/settings.json
+exec  $SNAP/bin/etherpad-lite --settings $SNAP/etc/settings.json

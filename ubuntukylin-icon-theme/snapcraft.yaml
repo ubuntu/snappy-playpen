@@ -35,16 +35,25 @@ apps:
 
 parts:
   theme:
-    plugin: copy
+    plugin: copy_and_edit
+    source: lp:ubuntukylin-theme
+    source-type: bzr
     files:
-      icon-theme: /icon-theme
-      theme-launch: /bin/theme-launch
+      ubuntukylin-icon-theme: icon-theme/ubuntukylin-icon-theme-snap
+    edit:
+      ubuntukylin-icon-theme/index.theme:
+        "Name=.*$": "Name=ubuntukylin-icon-theme-snap"
     stage-packages:
       - dconf-gsettings-backend
       - libglib2.0-bin
     after:
       - gschemas
       - giomodule
+      - theme-launch
+  theme-launch:
+    plugin: copy
+    files:
+      theme-launch: /bin/theme-launch
   gschemas:
     plugin: copy
     files:

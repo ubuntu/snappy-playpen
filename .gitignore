@@ -2,3 +2,5 @@
 **/stage
 **/snap
 **/*.snap
+**/*.bz2
+**/squashfs-root

@@ -1,0 +1,6 @@
+#/bin/sh
+
+set -x
+
+cd $SNAP_DATA
+exec  $SNAP/bin/etherpad-lite --settings $PWD/etc/settings.json

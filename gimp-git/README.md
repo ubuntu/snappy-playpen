@@ -3,15 +3,17 @@
 This project is a work in progress to build GIMP (and its dependencies)
 from the git repositories.
 
+- First, everything the devs do is amazing, and they are always right
+- Second, following old recipes (particularly for build environments that
+  are not _snapcrafting_) is making more work for yourself than starting
+  from basics and reading the docs
+
 ## Current State
 
-Not even 100% certain about the dependencies yet, probably some extra and
-perhaps some missing. There are definite environment variables which need
-to be integrated into the `snapcraft.yaml` build file (talking with
-@kyrofa on gitter this may not be the issue), notably the explicit GIO
-library link, ACLOCAL flags, and PKG CONFIG PATH. Configuring the build
-process so that `staged parts` become dependencies for the later `parts`
-with correct library links.
+  Getting very close with `snapcraft build`, legitimately all the way
+  through to building `gimp` itself, which continues to fail in
+  a `cleanbuild` on the `libmypaint >= 1.3.0` dependency. Could be build
+  order
 
 ---
 

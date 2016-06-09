@@ -37,7 +37,7 @@ parts:
     babl: 
         after: [ 'gdk-pixbuf' ]
         plugin: autotools
-        configflags: [ --disable-docs ]
+        configflags: [ --disable-docs, --disable-shared ]
         #filesets:
             #binaries:
             #headers:
@@ -52,9 +52,10 @@ parts:
     gegl:
         after: [ 'gdk-pixbuf', 'babl' ]
         plugin: autotools
-        configflags: [ --enable-gtk-doc-html=no --enable-workshop ]
+        configflags: [ --enable-gtk-doc-html=no, --disable-shared, --enable-workshop, --enable-binreloc ]
         #filesets:
-            #binaries:
+            #babl:
+                #- ./parts/install/babl/
             #headers:
         source: git://git.gnome.org/gegl
         source-type: git
@@ -93,18 +94,17 @@ parts:
         #stage-packages:
 
     gimp:
-        after: [ 'gdk-pixbuf', 'babl', 'gegl', 'libmypaint' ]
+        after: [ gdk-pixbuf, babl, gegl, libmypaint ]
         plugin: autotools
-        configflags: [ --disable-gtk-doc ]
+        configflags: [ --disable-gtk-doc, --disable-shared, --enable-binreloc, --disable-python ]
         #filesets:
-            #binaries:
-            #headers:
+            #gegl:
+                #- ./parts/gegl/
         source: git://git.gnome.org/gimp
         source-type: git
         build-packages:
             - autoconf-archive
             - build-essential
-            - libcdb-dev
             - dh-translations
             - docbook
             - docbook-dsssl
@@ -127,6 +127,7 @@ parts:
             - libbz2-dev
             - libcamd2.4.1
             - libccolamd2.9.1
+            - libcdb-dev
             - libcholmod3.0.6
             - libcolamd2.9.1
             - libcups2-dev
@@ -156,6 +157,7 @@ parts:
             - libjbig2dec0-dev
             - libjpeg-dev
             - liblapack3
+            - libmng2
             - libmng-dev
             - libpango1.0-dev
             - libpaper-dev
@@ -200,9 +202,6 @@ parts:
     libmypaint:
         after: [ gegl ]
         plugin: autotools
-        #filesets:
-            #binaries:
-            #headers:
         source: git://github.com/mypaint/libmypaint.git
         source-type: git
         build-packages:

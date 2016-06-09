@@ -16,14 +16,14 @@ apps:
         command: gimp
 
 parts:
-    #glib:
-        #plugin: autotools
-        ##configflags:
-        ##filesets:
-        #source: git://git.gnome.org/glib
-        #source-type: git
-        #build-packages:
-            #- build-essential
+    glib:
+        plugin: autotools
+        #configflags:
+        #filesets:
+        source: git://git.gnome.org/glib
+        source-type: git
+        build-packages:
+            - build-essential
 
     gdk-pixbuf:
         plugin: autotools
@@ -35,12 +35,10 @@ parts:
             - build-essential
 
     babl: 
-        after: [ 'gdk-pixbuf' ]
+        after: [ gdk-pixbuf ]
         plugin: autotools
         configflags: [ --disable-docs, --disable-shared ]
         #filesets:
-            #binaries:
-            #headers:
         source: git://git.gnome.org/babl
         source-type: git
         build-packages:
@@ -50,13 +48,12 @@ parts:
             - libgdk-pixbuf2.0-dev
 
     gegl:
-        after: [ 'gdk-pixbuf', 'babl' ]
+        after: [ gdk-pixbuf, libmypaint, babl ]
         plugin: autotools
         configflags: [ --enable-gtk-doc-html=no, --disable-shared, --enable-workshop, --enable-binreloc ]
         #filesets:
             #babl:
                 #- ./parts/install/babl/
-            #headers:
         source: git://git.gnome.org/gegl
         source-type: git
         build-packages:
@@ -200,7 +197,7 @@ parts:
             - gimp-gmic
 
     libmypaint:
-        after: [ gegl ]
+        after: [ babl ]
         plugin: autotools
         source: git://github.com/mypaint/libmypaint.git
         source-type: git

@@ -14,8 +14,9 @@ apps:
 
 parts:
   leafpad:
-    plugin: nil
-    stage-packages: [leafpad]
+    plugin: autotools
+    source: https://github.com/oluc/leafpad
+    source-type: git
     snap:
       - -usr/share/doc
   env:
@@ -24,3 +25,10 @@ parts:
       leafpad.wrapper: usr/bin/leafpad.wrapper
       gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
       loaders.cache: usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache
+    stage-packages:
+      - fontconfig-config
+
+build-packages:
+  - build-essential
+  - libgtk2.0-dev
+  - intltool

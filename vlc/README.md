@@ -11,7 +11,8 @@ Working features:
  - video playing
 
 Known issues:
-  - Menus are blank
+  - Theming
+  - No sound in strict confinement
 
 TODO:
  - Add icon

@@ -14,13 +14,18 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
 | :white_check_mark:  | `dosbox`           |                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
+| :white_check_mark:  | `galculator`       |                           |
+| :red_circle:        | `heroku`           |                           |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
 | :white_check_mark:  | `minetest`         |                           |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
 | :red_circle:        | `openjdk-demo`     |                           |
+| :white_check_mark:  | `smplayer`         |                           |
+| :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
+| :white_check_mark:  | `tinyproxy`        |                           |
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |

@@ -1,0 +1,18 @@
+name: heroku-elopio
+version: 5.2.19
+summary: The Heroku CLI is used to manage Heroku apps from the command line.
+description: |
+  This is the next generation Go/Node-based Heroku CLI. Currently, it is not
+  feature complete with the existing CLI and not intended to be used
+  standalone.
+
+apps:
+  heroku:
+    command: bin/cli
+    plugs: [network]
+
+parts:
+  heroku-cli:
+    plugin: go
+    source: https://github.com/heroku/cli
+    source-type: git

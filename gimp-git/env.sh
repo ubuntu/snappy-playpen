@@ -8,9 +8,9 @@ export ACLOCAL_FLAGS="-I $SNAP/share/aclocal"
 export PKG_CONFIG_PATH=$SNAP/lib/pkgconfig:$PKG_CONFIG_PATH
 export GIO_EXTRA_MODULES=/usr/lib/$ARCH/gio/modules
 
-mkdir ./stage/lib 
-mkdir ./stage/lib/pkgconfig 
-mkdir ./stage/share 
-mkdir ./stage/share/aclocal
+mkdir ./parts/lib 
+mkdir ./parts/lib/pkgconfig 
+mkdir ./parts/share 
+mkdir ./parts/share/aclocal
 
 snapcraft

@@ -20,6 +20,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
 | :red_circle:        | `openjdk-demo`     |                           |
 | :white_check_mark:  | `scummvm`          |                           |
+| :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |

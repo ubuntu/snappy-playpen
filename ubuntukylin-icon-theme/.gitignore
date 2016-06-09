@@ -1,0 +1,4 @@
+*.snap
+parts/*
+snap/*
+stage/*

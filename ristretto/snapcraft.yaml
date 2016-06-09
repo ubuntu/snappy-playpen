@@ -25,10 +25,12 @@ parts:
       wrapper: usr/bin/ristretto.wrapper
     stage-packages:
       - fontconfig-config
+      - fonts-freefont-ttf
       - hicolor-icon-theme
       - libglib2.0-bin
       - libgtk2.0-bin
       - shared-mime-info
+      - tumbler
 
 build-packages:
   - exo-utils

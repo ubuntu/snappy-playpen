@@ -1,4 +1,4 @@
-name: gimp-edge
+name: gimp-git
 version: 2.9.3~git
 #licence: $SNAP/gimp/src/LICENCE.txt
 summary: GNU Image Manipulation Program - www.gimp.org
@@ -13,29 +13,29 @@ confinement: devmode
 
 apps:
     gimp:
-        command: gimp
+        command: gimp-git
 
 parts:
-    glib:
-        plugin: autotools
-        #configflags:
-        #filesets:
-        source: git://git.gnome.org/glib
-        source-type: git
-        build-packages:
-            - build-essential
+    #glib:
+        #plugin: autotools
+        ##configflags:
+        ##filesets:
+        #source: git://git.gnome.org/glib
+        #source-type: git
+        #build-packages:
+            #- build-essential
 
-    gdk-pixbuf:
-        plugin: autotools
-        #configflags:
-        #filesets:
-        source: git://git.gnome.org/gdk-pixbuf
-        source-type: git
-        build-packages:
-            - build-essential
+    #gdk-pixbuf:
+        #plugin: autotools
+        ##configflags:
+        ##filesets:
+        #source: git://git.gnome.org/gdk-pixbuf
+        #source-type: git
+        #build-packages:
+            #- build-essential
 
     babl: 
-        after: [ gdk-pixbuf ]
+    #after: [ gdk-pixbuf ]
         plugin: autotools
         configflags: [ --disable-docs, --disable-shared ]
         #filesets:
@@ -48,7 +48,7 @@ parts:
             - libgdk-pixbuf2.0-dev
 
     gegl:
-        after: [ gdk-pixbuf, libmypaint, babl ]
+        after: [ libmypaint, babl ]
         plugin: autotools
         configflags: [ --enable-gtk-doc-html=no, --disable-shared, --enable-workshop, --enable-binreloc ]
         #filesets:
@@ -91,7 +91,7 @@ parts:
         #stage-packages:
 
     gimp:
-        after: [ gdk-pixbuf, babl, gegl, libmypaint ]
+        after: [ babl, gegl, libmypaint ]
         plugin: autotools
         configflags: [ --disable-gtk-doc, --disable-shared, --enable-binreloc, --disable-python ]
         #filesets:
@@ -137,13 +137,10 @@ parts:
             - libffi-dev
             - libfontconfig1-dev
             - libgdk-pixbuf2.0-doc
-            - libgegl-0.3-0         # ? Pretty sure not required, since building GEGL
-            - libgegl-dev           # ? Not sure if unneeded
             - libgfortran3
             - libgs-dev
             - libgs9
             - libgs9-common
-            - libgtk-3-dev          # ? Fairly sure GIMP is still gtk2
             - libgtk2.0-dev
             - libgtk2.0-doc
             - libgudev-1.0-dev
@@ -179,12 +176,10 @@ parts:
             - patchutils
             - pkg-config
             - poppler-data
-            - python                # ? Not sure of how explicit dependencies need to be (popey naming g++ explicitly for instance) 
             - python-cairo-dev
             - python-dev            # ?
             - python-gobject-2
             - python-gobject-2-dev
-            - python-gtk2
             - python-gtk2-dev
             - python-pkg-resources
             - python-scour

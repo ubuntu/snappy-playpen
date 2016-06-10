@@ -21,6 +21,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `minetest`         |                           |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
 | :red_circle:        | `openjdk-demo`     |                           |
+| :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
 | :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `scummvm`          |                           |

@@ -124,3 +124,53 @@ parts:
       - zlib1g-dev
       - zsh
     after: [qt5conf]
+  env:
+    plugin: nil
+    stage-packages:
+      - fonts-freefont-ttf
+      - libaa1
+      - libavcodec-ffmpeg56
+      - libavcodec-ffmpeg-extra56
+      - libavutil-ffmpeg54
+      - libc6
+      - libcaca0
+      - libcairo2
+      - libegl1-mesa
+      - libfreerdp-client1.1
+      - libfreerdp-core1.1
+      - libfreerdp-gdi1.1
+      - libfreetype6
+      - libfribidi0
+      - libgcc1
+      - libgl1-mesa-glx
+      - libgles1-mesa
+      - libgles2-mesa
+      - libglib2.0-0
+      - libpulse0
+      - libqt5core5a
+      - libqt5gui5
+      - libqt5gui5-gles
+      - libqt5widgets5
+      - libqt5x11extras5
+      - librsvg2-2
+      - libsdl-image1.2
+      - libsdl1.2debian
+      - libstdc++6
+      - libva-drm1
+      - libva-x11-1
+      - libva1
+      - libvlccore8
+      - libvncclient1
+      - libx11-6
+      - libxcb-composite0
+      - libxcb-keysyms1
+      - libxcb-randr0
+      - libxcb-shm0
+      - libxcb-xv0
+      - libxcb1
+      - libxext6
+      - libxi6
+      - libxinerama1
+      - libxpm4
+      - zlib1g
+    after: [vlc]

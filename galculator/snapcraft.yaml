@@ -1,0 +1,56 @@
+name: galculator
+version: 2.1.4
+summary: scientific calculator
+description: |
+ galculator is a scientific calculator. It supports different number
+ bases (DEC/HEX/OCT/BIN) and angles bases (DEG/RAD/GRAD) and features a
+ wide range of mathematical (basic arithmetic operations, trigonometric
+ functions, etc) and other useful functions (memory, etc) at the moment.
+ galculator can be used in algebraic mode as well as in Reverse Polish
+ Notation (RPN).
+
+apps:
+  galculator:
+    command: galculator.wrapper
+    plugs:
+      - home
+      - x11
+
+parts:
+  wrapper:
+    plugin: copy
+    files:
+      galculator.wrapper: galculator.wrapper
+  galculator:
+    source: https://github.com/galculator/galculator.git
+    plugin: autotools
+    install-via: prefix
+    build-packages:
+      - flex
+      - gettext
+      - intltool
+      - libgtk-3-dev
+      - libpng12-dev
+      - libxml-parser-perl
+    stage-packages:
+      - libglib2.0-0
+      - libgtk-3-0
+      - libpango-1.0-0
+      - libpng12-0
+      - libquadmath0
+      - dconf-gsettings-backend
+      - librsvg2-common
+      - libwmf0.2-7-gtk
+      - libgdk-pixbuf2.0-0
+
+  integration:
+    plugin: nil
+    stage-packages:
+      - dmz-cursor-theme
+      - light-themes
+      - ttf-ubuntu-font-family
+      - ubuntu-mate-icon-themes
+      - ubuntu-mate-themes
+    snap:
+      - usr/share
+      - -usr/share/doc

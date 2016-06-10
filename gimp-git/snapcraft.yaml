@@ -142,6 +142,7 @@ parts:
             - libgs9
             - libgs9-common
             - libgtk2.0-dev
+            - libgtk2.0-bin
             - libgtk2.0-doc
             - libgudev-1.0-dev
             - libidn11-dev
@@ -177,7 +178,6 @@ parts:
             - pkg-config
             - poppler-data
             - python-cairo-dev
-            - python-dev            # ?
             - python-gobject-2
             - python-gobject-2-dev
             - python-gtk2-dev

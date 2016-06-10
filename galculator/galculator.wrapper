@@ -52,7 +52,7 @@ mkdir -p $XDG_CACHE_HOME
 export GI_TYPELIB_PATH=$SNAP/usr/lib/$ARCH/girepository-1.0:$SNAP/usr/lib/girepository-1.0
 
 # Not good, needed for fontconfig and themes
-#ln -sf $SNAP/usr/share/{fontconfig,fonts,fonts-*,themes} $XDG_DATA_HOME
+ln -sf $SNAP/usr/share/{fontconfig,fonts,fonts-*,themes} $XDG_DATA_HOME
 
 # Gio modules and cache
 export GIO_MODULE_DIR=$XDG_CACHE_HOME/gio-modules

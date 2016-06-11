@@ -15,3 +15,4 @@ Known issues:
  - the theming is not the same as the other system apps.
  - the giomodule and gschemas files were copied from an ubuntu classic system,
    because they are generated after the deb is installed.
+ - I don't understand why it needs libqt4-dev to find qt5-core in cmake.

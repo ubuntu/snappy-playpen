@@ -17,6 +17,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `gimp-git`         |                           |
 | :white_check_mark:  | `galculator`       |                           |
 | :red_circle:        | `heroku`           |                           |
+| :red_circle:        | 'imagemagick7-git' |                           |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
 | :white_check_mark:  | `minetest`         |                           |

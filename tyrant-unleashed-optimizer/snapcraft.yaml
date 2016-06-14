@@ -6,6 +6,8 @@ description: |
   card deck for certain raids, or temporary buffs as well as growth planning in
   general.
 
+confinement: strict
+
 apps:
   sim:
     command: usr/bin/tuo.exe

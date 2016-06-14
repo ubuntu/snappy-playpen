@@ -15,4 +15,4 @@ Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail client.
 
 ## Current state of the Snap
 
-Nothing yet...
+It should be working fine

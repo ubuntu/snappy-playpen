@@ -1,0 +1,40 @@
+name: sylpheed
+version: daily
+summary: lightweight and user-friendly e-mail client
+description: Sylpheed is a simple, lightweight but featureful, and easy-to-use e-mail client.
+confinement: devmode
+
+apps:
+    sylpheed:
+        command: bin/sylpheed
+        plugs: [home, network, unity7]
+
+parts:
+    sylpheed:
+        plugin: autotools
+        source: svn://sylpheed.sraoss.jp/sylpheed/trunk
+        source-type: subversion
+        build-packages:
+         - debhelper
+         - libcompfaceg1-dev
+         - libglib2.0-dev
+         - libgtk2.0-dev
+         - libpng-dev
+         - libgpgme11-dev
+         - libssl-dev
+         - libpisock-dev
+         - libldap2-dev
+         - flex
+         - bison
+         - gettext
+         - libreadline6-dev
+         - libgtkspell-dev
+         - libonig-dev
+         - libenchant-dev
+         - libdbus-glib-1-dev
+         - dh-autoreconf
+         - automake1.11
+        stage-packages:
+         - xfonts-100dpi
+         - aspell-en
+         - ca-certificates

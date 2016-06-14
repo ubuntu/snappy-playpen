@@ -14,30 +14,37 @@ confinement: devmode  # use "strict" to enforce system access only via declared 
 apps:
     animate:
         command: animate
+        plugs: [ home, unity7, x11 ]
     compare:
         command: compare
+        plugs: [ home, unity7, x11 ]
     composite:
         command: composite
+        plugs: [ home, unity7, x11 ]
     conjure:
         command: conjure
+        plugs: [ home, unity7, x11 ]
     convert:
         command: convert
+        plugs: [ home, unity7, x11 ]
     display:
         command: display
+        plugs: [ home, unity7, x11 ]
     identify:
         command: identify
+        plugs: [ home, unity7, x11 ]
     import:
         command: import
-    magick:
-        command: magick
-    magick-stream:
-        command: magick-stream
+        plugs: [ home, unity7, x11 ]
     mogrify:
         command: mogrify
+        plugs: [ home, unity7, x11 ]
     montage:
         command: montage
+        plugs: [ home, unity7, x11 ]
     stream:
         command: stream
+        plugs: [ home, unity7, x11 ]
 
 parts:
     imagemagick:

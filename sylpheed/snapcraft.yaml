@@ -23,7 +23,7 @@ parts:
          - libcompfaceg1-dev
          - libglib2.0-dev
          - libgtk2.0-dev
-         - libpng-dev
+         - libpng12-dev
          - libgpgme11-dev
          - libssl-dev
          - libpisock-dev

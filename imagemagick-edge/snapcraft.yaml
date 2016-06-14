@@ -1,0 +1,94 @@
+name: imagemagick-edge
+version: 7.0.2~git
+summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
+description: |
+    ImageMagick can read and write images in a variety of formats (over 200)
+    including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF,
+    and SVG.  Use ImageMagick to resize, flip, mirror, rotate, distort, shear
+    and transform images, adjust image colors, apply various special effects,
+    or draw text, lines, polygons, ellipses and Bézier curves.
+
+    This snap is a kitchen-sink, every-option build.
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+    animate:
+        command: animate
+    compare:
+        command: compare
+    composite:
+        command: composite
+    conjure:
+        command: conjure
+    convert:
+        command: convert
+    display:
+        command: display
+    identify:
+        command: identify
+    import:
+        command: import
+    magick:
+        command: magick
+    magick-script:
+        command: magick-script
+    mogrify:
+        command: mogrify
+    montage:
+        command: montage
+    stream:
+        command: stream
+
+parts:
+    imagemagick:
+        plugin: autotools
+        source: git://github.com/ImageMagick/ImageMagick
+        source-type: git
+        configflags:
+            - --enable-hdri=yes
+            - --enable-shared=yes
+            - --enable-static=yes
+            - --with-autotrace=yes
+            - --with-dps=no
+            - --with-dps=yes
+            - --with-flif=no
+            - --with-fpx=no
+            - --with-gnu-ld=yes
+            - --with-gslib=yes
+            - --with-modules=no
+            - --with-perl=yes
+            - --with-quantum-depth=32
+            - --with-raqm=no
+            - --with-rsvg=yes
+        build-packages:
+            - autoconf
+            - build-essential
+            - fftw-dev
+            - libautotrace-dev
+            - libbz2-dev
+            - libdjvulibre-dev
+            - libfftw3-dev
+            - libfontconfig1-dev
+            - libfreetype6-dev
+            - libgs-dev
+            - libgvc6
+            - libjbig-dev
+            - libjpeg-dev
+            - liblcms2-dev
+            - liblqr-1-0-dev
+            - libltdl-dev
+            - libltdl7
+            - libmagick++-dev
+            - libopenexr-dev
+            - libopenjp2-7-dev
+            - libpango1.0-dev
+            - libperl-dev
+            - libpng12-dev
+            - librsvg2-dev
+            - libtiff5-dev
+            - libwebp-dev
+            - libwmf-dev
+            - libx11-dev
+            - lzma-dev
+            - perlmagick
+            - zlib1g-dev

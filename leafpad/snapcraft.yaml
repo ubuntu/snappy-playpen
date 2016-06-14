@@ -9,7 +9,7 @@ confinement: devmode
 
 apps:
   leafpad:
-    command: usr/bin/leafpad.wrapper
+    command: gtk-launch leafpad
     plugs: [home, unity7, opengl, network, x11]
 
 parts:
@@ -19,12 +19,7 @@ parts:
     source-type: git
     snap:
       - -usr/share/doc
-  env:
-    plugin: copy
-    files:
-      leafpad.wrapper: usr/bin/leafpad.wrapper
-      gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
-      loaders.cache: usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache
+    after: [gtkconf]
     stage-packages:
       - fontconfig-config
 

@@ -24,12 +24,16 @@ apps:
         command: convert
     display:
         command: display
-    mogrify:
-        command: mogrify
     identify:
         command: identify
     import:
         command: import
+    magick:
+        command: magick
+    magick-stream:
+        command: magick-stream
+    mogrify:
+        command: mogrify
     montage:
         command: montage
     stream:

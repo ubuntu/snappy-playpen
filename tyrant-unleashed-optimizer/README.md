@@ -10,11 +10,21 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - all WIP
+ - updating local card database
+ - simulating fights
 
 Known issues:
   - the home plug needs to be connected manually after snap install with
     "sudo snap connect tyrant-unleashed-optimizer:home ubuntu-core:home"
+  - you can run all inside /tmp without connecting
+
+Invocation-Card-Update:
+  - Note: if you don't have a "data" dir yet you have to create one via ``mkdir data``
+  - tyrant-unleashed-optimizer.updatexml
+
+Invocation-SIM:
+  - Note: as usual with tuo you have to run this where you have your data/ dir.
+  - tyrant-unleashed-optimizer.sim "Lord Silus, Extreme Barrager #2" "Lord Silus, Atomic Wardriver #2" sim 100
 
 TODO:
  -

@@ -6,10 +6,14 @@ confinement: devmode
 
 apps:
     sylpheed:
-        command: bin/sylpheed
+        command: sylpheed.wrapper
         plugs: [home, network, unity7]
 
 parts:
+    wrapper:
+        plugin: copy
+        files:
+          sylpheed.wrapper: sylpheed.wrapper
     sylpheed:
         plugin: autotools
         source: svn://sylpheed.sraoss.jp/sylpheed/trunk
@@ -38,3 +42,8 @@ parts:
          - xfonts-100dpi
          - aspell-en
          - ca-certificates
+         - curl
+         - libgtk-3-0
+         - libpng12-0
+         - libgdk-pixbuf2.0-0
+         - libglib2.0-0

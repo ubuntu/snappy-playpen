@@ -16,11 +16,13 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `ffmpeg`           |                           |
 | :white_check_mark:  | `galculator`       |                           |
 | :red_circle:        | `heroku`           |                           |
-| :red_circle:        | `imagemagick7-git` |                           |
+| :white_check_mark:  | `imagemagick6-stable`|                         |
+| :red_circle:        | `imagemagick7-git  |                           |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
 | :white_check_mark:  | `minetest`         |                           |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
+| :white_check_mark:  | `mpv`              |                           |
 | :red_circle:        | `openjdk-demo`     |                           |
 | :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
@@ -28,6 +30,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
 | :white_check_mark:  | `tinyproxy`        |                           |
+| :white_check_mark:  | `tyrant-unleashed-optimizer` |                 |
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |

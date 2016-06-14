@@ -1,0 +1,66 @@
+name: mpv
+version: "0.17.0~git"
+summary: Tools for transcoding, streaming and playing of multimedia files
+description: Video player based on MPlayer/mplayer2
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ Changes from mplayer2 to mpv include;
+  * Removal of lots of unneeded code to encourage developer activity
+  * Better OSD rendering
+  * Cleaned up terminal output
+  * Improved OpenGL output
+  * Encoding functionality (replacement for mencoder)
+  * Wayland support
+  * Support for playing URLs of popular streaming sites
+  * Screenshot improvements
+
+apps:
+  mpv:
+    command: mpv
+    plugs: [network, home, opengl]
+
+parts:
+  launcher:
+    plugin: copy
+    files:
+      mpv: bin/mpv
+  mpv:
+    plugin: waf
+    source: https://github.com/mpv-player/mpv.git
+    source-type: git
+    after: [ffmpeg]
+    stage-packages:
+      - libgl1-mesa-dri
+  ffmpeg:
+    plugin: autotools
+    configflags: [--disable-ffplay, --disable-ffserver, --disable-ffprobe, --enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libvorbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
+    source: git://source.ffmpeg.org/ffmpeg.git
+    source-type: git
+    build-packages:
+      - git
+      - g++
+      - make
+      - yasm
+      - autoconf
+      - libtool
+      - cmake
+      - pkg-config
+      - automake
+      - build-essential
+      - libass-dev
+      - libfreetype6-dev
+      - libsdl1.2-dev
+      - libtheora-dev
+      - libva-dev
+      - libvdpau-dev
+      - libvorbis-dev
+      - libxcb1-dev
+      - libxcb-shm0-dev
+      - libxcb-xfixes0-dev
+      - texinfo
+      - zlib1g-dev
+      - libx264-dev
+      - libmp3lame-dev
+      - libopus-dev
+      - libx265-dev
+      - libvpx-dev

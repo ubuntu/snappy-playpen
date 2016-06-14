@@ -40,9 +40,5 @@ class TUOMake(snapcraft.BasePlugin):
         targetdir = self.installdir+'/usr/bin'
         LOG.info("TUOMake: Fake install")
         self.run(['cp', 'tuo.exe', targetdir])
-        LOG.info("TUOMake: Provide daily card data")
-        self.run(['./update_xml.sh'])
-        carddir = self.installdir+'/usr/share/tou/'
-        self.run(['mkdir', '-p', carddir])
-        self.run(['cp', '-a', 'data', carddir])
+        self.run(['cp', 'update_xml.sh', targetdir])
         LOG.info("TUOMake: Finished")

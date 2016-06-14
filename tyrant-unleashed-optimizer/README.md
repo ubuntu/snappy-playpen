@@ -29,4 +29,4 @@ Invocation-SIM:
   - tyrant-unleashed-optimizer.sim "Lord Silus, Extreme Barrager #2" "Lord Silus, Atomic Wardriver #2" sim 100
 
 TODO:
- -
+ - get to reduce snap to the bare minimum (so far fails for .so files if done the trivial way)

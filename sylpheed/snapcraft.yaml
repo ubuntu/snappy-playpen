@@ -6,14 +6,10 @@ confinement: devmode
 
 apps:
     sylpheed:
-        command: sylpheed.wrapper
+        command: gtk-launch sylpheed
         plugs: [home, network, unity7]
 
 parts:
-    wrapper:
-        plugin: copy
-        files:
-          sylpheed.wrapper: sylpheed.wrapper
     sylpheed:
         plugin: autotools
         source: svn://sylpheed.sraoss.jp/sylpheed/trunk
@@ -47,3 +43,4 @@ parts:
          - libpng12-0
          - libgdk-pixbuf2.0-0
          - libglib2.0-0
+        after: [gtkconf]

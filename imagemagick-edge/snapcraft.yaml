@@ -1,4 +1,4 @@
-name: imagemagick
+name: imagemagick-edge
 version: 7.0.2~git
 summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
 description: |
@@ -12,8 +12,32 @@ description: |
 confinement: devmode  # use "strict" to enforce system access only via declared interfaces
 
 apps:
-    imagemagick:
+    animate:
+        command: animate
+    compare:
+        command: compare
+    composite:
+        command: composite
+    conjure:
+        command: conjure
+    convert:
+        command: convert
+    display:
+        command: display
+    identify:
+        command: identify
+    import:
+        command: import
+    magick:
         command: magick
+    magick-script:
+        command: magick-script
+    mogrify:
+        command: mogrify
+    montage:
+        command: montage
+    stream:
+        command: stream
 
 parts:
     imagemagick:
@@ -25,17 +49,20 @@ parts:
             - --enable-shared=yes
             - --enable-static=yes
             - --with-autotrace=yes
+            - --with-dps=no
             - --with-dps=yes
+            - --with-flif=no
             - --with-fpx=no
             - --with-gnu-ld=yes
             - --with-gslib=yes
             - --with-modules=no
+            - --with-perl=yes
             - --with-quantum-depth=32
+            - --with-raqm=no
             - --with-rsvg=yes
         build-packages:
             - autoconf
             - build-essential
-            - dpsyco-devel
             - fftw-dev
             - libautotrace-dev
             - libbz2-dev
@@ -50,10 +77,12 @@ parts:
             - liblcms2-dev
             - liblqr-1-0-dev
             - libltdl-dev
+            - libltdl7
             - libmagick++-dev
             - libopenexr-dev
             - libopenjp2-7-dev
             - libpango1.0-dev
+            - libperl-dev
             - libpng12-dev
             - librsvg2-dev
             - libtiff5-dev

@@ -27,6 +27,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
 | :white_check_mark:  | `tinyproxy`        |                           |
+| :white_check_mark:  | `tyrant-unleashed-optimizer` |                 |
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |

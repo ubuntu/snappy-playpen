@@ -9,7 +9,7 @@ confinement: devmode
 
 apps:
   ristretto:
-    command: usr/bin/ristretto.wrapper
+    command: gtk-launch ristretto
     plugs: [home, network, unity7, x11]
 
 parts:
@@ -19,10 +19,15 @@ parts:
     plugin: autotools
     configflags:
       - --enable-maintainer-mode  # so src/marshal.h gets generated
-  env:
-    plugin: copy
-    files:
-      wrapper: usr/bin/ristretto.wrapper
+    build-packages:
+      - exo-utils
+      - libdbus-glib-1-dev
+      - libexif-dev
+      - libexo-1-dev
+      - libgtk2.0-dev
+      - libxfce4ui-1-dev
+      - intltool
+      - xfce4-dev-tools
     stage-packages:
       - fontconfig-config
       - fonts-freefont-ttf
@@ -31,13 +36,4 @@ parts:
       - libgtk2.0-bin
       - shared-mime-info
       - tumbler
-
-build-packages:
-  - exo-utils
-  - libdbus-glib-1-dev
-  - libexif-dev
-  - libexo-1-dev
-  - libgtk2.0-dev
-  - libxfce4ui-1-dev
-  - intltool
-  - xfce4-dev-tools
+    after: [gtkconf]

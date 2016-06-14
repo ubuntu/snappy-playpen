@@ -3,7 +3,7 @@
 This project creates a working snap of `ristretto`.
 
 To get this done, we need to do the following:
- - add custom launcher
+ - use gtk-launch wiki part
  - build from current git
  - run using `--devmode`
 

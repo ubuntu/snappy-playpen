@@ -10,7 +10,7 @@ Etherpad-lite
 
 This project is about creating a snap of etherpad-lite, a coillaborative text-editor.
 
-To talk and collaborate, you can join the Telegram group [Etherpad-lite-Playpen-Snappy][1]
+To talk and collaborate, you can join the Telegram group [Etherpad-lite-Playpen-Snappy][1] or on the gitter room [Winael/snappy-playpen_etherpad-lite][2]
 
 Status
 ------
@@ -40,7 +40,7 @@ Roadmap
 Original documentation
 ----------------------
 
-The original documentation about how to install Etherpad could be find [here][2]
+The original documentation about how to install Etherpad could be find [here][3]
 
 Architecture
 ------------
@@ -96,4 +96,5 @@ So basically, the interfaces needed are :
 ````
 
 [1]: https://telegram.me/EtherpadLitePlaypenSnappy
-[2]: https://github.com/ether/etherpad-lite#installation
+[2]: https://gitter.im/Winael/snappy-playpen_etherpad-lite
+[3]: https://github.com/ether/etherpad-lite#installation

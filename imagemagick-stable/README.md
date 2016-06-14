@@ -16,10 +16,11 @@ To get this done, we need to do the following:
 Working features:
  - Builds the `snap` of IM6 and provides access to all tools through
    `imagemagick-stable.<tool>`
- - The main CLI tools (`convert`, `conjure`, `mogrify`, `identify`, etc)
 
 Known issues:
-  - Tried to get `animate` to do something, and it just gave an error
+ - The main CLI tools (`convert`, `conjure`, `mogrify`, `identify`, etc)
+   seem like they work in a no-op situation, but default unconfigured
+   security permissions just block any reading of files
 
 TODO:
  - Security profile

@@ -23,6 +23,14 @@ parts:
     source: https://github.com/andor9/tyrant_optimize.git
     source-type: git
     stage-packages: [git]
-    build-packages: [g++, make, build-essential, libboost1.58-dev]
+    build-packages:
+      - g++
+      - make
+      - build-essential
+      - libboost1.58-dev
+      - libboost-system1.58-dev
+      - libboost-thread1.58-dev
+      - libboost-filesystem1.58-dev
+      - libboost-regex1.58-dev
     stage-packages:
       - curl

@@ -4,8 +4,10 @@ This project creates a working snap of tyrant-unleashed-optimizer (tuo)
 
 To get this done, we need to do the following:
  - build from current git
- - fetch and provide some initial data in the snap (out of tree)
- - add a basic cardlist data as parts
+
+One can see this as easy example for:
+ - multiple commands in one snap (with different plugs for isolation)
+ - to use a custom plugin to fixup shortcomings in build systems
 
 ## Current state
 

@@ -17,10 +17,11 @@ To get this done, we need to do the following:
 Working features:
  - Builds the `snap` of IM6 and provides access to all tools through
    `imagemagick-edge.<tool>`
- - The main CLI tools (`convert`, `conjure`, `mogrify`, `identify`, etc)
 
 Known issues:
- - Tried to get `animate` to do something, and it just gave an error
+ - The main CLI tools (`convert`, `conjure`, `mogrify`, `identify`, etc)
+   can't access any files at all, the unconfigured security profile blocks
+   the process reading any files at all
 
 TODO:
  - Security profile

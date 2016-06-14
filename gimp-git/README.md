@@ -12,8 +12,9 @@ from the git repositories.
 
   Getting very close with `snapcraft build`, legitimately all the way
   through to building `gimp` itself, which continues to fail in
-  a `cleanbuild` on the `libmypaint >= 1.3.0` dependency. Could be build
-  order
+  a `cleanbuild` on the `libmypaint >= 1.3.0` and `gegl-0.3 >=0.3.6`
+  dependencies. Build breaks much earlier on the host machine, best luck
+  in a `$ snapcraft cleanbuild`.
 
 ---
 

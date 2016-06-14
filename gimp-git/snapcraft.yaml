@@ -1,6 +1,6 @@
 name: gimp-git
 version: 2.9.3~git
-#licence: $SNAP/gimp/src/LICENCE.txt
+license: parts/gimp/build/src/LICENSE.txt
 summary: GNU Image Manipulation Program - www.gimp.org
 description: |
     A freely distributed program for such tasks as photo retouching, image
@@ -16,26 +16,7 @@ apps:
         command: gimp-git
 
 parts:
-    #glib:
-        #plugin: autotools
-        ##configflags:
-        ##filesets:
-        #source: git://git.gnome.org/glib
-        #source-type: git
-        #build-packages:
-            #- build-essential
-
-    #gdk-pixbuf:
-        #plugin: autotools
-        ##configflags:
-        ##filesets:
-        #source: git://git.gnome.org/gdk-pixbuf
-        #source-type: git
-        #build-packages:
-            #- build-essential
-
     babl: 
-    #after: [ gdk-pixbuf ]
         plugin: autotools
         configflags: [ --disable-docs, --disable-shared ]
         #filesets:
@@ -73,10 +54,10 @@ parts:
             - libjpeg-dev
             - libjson-glib-dev
             - liblensfun-dev
-            - liblua5.1-0-dev       # ? Don't know what version is expected
+            - liblua5.1-0-dev
             - libopenexr-dev
             - libpango1.0-dev
-            - libpng12-dev          # ? Not sure about v1.2 vs v1.6
+            - libpng12-dev
             - libraw-dev
             - librsvg2-dev
             - libsdl1.2-dev
@@ -85,7 +66,7 @@ parts:
             - libtiff5-dev
             - libv4l-dev
             - libwebp-dev
-            - lua5.1                # ?
+            - lua5.1
             - python3-pydot
             - ruby
         #stage-packages:
@@ -157,7 +138,7 @@ parts:
             - libpango1.0-dev
             - libpaper-dev
             - libpaper1
-            - libpng12-dev          # ? Not sure about v1.2 vs v1.6
+            - libpng12-dev
             - libpoppler-dev
             - libpoppler-glib-dev
             - libpoppler-glib8
@@ -201,6 +182,6 @@ parts:
             - intltool
             - libjson-c-dev
             - liblcms2-dev
-            - libpng12-dev          # ? Not sure about v1.2 vs v1.6
+            - libpng12-dev
             - librsvg2-dev
             - python-gi

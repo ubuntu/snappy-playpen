@@ -13,10 +13,12 @@ This project currently includes the following snaps:
 | ------------------- | ------------------ | ------------------------- |
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
 | :white_check_mark:  | `dosbox`           |                           |
+| :white_check_mark:  | `consul`           |                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
 | :white_check_mark:  | `galculator`       |                           |
 | :red_circle:        | `heroku`           |                           |
 | :red_circle:        | `imagemagick6-stable`|                         |
+| :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
 | :white_check_mark:  | `minetest`         |                           |
@@ -36,6 +38,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev

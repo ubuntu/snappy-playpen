@@ -1,4 +1,4 @@
-name: imagemagick-stable
+name: imagemagick-edge
 version: 7.0.2~git
 summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
 description: |

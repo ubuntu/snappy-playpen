@@ -1,10 +1,5 @@
-<<<<<<< HEAD:imagemagick-edge/snapcraft.yaml
-name: imagemagick-edge
-version: 7.0.2~git
-=======
 name: imagemagick-stable
 version: 6.9.7
->>>>>>> ddb719ede8d95bd9e1362f9dd91033c1581ffb5c:imagemagick-stable/snapcraft.yaml
 summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
 description: |
     ImageMagick can read and write images in a variety of formats (over 200)

@@ -50,7 +50,14 @@ The components are listed in build order.
   * pluma                       [ BUILDS ]
   * python-caja
 
-## Conflict
+## FTBFS
+
+### libmatekbd
+
+Can't find `libmatedesktop-2.0`, complete error message will be added here in 
+due course.
+
+## Conflicts
 
 ### mate-icon-theme
 

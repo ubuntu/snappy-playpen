@@ -60,4 +60,5 @@ parts:
          - gstreamer1.0-plugins-good
          - libgtk-3-0
          - libxss-dev
+         - gnome-keyring
         after: [gtkconf]

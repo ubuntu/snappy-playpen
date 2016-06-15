@@ -1,5 +1,5 @@
 name: mate-desktop
-version: 1.15
+version: 1.15.0~git
 summary: MATE Desktop Environment
 description: |
    The MATE Desktop Environment is the continuation of GNOME 2. It
@@ -10,24 +10,41 @@ description: |
 confinement: devmode
 
 apps:
+  # From mate-desktop
   mate-about:
     command: gtk-launch mate-about
     plugs:
       - home
       - x11
 
+  # From mate-desktop
+  mate-color-select:
+    command: gtk-launch mate-color-select
+    plugs:
+      - home
+      - x11
+
+  # From mate-system-monitor
+  mate-system-monitor:
+    command: gtk-launch mate-system-monitor
+    plugs:
+      - home
+      - network
+      - x11
+
+  # From pluma
   pluma:
     command: gtk-launch pluma
     plugs:
       - home
       - x11
 
-build-packages:
-  - gettext
-  - gtk-doc-tools
-  - intltool
-  - libtool
-  - pkg-config
+#build-packages:
+#  - gettext
+#  - gtk-doc-tools
+#  - intltool
+#  - libtool
+#  - pkg-config
 
 parts:
   mate-common:
@@ -86,24 +103,129 @@ parts:
     stage-packages:
       - yelp
 
-  libmatekbd:
+# Fails to build, see README.md
+#  libmatekbd:
+#    plugin: autotools
+#    source: https://github.com/mate-desktop/libmatekbd.git
+#    after: [ mate-common, mate-desktop, gtkconf ]
+#    configflags:
+#      - --disable-silent-rules
+#      - --disable-static
+#      - --enable-introspection
+#      - --with-gtk=3.0
+#    install-via: prefix
+#    build-packages:
+#      - intltool
+#      - libgirepository1.0-dev
+#      - libglib2.0-dev
+#      - libgtk-3-dev
+#      - libxklavier-dev
+#    stage-packages:
+#      - iso-codes
+#      - libglib2.0-0
+#      - libgtk-3-0
+#      - libxklavier16
+
+  libmatemixer:
     plugin: autotools
-    source: https://github.com/mate-desktop/libmate.git
-    after: [ mate-common, mate-desktop, gtkconf ]
+    source: https://github.com/mate-desktop/libmatemixer.git
+    after: [ mate-common ]
     configflags:
       - --disable-silent-rules
       - --disable-static
-      - --enable-introspection
+      - --enable-gtk-doc
+    install-via: prefix
+    build-packages:
+      - libasound2-dev
+      - libglib2.0-dev
+      - libpulse-dev
+    stage-packages:
+      - iso-codes
+      - libasound2
+      - libglib2.0-0
+      - libpulse0
+
+  libmateweather:
+    plugin: autotools
+    source: https://github.com/mate-desktop/libmateweather.git
+    after: [ mate-common ]
+    configflags:
+      - --disable-schemas-compile
+      - --disable-silent-rules
+      - --disable-static
+      - --enable-gtk-doc
+    install-via: prefix
+    build-packages:
+      - libglib2.0-dev
+      - libgtk-3-dev
+      - libsoup-gnome2.4-dev
+      - libsoup2.4-dev
+      - libxml2-dev
+      - libxml2-utils
+    stage-packages:
+      - libglib2.0-0
+      - libgtk-3-0
+      - libsoup-gnome2.4-1
+      - libsoup2.4-1
+      - libxml2
+
+# Conflicts, see README.md
+#  mate-icon-theme:
+#    plugin: autotools
+#    source: https://github.com/mate-desktop/mate-icon-theme.git
+#    after: [ mate-common ]
+#    install-via: prefix
+#    build-packages:
+#      - gettext
+#      - hicolor-icon-theme
+#      - icon-naming-utils
+#      - intltool
+#      - librsvg2-bin
+#      - pkg-config
+#    stage-packages:
+#      - hicolor-icon-theme
+#      - libgtk2.0-bin
+#      - librsvg2-common
+
+  mate-system-monitor:
+    plugin: autotools
+    source: https://github.com/mate-desktop/mate-system-monitor.git
+    after: [ mate-common, gtkconf ]
+    configflags:
+      - --disable-schemas-compile
+      - --disable-silent-rules
+      - --libexecdir=/usr/lib/mate-system-monitor
+      - --localstatedir=/var
+      - --disable-static
+      - --enable-systemd
       - --with-gtk=3.0
     install-via: prefix
     build-packages:
+      - docbook-to-man
       - intltool
-      - libgirepository1.0-dev
       - libglib2.0-dev
+      - libglibmm-2.4-dev
       - libgtk-3-dev
-      - libxklavier-dev
+      - libgtkmm-3.0-dev
+      - libgtop2-dev
+      - librsvg2-dev
+      - libsystemd-dev
+      - libwnck-3-dev
+      - libxml2-dev
+      - pkg-config
+      - yelp-tools
     stage-packages:
-      - iso-codes
+      - gvfs
+      - libglib2.0-0
+      - libglibmm-2.4-1v5
+      - libgtk-3-0
+      - libgtkmm-3.0-1v5
+      - libgtop2-common
+      - librsvg2-common
+      - libsystemd0
+      - libwnck-3-0
+      - libxml2
+      - yelp
 
   pluma:
     plugin: autotools
@@ -111,10 +233,10 @@ parts:
     after: [ mate-common, mate-desktop, gtkconf ]
     configflags:
       - --disable-python
+      - --disable-schemas-compile
       - --with-gtk=3.0
     install-via: prefix
     build-packages:
-      - gettext
       - gtk-doc-tools
       - intltool
       - iso-codes
@@ -122,22 +244,32 @@ parts:
       - libglib2.0-dev
       - libgtk-3-dev
       - libgtksourceview-3.0-dev
+      - libsm-dev
+      - libx11-dev
       - libxml2-dev
       - yelp-tools
     stage-packages:
       - dconf-gsettings-backend
       - iso-codes
+      - libenchant1c2a
       - libglib2.0-0
       - libgtk-3-0
+      - libgtksourceview-3.0-1
       - libpango-1.0-0
       - libgdk-pixbuf2.0-0
+      - libsm6
+      - libx11-6
+      - libxml2
+      - yelp
       - zenity
 
   integration:
     plugin: nil
+    after: [ pluma, mate-system-monitor ]
     stage-packages:
       - dmz-cursor-theme
       - light-themes
+      - mate-icon-theme
       - ttf-ubuntu-font-family
       - ubuntu-mate-default-settings
       - ubuntu-mate-icon-themes

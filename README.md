@@ -27,7 +27,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `openjdk-demo`     |                           |
 | :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
-| :white_check_mark:  | `pidgin`           |                           |
+| :red_circle:        | `pidgin`           |                           |
 | :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |

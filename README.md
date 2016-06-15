@@ -18,7 +18,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `galculator`       |                           |
 | :red_circle:        | `heroku`           |                           |
 | :white_check_mark:  | `imagemagick6-stable`|                         |
-| :red_circle:        | `imagemagick7-git  |                           |
+| :red_circle:        | `imagemagick7-git` |                           |
 | :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |

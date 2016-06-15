@@ -9,7 +9,7 @@ description: |
     or draw text, lines, polygons, ellipses and Bézier curves.
 
     This snap is a kitchen-sink, every-option build of the current version of IM7.
-confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+confinement: devmode
 
 apps:
     animate:
@@ -62,12 +62,18 @@ parts:
             - --enable-shared=yes
             - --enable-static=yes
             - --with-autotrace=yes
-            - --with-fpx=no
             - --with-gnu-ld=yes
             - --with-gslib=yes
-            - --with-modules=no
+            - --with-perl=yes
             - --with-quantum-depth=32
             - --with-rsvg=yes
+            - --with-dps=no
+            - --with-dps=no
+            - --with-flif=no
+            - --with-fpx=no
+            - --with-ldtl=no
+            - --with-modules=no
+            - --with-raqm=no
         build-packages:
             - autoconf
             - build-essential

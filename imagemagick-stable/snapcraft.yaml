@@ -9,7 +9,7 @@ description: |
     or draw text, lines, polygons, ellipses and Bézier curves.
 
     This snap is a kitchen-sink, every-option build of the current version of IM6.
-confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+confinement: devmode
 
 apps:
     animate:

@@ -14,7 +14,7 @@ parts:
         plugin: autotools
         source: https://bitbucket.org/pidgin/main
         source-type: hg
-        configflags: [--disable-plugins]
+        configflags: [--disable-plugins, --disable-kwallet]
         build-packages:
          - libtool
          - libgtk2.0-dev
@@ -53,7 +53,6 @@ parts:
          - libjson-glib-dev
          - libgnome-keyring-dev
          - g++
-         - libqt4-dev
         stage-packages:
          - gstreamer1.0-alsa
          - gstreamer1.0-libav

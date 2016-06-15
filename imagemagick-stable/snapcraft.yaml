@@ -56,20 +56,18 @@ parts:
             - --enable-shared=yes
             - --enable-static=yes
             - --with-autotrace=yes
-<<<<<<< HEAD:imagemagick-edge/snapcraft.yaml
-            - --with-dps=no
-            - --with-dps=yes
-            - --with-flif=no
-=======
->>>>>>> ddb719ede8d95bd9e1362f9dd91033c1581ffb5c:imagemagick-stable/snapcraft.yaml
-            - --with-fpx=no
             - --with-gnu-ld=yes
             - --with-gslib=yes
-            - --with-modules=no
             - --with-perl=yes
             - --with-quantum-depth=32
-            - --with-raqm=no
             - --with-rsvg=yes
+            - --with-dps=no
+            - --with-dps=no
+            - --with-flif=no
+            - --with-fpx=no
+            - --with-ldtl=no
+            - --with-modules=no
+            - --with-raqm=no
         build-packages:
             - autoconf
             - build-essential

@@ -1,25 +1,23 @@
 # MATE Desktop snap
 
-This project attempts to create a working snap of the complete MATE Desktop
-environment. The initial objective is to get just the main applications
+This project attempts to create a working snap of the complete MATE Desktop 
+environment. The initial objective is to get just the main applications 
 running.
+
+This is a multi-part snap because the MATE packages in the Xenial archive are 
+built against GTK2 and I want to test MATE git master built against GTK3.
 
 ## Current state
 
 The components are listed in build order.
 
-Bits that build:
-
-  * mate-common
-  * mate-desktop
-  * mate-user-guide
-
-Bit to build:
-
-  * libmatekbd (currently fails)
-  * libmatemixer
+  * mate-common                 [ BUILDS ]
+  * mate-desktop                [ BUILDS ]
+  * mate-user-guide             [ BUILDS ]
+  * libmatekbd                  [ FAILS ]
+  * libmatemixer                [ BUILDS ]
   * libmateweather
-  * mate-icon-theme
+  * mate-icon-theme             [ CONFLICTS ]
   * caja
   * mate-polkit
   * marco
@@ -49,5 +47,13 @@ Bit to build:
   * mate-user-share
   * mate-utils
   * mozo
-  * pluma
+  * pluma                       [ BUILDS ]
   * python-caja
+
+## Conflict
+
+### mate-icon-theme
+
+    Parts 'mate-user-guide' and 'mate-icon-theme' have the following file
+    paths in common which have different contents: usr/sbin/update-icon-
+    caches

@@ -53,6 +53,7 @@ parts:
          - libjson-glib-dev
          - libgnome-keyring-dev
          - g++
+         - libqt4-dev
         stage-packages:
          - gstreamer1.0-alsa
          - gstreamer1.0-libav

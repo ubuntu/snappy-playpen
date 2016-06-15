@@ -19,7 +19,10 @@ parts:
         source: https://github.com/TeXworks/texworks.git
         source-type: git
         build-packages:
+          - build-essential
           - libpoppler-qt4-dev
+          - libpoppler-dev
+          - libfontconfig1-dev
           - libhunspell-dev
           - libdbus-1-dev
           - liblua5.1-0-dev

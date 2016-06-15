@@ -52,6 +52,7 @@ parts:
          - kdelibs-bin
          - libjson-glib-1.0-0
          - libjson-glib-dev
+         - gnome-keyring
         stage-packages:
          - gstreamer1.0-alsa
          - gstreamer1.0-libav

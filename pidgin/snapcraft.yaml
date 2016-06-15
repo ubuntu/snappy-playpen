@@ -1,0 +1,67 @@
+name: pidgin
+version: daily
+summary: graphical multi-protocol instant messaging client for X
+description: Pidgin is a graphical, modular instant messaging client capable of using multiple networks at once.
+confinement: devmode
+
+apps:
+    pidgin:
+        command: gtk-launch bin/pidgin
+        plugs: [home, dbus, network, network-bind, x11, unity7, opengl]
+
+parts:
+    pidgin:
+        plugin: autotools
+        source: https://bitbucket.org/pidgin/main
+        source-type: hg
+        configflags: [--disable-plugins]
+        build-packages:
+         - cdbs
+         - debhelper
+         - intltool
+         - libtool
+         - dpkg-dev
+         - hardening-wrapper
+         - libgtk2.0-dev
+         - libxss-dev
+         - libmeanwhile-dev
+         - libnss3-dev
+         - tcl-dev
+         - tk-dev
+         - libgstreamer1.0-dev
+         - libgtkspell-dev
+         - libltdl-dev
+         - libperl-dev
+         - libstartup-notification0-dev
+         - libzephyr-dev
+         - libxml2-dev
+         - libdbus-glib-1-dev
+         - dbus
+         - python3
+         - libavahi-client-dev
+         - libavahi-glib-dev
+         - libxml-parser-perl
+         - libncursesw5-dev
+         - libsasl2-dev
+         - xsltproc
+         - doxygen
+         - libfarstream-0.2-dev
+         - libgstreamer-plugins-base1.0-dev
+         - network-manager-dev
+         - libsqlite3-dev
+         - libidn11-dev
+         - ca-certificates
+         - dh-autoreconf
+         - libmessaging-menu-dev
+         - libunity-dev
+         - libgtk-3-dev
+         - libwebkitgtk-3.0-dev
+         - gtk-doc-tools
+        stage-packages:
+         - gstreamer1.0-alsa
+         - gstreamer1.0-libav
+         - gstreamer1.0-plugins-base
+         - gstreamer1.0-plugins-good
+         - libgtk-3-0
+         - libxss-dev
+        after: [gtkconf]

@@ -22,6 +22,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
+| :red_circle:        | `mate-deskop`      |                           |
 | :white_check_mark:  | `minetest`         |                           |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
 | :white_check_mark:  | `mpv`              |                           |

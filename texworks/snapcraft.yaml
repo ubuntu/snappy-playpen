@@ -2,7 +2,7 @@ name: texworks
 version: git
 summary: TeXworks 
 description: TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents, with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean, simple interface accessible to casual and non-technical users.
-confinement: strict
+confinement: devmode
 
 apps:
   texworks:
@@ -10,34 +10,47 @@ apps:
     plugs: [home, x11, unity7]
 
 parts:
-    qt4conf:
-        build-packages: [dpkg-dev]
-        plugin: make
-        source: https://github.com/kyrofa/qt4conf.git
-    texworks:
-        plugin: cmake
-        source: https://github.com/TeXworks/texworks.git
-        source-type: git
-        build-packages:
-          - build-essential
-          - libpoppler-qt4-dev
-          - libpoppler-dev
-          - libfontconfig1-dev
-          - libhunspell-dev
-          - libdbus-1-dev
-          - liblua5.1-0-dev
-          - zlib1g-dev
-        stage-packages:
-          - libc6
-          - libgcc1
-          - libhunspell-1.3-0
-          - libpoppler-qt4-4
-          - libqt4-dbus
-          - libqt4-script
-          - libqt4-scripttools
-          - libqt4-xml
-          - libqtcore4
-          - libqtgui4
-          - libstdc++6
-          - libsynctex1
-          - fontconfig
+  qt4conf:
+    build-packages: [dpkg-dev]
+    plugin: make
+    source: https://github.com/kyrofa/qt4conf.git
+  texworks:
+    plugin: cmake
+    source: https://github.com/TeXworks/texworks.git
+    source-type: git
+    build-packages:
+      - build-essential
+      - libpoppler-qt4-dev
+      - libpoppler-dev
+      - libfontconfig1-dev
+      - libhunspell-dev
+      - libdbus-1-dev
+      - liblua5.1-0-dev
+      - zlib1g-dev
+    stage-packages:
+      - libc6
+      - libgcc1
+      - libdbus-1-3
+      - liblcms2-2
+      - libpng12-0
+      - libhunspell-1.3-0
+      - libpoppler-qt4-4
+      - libqt4-dbus
+      - libqt4-script
+      - libqt4-scripttools
+      - libqt4-xml
+      - libqtcore4
+      - libqtgui4
+      - libstdc++6
+      - libsynctex1
+      - fontconfig
+      - gsfonts
+      - lmodern
+      - poppler-data
+      - tex-common
+      - texlive-base
+      - texlive-binaries
+      - texlive-latex-base
+      - texlive-latex-base-doc
+    organize:
+      usr/share/texmf: share/texmf

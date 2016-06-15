@@ -1,4 +1,4 @@
-# ScummVM snap
+# TeXworks snap
 
 This project creates a working snap of TeXworks built from git.
 texlive is not included.

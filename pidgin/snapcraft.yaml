@@ -50,6 +50,8 @@ parts:
          - libwebkitgtk-3.0-dev
          - gtk-doc-tools
          - kdelibs-bin
+         - libjson-glib-1.0-0
+         - libjson-glib-dev
         stage-packages:
          - gstreamer1.0-alsa
          - gstreamer1.0-libav

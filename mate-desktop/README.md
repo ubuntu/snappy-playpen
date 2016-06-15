@@ -12,7 +12,7 @@ built against GTK2 and I want to test MATE git master built against GTK3.
 The components are listed in build order.
 
   * mate-common                 [ BUILDS ]
-  * mate-desktop                [ BUILDS ]
+  * mate-desktop                [ EXECUTES ]
   * mate-user-guide             [ BUILDS ]
   * libmatekbd                  [ FAILS ]
   * libmatemixer                [ BUILDS ]
@@ -32,7 +32,7 @@ The components are listed in build order.
   * mate-screensaver
   * mate-media
   * mate-power-manager
-  * mate-system-monitor
+  * mate-system-monitor         [ BUILDS ]
   * atril
   * caja-dropbox
   * caja-extensions

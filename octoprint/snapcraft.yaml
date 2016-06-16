@@ -6,7 +6,7 @@ description: The snappy web interface for your 3D printer
 
 apps:
     octoprint:
-        command: ./usr/bin/octoprint
+        command: octoprint
         daemon: simple
         plugs: [mount-observe, network-bind]
 

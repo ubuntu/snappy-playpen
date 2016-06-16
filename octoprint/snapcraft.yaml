@@ -1,0 +1,18 @@
+name: octoprint
+version: 0.1
+architectures: [all]
+summary: The snappy web interface for your 3D printer
+description: The snappy web interface for your 3D printer
+
+apps:
+    octoprint:
+        command: ./usr/bin/octoprint
+        daemon: simple
+        plugs: [mount-observe, network-bind]
+
+
+parts:
+    octoprint:
+        plugin: python2
+        source: https://github.com/foosel/OctoPrint.git
+        source-type: git

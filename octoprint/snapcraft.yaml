@@ -16,3 +16,6 @@ parts:
         plugin: python2
         source: https://github.com/foosel/OctoPrint.git
         source-type: git
+        build-packages:
+            - python-dev
+            - build-essential

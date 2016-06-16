@@ -14,6 +14,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
 | :white_check_mark:  | `dosbox`           |                           |
 | :white_check_mark:  | `consul`           |                           |
+| :red_circle:        | `deis-workflow-cli`|                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
 | :white_check_mark:  | `galculator`       |                           |
 | :red_circle:        | `heroku`           |                           |

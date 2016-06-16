@@ -62,18 +62,17 @@ parts:
             - --enable-shared=yes
             - --enable-static=yes
             - --with-autotrace=yes
-            - --with-gnu-ld=yes
-            - --with-gslib=yes
-            - --with-perl=yes
-            - --with-quantum-depth=32
-            - --with-rsvg=yes
-            - --with-dps=no
             - --with-dps=no
             - --with-flif=no
             - --with-fpx=no
+            - --with-gnu-ld=yes
+            - --with-gslib=yes
             - --with-ldtl=no
             - --with-modules=no
+            - --with-perl=yes
+            - --with-quantum-depth=32
             - --with-raqm=no
+            - --with-rsvg=yes
         build-packages:
             - autoconf
             - build-essential

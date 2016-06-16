@@ -14,7 +14,15 @@ parts:
     plugin: cmake
     source: https://github.com/stolowski/QComicBook.git
     source-type: git
-    build-packages: [g++, libqt5x11extras5-dev, libpoppler-qt5-dev, libqt5widgets5, libqt5printsupport5, qtbase5-dev, pkg-config]
+    build-packages:
+        - g++
+        - libqt5x11extras5-dev
+        - libpoppler-qt5-dev
+        - libqt5widgets5
+        - libqt5printsupport5
+        - qtbase5-dev
+        - qttools5-dev-tools
+        - pkg-config
     after: [qt5conf-with-gtk]
     stage-packages:
         - rar

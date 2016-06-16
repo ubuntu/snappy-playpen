@@ -12,6 +12,7 @@ This project currently includes the following snaps:
 | State               | App                | Snap name in the store    |
 | ------------------- | ------------------ | ------------------------- |
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
+| :white_check_mark:  | `dcos-cli`         |                           |
 | :white_check_mark:  | `dosbox`           |                           |
 | :white_check_mark:  | `consul`           |                           |
 | :white_check_mark:  | `ffmpeg`           |                           |

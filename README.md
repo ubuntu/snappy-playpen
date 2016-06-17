@@ -30,6 +30,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
 | :red_circle:        | `plank`            |                           |
+| :white_check_mark:  | `podpublish`       |                           |
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
 | :white_check_mark:  | `tinyproxy`        |                           |

@@ -1,0 +1,18 @@
+name: deis-workflow-cli
+version: 2.0.0
+summary: The CLI for Deis Workflow
+description: |
+  deis is a command line utility used to interact with the Deis open source
+  PaaS.
+confinement: devmode
+
+apps:
+  deis:
+    command: bin/workflow-cli
+    plugs: [network]
+
+parts:
+  workflow-cli:
+    plugin: go
+    source: https://github.com/deis/workflow-cli
+    source-type: git

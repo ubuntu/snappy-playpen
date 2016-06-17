@@ -11,16 +11,12 @@ description: |
 
 apps:
   galculator:
-    command: galculator.wrapper
+    command: gtk-launch galculator
     plugs:
       - home
       - x11
 
 parts:
-  wrapper:
-    plugin: copy
-    files:
-      galculator.wrapper: galculator.wrapper
   galculator:
     source: https://github.com/galculator/galculator.git
     plugin: autotools
@@ -42,6 +38,7 @@ parts:
       - librsvg2-common
       - libwmf0.2-7-gtk
       - libgdk-pixbuf2.0-0
+    after: [gtkconf]
 
   integration:
     plugin: nil

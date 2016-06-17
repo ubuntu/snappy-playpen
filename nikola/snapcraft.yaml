@@ -1,0 +1,51 @@
+name: nikola
+version: 7.79-1
+summary: Nikola - Static Site Generator
+description: In goes content, out comes a website, ready to deploy.
+
+apps:
+  nikola:
+    command: usr/bin/python3 $SNAP/usr/bin/nikola
+    plugs: [home, network, network-bind]
+
+parts:
+  nikola:
+    plugin: python3
+    source: https://github.com/getnikola/nikola/archive/v7.7.9.tar.gz
+    source-type: tar
+    build-packages:
+      - build-essential
+      - liblcms2-dev
+      - libfreetype6-dev
+      - libjpeg8-dev
+      - libopenjp2-7-dev
+      - libtiff5-dev
+      - libwebp-dev
+      - libxslt1-dev
+      - libxml2-dev
+      - libyaml-dev
+      - libzmq-dev
+      - zlib1g-dev
+    stage-packages:
+      - liblcms2-2
+      - libfreetype6
+      - libjpeg8
+      - libopenjp2-7
+      - libtiff5
+      - libwebp5
+      - libxslt1.1
+      - libxml2
+      - libyaml-0-2
+      - libzmq5
+      - python3-gdbm
+      - python3-markdown
+      - python3-typogrify
+      - zlib1g
+    snap:
+      - -usr/share/bug
+      - -usr/share/doc
+      - -usr/share/doc-base
+      - -usr/share/fonts
+      - -usr/share/include
+      - -usr/share/man
+      - -usr/share/X11/XErrorDB

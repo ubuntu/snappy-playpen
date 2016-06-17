@@ -1,0 +1,16 @@
+name: iota
+version: 0.1
+summary: Iota is a terminal-based text-editor written in Rust.
+description: Iota is a terminal-based text-editor written in Rust.
+
+apps:
+    iota:
+        command: iota
+
+parts:
+  iota:
+    plugin: rust
+    source-type: git
+    source: https://github.com/gchp/iota.git
+
+

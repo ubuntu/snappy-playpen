@@ -24,6 +24,7 @@ parts:
       - libsdl2-dev
       - qtbase5-dev
       - qttools5-dev 
+      - build-essential
       - libqt5webkit5-dev 
       - qtmultimedia5-dev
       - qtdeclarative5-dev 

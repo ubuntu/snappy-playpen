@@ -1,4 +1,4 @@
-# QDriverStation :red_circle:
+# QDriverStation
 
 This project creates a working snap of the [QDriverStation](https://github.com/WinT-3794/QDriverStation), directly from its Git repository. 
 

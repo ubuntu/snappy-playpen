@@ -2,7 +2,6 @@ name: texworks
 version: git
 summary: TeXworks 
 description: TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents, with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean, simple interface accessible to casual and non-technical users.
-confinement: devmode
 
 apps:
   texworks:
@@ -10,10 +9,6 @@ apps:
     plugs: [home, x11, unity7]
 
 parts:
-  qt4conf:
-    build-packages: [dpkg-dev]
-    plugin: make
-    source: https://github.com/kyrofa/qt4conf.git
   texworks:
     plugin: cmake
     source: https://github.com/TeXworks/texworks.git
@@ -45,12 +40,23 @@ parts:
       - libsynctex1
       - fontconfig
       - gsfonts
-      - lmodern
       - poppler-data
-      - tex-common
-      - texlive-base
-      - texlive-binaries
-      - texlive-latex-base
-      - texlive-latex-base-doc
-    organize:
-      usr/share/texmf: share/texmf
+#      - lmodern
+#      - tex-common
+#      - texlive-base
+#      - texlive-binaries
+#      - texlive-latex-base
+#      - texlive-latex-base-doc
+  texlive:
+    plugin: texlive
+    source: http://ctan.mirror.garr.it/mirrors/CTAN/systems/texlive/Source/texlive-20160520-source.tar.xz
+    source-type: tar
+    build-packages:
+      - libfontconfig1-dev
+      - libx11-dev
+      - libxmu-dev
+      - libxaw7-dev
+#    organize:
+#     usr/share/texmf: share/texmf
+#      usr/share/texlive: share/texlive
+    after: [qt4conf]

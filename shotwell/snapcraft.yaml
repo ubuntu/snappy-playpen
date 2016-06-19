@@ -1,5 +1,5 @@
 name: shotwell
-version: git
+version: 0.23.1
 summary: Shotwell photo manager
 description: Shotwell is a photo manager for GNOME 3.
 confinement: strict
@@ -14,6 +14,7 @@ parts:
     plugin: autotools
     source: git://git.gnome.org/shotwell
     source-type: git
+    source-tag: shotwell-0.23.1
     build-packages:
       - debhelper
       - desktop-file-utils

@@ -18,10 +18,9 @@ apps:
 
 parts:
   tyrant-unleashed-optimizer:
-    plugin: x_toumakefixup
     source: https://github.com/andor9/tyrant_optimize.git
     source-type: git
-    stage-packages: [git]
+    plugin: x_toumakefixup
     build-packages:
       - g++
       - make
@@ -33,3 +32,4 @@ parts:
       - libboost-regex1.58-dev
     stage-packages:
       - curl
+      - git

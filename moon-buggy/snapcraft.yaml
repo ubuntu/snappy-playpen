@@ -16,8 +16,8 @@ parts:
     build-packages:
       - libncurses5-dev
       - texinfo
-    plugin: autotools
     source: https://github.com/sergiusens/moon-buggy
     source-type: git
+    plugin: autotools
     snap:
       - bin/moon-buggy

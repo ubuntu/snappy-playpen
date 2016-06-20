@@ -5,10 +5,11 @@ description: |
   Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono.  After
   installations run the activation command to enable it.
 
-  Activation command: ubuntukylin-icon-theme.enable
+  Activation command 
+  $ ubuntukylin-icon-theme.enable
 
   After that, you should find ubuntukylin-icon-theme-snap in your favourite
-  theme editor (eg.: unity-tweak-tool).
+  theme editor (eg. unity-tweak-tool).
 confinement: devmode
 
 apps:
@@ -34,9 +35,9 @@ apps:
 
 parts:
   theme:
-    plugin: copy_and_edit
     source: lp:ubuntukylin-theme
     source-type: bzr
+    plugin: copy_and_edit
     files:
       ubuntukylin-icon-theme: icon-theme/ubuntukylin-icon-theme-snap
     edit:

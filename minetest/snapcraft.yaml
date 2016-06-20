@@ -19,15 +19,15 @@ parts:
     files:
       minetest: minetest
   minetestgame:
-    plugin: copy
     source: https://github.com/minetest/minetest_game.git
+    plugin: copy
     files:
       '*': 'games/minetest_game/'
   minetest:
-    plugin: cmake
-    configflags: [-DRUN_IN_PLACE=TRUE]
     source: https://github.com/minetest/minetest.git
     source-type: git
+    plugin: cmake
+    configflags: [-DRUN_IN_PLACE=TRUE]
     build-packages:
       - cmake
       - gcc

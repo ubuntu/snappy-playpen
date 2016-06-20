@@ -14,11 +14,10 @@ apps:  # declarative apps come in second place
 
 parts:
   my-part:  # Replace with a part name of your liking
-    # Get more information about plugins by running
+    # Get more information about plugins by running:
     # snapcraft help plugins
-    # and more information about the available plugins
-    # by running
-    # snapcraft list-plugins
+    # and more information about the available plugins by running:
+    # snapcraft list-plugins.
     plugin: nil
     # Lines for yaml files (including description) should be under
     # 80 characters. If more if needed, they should be

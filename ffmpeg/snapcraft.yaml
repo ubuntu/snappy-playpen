@@ -1,5 +1,5 @@
 name: ffmpeg
-version: 3.0~git
+version: "3.0~git"
 summary: Tools for transcoding, streaming and playing of multimedia files
 description: FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
  mux, demux, stream, filter and play pretty much anything that humans and

@@ -25,13 +25,6 @@ parts:
     plugin: copy
     files:
       mpv: bin/mpv
-  mpv:
-    source: https://github.com/mpv-player/mpv.git
-    source-type: git
-    plugin: waf
-    stage-packages:
-      - libgl1-mesa-dri
-    after: [ffmpeg]
   ffmpeg:
     source: git://source.ffmpeg.org/ffmpeg.git
     source-type: git
@@ -79,3 +72,9 @@ parts:
       - libopus-dev
       - libx265-dev
       - libvpx-dev
+  mpv:
+    source: https://github.com/mpv-player/mpv.git
+    plugin: waf
+    stage-packages:
+      - libgl1-mesa-dri
+    after: [ffmpeg]

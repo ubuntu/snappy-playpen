@@ -25,7 +25,6 @@ parts:
       '*': 'games/minetest_game/'
   minetest:
     source: https://github.com/minetest/minetest.git
-    source-type: git
     plugin: cmake
     configflags: [-DRUN_IN_PLACE=TRUE]
     build-packages:

@@ -9,7 +9,7 @@ description: |
     or draw text, lines, polygons, ellipses and Bézier curves.
 
     This snap is a kitchen-sink, every-option build of the current version of IM6.
-confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+confinement: devmode
 
 apps:
     animate:
@@ -50,7 +50,6 @@ parts:
     imagemagick:
         plugin: autotools
         source: http://git.imagemagick.org/repos/ImageMagick/repository/archive.tar.bz2?ref=ImageMagick-6
-        source-type: tar
         configflags:
             - --enable-hdri=yes
             - --enable-shared=yes

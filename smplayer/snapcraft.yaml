@@ -1,7 +1,11 @@
 name: smplayer
-version: 15.11.0
-summary: Free Media Player with built-in codecs. Play all audio and video formats.
-description: SMPlayer is a free media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats. It doesn't need any external codecs. Just install SMPlayer and you'll be able to play all formats without the hassle to find and install codec packs.
+version: "15.11.0"
+summary: Free Media Player with built-in codecs
+description: |
+  SMPlayer is a free media player for Windows and Linux with built-in codecs
+  that can play virtually all video and audio formats. It doesn't need any
+  external codecs. Just install SMPlayer and you'll be able to play all
+  formats without the hassle to find and install codec packs.
 confinement: devmode
 
 apps:

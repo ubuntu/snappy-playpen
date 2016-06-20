@@ -1,5 +1,5 @@
 name: dcos-cli
-version: 0.4.5
+version: "0.4.5"
 summary: The command line for your datacenter!
 description: |
   The DCOS Command Line Interface (CLI) is a cross-platform command line
@@ -14,7 +14,7 @@ apps:
 
 parts:
   dcos-cli:
-    plugin: python3
     source: https://github.com/dcos/dcos-cli.git
     source-tag: 0.4.5
     source-subdir: cli
+    plugin: python3

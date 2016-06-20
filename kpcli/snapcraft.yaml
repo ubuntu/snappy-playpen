@@ -12,8 +12,8 @@ apps:
 
 parts:
   kpcli:
-    plugin: copy
     source: https://github.com/alecsammon/kpcli.git
+    plugin: copy
     files:
       kpcli.pl: scripts/kpcli.pl
     stage-packages:

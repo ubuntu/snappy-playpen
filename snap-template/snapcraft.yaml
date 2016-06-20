@@ -23,7 +23,7 @@ parts:
     # Lines for yaml files (including description) should be under
     # 80 characters. If more if needed, they should be
     # broken up in multiple stenzas.
-    # That way, list like [foo, bar, baz] should be broken up into:
+    # For example, a list like [foo, bar, baz] should be broken up into:
     # - foo
     # - bar
     # - baz

@@ -1,7 +1,7 @@
 name: atom
 version: "1.9.0"
 summary: Atom Text Editor
-description: Atom Text editor, from Github
+description: Atom Text editor, from GitHub
 confinement: strict
 
 apps:

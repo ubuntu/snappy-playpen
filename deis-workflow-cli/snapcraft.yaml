@@ -13,6 +13,5 @@ apps:
 
 parts:
   workflow-cli:
-    source: https://github.com/deis/workflow-cli
-    source-type: git
+    source: https://github.com/deis/workflow-cli.git
     plugin: go

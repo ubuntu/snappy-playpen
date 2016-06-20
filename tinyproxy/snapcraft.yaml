@@ -8,13 +8,12 @@ apps:
   tinyproxy:
     command: ./launcher.sh
     daemon: simple
-    plugs: [network,network-bind]
+    plugs: [network, network-bind]
 
 parts:
   server:
     plugin: nil
-    stage-packages:
-      - tinyproxy
+    stage-packages: [tinyproxy]
   glue:
     plugin: copy
     files:

@@ -1,5 +1,5 @@
 name: vault-elopio
-version: 0.6.0-rc1
+version: "0.6.0-rc1"
 summary: Vault is a tool for securely accessing secrets.
 description: |
   A modern system requires access to a multitude of secrets: database
@@ -8,6 +8,7 @@ description: |
   is already very difficult and platform-specific. Adding on key rolling,
   secure storage, and detailed audit logs is almost impossible without a custom
   solution. This is where Vault steps in.
+confinement: strict
 
 apps:
   vault:
@@ -16,8 +17,8 @@ apps:
 
 parts:
   vault:
-    plugin: go
     source: https://github.com/hashicorp/vault.git
     source-tag: v0.6.0-rc1
+    plugin: go
     go-importpath: github.com/hashicorp/vault
     build-packages: [git]

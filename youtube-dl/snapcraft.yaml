@@ -12,9 +12,8 @@ apps:
 
 parts:
   youtube-dl:
-    plugin: python3
     source: https://github.com/rg3/youtube-dl.git
-    source-type: git
+    plugin: python3
 
   ffmpeg:
     source: git://source.ffmpeg.org/ffmpeg.git

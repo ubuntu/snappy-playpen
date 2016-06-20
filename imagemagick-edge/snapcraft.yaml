@@ -1,5 +1,5 @@
-name: imagemagick-stable
-version: 6.9.7
+name: imagemagick-edge
+version: 7.0.2~git
 summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
 description: |
     ImageMagick can read and write images in a variety of formats (over 200)
@@ -8,7 +8,7 @@ description: |
     and transform images, adjust image colors, apply various special effects,
     or draw text, lines, polygons, ellipses and Bézier curves.
 
-    This snap is a kitchen-sink, every-option build of the current version of IM6.
+    This snap is a kitchen-sink, every-option build of the current version of IM7.
 confinement: devmode
 
 apps:
@@ -36,6 +36,12 @@ apps:
     import:
         command: import
         plugs: [ home, unity7, x11 ]
+    magick:
+        command: magick
+        plugs: [ home, unity7, x11 ]
+    magick-script:
+        command: magick-script
+        plugs: [ home, unity7, x11 ]
     mogrify:
         command: mogrify
         plugs: [ home, unity7, x11 ]
@@ -49,7 +55,8 @@ apps:
 parts:
     imagemagick:
         plugin: autotools
-        source: http://git.imagemagick.org/repos/ImageMagick/repository/archive.tar.bz2?ref=ImageMagick-6
+        source: git://github.com/ImageMagick/ImageMagick
+        source-type: git
         configflags:
             - --enable-hdri=yes
             - --enable-shared=yes
@@ -83,7 +90,6 @@ parts:
             - liblcms2-dev
             - liblqr-1-0-dev
             - libltdl-dev
-            - libltdl7
             - libmagick++-dev
             - libopenexr-dev
             - libopenjp2-7-dev

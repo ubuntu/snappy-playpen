@@ -54,7 +54,7 @@ apps:
 
 parts:
     imagemagick:
-        source: git://github.com/ImageMagick/ImageMagick
+        source: git://github.com/ImageMagick/ImageMagick.git
         plugin: autotools
         configflags:
             - --enable-hdri=yes

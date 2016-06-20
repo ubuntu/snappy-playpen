@@ -1,0 +1,92 @@
+name: pantheon-mail
+version: 0.10.0-snap1
+summary: Lightweight mail client
+description: Mail is designed to let you manage your email quickly and effortlessly. 
+    Its interface is based on conversations, so you can read an entire 
+       discussion without having to click from message to message.
+
+confinement: strict
+
+apps:
+  pantheon-mail:
+    command: pantheon-mail
+    plugs: [x11, unity7, network]
+
+  attach:
+    command: mail-attach
+    plugs: [x11, unity7, network]
+
+parts:
+    granite:
+        plugin: cmake
+        source: lp:granite/0.4
+        source-type: bzr
+        configflags: [-DCMAKE_BUILD_TYPE=Release, -DCMAKE_INSTALL_PREFIX=/usr, -DCMAKE_INSTALL_LIBDIR=/usr/lib]
+        build-packages:
+            - build-essential
+            - valac
+        stage-packages:
+            - libcairo2
+            - libgee-0.8-2
+            - libglib2.0-0
+            - valac-0.30-vapi
+            - gobject-introspection 
+            - libgtk-3-0
+            - libgdk-pixbuf2.0-0
+    mail:
+        plugin: cmake
+        source: lp:pantheon-mail
+        source-type: bzr
+        configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+        after: [granite]
+        build-packages:
+            - build-essential
+            - valac
+            - intltool
+            - libcanberra-dev
+            - libgck-1-dev
+            - libgcr-3-dev
+            - libgmime-2.6-dev
+            - libgnome-keyring-dev
+            - libmessaging-menu-dev
+            - libnotify-dev
+            - libsecret-1-dev
+            - libsoup2.4-dev
+            - libunique-3.0-dev
+            - libunity-dev
+            - libjavascriptcoregtk-3.0-dev
+            - libwebkitgtk-common-dev
+            - libwebkitgtk-3.0-dev
+            - libgirepository1.0-dev
+            - libsqlite3-dev
+            - libsqlite3-0
+            - libgee-0.8-dev
+            - libcairo2-dev
+        stage-packages:
+            - gnome-keyring
+            - gobject-introspection
+            - dconf-gsettings-backend
+            - libcairo2
+            - libcanberra0
+            - libgcr-base-3-1
+            - libgdk-pixbuf2.0-0
+            - libgee-0.8-2
+            - libglib2.0-0
+            - libgmime-2.6-0
+            - libgtk-3-0
+            - libmessaging-menu0
+            - libnotify4
+            - libpango-1.0-0
+            - libpangocairo-1.0-0
+            - libsecret-1-0
+            - libsqlite3-0
+            - libunity9
+            - libwebkitgtk-3.0-0
+            - libxml2
+            - libcairo2-dev
+            - libgee-0.8-dev
+            - libgdk-pixbuf2.0-dev
+            - libgtk-3-dev
+
+
+

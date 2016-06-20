@@ -13,10 +13,10 @@ apps:
 
 parts:
   moon-buggy:
-    build-packages:
-      - libncurses5-dev
-      - texinfo
     source: https://github.com/sergiusens/moon-buggy
     plugin: autotools
     snap:
       - bin/moon-buggy
+    build-packages:
+      - libncurses5-dev
+      - texinfo

@@ -27,7 +27,6 @@ parts:
       mpv: bin/mpv
   ffmpeg:
     source: git://source.ffmpeg.org/ffmpeg.git
-    source-type: git
     plugin: autotools
     configflags: 
       - --disable-ffplay

@@ -22,6 +22,24 @@ apps:
     command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
     plugs: [home, unity7, icon-theme-access]
 
+plugs:
+  icons-theme-access:
+    type: old-security
+    security-override:
+      read-paths:
+        - "/home/$USER/.icons"
+      write-paths:
+        - "/home/$USER/.icons"
+      syscalls:
+        - "mkdir"
+  icons-theme-set:
+    type: old-security
+    security-override:
+      read-paths:
+        - "/home/$USER/.icons"
+      syscalls:
+        - "gsettings"
+
 parts:
   theme:
     source: lp:ubuntukylin-theme
@@ -50,21 +68,3 @@ parts:
     plugin: copy
     files:
       giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache
-
-slots:
-  icons-theme-access:
-    type: old-security
-    security-override:
-      read-paths:
-        - "/home/$USER/.icons"
-      write-paths:
-        - "/home/$USER/.icons"
-      syscalls:
-        - "mkdir"
-  icons-theme-set:
-    type: old-security
-    security-override:
-      read-paths:
-        - "/home/$USER/.icons"
-      syscalls:
-        - "gsettings"

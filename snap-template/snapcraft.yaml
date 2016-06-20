@@ -1,11 +1,15 @@
 name: my-snap  # the name of the snap
 version: 0  # the version of the snap
 summary: This is my-snap's summary  # 79 char long summary
-description: This is my-snap's description  # a longer description for the snap, can be multiple lines
-confinement: devmode  # start with devmode, then use "strict" to enforce system access only via declared interfaces
+description: |
+  This is my-snap's description  # a longer description for the snap
+  which can expand multiple lines.
+confinement: devmode  # start with devmode, then use "strict" to enforce system
+                      # access only via declared interfaces
 
 apps:  # declarative apps come in second place
-  my-snap:  # if only one command is exposed, please use [app name == snap name] to have a shorten command file
+  my-snap:  # if only one command is exposed, please use
+            # [app name == snap name] to have a shorten command executable.
     command: my-command
 
 parts:
@@ -16,3 +20,11 @@ parts:
     # by running
     # snapcraft list-plugins
     plugin: nil
+    # Lines for yaml files (including description) should be under
+    # 80 characters. If more if needed, they should be
+    # broken up in multiple stenzas.
+    # That way, list like [foo, bar, baz] should be broken up into:
+    # - foo
+    # - bar
+    # - baz
+    # as soon as the line is more than 80 characters.

@@ -16,4 +16,4 @@ on the projects add to it. For your project to be added, it is important that:
 Please note that we are going to consider removing a non-working snap from the
 repo if we can't get it to work after a month without updates.
 
-Use `template.README.md` to kickstart your project.
+Use `snap-template` with our formatted `README.md` to kickstart your project.

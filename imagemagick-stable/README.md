@@ -28,6 +28,7 @@ Known issues:
 
 TODO:
  - Security profile
+<<<<<<< HEAD
  - Upload to store on correct `stable` channel - would prefer more
    auditing before making this more widely available, or having project
    maintainers take the initiative from the start.
@@ -53,3 +54,6 @@ installation and removal of snaps (no need for `sudo`)
     $ snap connect imagemagick-stable:home ubuntu-core:home
 
 ```
+=======
+ - Upload to store on correct `stable` channel
+>>>>>>> da90c98d8c67cd3e4c8ae57c75b5310961c58904

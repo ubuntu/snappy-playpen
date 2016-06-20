@@ -19,7 +19,7 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - Builds the `snap` of IM6 and provides access to all tools through
+ - Builds the `snap` of IM7 and provides access to all tools through
    `imagemagick-edge.<tool>`
 
 Known issues:

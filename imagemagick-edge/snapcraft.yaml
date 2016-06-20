@@ -1,6 +1,6 @@
 name: imagemagick-edge
-version: 7.0.2~git
-summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
+version: "7.0.2~git"
+summary: ImageMagick software to create, edit, or convert bitmap images.
 description: |
   ImageMagick can read and write images in a variety of formats (over 200)
   including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF,

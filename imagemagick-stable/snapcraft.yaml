@@ -1,6 +1,6 @@
 name: imagemagick-stable
-version: 6.9.7
-summary: ImageMagick is a software suite to create, edit, or convert bitmap images.
+version: "6.9.7"
+summary: ImageMagick is software to create, edit, or convert bitmap images.
 description: |
   ImageMagick can read and write images in a variety of formats (over 200)
   including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF,

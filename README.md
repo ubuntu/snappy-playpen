@@ -4,6 +4,8 @@ A place to test snapcraft, learn creating snaps and share best practices.
 
 [Get started >](http://developer.ubuntu.com/desktop)
 
+[Basic snap and snapcraft notions >](http://snapcraft.io/create/)
+
 ## Current project status
 [![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) - **passing** means all snaps are automatically built correctly
 
@@ -72,7 +74,7 @@ No matter if you
  - are somebody who's curious about technology
  - think this is interesting
 
-we want you to get inolved.
+we want you to get involved.
 
 ### Fixing issues
 

@@ -1,5 +1,5 @@
 name: openjdk-demo
-version: 1.0
+version: "1.0"
 summary: OpenJDK Swing Example Applications
 description: OpenJDK Swing Example Applications
 confinement: strict
@@ -16,6 +16,4 @@ parts:
       FileChooserDemo.sh: bin/FileChooserDemo.sh
   java:
     plugin: nil
-    stage-packages:
-    - openjdk-8-jre
-    - openjdk-8-demo
+    stage-packages: [openjdk-8-jre, openjdk-8-demo]

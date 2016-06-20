@@ -1,15 +1,16 @@
 name: ubuntukylin-icon-theme
-version: 1.0
+version: "1.0"
 summary: Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono.
 description: |
- Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono. After installations run the
- activation command to enable it.
- 
- Activation command: ubuntukylin-icon-theme.enable
- 
- After that, you should find ubuntukylin-icon-theme-snap in your favourite
- theme editor (eg.: unity-tweak-tool).
+  Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono.  After
+  installations run the activation command to enable it.
+
+  Activation command: ubuntukylin-icon-theme.enable
+
+  After that, you should find ubuntukylin-icon-theme-snap in your favourite
+  theme editor (eg.: unity-tweak-tool).
 confinement: devmode
+
 apps:
   enable: 
    command: "cp -r $SNAP/icon-theme/ubuntukylin-icon-theme-snap /home/$USER/.icons/ubuntukylin-icon-theme-snap"
@@ -17,7 +18,6 @@ apps:
       - home
       - unity7
       - icon-theme-access
-  
   set:
     command: "theme-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
     plugs:
@@ -25,7 +25,6 @@ apps:
       - unity7
       - icon-theme-access
       - icons-theme-set
-  
   disable: 
     command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
     plugs: 
@@ -80,4 +79,3 @@ slots:
         - "/home/$USER/.icons"
       syscalls:
         - "gsettings"
-

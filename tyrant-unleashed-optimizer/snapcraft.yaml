@@ -5,7 +5,6 @@ description: |
   Simulator app for the game Tarant Unleashed that can be used to optimize your
   card deck for certain raids, or temporary buffs as well as growth planning in
   general.
-
 confinement: strict
 
 apps:

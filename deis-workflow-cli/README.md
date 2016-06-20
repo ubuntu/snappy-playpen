@@ -7,11 +7,11 @@ client has just been released, with not packaging at sight.
 ## Current state
 
 Working features:
- - the snap builds, needs to test in a real server.
+ - The snap builds, needs to test in a real server.
 
 Known issues:
- - without devmode, it gets stuck.
+ - Without devmode, it gets stuck.
    Reported in https://bugs.launchpad.net/snappy/+bug/1590221
 
 Unknowns:
- - many features not tested.
+ - Many features not tested.

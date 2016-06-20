@@ -1,5 +1,5 @@
 name: leafpad
-version: 1
+version: "1"
 summary: GTK+ based simple text editor
 description: |
    Leafpad is a simple GTK+ based text editor, the user interface is similar
@@ -14,17 +14,16 @@ apps:
 
 parts:
   leafpad:
+    source: https://github.com/oluc/leafpad.git
     plugin: autotools
-    source: https://github.com/oluc/leafpad
-    source-type: git
     snap:
       - -usr/share/doc
-    after: [gtkconf]
+    build-packages:
+      - build-essential
+      - libgtk2.0-dev
+      - intltool
     stage-packages:
       - fontconfig-config
       - libgtk2.0-bin
+    after: [gtkconf]
 
-build-packages:
-  - build-essential
-  - libgtk2.0-dev
-  - intltool

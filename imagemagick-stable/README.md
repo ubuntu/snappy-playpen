@@ -25,4 +25,3 @@ Known issues:
 TODO:
  - Security profile
  - Upload to store on correct `stable` channel
- 

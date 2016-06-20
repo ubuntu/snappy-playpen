@@ -14,7 +14,7 @@ apps:
 
 parts:
   dcos-cli:
-    plugin: python3
     source: https://github.com/dcos/dcos-cli.git
     source-tag: 0.4.5
     source-subdir: cli
+    plugin: python3

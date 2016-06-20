@@ -13,6 +13,6 @@ apps:
 
 parts:
   consul:
-    plugin: go
     source: https://github.com/hashicorp/consul.git
+    plugin: go
     go-importpath: github.com/hashicorp/consul.git

@@ -1,8 +1,7 @@
 name: ubuntu-clock-app
 version: 3.6+snap2
 summary: Ubuntu Clock app
-description: |
-  The clock app for all Ubuntu devices
+description: The clock app for all Ubuntu devices
 
 apps:
   clock:

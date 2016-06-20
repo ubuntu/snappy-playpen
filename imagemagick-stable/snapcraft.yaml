@@ -50,6 +50,7 @@ parts:
     imagemagick:
         plugin: autotools
         source: http://git.imagemagick.org/repos/ImageMagick/repository/archive.tar.bz2?ref=ImageMagick-6
+        source-type: tar
         configflags:
             - --enable-hdri=yes
             - --enable-shared=yes

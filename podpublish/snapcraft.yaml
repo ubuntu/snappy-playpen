@@ -1,0 +1,60 @@
+name: podpublish
+version: 20160610+git5ddfa04-1
+summary: A tool for encoding and publishing podcast content and assets
+description: |
+ A tool for encoding and publishing podcast content and assets. Inspired by
+ bv-publish and the talk Stuart Langridge gave at Oggcamp 2015. Project created
+ by Ubuntu Podcast and released under the GPLv2 license.
+
+apps:
+  encode-podcast:
+    command: usr/bin/python3 $SNAP/usr/bin/encode-podcast
+    plugs: [home]
+  publish-podcast:
+    command: usr/bin/python3 $SNAP/usr/bin/publish-podcast
+    plugs: [home, network]
+  season-to-youtube:
+    command: usr/bin/python3 $SNAP/usr/bin/season-to-youtube
+    plugs: [home]
+  youtube-upload:
+    command: usr/bin/python3 $SNAP/usr/bin/youtube-upload
+    plugs: [home, network]
+
+parts:
+  podpublish:
+    plugin: python3
+    source: https://bitbucket.org/flexiondotorg/podpublish.git
+    source-type: git
+    build-packages:
+      - build-essential
+      - liblcms2-dev
+      - libffi-dev
+      - libfreetype6-dev
+      - libjpeg8-dev
+      - libopenjp2-7-dev
+      - libssl-dev
+      - libtiff5-dev
+      - libwebp-dev
+      - pkg-config
+      - zlib1g-dev
+    stage-packages:
+      - ffmpeg
+      - libavcodec-ffmpeg-extra56
+      - liblcms2-2
+      - libffi6
+      - libfreetype6
+      - libjpeg8
+      - libopenjp2-7
+      - libpulse0
+      - libssl1.0.0
+      - libtiff5
+      - libwebp5
+      - zlib1g
+    snap:
+      - -usr/share/bug
+      - -usr/share/doc
+      - -usr/share/doc-base
+      - -usr/share/fonts
+      - -usr/share/include
+      - -usr/share/man
+      - -usr/share/X11/XErrorDB

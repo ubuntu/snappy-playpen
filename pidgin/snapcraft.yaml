@@ -61,7 +61,7 @@ parts:
          - libgtk-3-0
          - libxss-dev
          - gnome-keyring
-        after: [gtkconf]
+        after: [gtkconf, gplugin]
     gplugin:
         source: https://bitbucket.org/gplugin/main
         source-type: hg

@@ -1,20 +1,11 @@
-# $PROJECT snap
+# Mutt daily snap
 
-This project creates a working snap of $PROJECT.
-
-To get this done, we need to do the following:
- - add custom launcher
- - build from current git
- - etc.
+This project creates a working snap of Mutt from the developer repository.
 
 ## Current state
 
 Working features:
- - ...
+ - Fully functional it seems
 
 Known issues:
-  - ...
-
-TODO:
- -
- 
+ - n/a

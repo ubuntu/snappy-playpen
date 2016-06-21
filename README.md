@@ -43,6 +43,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |
 | :white_check_mark:  | `youtube-dl`       |                           |
+| :white_check_mark:  | `mutt`             |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio

@@ -40,6 +40,7 @@ In additon, this plugin uses the following plugin-specific keywords:
 
 import os
 import stat
+import shutil
 
 import snapcraft
 
@@ -91,7 +92,7 @@ class AutotoolsPlugin(snapcraft.BasePlugin):
     def build(self):
         super().build()
         
-        print('About ro run bootstrap')
+        print('About to run bootstrap')
         self.run(['./bootstrap'])
         
         if not os.path.exists(os.path.join(self.builddir, "configure")):
@@ -122,3 +123,12 @@ class AutotoolsPlugin(snapcraft.BasePlugin):
         self.run(['make', '-j{}'.format(self.project.parallel_build_count)])
         self.run(make_install_command)
 
+        # Setup desktop file from source
+        self.run(['mkdir', '-p', "../../../setup/gui"])
+        self.run(['cp', "share/vlc.desktop.in", "../../../setup/gui/vlc.desktop"])
+        self.run(['cp', "share/vlc512x512.png", "../../../setup/gui/vlc.png"])
+        self.run(
+            ['sed', '-i', '-e', 's/^Exec=.*/Exec=vlc/g',
+             '-e', 's/^TryExec=.*//g',
+             '-e', 's/^Icon=vlc$/Icon=\$\{SNAP\}\/meta\/gui\/vlc\.png/g',
+             '../../../setup/gui/vlc.desktop'])

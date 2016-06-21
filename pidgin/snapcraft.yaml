@@ -70,3 +70,4 @@ parts:
          - gcc
          - gettext
          - gobject-introspection
+         - help2man

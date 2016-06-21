@@ -28,11 +28,7 @@ parts:
         stage-packages:
             - libcairo2
             - libgee-0.8-2
-            - libglib2.0-0
             - valac-0.30-vapi
-            - gobject-introspection 
-            - libgtk-3-0
-            - libgdk-pixbuf2.0-0
     mail:
         plugin: cmake
         source: lp:pantheon-mail
@@ -71,7 +67,6 @@ parts:
             - libgcr-base-3-1
             - libgdk-pixbuf2.0-0
             - libgee-0.8-2
-            - libglib2.0-0
             - libgmime-2.6-0
             - libgtk-3-0
             - libmessaging-menu0
@@ -83,10 +78,6 @@ parts:
             - libunity9
             - libwebkitgtk-3.0-0
             - libxml2
-            - libcairo2-dev
-            - libgee-0.8-dev
-            - libgdk-pixbuf2.0-dev
-            - libgtk-3-dev
 
 
 

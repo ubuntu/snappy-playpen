@@ -1,10 +1,12 @@
 name: minetest
-version: 0.4.13
+version: "0.4.13"
 summary: Multiplayer infinite-world block sandbox
-description: Minetest is a minecraft-inspired game written from scratch and licensed
- under the LGPL (version 2.1 or later). It supports both survival and
- creative modes along with multiplayer support, dynamic lighting, and an
- "infinite" map generator.
+description: |
+  Minetest is a minecraft-inspired game written from scratch and licensed
+  under the LGPL (version 2.1 or later). It supports both survival and
+  creative modes along with multiplayer support, dynamic lighting, and an
+  "infinite" map generator.
+confinement: devmode
 
 apps:
   minetest:
@@ -17,15 +19,14 @@ parts:
     files:
       minetest: minetest
   minetestgame:
-    plugin: copy
     source: https://github.com/minetest/minetest_game.git
+    plugin: copy
     files:
       '*': 'games/minetest_game/'
   minetest:
+    source: https://github.com/minetest/minetest.git
     plugin: cmake
     configflags: [-DRUN_IN_PLACE=TRUE]
-    source: https://github.com/minetest/minetest.git
-    source-type: git
     build-packages:
       - cmake
       - gcc

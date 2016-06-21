@@ -1,5 +1,5 @@
 name: gitter
-version: 3.0.3-1
+version: "3.0.3-1"
 summary: Gitter.im chat client
 description: a client for the github gitter.im chat service
 confinement: devmode
@@ -10,16 +10,12 @@ apps:
     plugs: [unity7, opengl, gsettings, home, x11, network, network-bind, pulseaudio]
 
 parts:
-  glue:
-    plugin: nil
+  download:
+    source: .
+    plugin: make
     stage-packages:
-      - dconf-gsettings-backend
-      - libgl1-mesa-glx
-      - libglib2.0-0
-      - libgtk-3-0
-      - libnss3
-      - ttf-ubuntu-font-family
-    after: [gtkconf, download]
+      - wget
+      - dpkg
   gitter:
     plugin: copy
     files:
@@ -28,7 +24,12 @@ parts:
       nw.pak: nw.pak
       icudtl.dat: icudtl.dat
       libffmpegsumo.so: libffmpegsumo.so
-    after: [download]
-  download:
-    plugin: make
-    source: .
+    stage-packages:
+      - dconf-gsettings-backend
+      - libgl1-mesa-glx
+      - libglib2.0-0
+      - libgtk-3-0
+      - libnss3
+      - ttf-ubuntu-font-family
+    after: [gtkconf, download]
+

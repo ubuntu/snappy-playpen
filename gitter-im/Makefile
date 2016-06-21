@@ -3,7 +3,7 @@
 TMPDIR= ./unpack
 OPT = $(TMPDIR)/opt/Gitter/linux64
 OUTDIR = ../src/
-VERSION = $(shell sed -n -e "s/-.*$$//; s/^[^=]*version[^:]*:[[:blank:]]*//p" ../src/snapcraft.yaml)
+VERSION = $(shell sed -n -e "s/\"//g" -e "s/-.*$$//; s/^[^=]*version[^:]*:[[:blank:]]*//p" ../src/snapcraft.yaml )
 URL = http://update.gitter.im/linux64
 
 all: clean download
@@ -21,8 +21,8 @@ install:
 	rm -rf $(TMPDIR)
 
 download:
-	/usr/bin/wget $(URL)/gitter_$(VERSION)_amd64.deb
-	/usr/bin/dpkg -x gitter_$(VERSION)_amd64.deb $(TMPDIR)
+	wget $(URL)/gitter_$(VERSION)_amd64.deb
+	dpkg -x gitter_$(VERSION)_amd64.deb $(TMPDIR)
 
 clean:
 	rm -f Gitter

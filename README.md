@@ -32,6 +32,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `openjdk-demo`     |                           |
 | :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
+| :red_circle:        | `snapcraft`        |                           |
 | :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `qcomicbook`       |                           |
 | :white_check_mark:  | `scummvm`          |                           |

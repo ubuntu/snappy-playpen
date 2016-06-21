@@ -11,9 +11,9 @@ apps:
 
 parts:
     pidgin:
-        plugin: autotools
         source: https://bitbucket.org/pidgin/main
         source-type: hg
+        plugin: autotools
         configflags: [--disable-kwallet]
         build-packages:
          - libtool
@@ -62,3 +62,11 @@ parts:
          - libxss-dev
          - gnome-keyring
         after: [gtkconf]
+    gplugin:
+        source: https://bitbucket.org/gplugin/main
+        source-type: hg
+        plugin: cmake
+        build-packages:
+         - gcc
+         - gettext
+         - gobject-introspection

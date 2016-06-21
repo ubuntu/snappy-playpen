@@ -18,11 +18,10 @@ define ETHERPAD_CONF
   "ip": "127.0.0.1",
   "port" : 9001,
   "dbType" : "dirty",
-	/* This is pretty much a hack for now*/
   "dbSettings" : {
-                   "filename" : "/var/snap/etherpad-lite-unofficial/current/dirty.db"
+                   "filename" : "/var/snap/etherpad-lite/current/dirty.db"
                  },
-  "defaultPadText" : "Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at http:\/\/etherpad.org\n",
+  "defaultPadText" : "Welcome to Etherpad!",
   "padOptions": {
     "noColors": false,
     "showControls": true,

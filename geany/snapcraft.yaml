@@ -1,10 +1,8 @@
 name: geany
-version: 1.28-snap3
+version: 1.28-snap4
 summary: A fast and lightweight IDE using GTK+
 description: Geany is a small and lightweight integrated development environment.
- It was developed to provide a small and fast IDE, which has only a
- few dependencies from other packages. It is using only the GTK2 toolkit
- and therefore you need only the GTK2 runtime libraries to run Geany.
+ It was developed to provide a small and fast IDE.
 
 confinement: strict
 
@@ -18,10 +16,11 @@ parts:
         plugin: autotools
         source: git://github.com/geany/geany.git
         source-type: git
-        configflags: [--enable-binreloc, --enable-gtk3, --prefix=/usr, -disable-html-docs ]
+        configflags: [--enable-binreloc, --enable-gtk3 ]
         build-packages:
             - build-essential
             - intltool
+            - docutils
             - libgdk-pixbuf2.0-dev
             - libgtk-3-dev
         stage-packages:

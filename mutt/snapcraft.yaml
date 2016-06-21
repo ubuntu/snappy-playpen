@@ -1,0 +1,49 @@
+name: mutt
+version: "daily"
+summary: Text-based email client
+description: |
+ Mutt is a small but very powerful text-based mail client for Unix operating
+ systems.
+confinement: devmode
+
+apps:
+  mutt:
+    command: bin/mutt
+    plugs: [home, network, network-bind]
+
+parts:
+  mutt:
+    source: http://dev.mutt.org/hg/mutt
+    source-type: hg
+    plugin: autotools
+    build-packages:
+     - automake
+     - autotools-dev
+     - docbook-xml
+     - docbook-xsl
+     - w3m
+     - gawk
+     - gettext
+     - libgnutls28-dev
+     - libgpgme11-dev
+     - libidn11-dev
+     - libkrb5-dev
+     - libncurses5-dev
+     - libncursesw5-dev
+     - libsasl2-dev
+     - libtool
+     - pkg-config
+     - quilt
+     - xsltproc
+     - zlib1g-dev
+     - libtokyocabinet-dev
+    stage-packages:
+     - locales
+     - mime-support
+     - libsasl2-modules
+     - urlview
+     - aspell
+     - gnupg
+     - mixmaster
+     - openssl
+     - ca-certificates

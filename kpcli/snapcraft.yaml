@@ -2,8 +2,8 @@ name: kpcli-elopio
 version: "3.0"
 summary: KeePass Command Line Interface
 description: |
-  A command line interface (interactive shell) to work with KeePass 1.x or 2.x
-  database files.
+  A command line interface (interactive shell) to work with KeePass 
+  1.x or 2.x database files.
 confinement: devmode
 
 apps:

@@ -1,5 +1,5 @@
 name: moon-buggy
-version: 1.0.51.11
+version: "1.0.51.11"
 summary: Drive a car across the moon
 description: |
    Moon-buggy is a simple character graphics game, where you drive some
@@ -13,11 +13,10 @@ apps:
 
 parts:
   moon-buggy:
+    source: https://github.com/sergiusens/moon-buggy
+    plugin: autotools
+    snap:
+      - bin/moon-buggy
     build-packages:
       - libncurses5-dev
       - texinfo
-    plugin: autotools
-    source: https://github.com/sergiusens/moon-buggy
-    source-type: git
-    snap:
-      - bin/moon-buggy

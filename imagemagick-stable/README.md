@@ -5,9 +5,12 @@ ImageMagick 6.
 
 To get this done, we need to do the following:
  - Find out what doesn't work yet; I am not a server admin and have no
-   workloads to test with
+   real workloads to test with. Having run `imagemagick-stable.mogrify` on
+   a directory of images, I can confirm basic functionality, so everything
+   _should_ work.
  - Give feedback about missing options, and if you know how to enable
-   them, let me know
+   them, let me know (ie, OpenCL... no idea if that is relevant in
+   a server context)
  - Develop a solid, working security profile, and determine the `snap`
    interfaces required
 
@@ -19,9 +22,34 @@ Working features:
 
 Known issues:
  - The main CLI tools (`convert`, `conjure`, `mogrify`, `identify`, etc)
-   seem like they work in a no-op situation, but default unconfigured
-   security permissions just block any reading of files
+   work, but default unconfigured security permissions just block any
+   reading of files. This is current normal behaviour for any `snap`
+   installed application. Installation instructions below.
 
 TODO:
  - Security profile
- - Upload to store on correct `stable` channel
+ - Upload to store on correct `stable` channel - would prefer more
+   auditing before making this more widely available, or having project
+   maintainers take the initiative from the start.
+ 
+#### Installation Instructions
+
+Like any program in the `snappy-playpen` which isn't in the `snappy
+store`, clone the `ubuntu/snappy-playpen` repository, and run `$ snapcraft
+cleanbuild` in the project's directory. After waiting a while and building
+the `.snap` for yourself. Complete command walkthrough, requires Ubuntu
+16.04, `git`,`lxd`, `snapcraft', and an UbuntuOne account for zero-hassle
+installation and removal of snaps (no need for `sudo`)
+
+```
+
+    $ git clone git://github.com/ubuntu/snappy-playpen
+    $ cd snappy-playpen/imagemagick-stable/
+    $ snap login <your@ubuntu.one.email>
+        <authenticate>
+    $ snapcraft cleanbuild
+        <lots of compiling>
+    $ snap install imagemagick-stable.snap
+    $ snap connect imagemagick-stable:home ubuntu-core:home
+
+```

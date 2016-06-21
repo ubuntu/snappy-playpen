@@ -1,20 +1,14 @@
-# $PROJECT snap
+# Snapcraft daily snap
 
-This project creates a working snap of $PROJECT.
-
-To get this done, we need to do the following:
- - add custom launcher
- - build from current git
- - etc.
+This project creates a snap of Snapcraft.
 
 ## Current state
 
 Working features:
- - ...
+**None!**
 
 Known issues:
-  - ...
+**Fails miserably**
 
 TODO:
- -
- 
+ - Fixing it

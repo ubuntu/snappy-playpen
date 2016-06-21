@@ -39,8 +39,8 @@ parts:
     plugin: autotools
     configflags: 
       - --disable-ffplay
-      - --disable-ffserver
       - --disable-ffprobe
+      - --disable-ffserver
       - --enable-gpl
       - --enable-libass
       - --enable-libfreetype
@@ -53,32 +53,32 @@ parts:
       - --enable-libx265
       - --enable-nonfree
     build-packages:
-      - git
-      - g++
-      - make
-      - yasm
       - autoconf
-      - libtool
-      - cmake
-      - pkg-config
       - automake
       - build-essential
+      - cmake
+      - g++
+      - git
       - libass-dev
       - libfreetype6-dev
+      - libmp3lame-dev
+      - libopus-dev
       - libsdl1.2-dev
       - libtheora-dev
+      - libtool
       - libva-dev
       - libvdpau-dev
       - libvorbis-dev
-      - libxcb1-dev
+      - libvpx-dev
+      - libx264-dev
+      - libx265-dev
       - libxcb-shm0-dev
       - libxcb-xfixes0-dev
+      - libxcb1-dev
+      - make
+      - pkg-config
       - texinfo
+      - yasm
       - zlib1g-dev
-      - libx264-dev
-      - libmp3lame-dev
-      - libopus-dev
-      - libx265-dev
-      - libvpx-dev
     organize:
         usr/local/bin/: bin/

@@ -1,5 +1,5 @@
 name: scummvm
-version: 1.9.0git
+version: "1.9.0git"
 summary: ScummVM
 description: |
     ScummVM is a program which allows you to run certain classic graphical
@@ -7,11 +7,12 @@ description: |
     files. The clever part about this: ScummVM just replaces the executables
     shipped with the game, allowing you to play them on systems for which
     they were never designed!
+confinement: strict
 
 apps:
   scummvm:
     command: bin/scummvm-launcher
-    plugs: [x11, home]
+    plugs: [x11, home, pulseaudio]
 
 parts:
   launcher:
@@ -21,11 +22,27 @@ parts:
   scummvm:
     plugin: autotools
     source: https://github.com/scummvm/scummvm.git
-    source-type: git
 #    Quick test build
 #    configflags:
 #      - --disable-all-engines
 #      - --enable-engine=scumm
+    build-packages:
+      - g++
+      - make
+      - libsdl1.2-dev
+      - libjpeg62-dev
+      - libmpeg2-4-dev
+      - libogg-dev
+      - libvorbis-dev
+      - libflac-dev
+      - libmad0-dev
+      - libpng12-dev
+      - libtheora-dev
+      - libfaad-dev
+      - libfluidsynth-dev
+      - libfreetype6-dev
+      - zlib1g-dev
+      - libunity-dev
     stage-packages:
       - libicu55
       - libasound2
@@ -49,21 +66,3 @@ parts:
       - libvorbis0a
       - libvorbisfile3
       - zlib1g
-    build-packages:
-      - g++
-      - make
-      - libsdl1.2-dev
-      - libjpeg62-dev
-      - libmpeg2-4-dev
-      - libogg-dev
-      - libvorbis-dev
-      - libflac-dev
-      - libmad0-dev
-      - libpng12-dev
-      - libtheora-dev
-      - libfaad-dev
-      - libfluidsynth-dev
-      - libfreetype6-dev
-      - zlib1g-dev
-      - libunity-dev
-

@@ -9,6 +9,7 @@ description: x86 emulator with Tandy/Herc/CGA/EGA/VGA/SVGA graphics, sound and D
   The following legacy sound devices are emulated; PC Speaker, Creative,
   CMS/Gameblaster, Tandy 3 voice, Adlib, Sound Blaster Pro/16,
   Disney Soundsource and a Gravis Ultrasound. MPU-401 is forwarded to the host.
+confinement: strict
 
 apps:
   dosbox:
@@ -17,9 +18,8 @@ apps:
 
 parts:
   dosbox:
-    plugin: autotools
-    source-type: tar
     source: http://source.dosbox.com/dosboxsvn.tgz
+    plugin: autotools
     build-packages:
       - g++
       - make

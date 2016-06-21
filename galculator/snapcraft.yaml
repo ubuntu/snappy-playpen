@@ -1,5 +1,5 @@
 name: galculator
-version: 2.1.4
+version: "2.1.4"
 summary: scientific calculator
 description: |
  galculator is a scientific calculator. It supports different number
@@ -8,13 +8,12 @@ description: |
  functions, etc) and other useful functions (memory, etc) at the moment.
  galculator can be used in algebraic mode as well as in Reverse Polish
  Notation (RPN).
+confinement: strict
 
 apps:
   galculator:
     command: gtk-launch galculator
-    plugs:
-      - home
-      - x11
+    plugs: [home, x11]
 
 parts:
   galculator:
@@ -39,7 +38,6 @@ parts:
       - libwmf0.2-7-gtk
       - libgdk-pixbuf2.0-0
     after: [gtkconf]
-
   integration:
     plugin: nil
     stage-packages:

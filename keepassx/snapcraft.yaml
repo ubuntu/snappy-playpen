@@ -1,10 +1,11 @@
 name: keepassx-elopio
-version: 2.0.2
+version: "2.0.2"
 summary: KeePassX is a cross platform password safe
 description: |
   KeePassX is an application for people with extremly high demands on secure
   personal data management. It has a light interface, is cross platform and
   published under the terms of the GNU General Public License.
+confinement: devmode
 
 apps:
   keepassx:
@@ -16,12 +17,6 @@ parts:
     plugin: cmake
     source: https://github.com/keepassx/keepassx.git
     source-tag: 2.0.2
-    stage-packages:
-      - libgtk2.0-0
-      - libqt5gui5
-      - unity-gtk2-module
-      - appmenu-qt5
-      - dconf-gsettings-backend
     build-packages:
       - g++
       - qtbase5-dev
@@ -31,6 +26,12 @@ parts:
       - qttools5-dev-tools
       - libgcrypt20-dev
       - zlib1g-dev
+    stage-packages:
+      - libgtk2.0-0
+      - libqt5gui5
+      - unity-gtk2-module
+      - appmenu-qt5
+      - dconf-gsettings-backend
     after: [qt5conf]
   gschemas:
     plugin: copy

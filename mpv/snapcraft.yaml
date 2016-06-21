@@ -1,16 +1,17 @@
 name: mpv
 version: "0.17.0~git"
 summary: Tools for transcoding, streaming and playing of multimedia files
-description: Video player based on MPlayer/mplayer2
- mpv is a movie player based on MPlayer and mplayer2. It supports a wide
- variety of video file formats, audio and video codecs, and subtitle types.
- Changes from mplayer2 to mpv include;
-  * Removal of lots of unneeded code to encourage developer activity
-  * Better OSD rendering
-  * Cleaned up terminal output
-  * Improved OpenGL output
+description: | 
+  Video player based on MPlayer/mplayer2 mpv is a movie player based on
+  MPlayer and mplayer2. It supports a wide variety of video file formats,
+  audio and video codecs, and subtitle types. Changes from mplayer2 to mpv
+  include; 
+  * Removal of lots of unneeded code to encourage developer activity 
+  * Better OSD rendering 
+  * Cleaned up terminal output 
+  * Improved OpenGL output 
   * Encoding functionality (replacement for mencoder)
-  * Wayland support
+  * Wayland support 
   * Support for playing URLs of popular streaming sites
   * Screenshot improvements
 
@@ -24,18 +25,24 @@ parts:
     plugin: copy
     files:
       mpv: bin/mpv
-  mpv:
-    plugin: waf
-    source: https://github.com/mpv-player/mpv.git
-    source-type: git
-    after: [ffmpeg]
-    stage-packages:
-      - libgl1-mesa-dri
   ffmpeg:
-    plugin: autotools
-    configflags: [--disable-ffplay, --disable-ffserver, --disable-ffprobe, --enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libvorbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
     source: git://source.ffmpeg.org/ffmpeg.git
-    source-type: git
+    plugin: autotools
+    configflags: 
+      - --disable-ffplay
+      - --disable-ffserver
+      - --disable-ffprobe
+      - --enable-gpl
+      - --enable-libass
+      - --enable-libfreetype
+      - --enable-libmp3lame
+      - --enable-libopus
+      - --enable-libtheora
+      - --enable-libvorbis
+      - --enable-libvpx
+      - --enable-libx264
+      - --enable-libx265
+      - --enable-nonfree
     build-packages:
       - git
       - g++
@@ -64,3 +71,9 @@ parts:
       - libopus-dev
       - libx265-dev
       - libvpx-dev
+  mpv:
+    source: https://github.com/mpv-player/mpv.git
+    plugin: waf
+    stage-packages:
+      - libgl1-mesa-dri
+    after: [ffmpeg]

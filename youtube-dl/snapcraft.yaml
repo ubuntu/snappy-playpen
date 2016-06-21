@@ -1,6 +1,6 @@
 name: youtube-dl
-version: daily
-summary: Youtube Downloader
+version: "daily"
+summary: YouTube Downloader
 description: |
   youtube-dl is a small command-line program to download videos from
   YouTube.com and a few more sites.
@@ -12,15 +12,13 @@ apps:
 
 parts:
   youtube-dl:
-    plugin: python3
     source: https://github.com/rg3/youtube-dl.git
-    source-type: git
+    plugin: python3
 
   ffmpeg:
+    source: git://source.ffmpeg.org/ffmpeg.git
     plugin: autotools
     configflags: [--enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libvorbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
-    source: git://source.ffmpeg.org/ffmpeg.git
-    source-type: git
     build-packages:
       - git
       - g++

@@ -8,7 +8,7 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - `ffmpeg`, accessed through `ffmpeg.convert` once installed.
+ - `ffmpeg`
 
 Known issues:
   - Other command line tools (`ffmplay`, `ffserver`, `ffprobe`) do not

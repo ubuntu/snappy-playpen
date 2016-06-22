@@ -15,12 +15,29 @@ To talk and collaborate, you can join the Telegram group [Etherpad-lite-Playpen-
 Status
 ------
 
-Work in Progress. Not working
+- Builds and installs fine
+- Needs to be installed with --devmode
+- Throws a RangeError: Maximum call stack size exceeded when launched. Any help from nodejs experts or tips on how to debug node apps welcome!
 
-### Blocking point
+````bash
+$ sudo /snap/bin/etherpad-lite
+[2016-06-21 13:24:32.693] [WARN] console - DirtyDB is used. This is fine for testing but not recommended for production.
+/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/static/js/pluginfw/plugins.js:112
+        if (name.indexOf(exports.prefix) === 0) {
+                 ^
 
-
-Some folders need to be copied from `parts/etherpad-lite/src` to the `./snap/` folder. Didn't find how to copy recursively a whole folder yet.
+RangeError: Maximum call stack size exceeded
+    at String.indexOf (native)
+    at /snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/static/js/pluginfw/plugins.js:112:18
+    at Function._.each._.forEach (/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/node_modules/underscore/underscore.js:153:9)
+    at _.(anonymous function) [as each] (/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/node_modules/underscore/underscore.js:1496:34)
+    at flatten (/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/static/js/pluginfw/plugins.js:111:28)
+    at /snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/static/js/pluginfw/plugins.js:120:52
+    at Function._.each._.forEach (/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/node_modules/underscore/underscore.js:153:9)
+    at _.(anonymous function) [as each] (/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/node_modules/underscore/underscore.js:1496:34)
+    at flatten (/snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/static/js/pluginfw/plugins.js:111:28)
+    at /snap/etherpad-lite/x1/lib/node_modules/ep_etherpad-lite/static/js/pluginfw/plugins.js:120:52
+````
 
 Roadmap
 -------

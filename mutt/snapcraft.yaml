@@ -15,7 +15,7 @@ parts:
   mutt:
     source: http://dev.mutt.org/hg/mutt
     source-type: hg
-    plugin: autotools
+    plugin: autotoolscustom
     build-packages:
      - automake
      - autotools-dev

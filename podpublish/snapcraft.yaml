@@ -5,6 +5,7 @@ description: |
  A tool for encoding and publishing podcast content and assets. Inspired by
  bv-publish and the talk Stuart Langridge gave at Oggcamp 2015. Project created
  by Ubuntu Podcast and released under the GPLv2 license.
+confinement: devmode
 
 apps:
   encode-podcast:

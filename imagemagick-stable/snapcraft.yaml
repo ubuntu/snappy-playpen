@@ -49,6 +49,7 @@ apps:
 parts:
   imagemagick:
     source: http://git.imagemagick.org/repos/ImageMagick/repository/archive.tar.bz2?ref=ImageMagick-6
+    source-type: tar
     plugin: autotools
     configflags:
       - --enable-hdri=yes

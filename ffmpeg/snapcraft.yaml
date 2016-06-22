@@ -33,7 +33,6 @@ apps:
     #plugs: [home]
 
 parts:
-
   ffmpeg:
     source: git://source.ffmpeg.org/ffmpeg.git
     plugin: autotools

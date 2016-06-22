@@ -16,7 +16,7 @@ confinement: devmode
 # ffcfstress ffmpeg ffmpeg2theora ffmvforce ffplay ffprobe ffserver ffset fftest
 
 apps:
-  convert:
+  ffmpeg:
     command: ffmpeg
     plugs: [home]
   #server:

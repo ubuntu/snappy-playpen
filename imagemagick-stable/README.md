@@ -27,7 +27,12 @@ Known issues:
    installed application. Installation instructions below.
 
 TODO:
- - Security profile
+ - Security profile: using `snappy-debug.security scanlog` to monitor
+   read/write activity of `imagemagick-stable.<operation>` it seems that
+   IM6 wants to write to `/etc/ImageMagick-stable/log.xml`, which is
+   denied. Operations still work correctly, but this is
+   a misconfiguration, and logging should be somewhere within the image's
+   `$SNAP` prefix.
  - Upload to store on correct `stable` channel - would prefer more
    auditing before making this more widely available, or having project
    maintainers take the initiative from the start.

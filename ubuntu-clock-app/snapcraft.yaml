@@ -1,8 +1,7 @@
 name: ubuntu-clock-app
 version: 3.6+snap2
 summary: Ubuntu Clock app
-description: |
-   The clock app for all Ubuntu devices
+description: The clock app for all Ubuntu devices
 
 apps:
   clock:
@@ -11,10 +10,9 @@ apps:
 
 parts:
   clock:
+    source: lp:~dpm/ubuntu-clock-app/snap-all-things
     plugin: cmake
     configflags: [-DCMAKE_INSTALL_PREFIX=/usr, -DCLICK_MODE=off]
-    source: lp:~dpm/ubuntu-clock-app/snap-all-things
-    source-type: bzr
     build-packages:
       - build-essential
       - cmake

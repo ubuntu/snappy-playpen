@@ -12,9 +12,8 @@ Working features:
 
 Known issues:
   - Theming
-  - No sound in strict confinement
 
 TODO:
- - Add icon
+ - Add desktop file and icon
  
 

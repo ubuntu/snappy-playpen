@@ -5,24 +5,20 @@ description: |
   Simulator app for the game Tarant Unleashed that can be used to optimize your
   card deck for certain raids, or temporary buffs as well as growth planning in
   general.
-
 confinement: strict
 
 apps:
   sim:
     command: usr/bin/tuo.exe
     plugs: [home]
-
   updatexml:
     command: usr/bin/update_xml.sh
     plugs: [home, network]
 
 parts:
   tyrant-unleashed-optimizer:
-    plugin: x_toumakefixup
     source: https://github.com/andor9/tyrant_optimize.git
-    source-type: git
-    stage-packages: [git]
+    plugin: x_toumakefixup
     build-packages:
       - g++
       - make
@@ -34,3 +30,4 @@ parts:
       - libboost-regex1.58-dev
     stage-packages:
       - curl
+      - git

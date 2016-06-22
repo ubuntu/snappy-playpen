@@ -14,49 +14,48 @@ confinement: devmode
 apps:
   animate:
     command: animate
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   compare:
     command: compare
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   composite:
     command: composite
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   conjure:
     command: conjure
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   convert:
     command: convert
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   display:
     command: display
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   identify:
     command: identify
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   import:
     command: import
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   magick:
     command: magick
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   magick-script:
     command: magick-script
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   mogrify:
     command: mogrify
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   montage:
     command: montage
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
   stream:
     command: stream
-    plugs: [ home, unity7, x11 ]
+    plugs: [home, unity7, x11]
 
 parts:
   imagemagick:
-    plugin: autotools
     source: git://github.com/ImageMagick/ImageMagick
-    source-type: git
+    plugin: autotools
     configflags:
         - --enable-hdri=yes
         - --enable-shared=yes

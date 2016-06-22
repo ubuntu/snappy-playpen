@@ -35,6 +35,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `qcomicbook`       |                           |
 | :white_check_mark:  | `scummvm`          |                           |
+| :white_check_mark:  | `shotwell`         |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
 | :white_check_mark:  | `tinyproxy`        |                           |
 | :white_check_mark:  | `tyrant-unleashed-optimizer` |                 |

@@ -2,105 +2,105 @@ name: imagemagick-edge
 version: "7.0.2~git"
 summary: ImageMagick software to create, edit, or convert bitmap images.
 description: |
-    ImageMagick can read and write images in a variety of formats (over 200)
-    including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF,
-    and SVG.  Use ImageMagick to resize, flip, mirror, rotate, distort, shear
-    and transform images, adjust image colors, apply various special effects,
-    or draw text, lines, polygons, ellipses and Bézier curves.
+  ImageMagick can read and write images in a variety of formats (over 200)
+  including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF,
+  and SVG.  Use ImageMagick to resize, flip, mirror, rotate, distort, shear
+  and transform images, adjust image colors, apply various special effects,
+  or draw text, lines, polygons, ellipses and Bézier curves.
 
-    This snap is a kitchen-sink, every-option build of the current version of IM7.
+  This snap is a kitchen-sink, every-option build of the current version of IM7.
 confinement: devmode
 
 apps:
-    animate:
-        command: animate
-        plugs: [home, unity7, x11]
-    compare:
-        command: compare
-        plugs: [home, unity7, x11]
-    composite:
-        command: composite
-        plugs: [home, unity7, x11]
-    conjure:
-        command: conjure
-        plugs: [home, unity7, x11]
-    convert:
-        command: convert
-        plugs: [home, unity7, x11]
-    display:
-        command: display
-        plugs: [home, unity7, x11]
-    identify:
-        command: identify
-        plugs: [home, unity7, x11]
-    import:
-        command: import
-        plugs: [home, unity7, x11]
-    magick:
-        command: magick
-        plugs: [home, unity7, x11]
-    magick-script:
-        command: magick-script
-        plugs: [home, unity7, x11]
-    mogrify:
-        command: mogrify
-        plugs: [home, unity7, x11]
-    montage:
-        command: montage
-        plugs: [home, unity7, x11]
-    stream:
-        command: stream
-        plugs: [home, unity7, x11]
+  animate:
+    command: animate
+    plugs: [home, unity7, x11]
+  compare:
+    command: compare
+    plugs: [home, unity7, x11]
+  composite:
+    command: composite
+    plugs: [home, unity7, x11]
+  conjure:
+    command: conjure
+    plugs: [home, unity7, x11]
+  convert:
+    command: convert
+    plugs: [home, unity7, x11]
+  display:
+    command: display
+    plugs: [home, unity7, x11]
+  identify:
+    command: identify
+    plugs: [home, unity7, x11]
+  import:
+    command: import
+    plugs: [home, unity7, x11]
+  magick:
+    command: magick
+    plugs: [home, unity7, x11]
+  magick-script:
+    command: magick-script
+    plugs: [home, unity7, x11]
+  mogrify:
+    command: mogrify
+    plugs: [home, unity7, x11]
+  montage:
+    command: montage
+    plugs: [home, unity7, x11]
+  stream:
+    command: stream
+    plugs: [home, unity7, x11]
 
 parts:
-    imagemagick:
-        source: git://github.com/ImageMagick/ImageMagick.git
-        plugin: autotools
-        configflags:
-            - --enable-hdri=yes
-            - --enable-shared=yes
-            - --enable-static=yes
-            - --with-autotrace=yes
-            - --with-dps=no
-            - --with-flif=no
-            - --with-fpx=no
-            - --with-gnu-ld=yes
-            - --with-gslib=yes
-            - --with-ldtl=no
-            - --with-modules=no
-            - --with-perl=yes
-            - --with-quantum-depth=32
-            - --with-raqm=no
-            - --with-rsvg=yes
-        build-packages:
-            - autoconf
-            - build-essential
-            - fftw-dev
-            - libautotrace-dev
-            - libbz2-dev
-            - libdjvulibre-dev
-            - libfftw3-dev
-            - libfontconfig1-dev
-            - libfreetype6-dev
-            - libgs-dev
-            - libgvc6
-            - libjbig-dev
-            - libjpeg-dev
-            - liblcms2-dev
-            - liblqr-1-0-dev
-            - libltdl-dev
-            - libmagick++-dev
-            - libopenexr-dev
-            - libopenjp2-7-dev
-            - libpango1.0-dev
-            - libperl-dev
-            - libpng12-dev
-            - librsvg2-dev
-            - libtiff5-dev
-            - libwebp-dev
-            - libwmf-dev
-            - libx11-dev
-            - lzma-dev
-            - ocl-icd-opencl-dev
-            - perlmagick
-            - zlib1g-dev
+  imagemagick:
+    source: git://github.com/ImageMagick/ImageMagick
+    plugin: autotools
+    configflags:
+        - --enable-hdri=yes
+        - --enable-shared=yes
+        - --enable-static=yes
+        - --with-autotrace=yes
+        - --with-dps=no
+        - --with-flif=no
+        - --with-fpx=no
+        - --with-gnu-ld=yes
+        - --with-gslib=yes
+        - --with-ldtl=no
+        - --with-modules=no
+        - --with-perl=yes
+        - --with-quantum-depth=32
+        - --with-raqm=no
+        - --with-rsvg=yes
+    build-packages:
+        - autoconf
+        - build-essential
+        - fftw-dev
+        - libautotrace-dev
+        - libbz2-dev
+        - libdjvulibre-dev
+        - libfftw3-dev
+        - libfontconfig1-dev
+        - libfreetype6-dev
+        - libgs-dev
+        - libgvc6
+        - libjbig-dev
+        - libjpeg-dev
+        - liblcms2-dev
+        - liblqr-1-0-dev
+        - libltdl-dev
+        - libmagick++-dev
+        - libopenexr-dev
+        - libopenjp2-7-dev
+        - libpango1.0-dev
+        - libperl-dev
+        - libpng12-dev
+        - librsvg2-dev
+        - libtiff5-dev
+        - libwebp-dev
+        - libwmf-dev
+        - libx11-dev
+        - lzma-dev
+        - ocl-icd-opencl-dev
+        - perlmagick
+        - zlib1g-dev

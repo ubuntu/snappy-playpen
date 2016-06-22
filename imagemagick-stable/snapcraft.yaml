@@ -8,8 +8,13 @@ description: |
   and transform images, adjust image colors, apply various special effects,
   or draw text, lines, polygons, ellipses and Bézier curves.
 
+<<<<<<< Updated upstream
   This snap is a kitchen-sink, every-option build of the current version of IM6.
 confinement: devmode
+=======
+    This snap is a kitchen-sink, every-option build of the current version of IM6.
+confinement: strict
+>>>>>>> Stashed changes
 
 apps:
   animate:
@@ -47,6 +52,7 @@ apps:
     plugs: [ home, unity7, x11 ]
 
 parts:
+<<<<<<< Updated upstream
   imagemagick:
     plugin: autotools
     source: http://git.imagemagick.org/repos/ImageMagick/repository/archive.tar.bz2?ref=ImageMagick-6
@@ -94,3 +100,58 @@ parts:
       - ocl-icd-opencl-dev
       - perlmagick
       - zlib1g-dev
+=======
+    imagemagick:
+        source: http://git.imagemagick.org/repos/ImageMagick/repository/archive.tar.bz2?ref=ImageMagick-6
+        source-type: tar
+        plugin: autotools
+        configflags:
+            - --enable-hdri=yes
+            - --enable-shared=yes
+            - --enable-static=yes
+            - --with-autotrace=yes
+            - --with-dps=no
+            - --with-flif=no
+            - --with-fpx=no
+            - --with-gnu-ld=yes
+            - --with-gslib=yes
+            - --with-ldtl=no
+            - --with-modules=no
+            - --with-perl=yes
+            - --with-quantum-depth=32
+            - --with-raqm=no
+            - --with-rsvg=yes
+        build-packages:
+            - autoconf
+            - build-essential
+            - fftw-dev
+            - libautotrace-dev
+            - libbz2-dev
+            - libdjvulibre-dev
+            - libfftw3-dev
+            - libfontconfig1-dev
+            - libfreetype6-dev
+            - libgs-dev
+            - libgvc6
+            - libjbig-dev
+            - libjpeg-dev
+            - liblcms2-dev
+            - liblqr-1-0-dev
+            - libltdl-dev
+            - libltdl7
+            - libmagick++-dev
+            - libopenexr-dev
+            - libopenjp2-7-dev
+            - libpango1.0-dev
+            - libperl-dev
+            - libpng12-dev
+            - librsvg2-dev
+            - libtiff5-dev
+            - libwebp-dev
+            - libwmf-dev
+            - libx11-dev
+            - lzma-dev
+            - ocl-icd-opencl-dev
+            - perlmagick
+            - zlib1g-dev
+>>>>>>> Stashed changes

@@ -52,6 +52,8 @@ parts:
       - --enable-libx264
       - --enable-libx265
       - --enable-nonfree
+    organize:
+        usr/local/bin/: bin/
     build-packages:
       - autoconf
       - automake
@@ -80,5 +82,3 @@ parts:
       - texinfo
       - yasm
       - zlib1g-dev
-    organize:
-        usr/local/bin/: bin/

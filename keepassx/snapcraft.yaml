@@ -14,9 +14,9 @@ apps:
 
 parts:
   keepassx:
-    plugin: cmake
     source: https://github.com/keepassx/keepassx.git
     source-tag: 2.0.2
+    plugin: cmake
     build-packages:
       - g++
       - qtbase5-dev
@@ -33,11 +33,8 @@ parts:
       - appmenu-qt5
       - dconf-gsettings-backend
     after: [qt5conf]
-  gschemas:
+  glibcompiledassets:
     plugin: copy
     files:
       gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
-  giomodule:
-    plugin: copy
-    files:
       giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache

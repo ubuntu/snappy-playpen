@@ -15,3 +15,4 @@ parts:
   heroku-cli:
     source: https://github.com/heroku/cli.git
     plugin: go
+    go-importpath: github.com/heroku/cli

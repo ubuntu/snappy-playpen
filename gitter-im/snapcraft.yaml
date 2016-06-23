@@ -13,9 +13,7 @@ parts:
   download:
     source: .
     plugin: make
-    stage-packages:
-      - wget
-      - dpkg
+    stage-packages: [wget, dpkg]
   gitter:
     plugin: copy
     files:

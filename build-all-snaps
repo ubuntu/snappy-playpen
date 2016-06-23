@@ -1,0 +1,56 @@
+#!/bin/bash
+
+echo "This builds all of the snaps in the playpen."
+echo "Press Ctrl + C in the next 5 seconds to cancel."
+sleep 5s
+
+mkdir snap-build-output
+
+function build {
+    echo
+    echo "------------------------------------------------"
+    echo "  Building the $1 snap"
+    echo "------------------------------------------------"
+    echo
+    cd $1
+    snapcraft cleanbuild
+    cd ..
+    cp -v $1/*.snap snap-build-output/
+}
+
+build atom &&
+build consul &&
+build dcos-cli &&
+build deis-workflow-cli &&
+build dosbox &&
+build ffmpeg &&
+build galculator &&
+build gitter-im &&
+build heroku &&
+build imagemagick-edge &&
+build imagemagick-stable &&
+build keepassx &&
+build kpcli &&
+build leafpad &&
+build minetest &&
+build moon-buggy &&
+build mpv &&
+build openjdk-demo &&
+build plank &&
+build qcomicbook &&
+build ristretto &&
+build scummvm &&
+build shotwell &&
+build smplayer &&
+build tinyproxy &&
+build tyrant-unleashed-optimizer &&
+build ubuntu-clock-app &&
+build ubuntukylin-icon-theme &&
+build vault &&
+build vlc &&
+build youtube-dl &&
+echo &&
+echo "------------------------------------------------" &&
+echo "All of the built snaps are available in the snap-build-output directory" &&
+echo "------------------------------------------------" &&
+echo &&

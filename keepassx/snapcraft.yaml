@@ -14,9 +14,9 @@ apps:
 
 parts:
   keepassx:
-    plugin: cmake
     source: https://github.com/keepassx/keepassx.git
     source-tag: 2.0.2
+    plugin: cmake
     build-packages:
       - g++
       - qtbase5-dev

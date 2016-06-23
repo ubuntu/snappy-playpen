@@ -9,9 +9,5 @@ client has just been released, with not packaging at sight.
 Working features:
  - The snap builds, needs to test in a real server.
 
-Known issues:
- - Without devmode, it gets stuck.
-   Reported in https://bugs.launchpad.net/snappy/+bug/1590221
-
 Unknowns:
  - Many features not tested.

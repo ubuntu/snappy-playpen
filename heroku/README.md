@@ -8,11 +8,7 @@ channels sounds really cool.
 ## Current state
 
 Working features:
- - Login, in devmode
-
-Known issues:
- - Without devmode, it gets stuck.
-   Reported in https://bugs.launchpad.net/snappy/+bug/1590221
+ - Login
 
 Unknowns:
  - It has an update command, that self-updates. I'm not sure how that will work

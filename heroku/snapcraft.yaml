@@ -5,13 +5,15 @@ description: |
   This is the next generation Go/Node-based Heroku CLI. Currently, it is not
   feature complete with the existing CLI and not intended to be used
   standalone.
+confinement: strict
 
 apps:
   heroku:
     command: bin/cli
-    plugs: [network]
+    plugs: [network, network-bind]
 
 parts:
   heroku-cli:
     source: https://github.com/heroku/cli.git
     plugin: go
+    go-importpath: github.com/heroku/cli

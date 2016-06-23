@@ -4,6 +4,8 @@ A place to test snapcraft, learn creating snaps and share best practices.
 
 [Get started >](http://developer.ubuntu.com/desktop)
 
+[Basic snap and snapcraft notions >](http://snapcraft.io/create/)
+
 ## Current project status
 [![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) - **passing** means all snaps are automatically built correctly
 
@@ -12,11 +14,16 @@ This project currently includes the following snaps:
 | State               | App                | Snap name in the store    |
 | ------------------- | ------------------ | ------------------------- |
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
+| :white_check_mark:  | `dcos-cli`         |                           |
 | :white_check_mark:  | `dosbox`           |                           |
+| :white_check_mark:  | `consul`           |                           |
+| :red_circle:        | `deis-workflow-cli`|                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
 | :white_check_mark:  | `galculator`       |                           |
 | :red_circle:        | `heroku`           |                           |
-| :red_circle:        | `imagemagick6-stable`|                         |
+| :white_check_mark:  | `imagemagick6-stable`|                         |
+| :red_circle:        | `imagemagick7-git` |                           |
+| :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
 | :white_check_mark:  | `leafpad`          |                           |
 | :white_check_mark:  | `minetest`         |                           |
@@ -26,7 +33,9 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
 | :red_circle:        | `plank`            |                           |
+| :white_check_mark:  | `qcomicbook`       |                           |
 | :white_check_mark:  | `scummvm`          |                           |
+| :white_check_mark:  | `shotwell`         |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
 | :white_check_mark:  | `tinyproxy`        |                           |
 | :white_check_mark:  | `tyrant-unleashed-optimizer` |                 |
@@ -36,6 +45,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
@@ -67,7 +77,7 @@ No matter if you
  - are somebody who's curious about technology
  - think this is interesting
 
-we want you to get inolved.
+we want you to get involved.
 
 ### Fixing issues
 

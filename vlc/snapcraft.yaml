@@ -1,19 +1,21 @@
 name: vlc
-version: daily
+version: "daily"
 summary: Read, capture, broadcast your multimedia streams
-description: VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, podcasts, and multimedia streams from various network sources.
+description: |
+  VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+  DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+  podcasts, and multimedia streams from various network sources.
 confinement: strict
 
 apps:
   vlc:
     command: qt5-launch vlc
-    plugs: [unity7, network, home]
+    plugs: [unity7, network, home, opengl, pulseaudio, mount-observe, network-bind]
 
 parts:
   vlc:
-    plugin: x_vlcautotools
-    source-type: git
     source: https://github.com/videolan/vlc.git
+    plugin: x_vlcautotools
     build-packages:
       - autopoint
       - debhelper

@@ -1,65 +1,83 @@
 name: ffmpeg
-version: 3.0~git
+version: "3.0~git"
 summary: Tools for transcoding, streaming and playing of multimedia files
-description: FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
- mux, demux, stream, filter and play pretty much anything that humans and
- machines have created. It supports the most obscure ancient formats up to the
- cutting edge.
- This package contains;
-  ffmpeg - a command line tool to convert multimedia files between formats
-  ffserver - a multimedia streaming server for live broadcasts
-  ffplay - a simple media player based on SDL and the FFmpeg libraries
-  ffprobe - a simple multimedia stream analyzer
-  qt-faststart - a utility to rearrange Quicktime files
-
-# ffcfstress     ffmpeg         ffmpeg2theora  ffmvforce      ffplay         ffprobe        ffserver       ffset          fftest
+description: |
+  FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+  mux, demux, stream, filter and play pretty much anything that humans and
+  machines have created. It supports the most obscure ancient formats up to the
+  cutting edge.
+  This package contains
+    ffmpeg - a command line tool to convert multimedia files between formats
+    ffserver - a multimedia streaming server for live broadcasts
+    ffplay - a simple media player based on SDL and the FFmpeg libraries
+    ffprobe - a simple multimedia stream analyzer
+    qt-faststart - a utility to rearrange Quicktime files
+confinement: devmode
+# ffcfstress ffmpeg ffmpeg2theora ffmvforce ffplay ffprobe ffserver ffset fftest
 
 apps:
   ffmpeg:
     command: ffmpeg
-    plugs: [no-security]
-
-plugs:
-  no-security:
-    interface: old-security
-    security-template: unconfined
+    plugs: [home]
+  #server:
+    #command: ffserver
+    #plugs: [home]
+  #play:
+    #command: ffplay
+    #plugs: [home]
+  #probe:
+    #command: ffprobe
+    #plugs: [home]
+  #faststart:
+    #command: qt-faststart
+    #plugs: [home]
 
 parts:
-  launcher:
-    plugin: copy
-    files:
-      ffmpeg: bin/ffmpeg
-
   ffmpeg:
-    plugin: autotools
-    configflags: [--disable-ffplay, --disable-ffserver, --disable-ffprobe, --enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libvorbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
     source: git://source.ffmpeg.org/ffmpeg.git
-    source-type: git
+    plugin: autotools
+    configflags: 
+      - --disable-ffplay
+      - --disable-ffprobe
+      - --disable-ffserver
+      - --enable-gpl
+      - --enable-libass
+      - --enable-libfreetype
+      - --enable-libmp3lame
+      - --enable-libopus
+      - --enable-libtheora
+      - --enable-libvorbis
+      - --enable-libvpx
+      - --enable-libx264
+      - --enable-libx265
+      - --enable-nonfree
+    organize:
+        usr/local/bin/: bin/
     build-packages:
-      - git
-      - g++
-      - make
-      - yasm
       - autoconf
-      - libtool
-      - cmake
-      - pkg-config
       - automake
       - build-essential
+      - cmake
+      - g++
+      - git
       - libass-dev
       - libfreetype6-dev
+      - libmp3lame-dev
+      - libopus-dev
       - libsdl1.2-dev
       - libtheora-dev
+      - libtool
       - libva-dev
       - libvdpau-dev
       - libvorbis-dev
-      - libxcb1-dev
+      - libvpx-dev
+      - libx264-dev
+      - libx265-dev
       - libxcb-shm0-dev
       - libxcb-xfixes0-dev
+      - libxcb1-dev
+      - make
+      - pkg-config
       - texinfo
+      - yasm
       - zlib1g-dev
-      - libx264-dev
-      - libmp3lame-dev
-      - libopus-dev
-      - libx265-dev
-      - libvpx-dev

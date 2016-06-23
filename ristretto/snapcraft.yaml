@@ -1,10 +1,9 @@
 name: ristretto
-version: 1
+version: "1"
 summary: lightweight picture-viewer for the Xfce desktop environment
 description: |
   Ristretto is a fast and lightweight picture-viewer for the Xfce desktop
   environment.
-
 confinement: devmode
 
 apps:
@@ -15,7 +14,6 @@ apps:
 parts:
   ristretto:
     source: git://git.xfce.org/apps/ristretto
-    source-type: git
     plugin: autotools
     configflags:
       - --enable-maintainer-mode  # so src/marshal.h gets generated

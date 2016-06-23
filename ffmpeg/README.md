@@ -1,6 +1,6 @@
 # ffmpeg snap
 
-This project creates a working snap of ffmpeg.
+This project creates a working snap of `ffmpeg`.
 
 To get this done, we need to do the following:
  - build from current git
@@ -8,7 +8,8 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - ffmpeg
+ - `ffmpeg`
 
 Known issues:
-  - Other command line tools (ffmplay, ffserver, ffprobe) are not built.
+  - Other command line tools (`ffmplay`, `ffserver`, `ffprobe`) do not
+    build yet.

@@ -2,12 +2,12 @@ name: atom
 version: "1.8.0"
 summary: Atom Text Editor
 description: Atom Text editor, from GitHub
-confinement: strict
+confinement: devmode
 
 apps:
   atom:
     command: bin/wrapper
-    plugs: [home]
+    plugs: [home, x11, unity7, gsettings, opengl, pulseaudio, network]
 
 parts:
   atom:

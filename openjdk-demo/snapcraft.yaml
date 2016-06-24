@@ -14,6 +14,4 @@ parts:
     plugin: copy
     files:
       FileChooserDemo.sh: bin/FileChooserDemo.sh
-  java:
-    plugin: nil
     stage-packages: [openjdk-8-jre, openjdk-8-demo]

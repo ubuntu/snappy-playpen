@@ -12,7 +12,7 @@ apps:
 parts:
   atom:
     source: git://github.com/atom/atom
-    plugin: nodejs
+    plugin: grunt
     gruntfile: build/Gruntfile.coffee
     build-packages: [build-essential, git, libgnome-keyring-dev, fakeroot]
     stage-packages:

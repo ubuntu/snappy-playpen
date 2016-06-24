@@ -11,10 +11,9 @@ apps:
 
 parts:
   shotwell:
-    plugin: autotools
-    source: git://git.gnome.org/shotwell
-    source-type: git
+    source: git://git.gnome.org/shotwell.git
     source-tag: shotwell-0.23.1
+    plugin: autotools
     build-packages:
       - debhelper
       - desktop-file-utils

@@ -15,8 +15,11 @@ Working features:
 Known issues:
   - missing theme
   - uses gtk-launch, should actually only need a launcher for the fonts
+  - only starts if installed with --devmode
 
 TODO:
  - replace gtk-launch with launcher
  - fix theme
  
+If installed without "--devmode" it returns the following error:
+Invalid Log Path: Log path '/home/user/.IdeaIC2016/system/log' is inaccessible.

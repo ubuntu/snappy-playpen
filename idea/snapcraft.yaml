@@ -6,7 +6,7 @@ confinement: devmode
 
 apps:
   idea:
-    command: gtk-launch usr/share/idea/idea-IC-163.SNAPSHOT/bin/idea.sh
+    command: gtk-launch usr/share/idea/bin/idea.sh
     plugs: [home, unity7, x11]
 
 parts:

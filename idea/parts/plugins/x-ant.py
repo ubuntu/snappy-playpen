@@ -46,13 +46,7 @@ class AntPlugin(snapcraft.plugins.jdk.JdkPlugin):
     def build(self):
         super().build()
         self.run(['ant'])
-        destdir = os.path.join(self.installdir, 'usr', 'share', 'idea')
+        destdir = os.path.join(self.installdir, 'usr', 'share')
         idea_tarfile = glob.glob(os.path.join(self.builddir, 'out', 'artifacts', '*.tar.gz'))
         tarfile.open(idea_tarfile[0]).extractall(path=destdir)
-        #self.run(['tar', 'zxf', tarfile, '-C', destdir])
-        #self.run(['mkdir', '-p', jardir])
-        #files = glob.glob(os.path.join(self.builddir, 'out', 'dist.unix.ce', '*'))
-        #self.run(['cp', '-a'] + files + [jardir])
-        #files = glob.glob(os.path.join(self.builddir, 'out', 'dist.all.ce', '*'))
-        #self.run(['cp', '-a'] + files + [jardir])
-
+        os.rename(glob.glob(os.path.join(destdir, "idea*"))[0], os.path.join(destdir, "idea"))

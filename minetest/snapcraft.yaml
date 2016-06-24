@@ -6,7 +6,7 @@ description: |
   under the LGPL (version 2.1 or later). It supports both survival and
   creative modes along with multiplayer support, dynamic lighting, and an
   "infinite" map generator.
-confinement: devmode
+confinement: strict
 
 apps:
   minetest:

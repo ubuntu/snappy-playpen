@@ -1,0 +1,22 @@
+name: idea
+version: "snapshot"
+summary: IntelliJ Idea Community Edition
+description: This is my-snap's description # a longer description for the snap
+confinement: strict
+
+apps:
+    idea:
+        command: usr/share/idea/bin/idea.sh
+        plugs: [home]
+
+parts:
+    idea:
+        source: https://github.com/JetBrains/intellij-community.git
+        plugin: ant
+        build-packages: [openjdk-8-jdk, openjfx]
+        stage-packages: [openjdk-8-jdk, openjfx]
+    ideacopy:
+        plugin: copy
+        files:
+            'parts/idea/build/out/dist.unix.ce': 'usr/share/idea'
+        after: [idea]

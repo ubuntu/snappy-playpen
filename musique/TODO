@@ -1,0 +1,2 @@
+<seb128> dholbach, attente, http://sources.debian.net/src/qt4-x11/4:4.8.7%2Bdfsg-8/src/corelib/io/qsettings.cpp/?hl=2672#L3531
+<seb128> dholbach, attente, basically you need to rebuild your qt4 with different buildtime option

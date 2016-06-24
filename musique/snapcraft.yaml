@@ -1,0 +1,40 @@
+name: musique
+version: "1"
+summary: The perfect™ music player
+description: |
+  Musique is a music player built for speed, simplicity and style. It is
+  written in C++ using the Qt framework. Contributing is welcome, especially
+  in the Linux desktop integration area.
+confinement: devmode
+
+apps:
+  musique:
+    command: qt4-launch $SNAP/usr/bin/musique
+    plugs: [x11, home, unity7, network, network-bind, pulseaudio]
+
+parts:
+  musique:
+    plugin: qmake
+    source: git://github.com/flaviotordini/musique
+    build-packages:
+      - build-essential
+      - fakeroot
+      - qt4-dev-tools
+      - qt4-qmake
+      - libtag1-dev
+      - libphonon-dev
+      - libqt4-sql-sqlite
+    stage:
+      - usr
+      - etc
+    snap:
+      - usr
+      - etc
+      - -usr/share/doc
+    stage-packages:
+      - fontconfig-config
+      - libqt4-sql-sqlite
+      - libqtcore4
+      - phonon
+      - phonon-backend-gstreamer
+    after: [qt4conf]

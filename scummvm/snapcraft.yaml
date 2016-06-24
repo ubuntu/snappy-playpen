@@ -20,8 +20,8 @@ parts:
     files: 
       scummvm-launcher: bin/scummvm-launcher
   scummvm:
-    plugin: autotools
     source: https://github.com/scummvm/scummvm.git
+    plugin: autotools
 #    Quick test build
 #    configflags:
 #      - --disable-all-engines

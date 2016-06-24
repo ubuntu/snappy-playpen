@@ -1,34 +1,36 @@
 name: atom
-version: "1.9.0"
+version: "1.8.0"
 summary: Atom Text Editor
 description: Atom Text editor, from GitHub
-confinement: strict
+confinement: devmode
 
 apps:
   atom:
     command: bin/wrapper
-    plugs: [home]
+    plugs: [home, x11, unity7, gsettings, opengl, pulseaudio, network]
 
 parts:
   atom:
-    source: git://github.com/atom/atom
-    plugin: nodejs
+    source: https://github.com/atom/atom/archive/v1.8.0.tar.gz
+    plugin: grunt
     gruntfile: build/Gruntfile.coffee
-    build-packages: [build-essential, git, libgnome-keyring-dev, fakeroot]
+    build-packages: [build-essential, git, libgnome-keyring-dev]
     stage-packages:
-      - git
-      - gconf2
       - gconf-service
-      - libgtk2.0-0
-      - libudev1
-      - libgcrypt20
-      - libnotify4
-      - libxtst6
-      - libnss3
-      - python
+      - gconf2
+      - git
       - gvfs-bin
-      - xdg-utils
+      - libasound2
       - libcap2
+      - libgcrypt20
+      - libgtk2.0-0
+      - libnotify4
+      - libnss3
+      - libudev1
+      - libxtst6
+      - python
+      - xdg-utils
+      - unity-gtk2-module
   atom-copy:
     source: .
     plugin: copy

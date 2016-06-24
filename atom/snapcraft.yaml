@@ -1,5 +1,5 @@
 name: atom
-version: "1.9.0"
+version: "1.8.0"
 summary: Atom Text Editor
 description: Atom Text editor, from GitHub
 confinement: strict
@@ -11,7 +11,7 @@ apps:
 
 parts:
   atom:
-    source: git://github.com/atom/atom
+    source: https://github.com/atom/atom/archive/v1.8.0.tar.gz
     plugin: grunt
     gruntfile: build/Gruntfile.coffee
     build-packages: [build-essential, git, libgnome-keyring-dev, fakeroot]

@@ -11,7 +11,7 @@ confinement: devmode
 apps:
   minetest:
     command: minetest
-    plugs: [x11, network, network-bind, unity7, opengl, home]
+    plugs: [x11, network, network-bind, unity7, opengl, home, pulseaudio]
 
 parts:
   launcher:
@@ -45,9 +45,11 @@ parts:
       - libogg-dev
       - libopenal-dev
       - libpng12-dev
+      - libpulse-dev
       - libsqlite3-dev
       - libvorbis-dev
       - libx11-dev
       - zlib1g-dev
     stage-packages:
       - libgl1-mesa-dri
+      - libpulse0

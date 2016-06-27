@@ -4,4 +4,4 @@ This project create a snap for the Java Swing example applications.
 
 ## Current State
 
-Theme not applied, but everything else works.
+If you choose "GTK+ theme", the old one is applied, but everything else works.

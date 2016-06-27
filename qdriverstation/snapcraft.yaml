@@ -2,7 +2,7 @@ name: qdriverstation
 version: 16.06.1
 summary: Open source clone of the FRC Driver Station
 description: The QDriverStation is a cross-platform and open-source alternative to the FRC Driver Station. It supports the FRC 2009-2014 communication protocol and the FRC 2015-2016 protocol.
-confinement: strict
+confinement: devmode
 
 apps:
   qdriverstation:
@@ -19,7 +19,7 @@ parts:
   qdriverstation:
     plugin: qmake
     source-type: git
-    source: https://github.com/WinT-3794/QDriverStation.git
+    source: https://github.com/FRC-Utilities/QDriverStation.git
     build-packages:
       - libsdl2-dev
       - qtbase5-dev

@@ -1,0 +1,58 @@
+name: love
+version: "0.10.1"
+summary: LÖVE is an awesome framework you can use to make 2D games in Lua
+description: |
+ 2D game development framework based on Lua and OpenGL
+ LÖVE was created to be a user-friendly engine in which simple (or
+ complicated) games could be made without having extensive knowledge
+ of system or graphics functions and without having to dedicate time
+ towards developing the same engine features time and time again.
+ .
+ Developed with cross-platform implementation in mind, it utilizes the
+ latest open source libraries to deliver a similar game experience,
+ independent of operating system. By relying on the Lua scripting language
+ for game-specific programming, it allows even the novice game creator to
+ quickly and efficiently develop an idea into a fully working game.
+
+apps:
+  love:
+    command: launcher
+    plugs: [network, network-bind, unity7, opengl, pulseaudio]
+
+parts:
+  launcher:
+    plugin: copy
+    files:
+      launcher: bin/launcher
+  love:
+#    plugin: lovebuild
+#    source: https://bitbucket.org/rude/love
+#    source-type: hg
+#    source-tag: 0.10.1
+    plugin: autotools
+    source: https://bitbucket.org/rude/love/downloads/love-0.10.1-linux-src.tar.gz
+    build-packages:
+      - build-essential
+      - autotools-dev
+      - automake
+      - libtool
+      - pkg-config
+      - libdevil-dev
+      - libfreetype6-dev
+      - libluajit-5.1-dev
+      - libphysfs-dev
+      - libsdl2-dev
+      - libopenal-dev
+      - libogg-dev
+      - libvorbis-dev
+      - libtheora-dev
+      - libflac-dev
+      - libflac++-dev
+      - libmodplug-dev
+      - libmpg123-dev
+      - libmng-dev
+      - libturbojpeg
+      - lua5.1
+    stage-packages:
+      - libgl1-mesa-glx
+      - libgl1-mesa-dri

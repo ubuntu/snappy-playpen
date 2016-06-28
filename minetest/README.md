@@ -11,6 +11,3 @@ To get this done, we need to do the following:
 
 Working features:
  - Minetest as a client to Minetest servers
-
-Known issues:
-  - Audio doesn't work, but this is a problem with snappy, not this snap

@@ -1,0 +1,35 @@
+name: qcomicbook
+version: 0.9.1
+summary: QComicBook
+description: QComicBook is a viewer for PDF files and comic book archives containing jpeg/png/xpm/gif/bmp images, which aims at convenience and simplicity.
+confinement: strict
+
+apps:
+  qcomicbook:
+    command: qt5-launch qcomicbook
+    plugs: [home, unity7, x11]
+
+parts:
+  qcomicbook:
+    plugin: cmake
+    source: https://github.com/stolowski/QComicBook.git
+    source-type: git
+    build-packages:
+        - g++
+        - libqt5x11extras5-dev
+        - libpoppler-qt5-dev
+        - libqt5widgets5
+        - libqt5printsupport5
+        - qtbase5-dev
+        - qttools5-dev-tools
+        - pkg-config
+    after: [qt5conf-with-gtk]
+    stage-packages:
+        - rar
+        - unzip
+        - unace
+        - tar
+        - p7zip
+        - libqt5gui5
+        - libgtk2.0-bin
+

@@ -1,10 +1,11 @@
 name: consul
-version: 0.6.4
+version: "0.6.4"
 summary: Consul is a tool for service discovery, monitoring and configuration
 description: |
   Consul is distributed, highly available, and extremely scalable.
   Consul provides service discovery, health checking, key/value storage and
   multi-datacenter.
+confinement: devmode
 
 apps:
   consul:
@@ -13,7 +14,6 @@ apps:
 
 parts:
   consul:
+    source: https://github.com/hashicorp/consul.git
     plugin: go
-    source: https://github.com/hashicorp/consul
-    source-type: git
     go-importpath: github.com/hashicorp/consul

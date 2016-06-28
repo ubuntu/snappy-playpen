@@ -1,43 +1,49 @@
 name: ubuntukylin-icon-theme
-version: 1.0
+version: "1.0"
 summary: Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono.
 description: |
- Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono. After installations run the
- activation command to enable it.
- 
- Activation command: ubuntukylin-icon-theme.enable
- 
- After that, you should find ubuntukylin-icon-theme-snap in your favourite
- theme editor (eg.: unity-tweak-tool).
+  Remixed icon theme based on Square-Light, Ultra-Flat and ubuntu-mono.  After
+  installations run the activation command to enable it.
+
+  Activation command: ubuntukylin-icon-theme.enable
+
+  After that, you should find ubuntukylin-icon-theme-snap in your favourite
+  theme editor (eg. unity-tweak-tool).
 confinement: devmode
+
 apps:
   enable: 
    command: "cp -r $SNAP/icon-theme/ubuntukylin-icon-theme-snap /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-   plugs:
-      - home
-      - unity7
-      - icon-theme-access
-  
+   plugs: [home, unity7, icon-theme-access]
   set:
     command: "theme-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
-    plugs:
-      - home
-      - unity7
-      - icon-theme-access
-      - icons-theme-set
-  
+    plugs: [home, unity7, icon-theme-access, icons-theme-set]
   disable: 
     command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-    plugs: 
-      - home
-      - unity7
-      - icon-theme-access
+    plugs: [home, unity7, icon-theme-access]
+
+plugs:
+  icons-theme-access:
+    type: old-security
+    security-override:
+      read-paths:
+        - "/home/$USER/.icons"
+      write-paths:
+        - "/home/$USER/.icons"
+      syscalls:
+        - "mkdir"
+  icons-theme-set:
+    type: old-security
+    security-override:
+      read-paths:
+        - "/home/$USER/.icons"
+      syscalls:
+        - "gsettings"
 
 parts:
   theme:
-    plugin: copy_and_edit
     source: lp:ubuntukylin-theme
-    source-type: bzr
+    plugin: copy_and_edit
     files:
       ubuntukylin-icon-theme: icon-theme/ubuntukylin-icon-theme-snap
     edit:
@@ -62,22 +68,3 @@ parts:
     plugin: copy
     files:
       giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache
-
-slots:
-  icons-theme-access:
-    type: old-security
-    security-override:
-      read-paths:
-        - "/home/$USER/.icons"
-      write-paths:
-        - "/home/$USER/.icons"
-      syscalls:
-        - "mkdir"
-  icons-theme-set:
-    type: old-security
-    security-override:
-      read-paths:
-        - "/home/$USER/.icons"
-      syscalls:
-        - "gsettings"
-

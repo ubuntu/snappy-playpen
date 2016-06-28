@@ -1,24 +1,26 @@
-# ImageMagick6-stable snap
+# ImageMagick7-edge snap
 
 This project creates a mostly-working snap of kitchen-sink (all options)
-ImageMagick 6.
+ImageMagick 7.
 
 To get this done, we need to do the following:
  - Find out what doesn't work yet; I am not a server admin and have no
-   real workloads to test with. Having run `imagemagick-stable.mogrify` on
-   a directory of images, I can confirm basic functionality, so everything
-   _should_ work.
+   real workloads to test with. Having run `imagemagick-edge.mogrify` on
+   a directory of images, I can confirm basic functionality, however
+   `imagemagick-edge.magick / magick-script` don't work. I don't know how
+   they are usually used, and what I might be doing wrong, or if there are
+   serious errors to be addressed.
+  
  - Give feedback about missing options, and if you know how to enable
-   them, let me know (ie, OpenCL... no idea if that is relevant in
-   a server context)
+   them, let me know
  - Develop a solid, working security profile, and determine the `snap`
    interfaces required
 
 ## Current state
 
 Working features:
- - Builds the `snap` of IM6 and provides access to all tools through
-   `imagemagick-stable.<tool>`
+ - Builds the `snap` of IM7 and provides access to all tools through
+   `imagemagick-edge.<tool>`
 
 Known issues:
  - The main CLI tools (`convert`, `conjure`, `mogrify`, `identify`, etc)
@@ -27,13 +29,8 @@ Known issues:
    installed application. Installation instructions below.
 
 TODO:
- - Security profile: using `snappy-debug.security scanlog` to monitor
-   read/write activity of `imagemagick-stable.<operation>` it seems that
-   IM6 wants to write to `/etc/ImageMagick-stable/log.xml`, which is
-   denied. Operations still work correctly, but this is
-   a misconfiguration, and logging should be somewhere within the image's
-   `$SNAP` prefix.
- - Upload to store on correct `stable` channel - would prefer more
+ - Security profile
+ - Upload to store on correct `edge` channel - would prefer more
    auditing before making this more widely available, or having project
    maintainers take the initiative from the start.
  
@@ -49,12 +46,12 @@ installation and removal of snaps (no need for `sudo`)
 ```
 
     $ git clone git://github.com/ubuntu/snappy-playpen
-    $ cd snappy-playpen/imagemagick-stable/
+    $ cd snappy-playpen/imagemagick-edge/
     $ snap login <your@ubuntu.one.email>
         <authenticate>
     $ snapcraft cleanbuild
         <lots of compiling>
-    $ snap install imagemagick-stable.snap
-    $ snap connect imagemagick-stable:home ubuntu-core:home
+    $ snap install imagemagick-edge.snap
+    $ snap connect imagemagick-edge:home ubuntu-core:home
 
 ```

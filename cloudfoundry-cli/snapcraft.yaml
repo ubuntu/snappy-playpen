@@ -7,13 +7,14 @@ confinement: strict
 
 apps:
   cf:
-    command: bin/cf
-    plugs: [network]
+    command: bin/main
+    plugs: [network, network-bind]
 
 parts:
     cli:
-      plugin: go
+      plugin: cf
       source: https://github.com/cloudfoundry/cli
       source-type: git
       source-tag: v6.19.0
       go-importpath: github.com/cloudfoundry/cli
+      build-packages: [g++]

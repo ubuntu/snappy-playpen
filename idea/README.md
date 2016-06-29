@@ -6,6 +6,7 @@ To get this done, we need to do the following:
  - edit the ant plugin
  - build from current git
  - extract created tarfile
+ - use custom launcher
 
 ## Current state
 
@@ -13,12 +14,10 @@ Working features:
  - ide
 
 Known issues:
-  - missing theme
-  - uses gtk-launch, should actually only need a launcher for the fonts
+  - missing theme (gtk, the intellij one works fine)
   - only starts if installed with --devmode
 
 TODO:
- - replace gtk-launch with launcher
  - fix theme
  
 If installed without "--devmode" it returns the following error:

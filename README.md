@@ -34,6 +34,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `minetest`         |                           | cmake, copy               |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  | curses, autotools         |
 | :white_check_mark:  | `mpv`              |                           | autotools, waf            |
+| :white_check_mark:  | `nomad`            |                           | go and make in custom plugin|
 | :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
 | :white_check_mark:  | `openttd`          |                           | copy, qt5                 |
 | :red_circle:        | `plank`            |                           | autotools, vala           |

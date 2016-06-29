@@ -11,3 +11,4 @@ Working features:
 
 Known issues:
  - It required to hack the go plugin in order to install only the main package.
+ - The project has a script to generate localization messages. That is not being run in this package.

@@ -6,7 +6,8 @@ There is a deb package, but it is not in the Ubuntu archive nor in a PPA.
 ## Current state
 
 Working features:
- - None
+ - The snap builds and executes. More testing is required to verify the functions don't
+   require extra interfaces.
 
 Known issues:
- - Fails to build with many errors like: main redeclared in this block.
+ - It required to hack the go plugin in order to install only the main package.

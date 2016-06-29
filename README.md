@@ -34,6 +34,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `smplayer`         |                           |
 | :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `qcomicbook`       |                           |
+| :red_circle:        | `qdriverstation`   |                           |
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `shotwell`         |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |

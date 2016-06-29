@@ -10,7 +10,7 @@ Working features:
  - The application is working fine. You can even change the downloads folder (by default inside snap directory) to a directory within the user's home folder.
 
 Known issues:
-  - Open 'downloads folder' button is not working. An exception is thrown: 
+  - Open `downloads folder` button is not working. An exception is thrown: 
 
       Error trying to open the Downloads directory. Error: Failed to show URI:file:/home/egarcia/snap/wallpaperdownloader/1/.wallpaperdownloader/downloads/)
 

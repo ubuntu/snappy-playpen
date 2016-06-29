@@ -1,0 +1,25 @@
+name: nomad
+version: 0.4.0  # the version of the snap
+summary: A Distributed, Highly Available, Datacenter-Aware Scheduler
+description: |
+  Nomad is a cluster manager, designed for both long lived services and short
+  lived batch processing workloads. Developers use a declarative job
+  specification to submit work, and Nomad ensures constraints are satisfied and
+  resource utilization is optimized by efficient task packing. Nomad supports
+  all major operating systems and virtualized, containerized, or standalone
+  applications.
+confinement: devmode
+
+apps:
+  nomad:
+    command: nomad
+    plugs: [network, network-bind]
+
+parts:
+  nomad:
+    plugin: nomad
+    source: https://github.com/hashicorp/nomad
+    source-type: git
+    source-tag: v0.4.0
+    go-importpath: github.com/hashicorp/nomad
+    build-packages: [make, g++]

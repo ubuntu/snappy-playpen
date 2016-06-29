@@ -43,6 +43,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |
+| :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] |
 | :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
@@ -51,6 +52,7 @@ This project currently includes the following snaps:
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
 [vault]: https://uappexplorer.com/app/kpcli-elopio.elopio
+[wallpaperdownloader]: https://uappexplorer.com/app/wallpaperdownloader.egarcia
 
 
 If the apps is listed in the second column, you can easily install it from the

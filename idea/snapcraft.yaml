@@ -16,6 +16,6 @@ parts:
       idea-launcher: bin/idea-launcher
   idea:
     source: https://github.com/JetBrains/intellij-community.git
-    plugin: ant
+    plugin: antIntellij
     build-packages: [openjdk-8-jdk, openjfx]
     stage-packages: [openjdk-8-jdk, openjfx]

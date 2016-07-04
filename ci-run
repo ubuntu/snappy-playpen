@@ -17,7 +17,7 @@ for dir in $projects_to_test; do
 
     echo "Testing $dir"
     cd ${root_dir}/$dir
-    docker run -v $(pwd):/snapcraft -t didrocks/snapcraft sh -c "cd /snapcraft && snapcraft"
+    docker run -v $(pwd):/snapcraft -t didrocks/snapcraft sh -c "cd /snapcraft && snapcraft update && snapcraft"
     ls *.snap
     if [ $? -ne 0 ]; then
         echo "FAILURE: No .snap file built"

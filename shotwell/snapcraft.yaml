@@ -6,7 +6,7 @@ confinement: strict
 
 apps:
   shotwell-git:
-    command: desktop-launch shotwell
+    command: gtk-launch shotwell
     plugs: [x11, unity7, home]
 
 parts:
@@ -40,6 +40,8 @@ parts:
       - libunity-dev
       - python-scour
       - intltool
+      - appstream-util
+      - yelp-tools
     stage-packages:
       - libc6
       - libcairo2
@@ -66,5 +68,5 @@ parts:
       - libxml2
       - librsvg2-common
       - dbus-x11
-      - dconf-tools
-    after: [desktop/gtk3]
+      - dconf-tools 
+    after: [gtkconf]

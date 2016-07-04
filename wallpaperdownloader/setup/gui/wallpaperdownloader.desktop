@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=2.0
+Name=WallpaperDownloader
+GenericName=Wallpaper Downloader
+Comment=Download and manage wallpapers automatically from the Internet
+Keywords=wallpaper;gallery;internet;download;
+Exec=wallpaperdownloader
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;

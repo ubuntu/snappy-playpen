@@ -8,10 +8,9 @@ For more information, please visit the official [Wiki](https://bitbucket.org/elo
 
 Working features:
  - The application is working fine. You can even change the downloads folder (by default inside snap directory) to a directory within the user's home folder.
+ - Now, the application is integrated with the Desktop. A Desktop Launcher has been created and a menu entry too under `Utility` category.
 
 Known issues:
   - Open `downloads folder` button is not working. An exception is thrown: 
 
       Error trying to open the Downloads directory. Error: Failed to show URI:file:/home/egarcia/snap/wallpaperdownloader/1/.wallpaperdownloader/downloads/)
-
-  - Icon is defined but it is not integrated with the Desktop.

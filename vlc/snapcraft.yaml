@@ -10,7 +10,7 @@ confinement: strict
 apps:
   vlc:
     command: qt5-launch vlc
-    plugs: [unity7, network, home, opengl, pulseaudio, mount-observe, network-bind]
+    plugs: [unity7, network, home, opengl, pulseaudio, mount-observe, network-bind, camera]
 
 parts:
   vlc:

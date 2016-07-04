@@ -19,6 +19,7 @@ parts:
     plugin: cmake
     build-packages:
       - g++
+      - libqt4-dev # upstream cmake needs libqt4-dev to find qt5-core
       - libqt5x11extras5-dev
       - qttools5-dev
       - qttools5-dev-tools

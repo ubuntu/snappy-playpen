@@ -1,7 +1,12 @@
 name: shotwell
 version: 0.23.2
 summary: Shotwell photo manager
-description: Shotwell is a photo manager for GNOME
+description: |
+  Shotwell is a digital photo organizer designed for the GNOME desktop
+  environment. It allows you to import photos from disk or camera, organize
+  them in various ways, view them in full-window or fullscreen mode, and
+  export them to share with others. It is able to manage a lot of different
+  image formats, also including raw CR2 files.
 confinement: strict
 
 apps:
@@ -68,5 +73,5 @@ parts:
       - libxml2
       - librsvg2-common
       - dbus-x11
-      - dconf-tools 
+      - dconf-tools
     after: [gtkconf]

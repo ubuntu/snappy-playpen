@@ -5,12 +5,12 @@ description: |
   KeePassX is an application for people with extremly high demands on secure
   personal data management. It has a light interface, is cross platform and
   published under the terms of the GNU General Public License.
-confinement: devmode
+confinement: strict
 
 apps:
   keepassx:
     command: desktop-launch keepassx
-    plugs: [unity7, opengl]
+    plugs: [unity7, opengl, gsettings, home]
 
 parts:
   keepassx:

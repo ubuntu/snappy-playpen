@@ -25,8 +25,3 @@ parts:
       - libgcrypt20-dev
       - zlib1g-dev
     after: [desktop/qt5]
-  glibcompiledassets:
-    plugin: copy
-    files:
-      gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
-      giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache

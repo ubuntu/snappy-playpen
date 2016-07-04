@@ -7,7 +7,6 @@ confinement: devmode
 apps:
   gitter:
     command: desktop-launch ./Gitter
-    plugs: [unity7, opengl, gsettings, home, x11, network, network-bind, pulseaudio]
 
 parts:
   download:

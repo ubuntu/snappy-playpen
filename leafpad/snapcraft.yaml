@@ -9,7 +9,7 @@ confinement: devmode
 
 apps:
   leafpad:
-    command: gtk-launch leafpad
+    command: desktop-launch leafpad
     plugs: [home, unity7, opengl, network, x11]
 
 parts:
@@ -20,10 +20,6 @@ parts:
       - -usr/share/doc
     build-packages:
       - build-essential
-      - libgtk2.0-dev
       - intltool
-    stage-packages:
-      - fontconfig-config
-      - libgtk2.0-bin
-    after: [gtkconf]
+    after: [desktop/gtk2]
 

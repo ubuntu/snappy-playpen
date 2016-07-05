@@ -1,33 +1,35 @@
 name: texworks
 version: git
-summary: TeXworks 
-description: TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents, with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean, simple interface accessible to casual and non-technical users.
+summary: TeXworks
+description: |
+  TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents,
+  with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean,
+  simple interface accessible to casual and non-technical users.
 
 apps:
   texworks:
-    command: qt4-launch bin/texworks
+    command: desktop-launch $SNAP/bin/texworks
     plugs: [home, x11, unity7]
 
 parts:
   texworks:
     plugin: cmake
     source: https://github.com/TeXworks/texworks.git
-    source-type: git
+    source-tag: release-0.6.1
     build-packages:
-      - build-essential
-      - libpoppler-qt4-dev
-      - libpoppler-dev
-      - libfontconfig1-dev
+      - debhelper
+      - pkg-config
+      - cmake
       - libhunspell-dev
-      - libdbus-1-dev
-      - liblua5.1-0-dev
+      - qtbase5-dev
+      - libpoppler-qt5-dev
+      - liblua5.2-dev
+      - python-dev
       - zlib1g-dev
+      - libsynctex-dev
     stage-packages:
       - libc6
       - libgcc1
-      - libdbus-1-3
-      - liblcms2-2
-      - libpng12-0
       - libhunspell-1.3-0
       - libpoppler-qt4-4
       - libqt4-dbus
@@ -38,25 +40,10 @@ parts:
       - libqtgui4
       - libstdc++6
       - libsynctex1
-      - fontconfig
-      - gsfonts
-      - poppler-data
-#      - lmodern
-#      - tex-common
-#      - texlive-base
-#      - texlive-binaries
-#      - texlive-latex-base
-#      - texlive-latex-base-doc
-  texlive:
-    plugin: texlive
-    source: http://ctan.mirror.garr.it/mirrors/CTAN/systems/texlive/Source/texlive-20160520-source.tar.xz
-    source-type: tar
-    build-packages:
-      - libfontconfig1-dev
-      - libx11-dev
-      - libxmu-dev
-      - libxaw7-dev
-#    organize:
-#     usr/share/texmf: share/texmf
-#      usr/share/texlive: share/texlive
-    after: [qt4conf]
+      - lmodern
+      - tex-common
+      - texlive-base
+      - texlive-binaries
+      - texlive-latex-base
+      - texlive-latex-base-doc
+    after: [desktop/qt5]

@@ -1,7 +1,9 @@
 name: qcomicbook
-version: 0.9.1
+version: "0.9.1"
 summary: QComicBook
-description: QComicBook is a viewer for PDF files and comic book archives containing jpeg/png/xpm/gif/bmp images, which aims at convenience and simplicity.
+description: |
+  QComicBook is a viewer for PDF files and comic book archives containing
+  jpeg/png/xpm/gif/bmp images, which aims at convenience and simplicity.
 confinement: strict
 
 apps:
@@ -11,9 +13,8 @@ apps:
 
 parts:
   qcomicbook:
-    plugin: cmake
     source: https://github.com/stolowski/QComicBook.git
-    source-type: git
+    plugin: cmake
     build-packages:
         - g++
         - libqt5x11extras5-dev

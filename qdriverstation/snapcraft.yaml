@@ -6,30 +6,21 @@ confinement: devmode
 
 apps:
   qdriverstation:
-    command: qt5-launch qdriverstation
-    plugs:
-      - x11
-      - network
-      - pulseaudio
-      - network-bind
-      - system-observe
-      - network-observe
+    command: desktop-launch qdriverstation
 
 parts:
   qdriverstation:
-    plugin: qmake
-    source-type: git
     source: https://github.com/FRC-Utilities/QDriverStation.git
+    plugin: qmake
     build-packages:
       - libsdl2-dev
-      - qtbase5-dev
       - qttools5-dev 
       - build-essential
       - libqt5webkit5-dev 
       - qtmultimedia5-dev
       - qtdeclarative5-dev 
       - qttools5-dev-tools 
-    after: [qt5conf]
+    after: [desktop/qt5]
   env:
     plugin: nil
     stage-packages:

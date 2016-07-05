@@ -10,5 +10,6 @@ Working features:
    require extra interfaces.
 
 Known issues:
- - It required to hack the go plugin in order to install only the main package.
+ - The branch has many main packages, which makes snapcraft fail unless a workaround is implemented:
+   https://bugs.launchpad.net/snapcraft/+bug/1599328
  - The project has a script to generate localization messages. That is not being run in this package.

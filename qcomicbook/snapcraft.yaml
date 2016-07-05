@@ -6,7 +6,7 @@ confinement: strict
 
 apps:
   qcomicbook:
-    command: qt5-launch qcomicbook
+    command: desktop-launch qcomicbook
     plugs: [home, unity7, x11]
 
 parts:
@@ -20,16 +20,13 @@ parts:
         - libpoppler-qt5-dev
         - libqt5widgets5
         - libqt5printsupport5
-        - qtbase5-dev
         - qttools5-dev-tools
         - pkg-config
-    after: [qt5conf-with-gtk]
     stage-packages:
         - rar
         - unzip
         - unace
         - tar
         - p7zip
-        - libqt5gui5
-        - libgtk2.0-bin
+    after: [desktop/qt5]
 

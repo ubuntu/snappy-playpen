@@ -7,19 +7,11 @@ confinement: devmode
 apps:
   qdriverstation:
     command: desktop-launch qdriverstation
-    plugs:
-      - x11
-      - network
-      - pulseaudio
-      - network-bind
-      - system-observe
-      - network-observe
 
 parts:
   qdriverstation:
-    plugin: qmake
-    source-type: git
     source: https://github.com/FRC-Utilities/QDriverStation.git
+    plugin: qmake
     build-packages:
       - libsdl2-dev
       - qttools5-dev 

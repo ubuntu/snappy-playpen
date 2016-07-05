@@ -11,14 +11,10 @@ confinement: strict
 
 apps:
   scummvm:
-    command: bin/scummvm-launcher
+    command: scummvm
     plugs: [x11, home, pulseaudio]
 
 parts:
-  launcher:
-    plugin: copy
-    files: 
-      scummvm-launcher: bin/scummvm-launcher
   scummvm:
     source: https://github.com/scummvm/scummvm.git
     plugin: autotools
@@ -58,7 +54,6 @@ parts:
       - libmpeg2-4
       - libogg0
       - libpng12-0
-      - libpulse0
       - libsdl1.2debian
       - libsndio6.1
       - libstdc++6

@@ -6,8 +6,7 @@ confinement: devmode
 
 apps:
   gitter:
-    command: gtk-launch ./Gitter
-    plugs: [unity7, opengl, gsettings, home, x11, network, network-bind, pulseaudio]
+    command: desktop-launch ./Gitter
 
 parts:
   download:
@@ -23,11 +22,7 @@ parts:
       icudtl.dat: icudtl.dat
       libffmpegsumo.so: libffmpegsumo.so
     stage-packages:
-      - dconf-gsettings-backend
       - libgl1-mesa-glx
-      - libglib2.0-0
-      - libgtk-3-0
       - libnss3
-      - ttf-ubuntu-font-family
-    after: [gtkconf, download]
+    after: [desktop/gtk3, download]
 

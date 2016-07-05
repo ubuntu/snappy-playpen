@@ -6,16 +6,13 @@ confinement: devmode
 
 apps:
   idea:
-    command: bin/idea-launcher
+    command: desktop-launch $SNAP/usr/share/idea/bin/idea.sh
     plugs: [home, unity7, x11]
 
 parts:
-  launcher:
-    plugin: copy
-    files:
-      idea-launcher: bin/idea-launcher
   idea:
     source: https://github.com/JetBrains/intellij-community.git
     plugin: antIntellij
     build-packages: [openjdk-8-jdk, openjfx]
     stage-packages: [openjdk-8-jdk, openjfx]
+    after: [desktop/gtk2]

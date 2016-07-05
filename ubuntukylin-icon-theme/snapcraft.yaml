@@ -14,13 +14,13 @@ confinement: devmode
 apps:
   enable: 
    command: "cp -r $SNAP/icon-theme/ubuntukylin-icon-theme-snap /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-   plugs: [home, unity7]
+   plugs: [home, gsettings]
   set:
     command: "theme-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
-    plugs: [home, unity7]
+    plugs: [home, gsettings]
   disable: 
     command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-    plugs: [home, unity7]
+    plugs: [home, gsettings]
 
 parts:
   theme:

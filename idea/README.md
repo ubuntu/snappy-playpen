@@ -14,7 +14,6 @@ Working features:
  - ide
 
 Known issues:
-  - missing theme (gtk, the intellij one works fine)
   - only starts if installed with --devmode
 
 TODO:

@@ -1,0 +1,26 @@
+name: openttd
+version: 1.6.1
+summary: Reimplementation of Transport Tycoon Deluxe with enhancements
+description: |
+  OpenTTD is a reimplementation of the Microprose game "Transport Tycoon
+  Deluxe" with lots of new features and enhancements.
+  .
+  OpenTTD is playable with the free graphics files from the openttd-opengfx
+  package and optional sound files from the openttd-opensfx package (which
+  is in non-free). Alternatively, OpenTTD can use the graphics files from
+  the original Transport Tycoon Deluxe game (See README.Debian on how to set
+  this up).
+
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+  openttd:
+    command: desktop-launch $SNAP/openttd
+
+parts:
+  openttd:
+    source: http://binaries.openttd.org/releases/1.6.1/openttd-1.6.1-linux-generic-amd64.tar.gz
+    plugin: copy
+    files:
+      '*': './'
+    after: [desktop/qt5]

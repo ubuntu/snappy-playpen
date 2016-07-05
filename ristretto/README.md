@@ -5,7 +5,6 @@ This project creates a working snap of `ristretto`.
 To get this done, we need to do the following:
  - use desktop launcher part
  - build from current git
- - run using `--devmode`
 
 ## Current state
 

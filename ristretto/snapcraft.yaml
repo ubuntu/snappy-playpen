@@ -4,12 +4,12 @@ summary: lightweight picture-viewer for the Xfce desktop environment
 description: |
   Ristretto is a fast and lightweight picture-viewer for the Xfce desktop
   environment.
-confinement: devmode
+confinement: strict
 
 apps:
   ristretto:
     command: desktop-launch ristretto
-    plugs: [home, network, unity7, x11]
+    plugs: [home, network, unity7, x11, gsettings]
 
 parts:
   ristretto:

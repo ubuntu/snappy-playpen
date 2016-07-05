@@ -10,7 +10,7 @@ confinement: devmode
 
 apps:
   smplayer:
-    command: qt5-launch usr/bin/smplayer
+    command: desktop-launch smplayer
     plugs: [unity7, network, home]
 
 parts:
@@ -18,7 +18,6 @@ parts:
     plugin: nil
     stage-packages:
       - smplayer
-      - fonts-freefont-ttf
       - libaa1
       - libavcodec-ffmpeg56
       - libavcodec-ffmpeg-extra56
@@ -59,4 +58,4 @@ parts:
       - libxinerama1
       - libxpm4
       - zlib1g
-    after: [qt5conf]
+    after: [desktop/qt5]

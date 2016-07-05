@@ -1,7 +1,12 @@
 name: shotwell
-version: 0.23.1
+version: 0.23.2
 summary: Shotwell photo manager
-description: Shotwell is a photo manager for GNOME 3.
+description: |
+  Shotwell is a digital photo organizer designed for the GNOME desktop
+  environment. It allows you to import photos from disk or camera, organize
+  them in various ways, view them in full-window or fullscreen mode, and
+  export them to share with others. It is able to manage a lot of different
+  image formats, also including raw CR2 files.
 confinement: strict
 
 apps:
@@ -12,19 +17,18 @@ apps:
 parts:
   shotwell:
     source: git://git.gnome.org/shotwell.git
-    source-tag: shotwell-0.23.1
+    source-tag: shotwell-0.23.2
     plugin: autotools
     build-packages:
-      - debhelper
       - desktop-file-utils
-      - libatk1.0-dev
+      - gnome-doc-utils
       - libexif-dev
       - libgee-0.8-dev
       - libgexiv2-dev
       - libglib2.0-dev
       - libgphoto2-dev
-      - libgstreamer1.0-dev
       - libgstreamer-plugins-base1.0-dev
+      - libgstreamer1.0-dev
       - libgtk-3-dev
       - libgudev-1.0-dev
       - libjson-glib-dev
@@ -32,12 +36,17 @@ parts:
       - librest-dev
       - libsoup2.4-dev
       - libsqlite3-dev
-      - libunity-dev
       - libwebkit2gtk-4.0-dev
       - libxml2
       - m4
       - valac
-      - gnome-doc-utils
+      - libaccounts-glib-dev
+      - libsignon-glib-dev
+      - libunity-dev
+      - python-scour
+      - intltool
+      - appstream-util
+      - yelp-tools
     stage-packages:
       - libc6
       - libcairo2
@@ -66,4 +75,3 @@ parts:
       - dbus-x11
       - dconf-tools
     after: [gtkconf]
-

@@ -14,31 +14,13 @@ confinement: devmode
 apps:
   enable: 
    command: "cp -r $SNAP/icon-theme/ubuntukylin-icon-theme-snap /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-   plugs: [home, unity7, icon-theme-access]
+   plugs: [home]
   set:
-    command: "theme-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
-    plugs: [home, unity7, icon-theme-access, icons-theme-set]
+    command: "desktop-launch gsettings set org.gnome.desktop.interface icon-theme 'ubuntukylin-icon-theme-snap'"
+    plugs: [home, gsettings]
   disable: 
-    command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap"
-    plugs: [home, unity7, icon-theme-access]
-
-plugs:
-  icons-theme-access:
-    type: old-security
-    security-override:
-      read-paths:
-        - "/home/$USER/.icons"
-      write-paths:
-        - "/home/$USER/.icons"
-      syscalls:
-        - "mkdir"
-  icons-theme-set:
-    type: old-security
-    security-override:
-      read-paths:
-        - "/home/$USER/.icons"
-      syscalls:
-        - "gsettings"
+    command: "rm -rf /home/$USER/.icons/ubuntukylin-icon-theme-snap && desktop-launch gsettings reset org.gnome.desktop.interface icon-theme"
+    plugs: [home, gsettings]
 
 parts:
   theme:
@@ -50,21 +32,5 @@ parts:
       ubuntukylin-icon-theme/index.theme:
         "Name=.*$": "Name=ubuntukylin-icon-theme-snap"
     stage-packages:
-      - dconf-gsettings-backend
-      - libglib2.0-bin
-    after:
-      - gschemas
-      - giomodule
-      - theme-launch
-  theme-launch:
-    plugin: copy
-    files:
-      theme-launch: /bin/theme-launch
-  gschemas:
-    plugin: copy
-    files:
-      gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
-  giomodule:
-    plugin: copy
-    files:
-      giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache
+      - gsettings-desktop-schemas
+    after: [desktop/glib-only]

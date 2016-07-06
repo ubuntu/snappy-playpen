@@ -12,6 +12,7 @@ parts:
   qdriverstation:
     source: https://github.com/FRC-Utilities/QDriverStation.git
     plugin: qmake
+    qt-version: qt5
     build-packages:
       - libsdl2-dev
       - qttools5-dev 

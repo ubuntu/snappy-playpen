@@ -1,0 +1,5 @@
+# This dependency has been added to track external packages building against
+# our private headers. It is ok if internal packages depend on the ABI one.
+libqt5core5a: symbols-declares-dependency-on-other-package qtbase-abi-5-5-1
+# To help Ubuntu in their releases we also renamed libqt5core5 to libqt5core5a.
+libqt5core5a: package-name-doesnt-match-sonames libQt5Core5

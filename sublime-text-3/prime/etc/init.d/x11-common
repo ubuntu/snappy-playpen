@@ -1,0 +1,122 @@
+#!/bin/sh
+# /etc/init.d/x11-common: set up the X server and ICE socket directories
+### BEGIN INIT INFO
+# Provides:          x11-common
+# Required-Start:    $remote_fs
+# Required-Stop:     $remote_fs
+# Default-Start:     S
+# Default-Stop:
+# Short-Description: set up the X server and ICE socket directories
+### END INIT INFO
+
+set -e
+
+PATH=/usr/bin:/usr/sbin:/bin:/sbin
+SOCKET_DIR=.X11-unix
+ICE_DIR=.ICE-unix
+
+. /lib/lsb/init-functions
+if [ -f /etc/default/rcS ]; then
+  . /etc/default/rcS
+fi
+
+do_restorecon () {
+  # Restore file security context (SELinux).
+  if which restorecon >/dev/null 2>&1; then
+    restorecon "$1"
+  fi
+}
+
+# create a directory in /tmp.
+# assumes /tmp has a sticky bit set (or is only writeable by root)
+set_up_dir () {
+  DIR="/tmp/$1"
+
+  if [ "$VERBOSE" != no ]; then
+    log_progress_msg "$DIR"
+  fi
+  # if $DIR exists and isn't a directory, move it aside
+  if [ -e $DIR ] && ! [ -d $DIR ] || [ -h $DIR ]; then
+    mv "$DIR" "$(mktemp -d $DIR.XXXXXX)"
+  fi
+
+  error=0
+  while :; do
+    if [ $error -ne 0 ] ; then
+      # an error means the file-system is readonly or an attacker
+      # is doing evil things, distinguish by creating a temporary file,
+      # but give up after a while.
+      if [ $error -gt 5 ]; then
+        log_failure_msg "failed to set up $DIR"
+        return 1
+      fi
+      fn="$(mktemp /tmp/testwriteable.XXXXXXXXXX)" || return 1
+      rm "$fn"
+    fi
+    mkdir -p -m 01777 "$DIR" || { rm "$DIR" || error=$((error + 1)) ; continue ; }
+    case "$(LC_ALL=C stat -c '%u %g %a %F' "$DIR")" in
+      "0 0 1777 directory")
+        # everything as it is supposed to be
+        break
+        ;;
+      "0 0 "*" directory")
+        # as it is owned by root, cannot be replaced with a symlink:
+        chmod 01777 "$DIR"
+        break
+        ;;
+      *" directory")
+        # if the chown succeeds, the next step can change it savely
+        chown -h root:root "$DIR" || error=$((error + 1))
+        continue
+        ;;
+      *)
+        log_failure_msg "failed to set up $DIR"
+        return 1
+        ;;
+    esac
+  done
+  do_restorecon "$DIR"
+
+  return 0
+}
+
+do_status () {
+    if [ -d "/tmp/$ICE_DIR" ] && [ -d "/tmp/$SOCKET_DIR" ]; then
+      return 0
+    else
+      return 4
+    fi
+}
+
+case "$1" in
+  start)
+    if [ "$VERBOSE" != no ]; then
+      log_begin_msg "Setting up X socket directories..."
+    fi
+    set_up_dir "$SOCKET_DIR"
+    set_up_dir "$ICE_DIR"
+    if [ "$VERBOSE" != no ]; then
+      log_end_msg 0
+    fi
+  ;;
+
+  restart|reload|force-reload)
+    /etc/init.d/x11-common start
+  ;;
+
+  stop)
+   :
+  ;;
+
+  status)
+    do_status
+  ;;
+  *)
+    log_success_msg "Usage: /etc/init.d/x11-common {start|stop|status|restart|reload|force-reload}"
+    exit 1
+    ;;
+esac
+
+exit 0
+
+# vim:set ai et sts=2 sw=2 tw=0:

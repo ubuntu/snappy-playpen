@@ -1,0 +1,453 @@
+# Some generic fallback styli
+[0xfffff]
+Name=General Pen
+Buttons=2
+HasEraser=true
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0xffffe]
+Name=General Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0xffffd]
+Name=General Pen with no Eraser
+HasEraser=false
+Buttons=2
+Axes=Pressure;
+Type=General
+
+# Inking pen have no eraser
+[0x812]
+# Intuos and Intuos2
+Name=Inking Pen
+Buttons=0
+HasEraser=false
+Axes=Tilt;Pressure;Distance;
+Type=Inking
+
+[0x801]
+# Intuos3 and Cintiq 21UX
+Name=Inking Pen
+Buttons=0
+HasEraser=false
+Axes=Tilt;Pressure;Distance;
+Type=Inking
+
+[0x20802]
+# Intuos4, 5 and Cintiq 21UX2, 22HD, 24HD
+Name=Inking Pen
+Buttons=0
+HasEraser=false
+Axes=Tilt;Pressure;Distance;
+Type=Inking
+
+[0x120802]
+# Intuos4, 5 and Cintiq 21UX2, 22HD, 24HD
+Name=Inking Pen
+Buttons=0
+HasEraser=false
+Axes=Tilt;Pressure;Distance;
+Type=Inking
+
+[0x012]
+Name=Inking Pen
+Buttons=0
+HasEraser=false
+Axes=Tilt;Pressure;Distance;
+Type=Inking
+
+# Regular pen has eraser
+[0x822]
+# Intuos and Intuos2
+Name=Classic Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x8e2]
+# Intuos P/PT 2
+Name=Intuos Pen
+HasEraser=false
+Buttons=2
+Axes=Pressure;Distance;
+Type=General
+
+[0x842]
+# Intuos2
+Name=Designer Pen
+HasEraser=false
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x852]
+# Intuos2
+Name=Grip Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x823]
+# Intuos3 and Cintiq 21UX
+Name=Grip Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x813]
+# Intuos3 and Cintiq 21UX
+Name=Classic Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x885]
+# Intuos3 and Cintiq 21UX
+Name=6D Art Pen
+HasEraser=false
+Buttons=0
+Axes=Tilt;Pressure;Distance;RotationZ;
+Type=Marker
+
+[0x802]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Grip Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x804]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Art Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;RotationZ;
+Type=Marker
+
+[0x100804]
+# Intuos4, 5 and Cintiq 21UX2, 22HD, 24HD
+Name=Art Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;RotationZ;
+Type=Marker
+
+[0x100802]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Grip Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x40802]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Classic Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x140802]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Classic Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x160802]
+# Cintiq 13HD Pro Pen
+Name=Pro Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x180802]
+# DTH2242 Pen
+Name=Pen
+HasEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x022]
+Name=Pen
+HasEraser=true
+
+# Stroke pen has no eraser
+[0x832]
+#Intuos and Intuos2
+Name=Stroke Pen
+HasEraser=false
+Buttons=0
+Axes=Tilt;Pressure;Distance;
+Type=Stroke
+
+[0x032]
+Name=Stroke Pen
+HasEraser=false
+Axes=Tilt;Pressure;Distance;
+Type=Stroke
+
+# Erasers
+[0x82a]
+# Intuos and Intuos2
+Name=Classic Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x85a]
+# Intuos2
+Name=Grip Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x91a]
+# Intuos2
+Name=Airbrush Pen Eraser
+IsEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+[0xd1a]
+# Intuos
+Name=Airbrush Pen Eraser
+IsEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+[0x0fa]
+Name=Eraser
+IsEraser=true
+
+[0x82b]
+# Intuos3 and Cintiq 21UX
+Name=Grip Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x81b]
+# Intuos3 and Cintiq 21UX
+Name=Classic Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x91b]
+# Intuos3 and Cintiq 21UX
+Name=Airbrush Pen Eraser
+IsEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+[0x80c]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Art Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Marker
+
+[0x80a]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Grip Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x4080a]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Classic Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x14080a]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Classic Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x10080c]
+# Intuos4, 5 and 13HD, 24HD Art Pen
+Name=Art Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Marker
+
+[0x10080a]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Grip Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x16080a]
+# Cintiq 13HD
+Name=Pro Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=Classic
+
+[0x18080a]
+# DTH2242 Eraser
+Name=Pen Eraser
+IsEraser=true
+Buttons=2
+Axes=Tilt;Pressure;Distance;
+Type=General
+
+[0x10090a]
+# Intuos4, 5 and Cintiq 13HD, 22HD, 24HD Airbrush Eraser
+Name=Airbrush Pen Eraser
+IsEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+[0x90a]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Airbrush Pen Eraser
+IsEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+# Airbrush pen has eraser
+[0xd12]
+# Intuos
+Name=Airbrush Pen
+HasEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;Slider;
+Type=Airbrush
+
+[0x912]
+# Intuos2
+Name=Airbrush Pen
+HasEraser=true
+Buttons=1
+Axes=Tilt;Pressure;Distance;Slider;
+Type=Airbrush
+
+[0x112]
+Name=Airbrush Pen
+HasEraser=true
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+[0x913]
+# Intuos3 and Cintiq 21UX
+Name=Airbrush Pen
+Buttons=1
+HasEraser=true
+Axes=Tilt;Pressure;Distance;
+Type=Airbrush
+
+[0x902]
+# Intuos4, 5 and Cintiq 21UX2, 24HD
+Name=Airbrush Pen
+Buttons=1
+HasEraser=true
+Axes=Tilt;Pressure;Distance;Slider;
+Type=Airbrush
+
+[0x100902]
+# Intuos4, 5 and Cintiq 13HD, 21UX2, 22HD, 24HD
+Name=Airbrush Pen
+Buttons=1
+HasEraser=true
+Axes=Tilt;Pressure;Distance;Slider;
+Type=Airbrush
+
+# Puck devices
+[0x096]
+# Intuos and Intuos2
+Name=Lens Cursor
+Axes=Distance;
+Type=Puck
+HasLens=true
+HasWheel=false
+Buttons=5
+
+[0x097]
+# Intuos3
+Name=Lens Cursor
+Axes=Distance;
+Type=Puck
+HasLens=true
+HasWheel=false
+Buttons=5
+
+[0x006]
+# Intuos4 and Intuos5
+Name=Lens Cursor
+Axes=Distance;
+Type=Puck
+HasLens=true
+HasWheel=false
+Buttons=5
+
+[0x094]
+# Intuos and Intuos2
+Name=4D Mouse
+Axes=Tilt;Distance;
+Type=Puck
+HasLens=false
+HasWheel=false
+Buttons=5
+
+[0x007]
+# Intuos3
+Name=2D Mouse
+Axes=Tilt;Distance;
+Type=Puck
+HasLens=false
+HasWheel=true
+Buttons=3
+
+[0x017]
+# Intuos3
+Name=Mouse
+Axes=Tilt;Distance;
+Type=Puck
+HasLens=false
+HasWheel=true
+Buttons=5
+
+[0x806]
+# Intuos4 and Intuos5
+Name=Five Button Mouse
+Axes=Tilt;Distance;
+Type=Puck
+HasLens=false
+HasWheel=true
+Buttons=5

@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<engine schema_version="0.1" module_name="murrine" long_name="Murrine">
+
+	<metainfo>
+		<version>0.98.2</version>
+		<website>http://www.cimitan.com/murrine</website>
+		<author>
+			<name>Andrea Cimitan</name>
+			<email>andrea.cimitan@gmail.com</email>
+		</author>
+	</metainfo>
+
+	<option type="boolean" name="animation" default="TRUE">
+		<long_name>Animations</long_name>
+		<long_name xml:lang="ca">Animacions</long_name>
+		<long_name xml:lang="ca@valencia">Animacions</long_name>
+		<long_name xml:lang="cs">Animace</long_name>
+		<long_name xml:lang="da">Animationer</long_name>
+		<long_name xml:lang="de">Animationen</long_name>
+		<long_name xml:lang="el">Κινούμενα σχέδια</long_name>
+		<long_name xml:lang="es">Animaciones</long_name>
+		<long_name xml:lang="et">Animatsioonid</long_name>
+		<long_name xml:lang="fr">Animations</long_name>
+		<long_name xml:lang="gl">Animacións</long_name>
+		<long_name xml:lang="nb">Animasjoner</long_name>
+		<long_name xml:lang="pl">Animacje</long_name>
+		<long_name xml:lang="pt">Animações</long_name>
+		<long_name xml:lang="pt_BR">Animações</long_name>
+		<long_name xml:lang="ru">Анимация</long_name>
+		<long_name xml:lang="sl">Animacije</long_name>
+		<long_name xml:lang="sv">Animationer</long_name>
+		<long_name xml:lang="zh_CN">动画</long_name>
+		<description>Enable animations on progressbars, radio and checkbuttons</description>
+		<description xml:lang="ca">Habilita les animacions en les barres de progrés, els botons d'opcions i les caselles de verificació</description>
+		<description xml:lang="ca@valencia">Habilita les animacions en les barres de progrés, els botons d'opcions i les caselles de verificació</description>
+		<description xml:lang="cs">Zapnout animace ukazatele průběhu, skupinových přepínačů a zaškrtávacích polí</description>
+		<description xml:lang="da">Slå animationer på statuslinjer, radio og tjekknapper til</description>
+		<description xml:lang="de">Animationen für Fortschrittsleisten, Radioknöpfe und Ankreuzfelder aktivieren</description>
+		<description xml:lang="el">Ενεργοποίηση κινούμενων εφέ στις γραμμές προόδου, στα ακτινικά κουμπιά και στα πεδία ελέγχου </description>
+		<description xml:lang="es">Activar las animaciones en las barras de progreso, botones de radio y de selección</description>
+		<description xml:lang="et">Edenemisribade, raadionuppude ja märkeruutude animeerimine</description>
+		<description xml:lang="fr">Activer les animations sur les barres de progression, les boutons radios et les cases à cocher</description>
+		<description xml:lang="gl">Activar animacións nas barras de progreso, botóns de activación e opción</description>
+		<description xml:lang="pl">Włączenie animacji pasków postępów, przycisków radiowych i pól wyboru</description>
+		<description xml:lang="pt">Activar animações em barras de progresso, botões de rádio e de visto</description>
+		<description xml:lang="pt_BR">Habilitar animações em barras de progresso, botões de opção e seleção</description>
+		<description xml:lang="ru">Разрешить анимацию в индикаторах выполнения, флаговых кнопках и переключателях</description>
+		<description xml:lang="sl">Omogoči animacije vrstice napredka in izbirnih gumbov</description>
+		<description xml:lang="zh_CN">在进度条、单选和复选框中启用动画</description>
+		<section>General</section>
+	</option>
+
+	<option type="enumeration" name="arrowstyle" default="0">
+		<long_name>Arrow Style</long_name>
+		<long_name xml:lang="ca">Estil del cursor</long_name>
+		<long_name xml:lang="ca@valencia">Estil del cursor</long_name>
+		<long_name xml:lang="cs">Styl šipky</long_name>
+		<long_name xml:lang="da">Pilstil</long_name>
+		<long_name xml:lang="de">Stil der Pfeile</long_name>
+		<long_name xml:lang="el">Τύπος βέλους</long_name>
+		<long_name xml:lang="es">Estilo de flecha</long_name>
+		<long_name xml:lang="et">Noole stiil</long_name>
+		<long_name xml:lang="fr">Style des flèches</long_name>
+		<long_name xml:lang="gl">Estilo de frecha</long_name>
+		<long_name xml:lang="nb">Stil for pil</long_name>
+		<long_name xml:lang="pl">Styl strzałek</long_name>
+		<long_name xml:lang="pt">Estilo da Seta</long_name>
+		<long_name xml:lang="pt_BR">Estilo da seta</long_name>
+		<long_name xml:lang="ru">Стиль указателя</long_name>
+		<long_name xml:lang="sl">Slog puščic</long_name>
+		<long_name xml:lang="zh_CN">箭头风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Simple stroked arrow</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Filled arrow</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Fat filled arrow</label>
+		</enumeration>
+	</option>
+
+	<option type="boolean" name="colorize_scrollbar" default="TRUE">
+		<long_name>Colorize scrollbar</long_name>
+		<long_name xml:lang="ca">Acoloreix la barra de desplaçament</long_name>
+		<long_name xml:lang="ca@valencia">Acoloreix la barra de desplaçament</long_name>
+		<long_name xml:lang="cs">Barevný posuvník</long_name>
+		<long_name xml:lang="da">Farvelæg rullebjælke</long_name>
+		<long_name xml:lang="de">Rollbalken einfärben</long_name>
+		<long_name xml:lang="el">Χρωματισμός γραμμής κύλισης</long_name>
+		<long_name xml:lang="es">Colorizar las barras de desplazamiento</long_name>
+		<long_name xml:lang="et">Kerimisribade toonimine</long_name>
+		<long_name xml:lang="fr">Colorier la barre de défilement</long_name>
+		<long_name xml:lang="gl">Colorear a barra de desprazamento</long_name>
+		<long_name xml:lang="pl">Koloryzacja paska przewijania</long_name>
+		<long_name xml:lang="pt">Colorir barra de rolamento</long_name>
+		<long_name xml:lang="pt_BR">Colorir a barra de rolagem</long_name>
+		<long_name xml:lang="ru">Изменить цвет панели прокрутки</long_name>
+		<long_name xml:lang="sl">Obarvanje drsnikov</long_name>
+		<long_name xml:lang="zh_CN">滚动条上色</long_name>
+		<description>Colorize scrollbar with bg[SELECTED]</description>
+		<description xml:lang="ca">Acoloreix la barra de desplaçament amb bg[SELECTED]</description>
+		<description xml:lang="ca@valencia">Acoloreix la barra de desplaçament amb bg[SELECTED]</description>
+		<description xml:lang="cs">Barevný posuvník s bg[SELECTED]</description>
+		<description xml:lang="da">Farvelæg rullebjælke med bg[SELECTED]</description>
+		<description xml:lang="de">Rollbalken einfärben mit bg[SELECTED]</description>
+		<description xml:lang="el">Χρωματισμός γραμμής κύλισης με bg[SELECTED]</description>
+		<description xml:lang="es">Colorizar las barras de desplazamiento con fondo [SELECCIONADAS]</description>
+		<description xml:lang="et">Kerimisriba toonimine värviga bg[SELECTED]</description>
+		<description xml:lang="fr">Colorie la barre de défilement avec bg[SELECTED]</description>
+		<description xml:lang="gl">Colorear a barra de desprazamento con bg[SELECTED]</description>
+		<description xml:lang="pl">Koloryzacja paska przewijania za pomocą bg[WYBRANE]</description>
+		<description xml:lang="pt">Colorir barra de rolamento com bg[SELECTED]</description>
+		<description xml:lang="pt_BR">Colorir a barra de rolagem com fundo[SELECIONADO]</description>
+		<description xml:lang="ru">Изменить цвет панели прокрутки с помощью bg[ВЫДЕЛЕНО]</description>
+		<description xml:lang="sl">Obarvanje drsnikov z bg[SELECTED]</description>
+		<description xml:lang="zh_CN">使用背景[选中的]对滚动条上色</description>
+		<section>Scrolls and Lists</section>
+	</option>
+
+	<option type="enumeration" name="cellstyle" default="1">
+		<long_name>Cell Style</long_name>
+		<long_name xml:lang="ca">Estil de la cel·la</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la cel·la</long_name>
+		<long_name xml:lang="cs">Styl buňky</long_name>
+		<long_name xml:lang="da">Cellestil</long_name>
+		<long_name xml:lang="de">Zellenstil</long_name>
+		<long_name xml:lang="el">Τύπος κελιού</long_name>
+		<long_name xml:lang="es">Estilo de celda</long_name>
+		<long_name xml:lang="fr">Style des cellules</long_name>
+		<long_name xml:lang="gl">Estilo da cela</long_name>
+		<long_name xml:lang="nb">Stil for celle</long_name>
+		<long_name xml:lang="pl">Styl komórek</long_name>
+		<long_name xml:lang="pt">Estilo Célula</long_name>
+		<long_name xml:lang="pt_BR">Estilo da célula </long_name>
+		<long_name xml:lang="ru">Стиль ячейки</long_name>
+		<long_name xml:lang="sl">Slog celice</long_name>
+		<long_name xml:lang="zh_CN">细格风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>No effect</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Border on top and bottom</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="comboboxstyle" default="0">
+		<long_name>Combobox Style</long_name>
+		<long_name xml:lang="ca">Estil del quadre combinat</long_name>
+		<long_name xml:lang="ca@valencia">Estil del quadre combinat</long_name>
+		<long_name xml:lang="cs">Styl rozbalovacího seznamu</long_name>
+		<long_name xml:lang="da">Stil for kombinationsboks</long_name>
+		<long_name xml:lang="de">Stil der Kombinationsfelder</long_name>
+		<long_name xml:lang="el">Τύπος πεδίου συνδυασμών</long_name>
+		<long_name xml:lang="es">Estilo de las cajas de combinación</long_name>
+		<long_name xml:lang="et">Liitkasti stiil</long_name>
+		<long_name xml:lang="fr">Style des boîtes combinées</long_name>
+		<long_name xml:lang="gl">Estilo da lista despregábel</long_name>
+		<long_name xml:lang="pl">Styl pola kombinowanego</long_name>
+		<long_name xml:lang="pt">Estilo de Lista de Selecção</long_name>
+		<long_name xml:lang="pt_BR">Estilo da caixa de combinação</long_name>
+		<long_name xml:lang="ru">Стиль выпадающего списка</long_name>
+		<long_name xml:lang="sl">Slog spustnega polja</long_name>
+		<long_name xml:lang="zh_CN">组合框风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>No effect</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Colorize under the arrow</label>
+		</enumeration>
+	</option>
+
+	<option type="real" name="contrast" default="1.0">
+		<long_name>Contrast</long_name>
+		<long_name xml:lang="ca">Contrast</long_name>
+		<long_name xml:lang="ca@valencia">Contrast</long_name>
+		<long_name xml:lang="cs">Kontrast</long_name>
+		<long_name xml:lang="da">Kontrast</long_name>
+		<long_name xml:lang="de">Kontrast</long_name>
+		<long_name xml:lang="el">Αντίθεση</long_name>
+		<long_name xml:lang="es">Contraste</long_name>
+		<long_name xml:lang="et">Kontrastus</long_name>
+		<long_name xml:lang="fr">Contraste</long_name>
+		<long_name xml:lang="gl">Contraste</long_name>
+		<long_name xml:lang="nb">Kontrast</long_name>
+		<long_name xml:lang="pl">Kontrast</long_name>
+		<long_name xml:lang="pt">Contraste</long_name>
+		<long_name xml:lang="pt_BR">Contraste</long_name>
+		<long_name xml:lang="ru">Контрастность</long_name>
+		<long_name xml:lang="sl">Kontrast</long_name>
+		<long_name xml:lang="sv">Kontrast</long_name>
+		<long_name xml:lang="zh_CN">对比</long_name>
+		<description>Dangerous, should be MODIFIED ONLY BY HAND in gtkrc into separated sections</description>
+		<description xml:lang="ca">Només s'ha de modificar a mà en el gtkrc en seccions separades</description>
+		<description xml:lang="ca@valencia">Només s'ha de modificar a mà en el gtkrc en seccions separades</description>
+		<description xml:lang="cs">Nebezpečné, mělo by se UPRAVOVAT POUZE RUČNĚ v gtkrc v oddělených oddílech</description>
+		<description xml:lang="da">Farligt, bør KUN ÆNDRES MANUELT i gtkrc i adskilte sektioner</description>
+		<description xml:lang="de">Gefährlich, dies sollte NUR VON HAND in der gtkrc in separaten Abschnitten festgelegt werden</description>
+		<description xml:lang="el">Κίνδυνος, η τροποποίησή του πρέπει να γίνει ΜΟΝΟ ΧΕΙΡΟΚΙΝΗΤΑ στο gtrc σε ξεχωριστά τμήματα</description>
+		<description xml:lang="es">Peligroso, SÓLO SE DEBERÍA MODIFICAR A MANO en gtkrc en secciones separadas</description>
+		<description xml:lang="et">Ohtlik, tuleks MUUTA VAID KÄSITSI gtkrc faili eraldi sektsioonides</description>
+		<description xml:lang="fr">Dangereux, doit être modifié UNIQUEMENT À LA MAIN dans gtkrc dans des sections séparées</description>
+		<description xml:lang="gl">Peligro, debeo MODIFICAR SÓ Á MAN en gtkrc nas seccións separadas</description>
+		<description xml:lang="pl">Niebezpieczne, powinno być MODYFIKOWANE TYLKO RĘCZNIE w pliku gtkrc w oddzielnych sekcjach</description>
+		<description xml:lang="pt">Perigoso, deve ser APENAS MODIFICADO MANUALMENTE em gtkrc em secções separadas</description>
+		<description xml:lang="pt_BR">Perigo, deve ser MODIFICADOS APENAS MANUALMENTE no gtkrc em sessões separadas</description>
+		<description xml:lang="ru">Опасно, должно ИЗМЕНЯТЬСЯ ТОЛЬКО ВРУЧНУЮ в файле gtkrc в отдельных разделах</description>
+		<description xml:lang="sl">Spreminjanje lahko povzroči napake, zato mora biti sprememba narejena ročno v gtkrc v ločenih odsekih</description>
+		<description xml:lang="zh_CN">危险，只能手动在 gtkrc 的单独节中修改</description>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>2</maximum>
+		<precision>2</precision>
+	</option>
+
+	<option type="color" name="default_button_color" default="#000000">
+		<long_name>Default Button Color</long_name>
+		<long_name xml:lang="ca">Color predeterminat del botó</long_name>
+		<long_name xml:lang="ca@valencia">Color predeterminat del botó</long_name>
+		<long_name xml:lang="cs">Barva výchozího tlačítka</long_name>
+		<long_name xml:lang="da">Knapstandardfarve</long_name>
+		<long_name xml:lang="de">Vorgegebene Knopffarbe</long_name>
+		<long_name xml:lang="el">Χρώμα προεπιλεγμένου κουμπιού</long_name>
+		<long_name xml:lang="es">Color predeterminado de los botones</long_name>
+		<long_name xml:lang="fr">Couleur par défaut des boutons</long_name>
+		<long_name xml:lang="gl">Color predefinido dos botóns</long_name>
+		<long_name xml:lang="nb">Forvalgt farge på knapp</long_name>
+		<long_name xml:lang="pl">Domyślny kolor przycisków</long_name>
+		<long_name xml:lang="pt">Cor do Botão Por Omissão</long_name>
+		<long_name xml:lang="ru">Цвет по умолчанию для кнопки</long_name>
+		<long_name xml:lang="sl">Privzeta barva gumbov</long_name>
+		<long_name xml:lang="zh_CN">默认按钮颜色</long_name>
+		<section>General</section>
+		<description>Sets the Color of Default button 2px border</description>
+		<description xml:lang="ca">Estableix el color de la vora de 2px dels botons predeterminats</description>
+		<description xml:lang="ca@valencia">Estableix el color de la vora de 2px dels botons predeterminats</description>
+		<description xml:lang="cs">Nastavuje barvu 2pixelového okraje výchozího tlačítka</description>
+		<description xml:lang="da">Angiver farven på standardknappens 2pkt-kant</description>
+		<description xml:lang="de">Legt die vorgegebene Farbe für den 2 Pixel breiten Rand des Knopfes fest</description>
+		<description xml:lang="el">Καθορίζει το χρώμα του προεπιλεγμένου κουμπιού με περίγραμμα 2px</description>
+		<description xml:lang="es">Establece el color predeterminado del borde de 2px de los botones</description>
+		<description xml:lang="fr">Configure la couleur du bouton par défaut à 2 px</description>
+		<description xml:lang="gl">Estabelece a cor predefinida do bordo de 2px dos botóns</description>
+		<description xml:lang="pl">Ustawia kolor domyślnej krawędzi 2px przycisku</description>
+		<description xml:lang="pt">Define a cor da borda de 2px do botão por omissão</description>
+		<description xml:lang="ru">Устанавливает цвет для 2-х пикселной рамки для кнопки </description>
+		<description xml:lang="sl">Določi privzeto barvo robov gumba</description>
+		<description xml:lang="zh_CN">设置默认按钮两像素边的颜色</description>
+	</option>
+
+	<option type="enumeration" name="expanderstyle" default="0">
+		<long_name>Expander Style</long_name>
+		<long_name xml:lang="ca">Estil de l'expansor</long_name>
+		<long_name xml:lang="ca@valencia">Estil de l'expansor</long_name>
+		<long_name xml:lang="cs">Styl rozbalovacího prvku</long_name>
+		<long_name xml:lang="da">Stil for udvider</long_name>
+		<long_name xml:lang="de">Stil des Ausklappers</long_name>
+		<long_name xml:lang="el">Τύπος ανάπτυξης</long_name>
+		<long_name xml:lang="es">Estilo del expansor</long_name>
+		<long_name xml:lang="fr">Style des icônes d'extension</long_name>
+		<long_name xml:lang="gl">Estilo do expansor</long_name>
+		<long_name xml:lang="pl">Styl rozwijania</long_name>
+		<long_name xml:lang="pt">Expansor de estilo</long_name>
+		<long_name xml:lang="ru">Стиль эспандера</long_name>
+		<long_name xml:lang="sl">Slog razširnika</long_name>
+		<long_name xml:lang="zh_CN">膨胀风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Arrow</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Circle with plus and minus</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Button with plus and minus</label>
+		</enumeration>
+	</option>
+
+	<option type="color" name="focus_color" default="#000000">
+		<long_name>Focus Color</long_name>
+		<long_name xml:lang="ca">Focalitza el color</long_name>
+		<long_name xml:lang="ca@valencia">Focalitza el color</long_name>
+		<long_name xml:lang="cs">Barva zaměření</long_name>
+		<long_name xml:lang="da">Fokusfarve</long_name>
+		<long_name xml:lang="de">Farbe des Fokus</long_name>
+		<long_name xml:lang="el">Χρώμα εστίασης</long_name>
+		<long_name xml:lang="es">Color de enfocado</long_name>
+		<long_name xml:lang="et">Fookuse värv</long_name>
+		<long_name xml:lang="fr">Couleur du focus</long_name>
+		<long_name xml:lang="gl">Cor de enfoque</long_name>
+		<long_name xml:lang="pl">Kolor aktywności</long_name>
+		<long_name xml:lang="pt">Cor de Foco</long_name>
+		<long_name xml:lang="pt_BR">Cor do foco</long_name>
+		<long_name xml:lang="ru">Цвет фокуса</long_name>
+		<long_name xml:lang="sl">Barva okna v žarišču</long_name>
+		<long_name xml:lang="sv">Fokusfärg</long_name>
+		<long_name xml:lang="zh_CN">焦点颜色</long_name>
+		<section>General</section>
+		<description>Sets the Color of Focus</description>
+		<description xml:lang="ca">Estableix el color del focus</description>
+		<description xml:lang="ca@valencia">Estableix el color del focus</description>
+		<description xml:lang="cs">Nastavuje barvu zaměření</description>
+		<description xml:lang="da">Angiver fokusfarven</description>
+		<description xml:lang="de">Legt die Farbe für den Fokus fest</description>
+		<description xml:lang="el">Καθορισμός του χρώματος εστίασης</description>
+		<description xml:lang="es">Establece el color del foco</description>
+		<description xml:lang="et">Fookuse värvide määramine</description>
+		<description xml:lang="fr">Configure la couleur du focus</description>
+		<description xml:lang="gl">Estabelece a cor de enfoque</description>
+		<description xml:lang="pl">Ustawia kolor aktywności</description>
+		<description xml:lang="pt">Definir Cores de Foco</description>
+		<description xml:lang="pt_BR">Define a cor do foco</description>
+		<description xml:lang="ru">Устанавливает цвет фокуса</description>
+		<description xml:lang="sl">Določitev barve okna v žarišču</description>
+		<description xml:lang="zh_CN">设置焦点颜色</description>
+	</option>
+
+	<option type="enumeration" name="focusstyle" default="2">
+		<long_name>Focus Style</long_name>
+		<long_name xml:lang="ca">Estil del focus</long_name>
+		<long_name xml:lang="ca@valencia">Estil del focus</long_name>
+		<long_name xml:lang="cs">Styl zaměření</long_name>
+		<long_name xml:lang="da">Stil for fokus</long_name>
+		<long_name xml:lang="de">Stil des Fokus</long_name>
+		<long_name xml:lang="el">Τύπος εστίασης</long_name>
+		<long_name xml:lang="es">Estilo del foco</long_name>
+		<long_name xml:lang="fr">Style du focus</long_name>
+		<long_name xml:lang="gl">Estilo do foco</long_name>
+		<long_name xml:lang="pl">Styl aktywności</long_name>
+		<long_name xml:lang="pt">Estilo de Foco</long_name>
+		<long_name xml:lang="ru">Стиль фокуса</long_name>
+		<long_name xml:lang="sl">Slog žariščenja</long_name>
+		<long_name xml:lang="zh_CN">焦点风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>No focus</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Dots</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Inner rectangle</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Rectangle from borders</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="glazestyle" default="0">
+		<long_name>Glaze Style</long_name>
+		<long_name xml:lang="ca">Estil de brillantor</long_name>
+		<long_name xml:lang="ca@valencia">Estil de brillantor</long_name>
+		<long_name xml:lang="cs">Lesklý styl</long_name>
+		<long_name xml:lang="da">Glaseret stil</long_name>
+		<long_name xml:lang="de">Lasurstil</long_name>
+		<long_name xml:lang="el">Τύπος στίλβωσης</long_name>
+		<long_name xml:lang="es">Estilo del vidriado</long_name>
+		<long_name xml:lang="fr">Style vernis</long_name>
+		<long_name xml:lang="gl">Estilo de vidrado</long_name>
+		<long_name xml:lang="pl">Styl emalii</long_name>
+		<long_name xml:lang="pt">Estilo de Glaze</long_name>
+		<long_name xml:lang="pt_BR">Estilo de polimento</long_name>
+		<long_name xml:lang="ru">Глянцевый стиль</long_name>
+		<long_name xml:lang="sl">Slog loščenja</long_name>
+		<long_name xml:lang="zh_CN">釉风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Flat hilight</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Curved hilight</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Concave style</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Top curved highlight</label>
+		</enumeration>
+		<enumeration value="4">
+			<label>Beryl style</label>
+		</enumeration>
+	</option>
+
+	<option type="real" name="glow_shade" default="1.0">
+		<long_name>Glow Shade</long_name>
+		<long_name xml:lang="ca">Intensitat d'ombrejat</long_name>
+		<long_name xml:lang="ca@valencia">Intensitat d'ombrejat</long_name>
+		<long_name xml:lang="cs">Zářící odstín</long_name>
+		<long_name xml:lang="da">Glødende skygge</long_name>
+		<long_name xml:lang="de">Glutschattierung</long_name>
+		<long_name xml:lang="el">Σκίαση λάμψης</long_name>
+		<long_name xml:lang="es">Sombra del brillo</long_name>
+		<long_name xml:lang="fr">Ombre lumineuse</long_name>
+		<long_name xml:lang="gl">Sombra luminosa</long_name>
+		<long_name xml:lang="pl">Cień poświaty</long_name>
+		<long_name xml:lang="pt">Sobra de Brilho</long_name>
+		<long_name xml:lang="pt_BR">Sombra de brilho</long_name>
+		<long_name xml:lang="ru">Тень от свечения</long_name>
+		<long_name xml:lang="sl">Sence sijanja</long_name>
+		<long_name xml:lang="zh_CN">发光阴影</long_name>
+		<description>Enable and set the Glow Shade</description>
+		<description xml:lang="ca">Habilita i configura la intensitat d'ombrejat</description>
+		<description xml:lang="ca@valencia">Habilita i configura la intensitat d'ombrejat</description>
+		<description xml:lang="cs">Zapnout a nastavit Zářící odstín</description>
+		<description xml:lang="da">Slå til og angiv Glødende skygge</description>
+		<description xml:lang="de">Glutschattierung verstärken/abschwächen</description>
+		<description xml:lang="el">Ενεργοποίηση και ρύθμιση της σκίασης λάμψης</description>
+		<description xml:lang="es">Activar y configurar la sombra del brillo</description>
+		<description xml:lang="fr">Activer et configurer l'ombre lumineuse</description>
+		<description xml:lang="gl">Activa e estabelece a Sombra luminosa</description>
+		<description xml:lang="pl">Włączenie i ustawienie cienia poświaty</description>
+		<description xml:lang="pt">Activar e definir a Sombra de Brilho</description>
+		<description xml:lang="pt_BR">Habilitar e definir a sombra do brilho</description>
+		<description xml:lang="ru">Включить и установить тень от свечения</description>
+		<description xml:lang="sl">Omogoči in nastavi sence sijanja</description>
+		<description xml:lang="zh_CN">启用和设置发光阴影</description>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>2</maximum>
+		<precision>2</precision>
+	</option>
+
+	<option type="enumeration" name="glowstyle" default="0">
+		<long_name>Glow Style</long_name>
+		<long_name xml:lang="ca">Estil de la intensitat</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la intensitat</long_name>
+		<long_name xml:lang="cs">Zářící styl</long_name>
+		<long_name xml:lang="da">Glødestil</long_name>
+		<long_name xml:lang="de">Glutstil</long_name>
+		<long_name xml:lang="el">Τύπος λάμψης</long_name>
+		<long_name xml:lang="es">Estilo del brillo</long_name>
+		<long_name xml:lang="et">Kuma stiil</long_name>
+		<long_name xml:lang="fr">Style lumineux</long_name>
+		<long_name xml:lang="gl">Estilo do brillo</long_name>
+		<long_name xml:lang="pl">Styl poświaty</long_name>
+		<long_name xml:lang="pt">Estilo de Brilho</long_name>
+		<long_name xml:lang="pt_BR">Estilo de brilho</long_name>
+		<long_name xml:lang="ru">Стиль свечения</long_name>
+		<long_name xml:lang="sl">Slog sijanja</long_name>
+		<long_name xml:lang="zh_CN">发光风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Top glow</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Bottom glow</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Top and Bottom glow</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Horizontal glow</label>
+		</enumeration>
+		<enumeration value="4">
+			<label>Centered glow</label>
+		</enumeration>
+		<enumeration value="5">
+			<label>Glow around edges</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="handlestyle" default="0">
+		<long_name>Handle Style</long_name>
+		<long_name xml:lang="ca">Estil de la nansa</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la nansa</long_name>
+		<long_name xml:lang="cs">Styl úchopu</long_name>
+		<long_name xml:lang="da">Stil for håndtag</long_name>
+		<long_name xml:lang="de">Stil des Anfassers</long_name>
+		<long_name xml:lang="el">Τύπος λαβής χειρισμού</long_name>
+		<long_name xml:lang="es">Estilo del manejador</long_name>
+		<long_name xml:lang="fr">Style des poignées</long_name>
+		<long_name xml:lang="gl">Estilo do manexador</long_name>
+		<long_name xml:lang="pl">Styl uchwytów</long_name>
+		<long_name xml:lang="pt">Estilo de 'Handle'</long_name>
+		<long_name xml:lang="ru">Стиль манипулятора</long_name>
+		<long_name xml:lang="sl">Slog ročnika</long_name>
+		<long_name xml:lang="zh_CN">处理风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Small lines</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Small lines with inset</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Small near lines with inset</label>
+		</enumeration>
+	</option>
+
+
+	<option type="real" name="highlight_shade" default="1.1">
+		<long_name>Highlight Shade</long_name>
+		<long_name xml:lang="ca">Ombrejat de resalt</long_name>
+		<long_name xml:lang="ca@valencia">Ombrejat de resalt</long_name>
+		<long_name xml:lang="cs">Stínování zvýraznění</long_name>
+		<long_name xml:lang="da">Fremhæv skygge</long_name>
+		<long_name xml:lang="de">Schattierung der Hervorhebung</long_name>
+		<long_name xml:lang="el">Σκίαση επισήμανσης</long_name>
+		<long_name xml:lang="es">Sombra de resaltado</long_name>
+		<long_name xml:lang="fr">Ombrage de surbrillance</long_name>
+		<long_name xml:lang="gl">Sombra resplandecente</long_name>
+		<long_name xml:lang="pl">Cień wyróżnienia</long_name>
+		<long_name xml:lang="pt">Sombra de Realce</long_name>
+		<long_name xml:lang="pt_BR">Sombra de realce</long_name>
+		<long_name xml:lang="ru">Тень подсветки</long_name>
+		<long_name xml:lang="sl">Senca poudarjanja</long_name>
+		<long_name xml:lang="zh_CN">突出阴影</long_name>
+		<description>Increse/Decrease the highlight shade</description>
+		<description xml:lang="ca">Augmenta/disminueix l'ombrejat de resalt</description>
+		<description xml:lang="ca@valencia">Augmenta/disminueix l'ombrejat de resalt</description>
+		<description xml:lang="cs">Zvětšit/zmenšit stínování zvýraznění</description>
+		<description xml:lang="da">Øg/nedsæt fremhævelsesskyggen</description>
+		<description xml:lang="de">Hervorhebungsschattierung verstärken/abschwächen</description>
+		<description xml:lang="el">Αύξηση/Μείωση σκίασης της επισήμανσης</description>
+		<description xml:lang="es">Aumentar/reducir la sombra de resaltado</description>
+		<description xml:lang="fr">Augmenter/diminuer l'ombrage de surbrillance</description>
+		<description xml:lang="gl">Incrementar ou reducir a sombra resaltada</description>
+		<description xml:lang="pl">Powiększenie/pomniejszenie cienia wyróżnienia</description>
+		<description xml:lang="pt">Aumentar/Diminuir a sombra de realce</description>
+		<description xml:lang="pt_BR">Aumentar/Diminuir a sombra de realce</description>
+		<description xml:lang="ru">Увеличить/уменьшить тень подсветки</description>
+		<description xml:lang="sl">Povečaj/pomanjšaj senčenje poudarjanja</description>
+		<description xml:lang="zh_CN">增加/减少突出阴影</description>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>2</maximum>
+		<precision>2</precision>
+	</option>
+
+	<option type="real" name="lightborder_shade" default="1.1">
+		<long_name>Lightborder Shade</long_name>
+		<long_name xml:lang="ca">Ombrejat de la vora lluminosa</long_name>
+		<long_name xml:lang="ca@valencia">Ombrejat de la vora lluminosa</long_name>
+		<long_name xml:lang="cs">Stínování zesvětleného okraje</long_name>
+		<long_name xml:lang="da">Lysgrænseskygge</long_name>
+		<long_name xml:lang="de">Schattierung des Lichtrands</long_name>
+		<long_name xml:lang="el">Σκίαση φωτεινού περιγράμματος</long_name>
+		<long_name xml:lang="es">Sombra del borde</long_name>
+		<long_name xml:lang="fr">Ombre des bordures</long_name>
+		<long_name xml:lang="gl">Sombra con borde de luz</long_name>
+		<long_name xml:lang="pl">Cień lekkiej ramki</long_name>
+		<long_name xml:lang="pt">Sobra de Lightborder</long_name>
+		<long_name xml:lang="pt_BR">Sombra da borda</long_name>
+		<long_name xml:lang="ru">Тень световой границы</long_name>
+		<long_name xml:lang="sl">Senca obrobe</long_name>
+		<long_name xml:lang="zh_CN">亮边阴影</long_name>
+		<description>Increse/Decrease the lightborder shade</description>
+		<description xml:lang="ca">Augmenta/disminueix l'ombrejat de la vora lluminosa</description>
+		<description xml:lang="ca@valencia">Augmenta/disminueix l'ombrejat de la vora lluminosa</description>
+		<description xml:lang="cs">Zvětšit/zmenšit stínování zesvětleného okraje</description>
+		<description xml:lang="da">Øg/nedsæt lysgrænseskyggen</description>
+		<description xml:lang="de">Lichtrandschattierung verstärken/abschwächen</description>
+		<description xml:lang="el">Αύξηση/Μείωση της σκίασης φωτεινού περιγράμματος</description>
+		<description xml:lang="es">Aumentar/reducir la sombra del borde</description>
+		<description xml:lang="fr">Augmenter/diminuer l'ombrage des bordures</description>
+		<description xml:lang="gl">Incrementar ou reducir a sombra con borde de luz</description>
+		<description xml:lang="pl">Powiększenie/pomniejszenie cienia lekkiej ramki</description>
+		<description xml:lang="pt">Aumentar/Diminuir a sombra de lightborder</description>
+		<description xml:lang="pt_BR">Aumentar/Diminuir a sombra da borda</description>
+		<description xml:lang="ru">Увеличить/уменьшить тень световой границы</description>
+		<description xml:lang="sl">Povečaj/pomanjšaj senčenje obrobe</description>
+		<description xml:lang="zh_CN">增加/减少亮边阴影</description>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>2</maximum>
+		<precision>2</precision>
+	</option>
+
+	<option type="enumeration" name="lightborderstyle" default="0">
+		<long_name>Lightborder Style</long_name>
+		<long_name xml:lang="ca">Estila de la vora lluminosa</long_name>
+		<long_name xml:lang="ca@valencia">Estila de la vora lluminosa</long_name>
+		<long_name xml:lang="cs">Styl zesvětlení okraje</long_name>
+		<long_name xml:lang="da">Lysgrænsestil</long_name>
+		<long_name xml:lang="de">Stil des Lichtrands</long_name>
+		<long_name xml:lang="el">Τύπος φωτεινού περιγράμματος</long_name>
+		<long_name xml:lang="es">Estilo de la sombra del borde</long_name>
+		<long_name xml:lang="fr">Style d'éclairage des bordures</long_name>
+		<long_name xml:lang="gl">Estilo do borde de luz</long_name>
+		<long_name xml:lang="pl">Styl lekkiej ramki</long_name>
+		<long_name xml:lang="pt">Estilo de Lightborder</long_name>
+		<long_name xml:lang="pt_BR">Estilo da borda</long_name>
+		<long_name xml:lang="ru">Стиль световой границы</long_name>
+		<long_name xml:lang="sl">Slog obrobe</long_name>
+		<long_name xml:lang="zh_CN">亮边类型</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Default</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Full</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="listviewheaderstyle" default="0">
+		<long_name>Listview header style</long_name>
+		<long_name xml:lang="ca">Estil de la capçalera de la vista de llista</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la capçalera de la vista de llista</long_name>
+		<long_name xml:lang="cs">Styl hlavičky seznamu</long_name>
+		<long_name xml:lang="da">Stil for kolonneoverskrifter i lister</long_name>
+		<long_name xml:lang="de">Stil der Kopfzeilen der Listenansicht</long_name>
+		<long_name xml:lang="el">Τύπος επικεφαλίδας προβολής λίστας</long_name>
+		<long_name xml:lang="es">Cabecera de la sombra del borde</long_name>
+		<long_name xml:lang="et">Loendivaate päise stiil</long_name>
+		<long_name xml:lang="fr">Style des entêtes des vues en liste</long_name>
+		<long_name xml:lang="gl">Estilo da cabeceira da visualización de lista</long_name>
+		<long_name xml:lang="pl">Styl nagłówka widoku listy</long_name>
+		<long_name xml:lang="pt">Estilo de cabeçalho de listview</long_name>
+		<long_name xml:lang="pt_BR">Estilo do cabeçalho de visão em lista</long_name>
+		<long_name xml:lang="ru">Стиль заголовка контейнера списков</long_name>
+		<long_name xml:lang="sl">Slog glave seznamskega pogleda</long_name>
+		<section>Scrolls and Lists</section>
+		<enumeration value="0">
+			<label>Flat</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Glassy</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Raised</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="listviewstyle" default="0">
+		<long_name>Listview separators</long_name>
+		<long_name xml:lang="ca">Separadors de la vista de llista</long_name>
+		<long_name xml:lang="ca@valencia">Separadors de la vista de llista</long_name>
+		<long_name xml:lang="cs">Oddělovače v seznamu</long_name>
+		<long_name xml:lang="da">Skilletegn i lister</long_name>
+		<long_name xml:lang="de">Trenner der Listenansicht</long_name>
+		<long_name xml:lang="el">Διαχωριστικά προβολής λίστας</long_name>
+		<long_name xml:lang="es">Separadores de la vista de lista</long_name>
+		<long_name xml:lang="et">Loendivaate eraldajad</long_name>
+		<long_name xml:lang="fr">Séparateurs des vues en liste</long_name>
+		<long_name xml:lang="gl">Separadores da visualización de lista</long_name>
+		<long_name xml:lang="pl">Separatory widoku listy</long_name>
+		<long_name xml:lang="pt">Separadores  listview</long_name>
+		<long_name xml:lang="pt_BR">Separadores de visão em lista</long_name>
+		<long_name xml:lang="ru">Разделители контейнера списков</long_name>
+		<long_name xml:lang="sl">Ločnice seznamskega pogleda</long_name>
+		<section>Scrolls and Lists</section>
+		<enumeration value="0">
+			<label>No separators</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Dotted separators</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Solid line</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="menubaritemstyle" default="0">
+		<long_name>MenubarItem Style</long_name>
+		<long_name xml:lang="ca">Estil dels elements de la barra de menú</long_name>
+		<long_name xml:lang="ca@valencia">Estil dels elements de la barra de menú</long_name>
+		<long_name xml:lang="cs">Styl položky panelu nabídek</long_name>
+		<long_name xml:lang="da">Stil for menubjælkepunkt</long_name>
+		<long_name xml:lang="de">Stil der Menüleistenobjekte</long_name>
+		<long_name xml:lang="el">Τύπος στοιχείου από τη γραμμή μενού</long_name>
+		<long_name xml:lang="es">Estilo del elemento de la barra de menú</long_name>
+		<long_name xml:lang="et">Menüüriba kirje stiil</long_name>
+		<long_name xml:lang="fr">Style des éléments de la barre de menu</long_name>
+		<long_name xml:lang="gl">Estilo do elemento da barra de menú</long_name>
+		<long_name xml:lang="pl">Styl elementu paska menu</long_name>
+		<long_name xml:lang="pt">Estilo de MenubarItem</long_name>
+		<long_name xml:lang="pt_BR">Estilo de item da barra de menu</long_name>
+		<long_name xml:lang="ru">Стиль элемента панели меню</long_name>
+		<long_name xml:lang="sl">Slog predmeta menijske vrstice</long_name>
+		<long_name xml:lang="zh_CN">菜单栏条目风格</long_name>
+		<section>Menus and Toolbars</section>
+		<enumeration value="0">
+			<label>MenuItem look</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Button look</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="menubarstyle" default="0">
+		<long_name>Menubar Style</long_name>
+		<long_name xml:lang="ca">Estil de la barra de menú</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la barra de menú</long_name>
+		<long_name xml:lang="cs">Styl panelu nabídek</long_name>
+		<long_name xml:lang="da">Menubjælkestil</long_name>
+		<long_name xml:lang="de">Stil der Menüleiste</long_name>
+		<long_name xml:lang="el">Τύπος γραμμής μενού</long_name>
+		<long_name xml:lang="es">Estilo de la barra de menú</long_name>
+		<long_name xml:lang="et">Menüüriba stiil</long_name>
+		<long_name xml:lang="fr">Style de la barre de menus</long_name>
+		<long_name xml:lang="gl">Estilo da barra de menú</long_name>
+		<long_name xml:lang="pl">Styl paska menu</long_name>
+		<long_name xml:lang="pt">Estilo de Menubar</long_name>
+		<long_name xml:lang="pt_BR">Estilo da barra de menu</long_name>
+		<long_name xml:lang="ru">Стиль панели меню</long_name>
+		<long_name xml:lang="sl">Slog menijske vrstice</long_name>
+		<long_name xml:lang="zh_CN">菜单栏风格</long_name>
+		<section>Menus and Toolbars</section>
+		<enumeration value="0">
+			<label>Flat</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Glass</label>
+			<label xml:lang="en_GB">Glass</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Gradient</label>
+			<label xml:lang="en_GB">Gradient</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Striped</label>
+			<label xml:lang="en_GB">Striped</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="menuitemstyle" default="0">
+		<long_name>MenuItem Style</long_name>
+		<long_name xml:lang="ca">Estil dels elements del menú</long_name>
+		<long_name xml:lang="ca@valencia">Estil dels elements del menú</long_name>
+		<long_name xml:lang="cs">Styl položky nabídky</long_name>
+		<long_name xml:lang="da">Stil for menupunkt</long_name>
+		<long_name xml:lang="de">Stil der Menüeinträge</long_name>
+		<long_name xml:lang="el">Τύπος στοιχείου μενού</long_name>
+		<long_name xml:lang="es">Estilo de los elementos de menú</long_name>
+		<long_name xml:lang="et">Menüükirje stiil</long_name>
+		<long_name xml:lang="fr">Style des éléments de menu</long_name>
+		<long_name xml:lang="gl">Estilo do elemento de menú</long_name>
+		<long_name xml:lang="pl">Styl elementu menu</long_name>
+		<long_name xml:lang="pt">Estilo de MenuItem</long_name>
+		<long_name xml:lang="pt_BR">Estilo de item de menu</long_name>
+		<long_name xml:lang="ru">Стиль элемента меню</long_name>
+		<long_name xml:lang="sl">Slog predmeta menija</long_name>
+		<long_name xml:lang="zh_CN">菜单条目风格</long_name>
+		<section>Menus and Toolbars</section>
+		<enumeration value="0">
+			<label>Flat</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Glass</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Striped</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="menustyle" default="1">
+		<long_name>Menu Style</long_name>
+		<long_name xml:lang="ca">Estil del menú</long_name>
+		<long_name xml:lang="ca@valencia">Estil del menú</long_name>
+		<long_name xml:lang="cs">Styl nabídky</long_name>
+		<long_name xml:lang="da">Menustil</long_name>
+		<long_name xml:lang="de">Menüstil</long_name>
+		<long_name xml:lang="el">Τύπος μενού</long_name>
+		<long_name xml:lang="es">Estilo del menú</long_name>
+		<long_name xml:lang="fr">Style des menus</long_name>
+		<long_name xml:lang="nb">Stil for meny</long_name>
+		<long_name xml:lang="pl">Styl menu</long_name>
+		<long_name xml:lang="pt">Estilo de Menu</long_name>
+		<long_name xml:lang="ru">Стиль меню</long_name>
+		<long_name xml:lang="sl">Slog menija</long_name>
+		<section>Menus and Toolbars</section>
+		<enumeration value="0">
+			<label>Flat</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Vertical bars</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Bright glow</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Dark glow</label>
+		</enumeration>
+	</option>
+
+	<option type="real" name="prelight_shade" default="1.0">
+		<long_name>Prelight Shade</long_name>
+		<long_name xml:lang="ca">Ombrejat en estar actiu</long_name>
+		<long_name xml:lang="ca@valencia">Ombrejat en estar actiu</long_name>
+		<long_name xml:lang="cs">Stínování nasvíceného</long_name>
+		<long_name xml:lang="da">Prælysskygge</long_name>
+		<long_name xml:lang="de">Schattierung der Markierung</long_name>
+		<long_name xml:lang="el">Σκίαση εκ των προτέρων φωτισμού (prelight)</long_name>
+		<long_name xml:lang="es">Sombra con preiluminación</long_name>
+		<long_name xml:lang="fr">Ombre de mise en avant</long_name>
+		<long_name xml:lang="gl">Sombra con preiluminación</long_name>
+		<long_name xml:lang="pl">Cień wstępnego wyróżnienia</long_name>
+		<long_name xml:lang="pt">Sobra de Prelight</long_name>
+		<long_name xml:lang="pt_BR">Sombra de pré-iluminação</long_name>
+		<long_name xml:lang="ru">Тень подсветки при наведении</long_name>
+		<long_name xml:lang="sl">Senca posvetlitve</long_name>
+		<description>Increse/Decrease the prelight shade</description>
+		<description xml:lang="ca">Augmenta/disminueix l'ombra en estar actiu</description>
+		<description xml:lang="ca@valencia">Augmenta/disminueix l'ombra en estar actiu</description>
+		<description xml:lang="cs">Zvětšit/zmenšit stínování prvku se stavem „prelight“ (je nad ním ukazatel)</description>
+		<description xml:lang="da">Øg/nedsæt prælysskyggen</description>
+		<description xml:lang="de">Schattierung der Markierung erhöhen/verringern</description>
+		<description xml:lang="el">Αύξηση/Μείωση της σκίασης εκ των προτέρων φωτισμού</description>
+		<description xml:lang="es">Aumentar/reducir la sombra con preiluminación</description>
+		<description xml:lang="fr">Augmenter/diminuer les ombres de mise en avant</description>
+		<description xml:lang="gl">Incrementar ou reducir a sombra con preiluminación</description>
+		<description xml:lang="pl">Powiększenie/pomniejszenie cienia wstępnego wyróżnienia</description>
+		<description xml:lang="pt">Aumentar/Diminuir a sombra de prelight</description>
+		<description xml:lang="pt_BR">Aumentar/Diminuir a sombra de pré-iluminação</description>
+		<description xml:lang="ru">Увеличить/уменьшить тень подсветки при наведении</description>
+		<description xml:lang="sl">Povečaj/pomanjšaj senčenje posvetlitve</description>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>2</maximum>
+		<precision>2</precision>
+	</option>
+
+	<option type="enumeration" name="progressbarstyle" default="1">
+		<long_name>Progressbar style</long_name>
+		<long_name xml:lang="ca">Estil de la barra de progrés</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la barra de progrés</long_name>
+		<long_name xml:lang="cs">Styl ukazatele průběhu</long_name>
+		<long_name xml:lang="da">Statuslinjestil</long_name>
+		<long_name xml:lang="de">Stil der Fortschrittsleiste</long_name>
+		<long_name xml:lang="el">Τύπος γραμμής προόδου</long_name>
+		<long_name xml:lang="es">Estilo de la barra de progreso</long_name>
+		<long_name xml:lang="et">Edenemisriba stiil</long_name>
+		<long_name xml:lang="fr">Style des barres de progression</long_name>
+		<long_name xml:lang="gl">Estilo da barra de progreso</long_name>
+		<long_name xml:lang="pl">Styl paska postępu</long_name>
+		<long_name xml:lang="pt">Estilo da barra de progresso</long_name>
+		<long_name xml:lang="pt_BR">Estilo da barra de progresso</long_name>
+		<long_name xml:lang="ru">Стиль индикатора выполнения</long_name>
+		<long_name xml:lang="sl">Slog vrstice napredka</long_name>
+		<long_name xml:lang="sv">Stil för förloppsmätare</long_name>
+		<long_name xml:lang="zh_CN">进度条风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Don't draw any special effect</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Draw stripes</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Draw cells</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="reliefstyle" default="2">
+		<long_name>Relief style of widget</long_name>
+		<long_name xml:lang="ca">Estil del relleu del giny</long_name>
+		<long_name xml:lang="ca@valencia">Estil del relleu del giny</long_name>
+		<long_name xml:lang="cs">Styl reliéfu widgetu</long_name>
+		<long_name xml:lang="da">Afløsningsstil på kontrol</long_name>
+		<long_name xml:lang="de">Relief-Stil der Elemente</long_name>
+		<long_name xml:lang="el">Τύπος ανάγλυφου γραφικού στοιχείου</long_name>
+		<long_name xml:lang="es">Estilo de sustitución del widget</long_name>
+		<long_name xml:lang="fr">Style du relief des éléments graphiques</long_name>
+		<long_name xml:lang="gl">Estilo do relevo do widget</long_name>
+		<long_name xml:lang="pl">Styl reliefu widżetu</long_name>
+		<long_name xml:lang="pt">Estilo de relevo de widget</long_name>
+		<long_name xml:lang="pt_BR">Estilo de relevo do componente</long_name>
+		<long_name xml:lang="ru">Стиль рельефа виджета</long_name>
+		<long_name xml:lang="sl">Reliefni slog gradnika</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>Flat</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Inset</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Shadow</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Extended Shadow</label>
+		</enumeration>
+		<enumeration value="4">
+			<label>Value 2+3</label>
+		</enumeration>
+		<enumeration value="5">
+			<label>A more controllable inset</label>
+		</enumeration>
+	</option>
+
+	<option type="boolean" name="rgba" default="TRUE">
+		<long_name>Enable/Disable RGBA support</long_name>
+		<long_name xml:lang="ca">Activa/desactiva l'espai de colors RGBA</long_name>
+		<long_name xml:lang="ca@valencia">Activa/desactiva l'espai de colors RGBA</long_name>
+		<long_name xml:lang="cs">Zapnout/vypnout podporu RGBA</long_name>
+		<long_name xml:lang="da">Slå RGBA-understøttelse til/fra</long_name>
+		<long_name xml:lang="de">RGBA-Unterstützung aktivieren/deaktivieren</long_name>
+		<long_name xml:lang="el">Ενεργοποίηση/Απενεργοποίηση υποστήριξης RGBA</long_name>
+		<long_name xml:lang="es">Activar/desactivar soporte para RGBA</long_name>
+		<long_name xml:lang="et">RGBA toe lubamine/keelamine</long_name>
+		<long_name xml:lang="fr">Activer/désactiver le support RGBA</long_name>
+		<long_name xml:lang="gl">Activar ou desactivar a compatibilidade con RGBA</long_name>
+		<long_name xml:lang="pl">Włączenie/wyłączenie obsługi RGBA</long_name>
+		<long_name xml:lang="pt">Activar/Desactivar suporte RGBA</long_name>
+		<long_name xml:lang="pt_BR">Habilitar/Disabilitar suporte a RGBA</long_name>
+		<long_name xml:lang="ru">Вкл./выкл. поддержку RGBA</long_name>
+		<long_name xml:lang="sl">Omogoči/onemogoči RGBA podporo</long_name>
+		<long_name xml:lang="sv">Aktivera/inaktivera RGBA-stöd</long_name>
+		<long_name xml:lang="zh_CN">启用/禁用 RGBA 支持</long_name>
+		<section>General</section>
+	</option>
+
+	<option type="integer" name="roundness" default="1">
+		<long_name>Roundness</long_name>
+		<long_name xml:lang="ca">Arrodoniment</long_name>
+		<long_name xml:lang="ca@valencia">Arrodoniment</long_name>
+		<long_name xml:lang="cs">Zaoblení</long_name>
+		<long_name xml:lang="da">Afrundethed</long_name>
+		<long_name xml:lang="de">Rundung</long_name>
+		<long_name xml:lang="el">Καμπυλότητα</long_name>
+		<long_name xml:lang="es">Redondez</long_name>
+		<long_name xml:lang="et">Ümarus</long_name>
+		<long_name xml:lang="fr">Arrondis</long_name>
+		<long_name xml:lang="gl">Curvatura</long_name>
+		<long_name xml:lang="pl">Okrągłość</long_name>
+		<long_name xml:lang="pt">Rácio de arredondamento</long_name>
+		<long_name xml:lang="pt_BR">Arredondamento</long_name>
+		<long_name xml:lang="ru">Закругление</long_name>
+		<long_name xml:lang="sl">Okroglost</long_name>
+		<long_name xml:lang="sv">Rundhet</long_name>
+		<long_name xml:lang="zh_CN">圆润程度</long_name>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>8</maximum>
+	</option>
+
+	<option type="enumeration" name="scrollbarstyle" default="0">
+		<long_name>Additional scrollbar features</long_name>
+		<long_name xml:lang="ca">Paràmetres addicionals de la barra de desplaçament</long_name>
+		<long_name xml:lang="ca@valencia">Paràmetres addicionals de la barra de desplaçament</long_name>
+		<long_name xml:lang="cs">Doplňkové vlastnosti posuvníku</long_name>
+		<long_name xml:lang="da">Yderligere egenskaber for rullebjælke</long_name>
+		<long_name xml:lang="de">Zusätzliche Funktionen der Rollbalken</long_name>
+		<long_name xml:lang="el">Επιπρόσθετες ιδιότητες γραμμής κύλισης</long_name>
+		<long_name xml:lang="es">Características adicionales de las barras de desplazamiento</long_name>
+		<long_name xml:lang="et">Täiendavad kerimisriba omadused</long_name>
+		<long_name xml:lang="fr">Fonctions supplémentaires de la barre de défilement</long_name>
+		<long_name xml:lang="gl">Características da barra de desprazamento adicionais</long_name>
+		<long_name xml:lang="pl">Dodatkowe funkcje paska przewijania</long_name>
+		<long_name xml:lang="pt">Funcionalidades adicionais da barra de rolamento</long_name>
+		<long_name xml:lang="pt_BR">Funcionalidades adicionais da barra de rolagem</long_name>
+		<long_name xml:lang="ru">Дополнительные возможности панели прокрутки</long_name>
+		<long_name xml:lang="sl">Dodatne možnosti drsnika</long_name>
+		<long_name xml:lang="zh_CN">附加滚动条功能</long_name>
+		<section>Scrolls and Lists</section>
+		<enumeration value="0">
+			<label>Nothing added</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Circles</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Handles</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Diagonal stripes</label>
+		</enumeration>
+		<enumeration value="4">
+			<label>Diagonal stripes and handles</label>
+		</enumeration>
+		<enumeration value="5">
+			<label>Horizontal stripes</label>
+		</enumeration>
+		<enumeration value="6">
+			<label>Horizontal stripes and handles</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="separatorstyle" default="0">
+		<long_name>Separator style</long_name>
+		<long_name xml:lang="ca">Estil del separador</long_name>
+		<long_name xml:lang="ca@valencia">Estil del separador</long_name>
+		<long_name xml:lang="cs">Styl oddělovače</long_name>
+		<long_name xml:lang="da">Stil for skilletegn</long_name>
+		<long_name xml:lang="de">Stil des Trenners</long_name>
+		<long_name xml:lang="el">Τύπος διαχωριστικού</long_name>
+		<long_name xml:lang="es">Estilo del separador</long_name>
+		<long_name xml:lang="fr">Style des séparateurs</long_name>
+		<long_name xml:lang="gl">Estilo do separador</long_name>
+		<long_name xml:lang="pl">Styl separatorów</long_name>
+		<long_name xml:lang="pt">Estilo de separador</long_name>
+		<long_name xml:lang="pt_BR">Estilo de separador</long_name>
+		<long_name xml:lang="ru">Стиль разделителя</long_name>
+		<long_name xml:lang="sl">Slog ločilnika</long_name>
+		<long_name xml:lang="zh_CN">分割风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>None</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Smooth separator</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="sliderstyle" default="0">
+		<long_name>Slider style</long_name>
+		<long_name xml:lang="ca">Estil dels botons lliscants</long_name>
+		<long_name xml:lang="ca@valencia">Estil dels botons lliscants</long_name>
+		<long_name xml:lang="cs">Styl táhla</long_name>
+		<long_name xml:lang="da">Rullebjælkestil</long_name>
+		<long_name xml:lang="de">Stil der Schieberegler</long_name>
+		<long_name xml:lang="el">Τύπος ολίσθησης</long_name>
+		<long_name xml:lang="es">Estilo del deslizador</long_name>
+		<long_name xml:lang="et">Liuguri stiil</long_name>
+		<long_name xml:lang="fr">Style des glissières</long_name>
+		<long_name xml:lang="gl">Estilo da barra deslizante</long_name>
+		<long_name xml:lang="pl">Styl suwaka</long_name>
+		<long_name xml:lang="pt">Estilo da barra deslizante</long_name>
+		<long_name xml:lang="pt_BR">Estilo da barra deslizante</long_name>
+		<long_name xml:lang="ru">Стиль ползунка</long_name>
+		<long_name xml:lang="sl">Slog vodoravnega drsnika</long_name>
+		<long_name xml:lang="zh_CN">滑块风格</long_name>
+		<section>Scrolls and Lists</section>
+		<enumeration value="0">
+			<label>None</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Add handles</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="spinbuttonstyle" default="0">
+		<long_name>Spinbutton Style</long_name>
+		<long_name xml:lang="ca">Estil dels botons de selecció de valor</long_name>
+		<long_name xml:lang="ca@valencia">Estil dels botons de selecció de valor</long_name>
+		<long_name xml:lang="cs">Styl číselníku</long_name>
+		<long_name xml:lang="da">Stil for snurreknap</long_name>
+		<long_name xml:lang="de">Stil der Einstellfelder</long_name>
+		<long_name xml:lang="el">Τύπος κουμπιού αυξομείωσης</long_name>
+		<long_name xml:lang="es">Estilo del marcador incrementable</long_name>
+		<long_name xml:lang="et">Kerimisnupu stiil</long_name>
+		<long_name xml:lang="fr">Style des compteurs</long_name>
+		<long_name xml:lang="gl">Estilo do botón de axuste</long_name>
+		<long_name xml:lang="pl">Styl przycisku liczbowego</long_name>
+		<long_name xml:lang="pt">Estilo de Botão Giratório</long_name>
+		<long_name xml:lang="pt_BR">Estilo de botão seletor</long_name>
+		<long_name xml:lang="ru">Стиль волчка</long_name>
+		<long_name xml:lang="sl">Slog vrtilnega gumba</long_name>
+		<long_name xml:lang="zh_CN">上下箭头风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>No effect</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Add separator</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="stepperstyle" default="0">
+		<long_name>Stepper style</long_name>
+		<long_name xml:lang="ca">Estil del lliscador</long_name>
+		<long_name xml:lang="ca@valencia">Estil del lliscador</long_name>
+		<long_name xml:lang="cs">Styl krokovače</long_name>
+		<long_name xml:lang="da">Stil for op-/nedtællingsknapper</long_name>
+		<long_name xml:lang="de">Stil des Steppers</long_name>
+		<long_name xml:lang="el">Τύπος βηματικού στοιχείου (stepper)</long_name>
+		<long_name xml:lang="es">Estilo del paso</long_name>
+		<long_name xml:lang="fr">Style de la barre coulissante</long_name>
+		<long_name xml:lang="gl">Estilo do paso</long_name>
+		<long_name xml:lang="pl">Styl przycisku kroku</long_name>
+		<long_name xml:lang="pt">Estilo de Stepper</long_name>
+		<long_name xml:lang="pt_BR">Estilo do incrementador</long_name>
+		<long_name xml:lang="ru">Стиль кнопки диапазона</long_name>
+		<long_name xml:lang="sl">Slog koračnika</long_name>
+		<long_name xml:lang="zh_CN">步进风格</long_name>
+		<section>Scrolls and Lists</section>
+		<enumeration value="0">
+			<label>Classic</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Unified</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Squared</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Rounded in the trough</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="textstyle" default="0">
+		<long_name>Text Style</long_name>
+		<long_name xml:lang="ca">Estil de text</long_name>
+		<long_name xml:lang="ca@valencia">Estil de text</long_name>
+		<long_name xml:lang="cs">Styl textu</long_name>
+		<long_name xml:lang="da">Tekststil</long_name>
+		<long_name xml:lang="de">Textstil</long_name>
+		<long_name xml:lang="el">Τύπος κειμένου</long_name>
+		<long_name xml:lang="es">Estilo del texto</long_name>
+		<long_name xml:lang="et">Teksti stiil</long_name>
+		<long_name xml:lang="fr">Style des textes</long_name>
+		<long_name xml:lang="gl">Estilo do texto</long_name>
+		<long_name xml:lang="nb">Tekststil</long_name>
+		<long_name xml:lang="pl">Styl tekstu</long_name>
+		<long_name xml:lang="pt">Estilo de Texto</long_name>
+		<long_name xml:lang="pt_BR">Estilo de texto</long_name>
+		<long_name xml:lang="ru">Стиль текста</long_name>
+		<long_name xml:lang="sl">Slog besedila</long_name>
+		<long_name xml:lang="sv">Textstil</long_name>
+		<long_name xml:lang="zh_CN">文本风格</long_name>
+		<section>General</section>
+		<enumeration value="0">
+			<label>No effect</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Shadow at bottom</label>
+		</enumeration>
+		<enumeration value="2">
+			<label>Shadow at top</label>
+		</enumeration>
+		<enumeration value="3">
+			<label>Shadow ad bottom right</label>
+		</enumeration>
+		<enumeration value="4">
+			<label>Shadow ad top left</label>
+		</enumeration>
+	</option>
+
+	<option type="enumeration" name="text_shade" default="1.06">
+		<long_name>Text Shade</long_name>
+		<long_name xml:lang="ca">Ombrejat del text</long_name>
+		<long_name xml:lang="ca@valencia">Ombrejat del text</long_name>
+		<long_name xml:lang="cs">Stínování textu</long_name>
+		<long_name xml:lang="da">Tekstskygge</long_name>
+		<long_name xml:lang="de">Textschattierung</long_name>
+		<long_name xml:lang="el">Σκίαση κειμένου</long_name>
+		<long_name xml:lang="es">Sombra del texto</long_name>
+		<long_name xml:lang="fr">Ombre des textes</long_name>
+		<long_name xml:lang="gl">Sombra do texto</long_name>
+		<long_name xml:lang="nb">Tekstskygge</long_name>
+		<long_name xml:lang="pl">Cień tekstu</long_name>
+		<long_name xml:lang="pt">Sombra de Texto</long_name>
+		<long_name xml:lang="ru">Тень от текста</long_name>
+		<long_name xml:lang="sl">Senca besedila</long_name>
+		<long_name xml:lang="zh_CN">文本阴影</long_name>
+		<description>Increse/Decrease the text shadow shade</description>
+		<description xml:lang="ca">Augmenta/disminueix l'ombrejat de l'ombra del text</description>
+		<description xml:lang="ca@valencia">Augmenta/disminueix l'ombrejat de l'ombra del text</description>
+		<description xml:lang="cs">Zvětšit/zmenšit sytost stínování textu</description>
+		<description xml:lang="da">Øg/nedsæt tekstskygge</description>
+		<description xml:lang="de">Textschattierung verstärken/abschwächen</description>
+		<description xml:lang="el">Αύξηση/Μείωση της σκίασης κειμένου</description>
+		<description xml:lang="es">Aumentar/reducir la sombra del texto</description>
+		<description xml:lang="fr">Augmenter/diminuer l'ombrage des textes</description>
+		<description xml:lang="gl">Aumentar/reducir a sombra do texto</description>
+		<description xml:lang="pl">Powiększenie/pomniejszenie cienia tekstu</description>
+		<description xml:lang="pt">Aumentar/Diminuir o sombreado de sombra de texto</description>
+		<description xml:lang="ru">Увеличить/уменьшить тень от текста</description>
+		<description xml:lang="sl">Povečaj/Pomanjšaj senco senčenja</description>
+		<description xml:lang="zh_CN">增加/减少文本阴影</description>
+		<section>General</section>
+		<minimum>0</minimum>
+		<maximum>2</maximum>
+		<precision>2</precision>
+	</option>
+
+	<option type="enumeration" name="toolbarstyle" default="0">
+		<long_name>Toolbar style</long_name>
+		<long_name xml:lang="ca">Estil de la barra d'eines</long_name>
+		<long_name xml:lang="ca@valencia">Estil de la barra d'eines</long_name>
+		<long_name xml:lang="cs">Styl panelu nástrojů</long_name>
+		<long_name xml:lang="da">Værktøjsbjælkestil</long_name>
+		<long_name xml:lang="de">Stil der Werkzeugleisten</long_name>
+		<long_name xml:lang="el">Τύπος εργαλειοθήκης</long_name>
+		<long_name xml:lang="es">Estilo de barra de herramientas</long_name>
+		<long_name xml:lang="et">Tööriistariba stiil</long_name>
+		<long_name xml:lang="fr">Style de la barre d'outils</long_name>
+		<long_name xml:lang="gl">Estilo da barra de ferramentas</long_name>
+		<long_name xml:lang="nb">Verktøylinjestil</long_name>
+		<long_name xml:lang="pl">Styl paska narzędziowego</long_name>
+		<long_name xml:lang="pt">Estilo da barra de ferramentas</long_name>
+		<long_name xml:lang="pt_BR">Estilo da barra de ferramentas</long_name>
+		<long_name xml:lang="ru">Стиль панели инструментов</long_name>
+		<long_name xml:lang="sl">Slog orodne vrstice</long_name>
+		<long_name xml:lang="zh_CN">工具栏风格</long_name>
+		<section>Menus and Toolbars</section>
+		<enumeration value="0">
+			<label>Flat</label>
+		</enumeration>
+		<enumeration value="1">
+			<label>Draw with general gradient/glass effect</label>
+		</enumeration>
+	</option>
+</engine>

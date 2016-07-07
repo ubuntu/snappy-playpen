@@ -1,0 +1,22 @@
+Package: autopkgtest
+Priority: optional
+Section: devel
+Installed-Size: 530
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Autopkgtest team <autopkgtest-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.0.2~ubuntu16.04.1
+Depends: python3, python3-debian, apt-utils, libdpkg-perl, procps
+Recommends: autodep8
+Suggests: schroot, lxc, lxd-client, qemu-system, qemu-utils
+Filename: pool/main/a/autopkgtest/autopkgtest_4.0.2~ubuntu16.04.1_all.deb
+Size: 132610
+MD5sum: 2329aaf5b63b2c0daf14e55e0d5366c4
+SHA1: 0c1d5cd0f383264f1d1ca4f2f02cdd78580bc741
+SHA256: 8e1f2ed75afe7a050710658932f72220c9e83e7378f44a3338b3b626c073e25d
+Description: automatic as-installed testing for Debian packages
+Description-md5: 31d9217a487d44cfd80f0588068648cd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+

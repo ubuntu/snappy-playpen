@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer9" transform="translate(-101 -297)">
+  <path id="path35480" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m106.98 302.02a0.99828 1.0019 0 0 1 -0.98363 -1.0158c0-2.1983 1.7971-4.0019 3.9874-4.0019s3.9874 1.8037 3.9874 4.0019a0.99828 1.0019 0 1 1 -1.9957 0c0-1.1154-0.88029-1.9989-1.9916-1.9989-1.1114 0-1.9916 0.88351-1.9916 1.9989a0.99828 1.0019 0 0 1 -1.0121 1.0158z"/>
+  <path id="path35482" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m108.5 309c-1.3689 0-2.5007-1.1318-2.5007-2.5007a1.0005 1.0005 0 1 1 2.001 0c0 0.28799 0.21174 0.49973 0.49973 0.49973s0.49974-0.21174 0.49974-0.49973a1.0005 1.0005 0 1 1 2.001 0c0 1.3689-1.1318 2.5007-2.5007 2.5007z"/>
+  <path id="path35484" style="block-progression:tb;text-indent:0;color:#000000;enable-background:new;text-transform:none;fill:#bebebe" d="m109.78 302a1.0001 1.0001 0 0 0 -0.78 1v3.4688a1.0001 1.0001 0 1 0 2 0v-3.47a1.0001 1.0001 0 0 0 -1.2188 -1z"/>
+  <path id="path35486" style="block-progression:tb;text-indent:0;color:#000000;enable-background:new;text-transform:none;fill:#bebebe" d="m112.78 300a1.0001 1.0001 0 0 0 -0.78 1v6.8125a1.0001 1.0001 0 1 0 2 0v-6.81a1.0001 1.0001 0 0 0 -1.2188 -1z"/>
+  <path id="path35488" style="block-progression:tb;text-indent:0;color:#000000;enable-background:new;text-transform:none;fill:#bebebe" d="m106.78 300a1.0001 1.0001 0 0 0 -0.78 1v5.4062a1.0001 1.0001 0 1 0 2 0v-5.41a1.0001 1.0001 0 0 0 -1.2188 -1z"/>
+  <path id="path35490" style="block-progression:tb;text-indent:0;color:#000000;enable-background:new;text-transform:none;fill:#bebebe" d="m103.78 301a1.0001 1.0001 0 0 0 -0.78 1v6a1.0001 1.0001 0 1 0 2 0v-6a1.0001 1.0001 0 0 0 -1.2188 -1z"/>
+  <path id="path35494" style="block-progression:tb;text-indent:0;color:#000000;enable-background:new;text-transform:none;fill:#bebebe" d="m112.84 307a1.0001 1.0001 0 0 0 -0.65625 0.40625l-2.68 3.59h-2.0312l-2.6875-3.5312a1.0001 1.0001 0 1 0 -1.5625 1.1875l3 3.9375a1.0001 1.0001 0 0 0 0.78 0.4h3a1.0001 1.0001 0 0 0 0.8125 -0.40625l3-4a1.0001 1.0001 0 0 0 -0.97 -1.59z"/>
+ </g>
+</svg>

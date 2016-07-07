@@ -1,0 +1,247 @@
+Package: ubuntu-sdk
+Description-md5: e9c87543a94fecea2c3f8676ea89452f
+Description-en: Ubuntu SDK
+ This package depends on all the packages of the Ubuntu SDK:
+ - Runtime libraries
+ - Development headers
+ - Qt Creator
+ - Demos and examples
+
+Package: phablet-tools
+Description-md5: 913c858602c127f265479378fd1d481b
+Description-en: Scripts to work with Phablet.
+ Installs Touch Developer Preview on Nexus devices, specifically the following:
+ - Galaxy Nexus
+ - Nexus 4
+ - Nexus 7
+ - Nexus 10
+ .
+ Additional tools included to bootstrap from source and setup networking
+
+Package: ubuntu-touch
+Description-md5: a3d2bde244db1d4276926a028b7c047a
+Description-en: Ubuntu touch system
+ This package depends on all of the packages in the Ubuntu touch system
+ .
+ It is safe to remove this package if some of the touch system packages are
+ not desired.
+
+Package: click-dev
+Description-md5: 524a787d5934e296c23fd4c9d590ebf1
+Description-en: build Click packages
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ click-dev provides support for building these packages.
+
+Package: python3-click-package
+Description-md5: a55b8833aad665015cec861ba580ce8a
+Description-en: Click packages (Python 3 interface)
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package provides Python 3 modules used by click, which may also be
+ used directly.
+
+Package: click
+Description-md5: 1f88be1eec9a52975d22b0103f98879a
+Description-en: Click packages
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package provides common files, including the main click program.
+
+Package: click-doc
+Description-md5: 60608bb1e29a4ab375e8538c009ecb38
+Description-en: Click packages (documentation)
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package provides documentation for click.
+
+Package: packagekit-plugin-click
+Description-md5: fb82f79ffce46773583cb459d42861d1
+Description-en: Click packages (PackageKit plugin)
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package provides a PackageKit plugin adding support for Click
+ packages.
+
+Package: click-reviewers-tools
+Description-md5: 3e24901c144a5166e25fee1b5e0c1ab6
+Description-en: tools to review click packages
+ These scripts can be used to review click packages both manually and in a
+ programmatic fashion.
+
+Package: ubuntu-sdk-libs
+Description-md5: 7e4932c196dd1f7b506ace64766f7c16
+Description-en: Ubuntu SDK Runtime libraries
+ This package depends on all the packages of the Ubuntu SDK:
+ - Runtime libraries
+
+Package: ubuntu-sdk-libs-dev
+Description-md5: b8f05f39dd2d0722325b86386e86346e
+Description-en: Ubuntu SDK
+ This package depends on all the packages of the Ubuntu SDK:
+ - Development headers
+
+Package: ubuntu-device-flash
+Description-md5: 467928c64fe32be12a3dda7d24f2356f
+Description-en: Flash supported devices with Ubuntu
+ Use this tool to flash a suported device with Ubuntu by either
+ bootstrapping from fastboot or reflashing from an already
+ supported device.
+
+Package: ubuntu-emulator
+Description-md5: cf205ee7fc30922320986c4150093a20
+Description-en: Create and run emulator images of Ubuntu Touch
+ Create and destroy Ubuntu Touch instances and run them with the emulator
+
+Package: golang-goget-ubuntu-touch-bootimg-dev
+Description-md5: fdf1b89cc12b7e19813a5c4d52516108
+Description-en: Go library for manipulating Android boot.img files
+ Package reads and extracts Android boot.img files
+
+Package: golang-goget-ubuntu-touch-devices-dev
+Description-md5: 290c9771f9d84a1776cabb2fd6ea42d8
+Description-en: Go library for interfacing with adb and fastboot
+ Provides facilities to interface with adb and fastboot
+
+Package: golang-goget-ubuntu-touch-ubuntuimage-dev
+Description-md5: 81045a8ac51b5727003d561b69617d65
+Description-en: Go library for interfacing with an Ubuntu image server
+ Provides facilities to interface with an Ubuntu image server to
+ download OS image assets from different channels and for different
+ devices.
+
+Package: libclick-0.4-0
+Description-md5: 00fddc5709ae09f963921e7a94d1e017
+Description-en: run-time Click package management library
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package provides a shared library for managing Click packages.
+
+Package: libclick-0.4-dev
+Description-md5: e6db64e1a45e66e69c5e7a6e77046966
+Description-en: development files for Click package management library
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package provides development files needed to build programs for
+ managing Click packages.
+
+Package: gir1.2-click-0.4
+Description-md5: fbd7cef9943963b4852f1b41e72488ab
+Description-en: GIR bindings for Click package management library
+ Click is a simplified packaging format that installs in a separate part of
+ the file system, suitable for third-party applications.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
+Package: phablet-tools-citrain
+Description-md5: 6f66cf88611a0dd6ddd200e7274873ca
+Description-en: Scripts to work with CI Train silos (PPAs).
+ Provides citrain tool for installing and removing binary packages from CI
+ Train silos on either your host system or connected Ubuntu Touch device.
+
+Package: ubuntu-device-do
+Description-md5: 4f94304db38c2ec6b92af90b54ea900b
+Description-en: Tool to interact with Ubuntu Touch devices
+ Use this tool to interact with your Ubuntu Touch device
+
+Package: ubuntu-sdk-libs-tools
+Description-md5: 9c16ec78d8808202ab6a84c93dbdbd54
+Description-en: Ubuntu SDK Build Tools
+ This package depends on all the packages of the Ubuntu SDK:
+ - Build tools
+
+Package: ubuntu-sdk-qmake-extras
+Description-md5: ab4dd893e8713b12e58b7fd1860a7ab9
+Description-en: Extra qmake features required by the Ubuntu-SDK templates,
+ extends qmake projects with Ubuntu specific variables and tools
+ .
+ This package contains qmake feature files for the Ubuntu-SDK
+
+Package: unity-js-scopes-bindings
+Description-md5: 912fb232810a76948a425b394090fe8b
+Description-en: JavaScript bindings to Unity Scopes API
+ Provides a means for developers to develop Ubuntu Scopes in JavaScript
+ by providing bindings to the Unity Scopes API.
+
+Package: unity-js-scopes-launcher
+Description-md5: c3455aa7b7c6d5f4b434e82cadc42d0a
+Description-en: Scope launcher for Unity JavaScript Scopes
+ Provides a means for developers to launch their JavaScript Ubuntu Scopes.
+
+Package: ubuntu-sdk-ide
+Description-md5: 3c63c6f699f783f4228f2f9845a5f563
+Description-en: Ubuntu SDK IDE
+ Qt Creator is a lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ This package contains the Qt Creator and the Ubuntu plugins providing
+ deeper integration for developing applications for Ubuntu using the
+ Ubuntu UI Toolkit. It also introduces an Ubuntu themed welcome
+ screen.
+
+Package: ubuntu-sdk-api-15.04-armhf
+Description-md5: e5ec143eade90b6e35935c4614ae5f80
+Description-en: Ubuntu SDK API set for 15.04
+ Target file system and devcelopment kit for 15.04
+
+Package: ubuntu-sdk-api-15.04-i386
+Description-md5: e5ec143eade90b6e35935c4614ae5f80
+Description-en: Ubuntu SDK API set for 15.04
+ Target file system and devcelopment kit for 15.04
+
+Package: ubuntu-sdk-api-tools
+Description-md5: e41878e039bf70579a66420e64966444
+Description-en: Ubuntu SDK API tool
+ Tool to create and install Ubuntu SDK API kits
+
+Package: unity-js-scopes-tool
+Description-md5: acbab397df7c0815125ce8dfa6356301
+Description-en: Scope tool for Unity JavaScript Scopes
+ Provides a means for developers to configure their JavaScript Ubuntu Scopes.
+
+Package: ubuntu-pocket-desktop
+Description-md5: 39169a5924084a5727fb7508b27039b9
+Description-en: Ubuntu touch pocket desktop system
+ This package depends on all of the packages in the Ubuntu pocket desktop
+ system.
+ .
+ It is safe to remove this package if some of the touch system packages are
+ not desired.
+
+Package: ubuntu-sdk-dev
+Description-md5: 0faaa20833288984401a60d92fd17ab7
+Description-en: Qt and Ubuntu APIs for application development
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ Qt Components for Ubuntu offers a set of reusable user interface
+ components for Qt Quick 2 / QML.
+ .
+ This package contains the Qt APIs and the Ubuntu Components QML plugin.
+
+Package: unity-js-scopes-dev
+Description-md5: 0276e6a321a145c138d13ce6d13fb2a9
+Description-en: Development files for Unity JavaScript Scopes
+ Provides a set of Qt Creator templates and examples for Ubuntu Scopes
+ written in JavaScript.
+
+Package: unity-js-scopes-doc
+Description-md5: 43d9047ada2455e6f67b0dcc4be6f207
+Description-en: Documentation for javascript unity scopes
+ Provides the documenttaion for unity scopes javascript API.
+
+Package: ubuntu-clicksdk-qmake
+Description-md5: 72676fd52fd1052eb19a93bc46674aaf
+Description-en: Special qmake for the use in the click packaged Ubuntu SDK
+ Custom tool build for packaging the SDK in a click package
+ .
+ This package contains a custom qmake for the click packaged Ubuntu SDK.
+

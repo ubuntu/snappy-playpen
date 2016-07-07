@@ -1,0 +1,70 @@
+Notes about the Debian xkb-data package
+=======================================
+
+Available models, layouts, variants, and options
+------------------------------------------------
+
+One can have a look at the following file:
+  /usr/share/X11/xkb/rules/base.lst
+
+Support of Apple keyboards
+--------------------------
+
+Apple keyboards have been mostly unusable with XKB for years,
+and many unofficial files spread around the Internet to fix
+this mess.  Fortunately this issue has been fixed now, thanks
+to testers on the debian-powerpc mailing list, and changes
+have been merged upstream.
+
+The following models are available:
+ * macintosh_old
+   For old kernels with ADB keycodes
+ * ibook powerbook macbook78 macbook79
+   Laptop, 3rd and 4th levels are obtained by the small Enter key.
+ * macintosh
+   Default Macintosh
+These models look for symbols in /usr/share/X11/xkb/symbols/macintosh_vndr,
+which means that the following layouts can be selected:
+   ch de dk es fi fr gb is it latam nl no pt se us
+
+PC models can be selected, to have access to more layouts.  Some options
+may then be added to have the same behavior as with Macintosh keyboards.
+Here is a (non exhaustive) list of relevant options:
+ * lv3:lwin_switch   Press left Apple-key to choose 3rd level.
+ * lv3:enter_switch  Press Enter key on keypad to choose 3rd level.
+ * numpad:mac        Numpad keys work as with Macintosh keyboards.
+ * apple:badmap      Swap keycodes of two keys when Mac keyboards are
+                     misdetected by kernel.
+
+Variants have been added to PC layouts to emulate Macintosh layouts.
+For instance,
+
+    Option     "XkbRules"    "xorg"
+    Option     "XkbModel"    "ibook"
+    Option     "XkbLayout"   "fr"
+
+in /etc/X11/xorg.conf can be replaced by
+
+    Option     "XkbRules"    "xorg"
+    Option     "XkbModel"    "pc105"
+    Option     "XkbLayout"   "fr"
+    Option     "XkbVariant"  "mac"
+    Option     "XkbOptions"  "lv3:enter_switch,apple:badmap,numpad:mac"
+
+Denis Barbier <barbier@debian.org>  Thu,  5 Oct 2006 22:51:12 +0200
+
+Cleaning /etc/X11/xkb
+---------------------
+
+Since 0.8-3, all the files in /etc/X11/xkb/ were moved to
+/usr/share/X11/xkb/symbols. If you want to clean /etc/X11/xkb/, you need
+to run dpkg -P xlibs.
+
+Your 'Fn' key is not working
+----------------------------
+
+On some laptops (Gateway MX6453 for instance), when X starts with
+numlock on, the 'Fn' key is toggled the wrong way. Just turn numlock off
+to get the 'Fn' key work again.
+
+Mohammed Adnène Trojette <adn+deb@diwi.org>  Thu, 01 May 2008 02:36:13 +0200

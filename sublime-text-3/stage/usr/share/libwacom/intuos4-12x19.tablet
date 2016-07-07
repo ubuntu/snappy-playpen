@@ -1,0 +1,58 @@
+# Wacom
+# Intuos4 Extra Large
+# PTK-1240
+#
+# Button Map:
+# (A=1, B=2, C=3, ...)
+#
+#    *-----------------------*
+#    |                       |
+#  B |                       |
+#  C |                       |
+#  D |                       |
+#  E |                       |
+#  A |        TABLET         |
+#  F |                       |
+#  G |                       |
+#  H |                       |
+#  I |                       |
+#    |                       |
+#    *-----------------------*
+#
+# LED Map:
+# (XY=Bank X, LED Y)
+#
+#     *-----------------------*
+#     |                       |
+#  00 |                       |
+#  01 |                       |
+#  02 |        TABLET         |
+#  03 |                       |
+#     |                       |
+#     *-----------------------*
+#
+
+[Device]
+Name=Wacom Intuos4 12x19
+DeviceMatch=usb:056a:00bb
+Class=Intuos4
+Width=19
+Height=12
+Layout=intuos4-12x19.svg
+IntegratedIn=
+Styli=0x006;0x802;0x804;0x806;0x80a;0x80c;0x902;0x90a;0x100802;0x100804;0x10080a;0x10080c;0x100902;0x10090a;0x120802;0x140802;0x14080a;0x160802;0x16080a;
+
+[Features]
+Reversible=true
+Stylus=true
+Ring=true
+Buttons=9
+StatusLEDs=Ring
+
+[Buttons]
+Left=A;B;C;D;E;F;G;H;I
+
+OLEDs=B;C;D;E;F;G;H;I
+
+Ring=A
+RingNumModes=4

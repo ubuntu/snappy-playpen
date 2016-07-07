@@ -1,0 +1,5 @@
+#
+# The synopsis line starts with a capital letter because of the TIFF
+# acronym, not because it contains a sentence.
+#
+libtiff5: description-synopsis-starts-with-a-capital-letter

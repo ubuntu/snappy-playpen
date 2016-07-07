@@ -1,0 +1,2070 @@
+Package: mate-common
+Description-md5: 70c3b333d1d5dd3adf775751578861ba
+Description-en: common scripts and macros to develop with MATE
+ mate-common is an extension to autoconf, automake and libtool for the MATE
+ environment and MATE using applications. Included are mate-autogen.sh and
+ several macros to help in MATE source trees.
+
+Package: mate-icon-theme
+Description-md5: 9f5f81013b9cf1ae49ae9420cadad27e
+Description-en: MATE Desktop icon theme
+ This package contains the default icon theme used by the MATE desktop.
+ The icons are used in the panel menu, in Caja and other
+ applications shipped with MATE.
+ .
+ This icon theme provides icon artwork for representing the different
+ applications, files, directories, and devices found on the MATE desktop.
+
+Package: mate-polkit
+Description-md5: 9da547a2d009861d581b2f4aa498550a
+Description-en: MATE authentication agent for PolicyKit-1
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the MATE policy kit authentication agent.
+
+Package: mate-notification-daemon
+Description-md5: 00be3310683cbd506f53e6b288f82405
+Description-en: daemon to display passive popup notifications
+ mate-notification-daemon displays passive popup notifications, as per
+ the Desktop Notifications Specification.
+ .
+ The Desktop Notifications Specification provides a standard way of
+ doing passive popup notifications on the Linux desktop. These are
+ designed to notify the user of something without interrupting their
+ work with a dialog box that they must close.  Passive popups can
+ automatically disappear after a short period of time, as per the
+ Desktop Notifications spec.
+
+Package: mate-desktop
+Description-md5: 00a366bf9bf6902235e7787f948836fd
+Description-en: Library with common API for various MATE modules
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ The mate-about program helps with finding which version of MATE is installed.
+
+Package: mate-backgrounds
+Description-md5: 6f92a76d1836e26ab6e46e637b922c08
+Description-en: Set of backgrounds packaged with the MATE Desktop Environment
+ This package provides a collection of desktop wallpapers created with MATE
+ users in mind.
+ .
+ The package ships the default MATE backgrounds from various Linux
+ distributions as well as a set of nature photographs suitable as comforting
+ desktop backgrounds.
+
+Package: mate-menus
+Description-md5: 7ba588f4bc62f57bde172fbd4cbb98a6
+Description-en: implementation of the freedesktop menu specification for MATE
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ Also contained here are the MATE menu layout configuration files, .directory
+ files and assorted menu related utility programs.
+
+Package: mate-settings-daemon
+Description-md5: 7e05dd4968ea7ee43700abe3d0e8b2a4
+Description-en: daemon handling the MATE session settings
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+ * Keyboard: layout, accessibility options, shortcuts, media keys
+ * Clipboard management
+ * Theming: background, icons, GTK+ applications
+ * Cleanup of unused files
+ * Mouse: cursors, speed, accessibility options
+ * Startup of other daemons: screensaver, sound daemon
+ * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+
+Package: mate-control-center
+Description-md5: b6e1462868a9e2b12d2c192f4c5d8319
+Description-en: utilities to configure the MATE desktop
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ It also contains a front end to these applets, which can also be
+ accessed with the MATE panel or the Caja file manager.
+
+Package: mate-themes
+Description-md5: 3ac03d61efe53eb75553ad1bcaa3b9e8
+Description-en: Official themes for the MATE desktop
+ This package contains the official desktop themes of the MATE desktop
+ environment.
+ .
+ The themes provided for the MATE desktop partially resemble themes that
+ are well known from GNOMEv2 desktops. However, the MATE team also prepared
+ some new themes esp. for MATE (Menta, GreenLaguna, TraditionalGreen,
+ TraditionalOk, and BlackMate).
+
+Package: mate-panel
+Description-md5: 9334d503600c11dc5d1bebf83b94366d
+Description-en: launcher and docking facility for MATE
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+
+Package: gir1.2-mate-panel
+Description-md5: 12a2ed6912010aa913dd6a3692ce50ac
+Description-en: GObject introspection data for MATE panel
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains introspection data for MATE panel.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: mate-session-manager
+Description-md5: 9341aca8be09efd8bc6238fccac20add
+Description-en: Session manager of the MATE desktop environment
+ This package contains a session that can be started from a display
+ manager such as MDM. It will load all necessary applications for a
+ full-featured user session.
+ .
+ The session manager also features the ability to save a running session
+ and restore it later.
+ .
+ This version is configured to start the MATE desktop, based on the
+ MATE panel.
+
+Package: mate-terminal
+Description-md5: a1323e5909206515119974f769d401f0
+Description-en: MATE terminal emulator application
+ MATE Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+ - Access a UNIX shell in the MATE environment.
+ - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ MATE Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+
+Package: caja
+Description-md5: 2d27e6d6f085ec92e7532bd116bd9d0a
+Description-en: file manager for the MATE desktop
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+
+Package: libcaja-extension-dev
+Description-md5: a80ffbfa9b1d018b217fb2f97f2bfff9
+Description-en: libraries for Caja components (development files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains the development files for the libraries needed
+ by Caja's extensions.
+
+Package: engrampa-common
+Description-md5: 693bd268e3f08c305f73cfdb419bef5a
+Description-en: archive manager for MATE (common files)
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+ * Create and modify archives.
+ * View the content of an archive.
+ * View a file contained in an archive.
+ * Extract files from the archive.
+ .
+ This package contains the architecture independent files.
+
+Package: engrampa
+Description-md5: c8e71f59d4956f9ef1b9dbbeb964086c
+Description-en: archive manager for MATE
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+ * Create and modify archives.
+ * View the content of an archive.
+ * View a file contained in an archive.
+ * Extract files from the archive.
+ .
+ Engrampa supports the following formats:
+ * Tar (.tar) archives, including those compressed with
+ gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
+ compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
+ lzma (.tar.lzma) and xz (.tar.xz)
+ * Zip archives (.zip)
+ * Jar archives (.jar, .ear, .war)
+ * 7z archives (.7z)
+ * iso9660 CD images (.iso)
+ * Lha archives (.lzh)
+ * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
+ compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
+ .
+ Engrampa doesn't perform archive operations by itself, but relies on
+ standard tools for this.
+
+Package: caja-share
+Description-md5: 240c2e7c47f684dbfdfdfde342ba808d
+Description-en: Allows one to quickly share a folder from the Caja file manager
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ The Caja share extension allows you to quickly share a folder from the
+ Caja file manager without requiring root access. It uses Samba, so your
+ folders can be accessed by any operating system.
+
+Package: libmateweather-common
+Description-md5: 9b1f8dc5a0ae5b5a23a35bcf93001f27
+Description-en: MateWeather shared library (common files)
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the architecture independent files.
+
+Package: libmateweather-dev
+Description-md5: 044d4a59ee16ee9c8ff70692d143b78d
+Description-en: MateWeather shared library (development files)
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the development files.
+
+Package: libmatekbd-dev
+Description-md5: e93ff714a09bcc1f566662d5ddbcdc7a
+Description-en: MATE library to manage keyboard configuration (development files)
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the development files.
+
+Package: mate-desktop-dbg
+Description-md5: 521f3625b3ad317a386b85fdee17b603
+Description-en: Library with common API for various MATE modules (debugging symbols)
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the debugging symbols for the mate-about executable.
+ They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
+
+Package: marco-common
+Description-md5: da780534a11dab2e3dfc2b3db4eace95
+Description-en: lightweight GTK+ window manager for MATE (common files)
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the architecture independent files.
+
+Package: marco
+Description-md5: 95519840e2380540cca6bbdf96f6395e
+Description-en: lightweight GTK+ window manager for MATE
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the marco window manager itself.
+
+Package: libmarco-dev
+Description-md5: 88b205f6c74893832a5b077c4bca9018
+Description-en: library for Marco window manager (development files)
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the development files.
+
+Package: gir1.2-mate-menu
+Description-md5: 88fcdc92ed139b72095ab11c3733a223
+Description-en: GObject introspection data for the MATE menu specification
+ This package contains introspection data for MATE menu specification, an
+ an implementation of the draft "Desktop Menu Specification" from
+ freedesktop.org
+ .
+ It can be used by packages using the GIRepository format to generate dynamic
+ bindings.
+
+Package: python-mate-menu
+Description-md5: 6c2d9496ae5cb323d52f60af83b4f6f1
+Description-en: implementation of the freedesktop menu specification for MATE (Python bindings)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org.
+ .
+ This package contains the Python bindings.
+
+Package: caja-common
+Description-md5: e845fd1d469dd58a087ffd0d047163d0
+Description-en: file manager for the MATE desktop (common files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains the architecture independent files.
+
+Package: caja-dbg
+Description-md5: 1ffcc32f11b8eca7bc29219125e3c8e9
+Description-en: file manager for the MATE desktop (debugging symbols)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains debugging symbols for Caja.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: gir1.2-caja
+Description-md5: d2d03b886d3ddf07dc0cfb9d52676537
+Description-en: GObject introspection data for Caja
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains introspection data for Caja.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: libmatepolkit-dev
+Description-md5: aa5052dcfdd9e729882cf84d0fac7d07
+Description-en: MATE authentication agent for PolicyKit-1 (development files)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the development files for mate-polkit.
+
+Package: mate-panel-common
+Description-md5: ac092d00f5038537486fea12cd254f89
+Description-en: launcher and docking facility for MATE (common files)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-panel-dbg
+Description-md5: fe56961838862512f09833f77a1ed808
+Description-en: launcher and docking facility for MATE (debugging symbols)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the debugging symbols of the MATE panel application.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: caja-sendto
+Description-md5: 2901b4d306ca9fdcceed1844d3bfe329
+Description-en: integrates email clients and Pidgin into the Caja file manager
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ The Caja Send To extension provides the Caja file manager with a context
+ menu component for quickly sending files to given email addresses, contacts
+ on a Pidgin or Gajim instant messaging list, through Thunderbird/Icedove,
+ or through Claws Mail.
+ .
+ Caja Send To also provides the option of compressing the files (tar.bz2,
+ tar.gz, or zip) before sending.
+
+Package: caja-image-converter
+Description-md5: 856c002fb178bbe956f8abd065daed28
+Description-en: Caja extension to mass resize or rotate images
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ This package adds a "Resize Images..." menu item to the context menu of
+ all images. This opens a dialog where you set the desired image size
+ and file name. A click on "Resize" finally resizes the image(s) using
+ ImageMagick's convert tool.
+
+Package: caja-gksu
+Description-md5: f129b2155b3edbce8c4f873888ebe767
+Description-en: privilege granting extension for Caja using gksu
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ The gksu extension for Caja allows you to open files with
+ administration privileges using the context menu when browsing
+ your files with Caja.
+
+Package: caja-open-terminal
+Description-md5: bcdb7a5709bf14f070db5f2d1cbf536b
+Description-en: Caja plugin for opening terminals in arbitrary local paths
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ caja-open-terminal is a proof-of-concept Caja extension
+ which allows you to open a terminal in arbitrary local folders.
+
+Package: atril-common
+Description-md5: b2ff604bc6e0b431f9db3e68f333c922
+Description-en: MATE document viewer (common files)
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the architecture independent files.
+
+Package: atril
+Description-md5: 4812dcf2412de5e958d1caec1a41bcc7
+Description-en: MATE document viewer
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ When supported by the document, it also allows searching for text,
+ copying text to the clipboard, hypertext navigation, and
+ table-of-contents bookmarks.
+
+Package: engrampa-dbg
+Description-md5: 117591e847f6a17d3651cf69387bf68a
+Description-en: archive manager for MATE (debugging symbols)
+ Engrampa is an archive manager for the MATE environment. It allows you to:
+ .
+ * Create and modify archives.
+ * View the content of an archive.
+ * View a file contained in an archive.
+ * Extract files from the archive.
+ .
+ This package contains debugging symbols for engrampa.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: eom
+Description-md5: 282112f29e9da804b2ac6fa1ab4bb767
+Description-en: Eye of MATE graphics viewer program
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library. It can deal with large
+ images, and zoom and scroll with constant memory usage. Its goals are
+ simplicity and standards compliance.
+
+Package: eom-dbg
+Description-md5: 26c946c18f6bba0c3d6a6423ced6ec63
+Description-en: Eye of MATE graphics viewer program (debugging symbols)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library. It can deal with large
+ images, and zoom and scroll with constant memory usage. Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains debugging symbols for eom. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: eom-dev
+Description-md5: cd39d555efe9cb812e957c07940d14ec
+Description-en: Eye of MATE graphics viewer program (development files)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library. It can deal with large
+ images, and zoom and scroll with constant memory usage. Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains the development files for building eom plugins.
+
+Package: mate-media
+Description-md5: 641725f9be913faed723c6131926ab87
+Description-en: MATE media utilities
+ MATE media utilities are the audio mixer and the volume
+ control applet.
+ .
+ This package utilizes the libmatemixer library which provides
+ support for ALSA and Pulseaudio as audio backends.
+
+Package: mate-indicator-applet
+Description-md5: 2c014e4894a825c41d36aaeaecaea876
+Description-en: MATE panel indicator applet
+ A small applet to display information from various applications
+ consistently in the panel.
+ .
+ The indicator applet exposes Ayatana Indicators in the MATE Panel.
+ Ayatana Indicators are an initiative by Canonical to provide crisp and
+ clean system and application status indication. They take the form of an
+ icon and associated menu, displayed (usually) in the desktop panel.
+ Existing indicators include the Message Menu, Battery Menu and Sound
+ menu.
+
+Package: mate-power-manager
+Description-md5: f246ba641ea3cccc901d1bef08b0b160
+Description-en: power management tool for the MATE desktop
+ MATE Power Manager is a session daemon for the MATE desktop
+ that takes care of system or desktop events related to power, and
+ triggers actions accordingly. Its philosophy is to completely hide
+ these complex tasks and only show some settings important to the user.
+ .
+ The MATE power manager displays and manages battery status, power plug
+ events, display brightness, CPU, graphics card and hard disk drive
+ power saving, and can trigger suspend-to-RAM, hibernate or shutdown
+ events, all integrated to other components of the MATE desktop.
+
+Package: mate-screensaver
+Description-md5: 1585ea516ea71cb13adecdf4a54e2096
+Description-en: MATE screen saver and locker
+ mate-screensaver is a screen saver and locker that aims to have simple,
+ sane and secure defaults, and be well integrated with the MATE desktop.
+ .
+ It is designed to support, among other things:
+ .
+ * the ability to lock down configuration settings
+ * translation into other languages
+ * user switching
+
+Package: mate-sensors-applet
+Description-md5: 881e979b28d0cbfe3f1a064913e3d723
+Description-en: Display readings from hardware sensors in your MATE panel
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ It can gather data from the following sources:
+ * ACPI thermal zones, via the Linux kernel ACPI modules
+ * Linux kernel i2c modules
+ * lm-sensors (libsensors)
+ * Linux kernel i8k module (for Dell Inspiron Laptops)
+ * Linux kernel ibm-acpi module
+ * Linux kernel PowerPC modules therm_adt746x and therm_windtunnel
+ * Linux kernel iMac G5 Windfarm module
+ * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
+ * Linux kernel Omnibook module
+ * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
+ * Linux kernel sonypi module (for Sony Vaio laptops)
+ .
+ Alarms can be set for each sensor to notify the user once a certain high or
+ low value has been reached, and can be configured to execute a given command
+ at given repeated intervals.
+
+Package: mate-system-monitor
+Description-md5: 56c6a33b9a0ec5aae56c46fd1a5d0424
+Description-en: Process viewer and system resource monitor for MATE
+ MATE system monitor allows you to graphically view and manipulate the running
+ processes on your system.  It also provides an overview of available
+ resources such as CPU and memory.
+
+Package: eom-common
+Description-md5: c848fbc723088e675f454caa830ef9a2
+Description-en: Eye of MATE graphics viewer program (common files)
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library. It can deal with large
+ images, and zoom and scroll with constant memory usage. Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-utils
+Description-md5: 87c330cf41f43b58a47adfeb031fa586
+Description-en: MATE desktop utilities
+ This package contains all the tools bundled as MATE utilities:
+ - mate-disk-usage-analyzer, a disk usage analyser
+ - mate-dictionary, a program which can look up the definition of words
+ over the internet (including a panel applet to do the same)
+ - mate-search-tool, with which one can find files by name or content
+ - mate-system-log, a log viewing application
+ - mate-screenshot, a tool to take desktop screenshots and save them into
+ a file
+
+Package: mate-core
+Description-md5: 9ff0776ded39cfed763cbf21cfce7add
+Description-en: MATE Desktop Environment (essential components, dummy package)
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package (mate-core) is a dummy package and can be safely removed.
+
+Package: mate-desktop-environment
+Description-md5: 8105273afc4042ae9495ec264fc266e6
+Description-en: MATE Desktop Environment (metapackage)
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package installs the standard set of applications that are
+ part of the official MATE release.
+ .
+ It also suggests a few non-MATE standard desktop applications like an
+ internet browser, a mail reader and a network management applet.
+
+Package: mate-applets
+Description-md5: a71709ffc885e266b20055370b98c0a2
+Description-en: Various applets for the MATE panel
+ accessx-status: indicates keyboard accessibility settings, including
+ the current state of the keyboard, if those features are in use.
+ .
+ Battstat: monitors the power subsystem on a laptop.
+ .
+ Character palette: provides a convenient way to access non-standard
+ characters, such as accented characters, mathematical symbols, special
+ symbols, and punctuation marks.
+ .
+ MATE CPUFreq Applet: CPU frequency scaling monitor
+ .
+ Drivemount: lets you mount and unmount drives and file systems.
+ .
+ Geyes: pair of eyes which follow the mouse pointer around the screen.
+ .
+ Keyboard layout switcher: lets you assign different keyboard
+ layouts for different locales.
+ .
+ Invest: downloads current stock quotes from the Internet and displays
+ the quotes in a scrolling display in the applet. The applet downloads the
+ stock information from Yahoo! Finance.
+ .
+ Netspeed: network traffic monitor applet.
+ .
+ System monitor: CPU, memory, network, swap file and resource.
+ .
+ Trash: lets you drag items to the trash folder.
+ .
+ Weather report: downloads weather information from the U.S National Weather
+ Service (NWS) servers, including the Interactive Weather Information
+ Network (IWIN).
+
+Package: mozo
+Description-md5: f50f9cb805c69b01e762208db0aff342
+Description-en: easy MATE menu editing tool
+ Mozo is an easy-to-use menu editor for MATE that can add
+ and edit new entries and menus. It works with the freedesktop.org
+ menu specification and should work with any desktop environment
+ that uses the spec.
+
+Package: caja-dropbox
+Description-md5: b2d151362484130a2799ce7beca35fc9
+Description-en: Dropbox integration for Caja
+ Caja Dropbox is an extension that integrates the Dropbox web service with
+ your MATE Desktop.
+ .
+ To use this package you need to install the proprietary dropbox package
+ from https://www.dropbox.com/install.
+
+Package: mate-terminal-common
+Description-md5: da51f52c9045a00f846b07a221f89952
+Description-en: MATE terminal emulator application (common files)
+ MATE Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+ - Access a UNIX shell in the MATE environment.
+ - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ MATE Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-applets-common
+Description-md5: 1ecb78132beb24404556f78bfc66d9f6
+Description-en: Various applets for the MATE panel (common files)
+ accessx-status: indicates keyboard accessibility settings, including
+ the current state of the keyboard, if those features are in use.
+ .
+ Battstat: monitors the power subsystem on a laptop.
+ .
+ Character palette: provides a convenient way to access non-standard
+ characters, such as accented characters, mathematical symbols, special
+ symbols, and punctuation marks.
+ .
+ MATE CPUFreq Applet: CPU frequency scaling monitor
+ .
+ Drivemount: lets you mount and unmount drives and file systems.
+ .
+ Geyes: pair of eyes which follow the mouse pointer around the screen.
+ .
+ Keyboard layout switcher: lets you assign different keyboard
+ layouts for different locales.
+ .
+ Invest: downloads current stock quotes from the Internet and displays
+ the quotes in a scrolling display in the applet. The applet downloads the
+ stock information from Yahoo! Finance.
+ .
+ Netspeed: network traffic monitor applet.
+ .
+ System monitor: CPU, memory, network, swap file and resource.
+ .
+ Trash: lets you drag items to the trash folder.
+ .
+ Weather report: downloads weather information from the U.S National Weather
+ Service (NWS) servers, including the Interactive Weather Information
+ Network (IWIN).
+ .
+ This package contains the architecture independent files.
+
+Package: mate-settings-daemon-common
+Description-md5: 999d32f2d546c750b2221999b0f25ae5
+Description-en: daemon handling the MATE session settings (common files)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+ * Keyboard: layout, accessibility options, shortcuts, media keys
+ * Clipboard management
+ * Theming: background, icons, GTK+ applications
+ * Cleanup of unused files
+ * Mouse: cursors, speed, accessibility options
+ * Startup of other daemons: screensaver, sound daemon
+ * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the architecture independent files.
+
+Package: indicator-jenkins
+Description-md5: efa019a7e983e8b0776e46edb4322026
+Description-en: A panel indicator to monitor jenkins jobs.
+ Monitor jenkins jobs on a remote server with this handy desktop panel
+ indicator.
+
+Package: libmatekbd4
+Description-md5: 9a1c8c8e2f16cc90311d6a8a0e172942
+Description-en: MATE library to manage keyboard configuration
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the shared libraries.
+
+Package: libmatekbd-common
+Description-md5: 53b275bca5c7b0f568c8d001b53babd1
+Description-en: MATE library to manage keyboard configuration (common files)
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the architecture-independent files.
+
+Package: libmateweather1
+Description-md5: 018883b44fead614d635fdbc4535af89
+Description-en: MateWeather shared library
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the shared library.
+
+Package: mate-polkit-common
+Description-md5: 33d1dff417aebdf2191249736a548769
+Description-en: MATE authentication agent for PolicyKit-1 (common files)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains common files for the MATE policy kit authentication
+ agent.
+
+Package: libpolkit-gtk-mate-1-0
+Description-md5: 3451893092a0f0d08cbdc10ba07d6c3b
+Description-en: MATE authentication agent for PolicyKit-1 (library)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the library for mate-polkit.
+
+Package: libpolkit-gtk-mate-1-0-dbg
+Description-md5: 40c6169c98b35021d50dc2de97576e13
+Description-en: MATE authentication agent for PolicyKit-1 (debugging symbols)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the debugging symbols for the libpolkit-gtk-mate-1-0
+ library. They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
+
+Package: libmate-desktop-2-17
+Description-md5: 07f5c07902f071f30ac5c42d0f5aaa8c
+Description-en: Library with common API for various MATE modules (library)
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ The package contains the actual mate-desktop library.
+
+Package: libmate-desktop-dev
+Description-md5: 437ddd22a9d457897497a28bd94e2dbd
+Description-en: Library with common API for various MATE modules (development files)
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the mate-desktop development files.
+
+Package: mate-desktop-common
+Description-md5: 3c4dd3089c4f97cce3d7794d690fd498
+Description-en: Library with common API for various MATE modules (common files)
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the architecture-independent files.
+
+Package: libmate-desktop-doc
+Description-md5: 85f62c1094850474d17679faeb2b838a
+Description-en: Library with common API for various MATE modules (documentation files)
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the documentation files.
+
+Package: mate-notification-daemon-dbg
+Description-md5: 1537d0c0c1bac5be6fb04b057f8f9aab
+Description-en: daemon to display passive popup notifications (debugging symbols)
+ mate-notification-daemon displays passive popup notifications, as per
+ the Desktop Notifications Specification.
+ .
+ The Desktop Notifications Specification provides a standard way of
+ doing passive popup notifications on the Linux desktop. These are
+ designed to notify the user of something without interrupting their
+ work with a dialog box that they must close.  Passive popups can
+ automatically disappear after a short period of time, as per the
+ Desktop Notifications spec.
+ .
+ This package contains debugging symbols for the mate-notification-daemon
+ package. It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmate-desktop-2-17-dbg
+Description-md5: 408169f7f93b383a3a0facfad364597d
+Description-en: Library with common API for various MATE modules (library debugging symbols)
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the debugging symbols for the mate-desktop library.
+ They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
+
+Package: libmateweather1-dbg
+Description-md5: e3f53c3ea1206ed9629c4d48226cec9a
+Description-en: MateWeather shared library (debugging symbols)
+ libmateweather is a library to access weather information from online
+ services for numerous locations.
+ .
+ This package contains the debugging symbols for the libmateweather library.
+ They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
+
+Package: libmate-menu2
+Description-md5: 2b1b57b7cf893bb2cfceb3ee05d6a9cb
+Description-en: implementation of the freedesktop menu specification for MATE (library)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the actual library files.
+
+Package: libmate-menu-dev
+Description-md5: 81eaaac40d40b7327dcc3a9e2fbf7b6e
+Description-en: implementation of the freedesktop menu specification for MATE (development files)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the development files.
+
+Package: libmate-menu2-dbg
+Description-md5: 33181ff6c0d210cdb775ef7098d43984
+Description-en: implementation of the freedesktop menu spec for MATE (debugging symbols)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org.
+ .
+ This package contains the debugging symbols for the library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: python-mate-menu-dbg
+Description-md5: 3a179b60a6fb4e5dba7342723c3776e6
+Description-en: implementation of the freedesktop menu spec for MATE (Python debugging symbols)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org.
+ .
+ This package contains the debugging symbols of the Python bindings.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-terminal-dbg
+Description-md5: 35d231a810018bf32035a311a9db5b3c
+Description-en: MATE terminal emulator application (debugging symbols)
+ MATE Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+ - Access a UNIX shell in the MATE environment.
+ - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ MATE Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+ .
+ This package contains debugging symbols for mate-terminal. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: pluma
+Description-md5: 5f46578b64613d4d063a6b4bf3c03014
+Description-en: official text editor of the MATE desktop environment
+ Pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. Pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ Pluma fully supports international text through its use of the
+ Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ Pluma is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+
+Package: pluma-dev
+Description-md5: 88e887c2e35717fc107417627e8eb75e
+Description-en: official text editor of the MATE desktop environment (development files)
+ Pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. Pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ Pluma fully supports international text through its use of the
+ Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ Pluma is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+ .
+ This package contains the development files for building Pluma plugins.
+
+Package: pluma-dbg
+Description-md5: 8bbfdad6fc393b4e5e8efde6c5fa312f
+Description-en: official text editor of the MATE desktop environment (debugging symbols)
+ Pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. Pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ Pluma fully supports international text through its use of the
+ Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ Pluma is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+ .
+ This package contains debugging symbols for Pluma. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmarco-private0
+Description-md5: 8d8d482e47ca934ede42f00ce29f81b7
+Description-en: library for Marco window manager
+ Marco is a small window manager, using GTK+ to do everything. It is
+ developed mainly for the MATE Desktop.
+ .
+ This package contains the library.
+
+Package: mate-session-manager-dbg
+Description-md5: 847e392e022f9216e861e8462f363d0d
+Description-en: Session manager of the MATE desktop environment (debug symbols)
+ This package contains debugging symbols for mate-session-manager.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed into /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: pluma-common
+Description-md5: 2522f81317853f0db52190c38dc3bb03
+Description-en: official text editor of the MATE desktop environment (common files)
+ Pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. Pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ Pluma fully supports international text through its use of the
+ Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ Pluma is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-system-monitor-common
+Description-md5: c19cddf128aaa2627a6f9d9fb0b9d28f
+Description-en: Process viewer and system resource monitor for MATE (common files)
+ MATE system monitor allows you to graphically view and manipulate the running
+ processes on your system.  It also provides an overview of available
+ resources such as CPU and memory.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-icon-theme-faenza
+Description-md5: 3a130d8a0da8a468e2a89284c64d9843
+Description-en: MATE Faenza Desktop icon theme
+ This package contains the Faenza icon theme provided with the MATE desktop.
+ .
+ The icons are used in the panel menu, and in caja and other applications,
+ to represent the different applications, files, directories, and devices.
+ .
+ This theme has been made by Rowen_Stipe based on Faenza and Faience icon themes
+ by ~Tiheum.
+
+Package: libcaja-extension1
+Description-md5: 0f35c3d74c9f8f2fc4264c69a262623e
+Description-en: libraries for Caja components
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains a few runtime libraries needed by Caja's
+ extensions.
+
+Package: libcaja-extension1-dbg
+Description-md5: 5ea75fd6a34e23c1552c269aade63b55
+Description-en: libraries for Caja components (debugging symbols)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains debugging symbols for Caja's extension
+ libraries.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-screensaver-dbg
+Description-md5: 404c8b141964f7c969b1b29e00e423c8
+Description-en: MATE screen saver and locker (debugging symbols)
+ mate-screensaver is a screen saver and locker that aims to have simple,
+ sane and secure defaults, and be well integrated with the MATE desktop.
+ .
+ This package contains debugging symbols for MATE screensaver.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmate-panel-applet-4-1
+Description-md5: d8e7c9a5144be0cfbcc57d4b0056cc0e
+Description-en: library for MATE Panel applets
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the MATE Panel applet library.
+
+Package: libmate-panel-applet-dbg
+Description-md5: 1471255c76c6d0bb134423572c01783f
+Description-en: library for MATE Panel applets (debugging symbols)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the debugging symbols of the MATE panel applet
+ library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmate-panel-applet-dev
+Description-md5: 2f7b31123d0b0efe74df7a663424f723
+Description-en: library for MATE Panel applets (development files)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the development files of the MATE panel applet
+ library.
+
+Package: mate-screensaver-common
+Description-md5: d44b2330b9b1c87e5203c9cdb17d5a0e
+Description-en: MATE screen saver and locker (common files)
+ mate-screensaver is a screen saver and locker that aims to have simple,
+ sane and secure defaults, and be well integrated with the MATE desktop.
+ .
+ This package contains the architecture independent files.
+
+Package: libmate-panel-applet-doc
+Description-md5: 909324b489f7b1861fa1761741a87599
+Description-en: library for MATE Panel applets (documentation files)
+ The MATE Panel is an essential part of the MATE Desktop, providing
+ toolbar-like “panels” which can be attached to the sides of your desktop.
+ They are used to launch applications and embed a number of other
+ functions, such as quick launch icons, the clock, the notification area,
+ volume controls and the battery charge indicator, and utilities ranging
+ from weather forecast to system monitoring.
+ .
+ This package contains the documentation files of the MATE panel applet
+ library.
+
+Package: mate-power-manager-dbg
+Description-md5: 49b8cda84d34da063fa3c85596143e32
+Description-en: power management tool for the MATE desktop (debugging symbols)
+ MATE Power Manager is a session daemon for the MATE desktop
+ that takes care of system or desktop events related to power, and
+ triggers actions accordingly. Its philosophy is to completely hide
+ these complex tasks and only show some settings important to the user.
+ .
+ The MATE power manager displays and manages battery status, power plug
+ events, display brightness, CPU, graphics card and hard disk drive
+ power saving, and can trigger suspend-to-RAM, hibernate or shutdown
+ events, all integrated to other components of the MATE desktop.
+ .
+ This package contains debugging symbols for mate-power-manager. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-power-manager-common
+Description-md5: 27f2d2c53b0b50720396f6b33b4a90ba
+Description-en: power management tool for the MATE desktop (common files)
+ MATE Power Manager is a session daemon for the MATE desktop
+ that takes care of system or desktop events related to power, and
+ triggers actions accordingly. Its philosophy is to completely hide
+ these complex tasks and only show some settings important to the user.
+ .
+ The MATE power manager displays and manages battery status, power plug
+ events, display brightness, CPU, graphics card and hard disk drive
+ power saving, and can trigger suspend-to-RAM, hibernate or shutdown
+ events, all integrated to other components of the MATE desktop.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-netbook
+Description-md5: 6ebcdf54ebba3bad09241f5e85ee5c91
+Description-en: MATE utilities for netbooks
+ MATE utilities for netbooks are an applet and a daemon to maximize
+ windows and move their titles on the panel.
+ .
+ Installing these utilities is recommended for netbooks and similar
+ devices with low resolution displays.
+
+Package: mate-netbook-dbg
+Description-md5: 54044dc1d30c0199e0059696764b19cc
+Description-en: MATE utilities for netbooks (debugging symbols)
+ MATE utilities for netbooks are an applet and a daemon to maximize
+ windows and move their titles on the panel.
+ .
+ Installing these utilities is recommended for netbooks and similar
+ devices with low resolution displays.
+ .
+ This package contains debugging symbols for mate-netbook.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-media-common
+Description-md5: 199afd5d28de60c689480fe1d82e08fa
+Description-en: MATE media utilities (common files)
+ MATE media utilities are the audio mixer and the volume
+ control applet.
+ .
+ This package contains the common files.
+
+Package: libmatekbd4-dbg
+Description-md5: 0cfb7aebba7820880b22e3c249d276f7
+Description-en: MATE library to manage keyboard configuration (debugging symbols)
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the debugging symbols for the libmatekbd and the
+ libmatekbdui libraries.
+ .
+ They are installed into /usr/lib/debug and will automatically be used
+ by gdb.
+
+Package: libmate-sensors-applet-plugin0
+Description-md5: 2e569b14a8bf071dbd0a3dd13e2f2271
+Description-en: Library for plugins for the mate-sensors-applet package
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the library that is used to create plugins for
+ the applet.
+
+Package: libmate-sensors-applet-plugin-dev
+Description-md5: ea8f8aca43b6b1c361f133e3c434e1e1
+Description-en: Library for plugins for the mate-sensors-applet package (development files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the files necessary to develop plugins for the
+ applet.
+
+Package: mate-sensors-applet-dbg
+Description-md5: 53c98b3c1c52e84c740513d3430a9aaf
+Description-en: Display readings from hardware sensors in your MATE panel (debugging symbols)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains debugging symbols for the mate-sensors-applet package.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmate-sensors-applet-plugin0-dbg
+Description-md5: 918d2dde6ea427d8debd9183f19f3c43
+Description-en: Library for plugins for the mate-sensors-applet package (debugging symbols)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains debugging symbols for the libmate-sensors-applet-plugin0
+ package. It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: python-caja
+Description-md5: 7ffd524f7a120091af03cfbe32b3b2d5
+Description-en: Python binding for Caja components
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ The Python binding for Caja allows one to write Caja property page
+ and menu item extensions in Python.
+
+Package: python-caja-dbg
+Description-md5: a517a4fc186c63aee251317285fc1345
+Description-en: Python binding for Caja components (debugging symbols)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ The Python binding for Caja allows one to write Caja property page
+ and menu item extensions in Python.
+ .
+ This package contains debugging symbols for python-caja. It is
+ provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-utils-dbg
+Description-md5: d4e728082726317b6526b8a51e1cc831
+Description-en: MATE desktop utilities (debugging symbols)
+ This package contains all the tools bundled as MATE utilities:
+ - mate-disk-usage-analyzer, a disk usage analyser
+ - mate-dictionary, a program which can look up the definition of words
+ over the internet (including a panel applet to do the same)
+ - mate-search-tool, with which one can find files by name or content
+ - mate-system-log, a log viewing application
+ - mate-screenshot, a tool to take desktop screenshots and save them into
+ a file
+ .
+ This package contains debugging symbols for the MATE desktop utilities.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libmatedict6
+Description-md5: 107bac6b6101143a6cb2a6af72ca58de
+Description-en: MATE desktop utilities (matedict library)
+ The MATE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). MATE
+ dictionary is included in the MATE utilities bundle.
+ .
+ This package provides the MATE dictionary library.
+
+Package: libmatedict-dev
+Description-md5: d0a7cf7c0ec62bbfcea17ece86101254
+Description-en: MATE desktop utilities (matedict development files)
+ The MATE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). MATE
+ dictionary is included in the MATE utilities bundle.
+ .
+ This package provides the development files of the MATE dictionary library.
+
+Package: libmatedict6-dbg
+Description-md5: f00d331a0dd1ac9f63c23ef1e8a0c87d
+Description-en: MATE desktop utilities (matedict debugging symbols)
+ The MATE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). MATE
+ dictionary is included in the MATE utilities bundle.
+ .
+ This package contains debugging symbols for the MATE dictionary library.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: caja-extensions-dbg
+Description-md5: f5cd5d291c22dee947886733865c1422
+Description-en: Caja extensions (debugging symbols)
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ This package contains bundled debugging symbols for the various
+ available Caja extensions.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-utils-common
+Description-md5: d1b0c86d2e4a9cbc37e14f591d7e6656
+Description-en: MATE desktop utilities (common files)
+ This package contains all the tools bundled as MATE utilities:
+ - mate-disk-usage-analyzer, a disk usage analyser
+ - mate-dictionary, a program which can look up the definition of words
+ over the internet (including a panel applet to do the same)
+ - mate-search-tool, with which one can find files by name or content
+ - mate-system-log, a log viewing application
+ - mate-screenshot, a tool to take desktop screenshots and save them into
+ a file
+ .
+ This package contains the architecture independent files.
+
+Package: caja-extensions-common
+Description-md5: 0bcf84cc2108acbef07608f05dce7bb2
+Description-en: Caja extensions (common files)
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ This package contains the architecture independent files for
+ various available Caja extensions.
+
+Package: libmate-window-settings1
+Description-md5: b76e69d3206e1aeb9f05e0fe64168d0d
+Description-en: utilities to configure the MATE desktop (window settings library)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the MATE window settings library for MATE control
+ center.
+
+Package: libmate-window-settings-dev
+Description-md5: eddb40b3dbdfa0869e80153aa7d831ac
+Description-en: utilities to configure the MATE desktop (window settings headers)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the development files for the MATE window settings
+ library.
+
+Package: libmate-window-settings1-dbg
+Description-md5: 6b44c6bfcfe2ba58eff0ad03754e5436
+Description-en: utilities to configure the MATE desktop (window settings debugging symbols)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the debugging symbols for the MATE window settings
+ library.
+ .
+ They are installed into /usr/lib/debug and will automatically used by gdb.
+
+Package: libmate-slab0
+Description-md5: d98ed82f3ecc5c8609db9a37f0fe8e42
+Description-en: beautification app library
+ This library provides functionality to create applications like MATE
+ control center and the application-browser from gnome-main-menu.
+ .
+ This library has been forked from GNOMEv2 by the MATE project.
+
+Package: libmate-slab-dev
+Description-md5: d358da4f96d73c78081628a30423783c
+Description-en: beautification app library (development headers)
+ The libmate-slab library provides functionality to create applications
+ like MATE control center and the application-browser from gnome-main-menu.
+ .
+ This package contains the development files for libmate-slab.
+
+Package: libmate-slab0-dbg
+Description-md5: 5972433ffb1ec931b4c0f3e1fb702f6b
+Description-en: beautification app library (window settings debugging symbols)
+ The libmate-slab library provides functionality to create applications
+ like MATE control center and the application-browser from gnome-main-menu.
+ .
+ This package contains the debugging symbols for the libmate-slab
+ library.
+ .
+ They are installed into /usr/lib/debug and will automatically used by gdb.
+
+Package: mate-control-center-dbg
+Description-md5: ac25e9ce0c136ef7e047b96ab8de60b1
+Description-en: utilities to configure the MATE desktop (debugging symbols)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains debugging symbols for mate-control-center.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-control-center-common
+Description-md5: 28b61991ad992c4d5625e4d60201c687
+Description-en: utilities to configure the MATE desktop (common files)
+ The MATE control center contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ This package contains the architecture independent files of MATE
+ control center.
+
+Package: mate-user-share
+Description-md5: c5aa1eee0c016a1c021ed90e41daf05b
+Description-en: User level public file sharing via WebDAV or ObexFTP
+ MATE user share is a small tool that binds together various free
+ software projects to bring easy to use user-level file sharing to the
+ masses.
+ .
+ The program is meant to run in the background when the user is logged
+ in, and when file sharing is enabled a webdav server is started that
+ shares the $HOME/Public folder. The share is then published to all
+ computers on the local network using mDNS/rendezvous, so that it shows
+ up in the Network location in GNOME.
+ .
+ The dav server used is Apache, so you need that installed. Avahi or
+ Howl is used for mDNS support, so you need to have that installed and
+ mDNSResolver running.
+
+Package: mate-user-share-dbg
+Description-md5: c937170bfd77b82afc3f320099c401e3
+Description-en: User level public file sharing via WebDAV or ObexFTP (debugging symbols)
+ MATE user share is a small tool that binds together various free
+ software projects to bring easy to use user-level file sharing to the
+ masses.
+ .
+ The program is meant to run in the background when the user is logged
+ in, and when file sharing is enabled a webdav server is started that
+ shares the $HOME/Public folder. The share is then published to all
+ computers on the local network using mDNS/rendezvous, so that it shows
+ up in the Network location in GNOME.
+ .
+ The dav server used is Apache, so you need that installed. Avahi or
+ Howl is used for mDNS support, so you need to have that installed and
+ mDNSResolver running.
+ .
+ This package contains debugging symbols for the MATE user share tool.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: libatrilview3
+Description-md5: 30ab5cdcedfef7f1046b2b8691d04c11
+Description-en: MATE document viewing library
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the document viewing library used by Atril.
+
+Package: libatrilview-dev
+Description-md5: 29fd1459b74761409b27dcfc1b4bc8d4
+Description-en: MATE document viewing library (development files)
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the development files for the libatrilview
+ library.
+
+Package: libatrildocument3
+Description-md5: 0eceffa746045c1381747094b687eb72
+Description-en: MATE document rendering library
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the document rendering library used by Atril.
+
+Package: libatrildocument-dev
+Description-md5: 185f6dd2befdacd375c19d7be732f189
+Description-en: MATE document rendering library (development files)
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains the development files for the libatrildocument
+ library.
+
+Package: mate-desktop-environment-core
+Description-md5: ebb6705e80f1c013244ed398a63c82a2
+Description-en: MATE Desktop Environment (essential components, metapackage)
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package depends on a very basic set of programs that are necessary to
+ start a MATE desktop environment session. The set of programs includes the
+ MATE window manager (Marco), the MATE file manager (Caja), the MATE
+ control center and a limited set of other obligatory MATE desktop components.
+
+Package: mate-desktop-environment-extras
+Description-md5: 4b5c85e307f109f83c4c7baad3417a66
+Description-en: MATE Desktop Environment (extra components, metapackage)
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package installs an extra set of MATE components that are
+ also part of the official MATE release.
+
+Package: mate-desktop-environment-extra
+Description-md5: 1cd719415caf9d70e70b55f52a9576f5
+Description-en: MATE Desktop Environment (extra components, dummy package)
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ MATE is under active development to add support for new technologies while
+ preserving a traditional desktop experience.
+ .
+ This package (mate-desktop-environment-extra) is a dummy package and can be
+ safely removed.
+
+Package: ubuntu-mate-core
+Description-md5: 63d8abc1b44487b6f8d53640de90a10d
+Description-en: Ubuntu MATE - core system
+ This package is the minimal MATE desktop as a Ubuntu environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
+Package: ubuntu-mate-desktop
+Description-md5: 5591bb8caf8894d36b5f7458d5c8d1d1
+Description-en: Ubuntu MATE - full desktop
+ This package is the Ubuntu MATE desktop environment.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
+Package: ubuntu-mate-cloudtop
+Description-md5: 8b52b6ede17990fae475077bb557afb7
+Description-en: Ubuntu MATE - reduced desktop for terminal server deployment
+ This package is the Ubuntu MATE desktop environment for cloudtop deployments.
+ .
+ It is safe to remove this package if some of these packages are not desired.
+
+Package: mate-user-guide
+Description-md5: 5e0fe58543872734166dd0ca69e57975
+Description-en: User documentation for MATE Desktop Environment
+ The MATE Desktop Environment is the continuation of GNOME 2. It provides an
+ intuitive and attractive desktop environment using traditional metaphors for
+ Linux and other Unix-like operating systems.
+ .
+ This package contains the user guide for MATE Desktop Environment and
+ its main applications.
+
+Package: caja-actions
+Description-md5: 5fdfe58b5244c4cba042a70fd14026cf
+Description-en: Caja extension to create custom actions
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+
+Package: caja-actions-common
+Description-md5: 758b048f9789c041842d8d69495ea295
+Description-en: Caja extension to create custom actions (common files)
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+ .
+ This package contains the architecture independent files.
+
+Package: caja-actions-dev
+Description-md5: 1b7c15eef8b796b7bf4fc7a8d9a17693
+Description-en: Caja extension to create custom actions (development files)
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+ .
+ This package contains the development files for the libraries needed
+ by Caja's extensions.
+
+Package: caja-actions-dbg
+Description-md5: d111b0a2151800326e351b54a6a67c17
+Description-en: Caja extension to create custom actions (debugging symbols)
+ Caja-actions is an extension for Caja file manager which allows the user to
+ add arbitrary program to be launched through the Caja file manager popup
+ menu of selected files.
+ .
+ This package contains debugging symbols for Caja Actions
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-dock-applet
+Description-md5: ea260efaaf656d61dc9a8947257de8ec
+Description-en: MATE Panel dock applet
+ An application dock applet for the MATE panel. The applet allows you to:
+ .
+ - place a dock on any MATE panel, of any size, on any side of
+ the desktop you desire.
+ - pin and unpin apps to the dock
+ - rearrange application icons on the dock
+ - launch apps by clicking on their icons in the dock
+ - minimize/unminimize running app windows by clicking the
+ app's dock icon
+ - detect changes in the current icon theme and update the dock
+ accordingly
+ - use an indicator by each app to show when it is running
+ - optionally, use multiple indicators for each window an app
+ has open
+ - use either a light or dark indicator that it can always be
+ seen no matter what colour the panel is, or turn indicators
+ off altogether
+ - change the colour of MATE panels to the dominant colour (i.e.
+ the most common colour) of the desktop wallpaper. The colour
+ can be applied to all panels or just the panel containing the
+ dock.
+
+Package: gir1.2-mate-desktop
+Description-md5: 8d3910921523c5647e1d72c43c680351
+Description-en: GObject introspection data for the mate-desktop library
+ The MATE component mate-desktop contains the libmate-desktop library, the
+ mate-about program, as well as some desktop-wide documents.
+ .
+ The libmate-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains introspection data for the library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: libmatemixer0
+Description-md5: c57ac9885ede64f133c8d56c665bf7f8
+Description-en: Mixer library for MATE Desktop
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the shared libraries.
+
+Package: libmatemixer-common
+Description-md5: 6e955858d8f287ee6e129c78756630e0
+Description-en: Mixer library for MATE Desktop (common files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the architecture-independent files.
+
+Package: libmatemixer-doc
+Description-md5: 8531d121ec18147407f6c941c4ffbc42
+Description-en: Mixer library for MATE Desktop (documentation files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the documentation files.
+
+Package: libmatemixer-dev
+Description-md5: 7526072c404dcc017d8a08fd6825ab48
+Description-en: Mixer library for MATE Desktop (development files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the development files.
+
+Package: libmatemixer0-dbg
+Description-md5: 217a0e1140e0396721c8d8a93d6278ec
+Description-en: Mixer library for MATE Desktop (debug files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains debugging symbols for the library.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: gir1.2-mate-polkit
+Description-md5: 64724c59e3bd00cdb5e65b8193e52d66
+Description-en: GObject introspection data for mate-polkit
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains introspection data for mate-polkit.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: mate-settings-daemon-dbg
+Description-md5: f767302e94fece1afda2b6bbc4197d21
+Description-en: daemon handling the MATE session settings (debugging symbols)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+ * Keyboard: layout, accessibility options, shortcuts, media keys
+ * Clipboard management
+ * Theming: background, icons, GTK+ applications
+ * Cleanup of unused files
+ * Mouse: cursors, speed, accessibility options
+ * Startup of other daemons: screensaver, sound daemon
+ * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains debugging symbols for the mate-settings-daemon
+ package.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-settings-daemon-dev
+Description-md5: 2dd451e6e5f1b7f872c0cdffe23d1da7
+Description-en: daemon handling the MATE session settings (development files)
+ This package contains the daemon which is responsible for setting the
+ various parameters of a MATE session and the applications that run
+ under it. It handles the following kinds of settings:
+ .
+ * Keyboard: layout, accessibility options, shortcuts, media keys
+ * Clipboard management
+ * Theming: background, icons, GTK+ applications
+ * Cleanup of unused files
+ * Mouse: cursors, speed, accessibility options
+ * Startup of other daemons: screensaver, sound daemon
+ * Typing break
+ .
+ It also sets various application settings through X resources and
+ freedesktop.org XSETTINGS.
+ .
+ This package contains the development files for building
+ mate-settings-daemon plugins.
+
+Package: mate-notification-daemon-common
+Description-md5: 2a8dd81dd552468e296c7f5e9a92ed2f
+Description-en: daemon to display passive popup notifications (common files)
+ mate-notification-daemon displays passive popup notifications, as per
+ the Desktop Notifications Specification.
+ .
+ The Desktop Notifications Specification provides a standard way of
+ doing passive popup notifications on the Linux desktop. These are
+ designed to notify the user of something without interrupting their
+ work with a dialog box that they must close.  Passive popups can
+ automatically disappear after a short period of time, as per the
+ Desktop Notifications spec.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-media-dbg
+Description-md5: 6c9957c2ca6b6241a47a1c930a0661b5
+Description-en: MATE media utilities (debugging symbols)
+ MATE media utilities are the audio mixer and the volume
+ control applet.
+ .
+ This package contains debugging symbols for MATE media
+ utilities.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: mate-netbook-common
+Description-md5: 6f1bca578b639d0389f31b16c247b70c
+Description-en: MATE utilities for netbooks (common files)
+ MATE utilities for netbooks are an applet and a daemon to maximize
+ windows and move their titles on the panel.
+ .
+ Installing these utilities is recommended for netbooks and similar
+ devices with low resolution displays.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-sensors-applet-nvidia
+Description-md5: badf03a7973b489aeeafb9ed15f74ec0
+Description-en: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains plugin for NVIDIA graphics cards.
+
+Package: mate-sensors-applet-common
+Description-md5: e4c76cc2aa83bdb03da567c8b9533dda
+Description-en: Display readings from hardware sensors in your MATE panel (common files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-user-share-common
+Description-md5: 7aff29b39d7878f90b0a884370af3c06
+Description-en: User level public file sharing via WebDAV or ObexFTP (common files)
+ MATE user share is a small tool that binds together various free
+ software projects to bring easy to use user-level file sharing to the
+ masses.
+ .
+ The program is meant to run in the background when the user is logged
+ in, and when file sharing is enabled a webdav server is started that
+ shares the $HOME/Public folder. The share is then published to all
+ computers on the local network using mDNS/rendezvous, so that it shows
+ up in the Network location in GNOME.
+ .
+ The dav server used is Apache, so you need that installed. Avahi or
+ Howl is used for mDNS support, so you need to have that installed and
+ mDNSResolver running.
+ .
+ This package contains the architecture independent files.
+
+Package: python-caja-common
+Description-md5: 186f661a5677212ba94f2c26184e65b2
+Description-en: Python binding for Caja components (common files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ The Python binding for Caja allows one to write Caja property page
+ and menu item extensions in Python.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-indicator-applet-common
+Description-md5: 954fc958fafab75b0fdf79c4b81e2379
+Description-en: MATE panel indicator applet (common files)
+ A small applet to display information from various applications
+ consistently in the panel.
+ .
+ The indicator applet exposes Ayatana Indicators in the MATE Panel.
+ Ayatana Indicators are an initiative by Canonical to provide crisp and
+ clean system and application status indication. They take the form of an
+ icon and associated menu, displayed (usually) in the desktop panel.
+ Existing indicators include the Message Menu, Battery Menu and Sound
+ menu.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-indicator-applet-dbg
+Description-md5: cd5376016c93df2d56b7e589c917c00b
+Description-en: MATE panel indicator applet (debugging symbols)
+ A small applet to display information from various applications
+ consistently in the panel.
+ .
+ The indicator applet exposes Ayatana Indicators in the MATE Panel.
+ Ayatana Indicators are an initiative by Canonical to provide crisp and
+ clean system and application status indication. They take the form of an
+ icon and associated menu, displayed (usually) in the desktop panel.
+ Existing indicators include the Message Menu, Battery Menu and Sound
+ menu.
+ .
+ This package contains debugging symbols for the mate-indicator-applet package.
+ It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: caja-wallpaper
+Description-md5: 30e6cd3abf4cc06cfd6795d943e67838
+Description-en: Allows one to quickly set a wallpaper from folders
+ Caja is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Caja file manager.
+ .
+ Caja Wallpaper allows you to quickly set a wallpaper directly from
+ file browser folders.
+
+Package: gir1.2-eom
+Description-md5: d175524c4976112db93b9a73ea99d412
+Description-en: GObject introspection data for the eom library
+ eom or the Eye of MATE is a simple graphics viewer for the MATE
+ desktop which uses the gdk-pixbuf library.  It can deal with large
+ images, and zoom and scroll with constant memory usage.  Its goals are
+ simplicity and standards compliance.
+ .
+ This package contains introspection data for eom.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: pluma-doc
+Description-md5: 82265c5ad0f12b304bc427b86cb456d4
+Description-en: official text editor of the MATE desktop environment (documentation files)
+ Pluma is a text editor which supports most standard editor features,
+ extending this basic functionality with other features not usually
+ found in simple text editors. Pluma is a graphical application which
+ supports editing multiple text files in one window (known sometimes as
+ tabs or MDI).
+ .
+ Pluma fully supports international text through its use of the
+ Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
+ highlighting of source code, auto indentation and printing and print preview
+ support.
+ .
+ Pluma is also extensible through its plugin system, which currently
+ includes support for spell checking, comparing files, viewing CVS
+ ChangeLogs, and adjusting indentation levels.
+ .
+ This package contains the documentation files.
+
+Package: gir1.2-atril
+Description-md5: 72abf83a3c388d976418ac7c993a274d
+Description-en: GObject introspection data for Atril
+ Atril is a simple multi-page document viewer.  It can display
+ and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
+ Portable Document Format (PDF) files.
+ .
+ This package contains introspection data for Atril.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: mate-sensors-applet-nvidia-dbg
+Description-md5: 776521ca780d5b60080332feb248e818
+Description-en: Display readings from hardware sensors in your MATE panel (NVIDIA, dbg package)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains debugging symbols for the mate-sensors-applet-nvidia
+ package. It is provided to help debugging problems.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.
+
+Package: gir1.2-matekbd
+Description-md5: b5b57ebd921fc4f773f284f0f84c8abe
+Description-en: GObject introspection data for libmatekbd and libmatekbdui
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains introspection data for the libmatekbd and the
+ libmatekbdui libraries.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: debian-mate-default-settings
+Description-md5: 152eb0142abbab57029c38b58f82291b
+Description-en: Default settings for MATE on Debian
+ This package comes together with mate-session-manager as provided by upstream
+ but does a little tweaking here and there to provide best experience of the
+ MATE desktop environment on Debian systems.
+
+Package: libmatepolkit-doc
+Description-md5: 05b6abdc27fac712db9e2074902d04b7
+Description-en: MATE authentication agent for PolicyKit-1 (shared library API documentation)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains the API documentation files of the mate-polkit shared
+ library.
+
+Package: libcaja-extension-doc
+Description-md5: e79a836ca4e5c4babe0c1af6e4ea3576
+Description-en: libraries for Caja components (API documentation files)
+ Caja is the official file manager for the MATE desktop. It allows one
+ to browse directories, preview files and launch applications associated
+ with them. It is also responsible for handling the icons on the MATE
+ desktop. It works on local and remote filesystems.
+ .
+ This package contains the API documentation for the libraries needed
+ by Caja's extensions.
+
+Package: mate-polkit-bin
+Description-md5: 109c99acd6df905f416405ddf44fe518
+Description-en: MATE authentication agent for PolicyKit-1 (executable wrapper script)
+ The mate-polkit package provides a D-Bus session bus service that is used to
+ bring up authentication dialogs used for obtaining privileges.
+ .
+ This package contains an executable wrapper script for the MATE policy kit
+ authentication agent.
+ .
+ This package eases using mate-polkit as PolicyKit-1 authentication agent on
+ non-MATE desktop environments that don't auto-launch their own authentication
+ agent (e.g., i3, awesome, ratpoison and alike).
+

@@ -1,0 +1,118 @@
+Format: http://dep.debian.net/deps/dep5/
+Upstream-Name: at-spi2-core
+Source: http://download.gnome.org/sources/at-spi2-core/
+
+Files: registryd/de-marshaller.c
+Copyright: Copyright 2008 Novell, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: registryd/registry.c
+Copyright: Copyright 2008, 2010 Codethink Ltd.
+           Copyright 2001, 2002 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: registryd/deviceeventcontroller.c registryd/deviceeventcontroller-x11.c
+Copyright: Copyright 2001, 2003 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Lesser General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: registryd/reentrant-list.c registryd/registry-main.c
+Copyright: Copyright 2001, 2002 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Lesser General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: registryd/display.c registryd/event-source.c
+Copyright: Copyright 2009 Nokia.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Lesser General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: registryd/ucs2keysym.c
+Copyright: Copyright Markus G. Kuhn, http://www.cl.cam.ac.uk/~mgk25/ University of Cambridge, April 2001
+License: Public domain
+
+Files: atspi/atspi-accessible.c atspi/atspi-action.c atspi/atspi-application.c
+ atspi/atspi-component.c atspi/atspi-document.c atspi/atspi-editabletext.c
+ atspi/atspi.h atspi/atspi-hyperlink.c atspi/atspi-hypertext.c
+ atspi/atspi-image.c atspi/atspi-matchrule.c atspi/atspi-misc.c
+ atspi/atspi-object.c atspi/atspi-registry.c atspi/atspi-relation.c
+ atspi/atspi-selection.c atspi/atspi-table.c atspi/atspi-text.c
+ atspi/atspi-value.c
+Copyright: Copyright 2001, 2002 Ximian, Inc
+           Copyright 2001, 2002 Sun Microsystems Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atspi/atspi-accessible.h atspi/atspi-action.h atspi/atspi-application.h
+ atspi/atspi-collection.h atspi/atspi-component.h atspi/atspi-device-listener.h
+ atspi/atspi-device-listener-private.h atspi/atspi-document.h
+ atspi/atspi-editabletext.h atspi/atspi-event-listener.h
+ atspi/atspi-event-listener-private.h atspi/atspi-device-listener.c
+ atspi/atspi-event-listener.c atspi/atspi-hyperlink.h atspi/atspi-hypertext.h
+ atspi/atspi-image.h atspi/atspi-matchrule.h atspi/atspi-matchrule-private.h
+ atspi/atspi-misc.h atspi/atspi-misc-private.h atspi/atspi-object.h
+ atspi/atspi-private.h atspi/atspi-registry.h atspi/atspi-relation.h
+ atspi/atspi-selection.h atspi/atspi-table.h atspi/atspi-text.h
+ atspi/atspi-types.h atspi/atspi-value.h
+Copyright: Copyright 2002 Ximian Inc
+           Copyright 2002 Sun Microsystems, Inc
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atspi/atspi-constants.h
+Copyright: Copyright 2010, 2011 Novell, Inc.
+           Copyright (c) 2012 SUSE LINUX Products GmbH, Nuernberg, Germany.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atspi/atspi-collection.c
+Copyright: Copyright: 2007 IBM Corp
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atspi/atspi-stateset.*
+Copyright: 2001, 2002 Sun Microsystems Inc.
+           2001, 2002 Ximian, Inc.
+           2010, 2011 Novell, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atspi/atspi-gmain.c atspi/atspi-gmain.h
+Copyright: Copyright 2002, 2003 CodeFactory AB
+           Copyright 2005 Red Hat, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: dbind/*.[ch]
+Copyright: 2008-2011 Novell, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: bus/at-spi-bus-launcher.c
+Copyright: Copyright 2011 Red Hat, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: debian/*
+Copyright: Copyright 2009, Mario Lang <mlang@debian.org>
+License: GPL-2
+ On Debian systems the full text of the GNU General Public License can be found
+ in the `/usr/share/common-licenses/GPL-2' file.
+

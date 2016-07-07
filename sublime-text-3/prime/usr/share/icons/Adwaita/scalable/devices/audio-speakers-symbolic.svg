@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer10" transform="translate(-161 -467)">
+  <path id="path5491-6" style="color:#bebebe;fill:#bebebe" d="m162 472h2.4844l2.9688-3 0.54687 0.0156v12l-0.4753 0.00083-3.0403-3.0164h-2.4844z"/>
+  <path id="path8311" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m172.88 468a1.0001 1.0001 0 0 0 -0.59375 0.28125l-2 2a1.0165 1.0165 0 1 0 1.4375 1.4375l2-2a1.0001 1.0001 0 0 0 -0.85 -1.72z"/>
+  <path id="path9081" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m170.78 478a1.0001 1.0001 0 0 0 -0.5 1.7188l2 2a1.0165 1.0165 0 1 0 1.4375 -1.4375l-2-2a1.0001 1.0001 0 0 0 -0.94 -0.28z"/>
+  <path id="path9083" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m170.91 474a1.0011 1.0011 0 1 0 0.09 2l4.0312 0.0312a1.0001 1.0001 0 1 0 0 -2l-4.03-0.03a1.0001 1.0001 0 0 0 -0.0937 0z"/>
+  <rect id="rect9102" style="color:#000000;fill:#bebebe" height="1" width="1" y="471" x="170"/>
+  <rect id="rect9104" style="color:#000000;fill:#bebebe" height="1" width="1" y="478" x="170"/>
+ </g>
+</svg>

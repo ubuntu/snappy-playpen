@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16.001" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer9" transform="translate(-181 -217)">
+  <path id="path10747" style="color:#bebebe;text-decoration-color:currentColor;text-indent:0;block-progression:tb;text-decoration-line:none;text-transform:none;fill:#bebebe" d="m189.78 222.01c-0.17789 0.0489-0.3419 0.14729-0.46875 0.28125l-3.0312 3c-0.2353 0.23074-0.34458 0.58284-0.28125 0.90625v0.8125h0.8125 0.1875 1.4707l-1.1875 1.2736c-0.21461 0.21931-0.32135 0.53954-0.28125 0.84375-0.001 0.0312-0.001 0.0625 0 0.0937v0.78125h0.84375 0.15625c0.26386 0.004 0.52791-0.099 0.71875-0.28125l3-2.9923c0.18369-0.18976 0.28735-0.45466 0.28125-0.7187 0.003-0.0416 0.003-0.0834 0-0.125v-0.875h-0.84375-0.15625-1.5644l1.3125-1.2812c0.21461-0.2193 0.32135-0.53953 0.28125-0.84375 0.001-0.0312 0.001-0.0625 0-0.0937v-0.7813h-0.84375-0.0937c-0.0208-0.00064-0.0417-0.00064-0.0625 0-0.0829-0.0103-0.16709-0.0103-0.25 0z"/>
+  <path id="path3434-5" style="color-rendering:auto;text-decoration-color:currentColor;color:#bebebe;shape-rendering:auto;text-decoration-line:none;fill:#bebebe;block-progression:tb;opacity:.5;text-indent:0;image-rendering:auto;isolation:auto;text-transform:none" d="m186.47 217.01c-0.49202 0-0.7981 0.21605-1.0332 0.45703s-0.43555 0.55689-0.43555 1.0293v0.50781h-2v14l12.002 0.002v-1.002-12.998h-2v-0.39843l-0.002-0.0274c-0.0239-0.43046-0.18017-0.734-0.41602-1.0137-0.23584-0.27967-0.62045-0.58711-1.2012-0.55469l0.0566-0.002h-4.9707zm0.5332 2.002 3.998 0.002v1.9941h1.998v9.9941h-7.9961v-9.9961h2v-1.9941z"/>
+ </g>
+</svg>

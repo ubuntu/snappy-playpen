@@ -1,0 +1,22 @@
+# This file is sourced by Xsession(5), not executed.
+# Add additionnal xdg paths depending on selected desktop session
+
+DEFAULT_XDG_CONFIG_DIRS='/etc/xdg'
+DEFAULT_XDG_DATA_DIRS='/usr/local/share/:/usr/share/'
+if [ -n "$DESKTOP_SESSION" ]; then
+  # readd default if was empty
+  if [ -z "$XDG_CONFIG_DIRS" ]; then
+    XDG_CONFIG_DIRS="$DEFAULT_XDG_CONFIG_DIRS"
+  fi
+  XDG_CONFIG_DIRS="$DEFAULT_XDG_CONFIG_DIRS"/xdg-"$DESKTOP_SESSION":"$XDG_CONFIG_DIRS"
+  export XDG_CONFIG_DIRS
+  # gnome is already added if gnome-session installed
+  if [ "$DESKTOP_SESSION" != "gnome" ]; then
+     if [ -z "$XDG_DATA_DIRS" ]; then
+       XDG_DATA_DIRS="$DEFAULT_XDG_DATA_DIRS"
+     fi
+     XDG_DATA_DIRS=/usr/share/"$DESKTOP_SESSION":"$XDG_DATA_DIRS"
+     export XDG_DATA_DIRS
+  fi
+fi
+

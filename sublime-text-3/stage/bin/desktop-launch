@@ -1,0 +1,142 @@
+#!/bin/bash
+###############################################
+# Launcher common exports for any desktop app #
+###############################################
+
+needs_update=true
+
+. ~/.last_revision 2>/dev/null || true
+if [ "$SNAP_DESKTOP_LAST_REVISION" = "$SNAP_REVISION" ]; then
+  needs_update=false
+fi
+[ $needs_update = true ] && echo "SNAP_DESKTOP_LAST_REVISION=$SNAP_REVISION" > ~/.last_revision
+
+if [ "$SNAP_ARCH" == "amd64" ]; then
+  ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" == "armhf" ]; then
+  ARCH="arm-linux-gnueabihf"
+else
+  ARCH="$SNAP_ARCH-linux-gnu"
+fi
+
+# XKB config
+export XKB_CONFIG_ROOT=$SNAP/usr/share/X11/xkb
+
+# Mesa Libs
+##export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/mesa:$LD_LIBRARY_PATH
+##export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/mesa-egl:$LD_LIBRARY_PATH
+
+# Tell libGL where to find the drivers
+export LIBGL_DRIVERS_PATH=$SNAP/usr/lib/$ARCH/dri
+export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/dri:$LD_LIBRARY_PATH
+
+# Pulseaudio export
+##export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/pulseaudio:$LD_LIBRARY_PATH
+
+# XDG Config
+export XDG_CONFIG_DIRS=$SNAP/etc/xdg:$SNAP/usr/xdg:$XDG_CONFIG_DIRS
+
+# Define snaps' own data dir
+export XDG_DATA_DIRS=$SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
+
+# Set XDG_DATA_HOME to local path
+export XDG_DATA_HOME=$SNAP_USER_DATA/.local/share
+export XDG_DATA_DIRS=$XDG_DATA_HOME:$XDG_DATA_DIRS
+mkdir -p $XDG_DATA_HOME
+
+# Set cache folder to local path
+export XDG_CACHE_HOME=$SNAP_USER_DATA/.cache
+mkdir -p $XDG_CACHE_HOME
+
+# Font Config and themes
+export FONTCONFIG_PATH=$SNAP/etc/fonts/conf.d
+export FONTCONFIG_FILE=$SNAP/etc/fonts/fonts.conf
+if [ $needs_update = true ]; then
+  rm -rf $XDG_DATA_HOME/{fontconfig,fonts,fonts-*,themes}
+  ln -sf $SNAP/usr/share/{fontconfig,fonts,fonts-*,themes} $XDG_DATA_HOME
+  ln -sf $SNAP/usr/share/themes $SNAP_USER_DATA/.themes
+fi
+
+# Build mime.cache
+# needed for gtk and qt icon
+if [ $needs_update = true ]; then
+  rm -rf $XDG_DATA_HOME/mime
+  if [ `which update-mime-database` ]; then
+    cp --preserve=timestamps -dR $SNAP/usr/share/mime $XDG_DATA_HOME
+    update-mime-database $XDG_DATA_HOME/mime
+  fi
+fi
+#############################
+# QT launcher specific part #
+#############################
+
+# select qt version
+. $SNAP/flavor-select
+
+# Qt Platform to Mir
+export QTCHOOSER_NO_GLOBAL_DIR=1
+if [ "$USE_qt5" = true ]; then
+  export QT_SELECT=snappy-qt5
+else
+  export QT_SELECT=snappy-qt4
+fi
+
+# Qt Libs and Modules
+if [ "$USE_qt5" = true ]; then
+  export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/qt5/libs:$LD_LIBRARY_PATH
+  export QT_PLUGIN_PATH=$SNAP/usr/lib/$ARCH/qt5/plugins
+  export QML2_IMPORT_PATH=$QML2_IMPORT_PATH:$SNAP/usr/lib/$ARCH/qt5/qml
+  export QML2_IMPORT_PATH=$QML2_IMPORT_PATH:$SNAP/lib/$ARCH
+else
+  export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/qt4:$LD_LIBRARY_PATH
+  export QT_PLUGIN_PATH=$SNAP/usr/lib/$ARCH/qt4/plugins
+  export QML_IMPORT_PATH=$QML_IMPORT_PATH:$SNAP/usr/lib/$ARCH/qt4/qml
+  export QML_IMPORT_PATH=$QML_IMPORT_PATH:$SNAP/lib/$ARCH
+fi
+
+# Necessary for the SDK to find the translations directory
+export APP_DIR=$SNAP
+
+# Removes Qt warning: Could not find a location
+# of the system Compose files
+export QTCOMPOSE=$SNAP/usr/share/X11/locale
+
+# Use GTK styling for running under Unity 7
+export GTK_PATH=$SNAP/usr/lib/$ARCH/gtk-2.0
+
+# Gdk-pixbuf loaders
+export GDK_PIXBUF_MODULE_FILE=$XDG_CACHE_HOME/gdk-pixbuf-loaders.cache
+export GDK_PIXBUF_MODULEDIR=$SNAP/usr/lib/$ARCH/gdk-pixbuf-2.0/2.10.0/loaders
+
+if [ $needs_update = true ]; then
+  rm -f $GDK_PIXBUF_MODULE_FILE
+  $SNAP/usr/lib/$ARCH/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders > $GDK_PIXBUF_MODULE_FILE
+fi
+
+# Keep an array of data dirs, for looping through them
+IFS=':' read -r -a data_dirs_array <<< "$XDG_DATA_DIRS"
+
+# Icon themes cache
+if [ $needs_update = true ]; then
+  rm -rf $XDG_DATA_HOME/icons
+  mkdir -p $XDG_DATA_HOME/icons
+  for d in "${data_dirs_array[@]}"; do
+    for i in $d/icons/*; do
+      if [ -d "$i" ]; then
+        theme_dir=$XDG_DATA_HOME/icons/$(basename "$i")
+        if [ ! -d "$theme_dir" ]; then
+          mkdir -p "$theme_dir"
+          ln -s $i/* "$theme_dir"
+          if [ -f $SNAP/usr/sbin/update-icon-caches ]; then
+            $SNAP/usr/sbin/update-icon-caches "$theme_dir"
+          elif [ -f $SNAP/usr/sbin/update-icon-cache.gtk2 ]; then
+            $SNAP/usr/sbin/update-icon-cache.gtk2 "$theme_dir"
+          fi
+        fi
+      fi
+    done
+  done
+fi
+
+
+exec "$@"

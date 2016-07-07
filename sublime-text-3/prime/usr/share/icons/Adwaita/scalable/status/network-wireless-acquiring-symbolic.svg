@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer9" transform="translate(-161 -177)">
+  <path id="path6125" style="opacity:0.32;fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(2 0 0 2 113 -228)"/>
+  <path id="path4955" style="fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(1.5 0 0 1.5 122.5 -128)"/>
+  <path id="path4957" style="fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(1.5 0 0 1.5 126.5 -128)"/>
+  <path id="path4959" style="fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(1.5 0 0 1.5 130.5 -128)"/>
+  <path id="rect11714-6" style="opacity:0.32;fill-opacity:0;block-progression:tb;text-indent:0;color:#000000;text-transform:none" d="m169 178.5c-2.9327 0-5.4021 1.062-7.3125 2.7188a0.50005 0.50005 0 0 0 -0.1875 0.375v1.4062a0.50005 0.50005 0 0 0 0.5 0.5h1.4688a0.50005 0.50005 0 0 0 0.34375 -0.125c1.4516-1.2083 2.9942-1.875 5.1875-1.875 2.1869 0 3.7604 0.70348 5.2188 1.875a0.50005 0.50005 0 0 0 0.3125 0.125h1.4688a0.50005 0.50005 0 0 0 0.5 -0.5v-1.375a0.50005 0.50005 0 0 0 -0.15625 -0.375c-1.73-1.54-4.39-2.74-7.34-2.74zm0 1c2.6061 0 4.9491 1.0765 6.5 2.4062v0.59375h-0.875c-1.5358-1.1821-3.3121-2-5.625-2-2.3073 0-4.0825 0.77549-5.625 2h-0.875v-0.65625c1.72-1.43 3.89-2.34 6.5-2.34z"/>
+  <path id="rect11703-65" style="opacity:0.32;fill-opacity:0;block-progression:tb;text-indent:0;color:#000000;text-transform:none" d="m169 181.5c-1.5838 0-3.0432 0.36102-4.1562 1.0625a0.50005 0.50005 0 0 0 0.28 0.94h7.6875a0.50005 0.50005 0 0 0 0.25 -0.9375c-1.11-0.68-2.51-1.06-4.06-1.06z"/>
+ </g>
+</svg>

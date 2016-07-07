@@ -1,0 +1,4 @@
+# it's a symlink
+x11-common: binary-without-manpage usr/bin/X11
+# yes, we know
+x11-common: symlink-is-self-recursive usr/bin/X11 .

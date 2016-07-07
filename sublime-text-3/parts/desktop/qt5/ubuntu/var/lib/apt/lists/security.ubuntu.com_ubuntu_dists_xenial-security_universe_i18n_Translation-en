@@ -1,0 +1,2175 @@
+Package: atheme-services
+Description-md5: d2e42cf829c1539e7632d45390fec88b
+Description-en: modular IRC services daemon
+ atheme-services is a portable, secure set of open source, modular IRC
+ services, designed to run on many IRC server implementations.
+ .
+ Unlike alternative packages, atheme-services' core is minimalistic,
+ providing only core functionality. atheme-services is a complete services
+ set, excluding features designed for oper abuse.
+
+Package: bsdcpio
+Description-md5: 1c90998c8f6e066f932d9d438fe8c0c3
+Description-en: Implementation of the 'cpio' program from FreeBSD
+ The bsdcpio program is the default system 'cpio' program used on FreeBSD.
+ bsdcpio uses the libarchive library as a backend which does all of the work for
+ reading and writing archives in various formats.
+
+Package: bsdtar
+Description-md5: c400aaca93699fffdec8b4f318e026bc
+Description-en: Implementation of the 'tar' program from FreeBSD
+ The bsdtar program is the default system 'tar' program used on FreeBSD. bsdtar
+ uses the libarchive library as a backend which does all of the work for reading
+ and writing archives in various formats.
+
+Package: chromium-browser
+Description-md5: 4a155380274636a47c53917539df83d7
+Description-en: Chromium web browser, open-source version of Chrome
+ An open-source browser project that aims to build a safer, faster, and more
+ stable way for all Internet users to experience the web.
+
+Package: chromium-browser-dbg
+Description-md5: 15b3c7e55558d7ef27690042e85c8e5c
+Description-en: chromium-browser debug symbols
+ Debug symbols for the Chromium browser
+
+Package: chromium-browser-l10n
+Description-md5: 8ddb996aecc31fc1411a320e533c060d
+Description-en: chromium-browser language packages
+ An open-source browser project that aims to build a safer, faster, and more
+ stable way for all Internet users to experience the web.
+ .
+ This package contains language packages for 65 languages:
+ am, ar, ast, bg, bn, bs, ca, ca@valencia, cs, da, de, el, en-AU, en-GB, eo,
+ es-419, es, et, eu, fa, fil, fi, fr, gl, gu, he, hi, hr, hu, hy, ia, id, it,
+ ja, ka, kn, ko, ku, kw, lt, lv, ml, mr, ms, nb, nl, pl, pt-BR, pt-PT, ro, ru,
+ sk, sl, sr, sv, sw, ta, te, th, tr, ug, uk, vi, zh-CN, zh-TW
+
+Package: chromium-chromedriver
+Description-md5: 2e6e3c36fa55c5630ac7d648c44010d7
+Description-en: WebDriver driver for the Chromium Browser
+ Chromedriver serves as a bridge between Chromium Browser and Selenium
+ WebDriver.
+ .
+ See http://code.google.com/p/selenium/wiki/ChromeDriver for details.
+
+Package: chromium-chromedriver-dbg
+Description-md5: 7b89909ec0b0ee64d13d6a60767b9e81
+Description-en: chromium-chromedriver debug symbols
+ Debug symbols for the chromium-chromedriver package.
+
+Package: chromium-codecs-ffmpeg
+Description-md5: 5da9721609191455cf39f508a8dbbcc2
+Description-en: Free ffmpeg codecs for the Chromium Browser
+ An open-source browser project that aims to build a safer, faster, and more
+ stable way for all Internet users to experience the web.
+ .
+ This package contains the multi-threaded ffmpeg codecs needed for the HTML5
+ <audio> and <video> tags. Only the free ogg, vorbis and theora codecs are
+ included. See chromium-codecs-ffmpeg-extra for additional codecs
+
+Package: chromium-codecs-ffmpeg-dbg
+Description-md5: 7e8e74f91e0842ff27996a795a82b3de
+Description-en: chromium-codecs-ffmpeg debug symbols
+ Debug symbols for the free ffmpeg-mt codecs
+
+Package: chromium-codecs-ffmpeg-extra
+Description-md5: e25eff2efc99ff0ac68a4920e4d54635
+Description-en: Extra ffmpeg codecs for the Chromium Browser
+ An open-source browser project that aims to build a safer, faster, and more
+ stable way for all Internet users to experience the web.
+ .
+ This package contains the multi-threaded ffmpeg codecs needed for the HTML5
+ <audio> and <video> tags. In addition to the patent-free ogg, vorbis and
+ theora codecs, aac/ac3/mpeg4audio/h264/mov/mp3 are also included.  See
+ chromium-codecs-ffmpeg if you prefer only the patent-free codecs
+
+Package: chromium-codecs-ffmpeg-extra-dbg
+Description-md5: 3002fac13fe9f771bfdcb0702c4ccc6c
+Description-en: chromium-codecs-ffmpeg-extra debug symbols
+ Debug symbols for the extra ffmpeg-mt codecs
+
+Package: ctdb
+Description-md5: 83dff66615250b53a0cd3df6fb3b9ea7
+Description-en: clustered database to store temporary data
+ CTDB is a cluster implementation of the TDB database used by Samba and other
+ projects to store temporary data. If an application is already using TDB for
+ temporary data it is very easy to convert that application to be cluster aware
+ and use CTDB instead.
+ .
+ CTDB provides the same types of functions as TDB but in a clustered fashion,
+ providing a TDB-style database that spans multiple physical hosts in a cluster.
+ .
+ Features include:
+  * CTDB provides a TDB that has consistent data and consistent locking across
+    all nodes in a cluster.
+  * CTDB is very fast.
+  * In case of node failures, CTDB will automatically recover and repair all TDB
+    databases that it manages.
+  * CTDB is the core component that provides pCIFS ("parallel CIFS") with
+    Samba3/4.
+  * CTDB provides HA features such as node monitoring, node failover, and IP
+    takeover.
+  * CTDB provides a reliable messaging transport to allow applications linked
+    with CTDB to communicate to other instances of the application running on
+    different nodes in the cluster.
+  * CTDB has pluggable transport backends. Currently implemented backends are
+    TCP and Infiniband.
+  * CTDB supports a system of application specific management scripts, allowing
+    applications that depend on network or filesystem resources to be managed in
+    a highly available manner on a cluster.
+
+Package: dnsmasq
+Description-md5: d4d0c88134cc703150a59b83cb68304c
+Description-en: Small caching DNS proxy and DHCP/TFTP server
+ Dnsmasq is a lightweight, easy to configure, DNS forwarder and DHCP
+ server. It is designed to provide DNS and optionally, DHCP, to a
+ small network. It can serve the names of local machines which are
+ not in the global DNS. The DHCP server integrates with the DNS
+ server and allows machines with DHCP-allocated addresses
+ to appear in the DNS with names configured either in each host or
+ in a central configuration file. Dnsmasq supports static and dynamic
+ DHCP leases and BOOTP/TFTP for network booting of diskless machines.
+
+Package: expat
+Description-md5: 946951e418841b66002f30694d1a0b72
+Description-en: XML parsing C library - example application
+ This package contains xmlwf, an example application of expat, the C
+ library for parsing XML.  The arguments to xmlwf are one or more
+ files which are each to be checked for XML well-formedness.
+
+Package: extplorer
+Description-md5: a4cf2c1a13efad8db9516e45906ac0a3
+Description-en: web file explorer and manager using Ext JS
+ a web-based File Manager. You can use it to:
+    * browse directories & files on the server and
+    * edit, copy, move, delete files,
+    * search, upload and download files,
+    * create and extract archives,
+    * create new files and directories,
+    * change file permissions (chmod) and much more...
+ .
+ You can even use eXtplorer to login to the FTP server (like net2ftp) and work
+ as if you were using an FTP client. Access via WebDAV is also possible
+ (requires some extra work and a database!).
+ .
+ eXtplorer is released under a dual-license: You can choose wether you want to
+ use eXtplorer under the Mozilla Public License (MPL 1.1) or under the GNU
+ General Public License (GNU/GPL). Note that if you decide to distribute/use
+ eXtplorer under the MPL, you are not allowed to use the ExtJS Javascript
+ library.
+
+Package: firefox-globalmenu
+Description-md5: 1b267431605d90f28d4104239bf87ff8
+Description-en: Safe and easy web browser from Mozilla (transitional package)
+ This is a transitional package to ensure that upgrades work correctly.
+ It can be safely removed
+
+Package: firefox-mozsymbols
+Description-md5: 1398643ad4fb0f820933502f6bba9816
+Description-en: Safe and easy web browser from Mozilla - Breakpad symbols
+ Firefox delivers safe, easy web browsing. A familiar user interface,
+ enhanced security features including protection from online identity theft,
+ and integrated search let you get the most out of the web.
+ .
+ This package contains the Firefox symbols in a format expected by Mozilla's
+ Breakpad. Eventually this package should go away and the symbol upload be
+ implemented in soyuz (or other builders that build this package)
+
+Package: firefox-testsuite
+Description-md5: 1c5406dea364e8840846b9dacd3c8955
+Description-en: Safe and easy web browser from Mozilla - testsuite
+ Firefox delivers safe, easy web browsing. A familiar user interface,
+ enhanced security features including protection from online identity theft,
+ and integrated search let you get the most out of the web.
+ .
+ This package contains the Firefox testsuite
+
+Package: fixincludes
+Description-md5: 4eec63ec6a45894436866732b96c2698
+Description-en: Fix non-ANSI header files
+ FixIncludes was created to fix non-ANSI system header files. Many
+ system manufacturers supply proprietary headers that are not ANSI compliant.
+ The GNU compilers cannot compile non-ANSI headers. Consequently, the
+ FixIncludes shell script was written to fix the header files.
+ .
+ Not all packages with header files are installed on the system, when the
+ package is built, so we make fixincludes available at build time of other
+ packages, such that checking tools like lintian can make use of it.
+
+Package: gcc-5-hppa64-linux-gnu
+Description-md5: 0ee0959bbc343ff940f7f385554ffc51
+Description-en: GNU C compiler (cross compiler for hppa64)
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+
+Package: gcc-5-locales
+Description-md5: eb5e72cb380341d4ed2ad2d24c34f31d
+Description-en: GCC, the GNU compiler collection (native language support files)
+ Native language support for GCC. Lets GCC speak your language,
+ if translations are available.
+ .
+ Please do NOT submit bug reports in other languages than "C".
+ Always reset your language settings to use the "C" locales.
+
+Package: gcc-5-source
+Description-md5: cb00049993a8c14b73bb041c050eb8c5
+Description-en: Source of the GNU Compiler Collection
+ This package contains the sources and patches which are needed to
+ build the GNU Compiler Collection (GCC).
+
+Package: gcc-5-test-results
+Description-md5: dc68b9fb54342c9f71afbc0efcf1ade0
+Description-en: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+
+Package: gccgo-5
+Description-md5: 58c2a4ce4d3fe6815f7a6ee86b4db16d
+Description-en: GNU Go compiler
+ This is the GNU Go compiler, which compiles Go on platforms supported
+ by the gcc compiler. It uses the gcc backend to generate optimized code.
+
+Package: gccgo-5-multilib
+Description-md5: 25e9a6929ec801c16cd933e711c7f1ed
+Description-en: GNU Go compiler (multilib support)
+ This is the GNU Go compiler, which compiles Go on platforms supported
+ by the gcc compiler.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gcj-5-source
+Description-md5: 4c55da0bb9881014d9bba36bde1b8806
+Description-en: GCJ java sources for use in IDEs like eclipse and netbeans
+ These are the java source files packaged as a zip file for use in development
+ environments like eclipse and netbeans.
+
+Package: gdc-5
+Description-md5: 864a87c3c14c54bac8e1eca97a6eb9a7
+Description-en: GNU D compiler (version 2)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
+
+Package: gdc-5-multilib
+Description-md5: 5bd997d730190f1d6151d11f184d631d
+Description-en: GNU D compiler (version 2, multilib support)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gimp
+Description-md5: ad6dd18a09fb86ea4529ac53f33168b9
+Description-en: The GNU Image Manipulation Program
+ GIMP is an advanced picture editor. You can use it to edit, enhance, and
+ retouch photos and scans, create drawings, and make your own images.
+ It has a large collection of professional-level editing tools and
+ filters, similar to the ones you might find in Photoshop. Numerous
+ fine-control settings and features like layers, paths, masks, and
+ scripting give you total control over your images.
+ .
+ Many image file formats are supported, including JPEG, Photoshop (.psd),
+ and Paint Shop Pro (.psp) files. It can also be used to scan and print
+ photos.
+ .
+ To open files remotely (like over HTTP), install the gvfs-backends
+ package.
+ .
+ To use a MIDI device (like a musical keyboard) as an input controller in GIMP,
+ install libasound2 and read the how-to at /usr/share/doc/gimp/README.MIDI
+
+Package: gimp-data
+Description-md5: f70d84aecd044d27d27535082275ce75
+Description-en: Data files for GIMP
+ This package contains architecture-independent supporting data files
+ for use with GIMP.
+
+Package: gimp-dbg
+Description-md5: 2f9db4a750267fb9aae49799596bcd26
+Description-en: Debugging symbols for GIMP
+ This package includes the debugging symbols useful for debugging
+ GIMP and its libraries, contained in the gimp and libgimp2.0 packages.
+ The debugging symbols are used for execution tracing and core dump
+ analysis.
+
+Package: gnat-5
+Description-md5: 8cebde0cd6b861927a7a457cacc8851f
+Description-en: GNU Ada compiler
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides the compiler, tools and runtime library that handles
+ exceptions using the default zero-cost mechanism.
+
+Package: gnat-5-doc
+Description-md5: 8139d6afb41aa31e17dbd1884d4ab725
+Description-en: GNU Ada compiler (documentation)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the documentation in info format.
+
+Package: gnat-5-sjlj
+Description-md5: 38183a5764143bf77935e8455d8574ce
+Description-en: GNU Ada compiler (setjump/longjump runtime library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides an alternative runtime library that handles
+ exceptions using the setjump/longjump mechanism (as a static library
+ only).  You can install it to supplement the normal compiler.
+
+Package: gobjc++-5
+Description-md5: b9baa94c6e3efdfa23b7927008258616
+Description-en: GNU Objective-C++ compiler
+ This is the GNU Objective-C++ compiler, which compiles
+ Objective-C++ on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc++-5-multilib
+Description-md5: 4ebddb68adf8e3d2b7023dd3d5bac0b7
+Description-en: GNU Objective-C++ compiler (multilib support)
+ This is the GNU Objective-C++ compiler, which compiles Objective-C++ on
+ platforms supported by the gcc compiler.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gobjc-5
+Description-md5: ef51de6b57526dc4a161944678606486
+Description-en: GNU Objective-C compiler
+ This is the GNU Objective-C compiler, which compiles
+ Objective-C on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc-5-multilib
+Description-md5: b79f5c8e5ac0b4d1089b9028a80813f3
+Description-en: GNU Objective-C compiler (multilib support)
+ This is the GNU Objective-C compiler, which compiles Objective-C on platforms
+ supported by the gcc compiler.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gtk-doc-tools
+Description-md5: d81800b98624f248b7995144c6f0cbf1
+Description-en: GTK+ documentation tools
+ These tools extract documentation embedded in GNOME source code, and
+ produce pretty output via DocBook SGML.
+
+Package: haproxy-doc
+Description-md5: f72de64c8c07f125957ba405924efb5e
+Description-en: fast and reliable load balancing reverse proxy (HTML documentation)
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+ .
+ This package contains the HTML documentation for haproxy.
+
+Package: kinit
+Description-md5: 597bc846f516146d5a2d0f6d47ede49b
+Description-en: process launcher to speed up launching KDE applications
+ kdeinit is a process launcher somewhat similar to the
+ famous init used for booting UNIX.
+ .
+ It launches processes by forking and then loading a
+ dynamic library which should contain a 'kdemain(...)'
+ function.
+ .
+ Using kdeinit to launch KDE applications makes starting
+ a typical KDE applications 2.5 times faster (100ms
+ instead of 250ms on a P-III 500) It reduces memory
+ consumption by approx. 350Kb per application.
+
+Package: kinit-dbg
+Description-md5: 84a7e482eb7be5dd012e7d3b8c6f9540
+Description-en: process launcher to speed up launching KDE applications
+ kdeinit is a process launcher somewhat similar to the
+ famous init used for booting UNIX.
+ .
+ It launches processes by forking and then loading a
+ dynamic library which should contain a 'kdemain(...)'
+ function.
+ .
+ Using kdeinit to launch KDE applications makes starting
+ a typical KDE applications 2.5 times faster (100ms
+ instead of 250ms on a P-III 500) It reduces memory
+ consumption by approx. 350Kb per application.
+ .
+ Contains debug symbols for kinit.
+
+Package: kinit-dev
+Description-md5: 1e9fbe33a21a421c70b8a94bcf094a46
+Description-en: process launcher to speed up launching KDE applications
+ kdeinit is a process launcher somewhat similar to the
+ famous init used for booting UNIX.
+ .
+ It launches processes by forking and then loading a
+ dynamic library which should contain a 'kdemain(...)'
+ function.
+ .
+ Using kdeinit to launch KDE applications makes starting
+ a typical KDE applications 2.5 times faster (100ms
+ instead of 250ms on a P-III 500) It reduces memory
+ consumption by approx. 350Kb per application.
+ .
+ Contains development files for kinit.
+
+Package: lib32go7
+Description-md5: 7174520aedfeba49e54b8c36f55b7e95
+Description-en: Runtime library for GNU Go applications (32bit)
+ Library needed for GNU Go applications linked against the
+ shared library.
+
+Package: lib32go7-dbg
+Description-md5: c72834060f6b473c88c959fce8644a48
+Description-en: Runtime library for GNU Go applications (32 bit debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+
+Package: libgd-tools
+Description-md5: a44edd93634f43d7184a7456c237f804
+Description-en: GD command line tools and example code
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is some simple command line tools and example code that use the GD
+ graphics library.
+
+Package: libgimp2.0
+Description-md5: 87c9f62281987fda19082f1b5cc2c95c
+Description-en: Libraries for the GNU Image Manipulation Program
+ This package includes the libgimp libraries, which are
+ necessary to run GIMP and third-party GIMP plugins.
+
+Package: libgimp2.0-dev
+Description-md5: c7c7d24560c6f749d332154868167ed5
+Description-en: Headers and other files for compiling plugins for GIMP
+ This package contains the header files for the GNU Image Manipulation
+ Program, along with the static versions of libgimp.
+ It also includes the gimptool-2.0 utility.
+ .
+ Install this package if you wish to compile your own plugins,
+ or if you wish to develop packages that use libgimp.
+
+Package: libgimp2.0-doc
+Description-md5: 8acaa3767b69bc8f021740c983e4e23a
+Description-en: Developers' Documentation for the GIMP library
+ This package contains the HTML documentation for the GIMP library in
+ /usr/share/gtk-doc/html/ .
+
+Package: libgnat-5
+Description-md5: 27cdab3b846cfe71a546e1fbdc98570c
+Description-en: runtime for applications compiled with GNAT (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the runtime shared library.
+
+Package: libgnat-5-dbg
+Description-md5: a1f30e9b04fb19502b1c456fd0019eb1
+Description-en: runtime for applications compiled with GNAT (debugging symbols)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the debugging symbols.
+
+Package: libgnatprj5
+Description-md5: cf808c029e0061472cc5f696126966f0
+Description-en: GNU Ada compiler Project Manager (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ GNAT uses project files to organise source and object files in large-scale
+ development efforts. The libgnatprj library exports GNAT project files
+ management for use in other packages, most notably ASIS tools (package
+ asis-programs) and GNAT Programming Studio (package gnat-gps). It is
+ licensed under the pure GPL; all programs that use it must also be
+ distributed under the GPL, or not distributed at all.
+ .
+ This package contains the runtime shared library.
+
+Package: libgnatprj5-dbg
+Description-md5: 0eabb3b5fbe5e4f083c3f0baf7b6a80b
+Description-en: GNU Ada compiler Project Manager (debugging symbols)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ GNAT uses project files to organise source and object files in large-scale
+ development efforts. The libgnatprj library exports GNAT project files
+ management for use in other packages, most notably ASIS tools (package
+ asis-programs) and GNAT Programming Studio (package gnat-gps). It is
+ licensed under the pure GPL; all programs that use it must also be
+ distributed under the GPL, or not distributed at all.
+ .
+ This package contains the debugging symbols.
+
+Package: libgnatprj5-dev
+Description-md5: ee8c8bb38216ee28da6c5f1eb6380715
+Description-en: GNU Ada compiler Project Manager (development files)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ GNAT uses project files to organise source and object files in large-scale
+ development efforts. The libgnatprj library exports GNAT project files
+ management for use in other packages, most notably ASIS tools (package
+ asis-programs) and GNAT Programming Studio (package gnat-gps). It is
+ licensed under the pure GPL; all programs that use it must also be
+ distributed under the GPL, or not distributed at all.
+ .
+ This package contains the development files and static library.
+
+Package: libgnatvsn5
+Description-md5: 75e330fcf9a585cbfe2857d4468e3c84
+Description-en: GNU Ada compiler selected components (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnatvsn library exports selected GNAT components for use in other
+ packages, most notably ASIS tools. It is licensed under the GNAT-Modified
+ GPL, allowing to link proprietary programs with it.
+ .
+ This package contains the runtime shared library.
+
+Package: libgnatvsn5-dbg
+Description-md5: 814414c51c0b951882f9da1be21702ba
+Description-en: GNU Ada compiler selected components (debugging symbols)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnatvsn library exports selected GNAT components for use in other
+ packages, most notably ASIS tools. It is licensed under the GNAT-Modified
+ GPL, allowing to link proprietary programs with it.
+ .
+ This package contains the debugging symbols.
+
+Package: libgnatvsn5-dev
+Description-md5: fa344c0d231c640dd6ef6c54f6b9640a
+Description-en: GNU Ada compiler selected components (development files)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnatvsn library exports selected GNAT components for use in other
+ packages, most notably ASIS tools. It is licensed under the GNAT-Modified
+ GPL, allowing to link proprietary programs with it.
+ .
+ This package contains the development files and static library.
+
+Package: libgo7-dbg
+Description-md5: e9237330081a278c3cbccde9c5c63b3a
+Description-en: Runtime library for GNU Go applications (debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+
+Package: libimobiledevice-utils
+Description-md5: 67c848cadcb0e4665fbbe126820e4bd8
+Description-en: Library for communicating with iPhone and iPod Touch devices
+ libimobiledevice is a library that talks the native Apple USB protocols that
+ the iPhone and iPod Touch use. Unlike other projects, libimobiledevice does
+ not depend on using any existing libraries from Apple.
+ .
+ This package contains utilities and examples which use libimobiledevice.
+
+Package: libmariadbd-dev
+Description-md5: f1579889611a2ce406c3c321e37d32d9
+Description-en: MariaDB embedded database, development files
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the embedded server library development and header files.
+
+Package: libmariadbd18
+Description-md5: b71218845912e72ccdc4b53a9a6e8bf3
+Description-en: MariaDB embedded database
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the embedded server library.
+
+Package: libndp-tools
+Description-md5: 1746febcf3808f082d79e52c552895b8
+Description-en: Library for Neighbor Discovery Protocol (tools)
+ libndp is a library for the IPv6 Neighbor Discovery Protocol (NDP).  It
+ contains functions for building and parsing NDP messages, and provides
+ a high-level interface for sending and receiving NDP messages on a
+ network interface.
+ .
+ This package contains a tool named ndptool for sending and receiving
+ NDP messages.
+
+Package: libnss-winbind
+Description-md5: 223d38d764a9bb35ad3be4c8d048957d
+Description-en: Samba nameservice integration plugins
+ Samba is an implementation of the SMB/CIFS protocol for Unix systems,
+ providing support for cross-platform file and printer sharing with
+ Microsoft Windows, OS X, and other Unix systems.  Samba can also function
+ as an NT4-style domain controller, and can integrate with both NT4 domains
+ and Active Directory realms as a member server.
+ .
+ This package provides nss_winbind, a plugin that integrates
+ with a local winbindd server to provide user/group name lookups to the
+ system; and nss_wins, which provides hostname lookups via both the NBNS and
+ NetBIOS broadcast protocols.
+
+Package: libpam-sshauth
+Description-md5: 46cb70cdcce955079662f4e1d8bc8e6b
+Description-en: authenticate using an SSH server
+ This package provides a simple PAM authentication mechanism using a remote
+ SSH server. If the user is able to ssh to the server configured with
+ libpam-sshauth, they're granted local access.
+
+Package: libpam-winbind
+Description-md5: fba9076429d270720a91324cff071fed
+Description-en: Windows domain authentication integration plugin
+ Samba is an implementation of the SMB/CIFS protocol for Unix systems,
+ providing support for cross-platform file and printer sharing with
+ Microsoft Windows, OS X, and other Unix systems.  Samba can also function
+ as an NT4-style domain controller, and can integrate with both NT4 domains
+ and Active Directory realms as a member server.
+ .
+ This package provides pam_winbind, a plugin that integrates with a local
+ winbindd server to provide Windows domain authentication to the system.
+
+Package: libphp7.0-embed
+Description-md5: 36e972824d22a774161a2307b46da6a3
+Description-en: HTML-embedded scripting language (Embedded SAPI library)
+ This package provides the library /usr/lib/libphp7.0.so which can
+ be used by application developers to embed PHP scripting functionality.
+ .
+ The following extensions are built in: Core date filter hash libxml openssl
+ pcntl pcre Reflection session SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+ .
+ WARNING: The embed SAPI is experimental and there's no guarantee that
+ the API/ABI will be kept compatible even between minor releases.  You
+ have been warned.
+
+Package: libreoffice
+Description-md5: 8d0b0c942da2b380f38eaf9234561571
+Description-en: office productivity suite (metapackage)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This metapackage installs all components of libreoffice:
+  * libreoffice-writer: Word processor
+  * libreoffice-calc: Spreadsheet
+  * libreoffice-impress: Presentation
+  * libreoffice-draw: Drawing
+  * libreoffice-base: Database
+  * libreoffice-math: Equation editor
+ .
+ You can extend the functionality of LibreOffice by installing these
+ packages:
+  * hunspell-*/myspell-*: Hunspell/Myspell dictionaries
+    for use with LibreOffice
+  * libreoffice-l10n-*: UI interface translation
+  * libreoffice-help-*: User help
+  * mythes-*: Thesauri for the use with LibreOffice
+  * hyphen-*: Hyphenation patterns for LibreOffice
+  * libreoffice-gtk: Gtk UI Plugin, GNOME File Picker support,
+    QuickStarter for GNOMEs notification are
+  * libreoffice-gnome: GIO backend
+  * unixodbc: ODBC database support
+  * cups-bsd: Allows LibreOffice to detect your CUPS printer queues
+    automatically
+  * libsane: Use your sane-supported scanner with LibreOffice
+  * libxrender1: Speed up display by using Xrender library
+  * libgl1: OpenGL support
+  * openclipart-libreoffice: Open Clip Art Gallery with LibreOffice index
+    files
+  * iceweasel | firefox | icedove | thunderbird | iceape-browser | mozilla-browser:
+    Mozilla profile with Certificates needed for XML Security...
+  * openjdk-6-jre | gcj-jre | java5-runtime:
+    Java Runtime Environment for use with LibreOffice
+  * pstoedit / imagemagick: helper tools for EPS thumbnails
+  * gstreamer0.10-plugins-*: GStreamer plugins for use with LibreOffices
+    media backend
+  * libpaper-utils: papersize detection support via paperconf
+  * bluez: Bluetooth support for Impress (slideshow remote control)
+
+Package: libreoffice-kde
+Description-md5: 11be113a48ef25e49b3cb824c072798a
+Description-en: office productivity suite -- KDE integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the KDE plugin for drawing OOo's widgets with
+ KDE/Qt and a KDEish File Picker when running under KDE.
+ You can extend the functionality of this by installing these packages:
+ .
+  * konqueror / kmail
+
+Package: libreoffice-librelogo
+Description-md5: 71fe1726b20ed521137fe79b55cd374b
+Description-en: Logo-like progamming language for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains Librelogo, which is a pyuno-based Logo-like progamming
+ language with interactive vectorgraphics for education and DTP
+  - basic Logo syntax for back compatibility with educational Logo systems
+  - interactive vectorgraphics in LibreOffice Writer
+  - native commands (easily translatable)
+  - Python data structures (list, tuple, set, dictionary) and other Python
+    features
+
+Package: libreoffice-mysql-connector
+Description-md5: a911b8b20116e62af2fea609f2117a03
+Description-en: MariaDB/MySQL Connector extension for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The MariaDB/MySQL Connector extension allows one to use the MariaDB or MySQL
+ database from LibreOffice without any wrapper layer such as ODBC or JDBC.
+
+Package: libreoffice-report-builder
+Description-md5: 8239ceaa4ebaf25c2b15325d48eb907c
+Description-en: LibreOffice component for building database reports
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the report builder:
+  "Create with the Sun Report Builder stylish, smart-looking database reports.
+  The flexible report editor can define group and page headers as well as
+  group and page footers and even calculation fields are available to
+  accomplish complex database reports."
+
+Package: libreoffice-report-builder-bin
+Description-md5: 4de9416ad29a7951be39b95f83055e84
+Description-en: LibreOffice component for building database reports -- libraries
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains some architecture-dependent support libraries
+ (librpt*.so) for the report builder component.
+
+Package: libreoffice-script-provider-bsh
+Description-md5: 720bef09745ce9eb4902772fb5c437d8
+Description-en: BeanShell script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support BeanShell.
+
+Package: libreoffice-script-provider-js
+Description-md5: 41b18315e9be2aaa24a28415b907118e
+Description-en: JavaScript script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support JavaScript.
+
+Package: libreoffice-script-provider-python
+Description-md5: 019117f2dc708fc6c1179714b81e2076
+Description-en: Python script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support Python.
+
+Package: libreoffice-sdbc-postgresql
+Description-md5: 06f71158aa78dbe7201679601bd1279b
+Description-en: PostgreSQL SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The PostgreSQL SDBC Driver allows one to use the PostgreSQL database from
+ LibreOffice without any wrapper layer such as ODBC or JDBC.
+
+Package: libreoffice-style-elementary
+Description-md5: cbc38c7a50e39207b8dfa4ff104c0e71
+Description-en: office productivity suite -- Elementary symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "elementary" symbol style.
+
+Package: libreoffice-style-hicontrast
+Description-md5: 07b279fea9dc1f504ef997f9507c51d9
+Description-en: office productivity suite -- Hicontrast symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "hicontrast" symbol style, needs to be manually
+ enabled in the LibreOffice option menu.
+
+Package: libreoffice-style-human
+Description-md5: 69f18f7852988e1365a9a97ee69965b1
+Description-en: office productivity suite -- Human symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "human" symbol style, default style for Ubuntu.
+
+Package: libreoffice-style-oxygen
+Description-md5: 87c07a1760d5171f3863d8dc426c52d9
+Description-en: office productivity suite -- Oxygen symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "oxygen" symbol style, default style for KDE 4.
+
+Package: libreoffice-style-sifr
+Description-md5: 0fd5516a8dab8f6841c284edea8786d7
+Description-en: office productivity suite -- Sifr symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "sifr" symbol style (an adaption of the Gnome
+ symbolic theme), needs to be manually  enabled in the LibreOffice option
+ menu.
+
+Package: libreoffice-subsequentcheckbase
+Description-md5: 472ba21116a41f060e278769f9e1684d
+Description-en: LibreOffice java test libraries
+ LibreOffice subsequentchecks integration test suite
+
+Package: libreoffice-wiki-publisher
+Description-md5: a66aaa282ae4941588a4d314d1ebbf79
+Description-en: LibreOffice extension for working with MediaWiki articles
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains an extension to create/edit/publish MediaWiki
+ articles with LibreOffice
+
+Package: libservlet3.0-java
+Description-md5: 53f7075916141a8eb225df97286c9451
+Description-en: Servlet 3.0 and JSP 2.2 Java API classes
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the Java Servlet and JSP library.
+
+Package: libservlet3.0-java-doc
+Description-md5: 105d3349377c356c2f157766657d4639
+Description-en: Servlet 3.0 and JSP 2.2 Java API documentation
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the documentation for the Java Servlet and JSP library.
+
+Package: libtasn1-3-bin
+Description-md5: 9b8edec27d06e44855d970a28ccda9e7
+Description-en: transitional libtasn1-3-bin package
+ This is a transitional dummy package to ease the migration from
+ libtasn1-3-bin to libtasn1-bin. You can safely remove this package.
+
+Package: libtasn1-bin
+Description-md5: 732971f746a6a2ec0311889ae799da20
+Description-en: Manage ASN.1 structures (binaries)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains programs to encode, decode and parse asn1 data
+ structures.
+
+Package: libtomcat7-java
+Description-md5: 7a2563c1a7c79379004bc6464d285af0
+Description-en: Servlet and JSP engine -- core libraries
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the Tomcat core classes which can be used by other
+ Java applications to embed Tomcat.
+
+Package: libusbmuxd-tools
+Description-md5: 7fb3e81611d2578a4c491c5fd6dcde75
+Description-en: USB multiplexor daemon for iPhone and iPod Touch devices - tools
+ usbmuxd, the USB multiplexor daemon, is in charge of coordinating
+ access to iPhone and iPod Touch services over USB. Synchronization and
+ management applications for the iPhone and iPod Touch need this daemon
+ to communicate with such devices concurrently.
+ .
+ This package contains the iproxy tool that enables TCP access to iOS devices.
+
+Package: libx32go7
+Description-md5: 274d67a4807b2168ae6370f3e1f6a565
+Description-en: Runtime library for GNU Go applications (x32)
+ Library needed for GNU Go applications linked against the
+ shared library.
+
+Package: libx32go7-dbg
+Description-md5: ecdc36ec2c26f4d5b8faf65a52d45fa4
+Description-en: Runtime library for GNU Go applications (x32 debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+
+Package: mariadb-client
+Description-md5: 2e04f284c927cfb4a5b1050a825be647
+Description-en: MariaDB database client (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mariadb-client (currently mariadb-client-10.0), as determined by the MariaDB
+ maintainers.  Install this package if in doubt about which MariaDB version
+ you want, as this is the one considered to be in the best shape.
+
+Package: mariadb-client-10.0
+Description-md5: 7b5610b71c2642b63e6ffcb5b15bba8e
+Description-en: MariaDB database client binaries
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the client binaries and the additional tools
+ innotop and mysqlreport.
+
+Package: mariadb-client-core-10.0
+Description-md5: 2862a38a5ead2e1df7366bf661e03278
+Description-en: MariaDB database core client binaries
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the core client files, as used by Akonadi.
+
+Package: mariadb-common
+Description-md5: a8bf2c1aebcb16934e54a7cb04adbfb4
+Description-en: MariaDB common metapackage
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+
+Package: mariadb-plugin-connect
+Description-md5: a80bd9647c2961ca648b4365a4644855
+Description-en: Connect storage engine for MariaDB
+ Connect engine supports a number of file formats (dbf, xml, txt, bin, etc),
+ connections to ODBC tables and remote MySQL tables, as well as a number of
+ other interesting features.
+ This package contains the Connect plugin for MariaDB.
+
+Package: mariadb-plugin-mroonga
+Description-md5: 38f273fa8679ace3c47de32b8f1ad726
+Description-en: Mroonga storage engine for MariaDB
+ Mroonga (formerly named Groonga Storage Engine) is a storage engine that
+ provides fast CJK-ready full text searching using column store.
+ This package contains the Mroonga plugin for MariaDB.
+
+Package: mariadb-plugin-oqgraph
+Description-md5: 1fb0e876d57cfdc1cff69872c8dc754b
+Description-en: OQGraph storage engine for MariaDB
+ The OQGraph engine is a computation engine plugin for handling hierarchies
+ (trees) and graphs (friend-of-a-friend, etc) cleanly through standard SQL.
+ This package contains the OQGraph plugin for MariaDB.
+
+Package: mariadb-plugin-spider
+Description-md5: d76a34438e840feb3c047b60c612ba7b
+Description-en: Spider storage engine for MariaDB
+ The Spider storage engine with built-in sharding features. It supports
+ partitioning and xa transactions, and allows tables of different MariaDB
+ instances to be handled as if they were on the same insctance. It refers to one
+ possible implementation of ISO/IEC 9075-9:2008 SQL/MED.
+
+Package: mariadb-plugin-tokudb
+Description-md5: 31667cb988ed1d50b7ef032158e16474
+Description-en: TokuDB storage engine for MariaDB
+ The TokuDB storage engine is for use in high-performance and write-intensive
+ environments, offering increased compression and better performance based
+ on fractal indexes.
+ This package contains the TokuDB plugin for MariaDB.
+
+Package: mariadb-server
+Description-md5: 184dec3a9fb41c1cd31a78f54fa02394
+Description-en: MariaDB database server (metapackage depending on the latest version)
+ This is an empty package that depends on the current "best" version of
+ mariadb-server (currently mariadb-server-10.0), as determined by the MariaDB
+ maintainers. Install this package if in doubt about which MariaDB
+ version you need. That will install the version recommended by the
+ package maintainers.
+ .
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+
+Package: mariadb-server-10.0
+Description-md5: ae76dbcde4bf3e79b8228e6dad967834
+Description-en: MariaDB database server binaries
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the server binaries.
+
+Package: mariadb-server-core-10.0
+Description-md5: a01f76260dfbedfdfbfcd8ff440b8a4c
+Description-en: MariaDB database core server files
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the core server files, as used by Akonadi.
+
+Package: mariadb-test
+Description-md5: 88232ad1a9463948e9a1f1d33923b547
+Description-en: MariaDB database regression test suite
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package includes the regression test suite.
+
+Package: mariadb-test-data
+Description-md5: 4e2584329df41bfe2241de957d88c44a
+Description-en: MariaDB database regression test suite - data files
+ MariaDB is a fast, stable and true multi-user, multi-threaded SQL database
+ server. SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MariaDB are speed, robustness and
+ ease of use.
+ .
+ This package has the architecture independent data files for the test suite.
+
+Package: mysql-source-5.7
+Description-md5: 88f58941059fab032315a68e3122ac60
+Description-en: MySQL source
+ MySQL is a fast, stable, and true multi-user, multi-threaded SQL database
+ server.  SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the MySQL source code as configured before building
+ - but after the arch specific configuration. This is currently required for
+ building plugins.
+
+Package: mysql-testsuite
+Description-md5: e045843e436e014e0fa5bcb7763bc7e1
+Description-en: MySQL regression tests
+ This is an empty package that depends on the current "best" version of
+ mysql-testsuite (currently mysql-testsuite-5.7), as determined by the
+ MySQL maintainers.  Install this package if in doubt about which MySQL
+ version you want, as this is the one we consider to be in the best shape.
+
+Package: mysql-testsuite-5.7
+Description-md5: 0557f3dcf33248a2caf2c603c14917dd
+Description-en: MySQL 5.7 testsuite
+ MySQL is a fast, stable, and true multi-user, multi-threaded SQL database
+ server.  SQL (Structured Query Language) is the most popular database query
+ language in the world. The main goals of MySQL are speed, robustness and
+ ease of use.
+ .
+ This package includes the MySQL testsuite.
+
+Package: nginx-extras
+Description-md5: a0597673af5eeeedac6c8c97e4758895
+Description-en: nginx web/proxy server (extended version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the standard modules, plus
+ extra features and modules such as the Perl module, which allows the
+ addition of Perl in configuration files.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, FLV, GeoIP,
+ Gunzip, Gzip, Gzip Precompression, Headers, HTTP/2, Image Filter, Index, Log,
+ MP4, Embedded Perl, Random Index, Real IP, Secure Link, SSI, SSL, Stream,
+ Stub Status, Substitution, Thread Pool, Upstream, User ID, XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ THIRD PARTY MODULES: Auth PAM, Cache Purge, DAV Ext, Echo, Fancy Index,
+ Headers More, Embedded Lua, HTTP Push, HTTP Substitutions, Upload Progress,
+ Upstream Fair Queue.
+
+Package: nginx-extras-dbg
+Description-md5: dfe40e4b526a7896997294d525c6e22f
+Description-en: nginx web/proxy server (extended version) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-extras, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.
+
+Package: nginx-full
+Description-md5: 74b8684b54a7a4d1c5a88eb98dcb635b
+Description-en: nginx web/proxy server (standard version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extra).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, GeoIP, Gunzip,
+ Gzip, Gzip Precompression, Headers, HTTP/2, Image Filter, Index, Log, Real IP,
+ SSI, SSL, Stream, Stub Status, Substitution, Thread Pool, Upstream, User ID,
+ XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, HTTP Substitutions, Upstream
+ Fair Queue.
+
+Package: nginx-full-dbg
+Description-md5: 4fc48d7c2fc05abcfaf9ba94a20baab2
+Description-en: nginx web/proxy server (standard version) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-full, to assist in debugging
+ issues that you may find. It should not be required for normal operation.
+
+Package: nginx-light
+Description-md5: 6dcfb9f65ac8749762b5d819cc4f3e2f
+Description-en: nginx web/proxy server (basic version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a very light version of nginx with only the
+ minimal set of features and modules.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Empty GIF,
+ FastCGI, Map, Proxy, Rewrite.
+ .
+ OPTIONAL HTTP MODULES: Auth Request, Charset, Gzip, Gzip Precompression,
+ Headers, Index, Log, Real IP, SSL, Stub Status, Upstream.
+ .
+ THIRD PARTY MODULES: Echo.
+
+Package: nginx-light-dbg
+Description-md5: edb5bef4d4f6057eb92dd3469c513461
+Description-en: nginx web/proxy server (basic version) - debugging symbols
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides debugging symbols for nginx-light, to assist in
+ debugging issues that you may find. It should not be required for normal
+ operation.
+
+Package: openjdk-8-jre-zero
+Description-md5: ca0db1fb38a237b982a1de5e6d632720
+Description-en: Alternative JVM for OpenJDK, using Zero/Shark
+ The package provides an alternative runtime using the Zero VM and the
+ Shark Just In Time Compiler (JIT).  Built on architectures in addition
+ to the Hotspot VM as a debugging aid for those architectures which don't
+ have a Hotspot VM.
+ .
+ The VM is started with the option `-zero'. See the README.Debian for details.
+
+Package: oxideqt-codecs-extra
+Description-md5: f99bdcbc4e4fe3bb375ded6ccadbcfb4
+Description-en: Web browser engine for Qt (codecs)
+ Oxide is a web browser engine library based on Chromium that makes it easy to
+ embed web content in your Qt application
+ .
+ This package provides some media codecs needed for the HTML5 <audio> and
+ <video> tags. Included are the Theora, Vorbis, Opus, VP8, VP9, MP3, AAC
+ and H.264 codecs
+
+Package: perlmagick
+Description-md5: 0caf15d082fa7d2b12c7f7f50f74cd62
+Description-en: Perl interface to ImageMagick -- transition package
+ PerlMagick is an objected-oriented Perl interface to ImageMagick.
+ Use the module to read, manipulate, or write an image or image sequence from
+ within a Perl script. This makes it very suitable for Web CGI scripts.
+ .
+ This is a transition package that depends on libimage-magick-perl.
+ .
+ This package can safely be removed.
+
+Package: php7.0-bcmath
+Description-md5: 8f9f425714b203a9b7d1f3678f64c107
+Description-en: Bcmath module for PHP
+ This package provides the Bcmath module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-bz2
+Description-md5: 6221ff838ed81a370f3420140a1ccf42
+Description-en: bzip2 module for PHP
+ This package provides the bzip2 module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-enchant
+Description-md5: 687582edca33aa141d3f62c1294fcb07
+Description-en: Enchant module for PHP
+ This package provides the Enchant module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-fpm
+Description-md5: aca9a4aafd2a321720e8bf05403438fc
+Description-en: server-side, HTML-embedded scripting language (FPM-CGI binary)
+ This package provides the Fast Process Manager interpreter that runs
+ as a daemon and receives Fast/CGI requests.  Note that MOST Apache users
+ probably want the libapache2-mod-php7.0 package.
+ .
+ The following extensions are built in: Core date filter hash libxml openssl
+ pcre Reflection session SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-imap
+Description-md5: 73ce2e5dbb1377bc41524b600892883b
+Description-en: IMAP module for PHP
+ This package provides the IMAP module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-interbase
+Description-md5: 40c18d15eeba50ef5700d72e1e45d586
+Description-en: Interbase module for PHP
+ This package provides the Interbase module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-intl
+Description-md5: 576352b0c1559ceb07b3161367c69f39
+Description-en: Internationalisation module for PHP
+ This package provides the Internationalisation module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-mbstring
+Description-md5: 741a0b4b31628c18e80bdef4f0ec8141
+Description-en: MBSTRING module for PHP
+ This package provides the MBSTRING module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-mcrypt
+Description-md5: 96673b2530a6fc30699e194fda12f804
+Description-en: libmcrypt module for PHP
+ This package provides the libmcrypt module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-phpdbg
+Description-md5: 47d090fa3cc551f561570d2ed3ec7937
+Description-en: server-side, HTML-embedded scripting language (PHPDBG binary)
+ This package provides the /usr/bin/phpdbg command interpreter, useful for
+ stepthrough debugging of PHP code.
+ .
+ The following extensions are built in: Core date filter hash libxml openssl
+ pcntl pcre Reflection session SPL standard zlib.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-soap
+Description-md5: 8ca6ca2ae4fbc6127f6522e73f05005a
+Description-en: SOAP module for PHP
+ This package provides the SOAP module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-sybase
+Description-md5: c5f3c0b4521b40ee671df4ab3452df1d
+Description-en: Sybase module for PHP
+ This package provides the Sybase module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: php7.0-xsl
+Description-md5: 93c8fc5e2935346a001f328e898c3cff
+Description-en: XSL module for PHP (dummy)
+ This package is a transitional dummy package and can be safely
+ removed.
+
+Package: php7.0-zip
+Description-md5: e148c478613188b645a0ec42c87f0518
+Description-en: Zip module for PHP
+ This package provides the Zip module(s) for PHP.
+ .
+ PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+ open source general-purpose scripting language that is especially suited
+ for web development and can be embedded into HTML.
+
+Package: pinba-engine-mysql
+Description-md5: 644581976d98def9573c801dbe7cc0a6
+Description-en: realtime statistics server for PHP using MySQL (metapackage)
+ Pinba is a MySQL storage engine that acts as a realtime
+ monitoring/statistics server for PHP using MySQL as a read-only
+ interface.
+ .
+ It accumulates and processes data sent over UDP by multiple PHP
+ processes and displays statistics in a nice human-readable form of
+ simple "reports", also providing read-only interface to the raw data
+ in order to make possible generation of more sophisticated reports and
+ stats.
+ .
+ Even though Pinba was written with PHP in mind, any kind of client can
+ create and send a Pinba packet to the server.
+ .
+ This metapackage depends on the latest version available.
+
+Package: pinba-engine-mysql-5.7
+Description-md5: 4c7e95e58bc4c1085dd1427ba8f6123e
+Description-en: realtime statistics server for PHP using MySQL as a read-only interface
+ Pinba is a MySQL storage engine that acts as a realtime
+ monitoring/statistics server for PHP using MySQL as a read-only
+ interface.
+ .
+ It accumulates and processes data sent over UDP by multiple PHP
+ processes and displays statistics in a nice human-readable form of
+ simple "reports", also providing read-only interface to the raw data
+ in order to make possible generation of more sophisticated reports and
+ stats.
+ .
+ Even though Pinba was written with PHP in mind, any kind of client can
+ create and send a Pinba packet to the server.
+
+Package: python-imobiledevice
+Description-md5: 18c07eca7104650f7295d89566b0486f
+Description-en: Library for communicating with iPhone and iPod Touch devices
+ libimobiledevice is a library that talks the native Apple USB protocols that
+ the iPhone and iPod Touch use. Unlike other projects, libimobiledevice does
+ not depend on using any existing libraries from Apple.
+ .
+ This package contains the Python bindings
+
+Package: qemu
+Description-md5: 976dc9e06bc50e9bc7637e1a34042953
+Description-en: fast processor emulator
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs. QEMU has
+ two operating modes:
+ .
+  * User mode emulation: QEMU can launch Linux processes compiled for
+    one CPU on another CPU.
+  * Full system emulation: QEMU emulates a full system, including a
+    processor and various peripherals. It enables easier testing and
+    debugging of system code. It can also be used to provide virtual
+    hosting of several virtual machines on a single server.
+ .
+ As QEMU requires no host kernel patches to run, it is very safe and
+ easy to use.
+ .
+ This package is a metapackage depending on all qemu-related packages.
+
+Package: qemu-guest-agent
+Description-md5: c2bc281a0e5a8e6c2185b336580fd595
+Description-en: Guest-side qemu-system agent
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides a daemon (agent) to run inside qemu-system
+ guests (full system emulation).  It communicates with the host using
+ a virtio-serial channel org.qemu.guest_agent.0, and allows one to perform
+ some functions in the guest from the host, including:
+  - querying and setting guest system time
+  - performing guest filesystem sync operation
+  - initiating guest shutdown or suspend to ram
+  - accessing guest files
+  - freezing/thawing guest filesystem operations
+  - others.
+ .
+ Install this package on a system which is running as guest inside
+ qemu virtual machine.  It is not used on the host.
+
+Package: qemu-user
+Description-md5: b7a34d8d1377ca0beb573e0e2b4ce914
+Description-en: QEMU user mode emulation binaries
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the user mode emulation binaries. In this mode
+ QEMU can launch Linux processes compiled for one CPU on another CPU.
+ .
+ If qemu-user-binfmt package is also installed, it will register binary
+ format handlers from this qemu-user package with the kernel so it will
+ be possible to run foreign binaries directly.  However, this might not
+ be suitable for using inside foreign chroots, in which case it is
+ possible to use qemu-user-static package instead of qemu-user-binmft, --
+ qemu-user-static will register statically linked binfmt handlers instead.
+
+Package: qemu-user-binfmt
+Description-md5: b9d172841422ce933839d1a34cce7b20
+Description-en: QEMU user mode binfmt registration for qemu-user
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides binfmt support registration for the user mode
+ emulation binaries from qemu-user.  This is an empty package, it does
+ not contain any additional files, only registration scripts which run
+ at install and remove times.
+
+Package: qemu-user-static
+Description-md5: 5d8ec17cec68244efa918fa841e2964c
+Description-en: QEMU user mode emulation binaries (static version)
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the user mode emulation binaries, built
+ statically. In this mode QEMU can launch Linux processes compiled for
+ one CPU on another CPU.
+ .
+ If binfmt-support package is installed, qemu-user-static package will
+ register binary formats which the provided emulators can handle, so
+ that it will be possible to run foreign binaries directly.
+
+Package: registry-tools
+Description-md5: 7266dad7d5ee9360537ffc04ec7157f3
+Description-en: tools for viewing and manipulating the Windows registry
+ Samba is an implementation of the SMB/CIFS protocol for Unix systems,
+ providing support for cross-platform file sharing with Microsoft Windows, OS X,
+ and other Unix systems.  Samba can also function as a domain controller
+ or member server in both NT4-style and Active Directory domains.
+ .
+ This package contains tools for viewing and manipulating the binary
+ "registry" found on Windows machines, both locally and remote.
+
+Package: samba-testsuite
+Description-md5: 9909252a54b8d1689d0ad0af3791b792
+Description-en: test suite from Samba
+ Samba is an implementation of the SMB/CIFS protocol for Unix systems,
+ providing support for cross-platform file sharing with Microsoft Windows, OS X,
+ and other Unix systems.  Samba can also function as a domain controller
+ or member server in both NT4-style and Active Directory domains.
+ .
+ This package contains programs for testing the reliability and speed
+ of SMB servers, Samba in particular.
+
+Package: squid-cgi
+Description-md5: f5629ee1f0974ccbb0cb7626340a3ec3
+Description-en: Full featured Web Proxy cache (HTTP proxy) - control CGI
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains a CGI program that can be used to query and administrate
+ a `squid' proxy cache through a web browser.
+
+Package: squid-purge
+Description-md5: 1f0ac66043729b3fb7702aa802ebdf9b
+Description-en: Full featured Web Proxy cache (HTTP proxy) - control utility
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains a small utility that can be used to manage the disk cache
+ from the command line.
+
+Package: squidclient
+Description-md5: 496a594ac08f6190d306007269da1e8c
+Description-en: Full featured Web Proxy cache (HTTP proxy) - control utility
+ Squid is a high-performance proxy caching server for web clients, supporting
+ FTP, gopher, ICY and HTTP data objects.
+ .
+ Squid version 3 is a major rewrite of Squid in C++ and introduces a number of
+ new features including ICAP and ESI support.
+ .
+ This package contains a small utility that can be used to get URLs from the
+ command line.
+
+Package: thunderbird-globalmenu
+Description-md5: fd9f1e7c342cabe4de92af51203c160c
+Description-en: Email, RSS and newsgroup client (transitional package)
+ This is a transitional package to ensure that upgrades work correctly.
+ It can be safely removed
+
+Package: thunderbird-mozsymbols
+Description-md5: ac1a6a5ccd00092e19efbf6f6f9538a0
+Description-en: Email, RSS and newsgroup client - Breakpad symbols
+ Thunderbird is a full-featured email, RSS and newsgroup client that makes
+ emailing safer, faster and easier than ever before. It supports different mail
+ accounts (POP, IMAP, Gmail), has a simple mail account setup wizard, one-
+ click address book, tabbed interface, an integrated learning spam filter,
+ advanced search and indexing capabilities, and offers easy organization
+ of mails with tagging and virtual folders. It also features unrivalled
+ extensibility.
+ .
+ This package contains the Firefox symbols in a format expected by Mozilla's
+ Breakpad. Eventually this package should go away and the symbol upload be
+ implemented in soyuz (or other builders that build this package)
+
+Package: thunderbird-testsuite
+Description-md5: 743f5679caf063b6d5ed211311011154
+Description-en: Email, RSS and newsgroup client - testsuite
+ Thunderbird is a full-featured email, RSS and newsgroup client that makes
+ emailing safer, faster and easier than ever before. It supports different mail
+ accounts (POP, IMAP, Gmail), has a simple mail account setup wizard, one-
+ click address book, tabbed interface, an integrated learning spam filter,
+ advanced search and indexing capabilities, and offers easy organization
+ of mails with tagging and virtual folders. It also features unrivalled
+ extensibility.
+ .
+ This package contains the Thunderbird testsuite
+
+Package: tomcat7
+Description-md5: 71d2a54f759941814ab4cf7873094b26
+Description-en: Servlet and JSP engine
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains only the startup scripts for the system-wide daemon.
+ No documentation or web applications are included here, please install
+ the tomcat7-docs and tomcat7-examples packages if you want them.
+ Install the authbind package if you need to use Tomcat on ports 1-1023.
+ Install tomcat7-user instead of this package if you don't want Tomcat to
+ start as a service.
+
+Package: tomcat7-admin
+Description-md5: 07b3738a38d2448ee2c0b77d4dbd745d
+Description-en: Servlet and JSP engine -- admin web applications
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the administrative web interfaces.
+
+Package: tomcat7-common
+Description-md5: f1b8817985b6e745bfe6216aa2086c4b
+Description-en: Servlet and JSP engine -- common files
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains common files needed by the tomcat7 and tomcat7-user
+ packages (Tomcat 6 scripts and libraries).
+
+Package: tomcat7-docs
+Description-md5: 523c216160e93c3df0c2e38305883e9c
+Description-en: Servlet and JSP engine -- documentation
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the online documentation web application.
+
+Package: tomcat7-examples
+Description-md5: 3fd8302e7ffe454afd9ba42730f7a01a
+Description-en: Servlet and JSP engine -- example web applications
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains the default Tomcat example webapps.
+
+Package: tomcat7-user
+Description-md5: f0f735a1a5d3acaabdc873d63b8b405b
+Description-en: Servlet and JSP engine -- tools to create user instances
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Sun Microsystems, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains files needed to create a user Tomcat instance.
+ This user Tomcat instance can be started and stopped using the scripts
+ provided in the Tomcat instance directory.
+
+Package: tomcat8-user
+Description-md5: fe19024bad571e95ae7d6b858fb2f1d8
+Description-en: Apache Tomcat 8 - Servlet and JSP engine -- tools to create user instances
+ Apache Tomcat implements the Java Servlet and the JavaServer Pages (JSP)
+ specifications from Oracle, and provides a "pure Java" HTTP web
+ server environment for Java code to run.
+ .
+ This package contains files needed to create a user Tomcat instance.
+ This user Tomcat instance can be started and stopped using the scripts
+ provided in the Tomcat instance directory.
+
+Package: vim-haproxy
+Description-md5: f0f210c34582537684988d90bc2d6337
+Description-en: syntax highlighting for HAProxy configuration files
+ The vim-haproxy package provides filetype detection and syntax highlighting
+ for HAProxy configuration files.
+ .
+ As per the Debian vim policy, installed addons are not activated
+ automatically, but the "vim-addon-manager" tool can be used for this purpose.
+
+Package: xen-hypervisor-4.4-amd64
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Description-en: Transitional package for upgrade
+
+Package: xen-hypervisor-4.5-amd64
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Description-en: Transitional package for upgrade
+
+Package: xen-hypervisor-4.6-amd64
+Description-md5: 30d22c56057f827a5cc3329925199782
+Description-en: Xen Hypervisor on AMD64
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-system-amd64
+Description-md5: f9a399da9b1f85d66b7c24b24d068efc
+Description-en: Xen System on AMD64 (meta-package)
+ This package depends on the latest Xen hypervisor for use on AMD64 and the
+ Xen utils.
+
+Package: xen-utils-4.6
+Description-md5: bd953dd4214727fe5759b05287bffcbe
+Description-en: XEN administrative tools
+ The userspace tools to manage a system virtualized through the XEN virtual
+ machine monitor.
+
+Package: xen-utils-common
+Description-md5: 1f4106fa79ae4eaa3fa5874a33091fc9
+Description-en: Xen administrative tools - common files
+ The userspace tools to manage a system virtualized through the Xen virtual
+ machine monitor.
+ .
+ This package is only required on the host system (Domain 0) and not on the
+ virtual guest systems (Domain U).
+
+Package: xenstore-utils
+Description-md5: e3e63e0a92be70a959445a4cc75dc8fb
+Description-en: Xenstore command line utilities for Xen
+ This package contains command line utilities for interacting with
+ XenStore.
+ .
+ XenStore is a shared database used for interdomain communication of
+ configuration and status information.  It is accessible to all domains
+ running on the same Xen host.  See http://wiki.xen.org/wiki/XenStore for
+ more information.
+ .
+ In the common case these tools are used by the Xen toolstack running in
+ domain0 (or a driver domain) however they may also be used in a guest
+ domain to support local scripting which wants to communicate via XenStore.
+
+Package: xul-ext-calendar-timezones
+Description-md5: aa51586667f70f4444de07214c475b6d
+Description-en: Calendar Extension for Thunderbird (transitional package)
+ This is a transitional package to ensure that upgrades work correctly.
+ It can be safely removed
+
+Package: xul-ext-gdata-provider
+Description-md5: f62489adb0c47d7399cead39c714c174
+Description-en: Calendar Extension for Thunderbird - Google Calendar support
+ Lighting is the Mozilla Calendar extension for Thunderbird, based
+ on Sunbird - the Mozilla Standalone Calendar application. It is tightly
+ integrated with Thunderbird, allowing it to easily perform email-related
+ calendaring tasks.
+ .
+ This package provides Google Calendar support. It's a recommended component
+ if you want to connect to your google calendar.
+
+Package: xul-ext-lightning
+Description-md5: a0293e147dba3d166b3727a30a6634a0
+Description-en: Calendar Extension for Thunderbird
+ Lighting is the Mozilla Calendar extension for Thunderbird, based
+ on Sunbird - the Mozilla Standalone Calendar application. It is tightly
+ integrated with Thunderbird, allowing it to easily perform email-related
+ calendaring tasks.
+
+Package: linux-headers-4.4.0-1013-snapdragon
+Description-md5: 8d6ec093a24f453a4af2c1d7ea805873
+Description-en: Linux kernel headers for version 4.4.0 on ARMv8 SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1013/debian.README.gz for details.
+
+Package: linux-headers-4.4.0-1015-snapdragon
+Description-md5: cab4af7e09c86a149ecf6c659a8c9977
+Description-en: Linux kernel headers for version 4.4.0 on ARMv8 SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1015/debian.README.gz for details.
+
+Package: linux-headers-4.4.0-1019-snapdragon
+Description-md5: 897907f7716cf67baaa8886b9796f2ae
+Description-en: Linux kernel headers for version 4.4.0 on ARMv8 SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1019/debian.README.gz for details.
+
+Package: linux-headers-snapdragon
+Description-md5: b91660f4ed21735e89725e56b0700976
+Description-en: Linux kernel headers for the Qualcomm Snapdragon 410c architecture.
+ This package will always depend on the latest kernel headers available
+ for ARM64 Qualcomm Snapdragon 410c systems.
+
+Package: linux-image-4.4.0-1013-snapdragon
+Description-md5: ab267365f3ac6b009038c83ece50a88a
+Description-en: Linux kernel image for version 4.4.0 on ARMv8 SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-snapdragon meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-4.4.0-1015-snapdragon
+Description-md5: ab267365f3ac6b009038c83ece50a88a
+Description-en: Linux kernel image for version 4.4.0 on ARMv8 SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-snapdragon meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-4.4.0-1019-snapdragon
+Description-md5: ab267365f3ac6b009038c83ece50a88a
+Description-en: Linux kernel image for version 4.4.0 on ARMv8 SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-snapdragon meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-snapdragon
+Description-md5: 0af4796d3c4ce8fe5783f36d3e8f3e97
+Description-en: Linux kernel image for the Qualcomm Snapdragon 410c architecture.
+ This package will always depend on the latest kernel image available
+ for ARM64 Qualcomm Snapdragon 410c systems.
+
+Package: linux-snapdragon
+Description-md5: 1f9e24b14982ffe37e835f5f471daf2e
+Description-en: Complete Linux kernel for the Qualcomm Snapdragon 410c architecture.
+ This package will always depend on the latest complete Linux kernel available
+ for ARM64 Qualcomm Snapdragon 410c systems.
+
+Package: linux-snapdragon-headers-4.4.0-1013
+Description-md5: 32792c935e1cd5974e7d92d930c452d8
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-snapdragon-headers-4.4.0-1013/debian.README.gz for details
+
+Package: linux-snapdragon-headers-4.4.0-1015
+Description-md5: f2c91b0ff7e96eb0f05191e025af1f0b
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-snapdragon-headers-4.4.0-1015/debian.README.gz for details
+
+Package: linux-snapdragon-headers-4.4.0-1019
+Description-md5: d0d0bc7994fee94b9781fa782be41585
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-snapdragon-headers-4.4.0-1019/debian.README.gz for details
+
+Package: linux-snapdragon-tools-4.4.0-1013
+Description-md5: 599e1b4fb4c9a40b3a4ffe5dfb2ddbe3
+Description-en: Linux kernel version specific tools for version 4.4.0-1013
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1013 on
+ ARMv8.
+ You probabaly want to install linux-tools-<flavour> meta package.
+
+Package: linux-snapdragon-tools-4.4.0-1015
+Description-md5: 6453008dc658c31b8705321d274dd830
+Description-en: Linux kernel version specific tools for version 4.4.0-1015
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1015 on
+ ARMv8.
+ You probabaly want to install linux-tools-<flavour> meta package.
+
+Package: linux-snapdragon-tools-4.4.0-1019
+Description-md5: 074cf50db3098d737aa636a00eb4802a
+Description-en: Linux kernel version specific tools for version 4.4.0-1019
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1019 on
+ ARMv8.
+ You probabaly want to install linux-tools-<flavour> meta package.
+
+Package: linux-tools-4.4.0-1013-snapdragon
+Description-md5: f49f2a8caa5fb601e929576c6e40be34
+Description-en: Linux kernel version specific tools for version 4.4.0-1013
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1013 on
+ ARMv8.
+
+Package: linux-tools-4.4.0-1015-snapdragon
+Description-md5: eaa5e3c0a17d550bf8052fba09c0d1fa
+Description-en: Linux kernel version specific tools for version 4.4.0-1015
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1015 on
+ ARMv8.
+
+Package: linux-tools-4.4.0-1019-snapdragon
+Description-md5: 42270dddcf1a243350218ee61fc2ab01
+Description-en: Linux kernel version specific tools for version 4.4.0-1019
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1019 on
+ ARMv8.
+
+Package: linux-tools-snapdragon
+Description-md5: 9a28fe420f7c5e03e4f3914a96d3254f
+Description-en: Linux kernel versioned Tools.
+ This package will always depend on the latest Linux kernel versioned tools
+ available for ARM64 Qualcomm Snapdragon 410c systems. The Ubuntu patches have been applied.
+
+Package: xen-hypervisor-4.4-arm64
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Description-en: Transitional package for upgrade
+
+Package: xen-hypervisor-4.5-arm64
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Description-en: Transitional package for upgrade
+
+Package: xen-hypervisor-4.6-arm64
+Description-md5: 74bb98caa738e51a1aebfd96abd40b12
+Description-en: Xen Hypervisor on ARM64
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-system-arm64
+Description-md5: 4829d81a6d98ae6ba61aba3e1386470e
+Description-en: Xen System on ARM64 (meta-package)
+ This package depends on the latest Xen hypervisor for use on ARM64 and the
+ Xen utils.
+
+Package: linux-headers-4.4.0-1010-raspi2
+Description-md5: c6cf2293096c63126f0b2f6f79285916
+Description-en: Linux kernel headers for version 4.4.0 on ARM (hard float) SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1010/debian.README.gz for details.
+
+Package: linux-headers-4.4.0-1012-raspi2
+Description-md5: 7c0500fc2f27a13a7707563c0fc9c38b
+Description-en: Linux kernel headers for version 4.4.0 on ARM (hard float) SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1012/debian.README.gz for details.
+
+Package: linux-headers-4.4.0-1016-raspi2
+Description-md5: 69afbbe5bbcbe418b35e5e7d61372213
+Description-en: Linux kernel headers for version 4.4.0 on ARM (hard float) SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1016/debian.README.gz for details.
+
+Package: linux-headers-raspi2
+Description-md5: 325961295b16189333c01b5cecc65ef8
+Description-en: Linux kernel headers for the BCM2709 architecture.
+ This package will always depend on the latest kernel headers available
+ for ARM BCM2709 systems.
+
+Package: linux-image-4.4.0-1010-raspi2
+Description-md5: 8f34ff87bc6dfb29b251dfd53a339b11
+Description-en: Linux kernel image for version 4.4.0 on ARM (hard float) SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-raspi2 meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-4.4.0-1012-raspi2
+Description-md5: 8f34ff87bc6dfb29b251dfd53a339b11
+Description-en: Linux kernel image for version 4.4.0 on ARM (hard float) SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-raspi2 meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-4.4.0-1016-raspi2
+Description-md5: 8f34ff87bc6dfb29b251dfd53a339b11
+Description-en: Linux kernel image for version 4.4.0 on ARM (hard float) SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-raspi2 meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-raspi2
+Description-md5: 814523097d87cdb6c10b9bdee6d70059
+Description-en: Linux kernel image for the BCM2709 architecture.
+ This package will always depend on the latest kernel image available
+ for ARM BCM2709 systems.
+
+Package: linux-raspi2
+Description-md5: af1a07d43e83f239c2162c6c99131cc7
+Description-en: Complete Linux kernel for the BCM2709 architecture.
+ This package will always depend on the latest complete Linux kernel available
+ for ARM BCM2709 systems.
+
+Package: linux-raspi2-headers-4.4.0-1010
+Description-md5: d7bafc7461e7ef200f7e7ba3e5763643
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-raspi2-headers-4.4.0-1010/debian.README.gz for details
+
+Package: linux-raspi2-headers-4.4.0-1012
+Description-md5: 5ef831ab5d221bcf5f8fac4f40ea1247
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-raspi2-headers-4.4.0-1012/debian.README.gz for details
+
+Package: linux-raspi2-headers-4.4.0-1016
+Description-md5: 019a3c6346662e6b8c5ad9e735b18c5f
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-raspi2-headers-4.4.0-1016/debian.README.gz for details
+
+Package: linux-raspi2-tools-4.4.0-1010
+Description-md5: 60dd2c6955c27c94f298f4ed7f9083cc
+Description-en: Linux kernel version specific tools for version 4.4.0-1010
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1010 on
+ ARM (hard float).
+ You probabaly want to install the linux-tools-<flavour> meta package.
+
+Package: linux-raspi2-tools-4.4.0-1012
+Description-md5: ba79ab06bd907b9e84cccd9f488ac9d1
+Description-en: Linux kernel version specific tools for version 4.4.0-1012
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1012 on
+ ARM (hard float).
+ You probabaly want to install the linux-tools-<flavour> meta package.
+
+Package: linux-raspi2-tools-4.4.0-1016
+Description-md5: a5e80010b6a559bce60bd710e4d61815
+Description-en: Linux kernel version specific tools for version 4.4.0-1016
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1016 on
+ ARM (hard float).
+ You probabaly want to install the linux-tools-<flavour> meta package.
+
+Package: linux-tools-4.4.0-1010-raspi2
+Description-md5: f97bcd0d1c7281a1be39ad2f6686b0f5
+Description-en: Linux kernel version specific tools for version 4.4.0-1010
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1010 on
+ ARM (hard float).
+
+Package: linux-tools-4.4.0-1012-raspi2
+Description-md5: 94662e9fbe44b31d1c1265e108104437
+Description-en: Linux kernel version specific tools for version 4.4.0-1012
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1012 on
+ ARM (hard float).
+
+Package: linux-tools-4.4.0-1016-raspi2
+Description-md5: 14e4dae30b0d058e3a96584ff0e40a8c
+Description-en: Linux kernel version specific tools for version 4.4.0-1016
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1016 on
+ ARM (hard float).
+
+Package: linux-tools-raspi2
+Description-md5: 1dcd2a3e7720acd859349d339e6d4649
+Description-en: Linux kernel versioned Tools.
+ This package will always depend on the latest Linux kernel versioned tools
+ available for ARM BCM2709 systems. The Ubuntu patches have been applied.
+
+Package: xen-hypervisor-4.4-armhf
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Description-en: Transitional package for upgrade
+
+Package: xen-hypervisor-4.5-armhf
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Description-en: Transitional package for upgrade
+
+Package: xen-hypervisor-4.6-armhf
+Description-md5: 770882b66be138559f0e4ba0ccea266a
+Description-en: Xen Hypervisor on ARMHF
+ The hypervisor is the "core" for XEN itself.  It gets booted by the boot
+ loader and controls cpu and memory, sharing them between your
+ administrative domain (Domain 0) and the virtual guest systems.
+ .
+ In order to boot a XEN system along with this package you also need a
+ kernel specifically crafted to work as the Domain 0, mediating hardware
+ access for XEN itself.
+
+Package: xen-system-armhf
+Description-md5: ef510b9bca575d71ee49669f86853db1
+Description-en: Xen System on ARMHF (meta-package)
+ This package depends on the latest Xen hypervisor for use on ARMHF and the
+ Xen utils.
+
+Package: lib64go7
+Description-md5: 07fa56d3e232224f82aa278bc1a968bd
+Description-en: Runtime library for GNU Go applications (64bit)
+ Library needed for GNU Go applications linked against the
+ shared library.
+
+Package: lib64go7-dbg
+Description-md5: 1ca0a6548ec7597551697c64085d6886
+Description-en: Runtime library for GNU Go applications (64bit debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+

@@ -1,0 +1,38 @@
+
+.primary-toolbar .entry,
+.menubar.toolbar .entry,
+.header-bar .entry {
+    border-image: url("assets/radiance-entry-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar .entry:focus,
+.menubar.toolbar .entry:focus,
+.header-bar .entry:focus {
+    border-image: url("assets/radiance-entry-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar GtkComboBox.combobox-entry .button:focus:insensitive,
+.menubar.toolbar GtkComboBox.combobox-entry .button,
+.menubar.toolbar GtkComboBox.combobox-entry .button:focus:insensitive,
+.header-bar GtkComboBox.combobox-entry .button,
+.header-bar GtkComboBox.combobox-entry .button:focus:insensitive {
+    border-image: url("assets/radiance-combobox-button-toolbar.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .button:focus,
+.menubar.toolbar GtkComboBox.combobox-entry .button:focus,
+.header-bar GtkComboBox.combobox-entry .button:focus {
+    border-image: url("assets/radiance-combobox-button-toolbar-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .button:focus:active:focus,
+.menubar.toolbar GtkComboBox.combobox-entry .button:focus:active:focus,
+.header-bar GtkComboBox.combobox-entry .button:focus:active:focus {
+    border-image: url("assets/radiance-combobox-button-toolbar-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+}
+
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+    border-color: #b8ab9c;
+}

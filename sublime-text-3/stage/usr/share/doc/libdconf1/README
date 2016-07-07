@@ -1,0 +1,81 @@
+dconf is a simple key/value storage system that is heavily optimised for
+reading.  This makes it an ideal system for storing user preferences
+(which are read 1000s of times for each time the user changes one).  It
+was created with this usecase in mind.
+
+All preferences are stored in a single large binary file.  Layering of
+preferences is possible using multiple files (ie: for site defaults).
+Lock-down is also supported.  The binary file for the defaults can
+optionally be compiled from a set of plain text keyfiles.
+
+dconf has a partial client/server architecture.  It uses D-Bus.  The
+server is only involved in writes (and is not activated in the user
+session until the user modifies a preference).  The service is
+stateless and can exit freely at any time (and is therefore robust
+against crashes).  The list of paths that each process is watching is
+stored within the D-Bus daemon itself (as D-Bus signal match rules).
+
+Reads are performed by direct access (via mmap) to the on-disk database
+which is essentially a hashtable.  For this reason, dconf reads
+typically involve zero system calls and are comparable to a hashtable
+lookup in terms of speed.  Practically speaking, in simple non-layered
+setups, dconf is less than 10 times slower than GHashTable.
+
+Writes are assumed only to happen in response to explicit user
+interaction (like clicking on a checkbox in a preferences dialog) and
+are therefore not optimised at all.  On some file systems, dconf-service
+will call fsync() for every write, which can introduce a latency of up
+to 100ms.  This latency is hidden by the client libraries through a
+clever "fast" mechanism that records the outstanding changes locally (so
+they can be read back immediately) until the service signals that a
+write has completed.
+
+dconf mostly targets Free Software operating systems.  It will
+theoretically run on Mac OS but there isn't much point to that (since
+Mac OS applications want to store preferences in plist files).  It is
+not possible to use dconf on Windows because of the inability to rename
+over a file that's still in use (which is what the dconf-service does on
+every write).
+
+The dconf API is not particularly friendly.  Because of this and the
+lack of portability, you almost certainly want to use some sort of
+wrapper API around it.  The wrapper API used by Gtk+ and GNOME
+applications is GSettings, which is included as part of GLib.  GSettings
+has backends for Windows (using the registry) and Mac OS (using property
+lists) as well as its dconf backend and is the proper API to use for
+graphical applications.
+
+dconf itself attempts to maintain a rather low profile with respect to
+dependencies.  For the most part, there is only a dependency on GLib.
+
+With the exception of the bin/ and editor/ directories, dconf is written
+in C using libglib.  This is a very strong dependency due to the fact
+that dconf's type system is GVariant.
+
+The dconf-service has a dependency on libgio, as do the client libraries
+that make use of GDBus (and the utilities that make use of those
+libraries).
+
+The standard client library is libdconf (in client/).  If you can't use
+GSettings then you should probably want to use this next.
+
+There is also a libdbus-1 based library.  It does not depend on libgio,
+but still depends on libglib.  It is not recommended to use this library
+unless you have a legacy dependency on libdbus-1 (such as in Qt
+applications).
+
+bin/ and editor/ are written in Vala.  The Vala compiler is not required
+to compile tarball releases but is required for building out of git.
+
+The editor also has a dependency on Gtk+ 3 and libxml2.  The libxml2
+dependency should disappear at some point in the near future.  In any
+case, building the editor is optional (and can be switched off using
+--disable-editor).
+
+Installing dconf follows the typical automake dance:
+
+  ./configure            (or autogen.sh from git)
+  make
+  make install
+
+If you plan to contribute to dconf, please see the HACKING file.

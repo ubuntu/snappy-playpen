@@ -1,0 +1,28 @@
+name: gitter
+version: "3.0.3-1"
+summary: Gitter.im chat client
+description: a client for the github gitter.im chat service
+confinement: devmode
+
+apps:
+  gitter:
+    command: desktop-launch ./Gitter
+
+parts:
+  download:
+    source: .
+    plugin: make
+    stage-packages: [wget, dpkg]
+  gitter:
+    plugin: copy
+    files:
+      locales: locales
+      Gitter: Gitter
+      nw.pak: nw.pak
+      icudtl.dat: icudtl.dat
+      libffmpegsumo.so: libffmpegsumo.so
+    stage-packages:
+      - libgl1-mesa-glx
+      - libnss3
+    after: [desktop/gtk3, download]
+

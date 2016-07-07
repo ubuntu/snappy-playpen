@@ -1,0 +1,1 @@
+../libqt5core5a/LGPL_EXCEPTION.txt

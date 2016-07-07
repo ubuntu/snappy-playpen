@@ -1,0 +1,957 @@
+Package: bcmwl-kernel-source
+Priority: optional
+Section: restricted/admin
+Installed-Size: 7825
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Alberto Milone <alberto.milone@canonical.com>
+Architecture: amd64
+Source: bcmwl
+Version: 6.30.223.248+bdcom-0ubuntu8
+Replaces: bcmwl-modaliases
+Depends: dkms, linux-libc-dev, libc6-dev
+Conflicts: bcmwl-modaliases
+Filename: pool/restricted/b/bcmwl/bcmwl-kernel-source_6.30.223.248+bdcom-0ubuntu8_amd64.deb
+Size: 1514768
+MD5sum: 389fcba22756fd0ee4d4d41c68911793
+SHA1: 1de7df753246c66c351f46f1b9c3b3968283b15f
+SHA256: 49a0bc575a25605d75325964d87955e7286b226679aa56b12fb9e94ec7c9587e
+Description: Broadcom 802.11 Linux STA wireless driver source
+Modaliases: wl(pci:v000014E4d00004311sv*sd*bc02sc80i*, pci:v000014E4d00004312sv*sd*bc02sc80i*, pci:v000014E4d00004313sv*sd*bc02sc80i*, pci:v000014E4d00004315sv*sd*bc02sc80i*, pci:v000014E4d00004727sv*sd*bc02sc80i*, pci:v000014E4d00004328sv*sd*bc02sc80i*, pci:v000014E4d00004328sv*sd*bc02sc80i*, pci:v000014E4d00004329sv*sd*bc02sc80i*, pci:v000014E4d0000432asv*sd*bc02sc80i*, pci:v000014E4d0000432bsv*sd*bc02sc80i*, pci:v000014E4d0000432csv*sd*bc02sc80i*, pci:v000014E4d0000432dsv*sd*bc02sc80i*, pci:v000014E4d00004365sv*sd*bc02sc80i*, pci:v000014E4d00004353sv*sd*bc02sc80i*, pci:v000014E4d00004357sv*sd*bc02sc80i*, pci:v000014E4d00004358sv*sd*bc02sc80i*, pci:v000014E4d00004359sv*sd*bc02sc80i*, pci:v000014E4d00004331sv*sd*bc02sc80i*, pci:v000014E4d000043a0sv*sd*bc02sc80i*, pci:v000014E4d000043B1sv*sd*bc02sc80i*)
+Description-md5: 9da890d8409fb430fa6f9a0c8a37934a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: intel-microcode
+Priority: extra
+Section: restricted/admin
+Installed-Size: 571
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Architecture: amd64
+Version: 3.20151106.1
+Depends: iucode-tool (>= 1.0)
+Recommends: initramfs-tools (>= 0.113~)
+Conflicts: microcode.ctl (<< 0.18~0)
+Filename: pool/restricted/i/intel-microcode/intel-microcode_3.20151106.1_amd64.deb
+Size: 464444
+MD5sum: e8a45c9674b27a8c5adf303fe31d723d
+SHA1: 5f931a9e1011b93e83f2807b0d32882d346333ac
+SHA256: 752528a4373dfebe4ce537866cf99810fe8b8d7a6d92b01252713f5d7f9c671b
+Description: Processor microcode firmware for Intel CPUs
+Homepage: http://feeds.downloadcenter.intel.com/rss/?p=483&lang=eng
+Description-md5: 3edb9824276886579313f0e847f6bb14
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: iucode-tool
+Priority: optional
+Section: restricted/utils
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Architecture: amd64
+Version: 1.5.1-1
+Depends: libc6 (>= 2.14)
+Recommends: intel-microcode (>= 1)
+Filename: pool/restricted/i/iucode-tool/iucode-tool_1.5.1-1_amd64.deb
+Size: 34076
+MD5sum: 6a1a9a29d1b9f999d99f072eb243f111
+SHA1: 2c9ed67daca0299f5fe20b4ecf8ccd5af3b64fbe
+SHA256: 101efe962162c6c9b0873acc51d447930babde98313218dd48fcef3b48e7b96a
+Description: Intel processor microcode tool
+Homepage: https://gitlab.com/iucode-tool
+Description-md5: 85b8e9a4d04e1dafc3c5baa7e46a23a4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: libcuda1-304
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19640
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304
+Version: 304.131-0ubuntu3
+Replaces: libcuda-5.0-1
+Provides: libcuda-5.0-1
+Depends: libc6 (>= 2.2.5), zlib1g (>= 1:1.1.4)
+Conflicts: libcuda-5.0-1
+Filename: pool/restricted/n/nvidia-graphics-drivers-304/libcuda1-304_304.131-0ubuntu3_amd64.deb
+Size: 6417208
+MD5sum: 832dbd07d9401ae34077e674c5a3deab
+SHA1: 026ea8210303e44db76414eb2eaf33348bffadc0
+SHA256: 9165202deac6b1e06e7b70f0a4169dfc73f311a4ab2d2e36d2402fb3ff096eb1
+Description: NVIDIA CUDA runtime library
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: libcuda1-304-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19640
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Replaces: libcuda-5.0-1
+Provides: libcuda-5.0-1
+Depends: libc6 (>= 2.2.5), zlib1g (>= 1:1.1.4)
+Conflicts: libcuda-5.0-1
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/libcuda1-304-updates_304.131-0ubuntu3_amd64.deb
+Size: 6419984
+MD5sum: e621e212543985ecd82c54032d83e55b
+SHA1: 649496dce02a7521ea4011213564e30527790386
+SHA256: a1273403dffaaa39eb0fc2b2d8e414c3be204d03962e38e4418d87b2558a46e1
+Description: NVIDIA CUDA runtime library
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: libcuda1-340
+Priority: optional
+Section: restricted/misc
+Installed-Size: 27392
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Replaces: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1
+Provides: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1
+Depends: libc6 (>= 2.2.5)
+Breaks: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/libcuda1-340_340.96-0ubuntu3_amd64.deb
+Size: 8747100
+MD5sum: 46fd72ef0598decc38d9047f7ca3f711
+SHA1: 2ff51e592312f2f52102e8fe8220517ad167f548
+SHA256: b818b7a26a39a8af8affeb628274f03a0788be19e89115859fba177644d7ad3b
+Description: NVIDIA CUDA runtime library
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: libcuda1-361
+Priority: optional
+Section: restricted/misc
+Installed-Size: 34042
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Replaces: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1
+Provides: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1
+Depends: libc6 (>= 2.2.5)
+Breaks: libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1, libcuda-7.0-1, libcuda-7.5-1
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/libcuda1-361_361.42-0ubuntu2_amd64.deb
+Size: 8878266
+MD5sum: 54e4b37063dd4f089c2263971b9cc702
+SHA1: 51a4aa128a6f030aea0b29355d446f5acc220c16
+SHA256: fd3a4d9208df396b56a68a9a2be69d1ab800ff9b24994b10faf0f1fce97e7b7f
+Description: NVIDIA CUDA runtime library
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-304
+Priority: optional
+Section: restricted/misc
+Installed-Size: 169392
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304
+Version: 304.131-0ubuntu3
+Replaces: xorg-driver-binary
+Provides: nvidia-driver-binary, xorg-driver-binary, xorg-driver-video
+Depends: x11-common (>= 1:7.0.0), make, sed (>> 3.0), dkms, linux-libc-dev, libc6-dev, patch, acpid, lib32gcc1, libc6-i386, xserver-xorg-legacy, libc6 (>= 2.2.5), libgcc1 (>= 1:3.3), libx11-6, libxext6, libxv1, libxvmc1, xorg-video-abi-11 | xorg-video-abi-12 | xorg-video-abi-13 | xorg-video-abi-14 | xorg-video-abi-15 | xorg-video-abi-18 | xorg-video-abi-19 | xorg-video-abi-20, xserver-xorg-core
+Recommends: nvidia-settings (>= 331.20), libcuda1-304, nvidia-opencl-icd-304
+Conflicts: xorg-driver-binary
+Filename: pool/restricted/n/nvidia-graphics-drivers-304/nvidia-304_304.131-0ubuntu3_amd64.deb
+Size: 35529992
+MD5sum: 8b5fac315ab60e774c5561759d4c1ece
+SHA1: 57d8a215dcdebfbddacde5f0f6448b52c3b63afc
+SHA256: 2e1ba79614cf2ef968a483748e38e1dfe518833edfd61608995489e62a5d964c
+Description: NVIDIA legacy binary driver - version 304.131
+Modaliases: nvidia_304(pci:v000010DEd00000040sv*sd*bc03sc*i*, pci:v000010DEd00000041sv*sd*bc03sc*i*, pci:v000010DEd00000042sv*sd*bc03sc*i*, pci:v000010DEd00000043sv*sd*bc03sc*i*, pci:v000010DEd00000044sv*sd*bc03sc*i*, pci:v000010DEd00000045sv*sd*bc03sc*i*, pci:v000010DEd00000046sv*sd*bc03sc*i*, pci:v000010DEd00000047sv*sd*bc03sc*i*, pci:v000010DEd00000048sv*sd*bc03sc*i*, pci:v000010DEd0000004Esv*sd*bc03sc*i*, pci:v000010DEd00000090sv*sd*bc03sc*i*, pci:v000010DEd00000091sv*sd*bc03sc*i*, pci:v000010DEd00000092sv*sd*bc03sc*i*, pci:v000010DEd00000093sv*sd*bc03sc*i*, pci:v000010DEd00000095sv*sd*bc03sc*i*, pci:v000010DEd00000098sv*sd*bc03sc*i*, pci:v000010DEd00000099sv*sd*bc03sc*i*, pci:v000010DEd0000009Dsv*sd*bc03sc*i*, pci:v000010DEd000000C0sv*sd*bc03sc*i*, pci:v000010DEd000000C1sv*sd*bc03sc*i*, pci:v000010DEd000000C2sv*sd*bc03sc*i*, pci:v000010DEd000000C3sv*sd*bc03sc*i*, pci:v000010DEd000000C8sv*sd*bc03sc*i*, pci:v000010DEd000000C9sv*sd*bc03sc*i*, pci:v000010DEd000000CCsv*sd*bc03sc*i*, pci:v000010DEd000000CDsv*sd*bc03sc*i*, pci:v000010DEd000000CEsv*sd*bc03sc*i*, pci:v000010DEd000000F1sv*sd*bc03sc*i*, pci:v000010DEd000000F2sv*sd*bc03sc*i*, pci:v000010DEd000000F3sv*sd*bc03sc*i*, pci:v000010DEd000000F4sv*sd*bc03sc*i*, pci:v000010DEd000000F5sv*sd*bc03sc*i*, pci:v000010DEd000000F6sv*sd*bc03sc*i*, pci:v000010DEd000000F8sv*sd*bc03sc*i*, pci:v000010DEd000000F9sv*sd*bc03sc*i*, pci:v000010DEd00000140sv*sd*bc03sc*i*, pci:v000010DEd00000141sv*sd*bc03sc*i*, pci:v000010DEd00000142sv*sd*bc03sc*i*, pci:v000010DEd00000143sv*sd*bc03sc*i*, pci:v000010DEd00000144sv*sd*bc03sc*i*, pci:v000010DEd00000145sv*sd*bc03sc*i*, pci:v000010DEd00000146sv*sd*bc03sc*i*, pci:v000010DEd00000147sv*sd*bc03sc*i*, pci:v000010DEd00000148sv*sd*bc03sc*i*, pci:v000010DEd00000149sv*sd*bc03sc*i*, pci:v000010DEd0000014Asv*sd*bc03sc*i*, pci:v000010DEd0000014Csv*sd*bc03sc*i*, pci:v000010DEd0000014Dsv*sd*bc03sc*i*, pci:v000010DEd0000014Esv*sd*bc03sc*i*, pci:v000010DEd0000014Fsv*sd*bc03sc*i*, pci:v000010DEd00000160sv*sd*bc03sc*i*, pci:v000010DEd00000161sv*sd*bc03sc*i*, pci:v000010DEd00000162sv*sd*bc03sc*i*, pci:v000010DEd00000163sv*sd*bc03sc*i*, pci:v000010DEd00000164sv*sd*bc03sc*i*, pci:v000010DEd00000165sv*sd*bc03sc*i*, pci:v000010DEd00000166sv*sd*bc03sc*i*, pci:v000010DEd00000167sv*sd*bc03sc*i*, pci:v000010DEd00000168sv*sd*bc03sc*i*, pci:v000010DEd00000169sv*sd*bc03sc*i*, pci:v000010DEd0000016Asv*sd*bc03sc*i*, pci:v000010DEd00000191sv*sd*bc03sc*i*, pci:v000010DEd00000193sv*sd*bc03sc*i*, pci:v000010DEd00000194sv*sd*bc03sc*i*, pci:v000010DEd00000197sv*sd*bc03sc*i*, pci:v000010DEd0000019Dsv*sd*bc03sc*i*, pci:v000010DEd0000019Esv*sd*bc03sc*i*, pci:v000010DEd000001D0sv*sd*bc03sc*i*, pci:v000010DEd000001D1sv*sd*bc03sc*i*, pci:v000010DEd000001D2sv*sd*bc03sc*i*, pci:v000010DEd000001D3sv*sd*bc03sc*i*, pci:v000010DEd000001D6sv*sd*bc03sc*i*, pci:v000010DEd000001D7sv*sd*bc03sc*i*, pci:v000010DEd000001D8sv*sd*bc03sc*i*, pci:v000010DEd000001DAsv*sd*bc03sc*i*, pci:v000010DEd000001DBsv*sd*bc03sc*i*, pci:v000010DEd000001DCsv*sd*bc03sc*i*, pci:v000010DEd000001DDsv*sd*bc03sc*i*, pci:v000010DEd000001DEsv*sd*bc03sc*i*, pci:v000010DEd000001DFsv*sd*bc03sc*i*, pci:v000010DEd00000221sv*sd*bc03sc*i*, pci:v000010DEd00000222sv*sd*bc03sc*i*, pci:v000010DEd00000240sv*sd*bc03sc*i*, pci:v000010DEd00000241sv*sd*bc03sc*i*, pci:v000010DEd00000242sv*sd*bc03sc*i*, pci:v000010DEd00000244sv*sd*bc03sc*i*, pci:v000010DEd00000245sv*sd*bc03sc*i*, pci:v000010DEd00000247sv*sd*bc03sc*i*, pci:v000010DEd00000290sv*sd*bc03sc*i*, pci:v000010DEd00000291sv*sd*bc03sc*i*, pci:v000010DEd00000292sv*sd*bc03sc*i*, pci:v000010DEd00000293sv*sd*bc03sc*i*, pci:v000010DEd00000294sv*sd*bc03sc*i*, pci:v000010DEd00000295sv*sd*bc03sc*i*, pci:v000010DEd00000297sv*sd*bc03sc*i*, pci:v000010DEd00000298sv*sd*bc03sc*i*, pci:v000010DEd00000299sv*sd*bc03sc*i*, pci:v000010DEd0000029Asv*sd*bc03sc*i*, pci:v000010DEd0000029Bsv*sd*bc03sc*i*, pci:v000010DEd0000029Csv*sd*bc03sc*i*, pci:v000010DEd0000029Dsv*sd*bc03sc*i*, pci:v000010DEd0000029Esv*sd*bc03sc*i*, pci:v000010DEd0000029Fsv*sd*bc03sc*i*, pci:v000010DEd000002E0sv*sd*bc03sc*i*, pci:v000010DEd000002E1sv*sd*bc03sc*i*, pci:v000010DEd000002E2sv*sd*bc03sc*i*, pci:v000010DEd000002E3sv*sd*bc03sc*i*, pci:v000010DEd000002E4sv*sd*bc03sc*i*, pci:v000010DEd0000038Bsv*sd*bc03sc*i*, pci:v000010DEd00000390sv*sd*bc03sc*i*, pci:v000010DEd00000391sv*sd*bc03sc*i*, pci:v000010DEd00000392sv*sd*bc03sc*i*, pci:v000010DEd00000393sv*sd*bc03sc*i*, pci:v000010DEd00000394sv*sd*bc03sc*i*, pci:v000010DEd00000395sv*sd*bc03sc*i*, pci:v000010DEd00000397sv*sd*bc03sc*i*, pci:v000010DEd00000398sv*sd*bc03sc*i*, pci:v000010DEd00000399sv*sd*bc03sc*i*, pci:v000010DEd0000039Csv*sd*bc03sc*i*, pci:v000010DEd0000039Esv*sd*bc03sc*i*, pci:v000010DEd000003D0sv*sd*bc03sc*i*, pci:v000010DEd000003D1sv*sd*bc03sc*i*, pci:v000010DEd000003D2sv*sd*bc03sc*i*, pci:v000010DEd000003D5sv*sd*bc03sc*i*, pci:v000010DEd000003D6sv*sd*bc03sc*i*, pci:v000010DEd00000400sv*sd*bc03sc*i*, pci:v000010DEd00000401sv*sd*bc03sc*i*, pci:v000010DEd00000402sv*sd*bc03sc*i*, pci:v000010DEd00000403sv*sd*bc03sc*i*, pci:v000010DEd00000404sv*sd*bc03sc*i*, pci:v000010DEd00000405sv*sd*bc03sc*i*, pci:v000010DEd00000406sv*sd*bc03sc*i*, pci:v000010DEd00000407sv*sd*bc03sc*i*, pci:v000010DEd00000408sv*sd*bc03sc*i*, pci:v000010DEd00000409sv*sd*bc03sc*i*, pci:v000010DEd0000040Asv*sd*bc03sc*i*, pci:v000010DEd0000040Bsv*sd*bc03sc*i*, pci:v000010DEd0000040Csv*sd*bc03sc*i*, pci:v000010DEd0000040Dsv*sd*bc03sc*i*, pci:v000010DEd0000040Esv*sd*bc03sc*i*, pci:v000010DEd0000040Fsv*sd*bc03sc*i*, pci:v000010DEd00000410sv*sd*bc03sc*i*, pci:v000010DEd00000420sv*sd*bc03sc*i*, pci:v000010DEd00000421sv*sd*bc03sc*i*, pci:v000010DEd00000422sv*sd*bc03sc*i*, pci:v000010DEd00000423sv*sd*bc03sc*i*, pci:v000010DEd00000424sv*sd*bc03sc*i*, pci:v000010DEd00000425sv*sd*bc03sc*i*, pci:v000010DEd00000426sv*sd*bc03sc*i*, pci:v000010DEd00000427sv*sd*bc03sc*i*, pci:v000010DEd00000428sv*sd*bc03sc*i*, pci:v000010DEd00000429sv*sd*bc03sc*i*, pci:v000010DEd0000042Asv*sd*bc03sc*i*, pci:v000010DEd0000042Bsv*sd*bc03sc*i*, pci:v000010DEd0000042Csv*sd*bc03sc*i*, pci:v000010DEd0000042Dsv*sd*bc03sc*i*, pci:v000010DEd0000042Esv*sd*bc03sc*i*, pci:v000010DEd0000042Fsv*sd*bc03sc*i*, pci:v000010DEd00000531sv*sd*bc03sc*i*, pci:v000010DEd00000533sv*sd*bc03sc*i*, pci:v000010DEd0000053Asv*sd*bc03sc*i*, pci:v000010DEd0000053Bsv*sd*bc03sc*i*, pci:v000010DEd0000053Esv*sd*bc03sc*i*, pci:v000010DEd000005E0sv*sd*bc03sc*i*, pci:v000010DEd000005E1sv*sd*bc03sc*i*, pci:v000010DEd000005E2sv*sd*bc03sc*i*, pci:v000010DEd000005E3sv*sd*bc03sc*i*, pci:v000010DEd000005E6sv*sd*bc03sc*i*, pci:v000010DEd000005E7sv*sd*bc03sc*i*, pci:v000010DEd000005EAsv*sd*bc03sc*i*, pci:v000010DEd000005EBsv*sd*bc03sc*i*, pci:v000010DEd000005EDsv*sd*bc03sc*i*, pci:v000010DEd000005F8sv*sd*bc03sc*i*, pci:v000010DEd000005F9sv*sd*bc03sc*i*, pci:v000010DEd000005FDsv*sd*bc03sc*i*, pci:v000010DEd000005FEsv*sd*bc03sc*i*, pci:v000010DEd000005FFsv*sd*bc03sc*i*, pci:v000010DEd00000600sv*sd*bc03sc*i*, pci:v000010DEd00000601sv*sd*bc03sc*i*, pci:v000010DEd00000602sv*sd*bc03sc*i*, pci:v000010DEd00000603sv*sd*bc03sc*i*, pci:v000010DEd00000604sv*sd*bc03sc*i*, pci:v000010DEd00000605sv*sd*bc03sc*i*, pci:v000010DEd00000606sv*sd*bc03sc*i*, pci:v000010DEd00000607sv*sd*bc03sc*i*, pci:v000010DEd00000608sv*sd*bc03sc*i*, pci:v000010DEd00000609sv*sd*bc03sc*i*, pci:v000010DEd0000060Asv*sd*bc03sc*i*, pci:v000010DEd0000060Bsv*sd*bc03sc*i*, pci:v000010DEd0000060Csv*sd*bc03sc*i*, pci:v000010DEd0000060Dsv*sd*bc03sc*i*, pci:v000010DEd0000060Fsv*sd*bc03sc*i*, pci:v000010DEd00000610sv*sd*bc03sc*i*, pci:v000010DEd00000611sv*sd*bc03sc*i*, pci:v000010DEd00000612sv*sd*bc03sc*i*, pci:v000010DEd00000613sv*sd*bc03sc*i*, pci:v000010DEd00000614sv*sd*bc03sc*i*, pci:v000010DEd00000615sv*sd*bc03sc*i*, pci:v000010DEd00000617sv*sd*bc03sc*i*, pci:v000010DEd00000618sv*sd*bc03sc*i*, pci:v000010DEd00000619sv*sd*bc03sc*i*, pci:v000010DEd0000061Asv*sd*bc03sc*i*, pci:v000010DEd0000061Bsv*sd*bc03sc*i*, pci:v000010DEd0000061Csv*sd*bc03sc*i*, pci:v000010DEd0000061Dsv*sd*bc03sc*i*, pci:v000010DEd0000061Esv*sd*bc03sc*i*, pci:v000010DEd0000061Fsv*sd*bc03sc*i*, pci:v000010DEd00000621sv*sd*bc03sc*i*, pci:v000010DEd00000622sv*sd*bc03sc*i*, pci:v000010DEd00000623sv*sd*bc03sc*i*, pci:v000010DEd00000625sv*sd*bc03sc*i*, pci:v000010DEd00000626sv*sd*bc03sc*i*, pci:v000010DEd00000627sv*sd*bc03sc*i*, pci:v000010DEd00000628sv*sd*bc03sc*i*, pci:v000010DEd0000062Asv*sd*bc03sc*i*, pci:v000010DEd0000062Bsv*sd*bc03sc*i*, pci:v000010DEd0000062Csv*sd*bc03sc*i*, pci:v000010DEd0000062Dsv*sd*bc03sc*i*, pci:v000010DEd0000062Esv*sd*bc03sc*i*, pci:v000010DEd00000630sv*sd*bc03sc*i*, pci:v000010DEd00000631sv*sd*bc03sc*i*, pci:v000010DEd00000632sv*sd*bc03sc*i*, pci:v000010DEd00000635sv*sd*bc03sc*i*, pci:v000010DEd00000637sv*sd*bc03sc*i*, pci:v000010DEd00000638sv*sd*bc03sc*i*, pci:v000010DEd0000063Asv*sd*bc03sc*i*, pci:v000010DEd00000640sv*sd*bc03sc*i*, pci:v000010DEd00000641sv*sd*bc03sc*i*, pci:v000010DEd00000643sv*sd*bc03sc*i*, pci:v000010DEd00000644sv*sd*bc03sc*i*, pci:v000010DEd00000645sv*sd*bc03sc*i*, pci:v000010DEd00000646sv*sd*bc03sc*i*, pci:v000010DEd00000647sv*sd*bc03sc*i*, pci:v000010DEd00000648sv*sd*bc03sc*i*, pci:v000010DEd00000649sv*sd*bc03sc*i*, pci:v000010DEd0000064Asv*sd*bc03sc*i*, pci:v000010DEd0000064Bsv*sd*bc03sc*i*, pci:v000010DEd0000064Csv*sd*bc03sc*i*, pci:v000010DEd00000651sv*sd*bc03sc*i*, pci:v000010DEd00000652sv*sd*bc03sc*i*, pci:v000010DEd00000653sv*sd*bc03sc*i*, pci:v000010DEd00000654sv*sd*bc03sc*i*, pci:v000010DEd00000656sv*sd*bc03sc*i*, pci:v000010DEd00000658sv*sd*bc03sc*i*, pci:v000010DEd00000659sv*sd*bc03sc*i*, pci:v000010DEd0000065Asv*sd*bc03sc*i*, pci:v000010DEd0000065Bsv*sd*bc03sc*i*, pci:v000010DEd0000065Csv*sd*bc03sc*i*, pci:v000010DEd000006C0sv*sd*bc03sc*i*, pci:v000010DEd000006C4sv*sd*bc03sc*i*, pci:v000010DEd000006CAsv*sd*bc03sc*i*, pci:v000010DEd000006CDsv*sd*bc03sc*i*, pci:v000010DEd000006D1sv*sd*bc03sc*i*, pci:v000010DEd000006D2sv*sd*bc03sc*i*, pci:v000010DEd000006D8sv*sd*bc03sc*i*, pci:v000010DEd000006D9sv*sd*bc03sc*i*, pci:v000010DEd000006DAsv*sd*bc03sc*i*, pci:v000010DEd000006DCsv*sd*bc03sc*i*, pci:v000010DEd000006DDsv*sd*bc03sc*i*, pci:v000010DEd000006DEsv*sd*bc03sc*i*, pci:v000010DEd000006DFsv*sd*bc03sc*i*, pci:v000010DEd000006E0sv*sd*bc03sc*i*, pci:v000010DEd000006E1sv*sd*bc03sc*i*, pci:v000010DEd000006E2sv*sd*bc03sc*i*, pci:v000010DEd000006E3sv*sd*bc03sc*i*, pci:v000010DEd000006E4sv*sd*bc03sc*i*, pci:v000010DEd000006E5sv*sd*bc03sc*i*, pci:v000010DEd000006E6sv*sd*bc03sc*i*, pci:v000010DEd000006E7sv*sd*bc03sc*i*, pci:v000010DEd000006E8sv*sd*bc03sc*i*, pci:v000010DEd000006E9sv*sd*bc03sc*i*, pci:v000010DEd000006EAsv*sd*bc03sc*i*, pci:v000010DEd000006EBsv*sd*bc03sc*i*, pci:v000010DEd000006ECsv*sd*bc03sc*i*, pci:v000010DEd000006EFsv*sd*bc03sc*i*, pci:v000010DEd000006F1sv*sd*bc03sc*i*, pci:v000010DEd000006F8sv*sd*bc03sc*i*, pci:v000010DEd000006F9sv*sd*bc03sc*i*, pci:v000010DEd000006FAsv*sd*bc03sc*i*, pci:v000010DEd000006FBsv*sd*bc03sc*i*, pci:v000010DEd000006FDsv*sd*bc03sc*i*, pci:v000010DEd000006FFsv*sd*bc03sc*i*, pci:v000010DEd000007E0sv*sd*bc03sc*i*, pci:v000010DEd000007E1sv*sd*bc03sc*i*, pci:v000010DEd000007E2sv*sd*bc03sc*i*, pci:v000010DEd000007E3sv*sd*bc03sc*i*, pci:v000010DEd000007E5sv*sd*bc03sc*i*, pci:v000010DEd00000840sv*sd*bc03sc*i*, pci:v000010DEd00000844sv*sd*bc03sc*i*, pci:v000010DEd00000845sv*sd*bc03sc*i*, pci:v000010DEd00000846sv*sd*bc03sc*i*, pci:v000010DEd00000847sv*sd*bc03sc*i*, pci:v000010DEd00000848sv*sd*bc03sc*i*, pci:v000010DEd00000849sv*sd*bc03sc*i*, pci:v000010DEd0000084Asv*sd*bc03sc*i*, pci:v000010DEd0000084Bsv*sd*bc03sc*i*, pci:v000010DEd0000084Csv*sd*bc03sc*i*, pci:v000010DEd0000084Dsv*sd*bc03sc*i*, pci:v000010DEd0000084Fsv*sd*bc03sc*i*, pci:v000010DEd00000860sv*sd*bc03sc*i*, pci:v000010DEd00000861sv*sd*bc03sc*i*, pci:v000010DEd00000862sv*sd*bc03sc*i*, pci:v000010DEd00000863sv*sd*bc03sc*i*, pci:v000010DEd00000864sv*sd*bc03sc*i*, pci:v000010DEd00000865sv*sd*bc03sc*i*, pci:v000010DEd00000866sv*sd*bc03sc*i*, pci:v000010DEd00000867sv*sd*bc03sc*i*, pci:v000010DEd00000868sv*sd*bc03sc*i*, pci:v000010DEd00000869sv*sd*bc03sc*i*, pci:v000010DEd0000086Asv*sd*bc03sc*i*, pci:v000010DEd0000086Csv*sd*bc03sc*i*, pci:v000010DEd0000086Dsv*sd*bc03sc*i*, pci:v000010DEd0000086Esv*sd*bc03sc*i*, pci:v000010DEd0000086Fsv*sd*bc03sc*i*, pci:v000010DEd00000870sv*sd*bc03sc*i*, pci:v000010DEd00000871sv*sd*bc03sc*i*, pci:v000010DEd00000872sv*sd*bc03sc*i*, pci:v000010DEd00000873sv*sd*bc03sc*i*, pci:v000010DEd00000874sv*sd*bc03sc*i*, pci:v000010DEd00000876sv*sd*bc03sc*i*, pci:v000010DEd0000087Asv*sd*bc03sc*i*, pci:v000010DEd0000087Dsv*sd*bc03sc*i*, pci:v000010DEd0000087Esv*sd*bc03sc*i*, pci:v000010DEd0000087Fsv*sd*bc03sc*i*, pci:v000010DEd000008A0sv*sd*bc03sc*i*, pci:v000010DEd000008A2sv*sd*bc03sc*i*, pci:v000010DEd000008A3sv*sd*bc03sc*i*, pci:v000010DEd000008A4sv*sd*bc03sc*i*, pci:v000010DEd000008A5sv*sd*bc03sc*i*, pci:v000010DEd00000A20sv*sd*bc03sc*i*, pci:v000010DEd00000A22sv*sd*bc03sc*i*, pci:v000010DEd00000A23sv*sd*bc03sc*i*, pci:v000010DEd00000A26sv*sd*bc03sc*i*, pci:v000010DEd00000A27sv*sd*bc03sc*i*, pci:v000010DEd00000A28sv*sd*bc03sc*i*, pci:v000010DEd00000A29sv*sd*bc03sc*i*, pci:v000010DEd00000A2Asv*sd*bc03sc*i*, pci:v000010DEd00000A2Bsv*sd*bc03sc*i*, pci:v000010DEd00000A2Csv*sd*bc03sc*i*, pci:v000010DEd00000A2Dsv*sd*bc03sc*i*, pci:v000010DEd00000A32sv*sd*bc03sc*i*, pci:v000010DEd00000A34sv*sd*bc03sc*i*, pci:v000010DEd00000A35sv*sd*bc03sc*i*, pci:v000010DEd00000A38sv*sd*bc03sc*i*, pci:v000010DEd00000A3Csv*sd*bc03sc*i*, pci:v000010DEd00000A60sv*sd*bc03sc*i*, pci:v000010DEd00000A62sv*sd*bc03sc*i*, pci:v000010DEd00000A63sv*sd*bc03sc*i*, pci:v000010DEd00000A64sv*sd*bc03sc*i*, pci:v000010DEd00000A65sv*sd*bc03sc*i*, pci:v000010DEd00000A66sv*sd*bc03sc*i*, pci:v000010DEd00000A67sv*sd*bc03sc*i*, pci:v000010DEd00000A68sv*sd*bc03sc*i*, pci:v000010DEd00000A69sv*sd*bc03sc*i*, pci:v000010DEd00000A6Asv*sd*bc03sc*i*, pci:v000010DEd00000A6Csv*sd*bc03sc*i*, pci:v000010DEd00000A6Esv*sd*bc03sc*i*, pci:v000010DEd00000A6Fsv*sd*bc03sc*i*, pci:v000010DEd00000A70sv*sd*bc03sc*i*, pci:v000010DEd00000A71sv*sd*bc03sc*i*, pci:v000010DEd00000A72sv*sd*bc03sc*i*, pci:v000010DEd00000A73sv*sd*bc03sc*i*, pci:v000010DEd00000A74sv*sd*bc03sc*i*, pci:v000010DEd00000A75sv*sd*bc03sc*i*, pci:v000010DEd00000A76sv*sd*bc03sc*i*, pci:v000010DEd00000A78sv*sd*bc03sc*i*, pci:v000010DEd00000A7Asv*sd*bc03sc*i*, pci:v000010DEd00000A7Csv*sd*bc03sc*i*, pci:v000010DEd00000CA0sv*sd*bc03sc*i*, pci:v000010DEd00000CA2sv*sd*bc03sc*i*, pci:v000010DEd00000CA3sv*sd*bc03sc*i*, pci:v000010DEd00000CA4sv*sd*bc03sc*i*, pci:v000010DEd00000CA5sv*sd*bc03sc*i*, pci:v000010DEd00000CA7sv*sd*bc03sc*i*, pci:v000010DEd00000CA8sv*sd*bc03sc*i*, pci:v000010DEd00000CA9sv*sd*bc03sc*i*, pci:v000010DEd00000CACsv*sd*bc03sc*i*, pci:v000010DEd00000CAFsv*sd*bc03sc*i*, pci:v000010DEd00000CB0sv*sd*bc03sc*i*, pci:v000010DEd00000CB1sv*sd*bc03sc*i*, pci:v000010DEd00000CBCsv*sd*bc03sc*i*, pci:v000010DEd00000DC0sv*sd*bc03sc*i*, pci:v000010DEd00000DC4sv*sd*bc03sc*i*, pci:v000010DEd00000DC5sv*sd*bc03sc*i*, pci:v000010DEd00000DC6sv*sd*bc03sc*i*, pci:v000010DEd00000DCDsv*sd*bc03sc*i*, pci:v000010DEd00000DCEsv*sd*bc03sc*i*, pci:v000010DEd00000DD1sv*sd*bc03sc*i*, pci:v000010DEd00000DD2sv*sd*bc03sc*i*, pci:v000010DEd00000DD3sv*sd*bc03sc*i*, pci:v000010DEd00000DD6sv*sd*bc03sc*i*, pci:v000010DEd00000DD8sv*sd*bc03sc*i*, pci:v000010DEd00000DDAsv*sd*bc03sc*i*, pci:v000010DEd00000DE0sv*sd*bc03sc*i*, pci:v000010DEd00000DE1sv*sd*bc03sc*i*, pci:v000010DEd00000DE2sv*sd*bc03sc*i*, pci:v000010DEd00000DE3sv*sd*bc03sc*i*, pci:v000010DEd00000DE4sv*sd*bc03sc*i*, pci:v000010DEd00000DE5sv*sd*bc03sc*i*, pci:v000010DEd00000DE8sv*sd*bc03sc*i*, pci:v000010DEd00000DE9sv*sd*bc03sc*i*, pci:v000010DEd00000DEAsv*sd*bc03sc*i*, pci:v000010DEd00000DEBsv*sd*bc03sc*i*, pci:v000010DEd00000DECsv*sd*bc03sc*i*, pci:v000010DEd00000DEDsv*sd*bc03sc*i*, pci:v000010DEd00000DEEsv*sd*bc03sc*i*, pci:v000010DEd00000DEFsv*sd*bc03sc*i*, pci:v000010DEd00000DF0sv*sd*bc03sc*i*, pci:v000010DEd00000DF1sv*sd*bc03sc*i*, pci:v000010DEd00000DF2sv*sd*bc03sc*i*, pci:v000010DEd00000DF3sv*sd*bc03sc*i*, pci:v000010DEd00000DF4sv*sd*bc03sc*i*, pci:v000010DEd00000DF5sv*sd*bc03sc*i*, pci:v000010DEd00000DF6sv*sd*bc03sc*i*, pci:v000010DEd00000DF7sv*sd*bc03sc*i*, pci:v000010DEd00000DF8sv*sd*bc03sc*i*, pci:v000010DEd00000DF9sv*sd*bc03sc*i*, pci:v000010DEd00000DFAsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd00000E22sv*sd*bc03sc*i*, pci:v000010DEd00000E23sv*sd*bc03sc*i*, pci:v000010DEd00000E24sv*sd*bc03sc*i*, pci:v000010DEd00000E30sv*sd*bc03sc*i*, pci:v000010DEd00000E31sv*sd*bc03sc*i*, pci:v000010DEd00000E3Asv*sd*bc03sc*i*, pci:v000010DEd00000E3Bsv*sd*bc03sc*i*, pci:v000010DEd00000F00sv*sd*bc03sc*i*, pci:v000010DEd00000F01sv*sd*bc03sc*i*, pci:v000010DEd00000FC0sv*sd*bc03sc*i*, pci:v000010DEd00000FC1sv*sd*bc03sc*i*, pci:v000010DEd00000FC2sv*sd*bc03sc*i*, pci:v000010DEd00000FC6sv*sd*bc03sc*i*, pci:v000010DEd00000FCEsv*sd*bc03sc*i*, pci:v000010DEd00000FD1sv*sd*bc03sc*i*, pci:v000010DEd00000FD2sv*sd*bc03sc*i*, pci:v000010DEd00000FD3sv*sd*bc03sc*i*, pci:v000010DEd00000FD4sv*sd*bc03sc*i*, pci:v000010DEd00000FD5sv*sd*bc03sc*i*, pci:v000010DEd00000FD8sv*sd*bc03sc*i*, pci:v000010DEd00000FD9sv*sd*bc03sc*i*, pci:v000010DEd00000FE0sv*sd*bc03sc*i*, pci:v000010DEd00000FF2sv*sd*bc03sc*i*, pci:v000010DEd00000FFBsv*sd*bc03sc*i*, pci:v000010DEd00000FFCsv*sd*bc03sc*i*, pci:v000010DEd00000FFDsv*sd*bc03sc*i*, pci:v000010DEd00000FFFsv*sd*bc03sc*i*, pci:v000010DEd00001022sv*sd*bc03sc*i*, pci:v000010DEd00001028sv*sd*bc03sc*i*, pci:v000010DEd00001040sv*sd*bc03sc*i*, pci:v000010DEd00001042sv*sd*bc03sc*i*, pci:v000010DEd00001048sv*sd*bc03sc*i*, pci:v000010DEd00001049sv*sd*bc03sc*i*, pci:v000010DEd0000104Asv*sd*bc03sc*i*, pci:v000010DEd00001050sv*sd*bc03sc*i*, pci:v000010DEd00001051sv*sd*bc03sc*i*, pci:v000010DEd00001052sv*sd*bc03sc*i*, pci:v000010DEd00001054sv*sd*bc03sc*i*, pci:v000010DEd00001055sv*sd*bc03sc*i*, pci:v000010DEd00001056sv*sd*bc03sc*i*, pci:v000010DEd00001057sv*sd*bc03sc*i*, pci:v000010DEd00001058sv*sd*bc03sc*i*, pci:v000010DEd00001059sv*sd*bc03sc*i*, pci:v000010DEd0000105Asv*sd*bc03sc*i*, pci:v000010DEd0000107Dsv*sd*bc03sc*i*, pci:v000010DEd00001080sv*sd*bc03sc*i*, pci:v000010DEd00001081sv*sd*bc03sc*i*, pci:v000010DEd00001082sv*sd*bc03sc*i*, pci:v000010DEd00001084sv*sd*bc03sc*i*, pci:v000010DEd00001086sv*sd*bc03sc*i*, pci:v000010DEd00001087sv*sd*bc03sc*i*, pci:v000010DEd00001088sv*sd*bc03sc*i*, pci:v000010DEd00001089sv*sd*bc03sc*i*, pci:v000010DEd0000108Bsv*sd*bc03sc*i*, pci:v000010DEd00001091sv*sd*bc03sc*i*, pci:v000010DEd00001094sv*sd*bc03sc*i*, pci:v000010DEd00001096sv*sd*bc03sc*i*, pci:v000010DEd0000109Asv*sd*bc03sc*i*, pci:v000010DEd0000109Bsv*sd*bc03sc*i*, pci:v000010DEd000010C0sv*sd*bc03sc*i*, pci:v000010DEd000010C3sv*sd*bc03sc*i*, pci:v000010DEd000010C5sv*sd*bc03sc*i*, pci:v000010DEd000010D8sv*sd*bc03sc*i*, pci:v000010DEd00001180sv*sd*bc03sc*i*, pci:v000010DEd00001183sv*sd*bc03sc*i*, pci:v000010DEd00001185sv*sd*bc03sc*i*, pci:v000010DEd00001188sv*sd*bc03sc*i*, pci:v000010DEd00001189sv*sd*bc03sc*i*, pci:v000010DEd0000118Fsv*sd*bc03sc*i*, pci:v000010DEd000011A0sv*sd*bc03sc*i*, pci:v000010DEd000011A1sv*sd*bc03sc*i*, pci:v000010DEd000011A7sv*sd*bc03sc*i*, pci:v000010DEd000011BAsv*sd*bc03sc*i*, pci:v000010DEd000011BCsv*sd*bc03sc*i*, pci:v000010DEd000011BDsv*sd*bc03sc*i*, pci:v000010DEd000011BEsv*sd*bc03sc*i*, pci:v000010DEd000011BFsv*sd*bc03sc*i*, pci:v000010DEd000011C0sv*sd*bc03sc*i*, pci:v000010DEd000011C6sv*sd*bc03sc*i*, pci:v000010DEd00001200sv*sd*bc03sc*i*, pci:v000010DEd00001201sv*sd*bc03sc*i*, pci:v000010DEd00001203sv*sd*bc03sc*i*, pci:v000010DEd00001205sv*sd*bc03sc*i*, pci:v000010DEd00001206sv*sd*bc03sc*i*, pci:v000010DEd00001207sv*sd*bc03sc*i*, pci:v000010DEd00001208sv*sd*bc03sc*i*, pci:v000010DEd00001210sv*sd*bc03sc*i*, pci:v000010DEd00001211sv*sd*bc03sc*i*, pci:v000010DEd00001212sv*sd*bc03sc*i*, pci:v000010DEd00001213sv*sd*bc03sc*i*, pci:v000010DEd00001241sv*sd*bc03sc*i*, pci:v000010DEd00001243sv*sd*bc03sc*i*, pci:v000010DEd00001244sv*sd*bc03sc*i*, pci:v000010DEd00001245sv*sd*bc03sc*i*, pci:v000010DEd00001246sv*sd*bc03sc*i*, pci:v000010DEd00001247sv*sd*bc03sc*i*, pci:v000010DEd00001248sv*sd*bc03sc*i*, pci:v000010DEd00001249sv*sd*bc03sc*i*, pci:v000010DEd0000124Bsv*sd*bc03sc*i*, pci:v000010DEd0000124Dsv*sd*bc03sc*i*, pci:v000010DEd00001251sv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd000011C4sv*sd*bc03sc*i*)
+Description-md5: 40726bbad84df17ed525b3b51d8bf938
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-304-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 967
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304
+Version: 304.131-0ubuntu3
+Depends: nvidia-304 (>= 304.131)
+Filename: pool/restricted/n/nvidia-graphics-drivers-304/nvidia-304-dev_304.131-0ubuntu3_amd64.deb
+Size: 139574
+MD5sum: 6a5a578f6319258ae256e4a3f4b7843a
+SHA1: 1767d50c21dd0cf148e6cfcd2de2ea5982405ac9
+SHA256: 15b1a697cf379c31bb3e72451e2794879b35b85669660ad85458ea590a268d68
+Description: NVIDIA binary Xorg driver development files
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-304-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 169393
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Replaces: xorg-driver-binary
+Provides: nvidia-driver-binary, xorg-driver-binary, xorg-driver-video
+Depends: x11-common (>= 1:7.0.0), make, sed (>> 3.0), dkms, linux-libc-dev, libc6-dev, patch, acpid, lib32gcc1, libc6-i386, xserver-xorg-legacy, libc6 (>= 2.2.5), libgcc1 (>= 1:3.3), libx11-6, libxext6, libxv1, libxvmc1, xorg-video-abi-11 | xorg-video-abi-12 | xorg-video-abi-13 | xorg-video-abi-14 | xorg-video-abi-15 | xorg-video-abi-18 | xorg-video-abi-19 | xorg-video-abi-20, xserver-xorg-core
+Recommends: nvidia-settings (>= 331.20), libcuda1-304-updates, nvidia-opencl-icd-304-updates
+Conflicts: xorg-driver-binary
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-304-updates_304.131-0ubuntu3_amd64.deb
+Size: 35524922
+MD5sum: be78adc26b347b37187c11a43649a701
+SHA1: d5bf102d95756cf06c8e82e45b05ec06bddf3e41
+SHA256: b28c1cd0d801b40f90f69ca91bab90b4739b43f4ac80f3003ecb4db977bd5dba
+Description: NVIDIA legacy binary driver - version 304.131
+Modaliases: nvidia_304_updates(pci:v000010DEd00000040sv*sd*bc03sc*i*, pci:v000010DEd00000041sv*sd*bc03sc*i*, pci:v000010DEd00000042sv*sd*bc03sc*i*, pci:v000010DEd00000043sv*sd*bc03sc*i*, pci:v000010DEd00000044sv*sd*bc03sc*i*, pci:v000010DEd00000045sv*sd*bc03sc*i*, pci:v000010DEd00000046sv*sd*bc03sc*i*, pci:v000010DEd00000047sv*sd*bc03sc*i*, pci:v000010DEd00000048sv*sd*bc03sc*i*, pci:v000010DEd0000004Esv*sd*bc03sc*i*, pci:v000010DEd00000090sv*sd*bc03sc*i*, pci:v000010DEd00000091sv*sd*bc03sc*i*, pci:v000010DEd00000092sv*sd*bc03sc*i*, pci:v000010DEd00000093sv*sd*bc03sc*i*, pci:v000010DEd00000095sv*sd*bc03sc*i*, pci:v000010DEd00000098sv*sd*bc03sc*i*, pci:v000010DEd00000099sv*sd*bc03sc*i*, pci:v000010DEd0000009Dsv*sd*bc03sc*i*, pci:v000010DEd000000C0sv*sd*bc03sc*i*, pci:v000010DEd000000C1sv*sd*bc03sc*i*, pci:v000010DEd000000C2sv*sd*bc03sc*i*, pci:v000010DEd000000C3sv*sd*bc03sc*i*, pci:v000010DEd000000C8sv*sd*bc03sc*i*, pci:v000010DEd000000C9sv*sd*bc03sc*i*, pci:v000010DEd000000CCsv*sd*bc03sc*i*, pci:v000010DEd000000CDsv*sd*bc03sc*i*, pci:v000010DEd000000CEsv*sd*bc03sc*i*, pci:v000010DEd000000F1sv*sd*bc03sc*i*, pci:v000010DEd000000F2sv*sd*bc03sc*i*, pci:v000010DEd000000F3sv*sd*bc03sc*i*, pci:v000010DEd000000F4sv*sd*bc03sc*i*, pci:v000010DEd000000F5sv*sd*bc03sc*i*, pci:v000010DEd000000F6sv*sd*bc03sc*i*, pci:v000010DEd000000F8sv*sd*bc03sc*i*, pci:v000010DEd000000F9sv*sd*bc03sc*i*, pci:v000010DEd00000140sv*sd*bc03sc*i*, pci:v000010DEd00000141sv*sd*bc03sc*i*, pci:v000010DEd00000142sv*sd*bc03sc*i*, pci:v000010DEd00000143sv*sd*bc03sc*i*, pci:v000010DEd00000144sv*sd*bc03sc*i*, pci:v000010DEd00000145sv*sd*bc03sc*i*, pci:v000010DEd00000146sv*sd*bc03sc*i*, pci:v000010DEd00000147sv*sd*bc03sc*i*, pci:v000010DEd00000148sv*sd*bc03sc*i*, pci:v000010DEd00000149sv*sd*bc03sc*i*, pci:v000010DEd0000014Asv*sd*bc03sc*i*, pci:v000010DEd0000014Csv*sd*bc03sc*i*, pci:v000010DEd0000014Dsv*sd*bc03sc*i*, pci:v000010DEd0000014Esv*sd*bc03sc*i*, pci:v000010DEd0000014Fsv*sd*bc03sc*i*, pci:v000010DEd00000160sv*sd*bc03sc*i*, pci:v000010DEd00000161sv*sd*bc03sc*i*, pci:v000010DEd00000162sv*sd*bc03sc*i*, pci:v000010DEd00000163sv*sd*bc03sc*i*, pci:v000010DEd00000164sv*sd*bc03sc*i*, pci:v000010DEd00000165sv*sd*bc03sc*i*, pci:v000010DEd00000166sv*sd*bc03sc*i*, pci:v000010DEd00000167sv*sd*bc03sc*i*, pci:v000010DEd00000168sv*sd*bc03sc*i*, pci:v000010DEd00000169sv*sd*bc03sc*i*, pci:v000010DEd0000016Asv*sd*bc03sc*i*, pci:v000010DEd00000191sv*sd*bc03sc*i*, pci:v000010DEd00000193sv*sd*bc03sc*i*, pci:v000010DEd00000194sv*sd*bc03sc*i*, pci:v000010DEd00000197sv*sd*bc03sc*i*, pci:v000010DEd0000019Dsv*sd*bc03sc*i*, pci:v000010DEd0000019Esv*sd*bc03sc*i*, pci:v000010DEd000001D0sv*sd*bc03sc*i*, pci:v000010DEd000001D1sv*sd*bc03sc*i*, pci:v000010DEd000001D2sv*sd*bc03sc*i*, pci:v000010DEd000001D3sv*sd*bc03sc*i*, pci:v000010DEd000001D6sv*sd*bc03sc*i*, pci:v000010DEd000001D7sv*sd*bc03sc*i*, pci:v000010DEd000001D8sv*sd*bc03sc*i*, pci:v000010DEd000001DAsv*sd*bc03sc*i*, pci:v000010DEd000001DBsv*sd*bc03sc*i*, pci:v000010DEd000001DCsv*sd*bc03sc*i*, pci:v000010DEd000001DDsv*sd*bc03sc*i*, pci:v000010DEd000001DEsv*sd*bc03sc*i*, pci:v000010DEd000001DFsv*sd*bc03sc*i*, pci:v000010DEd00000221sv*sd*bc03sc*i*, pci:v000010DEd00000222sv*sd*bc03sc*i*, pci:v000010DEd00000240sv*sd*bc03sc*i*, pci:v000010DEd00000241sv*sd*bc03sc*i*, pci:v000010DEd00000242sv*sd*bc03sc*i*, pci:v000010DEd00000244sv*sd*bc03sc*i*, pci:v000010DEd00000245sv*sd*bc03sc*i*, pci:v000010DEd00000247sv*sd*bc03sc*i*, pci:v000010DEd00000290sv*sd*bc03sc*i*, pci:v000010DEd00000291sv*sd*bc03sc*i*, pci:v000010DEd00000292sv*sd*bc03sc*i*, pci:v000010DEd00000293sv*sd*bc03sc*i*, pci:v000010DEd00000294sv*sd*bc03sc*i*, pci:v000010DEd00000295sv*sd*bc03sc*i*, pci:v000010DEd00000297sv*sd*bc03sc*i*, pci:v000010DEd00000298sv*sd*bc03sc*i*, pci:v000010DEd00000299sv*sd*bc03sc*i*, pci:v000010DEd0000029Asv*sd*bc03sc*i*, pci:v000010DEd0000029Bsv*sd*bc03sc*i*, pci:v000010DEd0000029Csv*sd*bc03sc*i*, pci:v000010DEd0000029Dsv*sd*bc03sc*i*, pci:v000010DEd0000029Esv*sd*bc03sc*i*, pci:v000010DEd0000029Fsv*sd*bc03sc*i*, pci:v000010DEd000002E0sv*sd*bc03sc*i*, pci:v000010DEd000002E1sv*sd*bc03sc*i*, pci:v000010DEd000002E2sv*sd*bc03sc*i*, pci:v000010DEd000002E3sv*sd*bc03sc*i*, pci:v000010DEd000002E4sv*sd*bc03sc*i*, pci:v000010DEd0000038Bsv*sd*bc03sc*i*, pci:v000010DEd00000390sv*sd*bc03sc*i*, pci:v000010DEd00000391sv*sd*bc03sc*i*, pci:v000010DEd00000392sv*sd*bc03sc*i*, pci:v000010DEd00000393sv*sd*bc03sc*i*, pci:v000010DEd00000394sv*sd*bc03sc*i*, pci:v000010DEd00000395sv*sd*bc03sc*i*, pci:v000010DEd00000397sv*sd*bc03sc*i*, pci:v000010DEd00000398sv*sd*bc03sc*i*, pci:v000010DEd00000399sv*sd*bc03sc*i*, pci:v000010DEd0000039Csv*sd*bc03sc*i*, pci:v000010DEd0000039Esv*sd*bc03sc*i*, pci:v000010DEd000003D0sv*sd*bc03sc*i*, pci:v000010DEd000003D1sv*sd*bc03sc*i*, pci:v000010DEd000003D2sv*sd*bc03sc*i*, pci:v000010DEd000003D5sv*sd*bc03sc*i*, pci:v000010DEd000003D6sv*sd*bc03sc*i*, pci:v000010DEd00000400sv*sd*bc03sc*i*, pci:v000010DEd00000401sv*sd*bc03sc*i*, pci:v000010DEd00000402sv*sd*bc03sc*i*, pci:v000010DEd00000403sv*sd*bc03sc*i*, pci:v000010DEd00000404sv*sd*bc03sc*i*, pci:v000010DEd00000405sv*sd*bc03sc*i*, pci:v000010DEd00000406sv*sd*bc03sc*i*, pci:v000010DEd00000407sv*sd*bc03sc*i*, pci:v000010DEd00000408sv*sd*bc03sc*i*, pci:v000010DEd00000409sv*sd*bc03sc*i*, pci:v000010DEd0000040Asv*sd*bc03sc*i*, pci:v000010DEd0000040Bsv*sd*bc03sc*i*, pci:v000010DEd0000040Csv*sd*bc03sc*i*, pci:v000010DEd0000040Dsv*sd*bc03sc*i*, pci:v000010DEd0000040Esv*sd*bc03sc*i*, pci:v000010DEd0000040Fsv*sd*bc03sc*i*, pci:v000010DEd00000410sv*sd*bc03sc*i*, pci:v000010DEd00000420sv*sd*bc03sc*i*, pci:v000010DEd00000421sv*sd*bc03sc*i*, pci:v000010DEd00000422sv*sd*bc03sc*i*, pci:v000010DEd00000423sv*sd*bc03sc*i*, pci:v000010DEd00000424sv*sd*bc03sc*i*, pci:v000010DEd00000425sv*sd*bc03sc*i*, pci:v000010DEd00000426sv*sd*bc03sc*i*, pci:v000010DEd00000427sv*sd*bc03sc*i*, pci:v000010DEd00000428sv*sd*bc03sc*i*, pci:v000010DEd00000429sv*sd*bc03sc*i*, pci:v000010DEd0000042Asv*sd*bc03sc*i*, pci:v000010DEd0000042Bsv*sd*bc03sc*i*, pci:v000010DEd0000042Csv*sd*bc03sc*i*, pci:v000010DEd0000042Dsv*sd*bc03sc*i*, pci:v000010DEd0000042Esv*sd*bc03sc*i*, pci:v000010DEd0000042Fsv*sd*bc03sc*i*, pci:v000010DEd00000531sv*sd*bc03sc*i*, pci:v000010DEd00000533sv*sd*bc03sc*i*, pci:v000010DEd0000053Asv*sd*bc03sc*i*, pci:v000010DEd0000053Bsv*sd*bc03sc*i*, pci:v000010DEd0000053Esv*sd*bc03sc*i*, pci:v000010DEd000005E0sv*sd*bc03sc*i*, pci:v000010DEd000005E1sv*sd*bc03sc*i*, pci:v000010DEd000005E2sv*sd*bc03sc*i*, pci:v000010DEd000005E3sv*sd*bc03sc*i*, pci:v000010DEd000005E6sv*sd*bc03sc*i*, pci:v000010DEd000005E7sv*sd*bc03sc*i*, pci:v000010DEd000005EAsv*sd*bc03sc*i*, pci:v000010DEd000005EBsv*sd*bc03sc*i*, pci:v000010DEd000005EDsv*sd*bc03sc*i*, pci:v000010DEd000005F8sv*sd*bc03sc*i*, pci:v000010DEd000005F9sv*sd*bc03sc*i*, pci:v000010DEd000005FDsv*sd*bc03sc*i*, pci:v000010DEd000005FEsv*sd*bc03sc*i*, pci:v000010DEd000005FFsv*sd*bc03sc*i*, pci:v000010DEd00000600sv*sd*bc03sc*i*, pci:v000010DEd00000601sv*sd*bc03sc*i*, pci:v000010DEd00000602sv*sd*bc03sc*i*, pci:v000010DEd00000603sv*sd*bc03sc*i*, pci:v000010DEd00000604sv*sd*bc03sc*i*, pci:v000010DEd00000605sv*sd*bc03sc*i*, pci:v000010DEd00000606sv*sd*bc03sc*i*, pci:v000010DEd00000607sv*sd*bc03sc*i*, pci:v000010DEd00000608sv*sd*bc03sc*i*, pci:v000010DEd00000609sv*sd*bc03sc*i*, pci:v000010DEd0000060Asv*sd*bc03sc*i*, pci:v000010DEd0000060Bsv*sd*bc03sc*i*, pci:v000010DEd0000060Csv*sd*bc03sc*i*, pci:v000010DEd0000060Dsv*sd*bc03sc*i*, pci:v000010DEd0000060Fsv*sd*bc03sc*i*, pci:v000010DEd00000610sv*sd*bc03sc*i*, pci:v000010DEd00000611sv*sd*bc03sc*i*, pci:v000010DEd00000612sv*sd*bc03sc*i*, pci:v000010DEd00000613sv*sd*bc03sc*i*, pci:v000010DEd00000614sv*sd*bc03sc*i*, pci:v000010DEd00000615sv*sd*bc03sc*i*, pci:v000010DEd00000617sv*sd*bc03sc*i*, pci:v000010DEd00000618sv*sd*bc03sc*i*, pci:v000010DEd00000619sv*sd*bc03sc*i*, pci:v000010DEd0000061Asv*sd*bc03sc*i*, pci:v000010DEd0000061Bsv*sd*bc03sc*i*, pci:v000010DEd0000061Csv*sd*bc03sc*i*, pci:v000010DEd0000061Dsv*sd*bc03sc*i*, pci:v000010DEd0000061Esv*sd*bc03sc*i*, pci:v000010DEd0000061Fsv*sd*bc03sc*i*, pci:v000010DEd00000621sv*sd*bc03sc*i*, pci:v000010DEd00000622sv*sd*bc03sc*i*, pci:v000010DEd00000623sv*sd*bc03sc*i*, pci:v000010DEd00000625sv*sd*bc03sc*i*, pci:v000010DEd00000626sv*sd*bc03sc*i*, pci:v000010DEd00000627sv*sd*bc03sc*i*, pci:v000010DEd00000628sv*sd*bc03sc*i*, pci:v000010DEd0000062Asv*sd*bc03sc*i*, pci:v000010DEd0000062Bsv*sd*bc03sc*i*, pci:v000010DEd0000062Csv*sd*bc03sc*i*, pci:v000010DEd0000062Dsv*sd*bc03sc*i*, pci:v000010DEd0000062Esv*sd*bc03sc*i*, pci:v000010DEd00000630sv*sd*bc03sc*i*, pci:v000010DEd00000631sv*sd*bc03sc*i*, pci:v000010DEd00000632sv*sd*bc03sc*i*, pci:v000010DEd00000635sv*sd*bc03sc*i*, pci:v000010DEd00000637sv*sd*bc03sc*i*, pci:v000010DEd00000638sv*sd*bc03sc*i*, pci:v000010DEd0000063Asv*sd*bc03sc*i*, pci:v000010DEd00000640sv*sd*bc03sc*i*, pci:v000010DEd00000641sv*sd*bc03sc*i*, pci:v000010DEd00000643sv*sd*bc03sc*i*, pci:v000010DEd00000644sv*sd*bc03sc*i*, pci:v000010DEd00000645sv*sd*bc03sc*i*, pci:v000010DEd00000646sv*sd*bc03sc*i*, pci:v000010DEd00000647sv*sd*bc03sc*i*, pci:v000010DEd00000648sv*sd*bc03sc*i*, pci:v000010DEd00000649sv*sd*bc03sc*i*, pci:v000010DEd0000064Asv*sd*bc03sc*i*, pci:v000010DEd0000064Bsv*sd*bc03sc*i*, pci:v000010DEd0000064Csv*sd*bc03sc*i*, pci:v000010DEd00000651sv*sd*bc03sc*i*, pci:v000010DEd00000652sv*sd*bc03sc*i*, pci:v000010DEd00000653sv*sd*bc03sc*i*, pci:v000010DEd00000654sv*sd*bc03sc*i*, pci:v000010DEd00000656sv*sd*bc03sc*i*, pci:v000010DEd00000658sv*sd*bc03sc*i*, pci:v000010DEd00000659sv*sd*bc03sc*i*, pci:v000010DEd0000065Asv*sd*bc03sc*i*, pci:v000010DEd0000065Bsv*sd*bc03sc*i*, pci:v000010DEd0000065Csv*sd*bc03sc*i*, pci:v000010DEd000006C0sv*sd*bc03sc*i*, pci:v000010DEd000006C4sv*sd*bc03sc*i*, pci:v000010DEd000006CAsv*sd*bc03sc*i*, pci:v000010DEd000006CDsv*sd*bc03sc*i*, pci:v000010DEd000006D1sv*sd*bc03sc*i*, pci:v000010DEd000006D2sv*sd*bc03sc*i*, pci:v000010DEd000006D8sv*sd*bc03sc*i*, pci:v000010DEd000006D9sv*sd*bc03sc*i*, pci:v000010DEd000006DAsv*sd*bc03sc*i*, pci:v000010DEd000006DCsv*sd*bc03sc*i*, pci:v000010DEd000006DDsv*sd*bc03sc*i*, pci:v000010DEd000006DEsv*sd*bc03sc*i*, pci:v000010DEd000006DFsv*sd*bc03sc*i*, pci:v000010DEd000006E0sv*sd*bc03sc*i*, pci:v000010DEd000006E1sv*sd*bc03sc*i*, pci:v000010DEd000006E2sv*sd*bc03sc*i*, pci:v000010DEd000006E3sv*sd*bc03sc*i*, pci:v000010DEd000006E4sv*sd*bc03sc*i*, pci:v000010DEd000006E5sv*sd*bc03sc*i*, pci:v000010DEd000006E6sv*sd*bc03sc*i*, pci:v000010DEd000006E7sv*sd*bc03sc*i*, pci:v000010DEd000006E8sv*sd*bc03sc*i*, pci:v000010DEd000006E9sv*sd*bc03sc*i*, pci:v000010DEd000006EAsv*sd*bc03sc*i*, pci:v000010DEd000006EBsv*sd*bc03sc*i*, pci:v000010DEd000006ECsv*sd*bc03sc*i*, pci:v000010DEd000006EFsv*sd*bc03sc*i*, pci:v000010DEd000006F1sv*sd*bc03sc*i*, pci:v000010DEd000006F8sv*sd*bc03sc*i*, pci:v000010DEd000006F9sv*sd*bc03sc*i*, pci:v000010DEd000006FAsv*sd*bc03sc*i*, pci:v000010DEd000006FBsv*sd*bc03sc*i*, pci:v000010DEd000006FDsv*sd*bc03sc*i*, pci:v000010DEd000006FFsv*sd*bc03sc*i*, pci:v000010DEd000007E0sv*sd*bc03sc*i*, pci:v000010DEd000007E1sv*sd*bc03sc*i*, pci:v000010DEd000007E2sv*sd*bc03sc*i*, pci:v000010DEd000007E3sv*sd*bc03sc*i*, pci:v000010DEd000007E5sv*sd*bc03sc*i*, pci:v000010DEd00000840sv*sd*bc03sc*i*, pci:v000010DEd00000844sv*sd*bc03sc*i*, pci:v000010DEd00000845sv*sd*bc03sc*i*, pci:v000010DEd00000846sv*sd*bc03sc*i*, pci:v000010DEd00000847sv*sd*bc03sc*i*, pci:v000010DEd00000848sv*sd*bc03sc*i*, pci:v000010DEd00000849sv*sd*bc03sc*i*, pci:v000010DEd0000084Asv*sd*bc03sc*i*, pci:v000010DEd0000084Bsv*sd*bc03sc*i*, pci:v000010DEd0000084Csv*sd*bc03sc*i*, pci:v000010DEd0000084Dsv*sd*bc03sc*i*, pci:v000010DEd0000084Fsv*sd*bc03sc*i*, pci:v000010DEd00000860sv*sd*bc03sc*i*, pci:v000010DEd00000861sv*sd*bc03sc*i*, pci:v000010DEd00000862sv*sd*bc03sc*i*, pci:v000010DEd00000863sv*sd*bc03sc*i*, pci:v000010DEd00000864sv*sd*bc03sc*i*, pci:v000010DEd00000865sv*sd*bc03sc*i*, pci:v000010DEd00000866sv*sd*bc03sc*i*, pci:v000010DEd00000867sv*sd*bc03sc*i*, pci:v000010DEd00000868sv*sd*bc03sc*i*, pci:v000010DEd00000869sv*sd*bc03sc*i*, pci:v000010DEd0000086Asv*sd*bc03sc*i*, pci:v000010DEd0000086Csv*sd*bc03sc*i*, pci:v000010DEd0000086Dsv*sd*bc03sc*i*, pci:v000010DEd0000086Esv*sd*bc03sc*i*, pci:v000010DEd0000086Fsv*sd*bc03sc*i*, pci:v000010DEd00000870sv*sd*bc03sc*i*, pci:v000010DEd00000871sv*sd*bc03sc*i*, pci:v000010DEd00000872sv*sd*bc03sc*i*, pci:v000010DEd00000873sv*sd*bc03sc*i*, pci:v000010DEd00000874sv*sd*bc03sc*i*, pci:v000010DEd00000876sv*sd*bc03sc*i*, pci:v000010DEd0000087Asv*sd*bc03sc*i*, pci:v000010DEd0000087Dsv*sd*bc03sc*i*, pci:v000010DEd0000087Esv*sd*bc03sc*i*, pci:v000010DEd0000087Fsv*sd*bc03sc*i*, pci:v000010DEd000008A0sv*sd*bc03sc*i*, pci:v000010DEd000008A2sv*sd*bc03sc*i*, pci:v000010DEd000008A3sv*sd*bc03sc*i*, pci:v000010DEd000008A4sv*sd*bc03sc*i*, pci:v000010DEd000008A5sv*sd*bc03sc*i*, pci:v000010DEd00000A20sv*sd*bc03sc*i*, pci:v000010DEd00000A22sv*sd*bc03sc*i*, pci:v000010DEd00000A23sv*sd*bc03sc*i*, pci:v000010DEd00000A26sv*sd*bc03sc*i*, pci:v000010DEd00000A27sv*sd*bc03sc*i*, pci:v000010DEd00000A28sv*sd*bc03sc*i*, pci:v000010DEd00000A29sv*sd*bc03sc*i*, pci:v000010DEd00000A2Asv*sd*bc03sc*i*, pci:v000010DEd00000A2Bsv*sd*bc03sc*i*, pci:v000010DEd00000A2Csv*sd*bc03sc*i*, pci:v000010DEd00000A2Dsv*sd*bc03sc*i*, pci:v000010DEd00000A32sv*sd*bc03sc*i*, pci:v000010DEd00000A34sv*sd*bc03sc*i*, pci:v000010DEd00000A35sv*sd*bc03sc*i*, pci:v000010DEd00000A38sv*sd*bc03sc*i*, pci:v000010DEd00000A3Csv*sd*bc03sc*i*, pci:v000010DEd00000A60sv*sd*bc03sc*i*, pci:v000010DEd00000A62sv*sd*bc03sc*i*, pci:v000010DEd00000A63sv*sd*bc03sc*i*, pci:v000010DEd00000A64sv*sd*bc03sc*i*, pci:v000010DEd00000A65sv*sd*bc03sc*i*, pci:v000010DEd00000A66sv*sd*bc03sc*i*, pci:v000010DEd00000A67sv*sd*bc03sc*i*, pci:v000010DEd00000A68sv*sd*bc03sc*i*, pci:v000010DEd00000A69sv*sd*bc03sc*i*, pci:v000010DEd00000A6Asv*sd*bc03sc*i*, pci:v000010DEd00000A6Csv*sd*bc03sc*i*, pci:v000010DEd00000A6Esv*sd*bc03sc*i*, pci:v000010DEd00000A6Fsv*sd*bc03sc*i*, pci:v000010DEd00000A70sv*sd*bc03sc*i*, pci:v000010DEd00000A71sv*sd*bc03sc*i*, pci:v000010DEd00000A72sv*sd*bc03sc*i*, pci:v000010DEd00000A73sv*sd*bc03sc*i*, pci:v000010DEd00000A74sv*sd*bc03sc*i*, pci:v000010DEd00000A75sv*sd*bc03sc*i*, pci:v000010DEd00000A76sv*sd*bc03sc*i*, pci:v000010DEd00000A78sv*sd*bc03sc*i*, pci:v000010DEd00000A7Asv*sd*bc03sc*i*, pci:v000010DEd00000A7Csv*sd*bc03sc*i*, pci:v000010DEd00000CA0sv*sd*bc03sc*i*, pci:v000010DEd00000CA2sv*sd*bc03sc*i*, pci:v000010DEd00000CA3sv*sd*bc03sc*i*, pci:v000010DEd00000CA4sv*sd*bc03sc*i*, pci:v000010DEd00000CA5sv*sd*bc03sc*i*, pci:v000010DEd00000CA7sv*sd*bc03sc*i*, pci:v000010DEd00000CA8sv*sd*bc03sc*i*, pci:v000010DEd00000CA9sv*sd*bc03sc*i*, pci:v000010DEd00000CACsv*sd*bc03sc*i*, pci:v000010DEd00000CAFsv*sd*bc03sc*i*, pci:v000010DEd00000CB0sv*sd*bc03sc*i*, pci:v000010DEd00000CB1sv*sd*bc03sc*i*, pci:v000010DEd00000CBCsv*sd*bc03sc*i*, pci:v000010DEd00000DC0sv*sd*bc03sc*i*, pci:v000010DEd00000DC4sv*sd*bc03sc*i*, pci:v000010DEd00000DC5sv*sd*bc03sc*i*, pci:v000010DEd00000DC6sv*sd*bc03sc*i*, pci:v000010DEd00000DCDsv*sd*bc03sc*i*, pci:v000010DEd00000DCEsv*sd*bc03sc*i*, pci:v000010DEd00000DD1sv*sd*bc03sc*i*, pci:v000010DEd00000DD2sv*sd*bc03sc*i*, pci:v000010DEd00000DD3sv*sd*bc03sc*i*, pci:v000010DEd00000DD6sv*sd*bc03sc*i*, pci:v000010DEd00000DD8sv*sd*bc03sc*i*, pci:v000010DEd00000DDAsv*sd*bc03sc*i*, pci:v000010DEd00000DE0sv*sd*bc03sc*i*, pci:v000010DEd00000DE1sv*sd*bc03sc*i*, pci:v000010DEd00000DE2sv*sd*bc03sc*i*, pci:v000010DEd00000DE3sv*sd*bc03sc*i*, pci:v000010DEd00000DE4sv*sd*bc03sc*i*, pci:v000010DEd00000DE5sv*sd*bc03sc*i*, pci:v000010DEd00000DE8sv*sd*bc03sc*i*, pci:v000010DEd00000DE9sv*sd*bc03sc*i*, pci:v000010DEd00000DEAsv*sd*bc03sc*i*, pci:v000010DEd00000DEBsv*sd*bc03sc*i*, pci:v000010DEd00000DECsv*sd*bc03sc*i*, pci:v000010DEd00000DEDsv*sd*bc03sc*i*, pci:v000010DEd00000DEEsv*sd*bc03sc*i*, pci:v000010DEd00000DEFsv*sd*bc03sc*i*, pci:v000010DEd00000DF0sv*sd*bc03sc*i*, pci:v000010DEd00000DF1sv*sd*bc03sc*i*, pci:v000010DEd00000DF2sv*sd*bc03sc*i*, pci:v000010DEd00000DF3sv*sd*bc03sc*i*, pci:v000010DEd00000DF4sv*sd*bc03sc*i*, pci:v000010DEd00000DF5sv*sd*bc03sc*i*, pci:v000010DEd00000DF6sv*sd*bc03sc*i*, pci:v000010DEd00000DF7sv*sd*bc03sc*i*, pci:v000010DEd00000DF8sv*sd*bc03sc*i*, pci:v000010DEd00000DF9sv*sd*bc03sc*i*, pci:v000010DEd00000DFAsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd00000E22sv*sd*bc03sc*i*, pci:v000010DEd00000E23sv*sd*bc03sc*i*, pci:v000010DEd00000E24sv*sd*bc03sc*i*, pci:v000010DEd00000E30sv*sd*bc03sc*i*, pci:v000010DEd00000E31sv*sd*bc03sc*i*, pci:v000010DEd00000E3Asv*sd*bc03sc*i*, pci:v000010DEd00000E3Bsv*sd*bc03sc*i*, pci:v000010DEd00000F00sv*sd*bc03sc*i*, pci:v000010DEd00000F01sv*sd*bc03sc*i*, pci:v000010DEd00000FC0sv*sd*bc03sc*i*, pci:v000010DEd00000FC1sv*sd*bc03sc*i*, pci:v000010DEd00000FC2sv*sd*bc03sc*i*, pci:v000010DEd00000FC6sv*sd*bc03sc*i*, pci:v000010DEd00000FCEsv*sd*bc03sc*i*, pci:v000010DEd00000FD1sv*sd*bc03sc*i*, pci:v000010DEd00000FD2sv*sd*bc03sc*i*, pci:v000010DEd00000FD3sv*sd*bc03sc*i*, pci:v000010DEd00000FD4sv*sd*bc03sc*i*, pci:v000010DEd00000FD5sv*sd*bc03sc*i*, pci:v000010DEd00000FD8sv*sd*bc03sc*i*, pci:v000010DEd00000FD9sv*sd*bc03sc*i*, pci:v000010DEd00000FE0sv*sd*bc03sc*i*, pci:v000010DEd00000FF2sv*sd*bc03sc*i*, pci:v000010DEd00000FFBsv*sd*bc03sc*i*, pci:v000010DEd00000FFCsv*sd*bc03sc*i*, pci:v000010DEd00000FFDsv*sd*bc03sc*i*, pci:v000010DEd00000FFFsv*sd*bc03sc*i*, pci:v000010DEd00001022sv*sd*bc03sc*i*, pci:v000010DEd00001028sv*sd*bc03sc*i*, pci:v000010DEd00001040sv*sd*bc03sc*i*, pci:v000010DEd00001042sv*sd*bc03sc*i*, pci:v000010DEd00001048sv*sd*bc03sc*i*, pci:v000010DEd00001049sv*sd*bc03sc*i*, pci:v000010DEd0000104Asv*sd*bc03sc*i*, pci:v000010DEd00001050sv*sd*bc03sc*i*, pci:v000010DEd00001051sv*sd*bc03sc*i*, pci:v000010DEd00001052sv*sd*bc03sc*i*, pci:v000010DEd00001054sv*sd*bc03sc*i*, pci:v000010DEd00001055sv*sd*bc03sc*i*, pci:v000010DEd00001056sv*sd*bc03sc*i*, pci:v000010DEd00001057sv*sd*bc03sc*i*, pci:v000010DEd00001058sv*sd*bc03sc*i*, pci:v000010DEd00001059sv*sd*bc03sc*i*, pci:v000010DEd0000105Asv*sd*bc03sc*i*, pci:v000010DEd0000107Dsv*sd*bc03sc*i*, pci:v000010DEd00001080sv*sd*bc03sc*i*, pci:v000010DEd00001081sv*sd*bc03sc*i*, pci:v000010DEd00001082sv*sd*bc03sc*i*, pci:v000010DEd00001084sv*sd*bc03sc*i*, pci:v000010DEd00001086sv*sd*bc03sc*i*, pci:v000010DEd00001087sv*sd*bc03sc*i*, pci:v000010DEd00001088sv*sd*bc03sc*i*, pci:v000010DEd00001089sv*sd*bc03sc*i*, pci:v000010DEd0000108Bsv*sd*bc03sc*i*, pci:v000010DEd00001091sv*sd*bc03sc*i*, pci:v000010DEd00001094sv*sd*bc03sc*i*, pci:v000010DEd00001096sv*sd*bc03sc*i*, pci:v000010DEd0000109Asv*sd*bc03sc*i*, pci:v000010DEd0000109Bsv*sd*bc03sc*i*, pci:v000010DEd000010C0sv*sd*bc03sc*i*, pci:v000010DEd000010C3sv*sd*bc03sc*i*, pci:v000010DEd000010C5sv*sd*bc03sc*i*, pci:v000010DEd000010D8sv*sd*bc03sc*i*, pci:v000010DEd00001180sv*sd*bc03sc*i*, pci:v000010DEd00001183sv*sd*bc03sc*i*, pci:v000010DEd00001185sv*sd*bc03sc*i*, pci:v000010DEd00001188sv*sd*bc03sc*i*, pci:v000010DEd00001189sv*sd*bc03sc*i*, pci:v000010DEd0000118Fsv*sd*bc03sc*i*, pci:v000010DEd000011A0sv*sd*bc03sc*i*, pci:v000010DEd000011A1sv*sd*bc03sc*i*, pci:v000010DEd000011A7sv*sd*bc03sc*i*, pci:v000010DEd000011BAsv*sd*bc03sc*i*, pci:v000010DEd000011BCsv*sd*bc03sc*i*, pci:v000010DEd000011BDsv*sd*bc03sc*i*, pci:v000010DEd000011BEsv*sd*bc03sc*i*, pci:v000010DEd000011BFsv*sd*bc03sc*i*, pci:v000010DEd000011C0sv*sd*bc03sc*i*, pci:v000010DEd000011C6sv*sd*bc03sc*i*, pci:v000010DEd00001200sv*sd*bc03sc*i*, pci:v000010DEd00001201sv*sd*bc03sc*i*, pci:v000010DEd00001203sv*sd*bc03sc*i*, pci:v000010DEd00001205sv*sd*bc03sc*i*, pci:v000010DEd00001206sv*sd*bc03sc*i*, pci:v000010DEd00001207sv*sd*bc03sc*i*, pci:v000010DEd00001208sv*sd*bc03sc*i*, pci:v000010DEd00001210sv*sd*bc03sc*i*, pci:v000010DEd00001211sv*sd*bc03sc*i*, pci:v000010DEd00001212sv*sd*bc03sc*i*, pci:v000010DEd00001213sv*sd*bc03sc*i*, pci:v000010DEd00001241sv*sd*bc03sc*i*, pci:v000010DEd00001243sv*sd*bc03sc*i*, pci:v000010DEd00001244sv*sd*bc03sc*i*, pci:v000010DEd00001245sv*sd*bc03sc*i*, pci:v000010DEd00001246sv*sd*bc03sc*i*, pci:v000010DEd00001247sv*sd*bc03sc*i*, pci:v000010DEd00001248sv*sd*bc03sc*i*, pci:v000010DEd00001249sv*sd*bc03sc*i*, pci:v000010DEd0000124Bsv*sd*bc03sc*i*, pci:v000010DEd0000124Dsv*sd*bc03sc*i*, pci:v000010DEd00001251sv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd000011C4sv*sd*bc03sc*i*)
+Description-md5: 40726bbad84df17ed525b3b51d8bf938
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-304-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 967
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Depends: nvidia-304-updates (>= 304.131)
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-304-updates-dev_304.131-0ubuntu3_amd64.deb
+Size: 139546
+MD5sum: bb003474a96a3d6eb7e70202644348ad
+SHA1: 4f10cc21911cb5bb74eebd9184b7808a6d8e9464
+SHA256: 167115e8ba65d2013247d3f8d734f5156ef5f679524808eb8adb31830be3042b
+Description: NVIDIA binary Xorg driver development files
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-331
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-331_340.96-0ubuntu3_amd64.deb
+Size: 4800
+MD5sum: ab781dc3418c241975411a358df1394f
+SHA1: a71f25d637bd32a71cb7a45e3aded90db608cdce
+SHA256: 78ac9b96d777de51026338b1923d56ba583c74903fa0f6fa3a85daa16335de95
+Description: Transitional package for nvidia-331
+Description-md5: 3612f7cb365b0b5804f0fb129ccb1c2c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-331-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-331-dev_340.96-0ubuntu3_amd64.deb
+Size: 4810
+MD5sum: 10e759ac78ff41475c5b0ac2f1f15bd3
+SHA1: 94719627f81d092765ce638da866bf09a60fa670
+SHA256: 5399989dcc11308183b81b6870136227cddfc8f9c81e2edc70f0e84995ffb67d
+Description: Transitional package for nvidia-340-dev
+Description-md5: 6c98e0772fd230780190db0e8cbb108c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-331-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-331-updates_340.96-0ubuntu3_amd64.deb
+Size: 4814
+MD5sum: f08558a26fc9de70e3d7e572641b4aac
+SHA1: 365b00c381736cf529ddfd9bd02db29b52b464cb
+SHA256: b27ab9825174291d4c3f6e375c77f9e3e198e557615b28743f68458e8f42fb40
+Description: Transitional package for nvidia-340
+Description-md5: 57112f542d553ab72039643ae9695ee9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-331-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-331-updates-dev_340.96-0ubuntu3_amd64.deb
+Size: 4820
+MD5sum: 40a3b456d86aa5a9bc714d2c35a8168c
+SHA1: 101bba389cdb794bda6697e333278b8ce25f106b
+SHA256: becd535a51b02153928a21a29945e35ea93fb01e666c69cd3c50df51eb826968
+Description: Transitional package for nvidia-340-dev
+Description-md5: 6c98e0772fd230780190db0e8cbb108c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-331-updates-uvm
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-331-updates-uvm_340.96-0ubuntu3_amd64.deb
+Size: 4818
+MD5sum: 2eb819cc43915e3c44ce2b0eb07156d4
+SHA1: 5d8445b5365d24a05569dc159bb2d344532d2056
+SHA256: 6e0a80eaf713140b1165961479deb2c852394628649df11762bfc45a0a92ae1a
+Description: Transitional package for nvidia-340
+Description-md5: 57112f542d553ab72039643ae9695ee9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-331-uvm
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-331-uvm_340.96-0ubuntu3_amd64.deb
+Size: 4808
+MD5sum: b75b5c706dda2471b0c6f8d791a2ae97
+SHA1: debdb308b99799f7afdb173ffcae8330f5a5f024
+SHA256: cc299c24daa85d1295ed54fa2eb44947a37b99ad4ba4a48f3548d16c55d4fbd2
+Description: Transitional package for nvidia-340
+Description-md5: 57112f542d553ab72039643ae9695ee9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-340
+Priority: optional
+Section: restricted/misc
+Installed-Size: 264408
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Replaces: nvidia-persistenced, xorg-driver-binary
+Provides: nvidia-driver-binary, nvidia-persistenced, xorg-driver-binary, xorg-driver-video
+Depends: x11-common (>= 1:7.0.0), make, sed (>> 3.0), dkms, linux-libc-dev, libc6-dev, patch, acpid, lib32gcc1, libc6-i386, passwd, adduser, xserver-xorg-legacy, libc6 (>= 2.2.5), libgl1, libx11-6, libxext6, xorg-video-abi-11 | xorg-video-abi-12 | xorg-video-abi-13 | xorg-video-abi-14 | xorg-video-abi-15 | xorg-video-abi-18 | xorg-video-abi-19 | xorg-video-abi-20, xserver-xorg-core
+Recommends: nvidia-settings (>= 331.20), nvidia-prime (>= 0.5) | bumblebee, libcuda1-340, nvidia-opencl-icd-340
+Conflicts: nvidia-persistenced, xorg-driver-binary
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-340_340.96-0ubuntu3_amd64.deb
+Size: 51498214
+MD5sum: 76a0d2cbdce02023b506d5d39f07cf0c
+SHA1: 985b60d456dd36c60ce7c89d70ed9c7f7f6856e6
+SHA256: 10ec6b0fb5041fbaaf3f8e2794fc2e0d4b3ab38a3606dec7ed1622d889ba6541
+Description: NVIDIA binary driver - version 340.96
+Modaliases: nvidia_340(pci:v000010DEd000005E7sv*sd00000595bc03sc*i*, pci:v000010DEd000005E7sv*sd0000068Fbc03sc*i*, pci:v000010DEd000005E7sv*sd00000697bc03sc*i*, pci:v000010DEd000005E7sv*sd00000714bc03sc*i*, pci:v000010DEd000005E7sv*sd00000743bc03sc*i*, pci:v000010DEd00000609sv*sd000000A7bc03sc*i*, pci:v000010DEd0000062Esv*sd00000605bc03sc*i*, pci:v000010DEd00000649sv*sd0000202Dbc03sc*i*, pci:v000010DEd00000652sv*sd00000850bc03sc*i*, pci:v000010DEd00000654sv*sd000014A2bc03sc*i*, pci:v000010DEd00000654sv*sd000014D2bc03sc*i*, pci:v000010DEd00000655sv*sd00000633bc03sc*i*, pci:v000010DEd00000656sv*sd00000693bc03sc*i*, pci:v000010DEd000006D1sv*sd00000771bc03sc*i*, pci:v000010DEd000006D1sv*sd00000772bc03sc*i*, pci:v000010DEd000006D2sv*sd0000088Fbc03sc*i*, pci:v000010DEd000006DEsv*sd00000773bc03sc*i*, pci:v000010DEd000006DEsv*sd0000082Fbc03sc*i*, pci:v000010DEd000006DEsv*sd00000840bc03sc*i*, pci:v000010DEd000006DEsv*sd00000842bc03sc*i*, pci:v000010DEd000006DEsv*sd00000846bc03sc*i*, pci:v000010DEd000006DEsv*sd00000866bc03sc*i*, pci:v000010DEd000006DEsv*sd00000907bc03sc*i*, pci:v000010DEd000006DEsv*sd0000091Ebc03sc*i*, pci:v000010DEd000006E8sv*sd0000360Bbc03sc*i*, pci:v000010DEd000006F9sv*sd0000060Dbc03sc*i*, pci:v000010DEd000006FFsv*sd00000711bc03sc*i*, pci:v000010DEd00000866sv*sd000000B1bc03sc*i*, pci:v000010DEd00000872sv*sd00001C42bc03sc*i*, pci:v000010DEd00000873sv*sd00001C52bc03sc*i*, pci:v000010DEd00000A6Esv*sd00003607bc03sc*i*, pci:v000010DEd00000A70sv*sd00003605bc03sc*i*, pci:v000010DEd00000A70sv*sd00003617bc03sc*i*, pci:v000010DEd00000A73sv*sd00003607bc03sc*i*, pci:v000010DEd00000A73sv*sd00003610bc03sc*i*, pci:v000010DEd00000A74sv*sd0000903Abc03sc*i*, pci:v000010DEd00000A75sv*sd00003605bc03sc*i*, pci:v000010DEd00000A7Asv*sd00000003bc03sc*i*, pci:v000010DEd00000A7Asv*sd00003950bc03sc*i*, pci:v000010DEd00000A7Asv*sd0000397Dbc03sc*i*, pci:v000010DEd00000A7Asv*sd00003980bc03sc*i*, pci:v000010DEd00000A7Asv*sd00008006bc03sc*i*, pci:v000010DEd00000A7Asv*sd000090B4bc03sc*i*, pci:v000010DEd00000A7Asv*sd0000AA51bc03sc*i*, pci:v000010DEd00000A7Asv*sd0000AA58bc03sc*i*, pci:v000010DEd00000A7Asv*sd0000AC71bc03sc*i*, pci:v000010DEd00000A7Asv*sd0000AC82bc03sc*i*, pci:v000010DEd00000DD8sv*sd00000914bc03sc*i*, pci:v000010DEd00000DE9sv*sd00000692bc03sc*i*, pci:v000010DEd00000DE9sv*sd00000725bc03sc*i*, pci:v000010DEd00000DE9sv*sd00000728bc03sc*i*, pci:v000010DEd00000DE9sv*sd0000072Bbc03sc*i*, pci:v000010DEd00000DE9sv*sd0000072Ebc03sc*i*, pci:v000010DEd00000DE9sv*sd00000753bc03sc*i*, pci:v000010DEd00000DE9sv*sd00000754bc03sc*i*, pci:v000010DEd00000DE9sv*sd00002210bc03sc*i*, pci:v000010DEd00000DE9sv*sd00003977bc03sc*i*, pci:v000010DEd00000DEAsv*sd0000365Abc03sc*i*, pci:v000010DEd00000DEAsv*sd0000365Bbc03sc*i*, pci:v000010DEd00000DEAsv*sd0000365Ebc03sc*i*, pci:v000010DEd00000DEAsv*sd00003660bc03sc*i*, pci:v000010DEd00000DEAsv*sd0000366Cbc03sc*i*, pci:v000010DEd00000DF4sv*sd00000952bc03sc*i*, pci:v000010DEd00000DF4sv*sd00000953bc03sc*i*, pci:v000010DEd00000FD2sv*sd00000595bc03sc*i*, pci:v000010DEd00000FD2sv*sd000005B2bc03sc*i*, pci:v000010DEd00000FE3sv*sd00003675bc03sc*i*, pci:v000010DEd0000104Bsv*sd00000625bc03sc*i*, pci:v000010DEd0000104Bsv*sd0000844Cbc03sc*i*, pci:v000010DEd0000104Bsv*sd0000846Bbc03sc*i*, pci:v000010DEd0000104Bsv*sd0000A625bc03sc*i*, pci:v000010DEd0000104Bsv*sd0000B590bc03sc*i*, pci:v000010DEd00001058sv*sd00002AF1bc03sc*i*, pci:v000010DEd0000105Bsv*sd00002AFBbc03sc*i*, pci:v000010DEd00001091sv*sd0000088Ebc03sc*i*, pci:v000010DEd00001091sv*sd00000891bc03sc*i*, pci:v000010DEd00001091sv*sd00000974bc03sc*i*, pci:v000010DEd00001091sv*sd0000098Dbc03sc*i*, pci:v000010DEd00001096sv*sd00000911bc03sc*i*, pci:v000010DEd00001140sv*sd00000083bc03sc*i*, pci:v000010DEd00001140sv*sd00000177bc03sc*i*, pci:v000010DEd00001140sv*sd00000180bc03sc*i*, pci:v000010DEd00001140sv*sd00000190bc03sc*i*, pci:v000010DEd00001140sv*sd00000192bc03sc*i*, pci:v000010DEd00001140sv*sd0000054Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000054Ebc03sc*i*, pci:v000010DEd00001140sv*sd00000554bc03sc*i*, pci:v000010DEd00001140sv*sd00000557bc03sc*i*, pci:v000010DEd00001140sv*sd00000562bc03sc*i*, pci:v000010DEd00001140sv*sd00000565bc03sc*i*, pci:v000010DEd00001140sv*sd00000568bc03sc*i*, pci:v000010DEd00001140sv*sd00000590bc03sc*i*, pci:v000010DEd00001140sv*sd00000592bc03sc*i*, pci:v000010DEd00001140sv*sd00000594bc03sc*i*, pci:v000010DEd00001140sv*sd00000595bc03sc*i*, pci:v000010DEd00001140sv*sd000005A2bc03sc*i*, pci:v000010DEd00001140sv*sd000005B1bc03sc*i*, pci:v000010DEd00001140sv*sd000005B3bc03sc*i*, pci:v000010DEd00001140sv*sd000005DAbc03sc*i*, pci:v000010DEd00001140sv*sd000005DEbc03sc*i*, pci:v000010DEd00001140sv*sd000005E0bc03sc*i*, pci:v000010DEd00001140sv*sd000005E8bc03sc*i*, pci:v000010DEd00001140sv*sd000005F4bc03sc*i*, pci:v000010DEd00001140sv*sd00000600bc03sc*i*, pci:v000010DEd00001140sv*sd00000606bc03sc*i*, pci:v000010DEd00001140sv*sd0000060Fbc03sc*i*, pci:v000010DEd00001140sv*sd0000064Abc03sc*i*, pci:v000010DEd00001140sv*sd0000064Cbc03sc*i*, pci:v000010DEd00001140sv*sd0000064Ebc03sc*i*, pci:v000010DEd00001140sv*sd00000652bc03sc*i*, pci:v000010DEd00001140sv*sd00000653bc03sc*i*, pci:v000010DEd00001140sv*sd00000662bc03sc*i*, pci:v000010DEd00001140sv*sd0000067Abc03sc*i*, pci:v000010DEd00001140sv*sd00000680bc03sc*i*, pci:v000010DEd00001140sv*sd00000686bc03sc*i*, pci:v000010DEd00001140sv*sd00000689bc03sc*i*, pci:v000010DEd00001140sv*sd0000068Bbc03sc*i*, pci:v000010DEd00001140sv*sd0000068Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000068Ebc03sc*i*, pci:v000010DEd00001140sv*sd00000691bc03sc*i*, pci:v000010DEd00001140sv*sd00000692bc03sc*i*, pci:v000010DEd00001140sv*sd00000694bc03sc*i*, pci:v000010DEd00001140sv*sd00000702bc03sc*i*, pci:v000010DEd00001140sv*sd00000719bc03sc*i*, pci:v000010DEd00001140sv*sd00000725bc03sc*i*, pci:v000010DEd00001140sv*sd00000728bc03sc*i*, pci:v000010DEd00001140sv*sd0000072Bbc03sc*i*, pci:v000010DEd00001140sv*sd0000072Ebc03sc*i*, pci:v000010DEd00001140sv*sd00000732bc03sc*i*, pci:v000010DEd00001140sv*sd00000763bc03sc*i*, pci:v000010DEd00001140sv*sd00000773bc03sc*i*, pci:v000010DEd00001140sv*sd00000774bc03sc*i*, pci:v000010DEd00001140sv*sd00000776bc03sc*i*, pci:v000010DEd00001140sv*sd0000077Abc03sc*i*, pci:v000010DEd00001140sv*sd0000077Bbc03sc*i*, pci:v000010DEd00001140sv*sd0000077Cbc03sc*i*, pci:v000010DEd00001140sv*sd0000077Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000077Ebc03sc*i*, pci:v000010DEd00001140sv*sd0000077Fbc03sc*i*, pci:v000010DEd00001140sv*sd00000781bc03sc*i*, pci:v000010DEd00001140sv*sd00000798bc03sc*i*, pci:v000010DEd00001140sv*sd00000799bc03sc*i*, pci:v000010DEd00001140sv*sd0000079Bbc03sc*i*, pci:v000010DEd00001140sv*sd0000079Cbc03sc*i*, pci:v000010DEd00001140sv*sd00000807bc03sc*i*, pci:v000010DEd00001140sv*sd00000821bc03sc*i*, pci:v000010DEd00001140sv*sd00000823bc03sc*i*, pci:v000010DEd00001140sv*sd00000830bc03sc*i*, pci:v000010DEd00001140sv*sd00000833bc03sc*i*, pci:v000010DEd00001140sv*sd00000837bc03sc*i*, pci:v000010DEd00001140sv*sd0000083Ebc03sc*i*, pci:v000010DEd00001140sv*sd00000841bc03sc*i*, pci:v000010DEd00001140sv*sd00000853bc03sc*i*, pci:v000010DEd00001140sv*sd00000854bc03sc*i*, pci:v000010DEd00001140sv*sd00000855bc03sc*i*, pci:v000010DEd00001140sv*sd00000856bc03sc*i*, pci:v000010DEd00001140sv*sd00000857bc03sc*i*, pci:v000010DEd00001140sv*sd00000858bc03sc*i*, pci:v000010DEd00001140sv*sd00000868bc03sc*i*, pci:v000010DEd00001140sv*sd00000869bc03sc*i*, pci:v000010DEd00001140sv*sd00000873bc03sc*i*, pci:v000010DEd00001140sv*sd00000878bc03sc*i*, pci:v000010DEd00001140sv*sd0000087Bbc03sc*i*, pci:v000010DEd00001140sv*sd00000881bc03sc*i*, pci:v000010DEd00001140sv*sd0000088Abc03sc*i*, pci:v000010DEd00001140sv*sd00000921bc03sc*i*, pci:v000010DEd00001140sv*sd00000926bc03sc*i*, pci:v000010DEd00001140sv*sd0000092Ebc03sc*i*, pci:v000010DEd00001140sv*sd0000092Fbc03sc*i*, pci:v000010DEd00001140sv*sd0000093Abc03sc*i*, pci:v000010DEd00001140sv*sd0000093Cbc03sc*i*, pci:v000010DEd00001140sv*sd0000093Fbc03sc*i*, pci:v000010DEd00001140sv*sd00000945bc03sc*i*, pci:v000010DEd00001140sv*sd00000982bc03sc*i*, pci:v000010DEd00001140sv*sd00000983bc03sc*i*, pci:v000010DEd00001140sv*sd00000DACbc03sc*i*, pci:v000010DEd00001140sv*sd00000DADbc03sc*i*, pci:v000010DEd00001140sv*sd00000EF3bc03sc*i*, pci:v000010DEd00001140sv*sd00001005bc03sc*i*, pci:v000010DEd00001140sv*sd00001012bc03sc*i*, pci:v000010DEd00001140sv*sd00001019bc03sc*i*, pci:v000010DEd00001140sv*sd00001030bc03sc*i*, pci:v000010DEd00001140sv*sd00001055bc03sc*i*, pci:v000010DEd00001140sv*sd00001067bc03sc*i*, pci:v000010DEd00001140sv*sd00001092bc03sc*i*, pci:v000010DEd00001140sv*sd000010B8bc03sc*i*, pci:v000010DEd00001140sv*sd000010DDbc03sc*i*, pci:v000010DEd00001140sv*sd000010E9bc03sc*i*, pci:v000010DEd00001140sv*sd000010EDbc03sc*i*, pci:v000010DEd00001140sv*sd00001116bc03sc*i*, pci:v000010DEd00001140sv*sd000011FDbc03sc*i*, pci:v000010DEd00001140sv*sd0000124Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000126Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000131Dbc03sc*i*, pci:v000010DEd00001140sv*sd000013FDbc03sc*i*, pci:v000010DEd00001140sv*sd000014C7bc03sc*i*, pci:v000010DEd00001140sv*sd00001507bc03sc*i*, pci:v000010DEd00001140sv*sd000015ADbc03sc*i*, pci:v000010DEd00001140sv*sd000015EDbc03sc*i*, pci:v000010DEd00001140sv*sd0000160Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000163Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000165Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000166Dbc03sc*i*, pci:v000010DEd00001140sv*sd000016CDbc03sc*i*, pci:v000010DEd00001140sv*sd000016DDbc03sc*i*, pci:v000010DEd00001140sv*sd0000170Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000176Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000178Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000179Dbc03sc*i*, pci:v000010DEd00001140sv*sd000017F5bc03sc*i*, pci:v000010DEd00001140sv*sd000018EFbc03sc*i*, pci:v000010DEd00001140sv*sd000018F9bc03sc*i*, pci:v000010DEd00001140sv*sd000018FBbc03sc*i*, pci:v000010DEd00001140sv*sd000018FDbc03sc*i*, pci:v000010DEd00001140sv*sd000018FFbc03sc*i*, pci:v000010DEd00001140sv*sd000020DDbc03sc*i*, pci:v000010DEd00001140sv*sd000020DFbc03sc*i*, pci:v000010DEd00001140sv*sd0000210Ebc03sc*i*, pci:v000010DEd00001140sv*sd00002132bc03sc*i*, pci:v000010DEd00001140sv*sd00002136bc03sc*i*, pci:v000010DEd00001140sv*sd0000218Abc03sc*i*, pci:v000010DEd00001140sv*sd000021BAbc03sc*i*, pci:v000010DEd00001140sv*sd000021BBbc03sc*i*, pci:v000010DEd00001140sv*sd000021BCbc03sc*i*, pci:v000010DEd00001140sv*sd000021FAbc03sc*i*, pci:v000010DEd00001140sv*sd00002200bc03sc*i*, pci:v000010DEd00001140sv*sd00002202bc03sc*i*, pci:v000010DEd00001140sv*sd0000220Abc03sc*i*, pci:v000010DEd00001140sv*sd0000220Ebc03sc*i*, pci:v000010DEd00001140sv*sd00002212bc03sc*i*, pci:v000010DEd00001140sv*sd00002213bc03sc*i*, pci:v000010DEd00001140sv*sd00002218bc03sc*i*, pci:v000010DEd00001140sv*sd0000221Abc03sc*i*, pci:v000010DEd00001140sv*sd00002220bc03sc*i*, pci:v000010DEd00001140sv*sd0000223Abc03sc*i*, pci:v000010DEd00001140sv*sd0000224Abc03sc*i*, pci:v000010DEd00001140sv*sd0000225Bbc03sc*i*, pci:v000010DEd00001140sv*sd0000225Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000226Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000226Fbc03sc*i*, pci:v000010DEd00001140sv*sd0000227Abc03sc*i*, pci:v000010DEd00001140sv*sd0000228Abc03sc*i*, pci:v000010DEd00001140sv*sd000022D2bc03sc*i*, pci:v000010DEd00001140sv*sd000022D9bc03sc*i*, pci:v000010DEd00001140sv*sd00002AEFbc03sc*i*, pci:v000010DEd00001140sv*sd00002AF9bc03sc*i*, pci:v000010DEd00001140sv*sd00003656bc03sc*i*, pci:v000010DEd00001140sv*sd000036A9bc03sc*i*, pci:v000010DEd00001140sv*sd00003800bc03sc*i*, pci:v000010DEd00001140sv*sd00003801bc03sc*i*, pci:v000010DEd00001140sv*sd00003802bc03sc*i*, pci:v000010DEd00001140sv*sd00003803bc03sc*i*, pci:v000010DEd00001140sv*sd00003804bc03sc*i*, pci:v000010DEd00001140sv*sd00003806bc03sc*i*, pci:v000010DEd00001140sv*sd00003808bc03sc*i*, pci:v000010DEd00001140sv*sd0000380Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000380Ebc03sc*i*, pci:v000010DEd00001140sv*sd0000380Fbc03sc*i*, pci:v000010DEd00001140sv*sd00003811bc03sc*i*, pci:v000010DEd00001140sv*sd00003812bc03sc*i*, pci:v000010DEd00001140sv*sd00003813bc03sc*i*, pci:v000010DEd00001140sv*sd00003816bc03sc*i*, pci:v000010DEd00001140sv*sd00003817bc03sc*i*, pci:v000010DEd00001140sv*sd00003818bc03sc*i*, pci:v000010DEd00001140sv*sd0000381Abc03sc*i*, pci:v000010DEd00001140sv*sd0000381Cbc03sc*i*, pci:v000010DEd00001140sv*sd00003901bc03sc*i*, pci:v000010DEd00001140sv*sd00003902bc03sc*i*, pci:v000010DEd00001140sv*sd00003903bc03sc*i*, pci:v000010DEd00001140sv*sd00003904bc03sc*i*, pci:v000010DEd00001140sv*sd00003905bc03sc*i*, pci:v000010DEd00001140sv*sd00003907bc03sc*i*, pci:v000010DEd00001140sv*sd00003910bc03sc*i*, pci:v000010DEd00001140sv*sd00003912bc03sc*i*, pci:v000010DEd00001140sv*sd00003913bc03sc*i*, pci:v000010DEd00001140sv*sd00003983bc03sc*i*, pci:v000010DEd00001140sv*sd00005001bc03sc*i*, pci:v000010DEd00001140sv*sd00005003bc03sc*i*, pci:v000010DEd00001140sv*sd00005005bc03sc*i*, pci:v000010DEd00001140sv*sd0000500Dbc03sc*i*, pci:v000010DEd00001140sv*sd00005014bc03sc*i*, pci:v000010DEd00001140sv*sd00005017bc03sc*i*, pci:v000010DEd00001140sv*sd00005019bc03sc*i*, pci:v000010DEd00001140sv*sd0000501Abc03sc*i*, pci:v000010DEd00001140sv*sd0000501Fbc03sc*i*, pci:v000010DEd00001140sv*sd00005025bc03sc*i*, pci:v000010DEd00001140sv*sd00005027bc03sc*i*, pci:v000010DEd00001140sv*sd0000502Abc03sc*i*, pci:v000010DEd00001140sv*sd0000502Bbc03sc*i*, pci:v000010DEd00001140sv*sd0000502Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000502Ebc03sc*i*, pci:v000010DEd00001140sv*sd0000502Fbc03sc*i*, pci:v000010DEd00001140sv*sd00005030bc03sc*i*, pci:v000010DEd00001140sv*sd00005031bc03sc*i*, pci:v000010DEd00001140sv*sd00005032bc03sc*i*, pci:v000010DEd00001140sv*sd00005033bc03sc*i*, pci:v000010DEd00001140sv*sd0000503Ebc03sc*i*, pci:v000010DEd00001140sv*sd0000503Fbc03sc*i*, pci:v000010DEd00001140sv*sd00005040bc03sc*i*, pci:v000010DEd00001140sv*sd00008595bc03sc*i*, pci:v000010DEd00001140sv*sd000085EAbc03sc*i*, pci:v000010DEd00001140sv*sd000085EBbc03sc*i*, pci:v000010DEd00001140sv*sd000085ECbc03sc*i*, pci:v000010DEd00001140sv*sd000085EEbc03sc*i*, pci:v000010DEd00001140sv*sd000085F3bc03sc*i*, pci:v000010DEd00001140sv*sd0000860Ebc03sc*i*, pci:v000010DEd00001140sv*sd0000861Abc03sc*i*, pci:v000010DEd00001140sv*sd0000861Bbc03sc*i*, pci:v000010DEd00001140sv*sd00008628bc03sc*i*, pci:v000010DEd00001140sv*sd00008643bc03sc*i*, pci:v000010DEd00001140sv*sd0000864Cbc03sc*i*, pci:v000010DEd00001140sv*sd00008652bc03sc*i*, pci:v000010DEd00001140sv*sd000090D7bc03sc*i*, pci:v000010DEd00001140sv*sd000090DDbc03sc*i*, pci:v000010DEd00001140sv*sd0000999Fbc03sc*i*, pci:v000010DEd00001140sv*sd0000AA33bc03sc*i*, pci:v000010DEd00001140sv*sd0000AAA2bc03sc*i*, pci:v000010DEd00001140sv*sd0000AAA3bc03sc*i*, pci:v000010DEd00001140sv*sd0000ACB2bc03sc*i*, pci:v000010DEd00001140sv*sd0000ACC1bc03sc*i*, pci:v000010DEd00001140sv*sd0000AE61bc03sc*i*, pci:v000010DEd00001140sv*sd0000AE65bc03sc*i*, pci:v000010DEd00001140sv*sd0000AE6Abc03sc*i*, pci:v000010DEd00001140sv*sd0000AE71bc03sc*i*, pci:v000010DEd00001140sv*sd0000B092bc03sc*i*, pci:v000010DEd00001140sv*sd0000C0D5bc03sc*i*, pci:v000010DEd00001140sv*sd0000C0D7bc03sc*i*, pci:v000010DEd00001140sv*sd0000C0E2bc03sc*i*, pci:v000010DEd00001140sv*sd0000C0E3bc03sc*i*, pci:v000010DEd00001140sv*sd0000C0E4bc03sc*i*, pci:v000010DEd00001140sv*sd0000C10Dbc03sc*i*, pci:v000010DEd00001140sv*sd0000C652bc03sc*i*, pci:v000010DEd00001140sv*sd0000C709bc03sc*i*, pci:v000010DEd00001140sv*sd0000C711bc03sc*i*, pci:v000010DEd00001140sv*sd0000C736bc03sc*i*, pci:v000010DEd00001140sv*sd0000C737bc03sc*i*, pci:v000010DEd00001140sv*sd0000C745bc03sc*i*, pci:v000010DEd00001140sv*sd0000C750bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA01bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA02bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA03bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA05bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA11bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA13bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA18bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA19bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA21bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA23bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA2Abc03sc*i*, pci:v000010DEd00001140sv*sd0000FA32bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA33bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA36bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA38bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA42bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA43bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA45bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA47bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA49bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA58bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA59bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA88bc03sc*i*, pci:v000010DEd00001140sv*sd0000FA89bc03sc*i*, pci:v000010DEd00001185sv*sd0000106Fbc03sc*i*, pci:v000010DEd00001189sv*sd00001074bc03sc*i*, pci:v000010DEd00001199sv*sd0000D001bc03sc*i*, pci:v000010DEd000011E3sv*sd00003683bc03sc*i*, pci:v000010DEd00001247sv*sd0000212Abc03sc*i*, pci:v000010DEd00001247sv*sd0000212Bbc03sc*i*, pci:v000010DEd00001247sv*sd0000212Cbc03sc*i*, pci:v000010DEd0000124Dsv*sd000010CCbc03sc*i*, pci:v000010DEd00001290sv*sd00002AFAbc03sc*i*, pci:v000010DEd00001292sv*sd00003675bc03sc*i*, pci:v000010DEd00001292sv*sd00003684bc03sc*i*, pci:v000010DEd00001295sv*sd00002B0Dbc03sc*i*, pci:v000010DEd00001295sv*sd00002B0Fbc03sc*i*, pci:v000010DEd00001295sv*sd00002B20bc03sc*i*, pci:v000010DEd00001295sv*sd00002B21bc03sc*i*, pci:v000010DEd00001340sv*sd00002B2Bbc03sc*i*, pci:v000010DEd00001341sv*sd00003697bc03sc*i*, pci:v000010DEd00001341sv*sd00003699bc03sc*i*, pci:v000010DEd00001341sv*sd0000369Cbc03sc*i*, pci:v000010DEd00001391sv*sd00003697bc03sc*i*, pci:v000010DEd00001392sv*sd0000861Ebc03sc*i*, pci:v000010DEd00000191sv*sd*bc03sc*i*, pci:v000010DEd00000193sv*sd*bc03sc*i*, pci:v000010DEd00000194sv*sd*bc03sc*i*, pci:v000010DEd00000197sv*sd*bc03sc*i*, pci:v000010DEd0000019Dsv*sd*bc03sc*i*, pci:v000010DEd0000019Esv*sd*bc03sc*i*, pci:v000010DEd00000400sv*sd*bc03sc*i*, pci:v000010DEd00000401sv*sd*bc03sc*i*, pci:v000010DEd00000402sv*sd*bc03sc*i*, pci:v000010DEd00000403sv*sd*bc03sc*i*, pci:v000010DEd00000404sv*sd*bc03sc*i*, pci:v000010DEd00000405sv*sd*bc03sc*i*, pci:v000010DEd00000406sv*sd*bc03sc*i*, pci:v000010DEd00000407sv*sd*bc03sc*i*, pci:v000010DEd00000408sv*sd*bc03sc*i*, pci:v000010DEd00000409sv*sd*bc03sc*i*, pci:v000010DEd0000040Asv*sd*bc03sc*i*, pci:v000010DEd0000040Bsv*sd*bc03sc*i*, pci:v000010DEd0000040Csv*sd*bc03sc*i*, pci:v000010DEd0000040Dsv*sd*bc03sc*i*, pci:v000010DEd0000040Esv*sd*bc03sc*i*, pci:v000010DEd0000040Fsv*sd*bc03sc*i*, pci:v000010DEd00000410sv*sd*bc03sc*i*, pci:v000010DEd00000420sv*sd*bc03sc*i*, pci:v000010DEd00000421sv*sd*bc03sc*i*, pci:v000010DEd00000422sv*sd*bc03sc*i*, pci:v000010DEd00000423sv*sd*bc03sc*i*, pci:v000010DEd00000424sv*sd*bc03sc*i*, pci:v000010DEd00000425sv*sd*bc03sc*i*, pci:v000010DEd00000426sv*sd*bc03sc*i*, pci:v000010DEd00000427sv*sd*bc03sc*i*, pci:v000010DEd00000428sv*sd*bc03sc*i*, pci:v000010DEd00000429sv*sd*bc03sc*i*, pci:v000010DEd0000042Asv*sd*bc03sc*i*, pci:v000010DEd0000042Bsv*sd*bc03sc*i*, pci:v000010DEd0000042Csv*sd*bc03sc*i*, pci:v000010DEd0000042Dsv*sd*bc03sc*i*, pci:v000010DEd0000042Esv*sd*bc03sc*i*, pci:v000010DEd0000042Fsv*sd*bc03sc*i*, pci:v000010DEd000005E0sv*sd*bc03sc*i*, pci:v000010DEd000005E1sv*sd*bc03sc*i*, pci:v000010DEd000005E2sv*sd*bc03sc*i*, pci:v000010DEd000005E3sv*sd*bc03sc*i*, pci:v000010DEd000005E6sv*sd*bc03sc*i*, pci:v000010DEd000005E7sv*sd*bc03sc*i*, pci:v000010DEd000005EAsv*sd*bc03sc*i*, pci:v000010DEd000005EBsv*sd*bc03sc*i*, pci:v000010DEd000005EDsv*sd*bc03sc*i*, pci:v000010DEd000005F8sv*sd*bc03sc*i*, pci:v000010DEd000005F9sv*sd*bc03sc*i*, pci:v000010DEd000005FDsv*sd*bc03sc*i*, pci:v000010DEd000005FEsv*sd*bc03sc*i*, pci:v000010DEd000005FFsv*sd*bc03sc*i*, pci:v000010DEd00000600sv*sd*bc03sc*i*, pci:v000010DEd00000601sv*sd*bc03sc*i*, pci:v000010DEd00000602sv*sd*bc03sc*i*, pci:v000010DEd00000603sv*sd*bc03sc*i*, pci:v000010DEd00000604sv*sd*bc03sc*i*, pci:v000010DEd00000605sv*sd*bc03sc*i*, pci:v000010DEd00000606sv*sd*bc03sc*i*, pci:v000010DEd00000607sv*sd*bc03sc*i*, pci:v000010DEd00000608sv*sd*bc03sc*i*, pci:v000010DEd00000609sv*sd*bc03sc*i*, pci:v000010DEd0000060Asv*sd*bc03sc*i*, pci:v000010DEd0000060Bsv*sd*bc03sc*i*, pci:v000010DEd0000060Csv*sd*bc03sc*i*, pci:v000010DEd0000060Dsv*sd*bc03sc*i*, pci:v000010DEd0000060Fsv*sd*bc03sc*i*, pci:v000010DEd00000610sv*sd*bc03sc*i*, pci:v000010DEd00000611sv*sd*bc03sc*i*, pci:v000010DEd00000612sv*sd*bc03sc*i*, pci:v000010DEd00000613sv*sd*bc03sc*i*, pci:v000010DEd00000614sv*sd*bc03sc*i*, pci:v000010DEd00000615sv*sd*bc03sc*i*, pci:v000010DEd00000617sv*sd*bc03sc*i*, pci:v000010DEd00000618sv*sd*bc03sc*i*, pci:v000010DEd00000619sv*sd*bc03sc*i*, pci:v000010DEd0000061Asv*sd*bc03sc*i*, pci:v000010DEd0000061Bsv*sd*bc03sc*i*, pci:v000010DEd0000061Csv*sd*bc03sc*i*, pci:v000010DEd0000061Dsv*sd*bc03sc*i*, pci:v000010DEd0000061Esv*sd*bc03sc*i*, pci:v000010DEd0000061Fsv*sd*bc03sc*i*, pci:v000010DEd00000621sv*sd*bc03sc*i*, pci:v000010DEd00000622sv*sd*bc03sc*i*, pci:v000010DEd00000623sv*sd*bc03sc*i*, pci:v000010DEd00000625sv*sd*bc03sc*i*, pci:v000010DEd00000626sv*sd*bc03sc*i*, pci:v000010DEd00000627sv*sd*bc03sc*i*, pci:v000010DEd00000628sv*sd*bc03sc*i*, pci:v000010DEd0000062Asv*sd*bc03sc*i*, pci:v000010DEd0000062Bsv*sd*bc03sc*i*, pci:v000010DEd0000062Csv*sd*bc03sc*i*, pci:v000010DEd0000062Dsv*sd*bc03sc*i*, pci:v000010DEd0000062Esv*sd*bc03sc*i*, pci:v000010DEd00000630sv*sd*bc03sc*i*, pci:v000010DEd00000631sv*sd*bc03sc*i*, pci:v000010DEd00000632sv*sd*bc03sc*i*, pci:v000010DEd00000635sv*sd*bc03sc*i*, pci:v000010DEd00000637sv*sd*bc03sc*i*, pci:v000010DEd00000638sv*sd*bc03sc*i*, pci:v000010DEd0000063Asv*sd*bc03sc*i*, pci:v000010DEd00000640sv*sd*bc03sc*i*, pci:v000010DEd00000641sv*sd*bc03sc*i*, pci:v000010DEd00000643sv*sd*bc03sc*i*, pci:v000010DEd00000644sv*sd*bc03sc*i*, pci:v000010DEd00000645sv*sd*bc03sc*i*, pci:v000010DEd00000646sv*sd*bc03sc*i*, pci:v000010DEd00000647sv*sd*bc03sc*i*, pci:v000010DEd00000648sv*sd*bc03sc*i*, pci:v000010DEd00000649sv*sd*bc03sc*i*, pci:v000010DEd0000064Asv*sd*bc03sc*i*, pci:v000010DEd0000064Bsv*sd*bc03sc*i*, pci:v000010DEd0000064Csv*sd*bc03sc*i*, pci:v000010DEd00000651sv*sd*bc03sc*i*, pci:v000010DEd00000652sv*sd*bc03sc*i*, pci:v000010DEd00000653sv*sd*bc03sc*i*, pci:v000010DEd00000654sv*sd*bc03sc*i*, pci:v000010DEd00000658sv*sd*bc03sc*i*, pci:v000010DEd00000659sv*sd*bc03sc*i*, pci:v000010DEd0000065Asv*sd*bc03sc*i*, pci:v000010DEd0000065Bsv*sd*bc03sc*i*, pci:v000010DEd0000065Csv*sd*bc03sc*i*, pci:v000010DEd000006C0sv*sd*bc03sc*i*, pci:v000010DEd000006C4sv*sd*bc03sc*i*, pci:v000010DEd000006CAsv*sd*bc03sc*i*, pci:v000010DEd000006CDsv*sd*bc03sc*i*, pci:v000010DEd000006D1sv*sd*bc03sc*i*, pci:v000010DEd000006D2sv*sd*bc03sc*i*, pci:v000010DEd000006D8sv*sd*bc03sc*i*, pci:v000010DEd000006D9sv*sd*bc03sc*i*, pci:v000010DEd000006DAsv*sd*bc03sc*i*, pci:v000010DEd000006DCsv*sd*bc03sc*i*, pci:v000010DEd000006DDsv*sd*bc03sc*i*, pci:v000010DEd000006DEsv*sd*bc03sc*i*, pci:v000010DEd000006DFsv*sd*bc03sc*i*, pci:v000010DEd000006E0sv*sd*bc03sc*i*, pci:v000010DEd000006E1sv*sd*bc03sc*i*, pci:v000010DEd000006E2sv*sd*bc03sc*i*, pci:v000010DEd000006E3sv*sd*bc03sc*i*, pci:v000010DEd000006E4sv*sd*bc03sc*i*, pci:v000010DEd000006E5sv*sd*bc03sc*i*, pci:v000010DEd000006E6sv*sd*bc03sc*i*, pci:v000010DEd000006E7sv*sd*bc03sc*i*, pci:v000010DEd000006E8sv*sd*bc03sc*i*, pci:v000010DEd000006E9sv*sd*bc03sc*i*, pci:v000010DEd000006EAsv*sd*bc03sc*i*, pci:v000010DEd000006EBsv*sd*bc03sc*i*, pci:v000010DEd000006ECsv*sd*bc03sc*i*, pci:v000010DEd000006EFsv*sd*bc03sc*i*, pci:v000010DEd000006F1sv*sd*bc03sc*i*, pci:v000010DEd000006F8sv*sd*bc03sc*i*, pci:v000010DEd000006F9sv*sd*bc03sc*i*, pci:v000010DEd000006FAsv*sd*bc03sc*i*, pci:v000010DEd000006FBsv*sd*bc03sc*i*, pci:v000010DEd000006FDsv*sd*bc03sc*i*, pci:v000010DEd000006FFsv*sd*bc03sc*i*, pci:v000010DEd00000840sv*sd*bc03sc*i*, pci:v000010DEd00000844sv*sd*bc03sc*i*, pci:v000010DEd00000845sv*sd*bc03sc*i*, pci:v000010DEd00000846sv*sd*bc03sc*i*, pci:v000010DEd00000847sv*sd*bc03sc*i*, pci:v000010DEd00000848sv*sd*bc03sc*i*, pci:v000010DEd00000849sv*sd*bc03sc*i*, pci:v000010DEd0000084Asv*sd*bc03sc*i*, pci:v000010DEd0000084Bsv*sd*bc03sc*i*, pci:v000010DEd0000084Csv*sd*bc03sc*i*, pci:v000010DEd0000084Dsv*sd*bc03sc*i*, pci:v000010DEd0000084Fsv*sd*bc03sc*i*, pci:v000010DEd00000860sv*sd*bc03sc*i*, pci:v000010DEd00000861sv*sd*bc03sc*i*, pci:v000010DEd00000862sv*sd*bc03sc*i*, pci:v000010DEd00000863sv*sd*bc03sc*i*, pci:v000010DEd00000864sv*sd*bc03sc*i*, pci:v000010DEd00000865sv*sd*bc03sc*i*, pci:v000010DEd00000866sv*sd*bc03sc*i*, pci:v000010DEd00000867sv*sd*bc03sc*i*, pci:v000010DEd00000868sv*sd*bc03sc*i*, pci:v000010DEd00000869sv*sd*bc03sc*i*, pci:v000010DEd0000086Asv*sd*bc03sc*i*, pci:v000010DEd0000086Csv*sd*bc03sc*i*, pci:v000010DEd0000086Dsv*sd*bc03sc*i*, pci:v000010DEd0000086Esv*sd*bc03sc*i*, pci:v000010DEd0000086Fsv*sd*bc03sc*i*, pci:v000010DEd00000870sv*sd*bc03sc*i*, pci:v000010DEd00000871sv*sd*bc03sc*i*, pci:v000010DEd00000872sv*sd*bc03sc*i*, pci:v000010DEd00000873sv*sd*bc03sc*i*, pci:v000010DEd00000874sv*sd*bc03sc*i*, pci:v000010DEd00000876sv*sd*bc03sc*i*, pci:v000010DEd0000087Asv*sd*bc03sc*i*, pci:v000010DEd0000087Dsv*sd*bc03sc*i*, pci:v000010DEd0000087Esv*sd*bc03sc*i*, pci:v000010DEd0000087Fsv*sd*bc03sc*i*, pci:v000010DEd000008A0sv*sd*bc03sc*i*, pci:v000010DEd000008A2sv*sd*bc03sc*i*, pci:v000010DEd000008A3sv*sd*bc03sc*i*, pci:v000010DEd000008A4sv*sd*bc03sc*i*, pci:v000010DEd000008A5sv*sd*bc03sc*i*, pci:v000010DEd00000A20sv*sd*bc03sc*i*, pci:v000010DEd00000A22sv*sd*bc03sc*i*, pci:v000010DEd00000A23sv*sd*bc03sc*i*, pci:v000010DEd00000A26sv*sd*bc03sc*i*, pci:v000010DEd00000A27sv*sd*bc03sc*i*, pci:v000010DEd00000A28sv*sd*bc03sc*i*, pci:v000010DEd00000A29sv*sd*bc03sc*i*, pci:v000010DEd00000A2Asv*sd*bc03sc*i*, pci:v000010DEd00000A2Bsv*sd*bc03sc*i*, pci:v000010DEd00000A2Csv*sd*bc03sc*i*, pci:v000010DEd00000A2Dsv*sd*bc03sc*i*, pci:v000010DEd00000A32sv*sd*bc03sc*i*, pci:v000010DEd00000A34sv*sd*bc03sc*i*, pci:v000010DEd00000A35sv*sd*bc03sc*i*, pci:v000010DEd00000A38sv*sd*bc03sc*i*, pci:v000010DEd00000A3Csv*sd*bc03sc*i*, pci:v000010DEd00000A60sv*sd*bc03sc*i*, pci:v000010DEd00000A62sv*sd*bc03sc*i*, pci:v000010DEd00000A63sv*sd*bc03sc*i*, pci:v000010DEd00000A64sv*sd*bc03sc*i*, pci:v000010DEd00000A65sv*sd*bc03sc*i*, pci:v000010DEd00000A66sv*sd*bc03sc*i*, pci:v000010DEd00000A67sv*sd*bc03sc*i*, pci:v000010DEd00000A68sv*sd*bc03sc*i*, pci:v000010DEd00000A69sv*sd*bc03sc*i*, pci:v000010DEd00000A6Asv*sd*bc03sc*i*, pci:v000010DEd00000A6Csv*sd*bc03sc*i*, pci:v000010DEd00000A6Esv*sd*bc03sc*i*, pci:v000010DEd00000A6Fsv*sd*bc03sc*i*, pci:v000010DEd00000A70sv*sd*bc03sc*i*, pci:v000010DEd00000A71sv*sd*bc03sc*i*, pci:v000010DEd00000A72sv*sd*bc03sc*i*, pci:v000010DEd00000A73sv*sd*bc03sc*i*, pci:v000010DEd00000A74sv*sd*bc03sc*i*, pci:v000010DEd00000A75sv*sd*bc03sc*i*, pci:v000010DEd00000A76sv*sd*bc03sc*i*, pci:v000010DEd00000A78sv*sd*bc03sc*i*, pci:v000010DEd00000A7Asv*sd*bc03sc*i*, pci:v000010DEd00000A7Csv*sd*bc03sc*i*, pci:v000010DEd00000CA0sv*sd*bc03sc*i*, pci:v000010DEd00000CA2sv*sd*bc03sc*i*, pci:v000010DEd00000CA3sv*sd*bc03sc*i*, pci:v000010DEd00000CA4sv*sd*bc03sc*i*, pci:v000010DEd00000CA5sv*sd*bc03sc*i*, pci:v000010DEd00000CA7sv*sd*bc03sc*i*, pci:v000010DEd00000CA8sv*sd*bc03sc*i*, pci:v000010DEd00000CA9sv*sd*bc03sc*i*, pci:v000010DEd00000CACsv*sd*bc03sc*i*, pci:v000010DEd00000CAFsv*sd*bc03sc*i*, pci:v000010DEd00000CB0sv*sd*bc03sc*i*, pci:v000010DEd00000CB1sv*sd*bc03sc*i*, pci:v000010DEd00000CBCsv*sd*bc03sc*i*, pci:v000010DEd00000DC0sv*sd*bc03sc*i*, pci:v000010DEd00000DC4sv*sd*bc03sc*i*, pci:v000010DEd00000DC5sv*sd*bc03sc*i*, pci:v000010DEd00000DC6sv*sd*bc03sc*i*, pci:v000010DEd00000DCDsv*sd*bc03sc*i*, pci:v000010DEd00000DCEsv*sd*bc03sc*i*, pci:v000010DEd00000DD1sv*sd*bc03sc*i*, pci:v000010DEd00000DD2sv*sd*bc03sc*i*, pci:v000010DEd00000DD3sv*sd*bc03sc*i*, pci:v000010DEd00000DD6sv*sd*bc03sc*i*, pci:v000010DEd00000DD8sv*sd*bc03sc*i*, pci:v000010DEd00000DDAsv*sd*bc03sc*i*, pci:v000010DEd00000DE0sv*sd*bc03sc*i*, pci:v000010DEd00000DE1sv*sd*bc03sc*i*, pci:v000010DEd00000DE2sv*sd*bc03sc*i*, pci:v000010DEd00000DE3sv*sd*bc03sc*i*, pci:v000010DEd00000DE4sv*sd*bc03sc*i*, pci:v000010DEd00000DE5sv*sd*bc03sc*i*, pci:v000010DEd00000DE7sv*sd*bc03sc*i*, pci:v000010DEd00000DE8sv*sd*bc03sc*i*, pci:v000010DEd00000DE9sv*sd*bc03sc*i*, pci:v000010DEd00000DEAsv*sd*bc03sc*i*, pci:v000010DEd00000DEBsv*sd*bc03sc*i*, pci:v000010DEd00000DECsv*sd*bc03sc*i*, pci:v000010DEd00000DEDsv*sd*bc03sc*i*, pci:v000010DEd00000DEEsv*sd*bc03sc*i*, pci:v000010DEd00000DEFsv*sd*bc03sc*i*, pci:v000010DEd00000DF0sv*sd*bc03sc*i*, pci:v000010DEd00000DF1sv*sd*bc03sc*i*, pci:v000010DEd00000DF2sv*sd*bc03sc*i*, pci:v000010DEd00000DF3sv*sd*bc03sc*i*, pci:v000010DEd00000DF4sv*sd*bc03sc*i*, pci:v000010DEd00000DF5sv*sd*bc03sc*i*, pci:v000010DEd00000DF6sv*sd*bc03sc*i*, pci:v000010DEd00000DF7sv*sd*bc03sc*i*, pci:v000010DEd00000DF8sv*sd*bc03sc*i*, pci:v000010DEd00000DF9sv*sd*bc03sc*i*, pci:v000010DEd00000DFAsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd00000E22sv*sd*bc03sc*i*, pci:v000010DEd00000E23sv*sd*bc03sc*i*, pci:v000010DEd00000E24sv*sd*bc03sc*i*, pci:v000010DEd00000E30sv*sd*bc03sc*i*, pci:v000010DEd00000E31sv*sd*bc03sc*i*, pci:v000010DEd00000E3Asv*sd*bc03sc*i*, pci:v000010DEd00000E3Bsv*sd*bc03sc*i*, pci:v000010DEd00000F00sv*sd*bc03sc*i*, pci:v000010DEd00000F01sv*sd*bc03sc*i*, pci:v000010DEd00000F02sv*sd*bc03sc*i*, pci:v000010DEd00000FC0sv*sd*bc03sc*i*, pci:v000010DEd00000FC1sv*sd*bc03sc*i*, pci:v000010DEd00000FC2sv*sd*bc03sc*i*, pci:v000010DEd00000FC6sv*sd*bc03sc*i*, pci:v000010DEd00000FC8sv*sd*bc03sc*i*, pci:v000010DEd00000FCDsv*sd*bc03sc*i*, pci:v000010DEd00000FCEsv*sd*bc03sc*i*, pci:v000010DEd00000FD1sv*sd*bc03sc*i*, pci:v000010DEd00000FD2sv*sd*bc03sc*i*, pci:v000010DEd00000FD3sv*sd*bc03sc*i*, pci:v000010DEd00000FD4sv*sd*bc03sc*i*, pci:v000010DEd00000FD5sv*sd*bc03sc*i*, pci:v000010DEd00000FD8sv*sd*bc03sc*i*, pci:v000010DEd00000FD9sv*sd*bc03sc*i*, pci:v000010DEd00000FDFsv*sd*bc03sc*i*, pci:v000010DEd00000FE0sv*sd*bc03sc*i*, pci:v000010DEd00000FE1sv*sd*bc03sc*i*, pci:v000010DEd00000FE2sv*sd*bc03sc*i*, pci:v000010DEd00000FE3sv*sd*bc03sc*i*, pci:v000010DEd00000FE4sv*sd*bc03sc*i*, pci:v000010DEd00000FE9sv*sd*bc03sc*i*, pci:v000010DEd00000FEAsv*sd*bc03sc*i*, pci:v000010DEd00000FECsv*sd*bc03sc*i*, pci:v000010DEd00000FEFsv*sd*bc03sc*i*, pci:v000010DEd00000FF2sv*sd*bc03sc*i*, pci:v000010DEd00000FF3sv*sd*bc03sc*i*, pci:v000010DEd00000FF6sv*sd*bc03sc*i*, pci:v000010DEd00000FF8sv*sd*bc03sc*i*, pci:v000010DEd00000FF9sv*sd*bc03sc*i*, pci:v000010DEd00000FFAsv*sd*bc03sc*i*, pci:v000010DEd00000FFBsv*sd*bc03sc*i*, pci:v000010DEd00000FFCsv*sd*bc03sc*i*, pci:v000010DEd00000FFDsv*sd*bc03sc*i*, pci:v000010DEd00000FFEsv*sd*bc03sc*i*, pci:v000010DEd00000FFFsv*sd*bc03sc*i*, pci:v000010DEd00001001sv*sd*bc03sc*i*, pci:v000010DEd00001004sv*sd*bc03sc*i*, pci:v000010DEd00001005sv*sd*bc03sc*i*, pci:v000010DEd00001007sv*sd*bc03sc*i*, pci:v000010DEd00001008sv*sd*bc03sc*i*, pci:v000010DEd0000100Asv*sd*bc03sc*i*, pci:v000010DEd0000100Csv*sd*bc03sc*i*, pci:v000010DEd00001021sv*sd*bc03sc*i*, pci:v000010DEd00001022sv*sd*bc03sc*i*, pci:v000010DEd00001023sv*sd*bc03sc*i*, pci:v000010DEd00001024sv*sd*bc03sc*i*, pci:v000010DEd00001026sv*sd*bc03sc*i*, pci:v000010DEd00001027sv*sd*bc03sc*i*, pci:v000010DEd00001028sv*sd*bc03sc*i*, pci:v000010DEd00001029sv*sd*bc03sc*i*, pci:v000010DEd0000103Asv*sd*bc03sc*i*, pci:v000010DEd0000103Csv*sd*bc03sc*i*, pci:v000010DEd00001040sv*sd*bc03sc*i*, pci:v000010DEd00001042sv*sd*bc03sc*i*, pci:v000010DEd00001048sv*sd*bc03sc*i*, pci:v000010DEd00001049sv*sd*bc03sc*i*, pci:v000010DEd0000104Asv*sd*bc03sc*i*, pci:v000010DEd0000104Bsv*sd*bc03sc*i*, pci:v000010DEd0000104Csv*sd*bc03sc*i*, pci:v000010DEd00001050sv*sd*bc03sc*i*, pci:v000010DEd00001051sv*sd*bc03sc*i*, pci:v000010DEd00001052sv*sd*bc03sc*i*, pci:v000010DEd00001054sv*sd*bc03sc*i*, pci:v000010DEd00001055sv*sd*bc03sc*i*, pci:v000010DEd00001056sv*sd*bc03sc*i*, pci:v000010DEd00001057sv*sd*bc03sc*i*, pci:v000010DEd00001058sv*sd*bc03sc*i*, pci:v000010DEd00001059sv*sd*bc03sc*i*, pci:v000010DEd0000105Asv*sd*bc03sc*i*, pci:v000010DEd0000105Bsv*sd*bc03sc*i*, pci:v000010DEd0000107Csv*sd*bc03sc*i*, pci:v000010DEd0000107Dsv*sd*bc03sc*i*, pci:v000010DEd00001080sv*sd*bc03sc*i*, pci:v000010DEd00001081sv*sd*bc03sc*i*, pci:v000010DEd00001082sv*sd*bc03sc*i*, pci:v000010DEd00001084sv*sd*bc03sc*i*, pci:v000010DEd00001086sv*sd*bc03sc*i*, pci:v000010DEd00001087sv*sd*bc03sc*i*, pci:v000010DEd00001088sv*sd*bc03sc*i*, pci:v000010DEd00001089sv*sd*bc03sc*i*, pci:v000010DEd0000108Bsv*sd*bc03sc*i*, pci:v000010DEd00001091sv*sd*bc03sc*i*, pci:v000010DEd00001094sv*sd*bc03sc*i*, pci:v000010DEd00001096sv*sd*bc03sc*i*, pci:v000010DEd0000109Asv*sd*bc03sc*i*, pci:v000010DEd0000109Bsv*sd*bc03sc*i*, pci:v000010DEd000010C0sv*sd*bc03sc*i*, pci:v000010DEd000010C3sv*sd*bc03sc*i*, pci:v000010DEd000010C5sv*sd*bc03sc*i*, pci:v000010DEd000010D8sv*sd*bc03sc*i*, pci:v000010DEd00001180sv*sd*bc03sc*i*, pci:v000010DEd00001183sv*sd*bc03sc*i*, pci:v000010DEd00001184sv*sd*bc03sc*i*, pci:v000010DEd00001185sv*sd*bc03sc*i*, pci:v000010DEd00001187sv*sd*bc03sc*i*, pci:v000010DEd00001188sv*sd*bc03sc*i*, pci:v000010DEd00001189sv*sd*bc03sc*i*, pci:v000010DEd0000118Asv*sd*bc03sc*i*, pci:v000010DEd0000118Esv*sd*bc03sc*i*, pci:v000010DEd0000118Fsv*sd*bc03sc*i*, pci:v000010DEd00001193sv*sd*bc03sc*i*, pci:v000010DEd00001194sv*sd*bc03sc*i*, pci:v000010DEd00001195sv*sd*bc03sc*i*, pci:v000010DEd00001198sv*sd*bc03sc*i*, pci:v000010DEd00001199sv*sd*bc03sc*i*, pci:v000010DEd0000119Asv*sd*bc03sc*i*, pci:v000010DEd0000119Dsv*sd*bc03sc*i*, pci:v000010DEd0000119Esv*sd*bc03sc*i*, pci:v000010DEd0000119Fsv*sd*bc03sc*i*, pci:v000010DEd000011A0sv*sd*bc03sc*i*, pci:v000010DEd000011A1sv*sd*bc03sc*i*, pci:v000010DEd000011A2sv*sd*bc03sc*i*, pci:v000010DEd000011A3sv*sd*bc03sc*i*, pci:v000010DEd000011A7sv*sd*bc03sc*i*, pci:v000010DEd000011B4sv*sd*bc03sc*i*, pci:v000010DEd000011B6sv*sd*bc03sc*i*, pci:v000010DEd000011B7sv*sd*bc03sc*i*, pci:v000010DEd000011B8sv*sd*bc03sc*i*, pci:v000010DEd000011BAsv*sd*bc03sc*i*, pci:v000010DEd000011BCsv*sd*bc03sc*i*, pci:v000010DEd000011BDsv*sd*bc03sc*i*, pci:v000010DEd000011BEsv*sd*bc03sc*i*, pci:v000010DEd000011BFsv*sd*bc03sc*i*, pci:v000010DEd000011C0sv*sd*bc03sc*i*, pci:v000010DEd000011C2sv*sd*bc03sc*i*, pci:v000010DEd000011C3sv*sd*bc03sc*i*, pci:v000010DEd000011C4sv*sd*bc03sc*i*, pci:v000010DEd000011C5sv*sd*bc03sc*i*, pci:v000010DEd000011C6sv*sd*bc03sc*i*, pci:v000010DEd000011C8sv*sd*bc03sc*i*, pci:v000010DEd000011E0sv*sd*bc03sc*i*, pci:v000010DEd000011E1sv*sd*bc03sc*i*, pci:v000010DEd000011E2sv*sd*bc03sc*i*, pci:v000010DEd000011E3sv*sd*bc03sc*i*, pci:v000010DEd000011FAsv*sd*bc03sc*i*, pci:v000010DEd000011FCsv*sd*bc03sc*i*, pci:v000010DEd00001200sv*sd*bc03sc*i*, pci:v000010DEd00001201sv*sd*bc03sc*i*, pci:v000010DEd00001203sv*sd*bc03sc*i*, pci:v000010DEd00001205sv*sd*bc03sc*i*, pci:v000010DEd00001206sv*sd*bc03sc*i*, pci:v000010DEd00001207sv*sd*bc03sc*i*, pci:v000010DEd00001208sv*sd*bc03sc*i*, pci:v000010DEd00001210sv*sd*bc03sc*i*, pci:v000010DEd00001211sv*sd*bc03sc*i*, pci:v000010DEd00001212sv*sd*bc03sc*i*, pci:v000010DEd00001213sv*sd*bc03sc*i*, pci:v000010DEd00001241sv*sd*bc03sc*i*, pci:v000010DEd00001243sv*sd*bc03sc*i*, pci:v000010DEd00001244sv*sd*bc03sc*i*, pci:v000010DEd00001245sv*sd*bc03sc*i*, pci:v000010DEd00001246sv*sd*bc03sc*i*, pci:v000010DEd00001247sv*sd*bc03sc*i*, pci:v000010DEd00001248sv*sd*bc03sc*i*, pci:v000010DEd00001249sv*sd*bc03sc*i*, pci:v000010DEd0000124Bsv*sd*bc03sc*i*, pci:v000010DEd0000124Dsv*sd*bc03sc*i*, pci:v000010DEd00001251sv*sd*bc03sc*i*, pci:v000010DEd00001280sv*sd*bc03sc*i*, pci:v000010DEd00001281sv*sd*bc03sc*i*, pci:v000010DEd00001282sv*sd*bc03sc*i*, pci:v000010DEd00001284sv*sd*bc03sc*i*, pci:v000010DEd00001286sv*sd*bc03sc*i*, pci:v000010DEd00001287sv*sd*bc03sc*i*, pci:v000010DEd00001288sv*sd*bc03sc*i*, pci:v000010DEd00001290sv*sd*bc03sc*i*, pci:v000010DEd00001291sv*sd*bc03sc*i*, pci:v000010DEd00001292sv*sd*bc03sc*i*, pci:v000010DEd00001293sv*sd*bc03sc*i*, pci:v000010DEd00001295sv*sd*bc03sc*i*, pci:v000010DEd00001296sv*sd*bc03sc*i*, pci:v000010DEd00001298sv*sd*bc03sc*i*, pci:v000010DEd000012B9sv*sd*bc03sc*i*, pci:v000010DEd000012BAsv*sd*bc03sc*i*, pci:v000010DEd00001340sv*sd*bc03sc*i*, pci:v000010DEd00001341sv*sd*bc03sc*i*, pci:v000010DEd00001380sv*sd*bc03sc*i*, pci:v000010DEd00001381sv*sd*bc03sc*i*, pci:v000010DEd00001382sv*sd*bc03sc*i*, pci:v000010DEd00001390sv*sd*bc03sc*i*, pci:v000010DEd00001391sv*sd*bc03sc*i*, pci:v000010DEd00001392sv*sd*bc03sc*i*, pci:v000010DEd00001393sv*sd*bc03sc*i*, pci:v000010DEd000013BAsv*sd*bc03sc*i*, pci:v000010DEd000013BBsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*)
+Description-md5: 911bd6d47736c2778a81638fd879b5b9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-340-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 736
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340 (>= 340.96)
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-340-dev_340.96-0ubuntu3_amd64.deb
+Size: 81058
+MD5sum: 832623a4cbf7e291bf61a658c3bfd234
+SHA1: b7618ff72c090cab6cb05ac473803169bdff5876
+SHA256: 1a2ee9da690890c6e0e035fcf9b7dd2baf55b3ad5c920f6cf66db05ff33324a5
+Description: NVIDIA binary Xorg driver development files
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-340-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-340-updates_340.96-0ubuntu3_amd64.deb
+Size: 4808
+MD5sum: 05a8b1f81c226776353c32a7e8190fc4
+SHA1: 9644ccd563b9d135ab431bcdacffc4d5831792a4
+SHA256: 861e149bb56d7fd067eef6e4aee027831c6c387207de8aa4f16439fe04e945bf
+Description: Transitional package for nvidia-340
+Description-md5: 57112f542d553ab72039643ae9695ee9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-340-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-340-updates-dev_340.96-0ubuntu3_amd64.deb
+Size: 4816
+MD5sum: 01d0d1fa4e08f9ddb8572916d680dbd3
+SHA1: 50c14adb6d7872207129f0a164cf9fd4da3107c3
+SHA256: 6d58e0d7655895a5e34713b9762674633cdbb4db95e5e596a73658ae452a1abc
+Description: Transitional package for nvidia-340-dev
+Description-md5: 6c98e0772fd230780190db0e8cbb108c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-340-updates-uvm
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340-updates
+Version: 340.96-0ubuntu2
+Depends: nvidia-340-updates
+Filename: pool/restricted/n/nvidia-graphics-drivers-340-updates/nvidia-340-updates-uvm_340.96-0ubuntu2_amd64.deb
+Size: 4776
+MD5sum: 75471b484dc5c50c966a6cb98954eb84
+SHA1: 2fa6cadb3da52eca0d1b588866f8c28f83cdc023
+SHA256: 2a7fe6b976bf36ad3788abe8e0acc8e958142eac6f204014e8649408e06f44c9
+Description: Transitional package for nvidia-340-updates
+Description-md5: 5b79890d38f7657c2ca554090dde295c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-340-uvm
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Depends: nvidia-340
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-340-uvm_340.96-0ubuntu3_amd64.deb
+Size: 4766
+MD5sum: 26b43893f9f6be25728725d4f5971111
+SHA1: a5491590baf0242de6b672a4ec9f32455117aded
+SHA256: 719e958019a541d523ba752b2f9fad08f4bd79fce0f72bc2b0bf5e55b8ce34da
+Description: Transitional package for nvidia-340
+Description-md5: 6150dcc587e7591e1163978c48a23ab4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-346
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-352
+Version: 352.63-0ubuntu3
+Depends: nvidia-352
+Filename: pool/restricted/n/nvidia-graphics-drivers-352/nvidia-346_352.63-0ubuntu3_amd64.deb
+Size: 4798
+MD5sum: 491789ec32560f987c850cbc98e8bd63
+SHA1: 632f42d36915b1a1d68e1459fd4db1b128ea5e94
+SHA256: 454c3e6faadf5f2040e9668218bad05497007178f4b7b1c0eb5bd0f9f4a09955
+Description: Transitional package for nvidia-346
+Description-md5: bc63ab951f467150d0b106caf1deb3a4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-346-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-352
+Version: 352.63-0ubuntu3
+Depends: nvidia-352-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-352/nvidia-346-dev_352.63-0ubuntu3_amd64.deb
+Size: 4806
+MD5sum: 53f4a93289e4762834be20383bd76a57
+SHA1: c640c748ae4418d69008e09dc7189c935dab42a9
+SHA256: 924f840935bd8f7700072e0afcff00eaa9416878a7968dba3312c4f575bfaa40
+Description: Transitional package for nvidia-352-dev
+Description-md5: 93c2565c7654775825b346b27a3be297
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-346-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-352-updates
+Version: 352.63-0ubuntu3
+Depends: nvidia-352-updates
+Filename: pool/restricted/n/nvidia-graphics-drivers-352-updates/nvidia-346-updates_352.63-0ubuntu3_amd64.deb
+Size: 4810
+MD5sum: f18a60dc909dcbb7219009eb4588f63c
+SHA1: c984b492434b8c58d0abcbda08915d0ed44d37d5
+SHA256: 42cb9f1a86dd01b82a8444f814b85577e9c93f658acd0c77bac5f0f631ec9435
+Description: Transitional package for nvidia-346-updates
+Description-md5: e4d40fa873501ac30b841369371d1c8b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-346-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 18
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-352-updates
+Version: 352.63-0ubuntu3
+Depends: nvidia-352-updates-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-352-updates/nvidia-346-updates-dev_352.63-0ubuntu3_amd64.deb
+Size: 4818
+MD5sum: 9ee0c98578eef5816d91d6c9d90b0b9e
+SHA1: 6fb0b515e346ba6946cc369670a2639346a08963
+SHA256: 96ba9c9386f265c13d2d332c3f7b0f883607fc2f4d440788478a5b3d7f5e8045
+Description: Transitional package for nvidia-352-updates-dev
+Description-md5: 40549a3a31a6059d24ff84725400aa3a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-352
+Priority: optional
+Section: restricted/misc
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-352_361.42-0ubuntu2_amd64.deb
+Size: 4798
+MD5sum: ef00c11b5d2acefb535d7949bd87af52
+SHA1: 2eaf7c9713bf8fbf4e987449654a6b86b094b63d
+SHA256: 1a477da57cee0ef204f963e195efbbf2a64046ac90fab070f2d702b1da5208fd
+Description: Transitional package for nvidia-361
+Description-md5: 5240a8d8fdc6dbd1b55d1082d8a9f9e0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-352-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-352-dev_361.42-0ubuntu2_amd64.deb
+Size: 4808
+MD5sum: a4602c0d9f24209c7b86094e0a995504
+SHA1: 28f579290b5103af17f16b117a491977d5c10764
+SHA256: e73ac1540891f2ec358d8550eb5717f78d3a5e64980af2d8348eceec1ea5942c
+Description: Transitional package for nvidia-361-dev
+Description-md5: 5f99b0c4be6e5f4d5b31c2964e1934c7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-352-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-352-updates_361.42-0ubuntu2_amd64.deb
+Size: 4814
+MD5sum: 61ea810d005908a1e957d89389f6bfa5
+SHA1: d293e23ab6e6dab118bf5606882ac833df0b71eb
+SHA256: f2a61a980368f70e6efa0dc0824e7b82ad6e5463eabf14177e262163afd38bb3
+Description: Transitional package for nvidia-361
+Description-md5: 5240a8d8fdc6dbd1b55d1082d8a9f9e0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-352-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-352-updates-dev_361.42-0ubuntu2_amd64.deb
+Size: 4812
+MD5sum: 52e65d12af3828789a18cc7d1623e01d
+SHA1: 05ca5280ce4bdfb2ffb0b08fb3df421ca159a54f
+SHA256: 95b107b26e091ecb40f9e58edf4137c0006a71238fdcb06a254f268e84c246a2
+Description: Transitional package for nvidia-361-dev
+Description-md5: 5f99b0c4be6e5f4d5b31c2964e1934c7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-361
+Priority: optional
+Section: restricted/misc
+Installed-Size: 292039
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Replaces: nvidia-persistenced, xorg-driver-binary
+Provides: nvidia-driver-binary, nvidia-persistenced, xorg-driver-binary, xorg-driver-video
+Depends: x11-common (>= 1:7.0.0), make, sed (>> 3.0), dkms, linux-libc-dev, libc6-dev, patch, acpid, lib32gcc1, libc6-i386, passwd, adduser, libc6 (>= 2.2.5), libgl1, libx11-6, libxext6, xorg-video-abi-11 | xorg-video-abi-12 | xorg-video-abi-13 | xorg-video-abi-14 | xorg-video-abi-15 | xorg-video-abi-18 | xorg-video-abi-19 | xorg-video-abi-20, xserver-xorg-core
+Recommends: nvidia-settings (>= 331.20), nvidia-prime (>= 0.5) | bumblebee, libcuda1-361, nvidia-opencl-icd-361
+Conflicts: nvidia-persistenced, xorg-driver-binary
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-361_361.42-0ubuntu2_amd64.deb
+Size: 67644042
+MD5sum: b4884e23819e53bc49e151a6ae7434fa
+SHA1: 00c0596f6b1a30bf330d1ee4b893937cc860f0c8
+SHA256: 3013e190adb9ca9a908b5620c2cf65bd6b3b4156c59000783517c3ec0d760456
+Description: NVIDIA binary driver - version 361.42
+Modaliases: nvidia_361(pci:v000010DEd000006C0sv*sd*bc03sc*i*, pci:v000010DEd000006C4sv*sd*bc03sc*i*, pci:v000010DEd000006CAsv*sd*bc03sc*i*, pci:v000010DEd000006CDsv*sd*bc03sc*i*, pci:v000010DEd000006D1sv*sd*bc03sc*i*, pci:v000010DEd000006D2sv*sd*bc03sc*i*, pci:v000010DEd000006D8sv*sd*bc03sc*i*, pci:v000010DEd000006D9sv*sd*bc03sc*i*, pci:v000010DEd000006DAsv*sd*bc03sc*i*, pci:v000010DEd000006DCsv*sd*bc03sc*i*, pci:v000010DEd000006DDsv*sd*bc03sc*i*, pci:v000010DEd000006DEsv*sd*bc03sc*i*, pci:v000010DEd000006DFsv*sd*bc03sc*i*, pci:v000010DEd00000DC0sv*sd*bc03sc*i*, pci:v000010DEd00000DC4sv*sd*bc03sc*i*, pci:v000010DEd00000DC5sv*sd*bc03sc*i*, pci:v000010DEd00000DC6sv*sd*bc03sc*i*, pci:v000010DEd00000DCDsv*sd*bc03sc*i*, pci:v000010DEd00000DCEsv*sd*bc03sc*i*, pci:v000010DEd00000DD1sv*sd*bc03sc*i*, pci:v000010DEd00000DD2sv*sd*bc03sc*i*, pci:v000010DEd00000DD3sv*sd*bc03sc*i*, pci:v000010DEd00000DD6sv*sd*bc03sc*i*, pci:v000010DEd00000DD8sv*sd*bc03sc*i*, pci:v000010DEd00000DDAsv*sd*bc03sc*i*, pci:v000010DEd00000DE0sv*sd*bc03sc*i*, pci:v000010DEd00000DE1sv*sd*bc03sc*i*, pci:v000010DEd00000DE2sv*sd*bc03sc*i*, pci:v000010DEd00000DE3sv*sd*bc03sc*i*, pci:v000010DEd00000DE4sv*sd*bc03sc*i*, pci:v000010DEd00000DE5sv*sd*bc03sc*i*, pci:v000010DEd00000DE7sv*sd*bc03sc*i*, pci:v000010DEd00000DE8sv*sd*bc03sc*i*, pci:v000010DEd00000DE9sv*sd*bc03sc*i*, pci:v000010DEd00000DEAsv*sd*bc03sc*i*, pci:v000010DEd00000DEBsv*sd*bc03sc*i*, pci:v000010DEd00000DECsv*sd*bc03sc*i*, pci:v000010DEd00000DEDsv*sd*bc03sc*i*, pci:v000010DEd00000DEEsv*sd*bc03sc*i*, pci:v000010DEd00000DEFsv*sd*bc03sc*i*, pci:v000010DEd00000DF0sv*sd*bc03sc*i*, pci:v000010DEd00000DF1sv*sd*bc03sc*i*, pci:v000010DEd00000DF2sv*sd*bc03sc*i*, pci:v000010DEd00000DF3sv*sd*bc03sc*i*, pci:v000010DEd00000DF4sv*sd*bc03sc*i*, pci:v000010DEd00000DF5sv*sd*bc03sc*i*, pci:v000010DEd00000DF6sv*sd*bc03sc*i*, pci:v000010DEd00000DF7sv*sd*bc03sc*i*, pci:v000010DEd00000DF8sv*sd*bc03sc*i*, pci:v000010DEd00000DF9sv*sd*bc03sc*i*, pci:v000010DEd00000DFAsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*, pci:v000010DEd00000E22sv*sd*bc03sc*i*, pci:v000010DEd00000E23sv*sd*bc03sc*i*, pci:v000010DEd00000E24sv*sd*bc03sc*i*, pci:v000010DEd00000E30sv*sd*bc03sc*i*, pci:v000010DEd00000E31sv*sd*bc03sc*i*, pci:v000010DEd00000E3Asv*sd*bc03sc*i*, pci:v000010DEd00000E3Bsv*sd*bc03sc*i*, pci:v000010DEd00000F00sv*sd*bc03sc*i*, pci:v000010DEd00000F01sv*sd*bc03sc*i*, pci:v000010DEd00000F02sv*sd*bc03sc*i*, pci:v000010DEd00000F03sv*sd*bc03sc*i*, pci:v000010DEd00000FC0sv*sd*bc03sc*i*, pci:v000010DEd00000FC1sv*sd*bc03sc*i*, pci:v000010DEd00000FC2sv*sd*bc03sc*i*, pci:v000010DEd00000FC6sv*sd*bc03sc*i*, pci:v000010DEd00000FC8sv*sd*bc03sc*i*, pci:v000010DEd00000FC9sv*sd*bc03sc*i*, pci:v000010DEd00000FCDsv*sd*bc03sc*i*, pci:v000010DEd00000FCEsv*sd*bc03sc*i*, pci:v000010DEd00000FD1sv*sd*bc03sc*i*, pci:v000010DEd00000FD2sv*sd*bc03sc*i*, pci:v000010DEd00000FD3sv*sd*bc03sc*i*, pci:v000010DEd00000FD4sv*sd*bc03sc*i*, pci:v000010DEd00000FD5sv*sd*bc03sc*i*, pci:v000010DEd00000FD8sv*sd*bc03sc*i*, pci:v000010DEd00000FD9sv*sd*bc03sc*i*, pci:v000010DEd00000FDFsv*sd*bc03sc*i*, pci:v000010DEd00000FE0sv*sd*bc03sc*i*, pci:v000010DEd00000FE1sv*sd*bc03sc*i*, pci:v000010DEd00000FE2sv*sd*bc03sc*i*, pci:v000010DEd00000FE3sv*sd*bc03sc*i*, pci:v000010DEd00000FE4sv*sd*bc03sc*i*, pci:v000010DEd00000FE9sv*sd*bc03sc*i*, pci:v000010DEd00000FEAsv*sd*bc03sc*i*, pci:v000010DEd00000FECsv*sd*bc03sc*i*, pci:v000010DEd00000FEEsv*sd*bc03sc*i*, pci:v000010DEd00000FEFsv*sd*bc03sc*i*, pci:v000010DEd00000FF2sv*sd*bc03sc*i*, pci:v000010DEd00000FF3sv*sd*bc03sc*i*, pci:v000010DEd00000FF6sv*sd*bc03sc*i*, pci:v000010DEd00000FF8sv*sd*bc03sc*i*, pci:v000010DEd00000FF9sv*sd*bc03sc*i*, pci:v000010DEd00000FFAsv*sd*bc03sc*i*, pci:v000010DEd00000FFBsv*sd*bc03sc*i*, pci:v000010DEd00000FFCsv*sd*bc03sc*i*, pci:v000010DEd00000FFDsv*sd*bc03sc*i*, pci:v000010DEd00000FFEsv*sd*bc03sc*i*, pci:v000010DEd00000FFFsv*sd*bc03sc*i*, pci:v000010DEd00001001sv*sd*bc03sc*i*, pci:v000010DEd00001004sv*sd*bc03sc*i*, pci:v000010DEd00001005sv*sd*bc03sc*i*, pci:v000010DEd00001007sv*sd*bc03sc*i*, pci:v000010DEd00001008sv*sd*bc03sc*i*, pci:v000010DEd0000100Asv*sd*bc03sc*i*, pci:v000010DEd0000100Csv*sd*bc03sc*i*, pci:v000010DEd00001021sv*sd*bc03sc*i*, pci:v000010DEd00001022sv*sd*bc03sc*i*, pci:v000010DEd00001023sv*sd*bc03sc*i*, pci:v000010DEd00001024sv*sd*bc03sc*i*, pci:v000010DEd00001026sv*sd*bc03sc*i*, pci:v000010DEd00001027sv*sd*bc03sc*i*, pci:v000010DEd00001028sv*sd*bc03sc*i*, pci:v000010DEd00001029sv*sd*bc03sc*i*, pci:v000010DEd0000102Asv*sd*bc03sc*i*, pci:v000010DEd0000102Dsv*sd*bc03sc*i*, pci:v000010DEd0000103Asv*sd*bc03sc*i*, pci:v000010DEd0000103Csv*sd*bc03sc*i*, pci:v000010DEd00001040sv*sd*bc03sc*i*, pci:v000010DEd00001042sv*sd*bc03sc*i*, pci:v000010DEd00001048sv*sd*bc03sc*i*, pci:v000010DEd00001049sv*sd*bc03sc*i*, pci:v000010DEd0000104Asv*sd*bc03sc*i*, pci:v000010DEd0000104Bsv*sd*bc03sc*i*, pci:v000010DEd0000104Csv*sd*bc03sc*i*, pci:v000010DEd00001050sv*sd*bc03sc*i*, pci:v000010DEd00001051sv*sd*bc03sc*i*, pci:v000010DEd00001052sv*sd*bc03sc*i*, pci:v000010DEd00001054sv*sd*bc03sc*i*, pci:v000010DEd00001055sv*sd*bc03sc*i*, pci:v000010DEd00001056sv*sd*bc03sc*i*, pci:v000010DEd00001057sv*sd*bc03sc*i*, pci:v000010DEd00001058sv*sd*bc03sc*i*, pci:v000010DEd00001059sv*sd*bc03sc*i*, pci:v000010DEd0000105Asv*sd*bc03sc*i*, pci:v000010DEd0000105Bsv*sd*bc03sc*i*, pci:v000010DEd0000107Csv*sd*bc03sc*i*, pci:v000010DEd0000107Dsv*sd*bc03sc*i*, pci:v000010DEd00001080sv*sd*bc03sc*i*, pci:v000010DEd00001081sv*sd*bc03sc*i*, pci:v000010DEd00001082sv*sd*bc03sc*i*, pci:v000010DEd00001084sv*sd*bc03sc*i*, pci:v000010DEd00001086sv*sd*bc03sc*i*, pci:v000010DEd00001087sv*sd*bc03sc*i*, pci:v000010DEd00001088sv*sd*bc03sc*i*, pci:v000010DEd00001089sv*sd*bc03sc*i*, pci:v000010DEd0000108Bsv*sd*bc03sc*i*, pci:v000010DEd00001091sv*sd*bc03sc*i*, pci:v000010DEd00001094sv*sd*bc03sc*i*, pci:v000010DEd00001096sv*sd*bc03sc*i*, pci:v000010DEd0000109Asv*sd*bc03sc*i*, pci:v000010DEd0000109Bsv*sd*bc03sc*i*, pci:v000010DEd00001180sv*sd*bc03sc*i*, pci:v000010DEd00001183sv*sd*bc03sc*i*, pci:v000010DEd00001184sv*sd*bc03sc*i*, pci:v000010DEd00001185sv*sd*bc03sc*i*, pci:v000010DEd00001187sv*sd*bc03sc*i*, pci:v000010DEd00001188sv*sd*bc03sc*i*, pci:v000010DEd00001189sv*sd*bc03sc*i*, pci:v000010DEd0000118Asv*sd*bc03sc*i*, pci:v000010DEd0000118Esv*sd*bc03sc*i*, pci:v000010DEd0000118Fsv*sd*bc03sc*i*, pci:v000010DEd00001193sv*sd*bc03sc*i*, pci:v000010DEd00001194sv*sd*bc03sc*i*, pci:v000010DEd00001195sv*sd*bc03sc*i*, pci:v000010DEd00001198sv*sd*bc03sc*i*, pci:v000010DEd00001199sv*sd*bc03sc*i*, pci:v000010DEd0000119Asv*sd*bc03sc*i*, pci:v000010DEd0000119Dsv*sd*bc03sc*i*, pci:v000010DEd0000119Esv*sd*bc03sc*i*, pci:v000010DEd0000119Fsv*sd*bc03sc*i*, pci:v000010DEd000011A0sv*sd*bc03sc*i*, pci:v000010DEd000011A1sv*sd*bc03sc*i*, pci:v000010DEd000011A2sv*sd*bc03sc*i*, pci:v000010DEd000011A3sv*sd*bc03sc*i*, pci:v000010DEd000011A7sv*sd*bc03sc*i*, pci:v000010DEd000011B4sv*sd*bc03sc*i*, pci:v000010DEd000011B6sv*sd*bc03sc*i*, pci:v000010DEd000011B7sv*sd*bc03sc*i*, pci:v000010DEd000011B8sv*sd*bc03sc*i*, pci:v000010DEd000011BAsv*sd*bc03sc*i*, pci:v000010DEd000011BCsv*sd*bc03sc*i*, pci:v000010DEd000011BDsv*sd*bc03sc*i*, pci:v000010DEd000011BEsv*sd*bc03sc*i*, pci:v000010DEd000011BFsv*sd*bc03sc*i*, pci:v000010DEd000011C0sv*sd*bc03sc*i*, pci:v000010DEd000011C2sv*sd*bc03sc*i*, pci:v000010DEd000011C3sv*sd*bc03sc*i*, pci:v000010DEd000011C4sv*sd*bc03sc*i*, pci:v000010DEd000011C5sv*sd*bc03sc*i*, pci:v000010DEd000011C6sv*sd*bc03sc*i*, pci:v000010DEd000011C8sv*sd*bc03sc*i*, pci:v000010DEd000011CBsv*sd*bc03sc*i*, pci:v000010DEd000011E0sv*sd*bc03sc*i*, pci:v000010DEd000011E1sv*sd*bc03sc*i*, pci:v000010DEd000011E2sv*sd*bc03sc*i*, pci:v000010DEd000011E3sv*sd*bc03sc*i*, pci:v000010DEd000011FAsv*sd*bc03sc*i*, pci:v000010DEd000011FCsv*sd*bc03sc*i*, pci:v000010DEd00001200sv*sd*bc03sc*i*, pci:v000010DEd00001201sv*sd*bc03sc*i*, pci:v000010DEd00001203sv*sd*bc03sc*i*, pci:v000010DEd00001205sv*sd*bc03sc*i*, pci:v000010DEd00001206sv*sd*bc03sc*i*, pci:v000010DEd00001207sv*sd*bc03sc*i*, pci:v000010DEd00001208sv*sd*bc03sc*i*, pci:v000010DEd00001210sv*sd*bc03sc*i*, pci:v000010DEd00001211sv*sd*bc03sc*i*, pci:v000010DEd00001212sv*sd*bc03sc*i*, pci:v000010DEd00001213sv*sd*bc03sc*i*, pci:v000010DEd00001241sv*sd*bc03sc*i*, pci:v000010DEd00001243sv*sd*bc03sc*i*, pci:v000010DEd00001244sv*sd*bc03sc*i*, pci:v000010DEd00001245sv*sd*bc03sc*i*, pci:v000010DEd00001246sv*sd*bc03sc*i*, pci:v000010DEd00001247sv*sd*bc03sc*i*, pci:v000010DEd00001248sv*sd*bc03sc*i*, pci:v000010DEd00001249sv*sd*bc03sc*i*, pci:v000010DEd0000124Bsv*sd*bc03sc*i*, pci:v000010DEd0000124Dsv*sd*bc03sc*i*, pci:v000010DEd00001251sv*sd*bc03sc*i*, pci:v000010DEd00001280sv*sd*bc03sc*i*, pci:v000010DEd00001281sv*sd*bc03sc*i*, pci:v000010DEd00001282sv*sd*bc03sc*i*, pci:v000010DEd00001284sv*sd*bc03sc*i*, pci:v000010DEd00001286sv*sd*bc03sc*i*, pci:v000010DEd00001287sv*sd*bc03sc*i*, pci:v000010DEd00001288sv*sd*bc03sc*i*, pci:v000010DEd00001289sv*sd*bc03sc*i*, pci:v000010DEd0000128Bsv*sd*bc03sc*i*, pci:v000010DEd00001290sv*sd*bc03sc*i*, pci:v000010DEd00001291sv*sd*bc03sc*i*, pci:v000010DEd00001292sv*sd*bc03sc*i*, pci:v000010DEd00001293sv*sd*bc03sc*i*, pci:v000010DEd00001295sv*sd*bc03sc*i*, pci:v000010DEd00001296sv*sd*bc03sc*i*, pci:v000010DEd00001298sv*sd*bc03sc*i*, pci:v000010DEd00001299sv*sd*bc03sc*i*, pci:v000010DEd0000129Asv*sd*bc03sc*i*, pci:v000010DEd000012B9sv*sd*bc03sc*i*, pci:v000010DEd000012BAsv*sd*bc03sc*i*, pci:v000010DEd00001340sv*sd*bc03sc*i*, pci:v000010DEd00001341sv*sd*bc03sc*i*, pci:v000010DEd00001344sv*sd*bc03sc*i*, pci:v000010DEd00001346sv*sd*bc03sc*i*, pci:v000010DEd00001347sv*sd*bc03sc*i*, pci:v000010DEd00001348sv*sd*bc03sc*i*, pci:v000010DEd00001349sv*sd*bc03sc*i*, pci:v000010DEd0000134Bsv*sd*bc03sc*i*, pci:v000010DEd0000134Dsv*sd*bc03sc*i*, pci:v000010DEd0000134Esv*sd*bc03sc*i*, pci:v000010DEd0000134Fsv*sd*bc03sc*i*, pci:v000010DEd00001380sv*sd*bc03sc*i*, pci:v000010DEd00001381sv*sd*bc03sc*i*, pci:v000010DEd00001382sv*sd*bc03sc*i*, pci:v000010DEd00001390sv*sd*bc03sc*i*, pci:v000010DEd00001391sv*sd*bc03sc*i*, pci:v000010DEd00001392sv*sd*bc03sc*i*, pci:v000010DEd00001393sv*sd*bc03sc*i*, pci:v000010DEd00001398sv*sd*bc03sc*i*, pci:v000010DEd00001399sv*sd*bc03sc*i*, pci:v000010DEd0000139Asv*sd*bc03sc*i*, pci:v000010DEd0000139Bsv*sd*bc03sc*i*, pci:v000010DEd0000139Csv*sd*bc03sc*i*, pci:v000010DEd000013B0sv*sd*bc03sc*i*, pci:v000010DEd000013B1sv*sd*bc03sc*i*, pci:v000010DEd000013B2sv*sd*bc03sc*i*, pci:v000010DEd000013B3sv*sd*bc03sc*i*, pci:v000010DEd000013B9sv*sd*bc03sc*i*, pci:v000010DEd000013BAsv*sd*bc03sc*i*, pci:v000010DEd000013BBsv*sd*bc03sc*i*, pci:v000010DEd000013BCsv*sd*bc03sc*i*, pci:v000010DEd000013C0sv*sd*bc03sc*i*, pci:v000010DEd000013C2sv*sd*bc03sc*i*, pci:v000010DEd000013D7sv*sd*bc03sc*i*, pci:v000010DEd000013D8sv*sd*bc03sc*i*, pci:v000010DEd000013D9sv*sd*bc03sc*i*, pci:v000010DEd000013DAsv*sd*bc03sc*i*, pci:v000010DEd000013F0sv*sd*bc03sc*i*, pci:v000010DEd000013F1sv*sd*bc03sc*i*, pci:v000010DEd000013F2sv*sd*bc03sc*i*, pci:v000010DEd000013F3sv*sd*bc03sc*i*, pci:v000010DEd000013F8sv*sd*bc03sc*i*, pci:v000010DEd000013F9sv*sd*bc03sc*i*, pci:v000010DEd000013FAsv*sd*bc03sc*i*, pci:v000010DEd00001401sv*sd*bc03sc*i*, pci:v000010DEd00001402sv*sd*bc03sc*i*, pci:v000010DEd00001407sv*sd*bc03sc*i*, pci:v000010DEd00001427sv*sd*bc03sc*i*, pci:v000010DEd00001431sv*sd*bc03sc*i*, pci:v000010DEd00001617sv*sd*bc03sc*i*, pci:v000010DEd00001618sv*sd*bc03sc*i*, pci:v000010DEd00001619sv*sd*bc03sc*i*, pci:v000010DEd0000161Asv*sd*bc03sc*i*, pci:v000010DEd00001667sv*sd*bc03sc*i*, pci:v000010DEd0000179Csv*sd*bc03sc*i*, pci:v000010DEd000017C2sv*sd*bc03sc*i*, pci:v000010DEd000017C8sv*sd*bc03sc*i*, pci:v000010DEd000017F0sv*sd*bc03sc*i*, pci:v000010DEd000017F1sv*sd*bc03sc*i*, pci:v000010DEd000017FDsv*sd*bc03sc*i*, pci:v000010DEd00000DFCsv*sd*bc03sc*i*)
+Description-md5: 2f2445ec5e04329593078984a32bc2ae
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-361-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 735
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361 (>= 361.42)
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-361-dev_361.42-0ubuntu2_amd64.deb
+Size: 81114
+MD5sum: dd953199978dcc7e48daad773957f021
+SHA1: abfa573d124ed91e295ec80a997b5707663e8847
+SHA256: 49e7839c1d40b1abafa128bd61e4c5825f709914f4c75816c5ea3829ed94f4bf
+Description: NVIDIA binary Xorg driver development files
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-361-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-361-updates_361.42-0ubuntu2_amd64.deb
+Size: 4806
+MD5sum: d1ed50e8311eeb739d3e200b68c2dec8
+SHA1: d636255a8fb97b164ac8cea7dac68c06b5a861e7
+SHA256: a7b3588af9c950940eb938f8eb7ac0b9e2f44bfa219c8e0e50556442f690a21c
+Description: Transitional package for nvidia-361
+Description-md5: 5240a8d8fdc6dbd1b55d1082d8a9f9e0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-361-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 17
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Depends: nvidia-361-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-361-updates-dev_361.42-0ubuntu2_amd64.deb
+Size: 4814
+MD5sum: 50522865ddd4e8865bca8fdf30ebebb5
+SHA1: 82dfc16b5d66e8c7feedff06ab616e748be9819c
+SHA256: 26f416d5d9a6717be3a4a0a222e5aaf79dcc67de7b19e0d8b06922d137f06535
+Description: Transitional package for nvidia-361-dev
+Description-md5: 5f99b0c4be6e5f4d5b31c2964e1934c7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-current
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304
+Version: 304.131-0ubuntu3
+Depends: nvidia-304
+Filename: pool/restricted/n/nvidia-graphics-drivers-304/nvidia-current_304.131-0ubuntu3_amd64.deb
+Size: 4414
+MD5sum: 1ab9d4031ebd7b94ae27ad41bb890a9a
+SHA1: e6b9b4236d368ba7d8281502104e8c542b3d111d
+SHA256: e35a3d13e17b767f27efaa579852b5cf767bc5925bde8e211ab0618fa8731536
+Description: Transitional package for nvidia-current
+Description-md5: cfae43419e26e7ddd43b755f8d4bc71a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-current-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304
+Version: 304.131-0ubuntu3
+Depends: nvidia-304-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-304/nvidia-current-dev_304.131-0ubuntu3_amd64.deb
+Size: 4420
+MD5sum: b0dec125f311d88f7ae1d8956c7c16cc
+SHA1: c7a5a48a8d1fea5c3b9b13b4e300a6402bf6fce7
+SHA256: afec8a0a3cb4e655282eb6c8191e01dcafd2d557c9612c1ad084744fbd2af548
+Description: Transitional package for nvidia-current-dev
+Description-md5: d7f80b7df0e8d90395b8393509321e23
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-current-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Depends: nvidia-304-updates
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-current-updates_304.131-0ubuntu3_amd64.deb
+Size: 4430
+MD5sum: 722aaa411e76ec932d67a81f78d90673
+SHA1: 8c4dcac41cc9092a6af1a6cb9df7d2e6bdd8f4fd
+SHA256: 79171e89db633b4a275616c2a516a4739d968d2f1f849fb55115140d645998c4
+Description: Transitional package for nvidia-current-updates
+Description-md5: 64b398e30c3f43a0c784ba95d34f6b3b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-current-updates-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Depends: nvidia-304-updates-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-current-updates-dev_304.131-0ubuntu3_amd64.deb
+Size: 4436
+MD5sum: 060117eb28b61a6a8b90b4c43c82abd0
+SHA1: 4c5b241d5287e24be08d36aaa8f787de5acfbc37
+SHA256: a436992ba2ae630b87d3634a0ded6519964833acd0f91d353a03948c6eed2c78
+Description: Transitional package for nvidia-current-updates-dev
+Description-md5: 6b612e1ecc06ee4f74b872b04cc4a80d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-experimental-304
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Depends: nvidia-304-updates
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-experimental-304_304.131-0ubuntu3_amd64.deb
+Size: 4438
+MD5sum: ac1d88101a2cfd8211d2e58490cf8bca
+SHA1: 3a9d5b0ec0044db1e4dccf0e3347562027816796
+SHA256: 6709364750e76a45a311419fc856c413e9244a95d04b7370f08bcef0cf25843c
+Description: Transitional package for nvidia-experimental-304
+Description-md5: dee43da3e9b5bec833f2645c8d53b85e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-experimental-304-dev
+Priority: optional
+Section: restricted/misc
+Installed-Size: 19
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Depends: nvidia-304-updates-dev
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-experimental-304-dev_304.131-0ubuntu3_amd64.deb
+Size: 4446
+MD5sum: ff6fef295087a74b8a084d84f02a2f5f
+SHA1: b74be3a5390dabc6fcf72583a09fcd5602823766
+SHA256: 7a4d13855d767587a685d049fe0f6383a94c59b4efd1afe8e8d20ff211b4edb0
+Description: Transitional package for nvidia-experimental-304-dev
+Description-md5: 11ccac8060b1032f1df8047b447e2153
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-opencl-icd-304
+Priority: optional
+Section: restricted/misc
+Installed-Size: 16990
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304
+Version: 304.131-0ubuntu3
+Replaces: nvidia-opencl-icd
+Provides: nvidia-opencl-icd, opencl-icd
+Depends: libc6 (>= 2.2.5), zlib1g (>= 1:1.1.4), ocl-icd-libopencl1 | nvidia-libopencl1-304
+Conflicts: nvidia-opencl-icd
+Filename: pool/restricted/n/nvidia-graphics-drivers-304/nvidia-opencl-icd-304_304.131-0ubuntu3_amd64.deb
+Size: 5411622
+MD5sum: 27a154121abc5b8c7be69aaa4ad77364
+SHA1: c9557ec2e875bf3a3cd49f7df46af04d35b4cebb
+SHA256: 8cefddb1f3e4c9417c4f4431e7fcbb1db55c59cad5b331250030329a906b846a
+Description: NVIDIA OpenCL ICD
+Enhances: libopencl1
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-opencl-icd-304-updates
+Priority: optional
+Section: restricted/misc
+Installed-Size: 16990
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-304-updates
+Version: 304.131-0ubuntu3
+Replaces: nvidia-opencl-icd
+Provides: nvidia-opencl-icd, opencl-icd
+Depends: libc6 (>= 2.2.5), zlib1g (>= 1:1.1.4), ocl-icd-libopencl1 | nvidia-libopencl1-304-updates
+Conflicts: nvidia-opencl-icd
+Filename: pool/restricted/n/nvidia-graphics-drivers-304-updates/nvidia-opencl-icd-304-updates_304.131-0ubuntu3_amd64.deb
+Size: 5806868
+MD5sum: 68a14dade9b670040f253288889bd910
+SHA1: db01512ddc709263cffc290db1e9e58d034ade58
+SHA256: 1bb4b10d05ad4ca0a62a7469063476fd6a1b45ab4beb69b577d61495e8875309
+Description: NVIDIA OpenCL ICD
+Enhances: libopencl1
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-opencl-icd-340
+Priority: optional
+Section: restricted/misc
+Installed-Size: 27623
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-340
+Version: 340.96-0ubuntu3
+Replaces: nvidia-opencl-icd
+Provides: nvidia-opencl-icd, opencl-icd
+Depends: libc6 (>= 2.2.5), ocl-icd-libopencl1 | nvidia-libopencl1-340
+Conflicts: nvidia-opencl-icd
+Filename: pool/restricted/n/nvidia-graphics-drivers-340/nvidia-opencl-icd-340_340.96-0ubuntu3_amd64.deb
+Size: 8837094
+MD5sum: ef1b9006da609b56a0f3fc1c132450ce
+SHA1: d5c064325018e6063166693357a728041ae0c6a1
+SHA256: 016ac87c08592fd1c547728f6a90ef2f88205b94a0c947aa0f4c99722d78c120
+Description: NVIDIA OpenCL ICD
+Enhances: libopencl1
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: nvidia-opencl-icd-361
+Priority: optional
+Section: restricted/misc
+Installed-Size: 34772
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: nvidia-graphics-drivers-361
+Version: 361.42-0ubuntu2
+Replaces: nvidia-opencl-icd
+Provides: nvidia-opencl-icd, opencl-icd
+Depends: libc6 (>= 2.2.5), ocl-icd-libopencl1 | nvidia-libopencl1-361
+Conflicts: nvidia-opencl-icd
+Filename: pool/restricted/n/nvidia-graphics-drivers-361/nvidia-opencl-icd-361_361.42-0ubuntu2_amd64.deb
+Size: 9011000
+MD5sum: 28a4bad085832bdb3cdc31f0b5d3e186
+SHA1: 410278728fc334cd7a4f4b1e0d9d9946c85fc084
+SHA256: 417f67fc12f91f36deb44c8f2fa4c7b22a7533ee3966cb9098810dfbc257e762
+Description: NVIDIA OpenCL ICD
+Enhances: libopencl1
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+

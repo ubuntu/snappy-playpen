@@ -1,0 +1,51 @@
+Package: phablet-tools
+Description-md5: 913c858602c127f265479378fd1d481b
+Description-en: Scripts to work with Phablet.
+ Installs Touch Developer Preview on Nexus devices, specifically the following:
+ - Galaxy Nexus
+ - Nexus 4
+ - Nexus 7
+ - Nexus 10
+ .
+ Additional tools included to bootstrap from source and setup networking
+
+Package: ubuntu-device-flash
+Description-md5: 467928c64fe32be12a3dda7d24f2356f
+Description-en: Flash supported devices with Ubuntu
+ Use this tool to flash a suported device with Ubuntu by either
+ bootstrapping from fastboot or reflashing from an already
+ supported device.
+
+Package: ubuntu-emulator
+Description-md5: cf205ee7fc30922320986c4150093a20
+Description-en: Create and run emulator images of Ubuntu Touch
+ Create and destroy Ubuntu Touch instances and run them with the emulator
+
+Package: golang-goget-ubuntu-touch-bootimg-dev
+Description-md5: fdf1b89cc12b7e19813a5c4d52516108
+Description-en: Go library for manipulating Android boot.img files
+ Package reads and extracts Android boot.img files
+
+Package: golang-goget-ubuntu-touch-devices-dev
+Description-md5: 290c9771f9d84a1776cabb2fd6ea42d8
+Description-en: Go library for interfacing with adb and fastboot
+ Provides facilities to interface with adb and fastboot
+
+Package: golang-goget-ubuntu-touch-ubuntuimage-dev
+Description-md5: 81045a8ac51b5727003d561b69617d65
+Description-en: Go library for interfacing with an Ubuntu image server
+ Provides facilities to interface with an Ubuntu image server to
+ download OS image assets from different channels and for different
+ devices.
+
+Package: phablet-tools-citrain
+Description-md5: 6f66cf88611a0dd6ddd200e7274873ca
+Description-en: Scripts to work with CI Train silos (PPAs).
+ Provides citrain tool for installing and removing binary packages from CI
+ Train silos on either your host system or connected Ubuntu Touch device.
+
+Package: ubuntu-device-do
+Description-md5: 4f94304db38c2ec6b92af90b54ea900b
+Description-en: Tool to interact with Ubuntu Touch devices
+ Use this tool to interact with your Ubuntu Touch device
+

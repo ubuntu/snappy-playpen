@@ -1,0 +1,21 @@
+apps:
+  sublime-text-3:
+    command: command-sublime-text-3.wrapper
+    plugs:
+    - X11
+    - network
+    - network-bind
+    - home
+architectures:
+- amd64
+confinement: devmode
+description: 'Sublime Text is a sophisticated text editor for code, markup and prose.
+
+  You''ll love the slick user interface, extraordinary features and amazing performance.
+
+  Sublime Text 3 is currently in beta.
+
+  '
+name: sublime-text-3
+summary: Sublime Text is a sophisticated text editor for code, markup and prose.
+version: build-3114

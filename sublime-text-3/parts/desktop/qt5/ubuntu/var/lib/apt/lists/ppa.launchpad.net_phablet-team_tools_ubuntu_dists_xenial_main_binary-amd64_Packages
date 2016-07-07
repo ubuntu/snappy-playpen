@@ -1,0 +1,141 @@
+Package: phablet-tools
+Priority: extra
+Section: admin
+Installed-Size: 209
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2+16.04.20160503-0ubuntu1
+Recommends: imagemagick, pybootchartgui, ubuntu-dev-tools, ubuntu-device-flash
+Suggests: phablet-tools-citrain
+Depends: android-tools-adb (>= 4.2.2), android-tools-fastboot (>= 4.2.2), bzr, click, curl, dpkg-dev, python-configobj, python-lzma, python-launchpadlib, python-requests, python-xdg, rsync, wget, python (>= 2.7), python (<< 2.8)
+Filename: pool/main/p/phablet-tools/phablet-tools_1.2+16.04.20160503-0ubuntu1_all.deb
+Size: 42072
+MD5sum: 84c03ee6971782d853f0510cfa8aad33
+SHA1: c6cbde22d61f75f54c6ebb0020c4527df7a416ce
+SHA256: 59c1a42ef1d5de1169e0f6085de6e3c95f82acd4d1d79ba40053957dfd7af9f2
+Description: Scripts to work with Phablet.
+Description-md5: 913c858602c127f265479378fd1d481b
+Original-Maintainer: Sergio Schvezov <sergio.schvezov@canonical.com>
+
+Package: ubuntu-device-flash
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 8469
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.33-0ubuntu1~xenial-staging
+Depends: android-tools-adb, android-tools-fastboot, debsig-verify, click-ubuntu-policy, dosfstools, fakeroot, kpartx, parted, qemu-user-static, ubuntu-snappy-cli, libc6 (>= 2.4)
+Filename: pool/main/g/goget-ubuntu-touch/ubuntu-device-flash_0.33-0ubuntu1~xenial-staging_amd64.deb
+Size: 1942010
+MD5sum: 2023bc9e3a25545c63dc9ce67e0f7303
+SHA1: 13808e16d8b0b525ad34fbb79d11b55749290fe0
+SHA256: cad7d9709b92dba59ba6da6e28db05590e3b1cc370feb2cc82a14368ca7d8441
+Description: Flash supported devices with Ubuntu
+Description-md5: 467928c64fe32be12a3dda7d24f2356f
+Built-Using: golang-1.6 (= 1.6-0ubuntu3), golang-ar (= 0.0~git20150512-0ubuntu2), golang-defaults (= 2:1.6-1ubuntu4), golang-github-gosexy-gettext (= 0~git20130221-0ubuntu6), golang-github-mvo5-goconfigparser (= 0.2.1-0ubuntu1), golang-github-mvo5-uboot-go (= 0~3.git69978a3-0ubuntu5), golang-go-flags (= 0.0~git20160302-0ubuntu1), golang-gocheck (= 0.0~bzr20131118+85-2), golang-juju-loggo (= 0.0~git20150318-0ubuntu1), golang-pb (= 0.0~git20131219-1), golang-yaml.v2 (= 0.0+git20150627.7ad95dd-1), ubuntu-snappy (= 1.7.3+20160330ubuntu1~ppa1)
+
+Package: ubuntu-emulator
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 7446
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.33-0ubuntu1~xenial-staging
+Recommends: android-tools-adb, qemu-user-static
+Depends: ubuntu-emulator-runtime, xz-utils, libc6 (>= 2.4)
+Filename: pool/main/g/goget-ubuntu-touch/ubuntu-emulator_0.33-0ubuntu1~xenial-staging_amd64.deb
+Size: 2195976
+MD5sum: 8854cc5ca9bc280e2a4ade6c16788237
+SHA1: 192f0bb1eef0828af4c3376ec4bd7f0940a83344
+SHA256: 89339143a7ba6e9ae24ab0e8a2a9050cc68764718d7098541358fb69d21dfc37
+Description: Create and run emulator images of Ubuntu Touch
+Description-md5: cf205ee7fc30922320986c4150093a20
+Built-Using: golang-1.6 (= 1.6-0ubuntu3), golang-ar (= 0.0~git20150512-0ubuntu2), golang-defaults (= 2:1.6-1ubuntu4), golang-github-gosexy-gettext (= 0~git20130221-0ubuntu6), golang-github-mvo5-goconfigparser (= 0.2.1-0ubuntu1), golang-github-mvo5-uboot-go (= 0~3.git69978a3-0ubuntu5), golang-go-flags (= 0.0~git20160302-0ubuntu1), golang-gocheck (= 0.0~bzr20131118+85-2), golang-juju-loggo (= 0.0~git20150318-0ubuntu1), golang-pb (= 0.0~git20131219-1), golang-yaml.v2 (= 0.0+git20150627.7ad95dd-1), ubuntu-snappy (= 1.7.3+20160330ubuntu1~ppa1)
+
+Package: golang-goget-ubuntu-touch-bootimg-dev
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 26
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.33-0ubuntu1~xenial-staging
+Filename: pool/main/g/goget-ubuntu-touch/golang-goget-ubuntu-touch-bootimg-dev_0.33-0ubuntu1~xenial-staging_all.deb
+Size: 8554
+MD5sum: 34a797912f66efed97b2a71030881d15
+SHA1: 144533f09e8503c7dba18acfd07e4445c438d3a4
+SHA256: 8a581fa0e59b3246b04920a4c3b58d9212e57f50d96da42f6489685dc3169023
+Description: Go library for manipulating Android boot.img files
+Description-md5: fdf1b89cc12b7e19813a5c4d52516108
+
+Package: golang-goget-ubuntu-touch-devices-dev
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 28
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.33-0ubuntu1~xenial-staging
+Filename: pool/main/g/goget-ubuntu-touch/golang-goget-ubuntu-touch-devices-dev_0.33-0ubuntu1~xenial-staging_all.deb
+Size: 9012
+MD5sum: 58a029320ca4afcf8175567045d6e872
+SHA1: fe5f20a948195250eed619cc2f40cf1039cff970
+SHA256: a9e88c539622a019dc735890d5fec0033d9399f225223a6810ff0103b1d42c61
+Description: Go library for interfacing with adb and fastboot
+Description-md5: 290c9771f9d84a1776cabb2fd6ea42d8
+
+Package: golang-goget-ubuntu-touch-ubuntuimage-dev
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 49
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.33-0ubuntu1~xenial-staging
+Filename: pool/main/g/goget-ubuntu-touch/golang-goget-ubuntu-touch-ubuntuimage-dev_0.33-0ubuntu1~xenial-staging_all.deb
+Size: 12670
+MD5sum: a3220bc1b27100ac6e1f6e7fa2648053
+SHA1: 6f4f55b85154f07da624d1097af123d8ff9037b7
+SHA256: fa22aaca1599b05a6d00e044f73a7292a2d275e7df733ddcfb6e178541ca4f2d
+Description: Go library for interfacing with an Ubuntu image server
+Description-md5: 81045a8ac51b5727003d561b69617d65
+
+Package: phablet-tools-citrain
+Source: phablet-tools
+Priority: extra
+Section: admin
+Installed-Size: 27
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2+16.04.20160503-0ubuntu1
+Recommends: software-properties-common, sudo, ubuntu-dev-tools, ubuntu-device-flash
+Depends: android-tools-adb (>= 4.2.2), apt, ppa-purge, wget
+Filename: pool/main/p/phablet-tools/phablet-tools-citrain_1.2+16.04.20160503-0ubuntu1_all.deb
+Size: 4656
+MD5sum: f6cdecd7cba122a4db88ebc4447989fe
+SHA1: 46b451512c3c9db85895e768c1d79853e415bb35
+SHA256: f1f52b7be84f41cbf34820a1440c71b73907f58d7b2bf5f6ed560ef05266ade0
+Description: Scripts to work with CI Train silos (PPAs).
+Description-md5: 6f66cf88611a0dd6ddd200e7274873ca
+Original-Maintainer: Sergio Schvezov <sergio.schvezov@canonical.com>
+
+Package: ubuntu-device-do
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 5941
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.33-0ubuntu1~xenial-staging
+Depends: android-tools-adb, libc6 (>= 2.4)
+Filename: pool/main/g/goget-ubuntu-touch/ubuntu-device-do_0.33-0ubuntu1~xenial-staging_amd64.deb
+Size: 1389288
+MD5sum: 486afb6461986d1b7b1de69c0305bbd5
+SHA1: 2857399c6a8136e9cbee396d2fe4d0171945eb93
+SHA256: ffd2911e12caa105f2a384169c2d2294da5f85a4709a59cf6fff81880c9d9da7
+Description: Tool to interact with Ubuntu Touch devices
+Description-md5: 4f94304db38c2ec6b92af90b54ea900b
+Built-Using: golang-1.6 (= 1.6-0ubuntu3), golang-ar (= 0.0~git20150512-0ubuntu2), golang-defaults (= 2:1.6-1ubuntu4), golang-github-gosexy-gettext (= 0~git20130221-0ubuntu6), golang-github-mvo5-goconfigparser (= 0.2.1-0ubuntu1), golang-github-mvo5-uboot-go (= 0~3.git69978a3-0ubuntu5), golang-go-flags (= 0.0~git20160302-0ubuntu1), golang-gocheck (= 0.0~bzr20131118+85-2), golang-juju-loggo (= 0.0~git20150318-0ubuntu1), golang-pb (= 0.0~git20131219-1), golang-yaml.v2 (= 0.0+git20150627.7ad95dd-1), ubuntu-snappy (= 1.7.3+20160330ubuntu1~ppa1)
+

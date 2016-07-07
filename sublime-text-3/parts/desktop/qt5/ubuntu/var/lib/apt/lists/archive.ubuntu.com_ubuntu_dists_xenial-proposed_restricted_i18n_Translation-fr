@@ -1,0 +1,576 @@
+Package: bcmwl-kernel-source
+Description-md5: 9da890d8409fb430fa6f9a0c8a37934a
+Description-fr: Source du pilote réseau sans fil Broadcom 802.11 Linux STA
+ Ce paquet contient le pilote wifi Broadcom 802.11 Linux STA à utiliser
+ avec le matériel utilisant les cartes Broadcom BCM4311-, BCM4312-,
+ BCM4313-, BCM4321-, BCM4322-, BCM43224-, BCM43225-, BCM43227- et BCM43228.
+
+Package: libcuda1-304
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-fr: Bibliothèque d'exécution NVIDIA CUDA
+ La « Compute Unified Device Architecture » (CUDA) permet d'utiliser les
+ unités de traitement graphique NVIDIA (GPU) pour le calcul massif en
+ parallèle à but général.
+ .
+ Ce paquet contient la bibliothèque d'exécution spécifique au pilote.
+ .
+ Les périphériques NVIDIA pris en charge sont les processeurs graphiques à
+ partir de la série GeForce 8 et Quadro FX, ainsi que les processeurs de
+ calcul Tesla
+
+Package: libcuda1-304-updates
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-fr: Bibliothèque d'exécution NVIDIA CUDA
+ La « Compute Unified Device Architecture » (CUDA) permet d'utiliser les
+ unités de traitement graphique NVIDIA (GPU) pour le calcul massif en
+ parallèle à but général.
+ .
+ Ce paquet contient la bibliothèque d'exécution spécifique au pilote.
+ .
+ Les périphériques NVIDIA pris en charge sont les processeurs graphiques à
+ partir de la série GeForce 8 et Quadro FX, ainsi que les processeurs de
+ calcul Tesla
+
+Package: libcuda1-340
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-fr: Bibliothèque d'exécution NVIDIA CUDA
+ La « Compute Unified Device Architecture » (CUDA) permet d'utiliser les
+ unités de traitement graphique NVIDIA (GPU) pour le calcul massif en
+ parallèle à but général.
+ .
+ Ce paquet contient la bibliothèque d'exécution spécifique au pilote.
+ .
+ Les périphériques NVIDIA pris en charge sont les processeurs graphiques à
+ partir de la série GeForce 8 et Quadro FX, ainsi que les processeurs de
+ calcul Tesla
+
+Package: libcuda1-340-updates
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-fr: Bibliothèque d'exécution NVIDIA CUDA
+ La « Compute Unified Device Architecture » (CUDA) permet d'utiliser les
+ unités de traitement graphique NVIDIA (GPU) pour le calcul massif en
+ parallèle à but général.
+ .
+ Ce paquet contient la bibliothèque d'exécution spécifique au pilote.
+ .
+ Les périphériques NVIDIA pris en charge sont les processeurs graphiques à
+ partir de la série GeForce 8 et Quadro FX, ainsi que les processeurs de
+ calcul Tesla
+
+Package: libcuda1-361
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-fr: Bibliothèque d'exécution NVIDIA CUDA
+ La « Compute Unified Device Architecture » (CUDA) permet d'utiliser les
+ unités de traitement graphique NVIDIA (GPU) pour le calcul massif en
+ parallèle à but général.
+ .
+ Ce paquet contient la bibliothèque d'exécution spécifique au pilote.
+ .
+ Les périphériques NVIDIA pris en charge sont les processeurs graphiques à
+ partir de la série GeForce 8 et Quadro FX, ainsi que les processeurs de
+ calcul Tesla
+
+Package: libcuda1-361-updates
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-fr: Bibliothèque d'exécution NVIDIA CUDA
+ La « Compute Unified Device Architecture » (CUDA) permet d'utiliser les
+ unités de traitement graphique NVIDIA (GPU) pour le calcul massif en
+ parallèle à but général.
+ .
+ Ce paquet contient la bibliothèque d'exécution spécifique au pilote.
+ .
+ Les périphériques NVIDIA pris en charge sont les processeurs graphiques à
+ partir de la série GeForce 8 et Quadro FX, ainsi que les processeurs de
+ calcul Tesla
+
+Package: nvidia-304
+Description-md5: 40726bbad84df17ed525b3b51d8bf938
+Description-fr: NVIDIA legacy binary driver - version 304.131
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Les processeurs graphiques (GPU) comme les GeForce series 6 ou plus
+ récents sont pris en charge.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-304.131-driver.html
+
+Package: nvidia-304-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-fr: Fichiers de développement des pilotes binaires NVIDIA pour Xorg
+ Ce paquet contient les fichiers de développement des pilotes binaires
+ NVIDIA pour Xorg.
+ .
+ Pour de plus amples informations sur ce paquet source, visitez la page
+ d'accueil de NVIDIA sur http://www.nvidia.com/.
+
+Package: nvidia-304-updates
+Description-md5: 40726bbad84df17ed525b3b51d8bf938
+Description-fr: NVIDIA legacy binary driver - version 304.131
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Les processeurs graphiques (GPU) comme les GeForce series 6 ou plus
+ récents sont pris en charge.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-304.131-driver.html
+
+Package: nvidia-304-updates-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-fr: Fichiers de développement des pilotes binaires NVIDIA pour Xorg
+ Ce paquet contient les fichiers de développement des pilotes binaires
+ NVIDIA pour Xorg.
+ .
+ Pour de plus amples informations sur ce paquet source, visitez la page
+ d'accueil de NVIDIA sur http://www.nvidia.com/.
+
+Package: nvidia-310
+Description-md5: 71fd3b39f30cd22971fb924c229ef762
+Description-fr: Paquet de transition pour nvidia-310
+ Ceci est un paquet de transition pour nvidia-310, et peut être retiré en
+ toute sécurité une fois l'installation terminée.
+
+Package: nvidia-310-dev
+Description-md5: b786dbb4304bdba4a01249d2cb9c570d
+Description-fr: Paquet de transition pour nvidia-310-dev
+ Ceci est un paquet de transition pour nvidia-310-dev, et peut être retiré
+ en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-310-updates
+Description-md5: d0b5d6ebc02c0abe3e96e2bf0e0edd47
+Description-fr: Paquet de transition pour nvidia-310-updates
+ Ceci est un paquet de transition pour nvidia-310-updates, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-310-updates-dev
+Description-md5: 5cbc214a6e831c34d71b8cd018b512b3
+Description-fr: Paquet de transition pour nvidia-310-updates-dev
+ Ceci est un paquet de transition pour nvidia-310updates-dev, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-313-updates
+Description-md5: e3d79d10b894478a883ba6961ffdffc6
+Description-fr: Paquet de transition pour nvidia-313-updates
+ Ceci est un paquet de transition pour nvidia-313-updates, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-313-updates-dev
+Description-md5: b71f95db04e18943f6ceda0eed1e962d
+Description-fr: Paquet de transition pour nvidia-313-updates-dev
+ Ceci est un paquet de transition pour nvidia-313-updates-dev, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-319
+Description-md5: 71184767cf2a112880447ccd8e2ca5fc
+Description-fr: Paquet de transition pour nvidia-319
+ Ceci est un paquet de transition pour nvidia-319, et peut être retiré en
+ toute sécurité une fois l'installation terminée.
+
+Package: nvidia-319-dev
+Description-md5: 7d9e74703d07b11bcf5fde8021a8407e
+Description-fr: Paquet de transition pour nvidia-319-dev
+ Ceci est un paquet de transition pour nvidia-319-dev, et peut être retiré
+ en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-319-updates
+Description-md5: 33756ccbbe3994966f6cbba245e52125
+Description-fr: Paquet de transition pour nvidia-319-updates
+ Ceci est un paquet de transition pour nvidia-319-updates, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-319-updates-dev
+Description-md5: d67437489eb9a43bed04f8867b4c273d
+Description-fr: Paquet de transition pour nvidia-319-updates-dev
+ Ceci est un paquet de transition pour nvidia-319-updates-dev, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-340
+Description-md5: 911bd6d47736c2778a81638fd879b5b9
+Description-fr: NVIDIA binary driver - version 340.96
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-340.96-driver.html
+
+Package: nvidia-340-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-fr: Fichiers de développement des pilotes binaires NVIDIA pour Xorg
+ Ce paquet contient les fichiers de développement des pilotes binaires
+ NVIDIA pour Xorg.
+ .
+ Pour de plus amples informations sur ce paquet source, visitez la page
+ d'accueil de NVIDIA sur http://www.nvidia.com/.
+
+Package: nvidia-340-updates
+Description-md5: 911bd6d47736c2778a81638fd879b5b9
+Description-fr: NVIDIA binary driver - version 340.96
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-340.96-driver.html
+
+Package: nvidia-340-updates-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-fr: Fichiers de développement des pilotes binaires NVIDIA pour Xorg
+ Ce paquet contient les fichiers de développement des pilotes binaires
+ NVIDIA pour Xorg.
+ .
+ Pour de plus amples informations sur ce paquet source, visitez la page
+ d'accueil de NVIDIA sur http://www.nvidia.com/.
+
+Package: nvidia-361
+Description-md5: 2f2445ec5e04329593078984a32bc2ae
+Description-fr: NVIDIA binary driver - version 361.42
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-361.42-driver.html
+
+Package: nvidia-361-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-fr: Fichiers de développement des pilotes binaires NVIDIA pour Xorg
+ Ce paquet contient les fichiers de développement des pilotes binaires
+ NVIDIA pour Xorg.
+ .
+ Pour de plus amples informations sur ce paquet source, visitez la page
+ d'accueil de NVIDIA sur http://www.nvidia.com/.
+
+Package: nvidia-361-updates
+Description-md5: 2f2445ec5e04329593078984a32bc2ae
+Description-fr: NVIDIA binary driver - version 361.42
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-amd64-361.42-driver.html
+
+Package: nvidia-361-updates-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-fr: Fichiers de développement des pilotes binaires NVIDIA pour Xorg
+ Ce paquet contient les fichiers de développement des pilotes binaires
+ NVIDIA pour Xorg.
+ .
+ Pour de plus amples informations sur ce paquet source, visitez la page
+ d'accueil de NVIDIA sur http://www.nvidia.com/.
+
+Package: nvidia-current
+Description-md5: cfae43419e26e7ddd43b755f8d4bc71a
+Description-fr: Paquet de transition pour nvidia-current
+ Ceci est un paquet de transition pour nvidia-current, et peut être retiré
+ en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-current-dev
+Description-md5: d7f80b7df0e8d90395b8393509321e23
+Description-fr: Paquet de transition pour nvidia-current-dev
+ Ceci est un paquet de transition pour nvidia-current-dev, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-current-updates
+Description-md5: 64b398e30c3f43a0c784ba95d34f6b3b
+Description-fr: Paquet de transition pour nvidia-current-updates
+ Ceci est un paquet de transition pour nvidia-current-updates, et peut être
+ retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-current-updates-dev
+Description-md5: 6b612e1ecc06ee4f74b872b04cc4a80d
+Description-fr: Paquet de transition pour nvidia-current-updates-dev
+ Ceci est un paquet de transition pour nvidia-current-updates-dev, et peut
+ être retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-experimental-304
+Description-md5: dee43da3e9b5bec833f2645c8d53b85e
+Description-fr: Paquet de transition pour nvidia-experimental-304
+ Ceci est un paquet de transition pour nvidia-experimental-304, et peut
+ être retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-experimental-304-dev
+Description-md5: 11ccac8060b1032f1df8047b447e2153
+Description-fr: Paquet de transition pour nvidia-experimental-304-dev
+ Ceci est un paquet de transition pour nvidia-experimental-304-dev, et peut
+ être retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-experimental-310
+Description-md5: 8ee99c0b64f9c65100bb2e22bd5daf30
+Description-fr: Paquet de transition pour nvidia-experimental-310
+ Ceci est un paquet de transition pour nvidia-experimental-310, et peut
+ être retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-experimental-310-dev
+Description-md5: 6e2522193c4c51af83214f2d55f373fb
+Description-fr: Paquet de transition pour nvidia-experimental-310-dev
+ Ceci est un paquet de transition pour nvidia-experimental-310-dev, et peut
+ être retiré en toute sécurité une fois l'installation terminée.
+
+Package: nvidia-opencl-icd-304
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-fr: ICD OpenCL (OpenCL Installable Client Driver) NVIDIA
+ OpenCL (Open Computing Language) est une norme ouverte multi-fournisseurs
+ pour des fins générales de programmation parallèle de systèmes hétérogènes
+ incluant les CPU, les GPU et autres processeurs.
+ .
+ Ce paquet fournit l'ICD (Installable Client Driver) pour OpenCL qui prend
+ en charge les processeurs graphiques NVIDIA
+
+Package: nvidia-opencl-icd-304-updates
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-fr: ICD OpenCL (OpenCL Installable Client Driver) NVIDIA
+ OpenCL (Open Computing Language) est une norme ouverte multi-fournisseurs
+ pour des fins générales de programmation parallèle de systèmes hétérogènes
+ incluant les CPU, les GPU et autres processeurs.
+ .
+ Ce paquet fournit l'ICD (Installable Client Driver) pour OpenCL qui prend
+ en charge les processeurs graphiques NVIDIA
+
+Package: nvidia-opencl-icd-340
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-fr: ICD OpenCL (OpenCL Installable Client Driver) NVIDIA
+ OpenCL (Open Computing Language) est une norme ouverte multi-fournisseurs
+ pour des fins générales de programmation parallèle de systèmes hétérogènes
+ incluant les CPU, les GPU et autres processeurs.
+ .
+ Ce paquet fournit l'ICD (Installable Client Driver) pour OpenCL qui prend
+ en charge les processeurs graphiques NVIDIA
+
+Package: nvidia-opencl-icd-340-updates
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-fr: ICD OpenCL (OpenCL Installable Client Driver) NVIDIA
+ OpenCL (Open Computing Language) est une norme ouverte multi-fournisseurs
+ pour des fins générales de programmation parallèle de systèmes hétérogènes
+ incluant les CPU, les GPU et autres processeurs.
+ .
+ Ce paquet fournit l'ICD (Installable Client Driver) pour OpenCL qui prend
+ en charge les processeurs graphiques NVIDIA
+
+Package: nvidia-opencl-icd-361
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-fr: ICD OpenCL (OpenCL Installable Client Driver) NVIDIA
+ OpenCL (Open Computing Language) est une norme ouverte multi-fournisseurs
+ pour des fins générales de programmation parallèle de systèmes hétérogènes
+ incluant les CPU, les GPU et autres processeurs.
+ .
+ Ce paquet fournit l'ICD (Installable Client Driver) pour OpenCL qui prend
+ en charge les processeurs graphiques NVIDIA
+
+Package: nvidia-opencl-icd-361-updates
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-fr: ICD OpenCL (OpenCL Installable Client Driver) NVIDIA
+ OpenCL (Open Computing Language) est une norme ouverte multi-fournisseurs
+ pour des fins générales de programmation parallèle de systèmes hétérogènes
+ incluant les CPU, les GPU et autres processeurs.
+ .
+ Ce paquet fournit l'ICD (Installable Client Driver) pour OpenCL qui prend
+ en charge les processeurs graphiques NVIDIA
+
+Package: nvidia-340
+Description-md5: dc57b211681f868e48cdb31e03a2c96f
+Description-fr: NVIDIA binary driver - version 340.96
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-32bit-arm-340.96-driver.html
+
+Package: nvidia-340-updates
+Description-md5: dc57b211681f868e48cdb31e03a2c96f
+Description-fr: NVIDIA binary driver - version 340.96
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-32bit-arm-340.96-driver.html
+
+Package: nvidia-361
+Description-md5: 8c409a7efee2a404e15f59334b432592
+Description-fr: NVIDIA binary driver - version 361.42
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-32bit-arm-361.42-driver.html
+
+Package: nvidia-361-updates
+Description-md5: 8c409a7efee2a404e15f59334b432592
+Description-fr: NVIDIA binary driver - version 361.42
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-32bit-arm-361.42-driver.html
+
+Package: nvidia-304
+Description-md5: 21808af702bbfb38515f6b18f95d1971
+Description-fr: NVIDIA legacy binary driver - version 304.131
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Les processeurs graphiques (GPU) comme les GeForce series 6 ou plus
+ récents sont pris en charge.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-304.131-driver.html
+
+Package: nvidia-304-updates
+Description-md5: 21808af702bbfb38515f6b18f95d1971
+Description-fr: NVIDIA legacy binary driver - version 304.131
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Les processeurs graphiques (GPU) comme les GeForce series 6 ou plus
+ récents sont pris en charge.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-304.131-driver.html
+
+Package: nvidia-340
+Description-md5: d37c6c4b199d93cfe0ac00376bd74c74
+Description-fr: NVIDIA binary driver - version 340.96
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-340.96-driver.html
+
+Package: nvidia-340-updates
+Description-md5: d37c6c4b199d93cfe0ac00376bd74c74
+Description-fr: NVIDIA binary driver - version 340.96
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-340.96-driver.html
+
+Package: nvidia-361
+Description-md5: 292fd957d692b8a08fdf517141970232
+Description-fr: NVIDIA binary driver - version 361.42
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-361.42-driver.html
+
+Package: nvidia-361-updates
+Description-md5: 292fd957d692b8a08fdf517141970232
+Description-fr: NVIDIA binary driver - version 361.42
+ Le pilote binaire optimisé fournit une accélération matérielle des
+ applications OpenGL via un serveur X à rendu direct. AGP, PCIe, SLI, la
+ sortie TV et les écrans plats sont aussi pris en charge.
+ .
+ Ce paquet contient également la source pour compiler le module du noyau
+ requis par le pilote Xorg et fournit l'implémentation par NVIDIA de l'API
+ de présentation et Video Decode. La première active l'accélération de la
+ vidéo h264 pour les cartes GeForce 8 et plus récent.
+ .
+ Release Notes and supported GPUs: http://www.nvidia.com/object/linux-
+ display-ia32-361.42-driver.html
+
+Package: sl-modem-daemon
+Description-md5: dd33edc29e8f6ca6bd7aaea974c49391
+Description-fr: Le démon pour les modems logiciels SmartLink
+ Le démon logiciel SmartLink est la partie applicative du pilote pour les
+ modems récents produits par Smart Link Ltd.
+ .
+ Ce paquet remplace (avec les pilotes d'accès au matériel) la vieille
+ génération du pilotes (2.7.x) qui était simplement constituée de modules
+ du noyau.
+ .
+ Il a besoin d'un pilote de noyau pour accéder au matériel. Il peut s'agir
+ d'ALSA récent (livré avec un noyau plus récent (>= 2.6.4) avec prise en
+ charge ALSA et module snd-intel8x0m) ce qui est suffisant pour le
+ fonctionnement basique et les connexions données/Internet, ou le pilote du
+ noyau SmartLink qui est fourni par des paquets distincts que vous pouvez
+ compiler en utilisant la source du paquet sl-modem-dkms.
+

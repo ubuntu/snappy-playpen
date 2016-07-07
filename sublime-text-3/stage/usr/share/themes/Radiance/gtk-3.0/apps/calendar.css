@@ -1,0 +1,17 @@
+/* Hide the white corners.  Calendar sets a background colour for the whole window. */
+GcalWindow { background-color: transparent; }
+
+/* Make the calendar focus ring appear around the selected day */
+.calendar-view  {
+    outline-style: dashed;
+    outline-color: @selected_bg_color;
+    outline-width: 2px;
+    outline-radius: 8px;
+    outline-offset: -4px;
+}
+
+/* Give pop-down lists the same selected bg colour as other menus. Fixes lp# 1558659 */
+.calendar-list :hover { 
+    background-color: @selected_bg_color;
+}
+

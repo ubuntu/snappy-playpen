@@ -1,0 +1,156 @@
+/* Set up shadows and hilights for button visual separation */
+.primary-toolbar .linked .button,
+.primary-toolbar .button.raised.linked,
+.primary-toolbar .raised.linked .button,
+.menubar.toolbar .linked .button,
+.menubar.toolbar .button.raised.linked,
+.menubar.toolbar .raised.linked .button,
+.header-bar .linked .button,
+.header-bar .button.raised.linked,
+.header-bar .button.raised.linked .button {
+    box-shadow: inset 1px 0 shade (@dark_bg_color, 1.1),
+                inset -1px 0 shade (@dark_bg_color, 0.9);
+}
+
+.primary-toolbar .linked .button:first-child,
+.primary-toolbar .button.raised.linked:first-child,
+.primary-toolbar .raised.linked .button:first-child,
+.menubar.toolbar .linked .button:first-child,
+.menubar.toolbar .button.raised.linked:first-child,
+.menubar.toolbar .raised.linked .button:first-child,
+.header-bar .linked .button:first-child,
+.header-bar .button.raised.linked:first-child,
+.header-bar .raised.linked .button:first-child {
+    box-shadow: inset -1px 0 shade (@dark_bg_color, 0.9);
+}
+
+.primary-toolbar .linked .button:last-child,
+.primary-toolbar .button.raised.linked:last-child,
+.primary-toolbar .raised.linked .button:last-child,
+.menubar.toolbar .linked .button:last-child,
+.menubar.toolbar .button.raised.linked:last-child,
+.menubar.toolbar .raised.linked .button:last-child,
+.header-bar .linked .button:last-child,
+.header-bar .button.raised.linked:last-child,
+.header-bar .raised.linked .button:last-child {
+    box-shadow: inset 1px 0 shade (@dark_bg_color, 1.1)
+}
+
+.primary-toolbar .linked .button:active,
+.primary-toolbar .button.raised.linked:active,
+.primary-toolbar .raised.linked .button:active,
+.menubar.toolbar .linked .button:active,
+.menubar.toolbar .button.raised.linked:active,
+.menubar.toolbar .raised.linked .button:active,
+.header-bar .linked .button:active,
+.header-bar .button.raised.linked:active,
+.header-bar .raised.linked .button:active {
+    box-shadow: inset 1px 0 shade (@dark_bg_color, 0.9);
+}
+
+.primary-toolbar .linked .button:insensitive,
+.primary-toolbar .button.raised.linked:insensitive,
+.primary-toolbar .raised.linked .button:insensitive,
+.menubar.toolbar .linked .button:insensitive,
+.menubar.toolbar .button.raised.linked:insensitive,
+.menubar.toolbar .raised.linked .button:insensitive,
+.header-bar .linked .button:insensitive,
+.header-bar .button.raised.linked:insensitive,
+.header-bar .raised.linked .button:insensitive {
+    box-shadow: inset -1px 0 shade (@dark_bg_color, 0.9);
+}
+
+.primary-toolbar .linked .button:backdrop:last-child,
+.primary-toolbar .button.raised.linked:backdrop:last-child,
+.primary-toolbar .raised.linked .button:backdrop:last-child,
+.menubar.toolbar .linked .button:backdrop:last-child,
+.menubar.toolbar .button.raised.linked:backdrop:last-child,
+.menubar.toolbar .raised.linked .button:backdrop:last-child,
+.header-bar .linked .button:backdrop:last-child,
+.header-bar .button.raised.linked:backdrop:last-child,
+.header-bar .raised.linked .button:backdrop:last-child {
+    box-shadow: inset 1px 0 shade (@dark_bg_color, 1.1);
+}
+
+.menubar {
+    color: @dark_fg_color;
+    text-shadow: 0 1px shade (@dark_bg_color, 1.1);
+}
+
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+    color: @dark_fg_color;
+    text-shadow: 0 1px shade (@dark_bg_color, 1.1);
+}
+
+.menuitem:hover,
+.menu .menuitem:hover {
+    color: @selected_fg_color;
+    text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
+}
+
+.menuitem:insensitive,
+.menuitem *:insensitive {
+    color: mix (@fg_color, @bg_color, 0.5);
+    text-shadow: 0 1px shade (@bg_color, 1.14);
+}
+
+/* for the playback menu item in the sound menu */
+.menu .spinner,
+.menu .spinner:hover {
+    color: @selected_bg_color;
+}
+
+/* primary-toolbar */
+.primary-toolbar,
+.primary-toolbar .toolbar,
+.primary-toolbar.toolbar,
+.menubar.toolbar,
+.header-bar,
+.maximized .titlebar.header-bar.toolbar-mode:not(:backdrop) {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 0.96)),
+                                     to (shade (@dark_bg_color, 1.1)));
+    border-bottom-color: shade (@dark_bg_color, 1.02);
+    border-top-color: shade (@dark_bg_color, 1.02);
+
+    text-shadow: 0 1px shade (@dark_bg_color, 1.1);
+}
+
+.primary-toolbar :insensitive,
+.menubar.toolbar :insensitive,
+.header-bar :insensitive {
+    text-shadow: 0 1px shade (@dark_bg_color, 1.1);
+}
+
+.primary-toolbar GtkComboBox,
+.primary-toolbar .button *,
+.primary-toolbar .button,
+.menubar.toolbar GtkComboBox,
+.menubar.toolbar .button *,
+.menubar.toolbar .button,
+.header-bar GtkComboBox,
+.header-bar .button *,
+.header-bar .button {
+    text-shadow: 0 1px alpha (shade (@dark_bg_color, 1.25), 0.32);
+}
+
+.primary-toolbar .raised .button,
+.primary-toolbar .raised.button,
+.primary-toolbar .button:hover,
+.primary-toolbar .button:active,
+.primary-toolbar .button:insensitive,
+.menubar.toolbar .raised .button,
+.menubar.toolbar .raised.button,
+.menubar.toolbar .button:hover,
+.menubar.toolbar .button:active,
+.menubar.toolbar .button:insensitive,
+.header-bar .raised .button,
+.header-bar .raised.button,
+.header-bar .button:hover,
+.header-bar .button:active,
+.header-bar .button:insensitive {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.03)),
+                                     to (shade (@dark_bg_color, 0.96)));
+}

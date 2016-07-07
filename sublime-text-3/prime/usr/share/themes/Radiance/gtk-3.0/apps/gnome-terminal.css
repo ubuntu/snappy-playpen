@@ -1,0 +1,62 @@
+/* gnome-terminal */
+@define-color terminal_bg #300a24;
+
+TerminalScreen {
+    -TerminalScreen-background-darkness: 0.95;
+    background-color: @terminal_bg;
+    color: #fff;
+}
+
+TerminalScreenContainer .scrollbar:hover:not(.slider),
+TerminalScreenContainer .scrollbar.dragging:not(.slider) {
+    background-color: alpha(@scrollbar_track_color, 0.4);
+}
+
+/* Since .hovering class is not working here, we always use the same radius */
+TerminalScreenContainer .scrollbar.slider.hovering,
+TerminalScreenContainer .scrollbar.slider.dragging {
+    border-radius: 1px;
+}
+
+TerminalScreenContainer .scrollbar {
+    background-color: transparent;
+}
+
+TerminalNotebook.notebook.header {
+    background-color: @dark_bg_color;
+    border: none;
+}
+
+
+TerminalNotebook.notebook tab.top {
+    background-color: shade(@bg_color, 0.75);
+    border-width: 1px 1px 0px 1px;
+    border-radius:  8px 8px 0px 0px;
+    border-image: none;
+    border-style: solid;
+    border-color: @dark_bg_color;
+}
+
+TerminalNotebook.notebook tab.top:active {
+    background-color: shade(@bg_color,1.2);
+    border-image: none;
+}
+
+TerminalNotebook.notebook tab .button {
+    background-color: transparent;
+    padding: 1px;
+}
+
+/* Match the actions bar.  This is a hack and should be fixed in 3.20 */
+TerminalNotebook GtkBox.vertical {
+    background-color: transparent;
+}
+
+.background TerminalNotebook GtkBox.vertical .button {
+    border-image:none;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 1px;
+}
+

@@ -1,0 +1,4 @@
+# This file is sourced by Xsession(5), not executed.
+
+[ -x /usr/bin/xhost ] && [ -x /usr/bin/id ] &&
+    xhost +si:localuser:`id -un` > /dev/null

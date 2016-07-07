@@ -1,0 +1,58 @@
+# Wacom
+# Intuos4 Wireless
+# PTK-540WL
+#
+# Button Map:
+# (A=1, B=2, C=3, ...)
+#
+#    *-----------------------*
+#    |                       |
+#  B |                       |
+#  C |                       |
+#  D |                       |
+#  E |                       |
+#  A |        TABLET         |
+#  F |                       |
+#  G |                       |
+#  H |                       |
+#  I |                       |
+#    |                       |
+#    *-----------------------*
+#
+# LED Map:
+# (XY=Bank X, LED Y)
+#
+#     *-----------------------*
+#     |                       |
+#  00 |                       |
+#  01 |                       |
+#  02 |        TABLET         |
+#  03 |                       |
+#     |                       |
+#     *-----------------------*
+#
+
+[Device]
+Name=Wacom Intuos4 WL
+DeviceMatch=usb:056a:00bc;bluetooth:056a:00bd
+Class=Intuos4
+Width=8
+Height=5
+IntegratedIn=
+Layout=intuos4-6x9-wl.svg
+Styli=0x802;0x804;0x806;0x80a;0x80c;0x902;0x90a;0x100802;0x100804;0x10080a;0x10080c;0x100902;0x10090a;0x120802;0x140802;0x14080a;0x160802;0x16080a;
+
+[Features]
+Reversible=true
+Stylus=true
+Ring=true
+Buttons=9
+StatusLEDs=Ring
+
+[Buttons]
+Left=A;B;C;D;E;F;G;H;I
+
+OLEDs=B;C;D;E;F;G;H;I
+
+Ring=A
+RingNumModes=4

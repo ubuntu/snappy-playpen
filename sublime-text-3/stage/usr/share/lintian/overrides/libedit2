@@ -1,0 +1,3 @@
+# If version is 2.11-20080614, lintian considers that the -20080614 is the debian version
+libedit2: symbols-file-contains-current-version-with-debian-revision on symbol *
+libedit2: symbols-file-contains-debian-revision on symbol *

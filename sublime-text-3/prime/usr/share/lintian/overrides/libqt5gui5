@@ -1,0 +1,21 @@
+# This dependency has been added to track external packages building against
+# our private headers. It is ok if internal packages depend on the ABI one.
+libqt5gui5: symbols-declares-dependency-on-other-package qtbase-abi-5-5-1
+# libQt5EglDeviceIntegration and libQt5XcbQpa are actually private libraries
+# *only* used by their respective platforms plugins. Sadly instead of being
+# installed into a proper place like /usr/lib/<arch-triplet>/qt5/ they are
+# being installed into /usr/lib/.
+# We are not shipping headers for them and the only binaries that depend on
+# them are shipped within this very same binary package, so it's safe to
+# override this Lintian warning.
+libqt5gui5: shlib-missing-in-control-file libQt5EglDeviceIntegration 5 for usr/lib/*/libQt5EglDeviceIntegration.so.5.*
+libqt5gui5: shlib-missing-in-control-file libQt5XcbQpa 5 for usr/lib/*/libQt5XcbQpa.so.5.*
+# libQt5EglDeviceIntegration and libQt5XcbQpa are actually private libraries
+# *only* used by their respective platforms plugins. Sadly instead of being
+# installed into a proper place like /usr/lib/<arch-triplet>/qt5/ they are
+# being installed into /usr/lib/.
+# We are not shipping headers for them and the only binaries that depend on
+# them are shipped within this very same binary package, so it's safe to
+# override this Lintian warning.
+libqt5gui5: shlib-missing-in-symbols-control-file libQt5EglDeviceIntegration 5 for usr/lib/*/libQt5EglDeviceIntegration.so.5.*
+libqt5gui5: shlib-missing-in-symbols-control-file libQt5XcbQpa 5 for usr/lib/*/libQt5XcbQpa.so.5.*

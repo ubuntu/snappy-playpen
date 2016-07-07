@@ -1,0 +1,57 @@
+# Wacom
+# Intuos4 Small
+# PTK-440
+#
+# Button Map:
+# (A=1, B=2, C=3, ...)
+# (NOTE: This map has *not* been verified.)
+#
+#    *-----------------------*
+#    |                       |
+#    |                       |
+#  B |                       |
+#  C |                       |
+#  D |                       |
+#  A |        TABLET         |
+#  E |                       |
+#  F |                       |
+#  G |                       |
+#    |                       |
+#    |                       |
+#    *-----------------------*
+#
+# LED Map:
+# (XY=Bank X, LED Y)
+#
+#     *-----------------------*
+#     |                       |
+#  00 |                       |
+#  01 |                       |
+#  02 |        TABLET         |
+#  03 |                       |
+#     |                       |
+#     *-----------------------*
+#
+
+[Device]
+Name=Wacom Intuos4 4x6
+DeviceMatch=usb:056a:00b8
+Class=Intuos4
+Width=6
+Height=4
+Layout=intuos4-4x6.svg
+IntegratedIn=
+Styli=0x802;0x804;0x806;0x80a;0x80c;0x902;0x90a;0x100802;0x100804;0x10080a;0x10080c;0x100902;0x10090a;0x120802;0x140802;0x14080a;0x160802;0x16080a;
+
+[Features]
+Reversible=true
+Stylus=true
+Ring=true
+Buttons=7
+StatusLEDs=Ring
+
+[Buttons]
+Left=A;B;C;D;E;F;G
+
+Ring=A
+RingNumModes=4

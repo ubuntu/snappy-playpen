@@ -1,0 +1,17 @@
+name: cloudfoundry-cli
+version: master
+summary:  The official command line client for Cloud Foundry.
+description: |
+  A tool to deploy and manage Cloud Foundry applications.
+confinement: strict
+
+apps:
+  cf:
+    command: bin/main
+    plugs: [network, network-bind]
+
+parts:
+    cli:
+      plugin: go
+      go-packages: [github.com/cloudfoundry/cli/main]
+      build-packages: [g++, git]

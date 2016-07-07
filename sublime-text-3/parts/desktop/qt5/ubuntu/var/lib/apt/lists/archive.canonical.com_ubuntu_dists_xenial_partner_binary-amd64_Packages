@@ -1,0 +1,171 @@
+Package: skype
+Priority: extra
+Section: net
+Installed-Size: 61
+Maintainer: Steve Langasek <steve.langasek@canonical.com>
+Architecture: amd64
+Version: 4.3.0.37-0ubuntu0.12.04.1
+Depends: skype-bin
+Filename: pool/partner/s/skype/skype_4.3.0.37-0ubuntu0.12.04.1_amd64.deb
+Size: 16054
+MD5sum: 61d508cabddd6d9ef7bc9967eb4bb2ed
+SHA1: 590099bbcc9c486cf92b035d534fab0b062edd4e
+SHA256: 590e13cf75d75cd94ddc33af179588654b5c7c0933b585e5e118e07143c96748
+Description: client for Skype VOIP and instant messaging service
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+
+Package: adobe-flashplugin
+Priority: optional
+Section: web
+Installed-Size: 37199
+Maintainer: DL-Flash Player Ubuntu <FlashPlayerUbuntu@adobe.com>
+Architecture: amd64
+Version: 1:20160616.1-0ubuntu0.16.04.1
+Recommends: adobe-flash-properties-gtk (= 1:20160616.1-0ubuntu0.16.04.1) | adobe-flash-properties-kde (= 1:20160616.1-0ubuntu0.16.04.1)
+Replaces: flashplugin (<< 6)
+Suggests: firefox | chromium-browser, x-ttcidfont-conf, msttcorefonts, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs (>= 1:1.0.1-5), libnspr4-0d, libnss3-1d
+Provides: flashplugin-nonfree
+Depends: wget, fontconfig, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.11), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.24.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.0~beta3), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.3), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxrender1, libxt6
+Conflicts: flashplayer-mozilla, flashplugin (<< 6), flashplugin-downloader, flashplugin-installer, xfs (<< 1:1.0.1-5)
+Filename: pool/partner/a/adobe-flashplugin/adobe-flashplugin_20160616.1-0ubuntu0.16.04.1_amd64.deb
+Size: 10318230
+MD5sum: b27fb3d582b8fd75da829b2351762762
+SHA1: c39f28c43d74410939652fff925f35fbd21aeea6
+SHA256: 24a2716dabee9e29d456eb2710eb6e4a175a26639c38df8f105176806065178e
+Description: Adobe Flash Player plugin
+Description-md5: 4414ca68dbd37fdc3008c70a8a107946
+Npp-File: libflashplayer.so
+Npp-Mimetype: application/x-shockwave-flash
+Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a, aa5ca914-c309-495d-91cf-3141bbb04115
+Npp-Description: Adobe Flash Plugin (http://www.adobe.com)
+Npp-Name: Adobe Flash Plugin
+
+Package: adobe-flash-properties-gtk
+Source: adobe-flashplugin
+Priority: optional
+Section: web
+Installed-Size: 480
+Maintainer: DL-Flash Player Ubuntu <FlashPlayerUbuntu@adobe.com>
+Architecture: amd64
+Version: 1:20160616.1-0ubuntu0.16.04.1
+Provides: adobe-flash-properties
+Depends: adobe-flashplugin (= 1:20160616.1-0ubuntu0.16.04.1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.3), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.14.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0)
+Filename: pool/partner/a/adobe-flashplugin/adobe-flash-properties-gtk_20160616.1-0ubuntu0.16.04.1_amd64.deb
+Size: 113360
+MD5sum: 5a831f0161580fc9e78859ca30ec5332
+SHA1: ef98da2a4be3f49cd27b94ab993d6c30184e55dd
+SHA256: 8c82bffdae713a3aeaee6df9d7894282c47fa6e72de5bc2e397cdeddf08a9427
+Description: GTK+ control panel for Adobe Flash Player plugin
+Description-md5: c0ca975b4427ced66609fa3dfdd8cac5
+
+Package: adobe-flash-properties-kde
+Source: adobe-flashplugin
+Priority: optional
+Section: web
+Installed-Size: 580
+Maintainer: DL-Flash Player Ubuntu <FlashPlayerUbuntu@adobe.com>
+Architecture: amd64
+Version: 1:20160616.1-0ubuntu0.16.04.1
+Provides: adobe-flash-properties
+Depends: adobe-flashplugin (= 1:20160616.1-0ubuntu0.16.04.1), libc6 (>= 2.3), libice6 (>= 1:1.0.0), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.3.4), libkutils4, libqt4-dbus (>= 4:4.5.3), libqt4-svg (>= 4:4.5.3), libqtcore4 (>= 4:4.5.3), libqtgui4 (>= 4:4.5.3), libsm6, libx11-6, libxau6, libxdmcp6, libxext6, libxft2 (>> 2.1.1), libxpm4
+Filename: pool/partner/a/adobe-flashplugin/adobe-flash-properties-kde_20160616.1-0ubuntu0.16.04.1_amd64.deb
+Size: 147010
+MD5sum: fa3ad43a73f9905006854aa5ba981458
+SHA1: c80100ed69f9960c8c693ecb75546bb4fff02ad7
+SHA256: a9aeb012d9a8baa62974dfb8e230d6cfa8cea4c7f50d093dc690b2c34c89ef1c
+Description: KDE control panel Adobe Flash Player plugin
+Description-md5: 278f8fa35a532d8eb8005cd83c4e88e0
+
+Package: gce-daemon
+Source: gce-utils
+Priority: extra
+Section: admin
+Installed-Size: 101
+Maintainer: Ben Howard <ben.howard@ubuntu.com>
+Architecture: amd64
+Version: 1.3.3-0ubuntu5~16.04.0
+Depends: openssh-server (>= 1:5.9p1), python-boto, python2.7, python:any (>= 2.7.5-5~), init-system-helpers (>= 1.18~)
+Conflicts: network-manager
+Filename: pool/partner/g/gce-utils/gce-daemon_1.3.3-0ubuntu5~16.04.0_amd64.deb
+Size: 24668
+MD5sum: aa43a9d51c5f8fb7d6235d8d65d70750
+SHA1: f6fe58da1cfbd79b90bb6b55c5d7434691482183
+SHA256: db74f2f2905a57fd61c4ce44fecf3c128b6f684991d2cc2187e0c63bfd0d2194
+Description: Google daemon for configuring instances
+Description-md5: 06a4cd9a54dd896c539eb4c8edaef69d
+Original-Maintainer: Google Inc <no-reply@google.com>
+
+Package: gce-startup-scripts
+Source: gce-utils
+Priority: extra
+Section: admin
+Installed-Size: 102
+Maintainer: Ben Howard <ben.howard@ubuntu.com>
+Architecture: amd64
+Version: 1.3.3-0ubuntu5~16.04.0
+Depends: python-boto, google-cloud-sdk, python2.7, python:any (>= 2.7.5-5~), init-system-helpers (>= 1.18~)
+Conflicts: network-manager
+Filename: pool/partner/g/gce-utils/gce-startup-scripts_1.3.3-0ubuntu5~16.04.0_amd64.deb
+Size: 23176
+MD5sum: 851faeabf7b2577ceb9830d5492a57a7
+SHA1: 5ad7b3d95d4e2e8835fd28b9f2c41c75e7d40de8
+SHA256: db988530102674e40a4cd1d67355006182cfa855cfbb927bf49bfaa3d5b09e66
+Description: Google Compute Engine Start-up scripts
+Description-md5: 9de81cf821a9dde6584671507ea460f3
+Original-Maintainer: Google Inc <no-reply@google.com>
+
+Package: gce-imagebundle
+Source: gce-utils
+Priority: extra
+Section: admin
+Installed-Size: 146
+Maintainer: Ben Howard <ben.howard@ubuntu.com>
+Architecture: amd64
+Version: 1.3.2-0ubuntu1
+Depends: rsync, kpartx, uuid-runtime, python (>= 2.7), python2.7, python:any (>= 2.7.5-5~)
+Filename: pool/partner/g/gce-utils/gce-imagebundle_1.3.2-0ubuntu1_amd64.deb
+Size: 31188
+MD5sum: 9fa1d32c8e74780f0536a2defd0ab485
+SHA1: ca19d3daa0d6762a12bce686767ddaef6cb7dd2c
+SHA256: 320344c790f77547b928f0ddb08ab23bf7f2d2709550f15c84a8fa8002516595
+Description: Bundle image for use on Google Compute Engine
+Description-md5: 90baabcdf37a66430a86c9c317fcb2a0
+Original-Maintainer: Google Inc <no-reply@google.com>
+
+Package: google-cloud-sdk
+Priority: optional
+Section: admin
+Installed-Size: 40088
+Maintainer: Ben Howard <ben.howard@ubuntu.com>
+Architecture: all
+Version: 111.0.0-0ubuntu1~16.04.0
+Depends: findutils, python2.7, python:any (>= 2.6.6-7~)
+Conflicts: gsutils
+Filename: pool/partner/g/google-cloud-sdk/google-cloud-sdk_111.0.0-0ubuntu1~16.04.0_all.deb
+Size: 4974640
+MD5sum: 2a60aa0e032408512481ef0cdd0be9d8
+SHA1: d1b9e368f6b22a0049e76216017bf8bc3437d74a
+SHA256: fd6024d32abd54f332b2bd3f55de5872acbbdb041d95f66d34b8dbe6189b3b79
+Description: Google Cloud SDK for interacting with Google Cloud services.
+Description-md5: 633ed1e69235db3da94c02ebf49323ed
+
+Package: gce-cloud-config
+Source: gce-utils
+Priority: extra
+Section: admin
+Installed-Size: 26
+Maintainer: Ben Howard <ben.howard@ubuntu.com>
+Architecture: amd64
+Version: 1.3.3-0ubuntu5~16.04.0
+Recommends: google-cloud-sdk, libpam-cracklib
+Depends: gce-daemon
+Pre-Depends: gce-startup-scripts, ntp, cloud-init
+Filename: pool/partner/g/gce-utils/gce-cloud-config_1.3.3-0ubuntu5~16.04.0_amd64.deb
+Size: 4390
+MD5sum: b07e08252f1068ffd4e27c125571f977
+SHA1: 06d83ecb1e5716dbfcba3f31e6c856fccda11173
+SHA256: b27c35efb8508edff0a89474f1d6bbe2013e68440ce43dde226441d89136987a
+Description: Configuration for Ubuntu on Google Compute Engine
+Description-md5: df659787f100694d1fcd363d5e5e5044
+Original-Maintainer: Google Inc <no-reply@google.com>
+

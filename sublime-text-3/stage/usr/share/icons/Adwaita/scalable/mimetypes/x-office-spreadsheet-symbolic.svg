@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer14" transform="translate(-501 -321)">
+  <path id="path35764" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m503.81 322a1.0001 1.0001 0 0 0 -0.8125 1v13a1.0001 1.0001 0 0 0 1 1h10a1.0001 1.0001 0 0 0 1 -1v-9.4375a1.0001 1.0001 0 0 0 -0.28125 -0.71875l-3.5625-3.5625a1.0001 1.0001 0 0 0 -0.71875 -0.28125h-6.4375a1.0001 1.0001 0 0 0 -0.0937 0 1.0001 1.0001 0 0 0 -0.0937 0zm1.1875 2h5v3h3v8h-8v-11z"/>
+  <rect id="rect35768" style="color:#000000;fill:#bebebe" height="1" width="1" y="325" x="506"/>
+  <rect id="rect35774" style="color:#000000;fill:#bebebe" height="1" width="1" y="325" x="508"/>
+  <rect id="rect35776" style="color:#000000;fill:#bebebe" height="1" width="1" y="327" x="506"/>
+  <rect id="rect35778" style="color:#000000;fill:#bebebe" height="1" width="1" y="327" x="508"/>
+  <rect id="rect35780" style="color:#000000;fill:#bebebe" height="1" width="1" y="333" x="506"/>
+  <rect id="rect35782" style="color:#000000;fill:#bebebe" height="1" width="1" y="333" x="508"/>
+  <rect id="rect35784" style="color:#000000;fill:#bebebe" height="1" width="1" y="333" x="510"/>
+  <path id="path35786" style="color:#000000;fill:#bebebe" d="m506 332.01h6v-1.0113l-1.4688-2.5512-1.5312 2.0469-1.4688-1.0625-1.53 1.56z"/>
+ </g>
+</svg>

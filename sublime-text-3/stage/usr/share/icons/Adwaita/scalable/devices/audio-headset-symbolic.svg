@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16.001" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer10" transform="translate(-81 -467)">
+  <path id="path10296" style="fill:#bebebe" d="m88.969 467c-3.3055 0-6.0239 3.0084-5.9686 5.7188 0.06164 3.0222 0.93359 4.6955 1.125 5.2812h1.4005c-1.1615-2.2915-1.0491-5.1562-1.0491-5.1562 0-2.3726 2.0067-4.3125 4.4921-4.3125 2.4855 0 4.4998 1.9206 4.4921 4.375-0.02342 1.6741-0.17168 2.2836-1.0052 4.8125h1.5707c0.2245-0.64458 0.97382-2.0655 0.97382-4.9062 0-2.8298-2.726-5.8125-6.0314-5.8125z"/>
+  <rect id="rect10298" style="fill:#bebebe" rx="1.8618" ry="1.8615" transform="matrix(-.96317 -.26888 -.30267 .95309 0 0)" width="3.1448" y="431.7" x="-234.41" height="5.1319"/>
+  <rect id="rect10300" style="fill:#bebebe" rx="1.8618" ry="1.8615" transform="matrix(.96317 -.26888 .30267 .95309 0 0)" width="3.1448" y="479.61" x="-64.605" height="5.1319"/>
+  <rect id="rect10302" style="color:#000000;fill:#bebebe" rx=".98438" ry=".98438" height="1.9688" width="3.9062" y="480.97" x="87.063"/>
+  <path id="path10304" style="block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m93.594 476.41a0.50005 0.50005 0 0 0 -0.0625 0.96875l1.468 0.53-0.03125 1.75c-0.0049 0.53205-0.13589 0.86771-0.3125 1.0625-0.176 0.19-0.402 0.28-0.718 0.28h-4.1562a0.50005 0.50005 0 1 0 0 1h4.1562c0.54755 0 1.0927-0.21022 1.4688-0.625 0.37608-0.41478 0.556-1.009 0.5625-1.7188l0.031-2.1v-0.34375l-0.3125-0.125-1.7812-0.65625a0.50005 0.50005 0 0 0 -0.3125 -0.0312z"/>
+ </g>
+</svg>

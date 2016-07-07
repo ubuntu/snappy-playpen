@@ -1,0 +1,4 @@
+!BuildState
+project_options: {deb_arch: amd64}
+properties: {make-parameters: null, makefile: null}
+schema_properties: [makefile, make-parameters]

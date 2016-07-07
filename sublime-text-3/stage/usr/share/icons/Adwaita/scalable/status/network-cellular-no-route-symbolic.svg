@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer9" transform="translate(-181 -257)">
+  <path id="path9349" style="opacity:.35;fill-rule:evenodd;block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m181 266v1.5 3 1.5h3v-1.5-3-1.5h-3z"/>
+  <path id="path9283" style="opacity:.35;fill-rule:evenodd;block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m193 257v1.5 12 1.5h3v-1.5-12-1.5h-3z"/>
+  <path id="path19592-2-4-0" style="color:#bebebe;fill:#bebebe" d="m188.85 261.97c1.6424-0.092 3.0955 1.1701 3.1875 2.8125-0.0001 1.4014-0.37771 1.9218-1.5938 2.8438-0.19093 0.14364-0.3256 0.2506-0.375 0.3125-0.0494 0.0621-0.0312 0.0332-0.0312 0.0312 0.007 0.52831-0.47163 1-1 1s-1.007-0.47169-1-1c0-0.50239 0.22424-0.94342 0.46875-1.25 0.24451-0.30663 0.4913-0.51638 0.71875-0.6875 0.20405-0.16056 0.46083-0.38454 0.6875-0.65625 0.0935-0.1121 0.129-0.30766 0.125-0.4375v-0.0312c-0.0316-0.56324-0.49926-0.9691-1.0625-0.9375s-0.9691 0.43676-0.9375 1h-2c-0.092-1.6424 1.1701-2.9079 2.8125-3zm0.1875 8c0.55228 0 1 0.44772 1 1s-0.44772 1-1 1-1-0.44772-1-1 0.44772-1 1-1z"/>
+  <path id="path9345" style="opacity:.35;fill-rule:evenodd;block-progression:tb;text-indent:0;color:#000000;text-transform:none;fill:#bebebe" d="m189 260v1.0312c1.1801 0.00065 2.2617 0.53152 3 1.375v-0.90625-1.5h-3zm-4 3v1.5 6 1.5h2.4062c-0.18795-0.29798-0.3125-0.65775-0.3125-1.0312 0-0.64943 0.37518-1.1473 0.875-1.5-0.50106-0.34778-0.88395-0.82431-0.875-1.5 0-0.78136 0.34393-1.413 0.6875-1.8438 0.0779-0.0977 0.14017-0.13497 0.21875-0.21875h-1.9688a0.93759 0.93759 0 0 1 -0.9375 -0.875c-0.0416-0.74179 0.13259-1.4375 0.46875-2.0312h-0.5625zm7 4.5c-0.28537 0.30743-0.61426 0.58254-1 0.875-0.0908 0.0683-0.16921 0.14353-0.21875 0.1875-0.001 0.004-0.0299-0.004-0.0312 0-0.008 0.0112-0.0311 0.0291-0.0312 0.0312-0.0111 0.0116-0.005 0.0372-0.0312 0.0625-0.13961 0.34068-0.29695 0.60649-0.59375 0.8125 0.49982 0.3527 0.875 0.85057 0.875 1.5 0 0.3735-0.12455 0.73327-0.3125 1.0312h1.3438v-1.5-3z"/>
+ </g>
+</svg>

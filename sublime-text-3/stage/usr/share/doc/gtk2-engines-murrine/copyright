@@ -1,0 +1,70 @@
+This package was debianized by Yves-Alexis Perez <corsac@corsac.net> on
+Thu, 25 Jan 2007 18:36:55 +0100
+
+It is based on gtk2-engines-xfce package by Martin Loschwitz 
+<madkiss@madkiss.org> 
+
+You can fetch this package from http://cimi.netsons.org/pages/murrine.php
+
+Upstream Author is Andrea Cimitan <andrea.cimitan@gmail.com>
+Murrine is based on work from various projects:
+
+Clearlooks development team:
+  Richard Stellingwerff - remenic@gmail.com
+  Daniel Borgmann       - daniel.borgmann@gmail.com
+
+Rezlooks modifications:
+  Doug Whiteley         - dougwhiteley@gmail.com
+  
+Candido modifications:
+  Andrea Cimitan        - andrea.cimitan@gmail.com
+
+Copyright 2006-2009 Andrea Cimitan
+Copyright 2009-2010 Canonical Ltd.
+
+Licenses:
+
+  The following files are licensed LGPLv2.1 and LGPLv3:
+    src/exponential-blur.c
+    src/exponential-blur.h
+    src/gaussian-blur.c
+    src/gaussian-blur.h
+    src/raico-blur.c
+    src/raico-blur.h
+    src/stack-blur.c
+    src/stack-blur.h
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 or 3 of the License.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+  All other source files are licensed LGPLv2 or later
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Library General Public
+   License as published by the Free Software Foundation; either
+   version 2 of the License, or (at your option) any later version.
+  
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Library General Public License for more details.
+  
+   You should have received a copy of the GNU Library General Public
+   License along with this library; if not, write to the
+   Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+   Boston, MA 02111-1307, USA.
+
+On Debian systems, the complete text of the GNU Lesser General Public License
+can be found in `/usr/share/common-licenses/LGPL-2', 
+`/usr/share/common-licenses/LGPL-2.1' and `/usr/share/common-licenses/LGPL-3'.

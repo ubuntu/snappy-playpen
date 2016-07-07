@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   id="svg4008"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="playlist24.svg">
+  <defs
+     id="defs4010" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.998291"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="753"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3012"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4013">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-8)">
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4194-6"
+       style="opacity:0.3;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 3,14.000433 11,0 0,1 -11,0 z m 0,4 11,0 0,1 -11,0 z m 0,4 11,0 0,1 -11,0 z m 0,4 7,0 0,1 -7,0 z m 14.436223,-15.00029 c -0.539306,-0.07759 -0.453358,0.421928 -0.444835,0.773101 -0.0059,4.169194 0.01172,8.34067 -0.0088,12.508442 -0.145,0.324522 -0.552117,0.0099 -0.801117,0.07215 -1.734176,-0.05405 -3.601662,1.194576 -3.847003,3.03023 -0.253255,1.378856 1.032041,2.593171 2.32157,2.614885 1.917831,0.05257 3.577865,-1.878734 3.334262,-3.814617 0.0065,-3.328297 -0.01298,-6.659269 0.0097,-9.985901 0.131388,-0.316182 0.485595,-0.01847 0.650972,0.09458 1.521163,0.920301 2.850472,2.446294 2.944681,4.327944 0.0815,1.08847 -0.146638,2.173024 -0.460318,3.207202 1.398377,-2.300702 1.322661,-5.50375 -0.405142,-7.605355 -1.330493,-1.38838 -2.579651,-3.045118 -2.833528,-5.031079 -0.04896,-0.186667 -0.30655,-0.18423 -0.460442,-0.191582 z" />
+    <path
+       id="rect4194"
+       style="color:#000000;fill:#dfdbd2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 3,13.000433 11,0 0,1 -11,0 z m 0,4 11,0 0,1 -11,0 z m 0,4 11,0 0,1 -11,0 z m 0,4 7,0 0,1 -7,0 z m 14.436223,-15.00029 c -0.539306,-0.07759 -0.453358,0.421928 -0.444835,0.773101 -0.0059,4.169194 0.01172,8.34067 -0.0088,12.508442 -0.145,0.324522 -0.552117,0.0099 -0.801117,0.07215 -1.734176,-0.05405 -3.601662,1.194576 -3.847003,3.03023 -0.253255,1.378856 1.032041,2.593171 2.32157,2.614885 1.917831,0.05257 3.577865,-1.878734 3.334262,-3.814617 0.0065,-3.328297 -0.01298,-6.659269 0.0097,-9.985901 0.131388,-0.316182 0.485595,-0.01847 0.650972,0.09458 1.521163,0.920301 2.850472,2.446294 2.944681,4.327944 0.0815,1.08847 -0.146638,2.173024 -0.460318,3.207202 1.398377,-2.300702 1.322661,-5.50375 -0.405142,-7.605355 -1.330493,-1.38838 -2.579651,-3.045118 -2.833528,-5.031079 -0.04896,-0.186667 -0.30655,-0.18423 -0.460442,-0.191582 z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

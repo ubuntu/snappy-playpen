@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Ambiance
+Comment=Ubuntu Ambiance theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Ambiance
+MetacityTheme=Ambiance
+IconTheme=ubuntu-mono-dark
+CursorTheme=DMZ-White
+ButtonLayout=close,minimize,maximize:
+X-Ubuntu-UseOverlayScrollbars=true

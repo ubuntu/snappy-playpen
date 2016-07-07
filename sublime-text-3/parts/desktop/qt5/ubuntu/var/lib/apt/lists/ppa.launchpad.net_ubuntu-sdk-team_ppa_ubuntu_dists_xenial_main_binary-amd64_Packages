@@ -1,0 +1,643 @@
+Package: ubuntu-sdk
+Source: ubuntu-touch-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.265~0ubuntu1~0xenial
+Depends: ubuntu-sdk-libs-dev, autopilot-desktop, intltool, libcontent-hub-doc, phablet-tools, ubuntu-device-flash, ubuntu-sdk-ide
+Filename: pool/main/u/ubuntu-touch-meta/ubuntu-sdk_1.265~0ubuntu1~0xenial_amd64.deb
+Size: 1450
+MD5sum: f998cd697529dd805dcee58cdf899448
+SHA1: e7df64b053c272e55a0b8fbf8d87726a684ec5f1
+SHA256: 43de212c9fc86b7d6851da99b4ce73beea035c500deb981d6f38bfca8170222c
+Description: Ubuntu SDK
+Description-md5: e9c87543a94fecea2c3f8676ea89452f
+
+Package: phablet-tools
+Priority: extra
+Section: admin
+Installed-Size: 208
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2+16.04.20160219.1-0ubuntu1
+Recommends: imagemagick, pybootchartgui, ubuntu-dev-tools, ubuntu-device-flash
+Suggests: phablet-tools-citrain
+Depends: android-tools-adb (>= 4.2.2), android-tools-fastboot (>= 4.2.2), bzr, click, curl, dpkg-dev, python-configobj, python-lzma, python-launchpadlib, python-requests, python-xdg, rsync, wget, python (>= 2.7), python (<< 2.8)
+Filename: pool/main/p/phablet-tools/phablet-tools_1.2+16.04.20160219.1-0ubuntu1_all.deb
+Size: 41796
+MD5sum: 0b8501af6434d7bbbc92900d38683853
+SHA1: fd9080d67e6963be23fdba2907335a0cc4049bb3
+SHA256: 4b0d287cc80a4d988e2d2ba3816deb2f3db495e75d37fd7b2fe80cce0c48d495
+Description: Scripts to work with Phablet.
+Description-md5: 913c858602c127f265479378fd1d481b
+Original-Maintainer: Sergio Schvezov <sergio.schvezov@canonical.com>
+
+Package: ubuntu-touch
+Source: ubuntu-touch-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.265~0ubuntu1~0xenial
+Depends: ubuntu-sdk-libs, account-plugin-facebook, account-plugin-flickr, account-plugin-google, account-plugin-tools, account-plugin-twitter, account-plugin-ubuntuone, account-polld, address-book-app, alsa-base, alsa-utils, android-tools-adbd, apparmor-easyprof-ubuntu, apport, apport-noui, bluetooth-touch, bluez, bluez-obexd, ca-certificates, cameraplugin-aal, cgroup-lite, ciborium, click, click-apparmor, click-ubuntu-policy, content-hub, cpustat, dbus-property-service, debsig-verify, dialer-app, eventstat, fbset, fonts-lohit-deva, fonts-lohit-guru, fonts-nanum, fonts-takao-pgothic, fonts-tlwg-kinnari, fonts-wqy-microhei, forkstat, gdbserver, gir1.2-accounts-1.0, gir1.2-ubuntu-app-launch-2, gnome-keyring, gstreamer1.0-fluendo-mp3, gstreamer1.0-plugins-bad-faad, gstreamer1.0-plugins-bad-videoparsers, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly-amr, gstreamer1.0-pulseaudio, health-check, indicator-bluetooth, indicator-datetime, indicator-display, indicator-location, indicator-messages, indicator-network, indicator-power, indicator-session, indicator-sound, indicator-transfer, indicator-transfer-download-manager, initramfs-tools-ubuntu-touch, iw, language-pack-touch-ast, language-pack-touch-bg, language-pack-touch-bs, language-pack-touch-ca, language-pack-touch-cs, language-pack-touch-da, language-pack-touch-de, language-pack-touch-el, language-pack-touch-en, language-pack-touch-es, language-pack-touch-eu, language-pack-touch-fi, language-pack-touch-fr, language-pack-touch-gd, language-pack-touch-gl, language-pack-touch-he, language-pack-touch-hr, language-pack-touch-hu, language-pack-touch-id, language-pack-touch-it, language-pack-touch-ja, language-pack-touch-ko, language-pack-touch-lt, language-pack-touch-lv, language-pack-touch-ms, language-pack-touch-nb, language-pack-touch-nl, language-pack-touch-oc, language-pack-touch-pa, language-pack-touch-pl, language-pack-touch-pt, language-pack-touch-ro, language-pack-touch-ru, language-pack-touch-sk, language-pack-touch-sl, language-pack-touch-sr, language-pack-touch-sv, language-pack-touch-tr, language-pack-touch-ug, language-pack-touch-uk, language-pack-touch-zh-hans, language-pack-touch-zh-hant, libhybris, libhybris-test, libhybris-utils, libmediainfo0v5, libmessaging-menu0, libnss-extrausers, libp11-kit-gnome-keyring, libpam-gnome-keyring, libqt5gui5-gles, libqt5location5-gles, libqt5multimediawidgets5-gles, libqt5opengl5-gles, libqt5quick5-gles, libqt5quickparticles5-gles, libqtubuntu-media-signals1, libtinyxml2-2v5, libzen0v5, lsof, ltrace, lxc-android-config, media-hub, mediaplayer-app, messaging-app, mir-graphics-drivers-android, mir-utils, mobile-broadband-provider-info, mtp-server, nano, network-manager, ntpdate, nuntium, ofono-scripts, openssh-server, openvpn, oxideqt-codecs-extra, packagekit, packagekit-plugin-click, packagekit-tools, pay-service, policykit-desktop-privileges, powerd, powerstat, pulseaudio, pulseaudio-module-bluetooth, pulseaudio-module-droid, pulseaudio-module-trust-store, pulseaudio-utils, python3-gi, python3-oauthlib, python3-pkg-resources, qml-module-qtmultimedia-gles, qtdeclarative5-qtlocation-plugin-gles, qtdeclarative5-ubuntu-ui-extras0.2, qtdeclarative5-ubuntu-ui-toolkit-plugin-gles, qtmir-android, qtorganizer5-eds, qtubuntu-android, qtubuntu-media, qtubuntu-sensors, qtvideonode-plugin, rtkit, signon-apparmor-extension, signon-plugin-oauth2, smemstat, software-properties-common, strace, suru-icon-theme, sync-monitor-uoa, syncevolution, system-image-cli, tcptraceroute, telepathy-gabble, telepathy-ofono-ril-mc-plugin, thumbnailer-service, ttf-ubuntu-font-family, ubuntu-app-launch-tools, ubuntu-application-api3-examples, ubuntu-keyboard-arabic, ubuntu-keyboard-azerbaijani, ubuntu-keyboard-bosnian, ubuntu-keyboard-catalan, ubuntu-keyboard-chinese-pinyin, ubuntu-keyboard-croatian, ubuntu-keyboard-czech, ubuntu-keyboard-danish, ubuntu-keyboard-dutch, ubuntu-keyboard-emoji, ubuntu-keyboard-english, ubuntu-keyboard-finnish, ubuntu-keyboard-french, ubuntu-keyboard-german, ubuntu-keyboard-greek, ubuntu-keyboard-hebrew, ubuntu-keyboard-hungarian, ubuntu-keyboard-icelandic, ubuntu-keyboard-italian, ubuntu-keyboard-japanese, ubuntu-keyboard-norwegian-bokmal, ubuntu-keyboard-polish, ubuntu-keyboard-portuguese, ubuntu-keyboard-romanian, ubuntu-keyboard-russian, ubuntu-keyboard-scottish-gaelic, ubuntu-keyboard-serbian, ubuntu-keyboard-slovenian, ubuntu-keyboard-spanish, ubuntu-keyboard-swedish, ubuntu-keyboard-ukrainian, ubuntu-location-provider-here, ubuntu-location-service-bin, ubuntu-push-client, ubuntu-system-settings, ubuntu-system-settings-online-accounts, ubuntu-touch-customization-hooks, ubuntu-touch-session, ubuntu-touch-settings, ubuntu-touch-sounds, udisks2, ufw, unity-scope-click, unity-scope-mediascanner2, unity-scope-scopes, unity-webapps-qml, unity8, upstart-sysv, upstart-watchdog, urfkill, url-dispatcher, usensord, webapp-container, webbrowser-app, wget, whoopsie, wireless-tools
+Filename: pool/main/u/ubuntu-touch-meta/ubuntu-touch_1.265~0ubuntu1~0xenial_amd64.deb
+Size: 2990
+MD5sum: a3daba201f64bfc4caf48f273d4c76c0
+SHA1: fe5245429c2dc64da741461191bfbdf19d85d549
+SHA256: 6e0ff8147630fec000f80f5f6a7bd974fbef67e38fbabc7d8d536ad06613d86c
+Description: Ubuntu touch system
+Description-md5: a3d2bde244db1d4276926a028b7c047a
+
+Package: click-dev
+Source: click
+Priority: optional
+Section: admin
+Installed-Size: 48
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Recommends: debootstrap, schroot, dpkg-dev
+Depends: perl, python3-click-package (= 0.4.43+16.04.20160203-0ubuntu3)
+Filename: pool/main/c/click/click-dev_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 22292
+MD5sum: f9a22f96595da452d6b8db577cb8c415
+SHA1: e22e7da21e1c53e160bc60d3537fdaa2a8d59a9e
+SHA256: de0a3cafdafd7e58ee7efca7b363b2ecc6955818b49e307bb53797ca76354327
+Description: build Click packages
+Description-md5: 524a787d5934e296c23fd4c9d590ebf1
+Multi-Arch: foreign
+
+Package: python3-click-package
+Source: click
+Priority: optional
+Section: python
+Installed-Size: 474
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Replaces: python3-click (<< 0.4.43)
+Depends: python3:any (>= 3.3.2-2~), gir1.2-click-0.4 (= 0.4.43+16.04.20160203-0ubuntu3), gir1.2-glib-2.0, python3-apt, python3-debian, python3-gi
+Conflicts: python3-click, python3-click-cli
+Filename: pool/main/c/click/python3-click-package_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 75316
+MD5sum: 1e0f880dcc60e1c9bcea8e8c081bf799
+SHA1: c3f62f1cdaaaabd855a2e896b6cf0ecac3635d18
+SHA256: b31d2878fe245ed470a213e2f0bb7e158e706fd880f6094b0c05049946264675
+Description: Click packages (Python 3 interface)
+Description-md5: a55b8833aad665015cec861ba580ce8a
+
+Package: click
+Priority: optional
+Section: admin
+Installed-Size: 86
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Recommends: click-apparmor
+Replaces: click-package
+Suggests: click-reviewers-tools (>= 0.9), ubuntu-app-launch-tools | upstart-app-launch-tools
+Provides: click-package
+Depends: libc6 (>= 2.4), init-system-helpers (>= 1.18~), python3:any (>= 3.2~), python3-click-package (= 0.4.43+16.04.20160203-0ubuntu3), adduser
+Conflicts: click-package
+Filename: pool/main/c/click/click_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 29434
+MD5sum: 847424baa33f74a354ece8658999d5d8
+SHA1: 5f39a433fdbccaddc24160af21de945fcb3df287
+SHA256: 2a6e2964115936784e0a3f99457ff54b404004616e629f9f35be3974eaa9b226
+Description: Click packages
+Description-md5: 1f88be1eec9a52975d22b0103f98879a
+
+Package: click-doc
+Source: click
+Priority: optional
+Section: doc
+Installed-Size: 237
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: all
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Replaces: click-package-doc
+Provides: click-package-doc
+Depends: libjs-sphinxdoc (>= 1.0)
+Conflicts: click-package-doc
+Filename: pool/main/c/click/click-doc_0.4.43+16.04.20160203-0ubuntu3_all.deb
+Size: 53108
+MD5sum: 819d84c1350322f4cd735dadc9490430
+SHA1: 0be8c4ed94cd34fe24c341178918f8b7ab4bac67
+SHA256: 8778b6085e554ee82f05faf31f648703d09619d025bd5f778b60c51b63de6f94
+Description: Click packages (documentation)
+Description-md5: 60608bb1e29a4ab375e8538c009ecb38
+
+Package: packagekit-plugin-click
+Source: click
+Priority: optional
+Section: admin
+Installed-Size: 62
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Depends: libc6 (>= 2.4), libclick-0.4-0 (>= 0.4.18), libglib2.0-0 (>= 2.34), libjson-glib-1.0-0 (>= 0.12.0), libpackagekit-glib2-16 (>= 0.8.10), click (= 0.4.43+16.04.20160203-0ubuntu3)
+Filename: pool/main/c/click/packagekit-plugin-click_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 25902
+MD5sum: eb64229e70cc67eb9bfb7c6e673f65bd
+SHA1: a3266777d5d12713825a6ea829172a724cdd7bdf
+SHA256: 9df0072f2091c15fe35093f17cd0a1582612cad2bae2cd0b6f2f1b19f747dc08
+Description: Click packages (PackageKit plugin)
+Description-md5: fb82f79ffce46773583cb459d42861d1
+
+Package: click-reviewers-tools
+Priority: optional
+Section: devel
+Installed-Size: 741
+Maintainer: Ubuntu Appstore Developers <ubuntu-appstore-developers@lists.launchpad.net>
+Architecture: all
+Version: 0.35-0~550~ubuntu16.04.1
+Recommends: squashfs-tools
+Depends: binutils, python3-apt, python3-debian, python3-lxml, python3-magic, python3-simplejson, python3-xdg, python3-yaml, python3:any (>= 3.3.2-2~)
+Filename: pool/main/c/click-reviewers-tools/click-reviewers-tools_0.35-0~550~ubuntu16.04.1_all.deb
+Size: 73814
+MD5sum: 751a414e246047ebb127eac17dd93c42
+SHA1: a25ee638eafba6490a85683c63990ac1d74a3222
+SHA256: 1977e485120680a48b0d08b5f9ae1f6ec67e2bc2b70a19cfefd53f54cd0bd93a
+Description: tools to review click packages
+Description-md5: 3e24901c144a5166e25fee1b5e0c1ab6
+Original-Maintainer: Ubuntu Appstore Developers <ubuntu-appstore-developers@lists.launchpad.net>
+
+Package: ubuntu-sdk-libs
+Source: ubuntu-touch-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 68
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.265~0ubuntu1~0xenial
+Depends: libcontent-hub0, libjsoncpp1, libnet-cpp2, libprocess-cpp3, libqt5keychain0, libqt5multimedia5-plugins, libqt5sql5-sqlite, qml-module-qt-labs-folderlistmodel, qml-module-qt-labs-settings, qml-module-qt-websockets, qml-module-qtbluetooth, qml-module-qtgraphicaleffects, qml-module-qtlocation, qml-module-qtmultimedia, qml-module-qtorganizer, qml-module-qtpositioning, qml-module-qtpurchasing, qml-module-qtqml-models2, qml-module-qtqml-statemachine, qml-module-qtquick-layouts, qml-module-qtquick-localstorage, qml-module-qtquick-particles2, qml-module-qtquick-window2, qml-module-qtquick-xmllistmodel, qml-module-qtquick2, qml-module-qtsensors, qml-module-ubuntu-onlineaccounts, qml-module-ubuntu-onlineaccounts-client, qmlscene, qt5-image-formats-plugins, qtchooser, qtdeclarative5-poppler1.0, qtdeclarative5-u1db1.0, qtdeclarative5-ubuntu-content1, qtdeclarative5-ubuntu-download-manager0.1, qtdeclarative5-ubuntu-mediascanner0.1, qtdeclarative5-ubuntu-push-plugin, qtdeclarative5-ubuntu-syncmonitor0.1, qtdeclarative5-ubuntu-telephony-phonenumber0.1, qtdeclarative5-ubuntu-ui-toolkit-plugin, qtdeclarative5-usermetrics0.1, ubuntu-html5-container, ubuntu-html5-theme, ubuntu-ui-toolkit-theme
+Filename: pool/main/u/ubuntu-touch-meta/ubuntu-sdk-libs_1.265~0ubuntu1~0xenial_amd64.deb
+Size: 3498
+MD5sum: 19de35d336d8b35c5fd2fea3dad6095c
+SHA1: 03e00497f3ad38f68ca51aeeee4076144c9fd72a
+SHA256: a579bd53fe44813ea5ee10cebab0652988bbb000be05128e31ea76066fa875c4
+Description: Ubuntu SDK Runtime libraries
+Description-md5: 7e4932c196dd1f7b506ace64766f7c16
+Multi-Arch: same
+
+Package: ubuntu-sdk-libs-dev
+Source: ubuntu-touch-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.265~0ubuntu1~0xenial
+Recommends: ubuntu-html5-theme-examples
+Depends: ubuntu-sdk-libs, google-mock, libcontent-hub-dev, libjsoncpp-dev, libnet-cpp-dev, libprocess-cpp-dev, libproperties-cpp-dev, libqt5sensors5-dev, libqt5svg5-dev, libqt5websockets5-dev, libqt5xmlpatterns5-dev, libssl-dev, libunity-scopes-dev, qt3d5-dev, qt5-default, qtbase5-dev, qtdeclarative5-dev, qtdeclarative5-dev-tools, qtlocation5-dev, qtmultimedia5-dev, qtpim5-dev, qttools5-dev, ubuntu-sdk-qmake-extras, ubuntu-ui-toolkit-doc
+Filename: pool/main/u/ubuntu-touch-meta/ubuntu-sdk-libs-dev_1.265~0ubuntu1~0xenial_amd64.deb
+Size: 1554
+MD5sum: d3cad31fa1e87f9d2ae136464a233472
+SHA1: 6d42254c002e2900930e1b4b55091af1f23cd501
+SHA256: 492ce527d052aa360d24edee21cf595ce9e35c0a46dd498fa95208504ec9f103
+Description: Ubuntu SDK
+Description-md5: b8f05f39dd2d0722325b86386e86346e
+Multi-Arch: same
+
+Package: ubuntu-device-flash
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 8469
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.33-0ubuntu1~xenial-staging
+Depends: android-tools-adb, android-tools-fastboot, debsig-verify, click-ubuntu-policy, dosfstools, fakeroot, kpartx, parted, qemu-user-static, ubuntu-snappy-cli, libc6 (>= 2.4)
+Filename: pool/main/g/goget-ubuntu-touch/ubuntu-device-flash_0.33-0ubuntu1~xenial-staging_amd64.deb
+Size: 1942010
+MD5sum: 2023bc9e3a25545c63dc9ce67e0f7303
+SHA1: 13808e16d8b0b525ad34fbb79d11b55749290fe0
+SHA256: cad7d9709b92dba59ba6da6e28db05590e3b1cc370feb2cc82a14368ca7d8441
+Description: Flash supported devices with Ubuntu
+Description-md5: 467928c64fe32be12a3dda7d24f2356f
+Built-Using: golang-1.6 (= 1.6-0ubuntu3), golang-ar (= 0.0~git20150512-0ubuntu2), golang-defaults (= 2:1.6-1ubuntu4), golang-github-gosexy-gettext (= 0~git20130221-0ubuntu6), golang-github-mvo5-goconfigparser (= 0.2.1-0ubuntu1), golang-github-mvo5-uboot-go (= 0~3.git69978a3-0ubuntu5), golang-go-flags (= 0.0~git20160302-0ubuntu1), golang-gocheck (= 0.0~bzr20131118+85-2), golang-juju-loggo (= 0.0~git20150318-0ubuntu1), golang-pb (= 0.0~git20131219-1), golang-yaml.v2 (= 0.0+git20150627.7ad95dd-1), ubuntu-snappy (= 1.7.3+20160330ubuntu1~ppa1)
+
+Package: ubuntu-emulator
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 7446
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.33-0ubuntu1~xenial-staging
+Recommends: android-tools-adb, qemu-user-static
+Depends: ubuntu-emulator-runtime, xz-utils, libc6 (>= 2.4)
+Filename: pool/main/g/goget-ubuntu-touch/ubuntu-emulator_0.33-0ubuntu1~xenial-staging_amd64.deb
+Size: 2195976
+MD5sum: 8854cc5ca9bc280e2a4ade6c16788237
+SHA1: 192f0bb1eef0828af4c3376ec4bd7f0940a83344
+SHA256: 89339143a7ba6e9ae24ab0e8a2a9050cc68764718d7098541358fb69d21dfc37
+Description: Create and run emulator images of Ubuntu Touch
+Description-md5: cf205ee7fc30922320986c4150093a20
+Built-Using: golang-1.6 (= 1.6-0ubuntu3), golang-ar (= 0.0~git20150512-0ubuntu2), golang-defaults (= 2:1.6-1ubuntu4), golang-github-gosexy-gettext (= 0~git20130221-0ubuntu6), golang-github-mvo5-goconfigparser (= 0.2.1-0ubuntu1), golang-github-mvo5-uboot-go (= 0~3.git69978a3-0ubuntu5), golang-go-flags (= 0.0~git20160302-0ubuntu1), golang-gocheck (= 0.0~bzr20131118+85-2), golang-juju-loggo (= 0.0~git20150318-0ubuntu1), golang-pb (= 0.0~git20131219-1), golang-yaml.v2 (= 0.0+git20150627.7ad95dd-1), ubuntu-snappy (= 1.7.3+20160330ubuntu1~ppa1)
+
+Package: golang-goget-ubuntu-touch-bootimg-dev
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 26
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.33-0ubuntu1~xenial-staging
+Filename: pool/main/g/goget-ubuntu-touch/golang-goget-ubuntu-touch-bootimg-dev_0.33-0ubuntu1~xenial-staging_all.deb
+Size: 8554
+MD5sum: 34a797912f66efed97b2a71030881d15
+SHA1: 144533f09e8503c7dba18acfd07e4445c438d3a4
+SHA256: 8a581fa0e59b3246b04920a4c3b58d9212e57f50d96da42f6489685dc3169023
+Description: Go library for manipulating Android boot.img files
+Description-md5: fdf1b89cc12b7e19813a5c4d52516108
+
+Package: golang-goget-ubuntu-touch-devices-dev
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 28
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.33-0ubuntu1~xenial-staging
+Filename: pool/main/g/goget-ubuntu-touch/golang-goget-ubuntu-touch-devices-dev_0.33-0ubuntu1~xenial-staging_all.deb
+Size: 9012
+MD5sum: 58a029320ca4afcf8175567045d6e872
+SHA1: fe5f20a948195250eed619cc2f40cf1039cff970
+SHA256: a9e88c539622a019dc735890d5fec0033d9399f225223a6810ff0103b1d42c61
+Description: Go library for interfacing with adb and fastboot
+Description-md5: 290c9771f9d84a1776cabb2fd6ea42d8
+
+Package: golang-goget-ubuntu-touch-ubuntuimage-dev
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 49
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.33-0ubuntu1~xenial-staging
+Filename: pool/main/g/goget-ubuntu-touch/golang-goget-ubuntu-touch-ubuntuimage-dev_0.33-0ubuntu1~xenial-staging_all.deb
+Size: 12670
+MD5sum: a3220bc1b27100ac6e1f6e7fa2648053
+SHA1: 6f4f55b85154f07da624d1097af123d8ff9037b7
+SHA256: fa22aaca1599b05a6d00e044f73a7292a2d275e7df733ddcfb6e178541ca4f2d
+Description: Go library for interfacing with an Ubuntu image server
+Description-md5: 81045a8ac51b5727003d561b69617d65
+
+Package: libclick-0.4-0
+Source: click
+Priority: optional
+Section: libs
+Installed-Size: 204
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Depends: libc6 (>= 2.4), libgee-0.8-2 (>= 0.8.3), libglib2.0-0 (>= 2.37.3), libjson-glib-1.0-0 (>= 0.12.0)
+Filename: pool/main/c/click/libclick-0.4-0_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 71540
+MD5sum: 0f434ac922f701225235e9d3e53d9fce
+SHA1: 351628d1d9cdfbd1951a2b19174e546ee9ad4cc2
+SHA256: 02296ff31a27b54b1c3400deaf2688f49b298c7943f47b540204c6f604bb7794
+Description: run-time Click package management library
+Description-md5: 00fddc5709ae09f963921e7a94d1e017
+Multi-Arch: same
+
+Package: libclick-0.4-dev
+Source: click
+Priority: optional
+Section: libdevel
+Installed-Size: 94
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Depends: libclick-0.4-0 (= 0.4.43+16.04.20160203-0ubuntu3), libglib2.0-dev, libjson-glib-dev
+Filename: pool/main/c/click/libclick-0.4-dev_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 23626
+MD5sum: b02e725473e29fe09316715c60aa13cd
+SHA1: 21487b6c852e75e178c28b3b92f5c8492a5d3410
+SHA256: 2f9f92ae57f58c2894e0006eed35746cc3e255347d9285ad8331d7c63b58aa4b
+Description: development files for Click package management library
+Description-md5: e6db64e1a45e66e69c5e7a6e77046966
+Multi-Arch: same
+
+Package: gir1.2-click-0.4
+Source: click
+Priority: optional
+Section: introspection
+Installed-Size: 41
+Maintainer: Colin Watson <cjwatson@ubuntu.com>
+Architecture: amd64
+Version: 0.4.43+16.04.20160203-0ubuntu3
+Depends: gir1.2-gee-0.8, gir1.2-glib-2.0, gir1.2-json-1.0, libclick-0.4-0 (= 0.4.43+16.04.20160203-0ubuntu3)
+Filename: pool/main/c/click/gir1.2-click-0.4_0.4.43+16.04.20160203-0ubuntu3_amd64.deb
+Size: 21472
+MD5sum: ff03c21f4493f86eab03a21b5392509c
+SHA1: 282d456c774ae9c0432dfe0414093d497e86cef3
+SHA256: 7399924cddc083cbd044509df56c5980c704f02ac10b5e15e9aca692bcda6981
+Description: GIR bindings for Click package management library
+Description-md5: fbd7cef9943963b4852f1b41e72488ab
+
+Package: phablet-tools-citrain
+Source: phablet-tools
+Priority: extra
+Section: admin
+Installed-Size: 26
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2+16.04.20160219.1-0ubuntu1
+Recommends: software-properties-common, sudo, ubuntu-dev-tools, ubuntu-device-flash
+Depends: android-tools-adb (>= 4.2.2), apt, ppa-purge, wget
+Filename: pool/main/p/phablet-tools/phablet-tools-citrain_1.2+16.04.20160219.1-0ubuntu1_all.deb
+Size: 4458
+MD5sum: bb23aa551a66e05d50588afefea184fe
+SHA1: 2a2683df15e041e995958d1e0f7cca165937d7c3
+SHA256: 7feb15220f17ce38b31fafe2b139620a8553e8a70da91d6ecc5e500b8248342d
+Description: Scripts to work with CI Train silos (PPAs).
+Description-md5: 6f66cf88611a0dd6ddd200e7274873ca
+Original-Maintainer: Sergio Schvezov <sergio.schvezov@canonical.com>
+
+Package: ubuntu-device-do
+Source: goget-ubuntu-touch
+Priority: optional
+Section: devel
+Installed-Size: 5941
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.33-0ubuntu1~xenial-staging
+Depends: android-tools-adb, libc6 (>= 2.4)
+Filename: pool/main/g/goget-ubuntu-touch/ubuntu-device-do_0.33-0ubuntu1~xenial-staging_amd64.deb
+Size: 1389288
+MD5sum: 486afb6461986d1b7b1de69c0305bbd5
+SHA1: 2857399c6a8136e9cbee396d2fe4d0171945eb93
+SHA256: ffd2911e12caa105f2a384169c2d2294da5f85a4709a59cf6fff81880c9d9da7
+Description: Tool to interact with Ubuntu Touch devices
+Description-md5: 4f94304db38c2ec6b92af90b54ea900b
+Built-Using: golang-1.6 (= 1.6-0ubuntu3), golang-ar (= 0.0~git20150512-0ubuntu2), golang-defaults (= 2:1.6-1ubuntu4), golang-github-gosexy-gettext (= 0~git20130221-0ubuntu6), golang-github-mvo5-goconfigparser (= 0.2.1-0ubuntu1), golang-github-mvo5-uboot-go (= 0~3.git69978a3-0ubuntu5), golang-go-flags (= 0.0~git20160302-0ubuntu1), golang-gocheck (= 0.0~bzr20131118+85-2), golang-juju-loggo (= 0.0~git20150318-0ubuntu1), golang-pb (= 0.0~git20131219-1), golang-yaml.v2 (= 0.0+git20150627.7ad95dd-1), ubuntu-snappy (= 1.7.3+20160330ubuntu1~ppa1)
+
+Package: ubuntu-sdk-libs-tools
+Source: ubuntu-touch-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.265~0ubuntu1~0xenial
+Depends: cmake, cmake-extras, intltool, python3, qt5-qmake-arm-linux-gnueabihf, qttools5-dev-tools
+Filename: pool/main/u/ubuntu-touch-meta/ubuntu-sdk-libs-tools_1.265~0ubuntu1~0xenial_amd64.deb
+Size: 2244
+MD5sum: bed8221f043b94c6c43b5a5fbafcda62
+SHA1: 7e328dfc4ca89a194184900b01a12a6fe1c9a49b
+SHA256: de5ef4cbb79bfcd9f983e7f59b88676ca7dc4786157f185bbbaa32ef58a4be27
+Description: Ubuntu SDK Build Tools
+Description-md5: 9c16ec78d8808202ab6a84c93dbdbd54
+
+Package: ubuntu-sdk-qmake-extras
+Priority: optional
+Section: devel
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.5.2+15.04.20151118-0ubuntu1~0xenial1
+Filename: pool/main/u/ubuntu-sdk-qmake-extras/ubuntu-sdk-qmake-extras_3.5.2+15.04.20151118-0ubuntu1~0xenial1_amd64.deb
+Size: 3846
+MD5sum: 0177e22b94f1ac3ba9ddcc0acdcd0a10
+SHA1: 2033a8b0937169a9f247c19b9a69fee56a2b06fa
+SHA256: 3618a2551fb0d193986d6a8964e844502844497c3599d9a11386be8f6c055524
+Description: Extra qmake features required by the Ubuntu-SDK templates,
+Description-md5: ab4dd893e8713b12e58b7fd1860a7ab9
+
+Package: unity-js-scopes-bindings
+Source: unity-js-scopes
+Priority: optional
+Section: libs
+Installed-Size: 13131
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1-0~136~ubuntu16.04.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libunity-scopes1.0
+Filename: pool/main/u/unity-js-scopes/unity-js-scopes-bindings_0.1-0~136~ubuntu16.04.1_amd64.deb
+Size: 2104206
+MD5sum: 665668980678ca2ca706308ddab29057
+SHA1: 73febe9d4086310fa8c2c153f28b26a2e8c9b9dc
+SHA256: b728606ac8f7d527df4764db90eeb7feafe29a48a32672ff3aecb10a62f6cd2e
+Description: JavaScript bindings to Unity Scopes API
+Description-md5: 912fb232810a76948a425b394090fe8b
+Multi-Arch: foreign
+
+Package: unity-js-scopes-launcher
+Source: unity-js-scopes
+Priority: optional
+Section: libs
+Installed-Size: 12623
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1-0~136~ubuntu16.04.1
+Depends: libboost-filesystem1.58.0, libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), unity-js-scopes-bindings (= 0.1-0~136~ubuntu16.04.1)
+Filename: pool/main/u/unity-js-scopes/unity-js-scopes-launcher_0.1-0~136~ubuntu16.04.1_amd64.deb
+Size: 3714570
+MD5sum: b254be87d62a154adf9169b96e0b6a5e
+SHA1: 1c73ca2cc1bc8df32cecc51aa97d745f11c32efe
+SHA256: 01ae71f95fe0dbe9174893de5dd7a2eeea2b30515f16f629dccbd1538790bdd1
+Description: Scope launcher for Unity JavaScript Scopes
+Description-md5: c3455aa7b7c6d5f4b434e82cadc42d0a
+Multi-Arch: foreign
+
+Package: ubuntu-sdk-ide
+Priority: optional
+Section: devel
+Installed-Size: 153568
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.5.1~133+201604191659~ubuntu16.04.1
+Recommends: ubuntu-emulator, ubuntu-sdk-dev (= 3.5.1~133+201604191659~ubuntu16.04.1), python3-scope-harness, unity-scope-tool, cmake-extras
+Replaces: qtcreator, qtcreator-plugin-autopilot, qtcreator-plugin-autopilot-dev, qtcreator-plugin-cmake, qtcreator-plugin-cmake-dev, qtcreator-plugin-go, qtcreator-plugin-qnx, qtcreator-plugin-qnx-dev, qtcreator-plugin-remotelinux, qtcreator-plugin-remotelinux-dev, qtcreator-plugin-ubuntu, qtcreator-plugin-ubuntu-autopilot, qtcreator-plugin-ubuntu-common, qtcreator-plugin-valgrind, qtcreator-plugin-valgrind-dev
+Depends: android-tools-adb, click, click-dev, click-doc, click-apparmor, cmake, intltool, python3, devscripts, dh-make, rsync, webapp-container, gdb-multiarch, click-reviewers-tools, phablet-tools, python-dbus, schroot, xserver-xephyr, libbotan-1.10-1 (>= 1.10.12), libc6 (>= 2.15), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libegl1-mesa (>= 7.8.1) | libegl1-x11, libfcitx-config4 (>= 4.2.7), libfcitx-utils0 (>= 4.2.7), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:3.4), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.31.8), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libicu55 (>= 55.1-1~), libjpeg8 (>= 8c), libmtdev1 (>= 1.0.8), libmysqlclient20 (>= 5.7.11), libnih-dbus1 (>= 1.0.0), libodbc1 (>= 2.3.1), libpango-1.0-0 (>= 1.14.0), libpcre16-3 (>= 2:8.35-4), libpng12-0 (>= 1.2.13-4), libpq5, libpulse0 (>= 0.99.1), libsm6, libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5.2), libsybdb5 (>= 0.63), libudev1 (>= 183), libx11-6, libx11-xcb1, libxcb-glx0, libxcb-icccm4 (>= 0.4.1), libxcb-image0 (>= 0.2.1), libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.3), libxcb-render-util0, libxcb-render0, libxcb-shape0, libxcb-shm0, libxcb-sync1, libxcb-xfixes0, libxcb-xinerama0, libxcb-xkb1, libxcb1 (>= 1.8), libxi6 (>= 2:1.5.99.2), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), libxrender1, zlib1g (>= 1:1.1.4)
+Filename: pool/main/u/ubuntu-sdk-ide/ubuntu-sdk-ide_3.5.1~133+201604191659~ubuntu16.04.1_amd64.deb
+Size: 36727002
+MD5sum: 84d000fb71e8a329900893fee52c6730
+SHA1: 28f3bc751e5a68f3f0744bd45f91023c8fb7db16
+SHA256: 27dd6ccacd14e0c156d325c501f260a274c5d0b3c22f11e34ee7a23c2cb7f3b3
+Description: Ubuntu SDK IDE
+Description-md5: 3c63c6f699f783f4228f2f9845a5f563
+
+Package: ubuntu-sdk-api-15.04-armhf
+Source: ubuntu-sdk-api-15.04
+Priority: optional
+Section: devel
+Installed-Size: 594069
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 15.04-20160122~0ubuntu1~0xenial1
+Depends: ubuntu-sdk-api-tools
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/u/ubuntu-sdk-api-15.04/ubuntu-sdk-api-15.04-armhf_15.04-20160122~0ubuntu1~0xenial1_amd64.deb
+Size: 601417156
+MD5sum: 64c2ca1337380d5ddcffd4f4635a10fb
+SHA1: ca18c475498360535dd496c8da8408471c082219
+SHA256: 24ba99c1d8ee38afaa2489f6551fd8dcafee48dc5de069d035cc30922cb3b790
+Description: Ubuntu SDK API set for 15.04
+Description-md5: e5ec143eade90b6e35935c4614ae5f80
+Multi-Arch: same
+
+Package: ubuntu-sdk-api-15.04-i386
+Source: ubuntu-sdk-api-15.04
+Priority: optional
+Section: devel
+Installed-Size: 464862
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 15.04-20160122~0ubuntu1~0xenial1
+Depends: ubuntu-sdk-api-tools
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/u/ubuntu-sdk-api-15.04/ubuntu-sdk-api-15.04-i386_15.04-20160122~0ubuntu1~0xenial1_amd64.deb
+Size: 470617218
+MD5sum: 096d9b13a0911b125f878e6e081b1678
+SHA1: 8bd1d1fd155a7bc011515a1cb2439c8698fd4abd
+SHA256: cef6c5478e0996614a7e5a077d5d3106fed010ab774facc105b1823b447c0c07
+Description: Ubuntu SDK API set for 15.04
+Description-md5: e5ec143eade90b6e35935c4614ae5f80
+Multi-Arch: same
+
+Package: ubuntu-sdk-api-tools
+Source: ubuntu-sdk-api-15.04
+Priority: optional
+Section: devel
+Installed-Size: 43
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 15.04-20160122~0ubuntu1~0xenial1
+Depends: wget, schroot
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/u/ubuntu-sdk-api-15.04/ubuntu-sdk-api-tools_15.04-20160122~0ubuntu1~0xenial1_all.deb
+Size: 11132
+MD5sum: 131f31b0f0d9d07327197dff7acac37f
+SHA1: cb1768895a4fbb3b454f0ee6f197c817b354f84d
+SHA256: b26e22dbf3e919002f05ed986e8accf4dd2088d1dd0d9c7cab3bba761cd503d5
+Description: Ubuntu SDK API tool
+Description-md5: e41878e039bf70579a66420e64966444
+
+Package: unity-js-scopes-tool
+Source: unity-js-scopes
+Priority: optional
+Section: libs
+Installed-Size: 12647
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1-0~136~ubuntu16.04.1
+Depends: libboost-filesystem1.58.0, libboost-system1.58.0, libc6 (>= 2.17), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), unity-js-scopes-bindings (= 0.1-0~136~ubuntu16.04.1), unity-js-scopes-launcher (= 0.1-0~136~ubuntu16.04.1)
+Filename: pool/main/u/unity-js-scopes/unity-js-scopes-tool_0.1-0~136~ubuntu16.04.1_amd64.deb
+Size: 3721678
+MD5sum: d41972ed3faa3170c570c4e8fcedcba6
+SHA1: d627c5b6561b53aa85718053e8c315eaeb302858
+SHA256: 73934595eba44c00de7c4bbd30dcbe7d5644ad46cf8ab86e1f57ffe070d7c9c2
+Description: Scope tool for Unity JavaScript Scopes
+Description-md5: acbab397df7c0815125ce8dfa6356301
+Multi-Arch: foreign
+
+Package: ubuntu-pocket-desktop
+Source: ubuntu-touch-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.265~0ubuntu1~0xenial
+Depends: ubuntu-touch, libertine-tools, xmir
+Filename: pool/main/u/ubuntu-touch-meta/ubuntu-pocket-desktop_1.265~0ubuntu1~0xenial_amd64.deb
+Size: 1420
+MD5sum: 0c37336245dc3d6e7e7452c36312d06d
+SHA1: d331350ec399155254a88dbf2f95c208bb466acd
+SHA256: da673d9be0f38ef4d31da446c5e6ee96a801d1828485fe5d1a308574003bf403
+Description: Ubuntu touch pocket desktop system
+Description-md5: 39169a5924084a5727fb7508b27039b9
+
+Package: ubuntu-sdk-dev
+Priority: optional
+Section: devel
+Installed-Size: 662213
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.5.1~13+201604191700~ubuntu16.04.1
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.15), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libdrm2 (>= 2.4.25), libegl1-mesa (>= 7.8.1) | libegl1-x11, libevdev2 (>= 0.9.1), libfcitx-config4 (>= 4.2.7), libfcitx-utils0 (>= 4.2.7), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.3.5), libgbm1 (>= 8.1~0), libgcc1 (>= 1:4.0), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.31.8), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libicu55 (>= 55.1-1~), libjpeg8 (>= 8c), liblttng-ust0 (>= 2.5.0), libmysqlclient20 (>= 5.7.11), libnih-dbus1 (>= 1.0.0), libodbc1 (>= 2.3.1), libpango-1.0-0 (>= 1.14.0), libpcre16-3 (>= 2:8.35-4), libpng12-0 (>= 1.2.13-4), libpq5, libpulse0 (>= 0.99.1), libsm6, libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5.2), libsybdb5 (>= 0.63), libudev1 (>= 183), libx11-6, libx11-xcb1, libxcb-glx0, libxcb-icccm4 (>= 0.4.1), libxcb-image0 (>= 0.2.1), libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.3), libxcb-render-util0, libxcb-render0, libxcb-shape0, libxcb-shm0, libxcb-sync1, libxcb-xfixes0, libxcb-xkb1, libxcb1 (>= 1.8), libxi6 (>= 2:1.5.99.2), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), libxrender1, zlib1g (>= 1:1.1.4)
+Filename: pool/main/u/ubuntu-sdk-dev/ubuntu-sdk-dev_3.5.1~13+201604191700~ubuntu16.04.1_amd64.deb
+Size: 219626636
+MD5sum: 26a85aee0505341272d304da4ee83367
+SHA1: a12afac4dc55ad234244392741ff74fc9b599071
+SHA256: 04d82a62fdfefec556cbdf43580189493c736d9f1746dc3edf6d3279605f7978
+Description: Qt and Ubuntu APIs for application development
+Description-md5: 0faaa20833288984401a60d92fd17ab7
+Multi-Arch: same
+
+Package: unity-js-scopes-dev
+Source: unity-js-scopes
+Priority: optional
+Section: libs
+Installed-Size: 145
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1-0~136~ubuntu16.04.1
+Depends: unity-js-scopes-bindings (= 0.1-0~136~ubuntu16.04.1), unity-js-scopes-launcher (= 0.1-0~136~ubuntu16.04.1), unity-js-scopes-tool (= 0.1-0~136~ubuntu16.04.1)
+Filename: pool/main/u/unity-js-scopes/unity-js-scopes-dev_0.1-0~136~ubuntu16.04.1_amd64.deb
+Size: 18396
+MD5sum: 8bc6f5b014cb653d0c3d6b5b03579cab
+SHA1: 21c2d09156f674998da428a9d20451bee810049e
+SHA256: 6268e10b7da16b73b6b4661cffa9f75be6e2172e53db366a0723415771f5999d
+Description: Development files for Unity JavaScript Scopes
+Description-md5: 0276e6a321a145c138d13ce6d13fb2a9
+Multi-Arch: foreign
+
+Package: unity-js-scopes-doc
+Source: unity-js-scopes
+Priority: optional
+Section: doc
+Installed-Size: 447
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.1-0~136~ubuntu16.04.1
+Depends: unity-js-scopes-bindings (= 0.1-0~136~ubuntu16.04.1)
+Filename: pool/main/u/unity-js-scopes/unity-js-scopes-doc_0.1-0~136~ubuntu16.04.1_all.deb
+Size: 48734
+MD5sum: 7eab2c31e7f2f7f071bb32024e8f1d3d
+SHA1: 4c110d3e780257b27975860aa7e0495ae5cf32df
+SHA256: 17adba4e40dbb60de838370a487e16a2e0ab9011d7d6866ad465cd323f7eebe1
+Description: Documentation for javascript unity scopes
+Description-md5: 43d9047ada2455e6f67b0dcc4be6f207
+
+Package: unity-js-scopes-doc
+Source: unity-js-scopes
+Priority: optional
+Section: doc
+Installed-Size: 447
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.1-0~134~ubuntu16.04.1
+Depends: unity-js-scopes-bindings (= 0.1-0~134~ubuntu16.04.1)
+Filename: pool/main/u/unity-js-scopes/unity-js-scopes-doc_0.1-0~134~ubuntu16.04.1_all.deb
+Size: 48742
+MD5sum: 11eb5983f3d888ac993d454a1e1ee768
+SHA1: d563d273fb14ea54c12a12cf29ef32118c510f15
+SHA256: e6a630233172d47ec91c77e2251cb29c1438e0eb99f8c8120d9e0266e15d350f
+Description: Documentation for javascript unity scopes
+Description-md5: 43d9047ada2455e6f67b0dcc4be6f207
+
+Package: ubuntu-clicksdk-qmake
+Source: ubuntu-sdk-dev
+Priority: optional
+Section: devel
+Installed-Size: 3015
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 3.5.1~13+201604191700~ubuntu16.04.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.0), libstdc++6 (>= 4.1.1)
+Filename: pool/main/u/ubuntu-sdk-dev/ubuntu-clicksdk-qmake_3.5.1~13+201604191700~ubuntu16.04.1_amd64.deb
+Size: 1040048
+MD5sum: c383b3352fcde06d1afd0c7df2f72a6e
+SHA1: 34d6f70949106aa0bdde377ecc4e079b22f0040a
+SHA256: f448b731271157cb2073ee0e7f93569c89c988cffe7d365b388575f4a9a14faf
+Description: Special qmake for the use in the click packaged Ubuntu SDK
+Description-md5: 72676fd52fd1052eb19a93bc46674aaf
+Multi-Arch: same
+

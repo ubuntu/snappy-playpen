@@ -1,0 +1,69 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://ftp.gnome.org/pub/GNOME/sources/glib-networking/
+
+Files: *
+Copyright: 2009-2010 Red Hat, Inc.
+           2010 Collabora, Ltd.
+License: LGPL-2+
+
+Files: po/bg.po
+       po/eo.po
+       po/sl.po
+       po/sv.po
+       po/th.po
+       po/tr.po
+Copyright: 2011-2013 Free Software Foundation
+License: LGPL-2+
+
+Files: po/fi.po
+Copyright: 2011 Tommi Vainikainen
+License: LGPL-2+
+
+Files: po/te.po
+Copyright: 2011-2012 Swecha Telugu Localisation team
+License: LGPL-2+
+
+Files: po/vi.po
+Copyright: 2011 Free Software Foundation
+License: LGPL-2+
+
+Files: tls/tests/mock-pkcs11.*
+Copyright: 2010 Stefan Walter
+           2011 Collabora Ltd.
+License: LGPL-2.1+
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/
+ LGPL-2".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/
+ LGPL-2.1".

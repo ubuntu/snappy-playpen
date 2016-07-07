@@ -1,0 +1,15 @@
+Package: autopkgtest
+Description-md5: 31d9217a487d44cfd80f0588068648cd
+Description-en: automatic as-installed testing for Debian packages
+ autopkgtest runs tests on binary packages.  The tests are run on the
+ package as installed on a testbed system (which may be found via a
+ virtualisation or containment system).  The tests are expected to be
+ supplied in the corresponding Debian source package.
+ .
+ See autopkgtest(1) and /usr/share/doc/autopkgtest.
+ Depending on which virtualization server you want to use, you need to
+ install additional packages (schroot, lxc, lxd, or qemu-system)
+ .
+ For generating tests of well-known source packages such as Perl and Ruby
+ libraries you should install the autodep8 package.
+

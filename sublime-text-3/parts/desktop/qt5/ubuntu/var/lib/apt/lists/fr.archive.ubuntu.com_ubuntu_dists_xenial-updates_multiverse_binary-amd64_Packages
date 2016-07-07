@@ -1,0 +1,33 @@
+Package: flashplugin-installer
+Priority: optional
+Section: multiverse/web
+Installed-Size: 57
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bart Martens <bartm@knars.be>
+Architecture: amd64
+Source: flashplugin-nonfree
+Version: 11.2.202.626ubuntu0.16.04.1
+Replaces: flashplugin (<< 6), flashplugin-downloader (<< 11.1.102.55ubuntu3), flashplugin-nonfree (<< 11.0.1.152ubuntu1)
+Provides: flashplugin-nonfree
+Depends: debconf (>= 0.5) | debconf-2.0, wget, libgtk2.0-0, fontconfig, libxt6, libxext6, libatk1.0-0, libc6, libcairo2, libexpat1, libfontconfig1, libfreetype6, libglib2.0-0, libice6, libpango1.0-0, libpng12-0, libsm6, libx11-6, libxau6, libxcursor1, libxdmcp6, libxfixes3, libxi6, libxinerama1, libxrandr2, libxrender1, zlib1g, libnss3, libnspr4, libcurl3 | libcurl3-gnutls, libasound2, update-notifier-common (>= 0.119ubuntu2)
+Recommends: libasound2-plugins (>= 1.0.16)
+Suggests: firefox, x-ttcidfont-conf, ttf-mscorefonts-installer, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs
+Conflicts: flashplayer-mozilla, flashplugin (<< 6), flashplugin-nonfree (<< 11.0.1.152ubuntu1), libflashsupport
+Breaks: flashplugin-downloader (<< 11.1.102.55ubuntu3)
+Filename: pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.626ubuntu0.16.04.1_amd64.deb
+Size: 6824
+MD5sum: 578f74bdd07c539ec813a35df23c4428
+SHA1: 13c8c5666a0e739cad1cf7673930b006ee5c315a
+SHA256: 3ec6d80c8c3a45884172969d3c70063a3b99f819bcc3089a781b38d80f1be705
+Description: Adobe Flash Player plugin installer
+Multi-Arch: foreign
+Homepage: http://www.adobe.com/products/flashplayer.html
+Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a, aa5ca914-c309-495d-91cf-3141bbb04115
+Npp-Description: Adobe Flash SWF Player (http://www.adobe.com)
+Npp-File: libflashplayer.so
+Npp-Mimetype: application/x-shockwave-flash
+Npp-Name: Adobe Flash Player (installer)
+Description-md5: a03e9ebc20ce82c05567d088e79bf750
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

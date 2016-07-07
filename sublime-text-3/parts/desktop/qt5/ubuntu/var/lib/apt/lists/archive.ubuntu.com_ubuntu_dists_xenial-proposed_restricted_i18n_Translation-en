@@ -1,0 +1,112 @@
+Package: libcuda1-361
+Description-md5: 6cd8a29ce828440044bf16ef76348773
+Description-en: NVIDIA CUDA runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the driver specific runtime library.
+ .
+ Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
+ series, as well as the Tesla computing processors.
+
+Package: nvidia-352
+Description-md5: 5240a8d8fdc6dbd1b55d1082d8a9f9e0
+Description-en: Transitional package for nvidia-361
+ This is a transitional package for nvidia-361, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-352-dev
+Description-md5: 5f99b0c4be6e5f4d5b31c2964e1934c7
+Description-en: Transitional package for nvidia-361-dev
+ This is a transitional package for nvidia-361-dev, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-352-updates
+Description-md5: 5240a8d8fdc6dbd1b55d1082d8a9f9e0
+Description-en: Transitional package for nvidia-361
+ This is a transitional package for nvidia-361, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-352-updates-dev
+Description-md5: 5f99b0c4be6e5f4d5b31c2964e1934c7
+Description-en: Transitional package for nvidia-361-dev
+ This is a transitional package for nvidia-361-dev, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-361
+Description-md5: fefba2a174d34c88bb23f00072f93ef2
+Description-en: NVIDIA binary driver - version 361.45.11
+ The binary driver provide optimized hardware acceleration of OpenGL
+ applications via a direct-rendering X Server. AGP, PCIe, SLI, TV-out
+ and flat panel displays are also supported.
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of
+ the Video Decode and presentation API. The latter enables acceleration
+ for GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs:
+ http://www.nvidia.com/object/linux-display-amd64-361.45.11-driver.html
+
+Package: nvidia-361-dev
+Description-md5: ef3b76d980ecacaf3116114549ba70ca
+Description-en: NVIDIA binary Xorg driver development files
+ This package contains the NVIDIA binary Xorg driver
+ development files.
+ .
+ For more information on this source package visit NVIDIA's homepage
+ at http://www.nvidia.com/ .
+
+Package: nvidia-361-updates
+Description-md5: 5240a8d8fdc6dbd1b55d1082d8a9f9e0
+Description-en: Transitional package for nvidia-361
+ This is a transitional package for nvidia-361, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-361-updates-dev
+Description-md5: 5f99b0c4be6e5f4d5b31c2964e1934c7
+Description-en: Transitional package for nvidia-361-dev
+ This is a transitional package for nvidia-361-dev, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-opencl-icd-361
+Description-md5: a9c59351040d333e50f4a411fc913d8e
+Description-en: NVIDIA OpenCL ICD
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the NVIDIA installable client driver (ICD) for OpenCL
+ which supports NVIDIA GPUs.
+
+Package: nvidia-361
+Description-md5: aeb29d165cfdd8e3ba3d91d4df670ad8
+Description-en: NVIDIA binary driver - version 361.45.11
+ The binary driver provide optimized hardware acceleration of OpenGL
+ applications via a direct-rendering X Server. AGP, PCIe, SLI, TV-out
+ and flat panel displays are also supported.
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of
+ the Video Decode and presentation API. The latter enables acceleration
+ for GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs:
+ http://www.nvidia.com/object/linux-display-32bit-arm-361.45.11-driver.html
+
+Package: nvidia-361
+Description-md5: cf38704961776f9634da6a8b9d93c378
+Description-en: NVIDIA binary driver - version 361.45.11
+ The binary driver provide optimized hardware acceleration of OpenGL
+ applications via a direct-rendering X Server. AGP, PCIe, SLI, TV-out
+ and flat panel displays are also supported.
+ .
+ This package also includes the source for building the kernel module
+ required by the Xorg driver, and provides NVIDIA's implementation of
+ the Video Decode and presentation API. The latter enables acceleration
+ for GeForce 8 and later series cards for h264 video.
+ .
+ Release Notes and supported GPUs:
+ http://www.nvidia.com/object/linux-display-ia32-361.45.11-driver.html
+

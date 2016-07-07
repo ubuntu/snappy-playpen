@@ -1,0 +1,28 @@
+Package: flashplugin-installer
+Description-md5: a03e9ebc20ce82c05567d088e79bf750
+Description-en: Adobe Flash Player plugin installer
+ Downloads and Installs the Adobe Flash Player plugin. The Adobe Flash Player
+ plugin supports playing of media and other dynamic content online.
+ .
+ The Adobe Flash Player plugin will work with a range of web-browsers including,
+ limited to:
+  * Firefox
+  * Chromium
+  * SeaMonkey
+  * Iceweasel
+  * Iceape
+  * Galeon
+  * Epiphany
+  * Konqueror
+ .
+ WARNING: Installing this Ubuntu package causes the Adobe Flash Player plugin to
+ be downloaded from the Adobe web site. The distribution license of the
+ Adobe Flash Player plugin is available at www.adobe.com. Installing this
+ Ubuntu package implies that you have accepted the terms of that license.
+
+Package: flashplugin-downloader
+Description-md5: 66ea91f4e504085408ea841953dc65d0
+Description-en: Adobe Flash Player plugin installer (transitional package)
+ This package is a transitional package that can safely be removed after you installed
+ flashplugin-installer.
+

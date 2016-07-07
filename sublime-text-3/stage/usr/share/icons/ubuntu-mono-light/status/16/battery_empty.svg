@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg3240" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="32" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata9">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path id="rect2401-48-6" style="opacity:.3;fill:#fff" d="m7 3c-1.108 0-2 0.892-2 2v8c0 1.108 0.892 2 2 2h18c1.108 0 2-0.892 2-2v-1h0.38433c1.108 0 1.616-0.892 1.616-2v-2c0-1.108-0.426-2-1.534-2h-0.466v-1c0-1.108-0.892-2-2-2zm0 1h18c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1h-18c-0.554 0-1-0.446-1-1v-8c0-0.554 0.446-1 1-1zm20 3c0.59742 0 1 0.051 1 1v2c0 0.9914-0.40645 1-1 1z"/>
+ <rect id="rect3192" style="opacity:.3;stroke-width:0.5;stroke:#df382c;stroke-linecap:round;fill:none" rx=".75" ry=".75" height="9.5" width="19.5" y="3.25" x="6.25"/>
+ <path id="rect2401-48" style="fill:#df382c" d="m7 2c-1.108 0-2 0.892-2 2v8c0 1.108 0.892 2 2 2h18c1.108 0 2-0.892 2-2v-1h0.38433c1.108 0 1.616-0.892 1.616-2v-2c0-1.108-0.426-2-1.534-2h-0.466v-1c0-1.108-0.892-2-2-2zm0 1h18c0.554 0 1 0.446 1 1v8c0 0.554-0.446 1-1 1h-18c-0.554 0-1-0.446-1-1v-8c0-0.554 0.446-1 1-1zm20 3c0.59742 0 1 0.051 1 1v2c0 0.9914-0.40645 1-1 1z"/>
+</svg>

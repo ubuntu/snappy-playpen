@@ -1,0 +1,3066 @@
+Package: mate-common
+Priority: optional
+Section: devel
+Installed-Size: 66
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Depends: autoconf, automake, gettext, gtk-doc-tools, intltool, libtool, pkg-config
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/m/mate-common/mate-common_1.14.0-1~xenial1.01_all.deb
+Size: 17116
+MD5sum: 7cb4fe18aa9953fda79c40dd6f291943
+SHA1: bbe491f1dc8285c8b3559d8c45c9c2a09e0560e6
+SHA256: 1faa8b3a11c75ccda0fe69337bcb9f809f320713821243a67251097e15e77997
+Description: common scripts and macros to develop with MATE
+Description-md5: 70c3b333d1d5dd3adf775751578861ba
+
+Package: mate-icon-theme
+Priority: optional
+Section: x11
+Installed-Size: 23008
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.1
+Depends: hicolor-icon-theme, libgtk2.0-bin, librsvg2-common
+Filename: pool/main/m/mate-icon-theme/mate-icon-theme_1.14.0-1~xenial1.1_all.deb
+Size: 11369508
+MD5sum: d4a7b5e4f87eb993e16672877f80ebe0
+SHA1: d311fb430527d5e6b90ebc58ab57be2b5ec89afb
+SHA256: 0c85af564241c68b80a7c936cba4999a8b08f37f70e7c01746f660387ef27d69
+Description: MATE Desktop icon theme
+Description-md5: 9f5f81013b9cf1ae49ae9420cadad27e
+
+Package: mate-polkit
+Priority: optional
+Section: x11
+Installed-Size: 70
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: policykit-1-gnome
+Depends: accountsservice, mate-polkit-common (= 1.14.0-1~xenial1.01), policykit-1, libappindicator1 (>= 0.2.91), libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.14.0), libpolkit-agent-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.99)
+Filename: pool/main/m/mate-polkit/mate-polkit_1.14.0-1~xenial1.01_amd64.deb
+Size: 20122
+MD5sum: aa94ce0cf0dce090a7137f16234a510b
+SHA1: d2ff41ba4f2e5c9fd0a673cedc7fb89f5d8ecaa5
+SHA256: aacab5ce611ab9608cdc4557e209642a77c9a8cb8885d75e3e3b5d2ab7cc1475
+Description: MATE authentication agent for PolicyKit-1
+Description-md5: 9da547a2d009861d581b2f4aa498550a
+Multi-Arch: same
+
+Package: mate-notification-daemon
+Priority: optional
+Section: x11
+Installed-Size: 198
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: notification-daemon
+Depends: mate-notification-daemon-common (= 1.14.0-1~xenial1.01), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libnotify4 (>= 0.7.0), libwnck22 (>= 1:2.30.7), libx11-6
+Filename: pool/main/m/mate-notification-daemon/mate-notification-daemon_1.14.0-1~xenial1.01_amd64.deb
+Size: 48008
+MD5sum: 68dda3224dc4df579f9f47d1796da42b
+SHA1: 63f640636ad9176d8a21eb8824db0d418d4084c0
+SHA256: a05836b29c1df938f21fc6f28ffb9cd0bbfa9ab170710d30904391ba034a4895
+Description: daemon to display passive popup notifications
+Description-md5: 00be3310683cbd506f53e6b288f82405
+
+Package: mate-desktop
+Priority: optional
+Section: x11
+Installed-Size: 103
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: mate-desktop-gnome
+Depends: hicolor-icon-theme, libmate-desktop-2-17, mate-desktop-common (= 1.14.1-1~xenial1.01), mate-user-guide, python, python-requests, libc6 (>= 2.4), libglib2.0-0 (>= 2.28.0), libgtk2.0-0 (>= 2.14.0)
+Breaks: mate-desktop-gnome
+Filename: pool/main/m/mate-desktop/mate-desktop_1.14.1-1~xenial1.01_amd64.deb
+Size: 30404
+MD5sum: 1b499a6d777e4f91249dbb056729ecdb
+SHA1: 63a4972d0ff5138471e8692aa044e1f646a66b9e
+SHA256: 8b8b09fe577d919d547a621a01c903fad593037119c5f6f886b0fb126d7c1605
+Description: Library with common API for various MATE modules
+Description-md5: 00a366bf9bf6902235e7787f948836fd
+Multi-Arch: foreign
+
+Package: mate-backgrounds
+Priority: optional
+Section: x11
+Installed-Size: 21066
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/m/mate-backgrounds/mate-backgrounds_1.14.0-1~xenial1.01_all.deb
+Size: 20818356
+MD5sum: 88fa8fc3d8617b652a101ed7997c34c8
+SHA1: 8146aed99a70b733708a3ee7d10338ae6354572d
+SHA256: 98267d4df4c8e244b3a529c45bcde54de6f9d10fda9664411ef519edd67113ad
+Description: Set of backgrounds packaged with the MATE Desktop Environment
+Description-md5: 6f92a76d1836e26ab6e46e637b922c08
+
+Package: mate-menus
+Priority: optional
+Section: libs
+Installed-Size: 830
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: python-mate-menu (= 1.14.0-1~xenial1.01), python:any (>= 2.7.5-5~)
+Breaks: mate-control-center (<< 1.13.0)
+Filename: pool/main/m/mate-menus/mate-menus_1.14.0-1~xenial1.01_amd64.deb
+Size: 93014
+MD5sum: 7d73edd4d259b7a19ea9d8c2c9da84a1
+SHA1: 4f56a293a9af91c75989468239bab7ca4b848037
+SHA256: 55e419b32721789f06252605d8dd6b79d34d611ad1e512a756f83a5088ad8923
+Description: implementation of the freedesktop menu specification for MATE
+Description-md5: 7ba588f4bc62f57bde172fbd4cbb98a6
+
+Package: mate-settings-daemon
+Priority: optional
+Section: x11
+Installed-Size: 779
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Depends: mate-desktop-common (>= 1.14), mate-polkit | policykit-1-gnome, mate-settings-daemon-common (= 1.14.0-1~xenial1.01), x11-xserver-utils, libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libdconf1 (>= 0.14.0), libfontconfig1 (>= 2.11.94), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.43.92), libgtk2.0-0 (>= 2.24.0), libmate-desktop-2-17, libmatekbd4 (>= 1.8.0), libmatemixer0, libnotify4 (>= 0.7.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.0~1.9b1), libpolkit-gobject-1-0 (>= 0.99), libpulse0 (>= 0.99.1), libx11-6, libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0)
+Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Filename: pool/main/m/mate-settings-daemon/mate-settings-daemon_1.14.0-1~xenial1.01_amd64.deb
+Size: 170776
+MD5sum: 66c435dcfd16e7ba134a30c6abafe08e
+SHA1: 648563f4452ea5816bcf4891d795f5514485afc6
+SHA256: 9beb22dc42299814d54c58077603d9a4049bde0e58e4814f31fb299b16ffc74a
+Description: daemon handling the MATE session settings
+Description-md5: 7e05dd4968ea7ee43700abe3d0e8b2a4
+
+Package: mate-control-center
+Priority: optional
+Section: x11
+Installed-Size: 852
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Suggests: gconf2
+Depends: caja-common (>= 1.8.0), desktop-file-utils, gsettings-desktop-schemas, libglib2.0-bin, libmate-slab0 (= 1.14.0-1~xenial1.01), libmate-window-settings1 (= 1.14.0-1~xenial1.01), marco-common (>= 1.8.0), mate-control-center-common (>= 1.14.0-1~xenial1.01), mate-desktop (>= 1.11.0), mate-icon-theme, mate-menus, mate-settings-daemon (>= 1.11.0), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.2), libcanberra0 (>= 0.2), libdbus-glib-1-2 (>= 0.78), libdconf1 (>= 0.14.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libmarco-private0, libmate-desktop-2-17, libmatekbd4 (>= 1.8.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libunique-1.0-0 (>= 1.0.0), libx11-6, libxcursor1 (>> 1.1.2), libxi6 (>= 2:1.2.0), libxklavier16 (>= 5.0), libxml2 (>= 2.7.4), libxss1
+Breaks: ubuntu-mate-default-settings (<< 16.04)
+Filename: pool/main/m/mate-control-center/mate-control-center_1.14.0-1~xenial1.01_amd64.deb
+Size: 218488
+MD5sum: fa8c9786554a188d91c2de156a346058
+SHA1: 9091e06a4110aa04e9acedf07b20eab0996c01b4
+SHA256: 0828a2dedfcc04d82c9e32e7db7855a77f227baccd468fce21a51f88921c6dd0
+Description: utilities to configure the MATE desktop
+Description-md5: b6e1462868a9e2b12d2c192f4c5d8319
+
+Package: mate-themes
+Priority: optional
+Section: x11
+Installed-Size: 18781
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 3.18.1-1~xenial1.01
+Recommends: dmz-cursor-theme
+Depends: gtk2-engines, gtk2-engines-murrine, gtk2-engines-pixbuf, librsvg2-common, mate-icon-theme
+Conflicts: mate-themes-gnome
+Filename: pool/main/m/mate-themes/mate-themes_3.18.1-1~xenial1.01_all.deb
+Size: 4205480
+MD5sum: 38dc5b2234d60a9c152fd7d1d1b31a4c
+SHA1: 9cb21f86967274c2abf996d99eac1aa607a33635
+SHA256: 0630b4f95d8b09f5192d0d6f3ac57a6373e5497c1dbfe1daeca8ea6304c98475
+Description: Official themes for the MATE desktop
+Description-md5: 3ac03d61efe53eb75553ad1bcaa3b9e8
+
+Package: mate-panel
+Priority: optional
+Section: x11
+Installed-Size: 1587
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-panel-common (<< 1.1.1-4)
+Depends: libmate-panel-applet-4-1 (= 1.14.0-1~xenial1.01), mate-desktop, mate-menus, mate-panel-common (= 1.14.0-1~xenial1.01), mate-polkit, menu-xdg, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.17), libcanberra0 (>= 0.2), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libmate-desktop-2-17, libmate-menu2, libmateweather1, libpango-1.0-0 (>= 1.18.0), librsvg2-2 (>= 2.14.4), libsm6, libwnck22 (>= 1:2.30.7), libx11-6, libxrandr2 (>= 2:1.2.99.3)
+Breaks: mate-panel-common (<< 1.1.1-4)
+Filename: pool/main/m/mate-panel/mate-panel_1.14.0-1~xenial1.01_amd64.deb
+Size: 440944
+MD5sum: 7a3840648d1cd9ce88cd5467fd64c883
+SHA1: e0faeb6188b29fe48075883ac09b7ceb73b9c5cc
+SHA256: d278dbfea47c7fac3df2fc90ded3d5b674df3c2dfd121a37c514da57550f8bbe
+Description: launcher and docking facility for MATE
+Description-md5: 9334d503600c11dc5d1bebf83b94366d
+
+Package: gir1.2-mate-panel
+Source: mate-panel
+Priority: optional
+Section: introspection
+Installed-Size: 67
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: gir1.2-gtk-2.0, gir1.2-glib-2.0, libgirepository-1.0-1 (>= 1.41.4-1), libmate-panel-applet-4-1
+Filename: pool/main/m/mate-panel/gir1.2-mate-panel_1.14.0-1~xenial1.01_amd64.deb
+Size: 13674
+MD5sum: 67cdd39115a8aaf5fac1d35afa6556af
+SHA1: 7b4f32640f58e81e669629e1f59c8aaf3457e4c4
+SHA256: 78d9991ab99e78524a17558600d01f0d7582e774930cb10e33f36ce1f25948a6
+Description: GObject introspection data for MATE panel
+Description-md5: 12a2ed6912010aa913dd6a3692ce50ac
+
+Package: mate-session-manager
+Priority: optional
+Section: x11
+Installed-Size: 1756
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Recommends: caja, marco, mate-panel, mate-polkit, mate-settings-daemon
+Provides: x-session-manager
+Depends: dbus-x11, mate-desktop-common (>= 1.14.0), mint-mate-default-settings | ubuntu-mate-default-settings | debian-mate-default-settings (>= 1.14.0-1~xenial1.01), upower, dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.7), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.22.0), libice6 (>= 1:1.0.0), libsm6, libsystemd0, libx11-6, libxau6, libxext6, libxrender1, libxtst6
+Breaks: mate-settings-daemon (<< 1.11.0)
+Filename: pool/main/m/mate-session-manager/mate-session-manager_1.14.0-1~xenial1.01_amd64.deb
+Size: 295390
+MD5sum: 93dcfe90561204a5324b38075589d4d4
+SHA1: ff70175fb387327ff7f286da9e52e0d1805c23ab
+SHA256: d4f4787efc055b8aaf4a35955810b3ccac5573104b8f0b43ba498ca3de9023e0
+Description: Session manager of the MATE desktop environment
+Description-md5: 9341aca8be09efd8bc6238fccac20add
+
+Package: mate-terminal
+Priority: optional
+Section: x11
+Installed-Size: 359
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: x-terminal-emulator
+Depends: gsettings-desktop-schemas, mate-desktop-common, mate-terminal-common (= 1.14.0-1~xenial1.01), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libmate-desktop-2-17, libpango-1.0-0 (>= 1.14.0), libsm6, libvte9 (>= 1:0.28.0), libx11-6
+Filename: pool/main/m/mate-terminal/mate-terminal_1.14.0-1~xenial1.01_amd64.deb
+Size: 115052
+MD5sum: 725453568a2e800ebc1151670fe60bbe
+SHA1: 2f13d8c551def75610c044ce33d1048975e5b11f
+SHA256: 14da7135186bea44891eb1d7c416951d89d0aaf1d737b725ca5dc4f3801c9882
+Description: MATE terminal emulator application
+Description-md5: a1323e5909206515119974f769d401f0
+Multi-Arch: foreign
+
+Package: caja
+Priority: optional
+Section: utils
+Installed-Size: 3271
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Recommends: gvfs-backends
+Suggests: engrampa, gstreamer1.0-tools, meld
+Depends: caja-common (= 1.14.1-1~xenial1.01), desktop-file-utils, gvfs, libcaja-extension1 (= 1.14.1-1~xenial1.01), libglib2.0-data, mate-desktop, shared-mime-info, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libexempi3 (>= 2.2.0), libexif12 (>= 0.6.21-1~), libgail18 (>= 1.18.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libmate-desktop-2-17, libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0), libselinux1 (>= 1.32), libsm6, libunique-1.0-0 (>= 1.0.0), libx11-6, libxml2 (>= 2.7.4), libxrender1
+Breaks: libcaja-extension (<< 1.10.0), libcaja-extension1 (<< 1.10.0), mate-session-manager (<< 1.8.1-7)
+Filename: pool/main/c/caja/caja_1.14.1-1~xenial1.01_amd64.deb
+Size: 830528
+MD5sum: 2e336e91a6d34de740a1a3e89fb6eaea
+SHA1: 29743ffc9215ddd5baf77ea305bbeccf4ab2e96b
+SHA256: e21cbbb8740bfc25ff6ebc5299b21da37a27dcd43fc6f6dab3a177a7dcabcc95
+Description: file manager for the MATE desktop
+Description-md5: 2d27e6d6f085ec92e7532bd116bd9d0a
+Multi-Arch: foreign
+
+Package: libcaja-extension-dev
+Source: caja
+Priority: optional
+Section: libdevel
+Installed-Size: 80
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: libcaja-extension1 (= 1.14.1-1~xenial1.01), libgtk2.0-dev
+Filename: pool/main/c/caja/libcaja-extension-dev_1.14.1-1~xenial1.01_amd64.deb
+Size: 13300
+MD5sum: f894866cf5801b20a490f13faac6258c
+SHA1: 2ccd01fd04ff16360dc4d5466b440decf316dfa5
+SHA256: bfb1717dab9cc9fa1cae16d48b8bd8b83682a66535f440ad41acae27a9660ab7
+Description: libraries for Caja components (development files)
+Description-md5: a80ffbfa9b1d018b217fb2f97f2bfff9
+Multi-Arch: same
+
+Package: engrampa-common
+Source: engrampa
+Priority: optional
+Section: x11
+Installed-Size: 5542
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: engrampa (<= 1.0.3-1)
+Filename: pool/main/e/engrampa/engrampa-common_1.14.1-1~xenial1.01_all.deb
+Size: 869856
+MD5sum: db33692ad82ca32d73e2aad1e53fabde
+SHA1: c480c0f303eb64d7a0b487186fd458421bee3411
+SHA256: 8d5d6bd94f223ac5334c6ffb4efd3ba248849fd89b308ac892a264c46585256f
+Description: archive manager for MATE (common files)
+Description-md5: 693bd268e3f08c305f73cfdb419bef5a
+
+Package: engrampa
+Priority: optional
+Section: x11
+Installed-Size: 945
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Recommends: gvfs, mate-icon-theme, unzip, xz-utils, zip
+Suggests: arj, binutils, cpio, lha, lzip, lzma, lzop, ncompress, rar, rpm2cpio, rzip, sharutils, unace, unalz, unrar-free | unar | unrar | p7zip-rar, zoo
+Depends: bzip2 (>= 1.0.1), caja-common, engrampa-common (= 1.14.1-1~xenial1.01), gzip (>= 1.3.2), p7zip-full, tar (>= 1.13.25), libc6 (>= 2.14), libcaja-extension1, libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libjson-glib-1.0-0 (>= 0.12.0), libmagic1 (>= 5.12), libpango-1.0-0 (>= 1.14.0)
+Breaks: engrampa-common (<< 1.8.0)
+Filename: pool/main/e/engrampa/engrampa_1.14.1-1~xenial1.01_amd64.deb
+Size: 200134
+MD5sum: 2190a31a92ccc2b50618c8b20d423b4e
+SHA1: a18fa08545e068fd59c7095f19bc5f538e2562d7
+SHA256: 632f793d63cce8174c101d09aa97c07bdb050a0e5653132c5fcd7be0ddf4d0df
+Description: archive manager for MATE
+Description-md5: c8e71f59d4956f9ef1b9dbbeb964086c
+
+Package: caja-share
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 80
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: caja-extensions-common (= 1.14.0-1~xenial1.01), samba-common-bin, libc6 (>= 2.7), libcaja-extension1, libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.12.0)
+Filename: pool/main/c/caja-extensions/caja-share_1.14.0-1~xenial1.01_amd64.deb
+Size: 19896
+MD5sum: 67a334a2ee8dd49b640de1fa02237ff0
+SHA1: 6e2fe695077ab6ed74ca04be1758e93e535b51ee
+SHA256: 507923fa57593ff7c6e84928b6725af7d8453e74e2202528dda584c6a116deac
+Description: Allows one to quickly share a folder from the Caja file manager
+Description-md5: 240c2e7c47f684dbfdfdfde342ba808d
+
+Package: libmateweather-common
+Source: libmateweather
+Priority: optional
+Section: libs
+Installed-Size: 19221
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: libmateweather (<= 1.0.0-3)
+Filename: pool/main/libm/libmateweather/libmateweather-common_1.14.0-1~xenial1.01_all.deb
+Size: 14512462
+MD5sum: 74e5e754e83e3fe5c88c55b55516a2c1
+SHA1: f2db75c2e0007431b937bc2f8946fde619ee83d8
+SHA256: 6f179f30773ee470e0e185aa748c88fb09a39dce319203083d82101bd5eb5998
+Description: MateWeather shared library (common files)
+Description-md5: 9b1f8dc5a0ae5b5a23a35bcf93001f27
+Multi-Arch: foreign
+
+Package: libmateweather-dev
+Source: libmateweather
+Priority: optional
+Section: libdevel
+Installed-Size: 49
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libglib2.0-dev, libgtk2.0-dev, libmateweather1 (= 1.14.0-1~xenial1.01), libsoup-gnome2.4-dev, libsoup2.4-dev, libxml2-dev
+Filename: pool/main/libm/libmateweather/libmateweather-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 8954
+MD5sum: e2507164954bb13e3019b573e7a29abc
+SHA1: 365cb55f4d563c136fb2b2eae7283a0cc31d53d1
+SHA256: 458d463eaab2f64c43c927b8c6bd04d8fa636ec6d8facac11d472f9734f3541f
+Description: MateWeather shared library (development files)
+Description-md5: 044d4a59ee16ee9c8ff70692d143b78d
+Multi-Arch: same
+
+Package: libmatekbd-dev
+Source: libmatekbd
+Priority: optional
+Section: libdevel
+Installed-Size: 43
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: libglib2.0-dev, libgtk2.0-dev, libmatekbd4 (= 1.14.1-1~xenial1.01), libx11-dev, libxklavier-dev
+Filename: pool/main/libm/libmatekbd/libmatekbd-dev_1.14.1-1~xenial1.01_amd64.deb
+Size: 7874
+MD5sum: 72d763d22e288b61daa9b99902fc2d36
+SHA1: e240f78d9b1302cf3b29c94b2ee6f265fbc43a35
+SHA256: 6c2e86ee47f8f7ebf935ec033177d22a171eecadb4e80479b053da126fc49cf9
+Description: MATE library to manage keyboard configuration (development files)
+Description-md5: e93ff714a09bcc1f566662d5ddbcdc7a
+Multi-Arch: same
+
+Package: mate-desktop-dbg
+Source: mate-desktop
+Priority: extra
+Section: debug
+Installed-Size: 59
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: mate-desktop (= 1.14.1-1~xenial1.01)
+Filename: pool/main/m/mate-desktop/mate-desktop-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 30092
+MD5sum: 19fa217789f5f106a632fc53bceff4e5
+SHA1: c50261a7ea01a0e8074e8f96b6ddcf4fec2b55df
+SHA256: 4ca8bdff5b71b8470d09ce250f32e752ae401e52f9675c81712c919db2fd3698
+Description: Library with common API for various MATE modules (debugging symbols)
+Description-md5: 521f3625b3ad317a386b85fdee17b603
+Build-Ids: 19ffb7a580ad9ab1556d41c70787572904303862 fd271a5e82c97079a92d595cc4d11788d7e84cde
+Multi-Arch: foreign
+
+Package: marco-common
+Source: marco
+Priority: optional
+Section: x11
+Installed-Size: 4938
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.2-3~xenial1.1
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-window-manager (<= 1.0.0-2)
+Filename: pool/main/m/marco/marco-common_1.14.2-3~xenial1.1_all.deb
+Size: 614664
+MD5sum: 179298508f18a25ea47e7ff4aa96ec85
+SHA1: 7d31fc2be116134dc7545e4f03844f4c2f561101
+SHA256: 807dfd523c28b8c740435810a469b81c2cb98e80ae5cfa356bd17c9af1e53c59
+Description: lightweight GTK+ window manager for MATE (common files)
+Description-md5: da780534a11dab2e3dfc2b3db4eace95
+
+Package: marco
+Priority: optional
+Section: x11
+Installed-Size: 680
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.2-3~xenial1.1
+Provides: x-window-manager
+Depends: libmarco-private0 (= 1.14.2-3~xenial1.1), marco-common (= 1.14.2-3~xenial1.1), mate-desktop-common (>= 1.14), zenity, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.2), libcanberra0 (>= 0.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libgtop-2.0-10 (>= 2.22.3), libice6 (>= 1:1.0.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsm6, libstartup-notification0 (>= 0.7), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1, libxrandr2, libxrender1
+Breaks: mate-window-manager (<= 1.0.0-2)
+Filename: pool/main/m/marco/marco_1.14.2-3~xenial1.1_amd64.deb
+Size: 244104
+MD5sum: 7bf0f82116e5455332096702043bb870
+SHA1: 2dc14ca5f3f1ce1299e4cc04e10d2ff0d690164c
+SHA256: d9324904c0c6ad90954b5ef59914d3972e30f899d4d2296f9dfd8196419925f3
+Description: lightweight GTK+ window manager for MATE
+Description-md5: 95519840e2380540cca6bbdf96f6395e
+
+Package: libmarco-dev
+Source: marco
+Priority: optional
+Section: libdevel
+Installed-Size: 116
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.2-3~xenial1.1
+Depends: libmarco-private0 (= 1.14.2-3~xenial1.1)
+Breaks: mate-window-manager (<= 1.0.0-2)
+Filename: pool/main/m/marco/libmarco-dev_1.14.2-3~xenial1.1_amd64.deb
+Size: 23144
+MD5sum: f44d62948ff84ca6b538e63e9b8b96f4
+SHA1: 5c2bdc0ec7d6043c4178403d0bfd879ac0878aa4
+SHA256: 7babe8a86bf1226bef3082bcb9369fcf62bd9822d64039900f605ca4d339aa6c
+Description: library for Marco window manager (development files)
+Description-md5: 88b205f6c74893832a5b077c4bca9018
+Multi-Arch: same
+
+Package: gir1.2-mate-menu
+Source: mate-menus
+Priority: optional
+Section: introspection
+Installed-Size: 35
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/m/mate-menus/gir1.2-mate-menu_1.14.0-1~xenial1.01_amd64.deb
+Size: 9654
+MD5sum: e2a4e6fadae69a152d0ce86f12fa07eb
+SHA1: b5b598395eefc4f4e8f3a812c3effa0dee632226
+SHA256: 6ad461d6a0f97cec02fea67e0693cb71282916898b93de84b91473343185ffa2
+Description: GObject introspection data for the MATE menu specification
+Description-md5: 88fcdc92ed139b72095ab11c3733a223
+
+Package: python-mate-menu
+Source: mate-menus
+Priority: optional
+Section: python
+Installed-Size: 58
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: python (<< 2.8), python (>= 2.7~), libc6 (>= 2.4), libglib2.0-0 (>= 2.16.0), libmate-menu2, libpython2.7 (>= 2.7)
+Filename: pool/main/m/mate-menus/python-mate-menu_1.14.0-1~xenial1.01_amd64.deb
+Size: 15036
+MD5sum: 3671250c73c2b02f648c8137d43dab34
+SHA1: 1e142c270e30682aeb0181bab83ba00faa25175e
+SHA256: 8a8eae0fbd02d51bdc2fcd2ad4fa8c878792d1014144c56d5f4a1698b3a07fc9
+Description: implementation of the freedesktop menu specification for MATE (Python bindings)
+Description-md5: 6c2d9496ae5cb323d52f60af83b4f6f1
+
+Package: caja-common
+Source: caja
+Priority: optional
+Section: utils
+Installed-Size: 14705
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Replaces: caja (<< 1.9.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: caja (<< 1.9.0)
+Filename: pool/main/c/caja/caja-common_1.14.1-1~xenial1.01_all.deb
+Size: 2265380
+MD5sum: 63efa3e3e8f9522a7649fceea8fca76e
+SHA1: 79526a423d3543d5dc923d5c3e90a6795fab1dea
+SHA256: cf06e67e6f9a6266fb4cd36bd244f31485357b854b6812178857f1c3a69387b9
+Description: file manager for the MATE desktop (common files)
+Description-md5: e845fd1d469dd58a087ffd0d047163d0
+Multi-Arch: foreign
+
+Package: caja-dbg
+Source: caja
+Priority: extra
+Section: debug
+Installed-Size: 4698
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: caja (= 1.14.1-1~xenial1.01)
+Filename: pool/main/c/caja/caja-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 4103632
+MD5sum: 57fda20d77766459cd506d9cfd68c472
+SHA1: 9219cc45b38b34597f61b0fbd5bfa938e0f4796a
+SHA256: 1aaf79255d02ebad15de4f894f468d5d391661fde6748ff084c357fae7c17712
+Description: file manager for the MATE desktop (debugging symbols)
+Description-md5: 1ffcc32f11b8eca7bc29219125e3c8e9
+Build-Ids: 44954e0692c41b93150fe2094fe7c7c7be4a63a0 59dc17280c760366a724cf1392029de4835287d1 5b64af755d7f3a1b36913559ca8b0276fe35be7b 86803cadc4d222aeb04a28dc85879778872ca726 f18278c8f229247bd78f22aff67e5c5f2a5892c9
+Multi-Arch: foreign
+
+Package: gir1.2-caja
+Source: caja
+Priority: optional
+Section: introspection
+Installed-Size: 128
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Filename: pool/main/c/caja/gir1.2-caja_1.14.1-1~xenial1.01_amd64.deb
+Size: 16004
+MD5sum: 94560589ce7661447bc440923e88a933
+SHA1: 15d947c996f31aeb9071b94a7fcd737875688fa7
+SHA256: 60b87329fa2e17836b02ab27230a6e44d6a753ccf20c2bcce0ac03c3ca3ac323
+Description: GObject introspection data for Caja
+Description-md5: d2d03b886d3ddf07dc0cfb9d52676537
+
+Package: libmatepolkit-dev
+Source: mate-polkit
+Priority: optional
+Section: libdevel
+Installed-Size: 36
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libpolkit-gobject-1-dev, libpolkit-gtk-mate-1-0 (= 1.14.0-1~xenial1.01), mate-polkit, policykit-1
+Filename: pool/main/m/mate-polkit/libmatepolkit-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 8174
+MD5sum: df493d164495a7f97979c5494fb2bb27
+SHA1: 6bf74abe9b7416d331127bb1d5a9b47cdcaa7fa6
+SHA256: 52fde09b7030afba683e1fa8f5dcb88b8e0012e1b85c542d90bc61f0cb4a6aa4
+Description: MATE authentication agent for PolicyKit-1 (development files)
+Description-md5: aa5052dcfdd9e729882cf84d0fac7d07
+Multi-Arch: same
+
+Package: mate-panel-common
+Source: mate-panel
+Priority: optional
+Section: x11
+Installed-Size: 8643
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-panel (<= 1.9.0)
+Breaks: mate-panel (<= 1.9.0)
+Filename: pool/main/m/mate-panel/mate-panel-common_1.14.0-1~xenial1.01_all.deb
+Size: 1101928
+MD5sum: 5ec83a3f6ba52f0dd9c5edd47a7b8168
+SHA1: 7b914356ba20b534a99c7cbb8820491e71a96c35
+SHA256: 98cf05db8003240ee6c4202a30119c314fbbf113f963fd263cd4cbcfdb639b01
+Description: launcher and docking facility for MATE (common files)
+Description-md5: ac092d00f5038537486fea12cd254f89
+
+Package: mate-panel-dbg
+Source: mate-panel
+Priority: extra
+Section: debug
+Installed-Size: 1722
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-panel (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-panel/mate-panel-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 1452944
+MD5sum: ae7c281d3d5e2864a7691650a9edefa8
+SHA1: f17edf34a6ec4411058e291bd42e496aec052a54
+SHA256: 8fc93cf8141e201858c2f278ee80e6b38f86d829f7a45b717e98181b125e7c65
+Description: launcher and docking facility for MATE (debugging symbols)
+Description-md5: fe56961838862512f09833f77a1ed808
+Build-Ids: 1de937c2f51638b1826b8c634a1a5a1fe197ffe8 58e2e54b5a3458eded991c0b49e50dad7404b067 615f01536eef285ccc96aacf0cc30cb5aad72816 b4bbe74a1c561dd697eb6ce4837df03f298f3ad0 bdfc175d907db451cba647c0db1e08ac6442e871 d19a007d99fdc7acdd915804b273ac42063ec896 e9008c0e16db910ba48ccb830ed96a8a514a71eb
+
+Package: caja-sendto
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 242
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Suggests: pidgin (>= 2.0.0) | gajim, python-dbus, thunderbird | icedove | evolution (>= 2.28) | claws-mail
+Depends: caja-extensions-common (= 1.14.0-1~xenial1.01), dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcaja-extension1, libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.18.0), libgupnp-1.0-4 (>= 0.18.0)
+Filename: pool/main/c/caja-extensions/caja-sendto_1.14.0-1~xenial1.01_amd64.deb
+Size: 43014
+MD5sum: 417ce20f0e2a8150e6948e41efc2dc54
+SHA1: 422813d469c182340e29b5b865481af3145a2801
+SHA256: 3255c89859ad75b0aa3a4c89cf0bfb91f9acbcef078d236f5995946158770e31
+Description: integrates email clients and Pidgin into the Caja file manager
+Description-md5: 2901b4d306ca9fdcceed1844d3bfe329
+
+Package: caja-image-converter
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 96
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: caja-extensions-common (= 1.14.0-1~xenial1.01), imagemagick, libc6 (>= 2.4), libcaja-extension1, libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0)
+Filename: pool/main/c/caja-extensions/caja-image-converter_1.14.0-1~xenial1.01_amd64.deb
+Size: 15828
+MD5sum: d607f8a2611101102a2c040333146079
+SHA1: 113c7815976c17e3ce045f97d2239b0f90adc7b4
+SHA256: 2848f0e581600274d0954261e09850f01639cd0cc057c33d86274e75f2598e90
+Description: Caja extension to mass resize or rotate images
+Description-md5: 856c002fb178bbe956f8abd065daed28
+
+Package: caja-gksu
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 38
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: caja-extensions-common (= 1.14.0-1~xenial1.01), gksu, libc6 (>= 2.4), libcaja-extension1, libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0)
+Filename: pool/main/c/caja-extensions/caja-gksu_1.14.0-1~xenial1.01_amd64.deb
+Size: 9014
+MD5sum: 2c26b892f86c84623eb4ee67430bf702
+SHA1: f649f13717c7accf958e5ebbb541e853a981ceb5
+SHA256: 1cfd67ec7deb680fa260b1f446dad130d7893a8c24d6adef572db3998e338e5b
+Description: privilege granting extension for Caja using gksu
+Description-md5: f129b2155b3edbce8c4f873888ebe767
+
+Package: caja-open-terminal
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 50
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: caja-extensions-common (= 1.14.0-1~xenial1.01), dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.4), libcaja-extension1, libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.8.0), libmate-desktop-2-17
+Filename: pool/main/c/caja-extensions/caja-open-terminal_1.14.0-1~xenial1.01_amd64.deb
+Size: 11672
+MD5sum: 2ab7f08005bb75a72706cf5becb81aa6
+SHA1: 64860f9c8c9a17a940ea56cafc2d77ed00cfa222
+SHA256: d14df90003dfcc9eb12f6aae8e7004e5e8c109baa7ba41324662915a6b4e4caf
+Description: Caja plugin for opening terminals in arbitrary local paths
+Description-md5: bcdb7a5709bf14f070db5f2d1cbf536b
+
+Package: atril-common
+Source: atril
+Priority: optional
+Section: x11
+Installed-Size: 5450
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-2~xenial1.1
+Breaks: atril (<= 1.0.3-3)
+Filename: pool/main/a/atril/atril-common_1.14.1-2~xenial1.1_all.deb
+Size: 804606
+MD5sum: d0229de7eadb6844829abcf09f1fc805
+SHA1: 64054542b3d932071daca622300a15523dc7b759
+SHA256: cf99c58a072a5bd948550fc3c6f96bbae19f9cf20eb8bea83b322b22f98fa446
+Description: MATE document viewer (common files)
+Description-md5: b2ff604bc6e0b431f9db3e68f333c922
+
+Package: atril
+Priority: optional
+Section: x11
+Installed-Size: 609
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-2~xenial1.1
+Recommends: dbus-x11, gvfs
+Replaces: libatrildocument3 (<< 1.13.0)
+Suggests: caja, poppler-data, unrar
+Provides: djvu-viewer, pdf-viewer, postscript-viewer
+Depends: atril-common (>= 1.14.1-2~xenial1.1), libatrildocument3 (= 1.14.1-2~xenial1.1), libatrilview3 (= 1.14.1-2~xenial1.1), mate-desktop-common, shared-mime-info, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.10.0), libcaja-extension1, libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libmate-desktop-2-17, libsecret-1-0 (>= 0.7), libsm6, libx11-6, libxml2 (>= 2.7.4)
+Breaks: libatrildocument3 (<< 1.13.0)
+Filename: pool/main/a/atril/atril_1.14.1-2~xenial1.1_amd64.deb
+Size: 164870
+MD5sum: 0c8c7c0755086f3840716f8e9a762131
+SHA1: d8fd0374bf297b06f233be877c97bffdf9c1eca5
+SHA256: e698faaa499d353f09e5e596afb961d0ff97fd583422165663659a75a7c78b1f
+Description: MATE document viewer
+Description-md5: 4812dcf2412de5e958d1caec1a41bcc7
+
+Package: engrampa-dbg
+Source: engrampa
+Priority: extra
+Section: debug
+Installed-Size: 1375
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: engrampa (= 1.14.1-1~xenial1.01)
+Filename: pool/main/e/engrampa/engrampa-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 1140158
+MD5sum: b4e7b5eee344598205fcc8eeb604d004
+SHA1: c3ba30d76e3a16f896a301f3722f5779127d53ab
+SHA256: 6dd9c3cbcb4507b35ce0f082b1075a657f54c0fca073074a38449ca1c48109f7
+Description: archive manager for MATE (debugging symbols)
+Description-md5: 117591e847f6a17d3651cf69387bf68a
+Build-Ids: 089b7c70b6f10c20a35f26a7a972bc3a536fc37c 24723bb70023bb64431d974d8978777882cc91c6 3620879e4d0c094d0d6d51a14d1525ca72580d05 8bbfdaa45460bb3672e13d54ae9643274e45f4c9
+
+Package: eom
+Priority: optional
+Section: graphics
+Installed-Size: 624
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: mate-image-viewer (<= 1.0.0-1)
+Depends: eom-common (= 1.14.1-1~xenial1.01), librsvg2-common (>= 2.36.2), mate-desktop-common, shared-mime-info, dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.6.0), libdbus-glib-1-2 (>= 0.88), libexempi3 (>= 2.2.0), libexif12 (>= 0.6.21-1~), libgdk-pixbuf2.0-0 (>= 2.22.0), libgirepository-1.0-1 (>= 0.9.2), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), libmate-desktop-2-17, librsvg2-2 (>= 2.36.2), libx11-6, libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Breaks: mate-image-viewer (<= 1.0.0-1)
+Filename: pool/main/e/eom/eom_1.14.1-1~xenial1.01_amd64.deb
+Size: 190274
+MD5sum: fb7e79a19accdf6742cba37ee557a590
+SHA1: 4f84e752b6e9435b7cbe0ed69016e094e2dee84f
+SHA256: 9781e629dbba6e607cc5d0dba281744f43386002194b6fbbda71b6ff63c96b47
+Description: Eye of MATE graphics viewer program
+Description-md5: 282112f29e9da804b2ac6fa1ab4bb767
+
+Package: eom-dbg
+Source: eom
+Priority: extra
+Section: debug
+Installed-Size: 864
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: eom (= 1.14.1-1~xenial1.01)
+Filename: pool/main/e/eom/eom-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 727198
+MD5sum: c443afa8b76ec88cd25779a561dcdb33
+SHA1: 9db6c13dbbccecd23df21c5ebc02d93bacd7a3ab
+SHA256: 1569b854a9c5dc35d73b7a1c97520a08a62a4d16846af970aa0cdacfb7c5ec5c
+Description: Eye of MATE graphics viewer program (debugging symbols)
+Description-md5: 26c946c18f6bba0c3d6a6423ced6ec63
+Build-Ids: 147eb527868a5bb8e81c166274f6a8e9c17bd672 20ebb2d01ddf3db087e38ba52d3dc9e3556c9431 bd6ca012727025760303eca964ab03179e3b2399 e8884ee49ede992270ffcfab14d5669d58ad90d3
+
+Package: eom-dev
+Source: eom
+Priority: optional
+Section: libdevel
+Installed-Size: 115
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: mate-image-viewer (<= 1.0.0-1)
+Depends: eom (= 1.14.1-1~xenial1.01)
+Breaks: mate-image-viewer (<= 1.0.0-1)
+Filename: pool/main/e/eom/eom-dev_1.14.1-1~xenial1.01_amd64.deb
+Size: 18640
+MD5sum: 0dc3525f6cb0b061160cb5e1b73b3f1d
+SHA1: 2aaedc960417784cdc30f5798130af2a98c1a065
+SHA256: 68eaef943447b7ef947146c3a56f6bcbbd0b48e97709f5303ca74b0b562d6a52
+Description: Eye of MATE graphics viewer program (development files)
+Description-md5: cd39d555efe9cb812e957c07940d14ec
+
+Package: mate-media
+Priority: optional
+Section: x11
+Installed-Size: 211
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Recommends: alsa-utils, sound-theme-freedesktop
+Replaces: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Depends: mate-desktop-common (>= 1.14), mate-media-common (= 1.14.0-1~xenial1.01), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.2), libcanberra0 (>= 0.2), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.18.0), libmate-desktop-2-17, libmatemixer0, libpango-1.0-0 (>= 1.14.0), libunique-1.0-0 (>= 1.0.0), libxml2 (>= 2.7.4)
+Breaks: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Filename: pool/main/m/mate-media/mate-media_1.14.0-1~xenial1.01_amd64.deb
+Size: 57392
+MD5sum: 688676f5b669300692c159ca074b990b
+SHA1: cdece475e973129a5cb8a56152f33d7927f12d64
+SHA256: d2553812fd56619c9439767c32fed081e1e18646d4e765a67cfd883a732afbf3
+Description: MATE media utilities
+Description-md5: 641725f9be913faed723c6131926ab87
+
+Package: mate-indicator-applet
+Priority: optional
+Section: x11
+Installed-Size: 173
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: indicator-renderer
+Depends: mate-indicator-applet-common (= 1.14.0-1~xenial1.01), mate-panel, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libglib2.0-0 (>= 2.22.0), libgtk2.0-0 (>= 2.24.0), libindicator7 (>= 0.4.90), libmate-panel-applet-4-1, libx11-6
+Filename: pool/main/m/mate-indicator-applet/mate-indicator-applet_1.14.0-1~xenial1.01_amd64.deb
+Size: 29610
+MD5sum: b6bcf7a52f8e6b961ca0b8579c6f6849
+SHA1: 311383d4b427c46ad1ac288a9a5c30fc81555805
+SHA256: 3379824767442bd501a954fa0d933a70023246ab3ac0a9875978dc403b9bfd5d
+Description: MATE panel indicator applet
+Description-md5: 2c014e4894a825c41d36aaeaecaea876
+
+Package: mate-power-manager
+Priority: optional
+Section: x11
+Installed-Size: 457
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Suggests: mate-polkit
+Depends: dbus-x11, mate-notification-daemon | notification-daemon, mate-power-manager-common (= 1.14.0-1~xenial1.01), policykit-1, systemd | consolekit, upower, libc6 (>= 2.7), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.17), libcanberra0 (>= 0.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgnome-keyring0 (>= 2.20.3), libgtk2.0-0 (>= 2.24.0), libmate-desktop-2-17, libmate-panel-applet-4-1, libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libunique-1.0-0 (>= 1.0.0), libupower-glib3 (>= 0.99.0), libx11-6, libxext6, libxrandr2 (>= 2:1.2.99.2)
+Filename: pool/main/m/mate-power-manager/mate-power-manager_1.14.0-1~xenial1.01_amd64.deb
+Size: 117968
+MD5sum: cd058390dd87fa8dd33f9260f736b8d2
+SHA1: 86b7c998d2f31136922cba3a7fa7b97af175e726
+SHA256: 3dea5efc1f4f907fe87f0586123b72c8ed4463466605f5756b5dca1f98a109ea
+Description: power management tool for the MATE desktop
+Description-md5: f246ba641ea3cccc901d1bef08b0b160
+
+Package: mate-screensaver
+Priority: optional
+Section: x11
+Installed-Size: 481
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Recommends: mate-power-manager
+Replaces: mate-screensaver-common (<< 1.9.0)
+Suggests: rss-glx, xscreensaver-data
+Depends: dbus-x11, mate-desktop-common, mate-screensaver-common (= 1.14.1-1~xenial1.01), mate-session-manager (>= 1.11.0), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libmate-desktop-2-17, libmate-menu2, libmatekbd4 (>= 1.8.0), libnotify4 (>= 0.7.0), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.18.0), libsystemd0, libx11-6, libxext6, libxklavier16 (>= 5.0), libxss1, libxxf86vm1
+Breaks: mate-screensaver-common (<< 1.9.0)
+Filename: pool/main/m/mate-screensaver/mate-screensaver_1.14.1-1~xenial1.01_amd64.deb
+Size: 125930
+MD5sum: bed0e73f5c67548feed1add7324d3848
+SHA1: 82dc7157a5bae3cf32ee8c7054bd0a1811042671
+SHA256: 955304feb90140f852773081b1dffdba1fabcd6ad474c6b5a6017e7e8f65a78a
+Description: MATE screen saver and locker
+Description-md5: 1585ea516ea71cb13adecdf4a54e2096
+
+Package: mate-sensors-applet
+Priority: optional
+Section: x11
+Installed-Size: 242
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Recommends: hddtemp
+Suggests: mate-sensors-applet-nvidia
+Depends: libmate-sensors-applet-plugin0 (= 1.14.0-1~xenial1.01), mate-sensors-applet-common (= 1.14.0-1~xenial1.01), libatasmart4 (>= 0.13), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libdbus-glib-1-2 (>= 0.78), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.24.0), libmate-panel-applet-4-1, libnotify4 (>= 0.7.0), libsensors4 (>= 1:3.0.0)
+Filename: pool/main/m/mate-sensors-applet/mate-sensors-applet_1.14.0-1~xenial1.01_amd64.deb
+Size: 49176
+MD5sum: 42c47216ea4b19e1b1dbc7545d7cfe00
+SHA1: bb5bf66ea71307d5c1132b9e29b1fcf65d223cbb
+SHA256: 7a1cc0bff4d11381b6ea0e80b7a2d682bf93bdd33d8f61f2da87a4bb89847e8a
+Description: Display readings from hardware sensors in your MATE panel
+Description-md5: 881e979b28d0cbfe3f1a064913e3d723
+
+Package: mate-system-monitor
+Priority: optional
+Section: x11
+Installed-Size: 310
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-2~xenial1.1
+Recommends: gvfs, libgksu2-0
+Depends: mate-system-monitor-common (>= 1.14.0-2~xenial1.1), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libglibmm-2.4-1v5 (>= 2.46.0), libgtk-3-0 (>= 3.16.2), libgtkmm-3.0-1v5 (>= 3.18.0), libgtop-2.0-10 (>= 2.22.3), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), librsvg2-2 (>= 2.14.4), libsigc++-2.0-0v5 (>= 2.2.0), libstdc++6 (>= 5.2), libsystemd0, libwnck-3-0 (>= 2.91.6), libxml2 (>= 2.7.4)
+Filename: pool/main/m/mate-system-monitor/mate-system-monitor_1.14.0-2~xenial1.1_amd64.deb
+Size: 102300
+MD5sum: da9f3db2eaef7666d435baadcffb71aa
+SHA1: bbd04a9c040a12fe55fbe89a697a0d493060e52d
+SHA256: 8529e5581c38fe4939cbb4693571a7b3063b6009f56d06d3f09e2a2606324e7a
+Description: Process viewer and system resource monitor for MATE
+Description-md5: 56c6a33b9a0ec5aae56c46fd1a5d0424
+
+Package: eom-common
+Source: eom
+Priority: optional
+Section: graphics
+Installed-Size: 5458
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Replaces: mate-image-viewer (<= 1.0.0-1)
+Breaks: eom (<= 1.6.1-1), mate-image-viewer (<= 1.0.0-1)
+Filename: pool/main/e/eom/eom-common_1.14.1-1~xenial1.01_all.deb
+Size: 1581130
+MD5sum: d63a1ca494fd06a9835bb74c8c9d5f24
+SHA1: 412eb4d3f5781383a9febef52ccfd61347c58a96
+SHA256: 72812a6c6c8898f49bbf9dcab033c5e64b699664df83559de85f38a6b98564ff
+Description: Eye of MATE graphics viewer program (common files)
+Description-md5: c848fbc723088e675f454caa830ef9a2
+
+Package: mate-utils
+Priority: optional
+Section: x11
+Installed-Size: 744
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libmatedict6 (= 1.14.0-1~xenial1.01), mate-desktop-common, mate-utils-common (>= 1.14.0-1~xenial1.01), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libcanberra-gtk0 (>= 0.2), libcanberra0 (>= 0.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libgtop-2.0-10 (>= 2.22.3), libice6 (>= 1:1.0.0), libmate-panel-applet-4-1, libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsm6, libx11-6, libxext6, zlib1g (>= 1:1.1.4)
+Filename: pool/main/m/mate-utils/mate-utils_1.14.0-1~xenial1.01_amd64.deb
+Size: 198862
+MD5sum: 9ec69fa1ef16ef0afa68d9a327ee18d7
+SHA1: f65df0c671f0d90095bf9304d7336252f8af61d9
+SHA256: a0f717ad83c996cf5ebe6b1f7898f57e0eccc45f86ba40d4ab8171b61daffc68
+Description: MATE desktop utilities
+Description-md5: 87c330cf41f43b58a47adfeb031fa586
+
+Package: mate-core
+Source: mate-desktop-environment
+Priority: optional
+Section: x11
+Installed-Size: 9
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0+2~xenial1.2
+Depends: mate-desktop-environment-core (= 1.14.0+2~xenial1.2)
+Filename: pool/main/m/mate-desktop-environment/mate-core_1.14.0+2~xenial1.2_all.deb
+Size: 3402
+MD5sum: 634e62f9c23fb47c62a4fa07298f209d
+SHA1: 6908acfcd153d16fd2c5034f4b6477833d105473
+SHA256: 8764d4a2e6d8cb956ce1c952f90bfffc964acd193b197cb21c2fea83f19059c8
+Description: MATE Desktop Environment (essential components, dummy package)
+Description-md5: 9ff0776ded39cfed763cbf21cfce7add
+
+Package: mate-desktop-environment
+Priority: optional
+Section: x11
+Installed-Size: 9
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0+2~xenial1.2
+Recommends: atril (>= 1.14.0), desktop-base | ubuntu-wallpapers, engrampa (>= 1.14.0), eom (>= 1.14.0), ffmpegthumbnailer, galculator, mate-applets (>= 1.14.0), mate-icon-theme-faenza (>= 1.14.0), mate-media (>= 1.14.0), mate-notification-daemon (>= 1.14.0), mate-power-manager (>= 1.14.0), mate-screensaver (>= 1.14.0), mate-system-monitor (>= 1.14.0), mate-user-guide (>= 1.14.0), mate-utils (>= 1.14.0), pluma (>= 1.14.0)
+Suggests: mail-reader | icedove, network-manager-gnome, x-www-browser | iceweasel
+Provides: mate
+Depends: mate-desktop-environment-core (= 1.14.0+2~xenial1.2)
+Filename: pool/main/m/mate-desktop-environment/mate-desktop-environment_1.14.0+2~xenial1.2_all.deb
+Size: 3682
+MD5sum: cef24a0516e8cd0209d51b87e1170024
+SHA1: 7c96e100ee57911125c5437d4060daee8fb621db
+SHA256: 71fee5ca4316691ef7902a6d335684a2f88e8ce0943409b7c626b64f90c517ae
+Description: MATE Desktop Environment (metapackage)
+Description-md5: 8105273afc4042ae9495ec264fc266e6
+
+Package: mate-applets
+Priority: optional
+Section: x11
+Installed-Size: 787
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-3~xenial1.1
+Recommends: cpufrequtils, mate-media, mate-polkit, mate-system-monitor
+Replaces: mate-netspeed (<< 1.13.0)
+Depends: gir1.2-mate-panel, gsettings-desktop-schemas, gvfs, mate-applets-common (= 1.14.0-3~xenial1.1), mate-panel, python, python-gi, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.2.4), libcpufreq0 (>= 001), libdbus-glib-1-2 (>= 0.88), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libgtksourceview2.0-0 (>= 2.10.0), libgtop-2.0-10 (>= 2.22.3), libiw30 (>= 30~pre1), libmate-desktop-2-17, libmate-panel-applet-4-1, libmateweather1, libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpolkit-gobject-1-0 (>= 0.94), libupower-glib3 (>= 0.99.0), libwnck22 (>= 1:2.30.7), libx11-6, libxml2 (>= 2.7.4)
+Breaks: mate-netspeed (<< 1.13.0)
+Filename: pool/main/m/mate-applets/mate-applets_1.14.0-3~xenial1.1_amd64.deb
+Size: 188576
+MD5sum: c3acbeb904539d3f77c0ab1f6fbd3967
+SHA1: 94df02e0bfde7d759885848128d127b8e96195a2
+SHA256: 79c2e917ac492d5627248843cec6e728a04b096ad4db46f2be8793840fb14fd4
+Description: Various applets for the MATE panel
+Description-md5: a71709ffc885e266b20055370b98c0a2
+
+Package: mozo
+Priority: optional
+Section: utils
+Installed-Size: 594
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Recommends: mate-panel
+Depends: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, mate-menus, python-gi, python-mate-menu, python2.7:any, python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: pool/main/m/mozo/mozo_1.14.0-1~xenial1.01_all.deb
+Size: 78642
+MD5sum: 401007f725cbadffd9a38da170525291
+SHA1: 1e41b15fc20adeaf74f0c88d3fe62c5a7b7a92ae
+SHA256: 798b21de18b1ad2535842b827ef1eea9e4fd3750b4c7d1824d780cd1f8fb2fbd
+Description: easy MATE menu editing tool
+Description-md5: f50f9cb805c69b01e762208db0aff342
+Python-Version: 2.7
+
+Package: caja-dropbox
+Priority: optional
+Section: x11
+Installed-Size: 274
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Suggests: caja
+Depends: dbus-x11, policykit-1, procps, python, python-gpgme, python-gtk2 (>= 2.12), libc6 (>= 2.15), libcaja-extension1, libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.8.0)
+Filename: pool/main/c/caja-dropbox/caja-dropbox_1.14.0-1~xenial1.01_amd64.deb
+Size: 90832
+MD5sum: b0ba508d90d528b802e96da8fcf30b06
+SHA1: 9fd75da51f2023db6e01da32a86ac16fd4379e7f
+SHA256: c9b1b3ecbbd4cbe7db552bf175ff7c66f9b0748d03e4bd30115a44a7784c9ef7
+Description: Dropbox integration for Caja
+Description-md5: b2d151362484130a2799ce7beca35fc9
+
+Package: mate-terminal-common
+Source: mate-terminal
+Priority: optional
+Section: x11
+Installed-Size: 5566
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-terminal (<< 1.1.0-2)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-terminal (<< 1.1.0-2)
+Filename: pool/main/m/mate-terminal/mate-terminal-common_1.14.0-1~xenial1.01_all.deb
+Size: 857440
+MD5sum: bc355de134ad2aab77736c21a54e0965
+SHA1: 9a2d04f20a5898e4d02177a91d448da7d07d31e3
+SHA256: a0c941d25e3c333b111b57354c394a9956b27c09e402458f3dbb94b02c2f24cc
+Description: MATE terminal emulator application (common files)
+Description-md5: da51f52c9045a00f846b07a221f89952
+
+Package: mate-applets-common
+Source: mate-applets
+Priority: optional
+Section: x11
+Installed-Size: 18353
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-3~xenial1.1
+Replaces: mate-applets (<< 1.9.0), mate-netspeed (<< 1.13.0), mate-netspeed-common (<< 1.13.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-applets (<< 1.9.0), mate-netspeed (<< 1.13.0), mate-netspeed-common (<< 1.13.0)
+Filename: pool/main/m/mate-applets/mate-applets-common_1.14.0-3~xenial1.1_all.deb
+Size: 6477788
+MD5sum: 0b553857e8c41aac517901ef7609eadd
+SHA1: da01eec51f1ecc082510e2fd8a19c8fb8364d428
+SHA256: 431ddf69270e41abd1183a107b350d65bf188605009e6df2fa51008a12b10967
+Description: Various applets for the MATE panel (common files)
+Description-md5: 1ecb78132beb24404556f78bfc66d9f6
+
+Package: mate-settings-daemon-common
+Source: mate-settings-daemon
+Priority: optional
+Section: x11
+Installed-Size: 2320
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Filename: pool/main/m/mate-settings-daemon/mate-settings-daemon-common_1.14.0-1~xenial1.01_all.deb
+Size: 310296
+MD5sum: 52a0b9777e1b178a37a3a86787ba7705
+SHA1: 45bed50a4fe14c900900ed9b67c45564e6318859
+SHA256: 5187c0022522c00ef9ad8e7692bc6f98f1ef612992679e6e584cccc47777e3e7
+Description: daemon handling the MATE session settings (common files)
+Description-md5: 999d32f2d546c750b2221999b0f25ae5
+
+Package: indicator-jenkins
+Priority: extra
+Section: devel
+Installed-Size: 784
+Maintainer: Thomi Richards <thomir@gmail.com>
+Architecture: all
+Version: 1.0-1~xenial1.0
+Depends: python-jenkins, gir1.2-appindicator3-0.1, gir1.2-notify-0.7, gir1.2-gtk-3.0, gir1.2-gdkpixbuf-2.0, python-gi, librsvg2-common
+Filename: pool/main/i/indicator-jenkins/indicator-jenkins_1.0-1~xenial1.0_all.deb
+Size: 42860
+MD5sum: 93285f197a53881fc0bbfe4160f87507
+SHA1: 29c5f26275c939667625a6fc9efc6b31d2feaabf
+SHA256: 0f1fa1f53953a1ae0596d5df63102885b7000e37dad58a10083656b17d69702e
+Description: A panel indicator to monitor jenkins jobs.
+Description-md5: efa019a7e983e8b0776e46edb4322026
+
+Package: libmatekbd4
+Source: libmatekbd
+Priority: optional
+Section: libs
+Installed-Size: 119
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: libmatekbd
+Provides: libmatekbd
+Depends: iso-codes, libmatekbd-common, libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.22.0), libx11-6, libxklavier16 (>= 5.0)
+Conflicts: libmatekbd
+Breaks: libmatekbd
+Filename: pool/main/libm/libmatekbd/libmatekbd4_1.14.1-1~xenial1.01_amd64.deb
+Size: 37364
+MD5sum: 38f77670d70f5808ac4f101741ebe5b8
+SHA1: 16a3075ef438a0d23c5c07a904eecc57d54d0f8a
+SHA256: 70b3a2c9b20a9a22f6b07613a136b1ed0eba0423576a0c572a9c49617d3c16c0
+Description: MATE library to manage keyboard configuration
+Description-md5: 9a1c8c8e2f16cc90311d6a8a0e172942
+Multi-Arch: same
+
+Package: libmatekbd-common
+Source: libmatekbd
+Priority: optional
+Section: libs
+Installed-Size: 802
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Replaces: libmatekbd4 (<< 1.6.1-1)
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/libm/libmatekbd/libmatekbd-common_1.14.1-1~xenial1.01_all.deb
+Size: 73158
+MD5sum: c72405e4994253eba15d48d5733dbdd7
+SHA1: 97cfcc720832168ca2aa5abf0e1a3a82b9922465
+SHA256: 117331a121be3f56a848948a33403130be1fe2ea648796f384fd179920a19b0c
+Description: MATE library to manage keyboard configuration (common files)
+Description-md5: 53b275bca5c7b0f568c8d001b53babd1
+Multi-Arch: foreign
+
+Package: libmateweather1
+Source: libmateweather
+Priority: optional
+Section: libs
+Installed-Size: 126
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmateweather
+Provides: libmateweather
+Depends: libmateweather-common (= 1.14.0-1~xenial1.01), libc6 (>= 2.7), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.8.0), libsoup2.4-1 (>= 2.33.92), libxml2 (>= 2.7.4)
+Conflicts: libmateweather
+Breaks: libmateweather
+Filename: pool/main/libm/libmateweather/libmateweather1_1.14.0-1~xenial1.01_amd64.deb
+Size: 39848
+MD5sum: a563aaec0db5417b6de3b0adc9739f2b
+SHA1: c7b8cec858bf77c87ed5ef27550f4f48b02cbcab
+SHA256: 142eff0e53f8ea93157e37e2fbbe425d3aaa1093158ef1ad10770f3eb9776d1d
+Description: MateWeather shared library
+Description-md5: 018883b44fead614d635fdbc4535af89
+Multi-Arch: same
+
+Package: mate-polkit-common
+Source: mate-polkit
+Priority: optional
+Section: x11
+Installed-Size: 566
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Breaks: mate-polkit (<< 1.8.0)
+Filename: pool/main/m/mate-polkit/mate-polkit-common_1.14.0-1~xenial1.01_amd64.deb
+Size: 57512
+MD5sum: 45ecbb38628d1932fc04a255d81fa5b9
+SHA1: 610bdc13b3d47865d1d2a04548ce4a01f4006046
+SHA256: 6ae88064c8bdd86c732dd9f526e33b6ac2e30c097aab45a8c1fff52fa9a834b6
+Description: MATE authentication agent for PolicyKit-1 (common files)
+Description-md5: 33d1dff417aebdf2191249736a548769
+Multi-Arch: foreign
+
+Package: libpolkit-gtk-mate-1-0
+Source: mate-polkit
+Priority: optional
+Section: libs
+Installed-Size: 49
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatepolkit (<< 1.8.0)
+Provides: libmatepolkit
+Depends: policykit-1, libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.12.0), libpolkit-gobject-1-0 (>= 0.101)
+Breaks: libmatepolkit (<< 1.8.0)
+Filename: pool/main/m/mate-polkit/libpolkit-gtk-mate-1-0_1.14.0-1~xenial1.01_amd64.deb
+Size: 13278
+MD5sum: 60f6af128fb48c9e42f59c9a58888383
+SHA1: dd0e5035b3a9a6e079c736c5cc07df716032ad10
+SHA256: 0150b9ca1a1f62d8700032ab0c3f810c810702d292aa0b70d14893f689fd0b32
+Description: MATE authentication agent for PolicyKit-1 (library)
+Description-md5: 3451893092a0f0d08cbdc10ba07d6c3b
+Multi-Arch: same
+
+Package: libpolkit-gtk-mate-1-0-dbg
+Source: mate-polkit
+Priority: extra
+Section: debug
+Installed-Size: 132
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libpolkit-gtk-mate-1-0 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-polkit/libpolkit-gtk-mate-1-0-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 93620
+MD5sum: dc0331e9c8bb12987437ba3b89b8e86b
+SHA1: 2ddbfe4e07e0d42eafc9b7e84bfe3a95a5b5a717
+SHA256: 4d20e8c50029d840143f6837e1ded62ba643386acbd804b98dfe516e675efe31
+Description: MATE authentication agent for PolicyKit-1 (debugging symbols)
+Description-md5: 40c6169c98b35021d50dc2de97576e13
+Build-Ids: 8345b1d90f67c124e0a072930cc3fe99508af37f
+Multi-Arch: same
+
+Package: libmate-desktop-2-17
+Source: mate-desktop
+Priority: optional
+Section: x11
+Installed-Size: 308
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: libmatedesktop (<< 1.6.1)
+Provides: libmatedesktop
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libdconf1 (>= 0.14.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0), libstartup-notification0 (>= 0.4), libx11-6, libxrandr2 (>= 2:1.2.99.3)
+Breaks: libmatedesktop (<< 1.6.1)
+Filename: pool/main/m/mate-desktop/libmate-desktop-2-17_1.14.1-1~xenial1.01_amd64.deb
+Size: 102658
+MD5sum: 085f9b73431eb806e02429e660c21c8e
+SHA1: 49b11ec8a986890435f39301fe173f57a9ef6285
+SHA256: b6d67c99094da08f8108c61fdc48e637d42adc724c435f1e851b7fd2a1fdb5a9
+Description: Library with common API for various MATE modules (library)
+Description-md5: 07f5c07902f071f30ac5c42d0f5aaa8c
+Multi-Arch: same
+
+Package: libmate-desktop-dev
+Source: mate-desktop
+Priority: optional
+Section: libdevel
+Installed-Size: 110
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: libmatedesktop-dev
+Depends: libdconf-dev, libgdk-pixbuf2.0-dev, libgtk2.0-dev, libmate-desktop-2-17 (= 1.14.1-1~xenial1.01), libstartup-notification0-dev
+Breaks: libmatedesktop-dev
+Filename: pool/main/m/mate-desktop/libmate-desktop-dev_1.14.1-1~xenial1.01_amd64.deb
+Size: 20182
+MD5sum: 17055d9ce1c2482b3d0f5d8dfe9eea8b
+SHA1: 72fca338484db55e007c601e4d1f5c62d778793c
+SHA256: e8a18cc0d4136e39757747838df77b50bdffb2b0481cff5d2d044a9ec14af5f5
+Description: Library with common API for various MATE modules (development files)
+Description-md5: 437ddd22a9d457897497a28bd94e2dbd
+Multi-Arch: same
+
+Package: mate-desktop-common
+Source: mate-desktop
+Priority: optional
+Section: x11
+Installed-Size: 2344
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Replaces: mate-desktop (<< 1.1.1-1)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-desktop (<< 1.1.1-1)
+Filename: pool/main/m/mate-desktop/mate-desktop-common_1.14.1-1~xenial1.01_all.deb
+Size: 385644
+MD5sum: 764458799bb3c37de9dc0fcf4a7419f6
+SHA1: 89cb4b662b9e3d44af1a1740d1739cdc8326969c
+SHA256: 22c0e9840ec92e7cf81fc7b0699b9a9671b2bb0138a07cfc035d7d21f0d1dc1e
+Description: Library with common API for various MATE modules (common files)
+Description-md5: 3c4dd3089c4f97cce3d7794d690fd498
+
+Package: libmate-desktop-doc
+Source: mate-desktop
+Priority: optional
+Section: doc
+Installed-Size: 333
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Replaces: libmatedesktop-doc
+Breaks: libmatedesktop-doc
+Filename: pool/main/m/mate-desktop/libmate-desktop-doc_1.14.1-1~xenial1.01_all.deb
+Size: 32888
+MD5sum: de89077e1ff768f332616dfe3815368e
+SHA1: 995a4a2fcba5451e69bf2df128cae7cb81db3cfa
+SHA256: d15ea6db651c89db12842e348065c42af313c85d764fa1532577aa039d38427f
+Description: Library with common API for various MATE modules (documentation files)
+Description-md5: 85f62c1094850474d17679faeb2b838a
+Multi-Arch: foreign
+
+Package: mate-notification-daemon-dbg
+Source: mate-notification-daemon
+Priority: extra
+Section: debug
+Installed-Size: 261
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-notification-daemon (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-notification-daemon/mate-notification-daemon-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 186088
+MD5sum: e8afc1effcb141f64cfe6f121a010ed6
+SHA1: b96dfc5139d0957ddcdd3bda1af6264daad46fcc
+SHA256: 1eb7f528121fa7576116854edeadef915b2f7a3043f3f31fa3f3b3201062d880
+Description: daemon to display passive popup notifications (debugging symbols)
+Description-md5: 1537d0c0c1bac5be6fb04b057f8f9aab
+Build-Ids: 631ed11279247493125c3c4fd7889fdaa2100664 6ea01181dff1311b47cf0790e124d69c133b72b2 8babf9542cda1d4598f1b572d0d91f021faf9cbe 980750ade7d6e4a23a0de026359b6a7ee0e19916 ae25a61e0c3bf381a69b592707d2871c8a400722 bca045c16d933f4493df96c2caa03df26f56d121
+
+Package: libmate-desktop-2-17-dbg
+Source: mate-desktop
+Priority: extra
+Section: debug
+Installed-Size: 422
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: mate-desktop-dbg (<= 1.8.0+dfsg1-2)
+Depends: libmate-desktop-2-17 (= 1.14.1-1~xenial1.01)
+Breaks: mate-desktop-dbg (<= 1.8.0+dfsg1-2)
+Filename: pool/main/m/mate-desktop/libmate-desktop-2-17-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 355112
+MD5sum: cac21ea8bd01a9328b8cdd5c63c54163
+SHA1: 6f98c9456dde7f20dfdfad238df7b5fbb272732b
+SHA256: be79031f95359516a65a274a47cffec9731e09e3201679bb28cd1cb96c3a56c1
+Description: Library with common API for various MATE modules (library debugging symbols)
+Description-md5: 408169f7f93b383a3a0facfad364597d
+Build-Ids: 6e5f514209c8290e102d111cb93eb6ff4b5cadb8
+Multi-Arch: same
+
+Package: libmateweather1-dbg
+Source: libmateweather
+Priority: extra
+Section: debug
+Installed-Size: 161
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmateweather-dbg
+Provides: libmateweather-dbg
+Depends: libmateweather1 (= 1.14.0-1~xenial1.01)
+Breaks: libmateweather-dbg
+Filename: pool/main/libm/libmateweather/libmateweather1-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 126984
+MD5sum: 467328ff28dd806717a3008add4b264e
+SHA1: b488d52d7d631d570d55ffd11c64552cd8b314b2
+SHA256: 8c564eb22fd410b870fcfe95e2058d612f607301503a9d6bf55bc5d1ca962796
+Description: MateWeather shared library (debugging symbols)
+Description-md5: e3f53c3ea1206ed9629c4d48226cec9a
+Build-Ids: acbb86320f83860018263424165e41525952341d
+Multi-Arch: same
+
+Package: libmate-menu2
+Source: mate-menus
+Priority: optional
+Section: libs
+Installed-Size: 112
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatemenu, mate-menus (<= 1.0.2-1)
+Provides: libmatemenu
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.24.0)
+Breaks: libmatemenu, mate-menus (<= 1.0.2-1)
+Filename: pool/main/m/mate-menus/libmate-menu2_1.14.0-1~xenial1.01_amd64.deb
+Size: 38902
+MD5sum: 175d5b8f8db29e36ce82e1cd926e50aa
+SHA1: c0ae33792e11b29a3ff46e3d548a1242783287f2
+SHA256: 12a7d81426b26668ac8e37889771f3a27edcd7ac3409642239d8395c90c324bd
+Description: implementation of the freedesktop menu specification for MATE (library)
+Description-md5: 2b1b57b7cf893bb2cfceb3ee05d6a9cb
+Multi-Arch: same
+
+Package: libmate-menu-dev
+Source: mate-menus
+Priority: optional
+Section: libdevel
+Installed-Size: 38
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatemenu-dev
+Provides: libmatemenu-dev
+Depends: libglib2.0-dev, libmate-menu2 (= 1.14.0-1~xenial1.01)
+Breaks: libmatemenu-dev
+Filename: pool/main/m/mate-menus/libmate-menu-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 9490
+MD5sum: 40b08f6a1c20f2f6ebb60edbf91281c0
+SHA1: 54663b32dabef9287ec1e8044453bf6a66002dae
+SHA256: 8fe9b0dc0d8a815c2513d7956d54b81cdb3052aabb4aa8b7134a89c759817fbc
+Description: implementation of the freedesktop menu specification for MATE (development files)
+Description-md5: 81eaaac40d40b7327dcc3a9e2fbf7b6e
+Multi-Arch: same
+
+Package: libmate-menu2-dbg
+Source: mate-menus
+Priority: extra
+Section: debug
+Installed-Size: 145
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libmate-menu2 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-menus/libmate-menu2-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 106482
+MD5sum: 0a127a40b67e898d4a4945ece3312749
+SHA1: a9dd1895abc1deb0c218239dfa725b3af2e21b73
+SHA256: 0ea9b2e2d5b1ec27d0fa17beb03e9366eaa2f8856724b1d0b4989f92aaba1e13
+Description: implementation of the freedesktop menu spec for MATE (debugging symbols)
+Description-md5: 33181ff6c0d210cdb775ef7098d43984
+Build-Ids: 4b111105b1a68d96cf9b5152c8fd17d748421d10
+Multi-Arch: same
+
+Package: python-mate-menu-dbg
+Source: mate-menus
+Priority: extra
+Section: debug
+Installed-Size: 60
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: python-mate-menu
+Filename: pool/main/m/mate-menus/python-mate-menu-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 29876
+MD5sum: 28ea04e26eed7b1d76fa9ae6c14b7930
+SHA1: 3dc75de68c4a32ed116c6df79de0828b91a26ca2
+SHA256: 3858b0d6a3d0660dc9543ce4e90df77add3a5d81c5091114b2c0fc70968c0478
+Description: implementation of the freedesktop menu spec for MATE (Python debugging symbols)
+Description-md5: 3a179b60a6fb4e5dba7342723c3776e6
+Build-Ids: 2d7d00943bc7e46cec0d3c29aa6e79350053cb3a
+
+Package: mate-terminal-dbg
+Source: mate-terminal
+Priority: extra
+Section: debug
+Installed-Size: 467
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-terminal (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-terminal/mate-terminal-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 392134
+MD5sum: 1712d1fb08709ee937c3356474616098
+SHA1: f3ef8cce96fcc50dc223414ed248bc59ed8b817b
+SHA256: 97f4f93680d48da4bb8dea695240aae562bf9db2e6ac0de8c5d52e0af86e86e2
+Description: MATE terminal emulator application (debugging symbols)
+Description-md5: 35d231a810018bf32035a311a9db5b3c
+Build-Ids: 70de4c45ac08fea352bd78881da901d53c633b21
+
+Package: pluma
+Priority: optional
+Section: x11
+Installed-Size: 1230
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Recommends: zenity
+Replaces: mate-text-editor (<< 1.5.0)
+Provides: mate-text-editor
+Depends: iso-codes, mate-desktop-common, pluma-common (= 1.14.0-1~xenial1.01), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libenchant1c2a (>= 1.6.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libgtksourceview2.0-0 (>= 2.10.0), libice6 (>= 1:1.0.0), libmate-desktop-2-17, libpango-1.0-0 (>= 1.14.0), libsm6, libx11-6, libxml2 (>= 2.7.4)
+Breaks: mate-text-editor (<< 1.5.0)
+Filename: pool/main/p/pluma/pluma_1.14.0-1~xenial1.01_amd64.deb
+Size: 350460
+MD5sum: 4aae514544d8ce444e54f00a50d70a79
+SHA1: 24e689bd9f235c064c6c590997464b44d5395e1f
+SHA256: 7d57f3c89b0b6d4d90e441835f1a39fa988622f702fd597a8ff3ae75eb80f4bf
+Description: official text editor of the MATE desktop environment
+Description-md5: 5f46578b64613d4d063a6b4bf3c03014
+
+Package: pluma-dev
+Source: pluma
+Priority: optional
+Section: devel
+Installed-Size: 148
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: pluma (= 1.14.0-1~xenial1.01)
+Breaks: mate-text-editor (<< 1.5.0)
+Filename: pool/main/p/pluma/pluma-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 24200
+MD5sum: c30ab726aef4bc4bf60df2b769007dc9
+SHA1: cdc95820548ebf546b85dc44c940ace45fe12ba4
+SHA256: 606f81b40f601da2d04d3d186e7215b251267b8aa14966f1732c9959b0264912
+Description: official text editor of the MATE desktop environment (development files)
+Description-md5: 88e887c2e35717fc107417627e8eb75e
+
+Package: pluma-dbg
+Source: pluma
+Priority: extra
+Section: debug
+Installed-Size: 1665
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: pluma (= 1.14.0-1~xenial1.01)
+Filename: pool/main/p/pluma/pluma-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 1373958
+MD5sum: 63e4f1b2b7adeb90afb80b66132b742b
+SHA1: b375a0bc5e1af40d9a933dc7cdac1a6eed8259d6
+SHA256: 012989274a288bf3f6be86322e42cf5179fb45ae0b950cf29636d0247a753647
+Description: official text editor of the MATE desktop environment (debugging symbols)
+Description-md5: 8bbfdad6fc393b4e5e8efde6c5fa312f
+Build-Ids: 19254b34b7a501e80942a972a9154537cf0bc568 409ab2b0bedbb07953073d6cca10c2b73742a365 6f1d912318ff0ef5f3dbc8aeda70fadaba3d3b3f 91d9171d4e4f883db5b58834add864b0863c8a1c a1612be4de99b09e152236c87138f062fcb6bdd2 a1784341bb089a4b5672c5d331354daa52029b32 b795d1fd7c304d4305b221fcc3be2ec546e6e449 b90c0b050a051070a0f9e9bb5f10ad3811e70bf5 bdc8a5d033588546fd8281579411f3b8db0fcf20 c5d2d1838890e1bb56960aa434753ebf67a6b14f cd2e34b368e22af05e52ae92b73447476f764ace
+
+Package: libmarco-private0
+Source: marco
+Priority: optional
+Section: libs
+Installed-Size: 691
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.2-3~xenial1.1
+Replaces: libmarco
+Provides: libmarco
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.20.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0)
+Breaks: libmarco, mate-window-manager (<= 1.0.0-2)
+Filename: pool/main/m/marco/libmarco-private0_1.14.2-3~xenial1.1_amd64.deb
+Size: 195280
+MD5sum: 68f52a383d2df4a1c5f9df4eac58de02
+SHA1: 6424662d0fff5b1dc91e5696134101f553773a6d
+SHA256: e7a00ab839b72b07cca07d6b28131db101538f4aa38896a90a77431b7c87897e
+Description: library for Marco window manager
+Description-md5: 8d8d482e47ca934ede42f00ce29f81b7
+Multi-Arch: same
+
+Package: mate-session-manager-dbg
+Source: mate-session-manager
+Priority: extra
+Section: debug
+Installed-Size: 498
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-session-manager (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-session-manager/mate-session-manager-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 402582
+MD5sum: 77c16328477483b704a4ad6ab25e8081
+SHA1: 4c387a00bbbd1d5331e4c7179de498c5af21f5bb
+SHA256: a845b418bd3770d1483b09f9c02ff8770ae80e1252693e820a64a9477cceae25
+Description: Session manager of the MATE desktop environment (debug symbols)
+Description-md5: 847e392e022f9216e861e8462f363d0d
+Build-Ids: 2d3dfd79d7011197b83163932b80f3cc6d3c4a28 617610f53ad6eab753bd97a2e799f39efd4a8a2d 7cd10072e7dc65a4aecd7c17c20e4aa54e925d3d 977f5efa6b691a744d8bb024369226ed77d99e2a
+
+Package: pluma-common
+Source: pluma
+Priority: optional
+Section: x11
+Installed-Size: 12897
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Depends: python, dconf-gsettings-backend | gsettings-backend
+Breaks: mate-text-editor (<< 1.5.0)
+Filename: pool/main/p/pluma/pluma-common_1.14.0-1~xenial1.01_all.deb
+Size: 2509328
+MD5sum: 7b2cdfa88e795f4dbfa701e30bc061e5
+SHA1: 6758fab2dc3b106b8a422d0543eccec3fe2bd2d3
+SHA256: 5b70426247555c1d11bd1ffddf082fd448570241a7d5aee3ef80a77d18ad0b4d
+Description: official text editor of the MATE desktop environment (common files)
+Description-md5: 2522f81317853f0db52190c38dc3bb03
+
+Package: mate-system-monitor-common
+Source: mate-system-monitor
+Priority: optional
+Section: x11
+Installed-Size: 4590
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-2~xenial1.1
+Replaces: mate-system-monitor (<< 1.11.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-system-monitor (<< 1.11.0)
+Filename: pool/main/m/mate-system-monitor/mate-system-monitor-common_1.14.0-2~xenial1.1_all.deb
+Size: 1756304
+MD5sum: 76987a5e9943109000ee9a02d84caa74
+SHA1: 678ab460a5ddc14736eb27f5584c8f52a82fc10e
+SHA256: 8434af3a0851c38b54327c8a11f507bfda39b4b7c73073ba3e660f7d83286572
+Description: Process viewer and system resource monitor for MATE (common files)
+Description-md5: c19cddf128aaa2627a6f9d9fb0b9d28f
+
+Package: mate-icon-theme-faenza
+Priority: optional
+Section: x11
+Installed-Size: 106789
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0+dfsg1-1~xenial1.01
+Depends: hicolor-icon-theme, libgtk2.0-bin, librsvg2-common
+Filename: pool/main/m/mate-icon-theme-faenza/mate-icon-theme-faenza_1.14.0+dfsg1-1~xenial1.01_all.deb
+Size: 18586626
+MD5sum: 97433c7bef8c680ff2b37ccdaa3260c8
+SHA1: 67ab5c9e940ea25be21882cc5bd407f312fb1121
+SHA256: a5cf1614dd2ec022fe9278718491a541ea922f6a472dce4a4bb299c54d991469
+Description: MATE Faenza Desktop icon theme
+Description-md5: 3a130d8a0da8a468e2a89284c64d9843
+
+Package: libcaja-extension1
+Source: caja
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: libcaja-extension (<< 1.7.0)
+Provides: libcaja-extension
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.8.0)
+Breaks: libcaja-extension (<< 1.7.0)
+Filename: pool/main/c/caja/libcaja-extension1_1.14.1-1~xenial1.01_amd64.deb
+Size: 18450
+MD5sum: 066b272e791ee71fedb0801bb4f5b960
+SHA1: a7f892ecf7c246f78b411634336ab0bd83a92601
+SHA256: f57fedca362961454ec6014eb3437b0efc56669336355b58f34f6099d1f987d8
+Description: libraries for Caja components
+Description-md5: 0f35c3d74c9f8f2fc4264c69a262623e
+Multi-Arch: same
+
+Package: libcaja-extension1-dbg
+Source: caja
+Priority: extra
+Section: debug
+Installed-Size: 88
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: libcaja-extension1 (= 1.14.1-1~xenial1.01)
+Filename: pool/main/c/caja/libcaja-extension1-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 49486
+MD5sum: edbd8a3d716caef7531725ec4a874dd3
+SHA1: a0dbd36050b26e770b23c03dc9d50d229f915222
+SHA256: 51ba03138a7f6f42701197a13aaab3455c097d44a7e4d6743e2fe365749ef2b7
+Description: libraries for Caja components (debugging symbols)
+Description-md5: 5ea75fd6a34e23c1552c269aade63b55
+Build-Ids: 4ec7f02848cf6ab84197945f33ec9b6e21f827b8
+Multi-Arch: same
+
+Package: mate-screensaver-dbg
+Source: mate-screensaver
+Priority: extra
+Section: debug
+Installed-Size: 640
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: mate-screensaver (= 1.14.1-1~xenial1.01)
+Filename: pool/main/m/mate-screensaver/mate-screensaver-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 500586
+MD5sum: 4e7451c0e5dc3ef28d97ba73f2456741
+SHA1: e5f26c3624c03dcb18a85f95a3510853a0ad8f8f
+SHA256: 3755575ac0018ada222ee480fb86cc5535d28255d42893ad0a1ef42138cd1d9e
+Description: MATE screen saver and locker (debugging symbols)
+Description-md5: 404c8b141964f7c969b1b29e00e423c8
+Build-Ids: 547d35259a352234d544ccca75a99629be2b19ce 80b0a9c6388dbbb767f72278388f61f39af69743 8554af1baddaf501ce4cba25a51f051f6c254118 9a39ba07128e4b471f83555be193154414cef5fb 9a8d48db326dbc4c891242be69a3e8b94f258b41 a35ebcc72647d71689c67555d003f85eaebf057a c3ac34162436dc98481818e4206973390d6f9a1c fcfbcd7cf3441fbda3b9539ce7b5b355752b5d06
+
+Package: libmate-panel-applet-4-1
+Source: mate-panel
+Priority: optional
+Section: libs
+Installed-Size: 95
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmate-panel-applet4-1, libmatepanelapplet
+Provides: libmate-panel-applet4-1, libmatepanelapplet
+Depends: libc6 (>= 2.7), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libx11-6
+Breaks: libmate-panel-applet4-1, libmatepanelapplet, mate-panel (<= 1.0.0-3)
+Filename: pool/main/m/mate-panel/libmate-panel-applet-4-1_1.14.0-1~xenial1.01_amd64.deb
+Size: 26330
+MD5sum: 4f760697c65f722731e35d6792fab10c
+SHA1: 09e9f7838b1e86519af83974a67848d9c9e9f06a
+SHA256: c548d9b91623660da9913c7520519cfd31c228aab9fb764b5ee62642823225fa
+Description: library for MATE Panel applets
+Description-md5: d8e7c9a5144be0cfbcc57d4b0056cc0e
+
+Package: libmate-panel-applet-dbg
+Source: mate-panel
+Priority: extra
+Section: debug
+Installed-Size: 118
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libmate-panel-applet-4-1 (= 1.14.0-1~xenial1.01)
+Breaks: mate-panel-dbg (<= 1.6.1)
+Filename: pool/main/m/mate-panel/libmate-panel-applet-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 76688
+MD5sum: 9351fb3c2e5c10411ea50b12758a063e
+SHA1: be31039afad414a4aa60e452e24206d4180e098d
+SHA256: 493cd23736217e734904657c173d377f24f95250f5e47f200251343b751d3df7
+Description: library for MATE Panel applets (debugging symbols)
+Description-md5: 1471255c76c6d0bb134423572c01783f
+Build-Ids: 5fa5b6808b28bfdd2d83007ff7f053ae20b29810
+
+Package: libmate-panel-applet-dev
+Source: mate-panel
+Priority: optional
+Section: libdevel
+Installed-Size: 50
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatepanelapplet-dev
+Provides: libmatepanelapplet-dev
+Depends: libglib2.0-dev, libgtk2.0-dev, libmate-panel-applet-4-1 (= 1.14.0-1~xenial1.01)
+Conflicts: libmatepanelapplet-dev
+Filename: pool/main/m/mate-panel/libmate-panel-applet-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 12092
+MD5sum: 0914bd035b8b369fc1788febf644ba03
+SHA1: f70dd4c7952f5d5c5c872c01ac37f4ba8629b086
+SHA256: 1d5b1efa59caef6580fa0f67b8afc1c209658bbe9835aa814a09b491974cd4c0
+Description: library for MATE Panel applets (development files)
+Description-md5: 2f7b31123d0b0efe74df7a663424f723
+
+Package: mate-screensaver-common
+Source: mate-screensaver
+Priority: optional
+Section: x11
+Installed-Size: 5838
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-screensaver (<< 1.5.2)
+Filename: pool/main/m/mate-screensaver/mate-screensaver-common_1.14.1-1~xenial1.01_all.deb
+Size: 4541272
+MD5sum: e5b23141bdcef3717b89939f0098e1c2
+SHA1: c1dea1157ffa03bd905e2a3064ac75c35b1e3731
+SHA256: 49c6ef876b9bc62e074b639a9ff1d903c17db9317b37db5f6f18f54a222f965a
+Description: MATE screen saver and locker (common files)
+Description-md5: d44b2330b9b1c87e5203c9cdb17d5a0e
+
+Package: libmate-panel-applet-doc
+Source: mate-panel
+Priority: optional
+Section: doc
+Installed-Size: 128
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatepanelapplet-doc
+Provides: libmatepanelapplet-doc
+Conflicts: libmatepanelapplet-doc
+Filename: pool/main/m/mate-panel/libmate-panel-applet-doc_1.14.0-1~xenial1.01_all.deb
+Size: 22326
+MD5sum: ffd25c7a9ed83d88b8e060d471a4e04b
+SHA1: b5a786f9a600f90e17111ac2689a8dd0d3c2d338
+SHA256: 375bd2dc24cc227b965f1afc8a660503d028133729eecac0966063bf30860e66
+Description: library for MATE Panel applets (documentation files)
+Description-md5: 909324b489f7b1861fa1761741a87599
+
+Package: mate-power-manager-dbg
+Source: mate-power-manager
+Priority: extra
+Section: debug
+Installed-Size: 594
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-power-manager (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-power-manager/mate-power-manager-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 473880
+MD5sum: 4e8d7970e6717ba3bb879a0fe4d15940
+SHA1: 86296f0196f7316b9dd23c6f027dea78e49a1605
+SHA256: cbcc83a9b031de28994941e2c59190bb066d3f97ff65d9de10ccf3ba0bdbfeb2
+Description: power management tool for the MATE desktop (debugging symbols)
+Description-md5: 49b8cda84d34da063fa3c85596143e32
+Build-Ids: 372a613f27920283c713fca0efb3a5ac4a0a75ea 3b56a0038453380bdb683bff639666a3c4306c0f 3dfd2153db77a751f8408ecff9b5e2accdd12b39 4c8a3bd36d80589092906aed10114d7f5256cb85 60f0c86bdc34aed2b0fba2aa04ea01d708cef395 fb7bd58e54ca2f5dfcd605f9095e6e0e373e1d46
+
+Package: mate-power-manager-common
+Source: mate-power-manager
+Priority: optional
+Section: x11
+Installed-Size: 7963
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-power-manager (<< 1.9.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-power-manager (<< 1.9.0)
+Filename: pool/main/m/mate-power-manager/mate-power-manager-common_1.14.0-1~xenial1.01_all.deb
+Size: 2744262
+MD5sum: add2119e33ce3ccd803516e5d8bb5718
+SHA1: 5296bf2243ce9ac566bd3250c749b3a98183461b
+SHA256: b52e914abf693c0b105d6ced30d360d08884fbaebc75452d63550a2d6fa26688
+Description: power management tool for the MATE desktop (common files)
+Description-md5: 27f2d2c53b0b50720396f6b33b4a90ba
+
+Package: mate-netbook
+Priority: optional
+Section: x11
+Installed-Size: 111
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-netbook-common (= 1.14.0-1~xenial1.01), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libfakekey0 (>= 0.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libmate-desktop-2-17, libmate-panel-applet-4-1, libpango-1.0-0 (>= 1.14.0), libunique-1.0-0 (>= 1.0.0), libwnck22 (>= 1:2.30.7), libx11-6
+Filename: pool/main/m/mate-netbook/mate-netbook_1.14.0-1~xenial1.01_amd64.deb
+Size: 29964
+MD5sum: 6d865ff6820d8811fe457abd5d123d38
+SHA1: 09938134e67a6fe6e974c9454da6d5d78ded1418
+SHA256: 0a751a6b80acea0385bfe159da1306bb7176029c0de9ea39e935885da29105db
+Description: MATE utilities for netbooks
+Description-md5: 6ebcdf54ebba3bad09241f5e85ee5c91
+
+Package: mate-netbook-dbg
+Source: mate-netbook
+Priority: extra
+Section: debug
+Installed-Size: 164
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-netbook (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-netbook/mate-netbook-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 125376
+MD5sum: b576a58ead625f9a4d03a54f6275f415
+SHA1: a46871ec4f95b90950aedf3a62a24fce1dced1fb
+SHA256: 82d526c34f91d8884095c4d7c1dcb8127387eab918d177d881d2b799e6e90c14
+Description: MATE utilities for netbooks (debugging symbols)
+Description-md5: 54044dc1d30c0199e0059696764b19cc
+Build-Ids: 3edb4d0e84815ee9a7647ccd5f8137474c925f91 ef3f7525193ed04e1420588ede52b73dc6bb8063
+
+Package: mate-media-common
+Source: mate-media
+Priority: optional
+Section: x11
+Installed-Size: 1441
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Breaks: mate-media-gstreamer (<< 1.9.0), mate-media-pulse (<< 1.9.0)
+Filename: pool/main/m/mate-media/mate-media-common_1.14.0-1~xenial1.01_all.deb
+Size: 177358
+MD5sum: 69db7d1e62d273e6e0f8c97a57081a43
+SHA1: b2835a54fea8b5ed9dabb8a9976a1bf930c71f03
+SHA256: b0dc9cd01f81a8ee32311c11532784b70b9d1a4e3683b7f3ee1645be6688acee
+Description: MATE media utilities (common files)
+Description-md5: 199afd5d28de60c689480fe1d82e08fa
+
+Package: libmatekbd4-dbg
+Source: libmatekbd
+Priority: extra
+Section: debug
+Installed-Size: 178
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Replaces: libmatekbd-dbg
+Provides: libmatekbd-dbg
+Depends: libmatekbd4 (= 1.14.1-1~xenial1.01)
+Breaks: libmatekbd-dbg
+Filename: pool/main/libm/libmatekbd/libmatekbd4-dbg_1.14.1-1~xenial1.01_amd64.deb
+Size: 139212
+MD5sum: f10bce7e8698a857968fcf81406df624
+SHA1: ef68968aa224e3fd73834e0c4dd113912b647fac
+SHA256: eddf9797fae1e047fbcd89b91efcbe0525fe9dab7f1bdc4e6534a1026d252199
+Description: MATE library to manage keyboard configuration (debugging symbols)
+Description-md5: 0cfb7aebba7820880b22e3c249d276f7
+Build-Ids: 9c27a8e294954f97e60719bf2810ad55fa7b387d f4e22a4f6179741637168d7f51215ae6f99650ea
+Multi-Arch: same
+
+Package: libmate-sensors-applet-plugin0
+Source: mate-sensors-applet
+Priority: optional
+Section: libs
+Installed-Size: 31
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatesensorsappletplugin
+Depends: libc6 (>= 2.2.5), libglib2.0-0 (>= 2.12.0)
+Breaks: libmatesensorsappletplugin
+Filename: pool/main/m/mate-sensors-applet/libmate-sensors-applet-plugin0_1.14.0-1~xenial1.01_amd64.deb
+Size: 7046
+MD5sum: b31f65996e4d546b242c6d9aed8fb925
+SHA1: 3cf5244546e4a1f436c71ad5eee98bc11d58ae2e
+SHA256: 5783ffc08968b64f14fc9843f80a3384e2dbb772eebffdd67f7bfabd7f3c1679
+Description: Library for plugins for the mate-sensors-applet package
+Description-md5: 2e569b14a8bf071dbd0a3dd13e2f2271
+
+Package: libmate-sensors-applet-plugin-dev
+Source: mate-sensors-applet
+Priority: optional
+Section: libdevel
+Installed-Size: 27
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: libmatesensorsappletplugin-dev
+Depends: libglib2.0-dev, libmate-sensors-applet-plugin0 (= 1.14.0-1~xenial1.01)
+Breaks: libmatesensorsappletplugin-dev
+Filename: pool/main/m/mate-sensors-applet/libmate-sensors-applet-plugin-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 5742
+MD5sum: 089dd71cef22004cf62dfd869e7378a7
+SHA1: 9a38c065f4e501f3003dedeeddbc65013ff47c98
+SHA256: dbeeef78c5130a23ebf1f92a0ebbf069dbcdce71f96df8b9e11452dd6854d581
+Description: Library for plugins for the mate-sensors-applet package (development files)
+Description-md5: ea8f8aca43b6b1c361f133e3c434e1e1
+
+Package: mate-sensors-applet-dbg
+Source: mate-sensors-applet
+Priority: extra
+Section: debug
+Installed-Size: 282
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-sensors-applet (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-sensors-applet/mate-sensors-applet-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 168632
+MD5sum: 5c2910a74daf808caec931709db969d9
+SHA1: 462ce1739b6346cb0097a2fa1b6ce7bdb0d68c08
+SHA256: 0dc7eee686f996df7818b1511f2a157dbc5e9975159b719e4dc97148fad73e5b
+Description: Display readings from hardware sensors in your MATE panel (debugging symbols)
+Description-md5: 53c98b3c1c52e84c740513d3430a9aaf
+Build-Ids: 0591891c126dc13d29c0dc410073e02487af52d7 123e06c5f4384516c6ac1c328fe13d834f33bf4f 2646e727633ec652295a303c3ee8e3f60eb49dc6 4ffa0c52e09b61ebc8c929f0aba75f6774f2ed12 735f99338fb3babe0908bb81557e8173741ede16 80b6fd46c2eaba41973ef5c72f364cf2c72e244c 8749ad44f00e2f0d933b2d7285faf6d12512b4cc 8ccfbd119f6fd1cde8d5abe29cadfd842dace797 bfd2af7eb45062f9f3e496a3dfe0abdce51bfb07 d61bb795ea44caf987408394ebb39a61f752b92b df5098ec06955559c2c1eeb7439657d7184d155a eb1ba85e18c8f53804a51950dcd13c41aec695ba f1bbfa64bdb96099b6f16ae3300d5c4e1320581f
+
+Package: libmate-sensors-applet-plugin0-dbg
+Source: mate-sensors-applet
+Priority: extra
+Section: debug
+Installed-Size: 29
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: libmate-sensors-applet-plugin-dbg
+Depends: libmate-sensors-applet-plugin0 (= 1.14.0-1~xenial1.01)
+Breaks: mate-sensors-applet-dbg (<< 1.8.0+dfsg1-1)
+Filename: pool/main/m/mate-sensors-applet/libmate-sensors-applet-plugin0-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 9048
+MD5sum: 2e3faeaf4949f8fc8a0db87dc1ed9369
+SHA1: f4b45b4ded580873957520dd1837e043323de8c4
+SHA256: df99d602d8be2802baae3a30e3d1aaef90453f93a42f54079f7fca16cbcab71b
+Description: Library for plugins for the mate-sensors-applet package (debugging symbols)
+Description-md5: 918d2dde6ea427d8debd9183f19f3c43
+Build-Ids: c6b4119d4ea6e7899556cd1bc3904b02224a59e6
+
+Package: python-caja
+Priority: optional
+Section: python
+Installed-Size: 52
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: gir1.2-caja, python-caja-common (= 1.14.0-1~xenial1.01), libc6 (>= 2.4), libcaja-extension1, libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.8.0), libpython2.7 (>= 2.7)
+Filename: pool/main/p/python-caja/python-caja_1.14.0-1~xenial1.01_amd64.deb
+Size: 12474
+MD5sum: 02b0506761adb0962be624c3076b2dcc
+SHA1: 57334694b591a013ade005d9c821c8a43f50f8cd
+SHA256: 27de85605411eb64b70039338397a92b194b16b4c1047ad594284e18e4ba3b1a
+Description: Python binding for Caja components
+Description-md5: 7ffd524f7a120091af03cfbe32b3b2d5
+
+Package: python-caja-dbg
+Source: python-caja
+Priority: extra
+Section: debug
+Installed-Size: 55
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: python-caja (= 1.14.0-1~xenial1.01)
+Filename: pool/main/p/python-caja/python-caja-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 34404
+MD5sum: 410991b76e6b6f9cf181ac4228f81118
+SHA1: a8593647564142fe787120ff114fd5ce06b05425
+SHA256: d7902f31fdb07bc1073d426da0fc1778fd8e85939123823f55f8b60c8f5e6fad
+Description: Python binding for Caja components (debugging symbols)
+Description-md5: a517a4fc186c63aee251317285fc1345
+Build-Ids: db4b29353929bcbc81a701e6d3644b35500dfff1
+
+Package: mate-utils-dbg
+Source: mate-utils
+Priority: extra
+Section: debug
+Installed-Size: 1035
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-utils (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-utils/mate-utils-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 837198
+MD5sum: 3c4a2c25f35554bef195d765a99ae8c8
+SHA1: 8104ed66edbe32350db3ccf6be1cc40c255d4cdc
+SHA256: 67e719da004be26e686c34aa662cfb97046086e09317b6d40265f67f5b4d51cb
+Description: MATE desktop utilities (debugging symbols)
+Description-md5: d4e728082726317b6526b8a51e1cc831
+Build-Ids: 04f9bf4c9fd9239ee0fd88e42bf977ad102a5a37 1957e89491061ba167dc2fc6fa478a9e873ccc94 745fc002286d99e5f72781e4b6ff72c446640ba3 7de2ea3a7d19c983aa3d84b5772b0fae955fc741 8a8fd635adefcacff5cf9fc12ce883285e3f7984 b674eb41e57b5b56b6c5df9aea83d4a923e5316c
+
+Package: libmatedict6
+Source: mate-utils
+Priority: optional
+Section: libs
+Installed-Size: 202
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-utils (<< 1.8.0)
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.18.0), libpango-1.0-0 (>= 1.14.0)
+Breaks: mate-utils (<< 1.8.0)
+Filename: pool/main/m/mate-utils/libmatedict6_1.14.0-1~xenial1.01_amd64.deb
+Size: 56402
+MD5sum: 17db0f7a2d7b0c0c4937f3d0b26277b1
+SHA1: 97864a91d625027edc82a95693d1332b8c953d69
+SHA256: 34a21e7fc864571a663ca4cd09fe7a59969bd09c63a4a72fa92f77c3dea2600a
+Description: MATE desktop utilities (matedict library)
+Description-md5: 107bac6b6101143a6cb2a6af72ca58de
+
+Package: libmatedict-dev
+Source: mate-utils
+Priority: optional
+Section: libdevel
+Installed-Size: 94
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-utils-dev (<< 1.8.0)
+Depends: libmatedict6 (= 1.14.0-1~xenial1.01)
+Breaks: mate-utils (<< 1.5.0), mate-utils-dev (<< 1.8.0)
+Filename: pool/main/m/mate-utils/libmatedict-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 13434
+MD5sum: 2dd9cda0211a639d211e15398b5d642f
+SHA1: 3bb0266d9787a7e6e68fc9bc2b49638330b1bae5
+SHA256: 5d1d23e2fe2544ca26c73b1e4fa10f4c79a545b6a8a0a8435dc36953d2558e3c
+Description: MATE desktop utilities (matedict development files)
+Description-md5: d0a7cf7c0ec62bbfcea17ece86101254
+
+Package: libmatedict6-dbg
+Source: mate-utils
+Priority: extra
+Section: debug
+Installed-Size: 262
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-utils-dbg (<< 1.8.0)
+Provides: libmatedict-dbg
+Depends: libmatedict6 (= 1.14.0-1~xenial1.01)
+Breaks: mate-utils-dbg (<< 1.8.0)
+Filename: pool/main/m/mate-utils/libmatedict6-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 203638
+MD5sum: 3c9523adfa6cc9bdd9e88784d13a4120
+SHA1: e51bed492970f8f5f425a79e4575ac36313395c0
+SHA256: f1821644bf66e8e3dfe0d1c9b6b034c3ae57ea1b34637627df0426224f550bf2
+Description: MATE desktop utilities (matedict debugging symbols)
+Description-md5: f00d331a0dd1ac9f63c23ef1e8a0c87d
+Build-Ids: 9024105777b144f699c0f8265c5c0fc1f99b9d4e
+
+Package: caja-extensions-dbg
+Source: caja-extensions
+Priority: extra
+Section: debug
+Installed-Size: 341
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: caja-gksu (= 1.14.0-1~xenial1.01), caja-image-converter (= 1.14.0-1~xenial1.01), caja-open-terminal (= 1.14.0-1~xenial1.01), caja-sendto (= 1.14.0-1~xenial1.01), caja-share (= 1.14.0-1~xenial1.01), caja-wallpaper (= 1.14.0-1~xenial1.01)
+Filename: pool/main/c/caja-extensions/caja-extensions-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 219018
+MD5sum: eb7fd071c29376e790a80b5466e8a3a3
+SHA1: ff7ee0226bff43df72a94147fe5d18f3a55064d8
+SHA256: c3d0a5f22f0491c50aa71828205aee96ef406289233e9d7e7f68899a5f3a8a47
+Description: Caja extensions (debugging symbols)
+Description-md5: f5cd5d291c22dee947886733865c1422
+Build-Ids: 942963025bde8badcf46d3f04b1abbee1da3709d
+
+Package: mate-utils-common
+Source: mate-utils
+Priority: optional
+Section: x11
+Installed-Size: 13403
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-utils (<< 1.9.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-utils (<< 1.9.0)
+Filename: pool/main/m/mate-utils/mate-utils-common_1.14.0-1~xenial1.01_all.deb
+Size: 5718876
+MD5sum: 86417f591953d3318150cf6c800bae47
+SHA1: 8896ca2b9e3af54939bdccae9b4b9c98c9ad4b11
+SHA256: 11a1fb895780ff09e2415313fc564fc1398c0ce3d85b395f2140d46a36cbb973
+Description: MATE desktop utilities (common files)
+Description-md5: d1b0c86d2e4a9cbc37e14f591d7e6656
+
+Package: caja-extensions-common
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 641
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/c/caja-extensions/caja-extensions-common_1.14.0-1~xenial1.01_all.deb
+Size: 87694
+MD5sum: 5faebaa0a0725bc78dc96c139c0c56af
+SHA1: 46b8574f5d7a995364e6dae61ed44c7f4a14592b
+SHA256: 7b4fde71eb6ff64a9912850a359060870c8a2ee628fbfdf4a1fc1a8f46faafef
+Description: Caja extensions (common files)
+Description-md5: 0bcf84cc2108acbef07608f05dce7bb2
+
+Package: libmate-window-settings1
+Source: mate-control-center
+Priority: optional
+Section: libs
+Installed-Size: 67
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.8.0), libmate-desktop-2-17
+Breaks: mate-control-center (<< 1.9.0)
+Filename: pool/main/m/mate-control-center/libmate-window-settings1_1.14.0-1~xenial1.01_amd64.deb
+Size: 17400
+MD5sum: 52fa63aab44819034e1a76b72d8b50cf
+SHA1: 55d2e13661c4acc11155757fb51e9427840077b0
+SHA256: fdcb33fe95d8a66be8db4be8afd5e4bde3da852af6f0014edad7af8ccab413b6
+Description: utilities to configure the MATE desktop (window settings library)
+Description-md5: b76e69d3206e1aeb9f05e0fe64168d0d
+Multi-Arch: same
+
+Package: libmate-window-settings-dev
+Source: mate-control-center
+Priority: optional
+Section: libdevel
+Installed-Size: 48
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libmate-window-settings1 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-control-center/libmate-window-settings-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 11930
+MD5sum: 3fd579276170110baff43f41e8409c4a
+SHA1: 78f5ac84801775a9bcd297b4a23b65091f9a818c
+SHA256: 8824c14b0f0f66c46f52ca1fbf362289b8d55163375fc7b685da9fbe99a973f1
+Description: utilities to configure the MATE desktop (window settings headers)
+Description-md5: eddb40b3dbdfa0869e80153aa7d831ac
+Multi-Arch: same
+
+Package: libmate-window-settings1-dbg
+Source: mate-control-center
+Priority: extra
+Section: debug
+Installed-Size: 75
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: libmate-window-settings-dbg
+Depends: libmate-window-settings1 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-control-center/libmate-window-settings1-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 35342
+MD5sum: d7b038c2849ad707aedd6f09581fdee8
+SHA1: 872cd934f1e611d1f18eafd3745b46cb876b421f
+SHA256: 617c30733da0e9ef22def453268c48f14effa9b984190a28395b06912ca5337c
+Description: utilities to configure the MATE desktop (window settings debugging symbols)
+Description-md5: 6b44c6bfcfe2ba58eff0ad03754e5436
+Build-Ids: 243d651958b5fa5e06bcb39ba5eccc93643f7781 4bcca5d2a8995a478ccee206444f9944ab99a6dc
+Multi-Arch: same
+
+Package: libmate-slab0
+Source: mate-control-center
+Priority: optional
+Section: libs
+Installed-Size: 178
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.20.0), libmate-desktop-2-17, libmate-menu2, librsvg2-2 (>= 2.14.4)
+Filename: pool/main/m/mate-control-center/libmate-slab0_1.14.0-1~xenial1.01_amd64.deb
+Size: 56536
+MD5sum: 2f47144e734227be76375e0e8cbd3f5c
+SHA1: 32103a9ec1fd335a2413f89cf8ccfc1c25b65a3a
+SHA256: 744f0498dd1ab2061317cf49703723a26ea0543b29f4abe3b59ed379b709d7d8
+Description: beautification app library
+Description-md5: d98ed82f3ecc5c8609db9a37f0fe8e42
+Multi-Arch: same
+
+Package: libmate-slab-dev
+Source: mate-control-center
+Priority: optional
+Section: libdevel
+Installed-Size: 103
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Provides: libmate-slab0-dev
+Depends: libmate-slab0 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-control-center/libmate-slab-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 19442
+MD5sum: ca2a9c9a4a5f1e43b2d056cb57e5fc38
+SHA1: 0a4403126f17120b658d767a741e3f41e26389bc
+SHA256: 6b0a3743799f99cb5f8d2e9efdf098bb145a3dd87780689d169e82f1d13acc21
+Description: beautification app library (development headers)
+Description-md5: d358da4f96d73c78081628a30423783c
+Multi-Arch: same
+
+Package: libmate-slab0-dbg
+Source: mate-control-center
+Priority: extra
+Section: debug
+Installed-Size: 346
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libmate-slab0 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-control-center/libmate-slab0-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 286672
+MD5sum: b7143b0b11dc22807707f8e5db2a7168
+SHA1: 2c0d5f7345e78dc7df30cf54524c60114b0a4adb
+SHA256: 839dbc411a2b94a5a65da5a2f6030fcd98feb203d832462a721a4710be7cd253
+Description: beautification app library (window settings debugging symbols)
+Description-md5: 5972433ffb1ec931b4c0f3e1fb702f6b
+Build-Ids: a966b482e090a52615668098455c1ea8a7b6c4de
+Multi-Arch: same
+
+Package: mate-control-center-dbg
+Source: mate-control-center
+Priority: extra
+Section: debug
+Installed-Size: 1093
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-control-center (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-control-center/mate-control-center-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 852674
+MD5sum: 16d0ec3fcd31fa97fe5cfed76973c396
+SHA1: 62446268fc3c0ac7b85513dbe5dfb90a5b167446
+SHA256: 9677e75aaccb774107d6c231967ea9153c96ab7a6c29e20c5d39fbef3b52403c
+Description: utilities to configure the MATE desktop (debugging symbols)
+Description-md5: ac25e9ce0c136ef7e047b96ab8de60b1
+Build-Ids: 247f8b8e75a988b6944a7fd408726c34e14bdf56 274197deca3148053536f66e47a164e477fc5378 45882bf08508b1dc7fe76ef1b5ffa43f35c24e5d 45a9a2f707b9acc0ca30efb2c6869f6669dcf986 58c8d649d05410c68072603c9f9a36ef620170e7 73a238a8b52210c8bc8adc1710ed5d204bd75c04 797cdaf9f2a78856fab64834c8a91bc060e826c5 8ff0ce88654b3d276c8192195ed6471def0ac620 90db338ac839f33e2c5e96b5618b70b3779f8ce9 a4369b52972a002b1bd26ddd13494423d4df73f4 ad7c12d6759613673a03485556e6e8863b458e63 b74bc5da65467ebcd158075ea294f744e8bf3058 d2be5c6fc6a4fca2675442e420355e265ef5bcf2 e481b813f247f388d969d87d30b0c29c97cc4b1d f1126332a559541584f24aad54f4abe3e98d4c29
+
+Package: mate-control-center-common
+Source: mate-control-center
+Priority: optional
+Section: x11
+Installed-Size: 7176
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-control-center (<< 1.11.0)
+Filename: pool/main/m/mate-control-center/mate-control-center-common_1.14.0-1~xenial1.01_all.deb
+Size: 883744
+MD5sum: 9f5284be3db572ba3e56e80a6fa7a417
+SHA1: 73b3b02753874e7084f7fb06eb0189a581d24af6
+SHA256: 68420bd99876b7a37fccdec9a1c3b0852cdebca0d6750210dc081579b9324fe1
+Description: utilities to configure the MATE desktop (common files)
+Description-md5: 28b61991ad992c4d5625e4d60201c687
+
+Package: mate-user-share
+Priority: optional
+Section: x11
+Installed-Size: 123
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: apache2-bin, gvfs-backends, libapache2-mod-dnssd (>= 0.6), mate-user-share-common (= 1.14.0-1~xenial1.01), obex-data-server, libc6 (>= 2.4), libcaja-extension1, libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.18.0), libpango-1.0-0 (>= 1.14.0), libselinux1 (>= 1.32), libunique-1.0-0 (>= 1.0.0), libx11-6
+Filename: pool/main/m/mate-user-share/mate-user-share_1.14.0-1~xenial1.01_amd64.deb
+Size: 25470
+MD5sum: db150c7581c443bf581366c3ee7a4c3b
+SHA1: 217086984ae91a8bbf3d005190252b87461978d8
+SHA256: 569f41607420bf5ea00d5d3b423ae14edac12b3a4d6afbb21f8603dd730b7f7d
+Description: User level public file sharing via WebDAV or ObexFTP
+Description-md5: c5aa1eee0c016a1c021ed90e41daf05b
+
+Package: mate-user-share-dbg
+Source: mate-user-share
+Priority: extra
+Section: debug
+Installed-Size: 112
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-user-share (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-user-share/mate-user-share-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 70582
+MD5sum: dbfc2a732b0f4ad1342fb5249c0dde84
+SHA1: 06cff9ed07c2eca696c158c1a4ea3aeeadb7b8bf
+SHA256: 9f2dc098d8c90e85a53442d46921d6a5f7aef22d7e4eaa78850dfaff3ecee622
+Description: User level public file sharing via WebDAV or ObexFTP (debugging symbols)
+Description-md5: c937170bfd77b82afc3f320099c401e3
+Build-Ids: 12a19df8944659f1a3e19aa31769240df6ca5cb6 6e4f2e83a067ec94abfe1c19546e630b475555f9 ec12d178a25e31e64765208ab62dd6899bf899c4
+
+Package: libatrilview3
+Source: atril
+Priority: optional
+Section: libs
+Installed-Size: 312
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-2~xenial1.1
+Replaces: libatril (<< 1.9.0)
+Depends: libatrildocument3 (= 1.14.1-2~xenial1.1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.10.0), libgail18 (>= 1.18.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0), libwebkitgtk-1.0-0 (>= 1.10.1)
+Filename: pool/main/a/atril/libatrilview3_1.14.1-2~xenial1.1_amd64.deb
+Size: 94864
+MD5sum: ae515fcd091336af4ffd59cea9cad310
+SHA1: f1513ae3f4562899b0d163667eaa7a904e08cb70
+SHA256: 9060f7938759e20bde79c53cf7f44de2e7056ac26d0149f468805bb8e8288a8f
+Description: MATE document viewing library
+Description-md5: 30ab5cdcedfef7f1046b2b8691d04c11
+
+Package: libatrilview-dev
+Source: atril
+Priority: optional
+Section: libdevel
+Installed-Size: 93
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-2~xenial1.1
+Depends: libatrilview3 (= 1.14.1-2~xenial1.1)
+Breaks: libatril-dev (<< 1.9.0)
+Filename: pool/main/a/atril/libatrilview-dev_1.14.1-2~xenial1.1_amd64.deb
+Size: 15770
+MD5sum: c1726c3dc49ae085585e7d4ae78bda0a
+SHA1: b2f17976758b8fc7242810a36817bd44f65e4bdc
+SHA256: bb79e9f0ded5e4f20893de35d9c097c0f4f955848c865152576a4c1bcbbfe32d
+Description: MATE document viewing library (development files)
+Description-md5: 29fd1459b74761409b27dcfc1b4bc8d4
+
+Package: libatrildocument3
+Source: atril
+Priority: optional
+Section: libs
+Installed-Size: 655
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-2~xenial1.1
+Replaces: libatril (<< 1.9.0)
+Depends: libjs-mathjax, libc6 (>= 2.14), libcairo2 (>= 1.10.0), libdjvulibre21 (>= 3.5.27.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.18.0), libgxps2 (>= 0.2.1), libkpathsea6, libpoppler-glib8 (>= 0.18.0), libspectre1 (>= 0.2.3), libtiff5 (>= 4.0.3), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Breaks: libatril (<< 1.9.0)
+Filename: pool/main/a/atril/libatrildocument3_1.14.1-2~xenial1.1_amd64.deb
+Size: 185680
+MD5sum: b0e88efd13b52b27ecfd270478c4f289
+SHA1: 82da65e0e9c98059ca31593caaeab11a969e6d7b
+SHA256: 7e3bfcd6ea5763493581b9d48673952dbb7409661f68d10df9539b2f79d578fa
+Description: MATE document rendering library
+Description-md5: 0eceffa746045c1381747094b687eb72
+
+Package: libatrildocument-dev
+Source: atril
+Priority: optional
+Section: libdevel
+Installed-Size: 194
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-2~xenial1.1
+Replaces: libatril-dev (<< 1.9.0)
+Depends: libatrildocument3 (= 1.14.1-2~xenial1.1)
+Breaks: libatril-dev (<< 1.9.0)
+Filename: pool/main/a/atril/libatrildocument-dev_1.14.1-2~xenial1.1_amd64.deb
+Size: 25530
+MD5sum: 84b5d09cb10703476e960fb21c28db4b
+SHA1: 8826debb13404993e345f5c8409171ef640bf0d6
+SHA256: 0baeff9de6d3a831619ed8828ee0fbafe29af06997c8bbb2fe987adafbea4627
+Description: MATE document rendering library (development files)
+Description-md5: 185f6dd2befdacd375c19d7be732f189
+
+Package: mate-desktop-environment-core
+Source: mate-desktop-environment
+Priority: optional
+Section: x11
+Installed-Size: 12
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0+2~xenial1.2
+Replaces: mate-conf (<< 1.8.0), mate-conf-editor (<< 1.8.0), mate-dialogs (<< 1.8.0), mate-dialogs-common (<< 1.8.0), mate-dialogs-dbg (<< 1.8.0), mate-doc-utils (<< 1.8.0), mate-doc-utils-gnome (<< 1.8.0), mate-keyring (<< 1.8.0)
+Depends: caja (>= 1.14.0), gvfs-backends, gvfs-bin, marco (>= 1.14.0), mate-backgrounds (>= 1.14.0), mate-control-center (>= 1.14.0), mate-desktop (>= 1.14.0), mate-icon-theme (>= 1.14.0), mate-menus (>= 1.14.0), mate-notification-daemon (>= 1.14.0) | notification-daemon, mate-panel (>= 1.14.0), mate-polkit (>= 1.14.0), mate-session-manager (>= 1.14.0), mate-settings-daemon (>= 1.14.0), mate-terminal (>= 1.14.0), mate-themes (>= 3), dconf-gsettings-backend | gsettings-backend
+Conflicts: mate-conf, mate-conf-editor, mate-dialogs, mate-dialogs-common, mate-dialogs-dbg, mate-doc-utils, mate-doc-utils-gnome, mate-keyring
+Breaks: mate-desktop-environment (<< 1.8.0)
+Filename: pool/main/m/mate-desktop-environment/mate-desktop-environment-core_1.14.0+2~xenial1.2_all.deb
+Size: 4060
+MD5sum: 57ab6b901c208e423fa147eaf8dea923
+SHA1: c975a2a03cd88e0245a28a541fc6cb1615a04d25
+SHA256: 0317341d0795106114ad5c29fd267db42f9636c22fa64a9fca232a6907aa5237
+Description: MATE Desktop Environment (essential components, metapackage)
+Description-md5: ebb6705e80f1c013244ed398a63c82a2
+
+Package: mate-desktop-environment-extras
+Source: mate-desktop-environment
+Priority: optional
+Section: x11
+Installed-Size: 9
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0+2~xenial1.2
+Recommends: blueman, caja-gksu (>= 1.14.0), caja-image-converter (>= 1.14.0), caja-open-terminal (>= 1.14.0), caja-sendto (>= 1.14.0), caja-share (>= 1.14.0), caja-wallpaper (>= 1.14.0), dconf-editor, gnome-keyring, mate-sensors-applet (>= 1.14.0), mate-user-share (>= 1.14.0), mozo (>= 1.14.0), yelp
+Suggests: mate-netbook (>= 1.14.0), mate-user-guide
+Provides: mate-extras
+Depends: mate-desktop-environment (= 1.14.0+2~xenial1.2)
+Filename: pool/main/m/mate-desktop-environment/mate-desktop-environment-extras_1.14.0+2~xenial1.2_all.deb
+Size: 3580
+MD5sum: 91e2ce65ffaad918006809a3eae7edfa
+SHA1: db00ed51a945cda75c5da4b6a167f5f4fdb12d30
+SHA256: bfde8a3882d029002ac51b83deb9e7d81d6d9d472cdc07a2ed3e4805f3f29bca
+Description: MATE Desktop Environment (extra components, metapackage)
+Description-md5: 4b5c85e307f109f83c4c7baad3417a66
+
+Package: mate-desktop-environment-extra
+Source: mate-desktop-environment
+Priority: optional
+Section: x11
+Installed-Size: 9
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0+2~xenial1.2
+Depends: mate-desktop-environment-extras (= 1.14.0+2~xenial1.2)
+Filename: pool/main/m/mate-desktop-environment/mate-desktop-environment-extra_1.14.0+2~xenial1.2_all.deb
+Size: 3420
+MD5sum: d6c4bc9f997c2d6d3f55a1445e17f926
+SHA1: 70679a7dead3e1c9148ef96c84066842fb788708
+SHA256: 8b7cc9fa040dfb1b41be003f923215fda62b02578f353fc2978ca8063cf7ae94
+Description: MATE Desktop Environment (extra components, dummy package)
+Description-md5: 1cd719415caf9d70e70b55f52a9576f5
+
+Package: ubuntu-mate-core
+Source: ubuntu-mate-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 16
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.154+1~xenial1.0
+Recommends: acpi-support, avahi-daemon, bluez, bluez-cups, cups, cups-bsd, cups-client, cups-filters, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-lklug-sinhala, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fwupd, fwupdate, fwupdate-signed, hplip, kerneloops-daemon, laptop-detect, libnss-mdns, pcmciautils, policykit-desktop-privileges, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, snapd, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family
+Depends: a11y-profile-manager-indicator, accountsservice, acpid, alsa-base, alsa-utils, anacron, apturl, at-spi2-core, atril, avahi-autoipd, avahi-discover, avahi-dnsconfd, avahi-utils, bc, brltty, brltty-x11, ca-certificates, caja, caja-gksu, caja-open-terminal, caja-sendto, caja-wallpaper, colord, crda, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dconf-cli, dconf-editor, dialog, dmz-cursor-theme, engrampa, eom, espeak, ethtool, ffmpegthumbnailer, firefox, fonts-dejavu-core, fonts-freefont-ttf, fonts-liberation, fonts-nanum, fonts-noto, fonts-noto-cjk, fonts-noto-mono, fonts-noto-unhinted, fonts-opendyslexic, foomatic-db-compressed-ppds, galculator, gdebi, gdisk, genisoimage, ghostscript, ghostscript-x, gksu, gnome-keyring, gnome-orca, gnome-session-canberra, gnome-system-tools, grub2-themes-ubuntu-mate, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gstreamer1.0-tools, gstreamer1.0-x, gucharmap, gufw, gvfs, gvfs-backends, gvfs-fuse, hddtemp, hwdata, im-config, indicator-application-gtk2, indicator-sound-gtk2, inputattach, inxi, iproute, iputils-arping, iso-codes, iw, language-selector-gnome, libavahi-compat-libdnssd1, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libegl1-mesa-drivers, libfile-mimeinfo-perl, libnet-dbus-perl, libnotify-bin, libp11-kit-gnome-keyring, libpam-gnome-keyring, libpaper-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libqt5libqgtk2, librsvg2-common, libsasl2-modules, libtopmenu-client-gtk2-0, libtopmenu-client-gtk3-0, libtopmenu-server-gtk2-0, libtopmenu-server-gtk3-0, libtxc-dxtn-s2tc0, libwmf0.2-7-gtk, libx11-protocol-perl, lightdm, lightdm-gtk-greeter, marco, mate-accessibility-profiles, mate-applet-topmenu, mate-applets, mate-desktop-environment-core, mate-gnome-main-menu-applet, mate-icon-theme, mate-icon-theme-faenza, mate-indicator-applet, mate-media, mate-menu, mate-menus, mate-netbook, mate-notification-daemon, mate-optimus, mate-polkit, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-settings-daemon, mate-system-monitor, mate-terminal, mate-themes, mate-tweak, mate-user-guide, mate-utils, memtest86+, mobile-broadband-provider-info, modemmanager, mozo, network-manager, network-manager-gnome, network-manager-pptp-gnome, ntp, onboard, onboard-data, openprinting-ppds, pinentry-gtk2, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, ppa-purge, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio-module-bluetooth, pulseaudio-module-x11, pulseaudio-utils, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-aptdaemon.pkcompat, qt4-qtconfig, rfkill, rtkit, samba-common-bin, sane-utils, seahorse, sessioninstaller, simple-scan, smbclient, software-properties-gtk, speech-dispatcher, syslinux-utils, system-config-printer-gnome, system-config-printer-udev, tilda, topmenu-gtk-common, topmenu-gtk2, topmenu-gtk3, toshset, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-default-settings, ubuntu-mate-lightdm-theme, ubuntu-release-upgrader-gtk, ubuntu-sounds, unity-control-center-faces, unzip, update-manager, update-notifier, usb-modeswitch, vbetool, wireless-tools, wpasupplicant, x11-utils, x11-xserver-utils, xbitmaps, xbrlapi, xcursor-themes, xdg-user-dirs, xdg-user-dirs-gtk, xdg-utils, xkb-data, xorg, xserver-xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, xul-ext-ubufox, xzoom, yelp, zenity, zip
+Filename: pool/main/u/ubuntu-mate-meta/ubuntu-mate-core_1.154+1~xenial1.0_amd64.deb
+Size: 11528
+MD5sum: 03bcfba4d60c366cfea8686e072763ca
+SHA1: cbf87edbf1f7bec37c810a1100da1ca00398b325
+SHA256: e595617c3fd26cc40b0d64d9e9fec0cf60a46d6d478ba4edfb39e590943d767f
+Description: Ubuntu MATE - core system
+Description-md5: 63d8abc1b44487b6f8d53640de90a10d
+
+Package: ubuntu-mate-desktop
+Source: ubuntu-mate-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 16
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.154+1~xenial1.0
+Recommends: acpi-support, avahi-daemon, bluez, bluez-cups, cups, cups-bsd, cups-client, cups-filters, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-lklug-sinhala, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fwupd, fwupdate, fwupdate-signed, hplip, kerneloops-daemon, laptop-detect, libnss-mdns, pcmciautils, policykit-desktop-privileges, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, snapd, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family
+Depends: a11y-profile-manager-indicator, account-plugin-facebook, account-plugin-flickr, account-plugin-google, accountsservice, acpid, alsa-base, alsa-utils, anacron, apport, apport-gtk, apport-symptoms, apturl, at-spi2-core, atril, avahi-autoipd, avahi-discover, avahi-dnsconfd, avahi-utils, bc, blueman, brasero, brasero-cdrkit, brltty, brltty-x11, ca-certificates, caja, caja-gksu, caja-open-terminal, caja-sendto, caja-wallpaper, cheese, colord, compiz, compiz-core, compiz-mate, compiz-plugins, compiz-plugins-default, crda, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dconf-cli, dconf-editor, deja-dup, deja-dup-backend-cloudfiles, deja-dup-backend-gvfs, deja-dup-backend-s3, deja-dup-caja, dialog, dmz-cursor-theme, engrampa, eom, espeak, ethtool, exfat-fuse, exfat-utils, ffmpegthumbnailer, firefox, folder-color-caja, fonts-dejavu-core, fonts-freefont-ttf, fonts-liberation, fonts-nanum, fonts-noto, fonts-noto-cjk, fonts-noto-mono, fonts-noto-unhinted, fonts-opendyslexic, foomatic-db-compressed-ppds, galculator, gdb, gdebi, gdisk, genisoimage, ghostscript, ghostscript-x, gksu, gnome-disk-utility, gnome-keyring, gnome-orca, gnome-session-canberra, gnome-system-tools, grub2-themes-ubuntu-mate, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gstreamer1.0-tools, gstreamer1.0-x, gucharmap, gufw, gvfs, gvfs-backends, gvfs-fuse, hddtemp, hexchat, hwdata, ideviceinstaller, ifuse, im-config, indicator-application-gtk2, indicator-sound-gtk2, inputattach, inxi, iproute, iputils-arping, iso-codes, iw, language-selector-gnome, libaacs0, libaccount-plugin-generic-oauth, libaccount-plugin-google, libavahi-compat-libdnssd1, libbdplus0, libbluray-bdj, libbluray-bin, libbluray1, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libdvdnav4, libdvdread4, libegl1-mesa-drivers, libfile-mimeinfo-perl, libgpod-common, libimobiledevice-utils, libmtp-runtime, libnet-dbus-perl, libnotify-bin, libp11-kit-gnome-keyring, libpam-gnome-keyring, libpaper-utils, libplist-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libpurple-bin, libqt5libqgtk2, libreoffice-avmedia-backend-gstreamer, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-human, libreoffice-writer, librsvg2-common, libsasl2-modules, libtopmenu-client-gtk2-0, libtopmenu-client-gtk3-0, libtopmenu-server-gtk2-0, libtopmenu-server-gtk3-0, libtxc-dxtn-s2tc0, libwmf0.2-7-gtk, libx11-protocol-perl, lightdm, lightdm-gtk-greeter, lightdm-gtk-greeter-settings, marco, mate-accessibility-profiles, mate-applet-topmenu, mate-applets, mate-desktop-environment-core, mate-dock-applet, mate-gnome-main-menu-applet, mate-icon-theme, mate-icon-theme-faenza, mate-indicator-applet, mate-media, mate-menu, mate-menus, mate-netbook, mate-notification-daemon, mate-optimus, mate-polkit, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-settings-daemon, mate-system-monitor, mate-terminal, mate-themes, mate-tweak, mate-user-guide, mate-utils, memtest86+, mobile-broadband-provider-info, modemmanager, mozo, network-manager, network-manager-gnome, network-manager-pptp-gnome, ntp, onboard, onboard-data, openprinting-ppds, pidgin, pidgin-libnotify, pidgin-otr, pinentry-gtk2, plank, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, ppa-purge, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio-module-bluetooth, pulseaudio-module-x11, pulseaudio-utils, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-aptdaemon.pkcompat, qt4-qtconfig, rfkill, rhythmbox, rhythmbox-plugin-cdrecorder, rhythmbox-plugins, rtkit, samba-common-bin, sane-utils, seahorse, sessioninstaller, shotwell, simple-scan, smbclient, software-properties-gtk, speech-dispatcher, synapse, syslinux-utils, system-config-printer-gnome, system-config-printer-udev, thunderbird, tilda, tlp, tlp-rdw, topmenu-gtk-common, topmenu-gtk2, topmenu-gtk3, toshset, transmission-gtk, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-mate-libreoffice-draw-icons, ubuntu-mate-lightdm-theme, ubuntu-mate-welcome, ubuntu-release-upgrader-gtk, ubuntu-sounds, unity-control-center-faces, unzip, update-manager, update-notifier, usb-creator-gtk, usb-modeswitch, usbmuxd, vbetool, vlc, vlc-plugin-notify, whoopsie, wireless-tools, wpasupplicant, x11-utils, x11-xserver-utils, xbitmaps, xbrlapi, xcursor-themes, xdg-user-dirs, xdg-user-dirs-gtk, xdg-utils, xkb-data, xorg, xserver-xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, xul-ext-calendar-timezones, xul-ext-gdata-provider, xul-ext-lightning, xul-ext-ubufox, xzoom, yelp, zenity, zip
+Filename: pool/main/u/ubuntu-mate-meta/ubuntu-mate-desktop_1.154+1~xenial1.0_amd64.deb
+Size: 11974
+MD5sum: 0c319517e800a6bafe3e5f826dd59b40
+SHA1: 0a3505888c5031be0472057856e43b7abf6c0840
+SHA256: bf1a61b86dc5336f8e2f9ce84d4696816aac52c089bf59a1f222bf7e9285829b
+Description: Ubuntu MATE - full desktop
+Description-md5: 5591bb8caf8894d36b5f7458d5c8d1d1
+
+Package: ubuntu-mate-cloudtop
+Source: ubuntu-mate-meta
+Priority: optional
+Section: metapackages
+Installed-Size: 16
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 1.154+1~xenial1.0
+Recommends: acpi-support, avahi-daemon, bluez, bluez-cups, cups, cups-bsd, cups-client, cups-filters, fonts-guru, fonts-kacst-one, fonts-khmeros-core, fonts-lao, fonts-lklug-sinhala, fonts-sil-abyssinica, fonts-sil-padauk, fonts-takao-pgothic, fonts-thai-tlwg, fonts-tibetan-machine, fwupd, fwupdate, fwupdate-signed, hplip, kerneloops-daemon, laptop-detect, libnss-mdns, pcmciautils, policykit-desktop-privileges, printer-driver-brlaser, printer-driver-c2esp, printer-driver-foo2zjs, printer-driver-min12xxw, printer-driver-ptouch, printer-driver-pxljr, printer-driver-sag-gdi, printer-driver-splix, snapd, ttf-ancient-fonts-symbola, ttf-ubuntu-font-family
+Depends: a11y-profile-manager-indicator, accountsservice, acpid, alsa-base, alsa-utils, anacron, apport, apport-gtk, apport-symptoms, apturl, at-spi2-core, atril, avahi-autoipd, avahi-discover, avahi-dnsconfd, avahi-utils, bc, brltty, brltty-x11, ca-certificates, caja, caja-gksu, caja-open-terminal, caja-sendto, caja-wallpaper, colord, crda, cups-browsed, cups-core-drivers, cups-filters-core-drivers, cups-pk-helper, cups-ppdc, dconf-cli, dconf-editor, dialog, dmz-cursor-theme, engrampa, eom, espeak, ethtool, ffmpegthumbnailer, firefox, folder-color-caja, fonts-dejavu-core, fonts-freefont-ttf, fonts-liberation, fonts-nanum, fonts-noto, fonts-noto-cjk, fonts-noto-mono, fonts-noto-unhinted, fonts-opendyslexic, foomatic-db-compressed-ppds, galculator, gdebi, gdisk, genisoimage, ghostscript, ghostscript-x, gksu, gnome-keyring, gnome-orca, gnome-session-canberra, gnome-system-tools, grub2-themes-ubuntu-mate, gstreamer1.0-alsa, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-pulseaudio, gstreamer1.0-tools, gstreamer1.0-x, gucharmap, gufw, gvfs, gvfs-backends, gvfs-fuse, hddtemp, hexchat, hwdata, im-config, indicator-application-gtk2, indicator-sound-gtk2, inputattach, inxi, iproute, iputils-arping, iso-codes, iw, language-selector-gnome, libavahi-compat-libdnssd1, libcanberra-gtk-module, libcanberra-gtk3-module, libcanberra-pulse, libegl1-mesa-drivers, libfile-mimeinfo-perl, libnet-dbus-perl, libnotify-bin, libp11-kit-gnome-keyring, libpam-gnome-keyring, libpaper-utils, libproxy1-plugin-gsettings, libproxy1-plugin-networkmanager, libpurple-bin, libqt5libqgtk2, libreoffice-avmedia-backend-gstreamer, libreoffice-calc, libreoffice-gnome, libreoffice-impress, libreoffice-ogltrans, libreoffice-pdfimport, libreoffice-style-human, libreoffice-writer, librsvg2-common, libsasl2-modules, libtopmenu-client-gtk2-0, libtopmenu-client-gtk3-0, libtopmenu-server-gtk2-0, libtopmenu-server-gtk3-0, libtxc-dxtn-s2tc0, libwmf0.2-7-gtk, libx11-protocol-perl, lightdm, lightdm-gtk-greeter, marco, mate-accessibility-profiles, mate-applet-topmenu, mate-applets, mate-desktop-environment-core, mate-gnome-main-menu-applet, mate-icon-theme, mate-icon-theme-faenza, mate-indicator-applet, mate-media, mate-menu, mate-menus, mate-netbook, mate-notification-daemon, mate-optimus, mate-polkit, mate-power-manager, mate-screensaver, mate-sensors-applet, mate-settings-daemon, mate-system-monitor, mate-terminal, mate-themes, mate-tweak, mate-user-guide, mate-utils, memtest86+, mobile-broadband-provider-info, modemmanager, mozo, network-manager, network-manager-gnome, network-manager-pptp-gnome, ntp, onboard, onboard-data, openprinting-ppds, pidgin, pidgin-libnotify, pidgin-otr, pinentry-gtk2, pluma, plymouth-theme-ubuntu-mate-logo, plymouth-theme-ubuntu-mate-text, pm-utils, ppa-purge, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-pnm2ppa, printer-driver-postscript-hp, pulseaudio-module-bluetooth, pulseaudio-module-x11, pulseaudio-utils, python3-aptdaemon, python3-aptdaemon.gtk3widgets, python3-aptdaemon.pkcompat, qt4-qtconfig, rfkill, rtkit, samba-common-bin, sane-utils, seahorse, sessioninstaller, simple-scan, smbclient, software-properties-gtk, speech-dispatcher, synapse, syslinux-utils, system-config-printer-gnome, system-config-printer-udev, thunderbird, tilda, topmenu-gtk-common, topmenu-gtk2, topmenu-gtk3, toshset, ubuntu-drivers-common, ubuntu-mate-artwork, ubuntu-mate-core, ubuntu-mate-default-settings, ubuntu-mate-lightdm-theme, ubuntu-mate-welcome, ubuntu-release-upgrader-gtk, ubuntu-sounds, unity-control-center-faces, unzip, update-manager, update-notifier, usb-modeswitch, vbetool, vlc, vlc-plugin-notify, whoopsie, wireless-tools, wpasupplicant, x11-utils, x11-xserver-utils, xbitmaps, xbrlapi, xcursor-themes, xdg-user-dirs, xdg-user-dirs-gtk, xdg-utils, xkb-data, xorg, xserver-xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, xul-ext-ubufox, xzoom, yelp, zenity, zip
+Filename: pool/main/u/ubuntu-mate-meta/ubuntu-mate-cloudtop_1.154+1~xenial1.0_amd64.deb
+Size: 11700
+MD5sum: 06b7f7578080fa7ac98f5fc232772036
+SHA1: f2b9f40be02a53726aea9a857fc5581526a85102
+SHA256: 276fc475c2be1db7ca9cb61475019269808c26f3d8841b736c265c65b0fd31b7
+Description: Ubuntu MATE - reduced desktop for terminal server deployment
+Description-md5: 8b52b6ede17990fae475077bb557afb7
+
+Package: mate-user-guide
+Priority: optional
+Section: doc
+Installed-Size: 24162
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Suggests: mate-desktop-environment
+Depends: yelp
+Filename: pool/main/m/mate-user-guide/mate-user-guide_1.14.0-1~xenial1.01_all.deb
+Size: 7153734
+MD5sum: 3aed5014c7fe88c6daf7c6e30e22278b
+SHA1: 4ba77e448b6cae6a231006d8119d0458d1953897
+SHA256: fe7680185385572cb816138f15e644efbe82cff5e638b67c829e621df9041c36
+Description: User documentation for MATE Desktop Environment
+Description-md5: 5e0fe58543872734166dd0ca69e57975
+
+Package: caja-actions
+Priority: optional
+Section: utils
+Installed-Size: 1021
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.8.1-1~xenial1.2
+Depends: libc6 (>= 2.4), libcaja-extension1 (>= 1.6.3), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.0), libgtop-2.0-10 (>= 2.22.3), libice6 (>= 1:1.0.0), libsm6, libunique-1.0-0 (>= 1.0.0), libuuid1 (>= 2.16), caja-actions-common (= 1.8.1-1~xenial1.2)
+Filename: pool/main/c/caja-actions/caja-actions_1.8.1-1~xenial1.2_amd64.deb
+Size: 277270
+MD5sum: 03d3e70f17f36638aaf19f9aab2bd1dd
+SHA1: ef53f800c7bd187382a233d7912053058757bfe1
+SHA256: 061d6f0b57d353d3c9ef8b1d7e459ad8c8f6e16986da5b2a3d81c7d9934283e8
+Description: Caja extension to create custom actions
+Description-md5: 5fdfe58b5244c4cba042a70fd14026cf
+
+Package: caja-actions-common
+Source: caja-actions
+Priority: optional
+Section: utils
+Installed-Size: 12446
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.8.1-1~xenial1.2
+Filename: pool/main/c/caja-actions/caja-actions-common_1.8.1-1~xenial1.2_all.deb
+Size: 5822260
+MD5sum: 9261e8d36aca2ea654eb91ed1cd4edd3
+SHA1: ce18cbc3884bc3731fcc184f519604e8c2f909ff
+SHA256: 72d34e3bd4088fe0c661df11f8df8282512f5bd7cc86f41895434a6e21c11a03
+Description: Caja extension to create custom actions (common files)
+Description-md5: 758b048f9789c041842d8d69495ea295
+
+Package: caja-actions-dev
+Source: caja-actions
+Priority: optional
+Section: libdevel
+Installed-Size: 1398
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.8.1-1~xenial1.2
+Depends: caja-actions (= 1.8.1-1~xenial1.2), libgtk2.0-dev, libunique-dev, libgtop2-dev, libxml2-dev, uuid-dev, libcaja-extension-dev
+Filename: pool/main/c/caja-actions/caja-actions-dev_1.8.1-1~xenial1.2_amd64.deb
+Size: 99000
+MD5sum: 8bd4311ccb7ecaaec75337bcb791f5b6
+SHA1: 06bea4cf6cd59c0c499905081bee16345724b044
+SHA256: 3f8f717fa7bb1a6b272d930005b052a25143fe63ff8d6a7ae6098711b8bc3a01
+Description: Caja extension to create custom actions (development files)
+Description-md5: 1b7c15eef8b796b7bf4fc7a8d9a17693
+
+Package: caja-actions-dbg
+Source: caja-actions
+Priority: extra
+Section: debug
+Installed-Size: 1313
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.8.1-1~xenial1.2
+Depends: caja-actions (= 1.8.1-1~xenial1.2)
+Filename: pool/main/c/caja-actions/caja-actions-dbg_1.8.1-1~xenial1.2_amd64.deb
+Size: 1084180
+MD5sum: 23bc1c190f9039bb07b35e65bfbea91b
+SHA1: 57351a6fc410432df587787f4be886b98c2bc893
+SHA256: 6edb6c01d1143f14f02e7c97fe8d94f7845b77db245c4203ad0cf541859c151e
+Description: Caja extension to create custom actions (debugging symbols)
+Description-md5: d111b0a2151800326e351b54a6a67c17
+Build-Ids: 02f9f4b0937f568ae9aaf9b3015cfb8fa3ad7470 488c5d0faee47dfe5af7c824eab0428c8989d16e 4a628f8281be726d4afd13a05e0250a7680b97ca 529574a7480aee8f119ae8f637857ae3b8fd8653 77185f276fe5b40a227123185573a0ed58a687b5 854cdd7f736ce01aeab1e01b77984ccc8b51285c 95ef35d30aecdd2b2be138970dedb17589fbf4c8 96ae6723ed402cd3bf3462f38d2e0a0aef9f4fa1 b850297b6058f7a243c50945df585204a7582bcd f7215fef072ab64dd3b89230615527fb80555471
+
+Package: mate-dock-applet
+Priority: extra
+Section: utils
+Installed-Size: 272
+Maintainer: Debian MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 0.71-1~xenial1.0
+Depends: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-2.0, gir1.2-mate-panel (>= 1.12.2-1~), gir1.2-wnck-1.0, libglib2.0-bin, mate-panel (>= 1.12), python-wnck, python3, python3-gi-cairo, python3-pil, python3-scipy, python3-xdg, dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/m/mate-dock-applet/mate-dock-applet_0.71-1~xenial1.0_amd64.deb
+Size: 51030
+MD5sum: df1d05720e82aea4726158201ce5ac26
+SHA1: b11e29e544403681cc4af770e9a0b0e8a8da9ac6
+SHA256: 598f6eb41ad238eef1e48ddb39dc3852a468409ddfa2af7129ac620a11fc1a8f
+Description: MATE Panel dock applet
+Description-md5: ea260efaaf656d61dc9a8947257de8ec
+
+Package: gir1.2-mate-desktop
+Source: mate-desktop
+Priority: optional
+Section: introspection
+Installed-Size: 281
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Depends: libmate-desktop-2-17 (= 1.14.1-1~xenial1.01)
+Filename: pool/main/m/mate-desktop/gir1.2-mate-desktop_1.14.1-1~xenial1.01_amd64.deb
+Size: 33552
+MD5sum: 28935335b95d71a953d3a2d182d9bcda
+SHA1: 888689ccf7c28a425238b9daca20e8f8dea1c1ab
+SHA256: 01a4258b575e153129af8a10ae43f744108ca23c1712d7049d8617f75517cb90
+Description: GObject introspection data for the mate-desktop library
+Description-md5: 8d3910921523c5647e1d72c43c680351
+
+Package: libmatemixer0
+Source: libmatemixer
+Priority: optional
+Section: libs
+Installed-Size: 341
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: iso-codes, libmatemixer-common, libasound2 (>= 1.0.17), libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1)
+Filename: pool/main/libm/libmatemixer/libmatemixer0_1.14.0-1~xenial1.01_amd64.deb
+Size: 79810
+MD5sum: fa98853ab1a397848a1f3e98bd0ceae6
+SHA1: 41adc4cb317620c16f336e0575a3c6897cc505c5
+SHA256: 72348fc7d9907a8d9b525f374b60a5035244ac4929ce43d8c1b0c75d304d3255
+Description: Mixer library for MATE Desktop
+Description-md5: c57ac9885ede64f133c8d56c665bf7f8
+Multi-Arch: same
+
+Package: libmatemixer-common
+Source: libmatemixer
+Priority: optional
+Section: libs
+Installed-Size: 390
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/libm/libmatemixer/libmatemixer-common_1.14.0-1~xenial1.01_all.deb
+Size: 43354
+MD5sum: 8ef549ee255264feef24b6854903c571
+SHA1: 0f0f57dfd40916bb40fab564368741dca440704d
+SHA256: 692d4e2981fcb0557104402bb662ba46396e2ab2b3a5e7f0d67de8c3a33f10a0
+Description: Mixer library for MATE Desktop (common files)
+Description-md5: 6e955858d8f287ee6e129c78756630e0
+Multi-Arch: foreign
+
+Package: libmatemixer-doc
+Source: libmatemixer
+Priority: optional
+Section: doc
+Installed-Size: 472
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/libm/libmatemixer/libmatemixer-doc_1.14.0-1~xenial1.01_all.deb
+Size: 31602
+MD5sum: 4a5f563034eefca3bf6af29f21a8532c
+SHA1: f48b0637bfd7cd28f34998a53947a89b815eae5e
+SHA256: 472f6988e74ca3202dc4f5dc782e86fc531792452bb6eb04e4a55e86b68b3e04
+Description: Mixer library for MATE Desktop (documentation files)
+Description-md5: 8531d121ec18147407f6c941c4ffbc42
+
+Package: libmatemixer-dev
+Source: libmatemixer
+Priority: optional
+Section: libdevel
+Installed-Size: 96
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libglib2.0-dev, libmatemixer0 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/libm/libmatemixer/libmatemixer-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 11516
+MD5sum: 929b55c61571ceac54e1c142e5bc997a
+SHA1: 366a4cc5d4ee9a9830128ac361c21b213e8def32
+SHA256: 7ef2b525597409c56d1474b4104f3a406efd5de92e068b1128d395f6f1e96e03
+Description: Mixer library for MATE Desktop (development files)
+Description-md5: 7526072c404dcc017d8a08fd6825ab48
+Multi-Arch: same
+
+Package: libmatemixer0-dbg
+Source: libmatemixer
+Priority: extra
+Section: debug
+Installed-Size: 415
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libmatemixer0 (= 1.14.0-1~xenial1.01)
+Filename: pool/main/libm/libmatemixer/libmatemixer0-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 310630
+MD5sum: 3382e4d6ce9691489656b57b404bc53f
+SHA1: ee1ef21eb7b473d06d00350e22f6e292839b1bea
+SHA256: b2b8dc2ed827f87696192646a01741013f8602144f73f412593cf66c4d2aeac6
+Description: Mixer library for MATE Desktop (debug files)
+Description-md5: 217a0e1140e0396721c8d8a93d6278ec
+Build-Ids: 60d0238edb6933292c0d998ebcc405ae953fb37b c44886cf11e0fbc6428bf36604fcf98aee8b77e0 d0cc782415b178a4bed25be18fb1a207e3746221 d32f5e894361bf82a77daeb4cd835821c8ce14b8
+Multi-Arch: same
+
+Package: gir1.2-mate-polkit
+Source: mate-polkit
+Priority: optional
+Section: x11
+Installed-Size: 42
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: gir1.2-gtk-2.0, gir1.2-polkit-1.0, libgirepository-1.0-1 (>= 1.41.4-1), libpolkit-gtk-mate-1-0
+Filename: pool/main/m/mate-polkit/gir1.2-mate-polkit_1.14.0-1~xenial1.01_amd64.deb
+Size: 8920
+MD5sum: 817a8b0cced2ae6f38d3e46bf7ed85d3
+SHA1: 2f8dc9d45b9bd418012c0649eecdbbf8b1153919
+SHA256: 36e29269e462b27a58c7a6ae094a868d0d31baea3702f0988d733ff90243844e
+Description: GObject introspection data for mate-polkit
+Description-md5: 64724c59e3bd00cdb5e65b8193e52d66
+
+Package: mate-settings-daemon-dbg
+Source: mate-settings-daemon
+Priority: extra
+Section: debug
+Installed-Size: 976
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-settings-daemon (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-settings-daemon/mate-settings-daemon-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 733856
+MD5sum: 8c314f8b74a23818e19beb0391c482d7
+SHA1: f8f01dcd48cbb09c0c565b6213d9676412ad15e5
+SHA256: 97ef3beaada93218939e2bd5efb66e778a8f34f578c40460a183efc6a92d30bf
+Description: daemon handling the MATE session settings (debugging symbols)
+Description-md5: f767302e94fece1afda2b6bbc4197d21
+Build-Ids: 07a44ba96d863b17e87646da2ac9a297ee4b0ffe 45656fd05f69c7b7a6fb995f5a867041fe493e35 49380e9c7d60e01ccc13882c77033de1448b091a 565164d2f6c91c77e6ab12b53142b002d7e3650c 5bdd74325222393cde917023e1f0c1533533f187 673667c5fd5d8d9ed22d573546bf7a92896c0f1e 6cb9b7e66f65a65154ad778a9e58d643623f2e90 7c884bb2d4ed0bd2d160cd34993a57e7bc14e2bb 847cd672a67ab73e25e7a1181ca19dd65bd1de8b 86aa470caafbbf6cc5e771494a17981f96e30493 8eebc93ef2c8b3b04f0aa0245e9d9808309f2f4e a076046b6cb3354ad34c94d197268b551816d1d2 bbc032a3b7b0ffab79af05db6cbb657fa0402c12 c936ac527627700acc380e3c6ae7248a373248d7 cbca98b0f6fb6ffe8850e366cd6b3c9ef5b908d4 e48c1eddb1ab5e5345c482a75f00f2cb72a1b894 e5d547274f3786503b6230912fdb5213a1c65d14 f3db802f146967559cdc4031cf4044f6d8258150 f918fa35f800035b061d9b0ee1b3bb14d2626db1
+
+Package: mate-settings-daemon-dev
+Source: mate-settings-daemon
+Priority: extra
+Section: devel
+Installed-Size: 41
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Depends: mate-settings-daemon (= 1.14.0-1~xenial1.01)
+Breaks: mate-settings-daemon-gstreamer (<< 1.9.0), mate-settings-daemon-pulse (<< 1.9.0)
+Filename: pool/main/m/mate-settings-daemon/mate-settings-daemon-dev_1.14.0-1~xenial1.01_amd64.deb
+Size: 9576
+MD5sum: 3e0e2e11741bbaf797154d59c06317c9
+SHA1: 9d99455d2c2130cd9c4358eb4d0e4d171ae70016
+SHA256: c33ded3a8f75c8cef3ae6919024e7e95adfbe4e7ff2ed2bd5f60d8bcc1786e02
+Description: daemon handling the MATE session settings (development files)
+Description-md5: 2dd451e6e5f1b7f872c0cdffe23d1da7
+
+Package: mate-notification-daemon-common
+Source: mate-notification-daemon
+Priority: optional
+Section: x11
+Installed-Size: 419
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-notification-daemon (<< 1.11.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-notification-daemon (<< 1.11.0)
+Filename: pool/main/m/mate-notification-daemon/mate-notification-daemon-common_1.14.0-1~xenial1.01_all.deb
+Size: 47618
+MD5sum: 2b999f6f711052babe50c2912b2cfc4f
+SHA1: 13336ad984bdb4e0606caa6e0236e07012146373
+SHA256: eef7e6b64a6677fbb0ed9b2879a711e3f6709c974f59bebaed7dc4cd6191c460
+Description: daemon to display passive popup notifications (common files)
+Description-md5: 2a8dd81dd552468e296c7f5e9a92ed2f
+
+Package: mate-media-dbg
+Source: mate-media
+Priority: extra
+Section: debug
+Installed-Size: 309
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-media (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-media/mate-media-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 246192
+MD5sum: ccf10a2646e87a866fd8105edcb159ab
+SHA1: 5c7bef53413f8fd0e8bac6d87a34e3418ed49c0a
+SHA256: 69baad15f672993de56181e54f948d929c87221afeb4383fd0da2ac685cad997
+Description: MATE media utilities (debugging symbols)
+Description-md5: 6c9957c2ca6b6241a47a1c930a0661b5
+Build-Ids: 04413bf08bf17b4815450291afc5231fbd6da2f5 ef074f90c1b2d314afb9f1a49c9f344a7c682d23
+
+Package: mate-netbook-common
+Source: mate-netbook
+Priority: optional
+Section: x11
+Installed-Size: 329
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-netbook (<< 1.9.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-netbook (<< 1.9.0)
+Filename: pool/main/m/mate-netbook/mate-netbook-common_1.14.0-1~xenial1.01_all.deb
+Size: 28282
+MD5sum: d507852c1d5a7ca66c40f6b3d4e3cfa9
+SHA1: 0f5cdc9e629bfb47c20922832afc7982a2de049b
+SHA256: eeca0e89f828efda221ddd486ddf2b854338653bc3da2c7e7a7f40e29a06efcf
+Description: MATE utilities for netbooks (common files)
+Description-md5: 6f1bca578b639d0389f31b16c247b70c
+
+Package: mate-sensors-applet-nvidia
+Source: mate-sensors-applet
+Priority: optional
+Section: x11
+Installed-Size: 30
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: libxnvctrl0, mate-sensors-applet (= 1.14.0-1~xenial1.01), libc6 (>= 2.4), libglib2.0-0 (>= 2.12.0), libmate-sensors-applet-plugin0, libx11-6
+Filename: pool/main/m/mate-sensors-applet/mate-sensors-applet-nvidia_1.14.0-1~xenial1.01_amd64.deb
+Size: 7252
+MD5sum: e698599b1dc69ea8e957be12b543aca1
+SHA1: d49114868a67ad6d7e6ba64ad17a3a0a7717c458
+SHA256: 2be046e32bdfb6f473f5d555e5dc70949d9f143a77691a6ceca224b84646c695
+Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
+Description-md5: badf03a7973b489aeeafb9ed15f74ec0
+
+Package: mate-sensors-applet-common
+Source: mate-sensors-applet
+Priority: optional
+Section: x11
+Installed-Size: 545
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-sensors-applet (<< 1.9.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-sensors-applet (<< 1.9.0)
+Filename: pool/main/m/mate-sensors-applet/mate-sensors-applet-common_1.14.0-1~xenial1.01_all.deb
+Size: 84676
+MD5sum: 71b0eef4da9b4efbe00391588efa783c
+SHA1: 9d64099b5e85cd966711882edbea9daf9c0377c4
+SHA256: 490ce38029175fdc705a53ca2dc398d74f9f2ed1aca5f2a1df090956b09e196f
+Description: Display readings from hardware sensors in your MATE panel (common files)
+Description-md5: e4c76cc2aa83bdb03da567c8b9533dda
+
+Package: mate-user-share-common
+Source: mate-user-share
+Priority: optional
+Section: x11
+Installed-Size: 1391
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: mate-user-share (<< 1.11.0)
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: mate-user-share (<< 1.11.0)
+Filename: pool/main/m/mate-user-share/mate-user-share-common_1.14.0-1~xenial1.01_all.deb
+Size: 606554
+MD5sum: f921a817d24949a7276472fc37ffe8a8
+SHA1: 70dc7b74f81aee9ec45edfca27252a460c707637
+SHA256: dfa6a470483090dec96325c6789f705e845a990d0601eea1f713921fb14d8a07
+Description: User level public file sharing via WebDAV or ObexFTP (common files)
+Description-md5: 7aff29b39d7878f90b0a884370af3c06
+
+Package: python-caja-common
+Source: python-caja
+Priority: optional
+Section: python
+Installed-Size: 343
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Replaces: python-caja (<< 1.9.0)
+Breaks: python-caja (<< 1.9.0)
+Filename: pool/main/p/python-caja/python-caja-common_1.14.0-1~xenial1.01_all.deb
+Size: 26834
+MD5sum: c0cfa7755b6438b985688e6cae9668c2
+SHA1: 20e2b0bca960d7c23997154cc82833e2ae29ffad
+SHA256: 7c7645f4b34ad25f2846c589f5686e2bf78c2e8cb55e6ab2a6e1d66263ad9ead
+Description: Python binding for Caja components (common files)
+Description-md5: 186f661a5677212ba94f2c26184e65b2
+
+Package: mate-indicator-applet-common
+Source: mate-indicator-applet
+Priority: optional
+Section: x11
+Installed-Size: 530
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Breaks: mate-indicator-applet (<< 1.9.0)
+Filename: pool/main/m/mate-indicator-applet/mate-indicator-applet-common_1.14.0-1~xenial1.01_all.deb
+Size: 59262
+MD5sum: 24a042739e8133a115bd4f710de150d4
+SHA1: 87dea25f71ec8d281f16f6a1aaa66c465ae24a63
+SHA256: 69857485accff64da88d99d2e00650c2f8bdc95942d77ba174bfb08efeb7f0a5
+Description: MATE panel indicator applet (common files)
+Description-md5: 954fc958fafab75b0fdf79c4b81e2379
+
+Package: mate-indicator-applet-dbg
+Source: mate-indicator-applet
+Priority: extra
+Section: debug
+Installed-Size: 196
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-indicator-applet (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-indicator-applet/mate-indicator-applet-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 120478
+MD5sum: 11535ea45e262236ae2c1f483f957f1c
+SHA1: b8507e1475597949b42a504fba2652a7fa143670
+SHA256: ef0ddb1161bd7218b0cf4f9e0769cc54be3de98a9adffe0e34eee62e9a906cfa
+Description: MATE panel indicator applet (debugging symbols)
+Description-md5: cd5376016c93df2d56b7e589c917c00b
+Build-Ids: 77fd72aacb00fad9a7836c1fd3a5c078c1d65908 ba0a362cae53b41be102e7060715c374c4bddd43 e4c0da921148bb5c88784aaf665376ec817070e6
+
+Package: caja-wallpaper
+Source: caja-extensions
+Priority: optional
+Section: x11
+Installed-Size: 39
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: caja-extensions-common (= 1.14.0-1~xenial1.01), libc6 (>= 2.2.5), libcaja-extension1, libglib2.0-0 (>= 2.26.0)
+Filename: pool/main/c/caja-extensions/caja-wallpaper_1.14.0-1~xenial1.01_amd64.deb
+Size: 8630
+MD5sum: 1ac2e9b49b8ebfc46888e25b5df9a40b
+SHA1: b2b972277c8272e9599c6a2a81758246e0d21d82
+SHA256: b916fcc434777d7c1ca9429a1a2a9120f6168a7c8e9ecb3724d18b019ffc1fac
+Description: Allows one to quickly set a wallpaper from folders
+Description-md5: 30e6cd3abf4cc06cfd6795d943e67838
+
+Package: gir1.2-eom
+Source: eom
+Priority: optional
+Section: graphics
+Installed-Size: 238
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Filename: pool/main/e/eom/gir1.2-eom_1.14.1-1~xenial1.01_amd64.deb
+Size: 29844
+MD5sum: 6d2f2d8303250f555197473f56527097
+SHA1: fec3f49746b658a710cbdbfb21b41719cca46e86
+SHA256: b3116f278b90f842660ff1baa7c1ff3e995db7c61642a2b4353588c380b60ae0
+Description: GObject introspection data for the eom library
+Description-md5: d175524c4976112db93b9a73ea99d412
+
+Package: pluma-doc
+Source: pluma
+Priority: optional
+Section: doc
+Installed-Size: 710
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/p/pluma/pluma-doc_1.14.0-1~xenial1.01_all.deb
+Size: 52772
+MD5sum: cdffa131f45a372038b2da4700569d0e
+SHA1: 8d3f9f944f7b1123a8b3ad0c9c9550df2363d5a3
+SHA256: a4bad2e2cf3934160f3ce76c3c49f4c9f59f6bb15f883023f5a7f0d0555d4eec
+Description: official text editor of the MATE desktop environment (documentation files)
+Description-md5: 82265c5ad0f12b304bc427b86cb456d4
+
+Package: gir1.2-atril
+Source: atril
+Priority: optional
+Section: x11
+Installed-Size: 502
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-2~xenial1.1
+Depends: libatrildocument3
+Filename: pool/main/a/atril/gir1.2-atril_1.14.1-2~xenial1.1_amd64.deb
+Size: 47034
+MD5sum: 7c41edb827cb6a64bb4838bcdf59c7c2
+SHA1: 514412d53bc57a21fc93bc4e4179f20c2dee2ea0
+SHA256: c7c9425ff2c770b4bbed30c10c34ba94f723d0d73bb52f1a0ed77c871d5317ef
+Description: GObject introspection data for Atril
+Description-md5: 72abf83a3c388d976418ac7c993a274d
+
+Package: mate-sensors-applet-nvidia-dbg
+Source: mate-sensors-applet
+Priority: extra
+Section: debug
+Installed-Size: 29
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-sensors-applet-nvidia (= 1.14.0-1~xenial1.01)
+Filename: pool/main/m/mate-sensors-applet/mate-sensors-applet-nvidia-dbg_1.14.0-1~xenial1.01_amd64.deb
+Size: 9198
+MD5sum: fc37b959fc7b60a39bd2d31e275f1ed4
+SHA1: 99ec337da4de8cfee5059986fdb1e369f837d318
+SHA256: df1c1772439008fe6bed12a079b0d3844ce3f1afcc7e4d823ea86eb68af1d147
+Description: Display readings from hardware sensors in your MATE panel (NVIDIA, dbg package)
+Description-md5: 776521ca780d5b60080332feb248e818
+Build-Ids: b2f1401914af992123017bcbd08bdf4f1a9ddfee
+
+Package: gir1.2-matekbd
+Source: libmatekbd
+Priority: optional
+Section: libs
+Installed-Size: 84
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.1-1~xenial1.01
+Filename: pool/main/libm/libmatekbd/gir1.2-matekbd_1.14.1-1~xenial1.01_amd64.deb
+Size: 11066
+MD5sum: 96a10803be6ff23029aa0aa71b648072
+SHA1: b411d22b013ff4ce92e4ee13d1b1ea62d06f3d8b
+SHA256: 5535c5e26b489910b220dd729d8488d31a74ff556556c40488b71ca799f857ca
+Description: GObject introspection data for libmatekbd and libmatekbdui
+Description-md5: b5b57ebd921fc4f773f284f0f84c8abe
+
+Package: debian-mate-default-settings
+Source: mate-session-manager
+Priority: optional
+Section: x11
+Installed-Size: 46
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Suggests: mate-desktop-environment-core (>= 1.10.0)
+Depends: desktop-file-utils
+Conflicts: mint-mate-default-settings, ubuntu-mate-default-settings
+Breaks: mate-session-manager (<< 1.10.2-4~)
+Filename: pool/main/m/mate-session-manager/debian-mate-default-settings_1.14.0-1~xenial1.01_all.deb
+Size: 10086
+MD5sum: b41ab3bd2285d3b621e4539f2d380ea1
+SHA1: e1d73162009790ee0849837b6a3fab34821e3fca
+SHA256: 3e0f9a0309b1439c305c4498812daaf56fbc54a19da911fa176ba399e1d53ce0
+Description: Default settings for MATE on Debian
+Description-md5: 152eb0142abbab57029c38b58f82291b
+
+Package: libmatepolkit-doc
+Source: mate-polkit
+Priority: optional
+Section: doc
+Installed-Size: 114
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.0-1~xenial1.01
+Filename: pool/main/m/mate-polkit/libmatepolkit-doc_1.14.0-1~xenial1.01_all.deb
+Size: 26710
+MD5sum: d551afc344f2cbd54c17c7e243f0892b
+SHA1: cf0097ea964eb2d0576a27a710a4e3cec3efddde
+SHA256: a0a479438aa6865aae2bc07e70b5bfdf93c6f2e271d5136dc3c31d9e0692bda0
+Description: MATE authentication agent for PolicyKit-1 (shared library API documentation)
+Description-md5: 05b6abdc27fac712db9e2074902d04b7
+
+Package: libcaja-extension-doc
+Source: caja
+Priority: optional
+Section: doc
+Installed-Size: 154
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: all
+Version: 1.14.1-1~xenial1.01
+Breaks: libcaja-extension-dev (<< 1.12.3-2~)
+Filename: pool/main/c/caja/libcaja-extension-doc_1.14.1-1~xenial1.01_all.deb
+Size: 20020
+MD5sum: b69bdef180df8343256f19f1f90923d7
+SHA1: 62e48db2e1c75a5743dee6aa7c5f95339e6ecdfb
+SHA256: 5b3a42ad08779c91ccd60cfbcf93561cb48f85d7a2a81413673fe519d96881cc
+Description: libraries for Caja components (API documentation files)
+Description-md5: e79a836ca4e5c4babe0c1af6e4ea3576
+
+Package: mate-polkit-bin
+Source: mate-polkit
+Priority: optional
+Section: x11
+Installed-Size: 20
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.14.0-1~xenial1.01
+Depends: mate-polkit (>= 1.14.0-1~xenial1.01)
+Breaks: mate-polkit (<< 1.12.0-3~)
+Filename: pool/main/m/mate-polkit/mate-polkit-bin_1.14.0-1~xenial1.01_amd64.deb
+Size: 6806
+MD5sum: 4e0d847a9042048ae0888a3a45154470
+SHA1: 7668af412c0154006cdbc3b19b57487ac2276b27
+SHA256: 7c69984641a945308b0bfdcaa97aa56015b9e0400b0110202bff1ec238d3d7ce
+Description: MATE authentication agent for PolicyKit-1 (executable wrapper script)
+Description-md5: 109c99acd6df905f416405ddf44fe518
+

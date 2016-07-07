@@ -1,0 +1,5 @@
+!BuildState
+project_options: {deb_arch: amd64}
+properties:
+  files: {'*': ./}
+schema_properties: [files]

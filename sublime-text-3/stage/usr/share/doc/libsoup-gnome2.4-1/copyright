@@ -1,0 +1,17 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://ftp.gnome.org/pub/GNOME/sources/libsoup/
+
+Files: *
+Copyright:
+    Copyright (C) 2007, 2008 Red Hat, Inc.
+    Copyright (C) 2001-2007 Novell, Inc.
+    Copyright (C) 1999-2003 Ximian, Inc.
+    Copyright (C) 2008 Diego Escalante Urrelo
+License: LGPL-2+
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in `/usr/share/common-licenses/LGPL-2'.

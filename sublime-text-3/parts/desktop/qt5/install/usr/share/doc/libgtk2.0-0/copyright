@@ -1,0 +1,328 @@
+This package was debianized by Akira TAGOH <tagoh@debian.org> on
+Wed, 13 Mar 2002 00:07:25 +0900.
+
+It was downloaded from <http://ftp.gnome.org/pub/gnome/sources/gtk+/>.
+
+Copyright Holders:
+
+Please do not mail any of the authors listed here
+asking questions about this version of GTK+.
+
+Copyright:
+
+  Copyright: 1985, 1986, 1987, 1988, 1998 The Open Group
+  Copyright: 1987, 1988 by Digital Equipment Corporation, Maynard, Massachusetts
+  Copyright: 1987 by Digital Equipment Corporation, Maynard, Massachusetts
+  Copyright: 1991-2014 Free Software Foundation, Inc
+  Copyright: 1991-1998 by LCS/Telegraphics
+  Copyright: 1992-1994 The Regents of the University of California
+  Copyright: 1993, Robert Nation
+  Copyright: 1994-2007 Sun Microsystems, Inc
+  Copyright: 1995, 1996, 1997, 1998 by Steffen Beyer
+  Copyright: 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
+  Copyright: 1995-2007 Peter Mattis, Spencer Kimball
+  Copyright: 1997-1998 Jay Painter
+  Copyright: 1997-2009 The GTK+ Team
+  Copyright: 1997 David Mosberger
+  Copyright: 1997-1998 Owen Taylor
+  Copyright: 1997 Paolo Molaro
+  Copyright: 1997-2010 Red Hat, Inc
+  Copyright: 1998-2002 James Henstridge
+  Copyright: 1998-2006 Tim Janik
+  Copyright: 1998-2007 Tor Lillqvist
+  Copyright: 1998 Cesar Miquel, Shawn T. Amundson and Mattias Groenlund
+  Copyright: 1998 David Abilleira Freijeiro
+  Copyright: 1998 Elliot Lee
+  Copyright: 1998 Lars Hamann and Stefan Jeske
+  Copyright: 1998 Shawn T. Amundson
+  Copyright: 1999 Mark Crichton, Larry Ewing
+  Copyright: 1999 Michael Zucchi
+  Copyright: 2000,2001 Jonathan Blandford
+  Copyright: 2000-2004 Hans Breuer
+  Copyright: 2000 Keith Packard
+  Copyright: 2000 Jonathan Blandford
+  Copyright: 2000 SuSE Linux Ltd
+  Copyright: 2000 Tony Gale
+  Copyright: 2001, 2002 Anders Carlsson
+  Copyright: 2001-2002 convergence integrated media GmbH
+  Copyright: 2001-2009 Kristian Rietveld
+  Copyright: 2001-2009 Hans Breuer
+  Copyright: 2001 Anders Carlsson
+  Copyright: 2001 Archaeopteryx Software Inc
+  Copyright: 2001 CodeFactory AB
+  Copyright: 2001 Havoc Pennington
+  Copyright: 2001 Stefan Ondrejicka
+  Copyright: 2002, 2004 Anders Carlsson
+  Copyright: 2002-2004 convergence GmbH
+  Copyright: 2002 Anders Carlsson
+  Copyright: 2002 convergence GmbH
+  Copyright: 2002 James Henstridge
+  Copyright: 2002 Naba Kumar
+  Copyright: 2003, 2004 Dom Lachowicz
+  Copyright: 2003-2004 Kazuki IWAMOTO
+  Copyright: 2003-2009 Matthias Clasen
+  Copyright: 2003, 2004 Raymond Penners
+  Copyright: 2003, 2004 Soeren Sandmann
+  Copyright: 2003 Alex Graveley
+  Copyright: 2003 Apple Computer, Inc. All rights reserved
+  Copyright: 2003 James Henstridge
+  Copyright: 2003 Kazuki IWAMOTO
+  Copyright: 2003 Ricardo Fernandez Pascual
+  Copyright: 2003 Soeren Sandmann
+  Copyright: 2003 Takuro Ashie
+  Copyright: 2004-2006 Christian Hammond
+  Copyright: 2004 Anders Carlsson
+  Copyright: 2004 James M. Cape
+  Copyright: 2004 Lorenzo Gil Sanchez
+  Copyright: 2004 Morten Welinder
+  Copyright: 2004 Paolo Borelli
+  Copyright: 2005, 2006, 2007, 2008, 2009 GNOME Foundation
+  Copyright: 2005-2007, Emmanuele Bassi
+  Copyright: 2005-2007 Vincent Untz
+  Copyright: 2005-2008 Imendio AB
+  Copyright: 2005 Jamie McCracken
+  Copyright: 2005 Mr Jamie McCracken
+  Copyright: 2005-2008 Novell, Inc
+  Copyright: 2005 - Paolo Maggi
+  Copyright: 2005 Ronald S. Bultje
+  Copyright: 2006, 2007, 2008 Christian Persch
+  Copyright: 2006-2007 Async Open Source
+  Copyright: 2006-2009 Openismus GmbH
+  Copyright: 2006 Alexander Larsson
+  Copyright: 2006 Hong Jen Yee (PCMan)
+  Copyright: 2006-2008 Jan Arne Petersen
+  Copyright: 2006 John (J5) Palmieri
+  Copyright: 2004-2010 Nokia Corporation
+  Copyright: 2005-2008 Carlos Garnacho
+  Copyright: 2007-2009 Cody Russell
+  Copyright: 2007 John Stowers, Neil Jagdish Patel
+  Copyright: 2007 Xan López
+  Copyright: 2008 Christian Kellner
+  Copyright: 2008 Cody Russell
+  Copyright: 2008 Jaap Haitsma
+  Copyright: 2008 Richard Hughes
+  Copyright: 2008 Tristan Van Berkom
+  Copyright: 2009 Bastien Nocera
+  Copyright: 2009 David Zeuthen
+  Copyright: 2009 Ghee Teo
+  Copyright: 2009 Stefan Walter
+  Copyright: 2009 Johan Dahlin
+  Copyright: 2010 Christian Dywan
+  Copyright: Christian Kellner
+  Copyright: Federico Mena
+
+
+Original Authors
+----------------
+Peter Mattis      <petm@xcf.berkeley.edu>
+Spencer Kimball   <spencer@xcf.berkeley.edu>
+Josh MacDonald    <jmacd@xcf.berkeley.edu>
+
+The GTK+ Team (in alphabetical order)
+-------------------------------------
+Shawn T. Amundson <amundson@gtk.org>
+Jerome Bolliet    <bolliet@gtk.org>
+Damon Chaplin     <damon@gtk.org>
+Tony Gale         <gale@gtk.org>
+Jeff Garzik       <jgarzik@gtk.org>
+Lars Hamann       <lars@gtk.org>
+Raja R Harinath   <harinath@gtk.org>
+Carsten Haitzler  <raster@gtk.org>
+Tim Janik         <timj@gtk.org>
+Stefan Jeske      <stefan@gtk.org>
+Elliot Lee        <sopwith@gtk.org>
+Raph Levien       <raph@gtk.org>
+Ian Main          <imain@gtk.org>
+Federico Mena     <quartic@gtk.org>
+Paolo Molaro      <lupus@gtk.org>
+Jay Painter       <jpaint@gtk.org>
+Manish Singh      <manish@gtk.org>
+Owen Taylor       <otaylor@gtk.org>
+
+There are many others who have contributed patches; we thank them,
+GTK+ is much better because of them.
+
+
+Over time, GTK+ has incorporated some pieces of software which
+started as independent projects. We list the original authors here:
+
+
+MS-Windows theme engine
+-----------------------
+Raymond Penners
+Dom Lachowicz
+
+
+Pixbuf theme engine
+-------------------
+Owen Taylor
+
+
+IME input method
+----------------
+Takuro Ashie
+Kazuki IWAMOTO
+
+
+Mac OS X backend
+----------------
+Anders Carlsson
+
+
+DirectFB backend
+----------------
+Denis Oliver Kropp
+Sven Neumann
+Mike Emmel
+
+License:
+
+tests/testnouiprint.c
+tests/testcalendar.c
+examples/calendar/calendar.c
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+gtk/gtktoolitemgroup.h
+gtk/gtktoolitemgroup.c
+gtk/gtktoolpaletteprivate.h
+gtk/gtktoolpalette.h
+gtk/gtkcomboboxtext.h
+gtk/gtktoolpalette.c
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+tests/testbbox.c
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public License
+  version 2.1 as published by the Free Software Foundation.
+
+  This library is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  02110-1301 USA
+
+Files: gtk/gtktexttag.*, gtk/gtktextsegment.c, gtk/gtktextchild.c, gtk/gtktextchildprivate.h, gtk/gtktextbtree.c
+ This software is copyrighted by the Regents of the University of
+ California, Sun Microsystems, Inc., and other parties.  The
+ following terms apply to all files associated with the software
+ unless explicitly disclaimed in individual files.
+ .
+ The authors hereby grant permission to use, copy, modify,
+ distribute, and license this software and its documentation for any
+ purpose, provided that existing copyright notices are retained in
+ all copies and that this notice is included verbatim in any
+ distributions. No written agreement, license, or royalty fee is
+ required for any of the authorized uses.  Modifications to this
+ software may be copyrighted by their authors and need not follow
+ the licensing terms described here, provided that the new terms are
+ clearly indicated on the first page of each file where they apply.
+ .
+ IN NO EVENT SHALL THE AUTHORS OR DISTRIBUTORS BE LIABLE TO ANY
+ PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+ DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE, ITS DOCUMENTATION,
+ OR ANY DERIVATIVES THEREOF, EVEN IF THE AUTHORS HAVE BEEN ADVISED
+ OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ THE AUTHORS AND DISTRIBUTORS SPECIFICALLY DISCLAIM ANY WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+ NON-INFRINGEMENT.  THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS,
+ AND THE AUTHORS AND DISTRIBUTORS HAVE NO OBLIGATION TO PROVIDE
+ MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+ .
+ GOVERNMENT USE: If you are acquiring this software on behalf of the
+ U.S. government, the Government shall have only "Restricted Rights"
+ in the software and related documentation as defined in the Federal
+ Acquisition Regulations (FARs) in Clause 52.227.19 (c) (2).  If you
+ are acquiring the software on behalf of the Department of Defense,
+ the software shall be classified as "Commercial Computer Software"
+ and the Government shall have only "Restricted Rights" as defined
+ in Clause 252.227-7013 (c) (1) of DFARs.  Notwithstanding the
+ foregoing, the authors grant the U.S. Government and others acting
+ in its behalf permission to use and distribute the software in
+ accordance with the terms specified in this license.
+ .
+ or
+ .
+ This library is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+ for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ 02110-1301  USA.
+ .
+ See /usr/share/common-licenses/LGPL-2 on your debian system.
+
+
+gdk/win32/wintab.h
+gdk/win32/pktdef.h
+
+ The text and information contained in this file may be freely used,
+ copied, or distributed without compensation or licensing restrictions.
+
+
+Files: m4/introspection.m4
+License: other
+ This file is free software; the author(s) gives unlimited
+ permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+
+
+Everything else:
+
+ This library is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+
+ This library is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+ for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ 02110-1301  USA.
+
+ See /usr/share/common-licenses/LGPL-2 on your debian system.

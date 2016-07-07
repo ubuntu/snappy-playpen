@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+# Since 0.51-2, we support dpkg triggers, so if this script
+# was run from a maintainer script (postinst/postrm) and dpkg
+# supports triggers, ignore it as dpkg will call the trigger
+#
+# Once all the maintainer scripts in the archive have stopped
+# calling update-mime-database directly, we can remove this
+# wrapper.
+#
+# See /usr/share/doc/dpkg-dev/triggers.txt.gz
+
+if dpkg-trigger --check-supported >/dev/null 2>&1 && \
+  [ -n "$DPKG_RUNNING_VERSION" ] && \
+  [ "$1" = "/usr/share/mime" ]; then
+    exit 0
+fi
+
+# Otherwise, we have been manually called or there's no
+# triggers support, so execute update-gconf-defaults
+
+exec update-mime-database.real "$@"

@@ -1,0 +1,2 @@
+[org.gtk.Settings.FileChooser]
+startup-mode='cwd'

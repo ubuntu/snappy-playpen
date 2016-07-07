@@ -1,0 +1,17 @@
+[Device]
+Name=Wacom Graphire Wireless
+DeviceMatch=bluetooth:056a:81
+Class=Graphire
+Width=8
+Height=6
+Layout=graphire-wireless-8x6.svg
+IntegratedIn=
+
+[Features]
+Reversible=false
+Stylus=true
+Ring=false
+Buttons=2
+
+[Buttons]
+Top=A;B

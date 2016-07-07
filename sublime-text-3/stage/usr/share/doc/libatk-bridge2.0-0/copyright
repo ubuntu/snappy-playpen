@@ -1,0 +1,156 @@
+Format: http://dep.debian.net/deps/dep5/
+Upstream-Name: at-spi2-atk
+Source: http://download.gnome.org/sources/at-spi2-atk/
+
+Files: atk-adaptor/adaptors/collection-adaptor.c
+Copyright: Copyright 2007 IBM Corp.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/event.h
+Copyright: Copyright 2001, 2002 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+           Copyright 2008, 2009 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/bridge.c atk-adaptor/event.c
+ atk-adaptor/gtk-2.0/module.c atk-adaptor/gtk-3.0/module.c
+Copyright: Copyright 2008, 2009 Codethink Ltd.
+           Copyright 2001, 2002, 2003 Sun Microsystems Inc.
+           Copyright 2001, 2002, 2003 Ximian, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/bridge.h atk-adaptor/atk-bridge.h
+Copyright: Copyright 2001, 2002, 2003 Sun Microsystems Inc.,
+           Copyright 2001, 2002, 2003 Ximian, Inc.
+           Copyright 2008, 2009, 2010 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/accessible-register.h
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2008, 2009 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/accessible-register.c
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2008, 2009, 2010 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/bitarray.h atk-adaptor/spi-dbus.c
+Copyright: Copyright 2008 Novell, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/adaptors/accessible-adaptor.c
+ atk-adaptor/adaptors/action-adaptor.c
+ atk-adaptor/adaptors/application-adaptor.c
+ atk-adaptor/adaptors/component-adaptor.c
+ atk-adaptor/adaptors/document-adaptor.c
+ atk-adaptor/adaptors/editabletext-adaptor.c
+ atk-adaptor/adaptors/hyperlink-adaptor.c
+ atk-adaptor/adaptors/hypertext-adaptor.c
+ atk-adaptor/adaptors/image-adaptor.c
+ atk-adaptor/adaptors/selection-adaptor.c
+ atk-adaptor/adaptors/socket-adpator.c
+ atk-adaptor/adaptors/table-adaptor.c
+ atk-adaptor/adaptors/text-adaptor.c
+ atk-adaptor/adaptors/value-adaptor.c
+ atk-adaptor/accessible-stateset.c
+ atk-adaptor/accessible-stateset.h
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2001, 2002 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/adaptors/cache-adaptor.c
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2001, 2002 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+           Copyright 2008, 2009 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/adaptors/adaptors.h atk-adaptor/spi-dbus.h
+Copyright: Copyright 2001, 2002 Sun Microsystems Inc.
+           Copyright 2001, 2002 Ximian, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/accessible-cache.c
+Copyright: Copyright 2009, 2010 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/accessible-cache.h
+Copyright: Copyright 2010 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/accessible-leasing.c
+Copyright: Copyright 2009, 2010 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/accessible-leasing.h
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2008, 2009 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: atk-adaptor/object.c atk-adaptor/object.h
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2008, 2009, 2010 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: droute/droute.*
+Copyright: Copyright 2008 Novell, Inc.
+           Copyright 2008 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: droute/droute-pairhash.*
+Copyright: Copyright 2008 Codethink Ltd.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: droute/droute-variant.*
+Copyright: Copyright 2008 Novell, Inc.
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: droute/droute-test.c
+Copyright: ???
+License: LGPL-2+
+ On Debian systems the full text of the GNU Library General Public License can
+ be found in the `/usr/share/common-licenses/LGPL-2' file.
+
+Files: debian/*
+Copyright: Copyright 2009, Mario Lang <mlang@debian.org>
+License: GPL-2
+ On Debian systems the full text of the GNU General Public License can be found
+ in the `/usr/share/common-licenses/GPL-2' file.

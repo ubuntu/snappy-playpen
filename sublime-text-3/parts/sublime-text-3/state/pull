@@ -1,0 +1,5 @@
+!PullState
+project_options: {deb_arch: amd64}
+properties: {source: 'https://download.sublimetext.com/sublime_text_3_build_3114_x64.tar.bz2',
+  source-branch: null, source-subdir: null, source-tag: null, source-type: null}
+schema_properties: [source, source-type, source-branch, source-tag, source-subdir]

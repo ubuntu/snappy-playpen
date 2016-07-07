@@ -1,0 +1,3754 @@
+Package: atheme-services
+Priority: optional
+Section: universe/net
+Installed-Size: 4453
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Mike Mestnik <cheako+apt_repo@mikemestnik.net>
+Architecture: amd64
+Version: 6.0.11-2+deb8u1build0.16.04.1
+Depends: libc6 (>= 2.16), libmowgli2 (>= 1.0.0), libssl1.0.0 (>= 1.0.0)
+Filename: pool/universe/a/atheme-services/atheme-services_6.0.11-2+deb8u1build0.16.04.1_amd64.deb
+Size: 723882
+MD5sum: ed2dd2b824b80610a8f23614332a6ba9
+SHA1: e0337027f9aab65184aa921e002c35a7dc129394
+SHA256: 131fa3687ad255af4ea4e49726bd14dd3ff11c107d49d647c50a555e1770896c
+Description: modular IRC services daemon
+Enhances: ircd
+Homepage: http://atheme.net/atheme.html
+Description-md5: d2e42cf829c1539e7632d45390fec88b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: bsdcpio
+Priority: optional
+Section: universe/utils
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Libarchive Maintainers <ah-libarchive@debian.org>
+Architecture: amd64
+Source: libarchive
+Version: 3.1.2-11ubuntu0.16.04.1
+Depends: libarchive13 (= 3.1.2-11ubuntu0.16.04.1), libc6 (>= 2.14)
+Suggests: bsdtar
+Filename: pool/universe/liba/libarchive/bsdcpio_3.1.2-11ubuntu0.16.04.1_amd64.deb
+Size: 33464
+MD5sum: be403abf912cbf00e139bf83ffa948b6
+SHA1: fcd9984f591873527def0e09594f3719aacf6963
+SHA256: 1463992422ff23a57e50ee7c292557de069c5c56496f737a538a511c7032e707
+Description: Implementation of the 'cpio' program from FreeBSD
+Homepage: http://www.libarchive.org/
+Description-md5: 1c90998c8f6e066f932d9d438fe8c0c3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: bsdtar
+Priority: optional
+Section: universe/utils
+Installed-Size: 102
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Libarchive Maintainers <ah-libarchive@debian.org>
+Architecture: amd64
+Source: libarchive
+Version: 3.1.2-11ubuntu0.16.04.1
+Depends: libarchive13 (= 3.1.2-11ubuntu0.16.04.1), libc6 (>= 2.14)
+Suggests: bsdcpio
+Filename: pool/universe/liba/libarchive/bsdtar_3.1.2-11ubuntu0.16.04.1_amd64.deb
+Size: 47908
+MD5sum: 53a602cfddc77822885df1585db35e29
+SHA1: 9aebfb5a7b9cbc649d95e0cedab68d1bd292a75a
+SHA256: 04a8b78f85921038a5646673a0bd1cfce2b56485e943c3f6d48b25fd3ce2b19a
+Description: Implementation of the 'tar' program from FreeBSD
+Homepage: http://www.libarchive.org/
+Description-md5: c400aaca93699fffdec8b4f318e026bc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: chromium-browser
+Priority: optional
+Section: universe/web
+Installed-Size: 256774
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Replaces: chromium-browser-inspector
+Provides: chromium-browser-inspector, www-browser
+Depends: gconf-service, libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libexpat1 (>= 2.0.1), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.4.2), libgcc1 (>= 1:4.0), libgconf-2-4 (>= 3.2.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.12.4), libpam0g (>= 0.99.7.1), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), libstdc++6 (>= 5.2), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.2), libxrender1, libxss1, libxtst6, zlib1g (>= 1:1.1.4), bash (>= 4), libnss3, xdg-utils, chromium-codecs-ffmpeg-extra (= 51.0.2704.79-0ubuntu0.16.04.1.1242) | chromium-codecs-ffmpeg (= 51.0.2704.79-0ubuntu0.16.04.1.1242)
+Pre-Depends: dpkg (>= 1.15.6)
+Recommends: chromium-browser-l10n
+Suggests: webaccounts-chromium-extension, unity-chromium-extension, adobe-flashplugin
+Conflicts: chromium-browser-inspector
+Filename: pool/universe/c/chromium-browser/chromium-browser_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 70599550
+MD5sum: f842bb6e85c42177807af37bd4b413b9
+SHA1: ea0095d7327c07f3db3ec5a32fd7ecde3361cf0d
+SHA256: c9321701994c19157438a0661d8bee34fbd10bd5c874868ffbc30e06d9b2aa9a
+Description: Chromium web browser, open-source version of Chrome
+Homepage: http://code.google.com/chromium/
+Description-md5: 4a155380274636a47c53917539df83d7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntukylin-desktop
+
+Package: chromium-browser-dbg
+Priority: optional
+Section: universe/devel
+Installed-Size: 3558434
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Depends: chromium-browser (= 51.0.2704.79-0ubuntu0.16.04.1.1242)
+Pre-Depends: dpkg (>= 1.15.6)
+Filename: pool/universe/c/chromium-browser/chromium-browser-dbg_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 797455220
+MD5sum: 172228544cb59b4f9d471051e312a630
+SHA1: 48523c9eda571eaa45f5ea4abc5d481ec757769d
+SHA256: b2e431d0e00d1ac65056f928348207e441a5da64c3692f1a64807655b5e10709
+Description: chromium-browser debug symbols
+Homepage: http://code.google.com/chromium/
+Description-md5: 15b3c7e55558d7ef27690042e85c8e5c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: chromium-browser-l10n
+Priority: optional
+Section: universe/web
+Installed-Size: 18244
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Replaces: chromium-browser
+Depends: chromium-browser (>= 51.0.2704.79-0ubuntu0.16.04.1.1242), chromium-browser (<< 51.0.2704.79-0ubuntu0.16.04.1.1242.1~)
+Pre-Depends: dpkg (>= 1.15.6)
+Filename: pool/universe/c/chromium-browser/chromium-browser-l10n_51.0.2704.79-0ubuntu0.16.04.1.1242_all.deb
+Size: 3265982
+MD5sum: 659aa0f15a982a11eba6ad514f06301b
+SHA1: a8eeedd03744464e8633668ca79217fada855bb3
+SHA256: bf93dc29a86f1543cc6717613c1f6bd4f15cab586ad71fe714f1d53e27177aa0
+Description: chromium-browser language packages
+Homepage: http://code.google.com/chromium/
+Description-md5: 8ddb996aecc31fc1411a320e533c060d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntukylin-desktop
+
+Package: chromium-chromedriver
+Priority: optional
+Section: universe/web
+Installed-Size: 2036
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libx11-6, libxi6, chromium-browser (>= 4.0.203.0~)
+Pre-Depends: dpkg (>= 1.15.6)
+Filename: pool/universe/c/chromium-browser/chromium-chromedriver_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 369660
+MD5sum: 5d4a8d4df0465d4b88c0d7b0a014890e
+SHA1: 60b7d7022a7e48b0353e9a0d4e5a1cda67a779f8
+SHA256: b0617e760af226cc039b6031423cb928c47d86dcffe1a3767135ca17b666392e
+Description: WebDriver driver for the Chromium Browser
+Homepage: http://code.google.com/chromium/
+Description-md5: 2e6e3c36fa55c5630ac7d648c44010d7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: chromium-chromedriver-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 14836
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Depends: chromium-chromedriver (= 51.0.2704.79-0ubuntu0.16.04.1.1242)
+Pre-Depends: dpkg (>= 1.15.6)
+Filename: pool/universe/c/chromium-browser/chromium-chromedriver-dbg_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 3063392
+MD5sum: 9426d060b3c8275bf54e02c6af6f9fdd
+SHA1: 2916117c5119b022f8d3a194254a8af973132b71
+SHA256: 99d2da70731ef2f836bc967c1405cd1a9de47f7a37afe1eddbbca249d22af2b3
+Description: chromium-chromedriver debug symbols
+Homepage: http://code.google.com/chromium/
+Description-md5: 7b89909ec0b0ee64d13d6a60767b9e81
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: chromium-codecs-ffmpeg
+Priority: optional
+Section: universe/web
+Installed-Size: 2320
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Replaces: chromium-browser (<< 44), chromium-codecs-ffmpeg-extra
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Pre-Depends: dpkg (>= 1.15.6)
+Conflicts: chromium-browser (<< 44), chromium-codecs-ffmpeg-extra
+Filename: pool/universe/c/chromium-browser/chromium-codecs-ffmpeg_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 539542
+MD5sum: 265b59d908cb2f9af7a9a6a83b06e43e
+SHA1: cc835ceec4591a2d867856e6b82607423237f814
+SHA256: 9509ff6398be9be126ca416392102591d570a5a60380c5b74534c5bde5667ebf
+Description: Free ffmpeg codecs for the Chromium Browser
+Homepage: http://code.google.com/chromium/
+Description-md5: 5da9721609191455cf39f508a8dbbcc2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: chromium-codecs-ffmpeg-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 5060
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Replaces: chromium-browser-dbg (<< 44), chromium-codecs-ffmpeg-extra-dbg
+Depends: chromium-codecs-ffmpeg (= 51.0.2704.79-0ubuntu0.16.04.1.1242)
+Pre-Depends: dpkg (>= 1.15.6)
+Conflicts: chromium-browser-dbg (<< 44), chromium-codecs-ffmpeg-extra-dbg
+Filename: pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-dbg_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 943058
+MD5sum: 43dd446f16a286ce14e710b1dc50c902
+SHA1: a985511eb0728b6064efba8c42a16b27f5c29085
+SHA256: 759f8c948b2c29f7ce38572edda4205f06f6ad8a775f489d1009e99d666967e8
+Description: chromium-codecs-ffmpeg debug symbols
+Homepage: http://code.google.com/chromium/
+Description-md5: 7e8e74f91e0842ff27996a795a82b3de
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: chromium-codecs-ffmpeg-extra
+Priority: optional
+Section: universe/web
+Installed-Size: 3396
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Replaces: chromium-browser (<< 44), chromium-codecs-ffmpeg
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.1.4)
+Pre-Depends: dpkg (>= 1.15.6)
+Conflicts: chromium-browser (<< 44), chromium-codecs-ffmpeg
+Filename: pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-extra_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 899500
+MD5sum: e06346ed2beb37b113a95fc2cac42757
+SHA1: 554096938cbd7ed54e1fe7998a3ae28dc0b6273b
+SHA256: 49a642be61f13de188391ec6f856fc6e424b03bed0a241ad57fa34cda5e5291a
+Description: Extra ffmpeg codecs for the Chromium Browser
+Homepage: http://code.google.com/chromium/
+Description-md5: e25eff2efc99ff0ac68a4920e4d54635
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntukylin-desktop
+
+Package: chromium-codecs-ffmpeg-extra-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 9579
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: chromium-browser
+Version: 51.0.2704.79-0ubuntu0.16.04.1.1242
+Replaces: chromium-browser-dbg (<< 44), chromium-codecs-ffmpeg-dbg
+Depends: chromium-codecs-ffmpeg-extra (= 51.0.2704.79-0ubuntu0.16.04.1.1242)
+Pre-Depends: dpkg (>= 1.15.6)
+Conflicts: chromium-browser-dbg (<< 44), chromium-codecs-ffmpeg-dbg
+Filename: pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-extra-dbg_51.0.2704.79-0ubuntu0.16.04.1.1242_amd64.deb
+Size: 1782130
+MD5sum: 9f2ae20533b9b019723cc96a5bdf64bc
+SHA1: d786235471f02ee4d5fa69876b07c63449e64fe8
+SHA256: 63a92fd050bb226cb9debf22e2d086f647f3cd249d6a69ef39f13c54bda574f5
+Description: chromium-codecs-ffmpeg-extra debug symbols
+Homepage: http://code.google.com/chromium/
+Description-md5: 3002fac13fe9f771bfdcb0702c4ccc6c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: ctdb
+Priority: extra
+Section: universe/net
+Installed-Size: 1534
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: samba
+Version: 2:4.3.9+dfsg-0ubuntu0.16.04.2
+Depends: iproute2, lsb-base, psmisc, sudo, tdb-tools, time, init-system-helpers (>= 1.18~), libbsd0 (>= 0.0), libc6 (>= 2.14), libpopt0 (>= 1.14), libtalloc2 (>= 2.0.4~git20101213), libtdb1 (>= 1.3.0), libtevent0 (>= 0.9.16), samba-libs (= 2:4.3.9+dfsg-0ubuntu0.16.04.2)
+Recommends: ethtool
+Suggests: logrotate, lsof
+Filename: pool/universe/s/samba/ctdb_4.3.9+dfsg-0ubuntu0.16.04.2_amd64.deb
+Size: 427770
+MD5sum: dfdb2327a5533e846c033dcc91f7c5a3
+SHA1: 42d3b589bedd06049fede677311ebb2df917ac33
+SHA256: 1354694c16f451f8063080ff1a07e475ce8d5b84317c55b9d960c847718d6d99
+Description: clustered database to store temporary data
+Multi-Arch: foreign
+Homepage: http://www.samba.org
+Description-md5: 83dff66615250b53a0cd3df6fb3b9ea7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: dnsmasq
+Priority: optional
+Section: universe/net
+Installed-Size: 70
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Simon Kelley <simon@thekelleys.org.uk>
+Architecture: all
+Version: 2.75-1ubuntu0.16.04.1
+Depends: netbase, dnsmasq-base (>= 2.75-1ubuntu0.16.04.1), init-system-helpers (>= 1.18~)
+Suggests: resolvconf
+Conflicts: resolvconf (<< 1.15)
+Filename: pool/universe/d/dnsmasq/dnsmasq_2.75-1ubuntu0.16.04.1_all.deb
+Size: 15908
+MD5sum: 93242e3dba3b420e6b67af21b6de1c37
+SHA1: 46af4b5ca0a1d759589f56f698e6f4e294c917ae
+SHA256: 45ef554faa1f6653f8b46d304fcc0890eda02568c048775bb7e597fc49f74aae
+Description: Small caching DNS proxy and DHCP/TFTP server
+Description-md5: d4d0c88134cc703150a59b83cb68304c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: expat
+Priority: optional
+Section: universe/text
+Installed-Size: 54
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Architecture: amd64
+Version: 2.1.0-7ubuntu0.16.04.2
+Depends: libc6 (>= 2.14), libexpat1 (>= 2.0.1)
+Filename: pool/universe/e/expat/expat_2.1.0-7ubuntu0.16.04.2_amd64.deb
+Size: 13250
+MD5sum: 8801c73536f3d1a677fdde147101c5c1
+SHA1: 81473d69919d81af9968a3379322f2392d8c17fc
+SHA256: 2d12b2de401c75339a76bcb1cb840e4afa342bb61584d5e65b7eaddbba681187
+Description: XML parsing C library - example application
+Homepage: http://expat.sourceforge.net
+Description-md5: 946951e418841b66002f30694d1a0b72
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: extplorer
+Priority: optional
+Section: universe/web
+Installed-Size: 1341
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Thomas Goirand <zigo@debian.org>
+Architecture: all
+Version: 2.1.0b6+dfsg.3-4+deb7u3ubuntu0.1
+Depends: libapache2-mod-php | php-cgi, libjs-edit-area, libjs-extjs, libjs-yui, php-pear, php-net-ftp, php-auth-http, php-auth, php-geshi, php-compat, php-mail-mime, php-mail-mimedecode, php-http-webdav-server, php-services-json, php-mime-type
+Filename: pool/universe/e/extplorer/extplorer_2.1.0b6+dfsg.3-4+deb7u3ubuntu0.1_all.deb
+Size: 260780
+MD5sum: 2af896290c6ce6142949ad52b3e9ef3f
+SHA1: 6e5e4567a729af9f220e9b383041f4aeb5abd3b3
+SHA256: ec97ea938aa9b283a58ea7356025330046cca0fa61e117eb5d5a67b30aa6deaa
+Description: web file explorer and manager using Ext JS
+Homepage: http://extplorer.sourceforge.net/
+Description-md5: a4cf2c1a13efad8db9516e45906ac0a3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: firefox-globalmenu
+Priority: optional
+Section: universe/web
+Installed-Size: 158
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: firefox
+Version: 47.0+build3-0ubuntu0.16.04.1
+Depends: firefox
+Filename: pool/universe/f/firefox/firefox-globalmenu_47.0+build3-0ubuntu0.16.04.1_amd64.deb
+Size: 8330
+MD5sum: 0cc76ad5712c72e08a22d54a5f91ff7f
+SHA1: 006cdfd077224fd410247a5d1e2ba76c96938fc0
+SHA256: 2dc50cc6e3b4a9505b0ef31468fc4af0aed0713ac4123aae9ac74dcfc4ae89e5
+Description: Safe and easy web browser from Mozilla (transitional package)
+Description-md5: 1b267431605d90f28d4104239bf87ff8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: firefox-mozsymbols
+Priority: extra
+Section: universe/debug
+Installed-Size: 42724
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: firefox
+Version: 47.0+build3-0ubuntu0.16.04.1
+Filename: pool/universe/f/firefox/firefox-mozsymbols_47.0+build3-0ubuntu0.16.04.1_amd64.deb
+Size: 43236984
+MD5sum: 18ee2eab9cda879861f79852c04071f5
+SHA1: d2f704f6016b3300578c02e94d789ef3a1391754
+SHA256: 62f187cbf512d0aa0b6969fc76de99418debbd1a990057f938c5f3494b00d746
+Description: Safe and easy web browser from Mozilla - Breakpad symbols
+Description-md5: 1398643ad4fb0f820933502f6bba9816
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: firefox-testsuite
+Priority: optional
+Section: universe/web
+Installed-Size: 161
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: firefox
+Version: 47.0+build3-0ubuntu0.16.04.1
+Depends: firefox (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-af (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-an (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ar (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-as (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ast (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-az (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-be (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-bg (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-bn (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-br (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-bs (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ca (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-cak (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-cs (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-csb (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-cy (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-da (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-de (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-el (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-en (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-eo (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-es (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-et (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-eu (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-fa (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-fi (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-fr (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-fy (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ga (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-gd (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-gl (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-gn (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-gu (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-he (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-hi (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-hr (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-hsb (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-hu (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-hy (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-id (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-is (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-it (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ja (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ka (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-kk (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-km (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-kn (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ko (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ku (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-lg (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-lt (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-lv (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-mai (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-mk (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ml (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-mn (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-mr (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ms (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-nb (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-nl (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-nn (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-nso (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-oc (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-or (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-pa (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-pl (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-pt (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ro (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ru (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-si (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-sk (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-sl (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-sq (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-sr (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-sv (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-sw (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-ta (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-te (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-th (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-tr (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-uk (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-uz (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-vi (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-xh (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-zh-hans (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-zh-hant (= 47.0+build3-0ubuntu0.16.04.1), firefox-locale-zu (= 47.0+build3-0ubuntu0.16.04.1), python, dbus-x11, xvfb, make, notify-osd, metacity, language-pack-en-base, language-pack-es-base, language-pack-fr-base, language-pack-pt-base, fonts-arabeyes, fonts-kacst, fonts-takao-mincho, fonts-takao-gothic, fonts-wqy-zenhei | ttf-wqy-zenhei, fonts-arphic-uming, fonts-arphic-ukai | ttf-arphic-ukai, fonts-nanum, fonts-nanum-coding, fonts-unfonts-core, fonts-liberation, gnome-session, gnome-settings-daemon, ubuntu-settings, light-themes, unzip, hunspell-en-us, libgl1-mesa-dri
+Filename: pool/universe/f/firefox/firefox-testsuite_47.0+build3-0ubuntu0.16.04.1_amd64.deb
+Size: 9062
+MD5sum: d2335da22acdfc7049cea2903c3cdebc
+SHA1: 643745a8799b8e9d65b9a66857dcf3cc520250a7
+SHA256: e4778ed3c6682435815c5d90de49194770469815a9fe71ba8b1f025241ab5587
+Description: Safe and easy web browser from Mozilla - testsuite
+Description-md5: 1c5406dea364e8840846b9dacd3c8955
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: fixincludes
+Priority: optional
+Section: universe/devel
+Installed-Size: 208
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5 (5.3.1-14ubuntu2.1)
+Version: 1:5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gcc-5 (= 5.3.1-14ubuntu2.1), libc6 (>= 2.14)
+Filename: pool/universe/g/gcc-5/fixincludes_5.3.1-14ubuntu2.1_amd64.deb
+Size: 61862
+MD5sum: 899d7f3c0fe0ce14a4712ed97752f9c5
+SHA1: 6b51a5ef141084cd1c09a337aeba86a19924bd2c
+SHA256: 4485f33230fd7eaad1b1ae58d5d4df2c8e4e9c89062db88a7008a20b28a7d21b
+Description: Fix non-ANSI header files
+Homepage: http://gcc.gnu.org/
+Description-md5: 4eec63ec6a45894436866732b96c2698
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gcc-5-hppa64-linux-gnu
+Priority: optional
+Section: universe/devel
+Installed-Size: 27555
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Replaces: gcc-5-hppa64 (<< 5.2.1-22)
+Provides: gcc-5-hppa64
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4), binutils-hppa64-linux-gnu | binutils-hppa64
+Conflicts: gcc-3.3-hppa64 (<= 1:3.3.4-5), gcc-3.4-hppa64 (<= 3.4.1-3), gcc-4.7-hppa64 (<< 4.7.3-13), gcc-4.8-hppa64 (<< 4.8.2-22), gcc-4.9-hppa64 (<< 4.9.3-1)
+Filename: pool/universe/g/gcc-5/gcc-5-hppa64-linux-gnu_5.3.1-14ubuntu2.1_amd64.deb
+Size: 9066280
+MD5sum: 864bb39ed13cdd371468a1ab9e7d1eb1
+SHA1: 456ff2a7d26a5f7f0347e8a7145046ade14ee3a9
+SHA256: d7510c95a58bf0e89f15372586c7e27930c469f6b784e3a3ff7267fca29fa28f
+Description: GNU C compiler (cross compiler for hppa64)
+Homepage: http://gcc.gnu.org/
+Description-md5: 0ee0959bbc343ff940f7f385554ffc51
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gcc-5-locales
+Priority: optional
+Section: universe/devel
+Installed-Size: 24
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (>= 5.2.1-23), cpp-5 (>= 5.2.1-23)
+Recommends: gcc-5 (>= 5.2.1-23)
+Filename: pool/universe/g/gcc-5/gcc-5-locales_5.3.1-14ubuntu2.1_all.deb
+Size: 1012
+MD5sum: ea5fea7c9b473bd81bbfae345b9b66d4
+SHA1: bf434df4934c776e70f00129c3b772f281b430a0
+SHA256: bb54295c106fc9dccc5b33815fce058fa4f1235bfa26e0ac06a9e273d09849f3
+Description: GCC, the GNU compiler collection (native language support files)
+Homepage: http://gcc.gnu.org/
+Description-md5: eb5e72cb380341d4ed2ad2d24c34f31d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gcc-5-source
+Priority: optional
+Section: universe/devel
+Installed-Size: 82202
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: make, autoconf2.64, quilt, patchutils, gawk
+Filename: pool/universe/g/gcc-5/gcc-5-source_5.3.1-14ubuntu2.1_all.deb
+Size: 74512296
+MD5sum: 360e60669b72ed4364e2f9e3da5e6b9a
+SHA1: e3d28eba4d7bebddff8c2eafea8f0b0aaf21e6e9
+SHA256: 1b21d777eaab311cb511b064d520717108fb0fb5c0ed4fe36459b916d80e8810
+Description: Source of the GNU Compiler Collection
+Homepage: http://gcc.gnu.org/
+Description-md5: cb00049993a8c14b73bb041c050eb8c5
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gcc-5-test-results
+Priority: extra
+Section: universe/devel
+Installed-Size: 8325
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Replaces: g++-5 (<< 5.2.1-28)
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gcc-5-test-results_5.3.1-14ubuntu2.1_amd64.deb
+Size: 8508034
+MD5sum: 3f60b087f9bf76eb27ac7a0d471f1ad5
+SHA1: b804e29c98e27fc5c4f685b90c5d3a69eaa98908
+SHA256: 01bc9f836aca8961344d4cc8e56df641821d3bb4b54bae720eba7b76a5b86754
+Description: Test results for the GCC test suite
+Homepage: http://gcc.gnu.org/
+Description-md5: dc68b9fb54342c9f71afbc0efcf1ade0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gccgo-5
+Priority: optional
+Section: universe/devel
+Installed-Size: 70708
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Provides: go-compiler
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gcc-5 (= 5.3.1-14ubuntu2.1), libgo7 (>= 5.3.1-14ubuntu2.1), libc6-dev (>= 2.13-0ubuntu6), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: gccgo-5-doc, libgo7-dbg (>= 5.3.1-14ubuntu2.1)
+Conflicts: golang-go (<< 2:1.3.3-1ubuntu2)
+Filename: pool/universe/g/gcc-5/gccgo-5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 13166988
+MD5sum: bcb9e79bbe55228f7bb63159457989ea
+SHA1: 3801ebfcb5db6fa668948667d26101eec9276037
+SHA256: 4f8df5a589b5d3c8ac6ede1e73cd2ab2bd5e6cc55b309b3c96cd5ea4d40e198d
+Description: GNU Go compiler
+Homepage: http://gcc.gnu.org/
+Description-md5: 58c2a4ce4d3fe6815f7a6ee86b4db16d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gccgo-5-multilib
+Priority: optional
+Section: universe/devel
+Installed-Size: 65023
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gccgo-5 (= 5.3.1-14ubuntu2.1), gcc-5-multilib (= 5.3.1-14ubuntu2.1), lib32go7 (>= 5.3.1-14ubuntu2.1), libx32go7 (>= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gccgo-5-multilib_5.3.1-14ubuntu2.1_amd64.deb
+Size: 9125382
+MD5sum: 0bc8811f584073fcd8a04599d4e6d67f
+SHA1: 636fadd3ae0422a5a127a8de5afe5b8f5784ca92
+SHA256: 3e38c130dee52c4c16ec2b98c49529e36fb3380e27e1ba7337b0fae9358c0e3e
+Description: GNU Go compiler (multilib support)
+Homepage: http://gcc.gnu.org/
+Description-md5: 25e9a6929ec801c16cd933e711c7f1ed
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gcj-5-source
+Priority: optional
+Section: universe/java
+Installed-Size: 12642
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (>= 5.2.1-23), gcj-5-jdk (>= 5.2.1-23)
+Filename: pool/universe/g/gcc-5/gcj-5-source_5.3.1-14ubuntu2.1_all.deb
+Size: 11665258
+MD5sum: 60c9cc618f30b2fdcf983e9850b82525
+SHA1: f92c2a0cec2861e4d502c0732a3b5751878c831c
+SHA256: 09477e8b445b42bc1062c7017d2aa04d5b7cf47ea6c2fca2d9615481206846ec
+Description: GCJ java sources for use in IDEs like eclipse and netbeans
+Homepage: http://gcc.gnu.org/
+Description-md5: 4c55da0bb9881014d9bba36bde1b8806
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gdc-5
+Priority: optional
+Section: universe/devel
+Installed-Size: 23105
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Replaces: gdc (<< 4.4.6-5)
+Provides: d-compiler, d-v2-compiler, gdc
+Depends: gcc-5-base (>= 5.2.1-23), g++-5 (>= 5.2.1-23), libphobos-5-dev (>= 5.2.1-23), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Filename: pool/universe/g/gcc-5/gdc-5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 8241946
+MD5sum: 3e51496e698981abadea180ccb316e8e
+SHA1: 99afbbb1605ebb234a96ce0920a95ff75d7badc4
+SHA256: 6a324d2720628a648ed43372d44fb06677e9f981ef260b64cf67193ad703659f
+Description: GNU D compiler (version 2)
+Homepage: http://gcc.gnu.org/
+Description-md5: 864a87c3c14c54bac8e1eca97a6eb9a7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gdc-5-multilib
+Priority: optional
+Section: universe/devel
+Installed-Size: 6
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (>= 5.2.1-23), gdc-5 (= 5.3.1-14ubuntu2.1), gcc-5-multilib (= 5.3.1-14ubuntu2.1), lib32phobos-5-dev (= 5.3.1-14ubuntu2.1), libx32phobos-5-dev (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gdc-5-multilib_5.3.1-14ubuntu2.1_amd64.deb
+Size: 1000
+MD5sum: daf37e93b510fd5e240e8d9bb8b819b5
+SHA1: 4a8746ab69ba22534d2506acc49e1026d4f664c2
+SHA256: 1bf36673b3f426ce90542dfe8d68265d58ec20ad25f2fc6a04c667e74e543bad
+Description: GNU D compiler (version 2, multilib support)
+Homepage: http://gcc.gnu.org/
+Description-md5: 5bd997d730190f1d6151d11f184d631d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gimp
+Priority: optional
+Section: universe/graphics
+Installed-Size: 15618
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Architecture: amd64
+Version: 2.8.16-1ubuntu1.1
+Replaces: gimp-plugin-registry (<< 4.20120506)
+Provides: gimp-python
+Depends: libgimp2.0 (>= 2.8.16), libgimp2.0 (<= 2.8.16-z), gimp-data (>= 2.8.16), gimp-data (<= 2.8.16-z), python-gtk2 (>= 2.8.0), libgdk-pixbuf2.0-0 (>= 2.24.1), libaa1 (>= 1.4p5), libbabl-0.1-0 (>= 0.1.10), libbz2-1.0, libc6 (>= 2.15), libcairo2 (>= 1.10.2), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libexif12 (>= 0.6.21-1~), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.2.1), libgegl-0.3-0 (>= 0.3.0), libglib2.0-0 (>= 2.41.1), libgs9 (>= 8.61.dfsg.1), libgtk2.0-0 (>= 2.24.10), libgudev-1.0-0 (>= 146), libjasper1, libjpeg8 (>= 8c), liblcms2-2 (>= 2.2+git20110628), libmng2 (>= 1.0.10), libpango-1.0-0 (>= 1.29.4), libpangocairo-1.0-0 (>= 1.29.4), libpangoft2-1.0-0 (>= 1.29.4), libpng12-0 (>= 1.2.13-4), libpoppler-glib8 (>= 0.18.0), librsvg2-2 (>= 2.14.4), libtiff5 (>= 4.0.3), libwmf0.2-7 (>= 0.2.8.4), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxfixes3, libxmu6, libxpm4, zlib1g (>= 1:1.1.4), python:any (>= 2.6.6-7~), python2.7
+Recommends: ghostscript
+Suggests: gimp-help-en | gimp-help, gimp-data-extras, gvfs-backends, libasound2
+Breaks: gimp-plugin-registry (<< 4.20120506)
+Filename: pool/universe/g/gimp/gimp_2.8.16-1ubuntu1.1_amd64.deb
+Size: 3473480
+MD5sum: 6acfd19fa9a3fc6ec941d8758995167b
+SHA1: da70a7a1ee32d37875c495a62be4ebd254346ab6
+SHA256: 55b97d10ac9a1c8bc980bb02f5e244a3953730c6f0d0dc72bac3592d8bdbed3b
+Description: The GNU Image Manipulation Program
+Homepage: http://www.gimp.org/
+Description-md5: ad6dd18a09fb86ea4529ac53f33168b9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+Task: edubuntu-desktop-gnome, ubuntustudio-publishing, ubuntustudio-photography, ubuntustudio-graphics
+
+Package: gimp-data
+Priority: optional
+Section: universe/graphics
+Installed-Size: 45148
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Architecture: all
+Source: gimp
+Version: 2.8.16-1ubuntu1.1
+Replaces: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
+Recommends: gimp
+Conflicts: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
+Filename: pool/universe/g/gimp/gimp-data_2.8.16-1ubuntu1.1_all.deb
+Size: 7712418
+MD5sum: 39fa942d9f1e4e9085c5beb6751bd656
+SHA1: 4cc4234de76bc8dc823c05bfbc48ea348b9ed73a
+SHA256: 16f6eb1c518284b84bfe7ef827403a9b8ce925fe4d6d25fcb6f99eda02729eba
+Description: Data files for GIMP
+Homepage: http://www.gimp.org/
+Description-md5: f70d84aecd044d27d27535082275ce75
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+Task: edubuntu-desktop-gnome, ubuntustudio-publishing, ubuntustudio-photography, ubuntustudio-graphics
+
+Package: gimp-dbg
+Priority: extra
+Section: universe/graphics
+Installed-Size: 53931
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Architecture: amd64
+Source: gimp
+Version: 2.8.16-1ubuntu1.1
+Depends: gimp (= 2.8.16-1ubuntu1.1) | libgimp2.0 (= 2.8.16-1ubuntu1.1)
+Filename: pool/universe/g/gimp/gimp-dbg_2.8.16-1ubuntu1.1_amd64.deb
+Size: 11447124
+MD5sum: 304dfae1606055469a372d08681926ed
+SHA1: 04d72bedf176e582556a005e1afccd88a73d9086
+SHA256: eda594c0fd692a62872e99b56a7af5893c5ec4a9fd35f76d4fc576d964c852bc
+Description: Debugging symbols for GIMP
+Homepage: http://www.gimp.org/
+Description-md5: 2f9db4a750267fb9aae49799596bcd26
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gnat-5
+Priority: optional
+Section: universe/devel
+Installed-Size: 59533
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Replaces: dh-ada-library (<< 6.0), gnat (<< 4.6.1), gnat-4.6-base (= 4.6.4-2), gnat-4.9-base (= 4.9-20140330-1)
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gcc-5 (>= 5.2.1-23), libgnat-5 (>= 5.3.1-14ubuntu2.1), libc6-dev (>= 2.13-0ubuntu6), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libgnatprj5 (>= 5.3.1-14ubuntu2.1), libgnatvsn5 (>= 5.3.1-14ubuntu2.1), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: gnat-5-doc, ada-reference-manual-2012, gnat-5-sjlj
+Conflicts: gnat (<< 4.1), gnat-3.1, gnat-3.2, gnat-3.3, gnat-3.4, gnat-3.5, gnat-4.0, gnat-4.1, gnat-4.2, gnat-4.3, gnat-4.4, gnat-4.6, gnat-4.7, gnat-4.8, gnat-4.9
+Breaks: dh-ada-library (<< 6.0), gnat (<< 4.6.1), gnat-4.6-base (= 4.6.4-2), gnat-4.9-base (= 4.9-20140330-1)
+Filename: pool/universe/g/gcc-5/gnat-5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 13611264
+MD5sum: 17f08ec5a7044fe602a0c5f72147c019
+SHA1: 165cf1019e191cf5335d732d571988818dd249b9
+SHA256: 5fb883b937587e42af352e4c13be11e6a3c523f9ae9ca44560d32943625124ac
+Description: GNU Ada compiler
+Homepage: http://gcc.gnu.org/
+Description-md5: 8cebde0cd6b861927a7a457cacc8851f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gnat-5-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 4579
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: dpkg (>= 1.15.4) | install-info
+Suggests: gnat-5
+Conflicts: gnat-4.1-doc, gnat-4.2-doc, gnat-4.3-doc, gnat-4.4-doc, gnat-4.6-doc, gnat-4.9-doc
+Filename: pool/universe/g/gcc-5/gnat-5-doc_5.3.1-14ubuntu2.1_all.deb
+Size: 1153054
+MD5sum: dbbe3f56b2ccf504847ae388ee530479
+SHA1: 44d66e58fdee3344a4afb43b84ebde46f9f4fffd
+SHA256: b1f5a910ef2e8cedfd34dfb189d705fc0b561311e75e142d1fb8a055d2d50ec8
+Description: GNU Ada compiler (documentation)
+Homepage: http://gcc.gnu.org/
+Description-md5: 8139d6afb41aa31e17dbd1884d4ab725
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gnat-5-sjlj
+Priority: extra
+Section: universe/devel
+Installed-Size: 19272
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gnat-5 (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gnat-5-sjlj_5.3.1-14ubuntu2.1_amd64.deb
+Size: 2192830
+MD5sum: 49b8c843e49cea76481370b621514956
+SHA1: b83d046eb6eab907ad27f9312e046eb412260773
+SHA256: b640988c3709a4bbccb9ca39b94b04e2857eb10bb7c49d0ee051c567f86e1cb0
+Description: GNU Ada compiler (setjump/longjump runtime library)
+Homepage: http://gcc.gnu.org/
+Description-md5: 38183a5764143bf77935e8455d8574ce
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gobjc++-5
+Priority: optional
+Section: universe/devel
+Installed-Size: 22212
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Provides: objc++-compiler
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gobjc-5 (= 5.3.1-14ubuntu2.1), g++-5 (= 5.3.1-14ubuntu2.1), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4), libobjc-5-dev (= 5.3.1-14ubuntu2.1)
+Suggests: gobjc++-5-multilib, gcc-5-doc (>= 5.2.1-23)
+Filename: pool/universe/g/gcc-5/gobjc++-5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 8213584
+MD5sum: 89dc06944b1ef671415bac48029e57b2
+SHA1: 07a676a2a57f706c4de2bcfb324f3b5a7091d291
+SHA256: 986cbdcfe8eaf785eaa4c78424c0fd671c7ee56d05514c551be23219705f306e
+Description: GNU Objective-C++ compiler
+Homepage: http://gcc.gnu.org/
+Description-md5: b9baa94c6e3efdfa23b7927008258616
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gobjc++-5-multilib
+Priority: optional
+Section: universe/devel
+Installed-Size: 6
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gobjc++-5 (= 5.3.1-14ubuntu2.1), g++-5-multilib (= 5.3.1-14ubuntu2.1), gobjc-5-multilib (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gobjc++-5-multilib_5.3.1-14ubuntu2.1_amd64.deb
+Size: 964
+MD5sum: 61e5dc8a16fe540d622b9bc5d1044e88
+SHA1: c13846e011436c17be431c6a1f30862b60e30977
+SHA256: 558f218977e75f9b6b39343d982f6145ab0c79ea206954b98c4509b16eb9cefe
+Description: GNU Objective-C++ compiler (multilib support)
+Homepage: http://gcc.gnu.org/
+Description-md5: 4ebddb68adf8e3d2b7023dd3d5bac0b7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gobjc-5
+Priority: optional
+Section: universe/devel
+Installed-Size: 20705
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Provides: objc-compiler
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gcc-5 (= 5.3.1-14ubuntu2.1), libc6-dev (>= 2.13-0ubuntu6), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4), libobjc-5-dev (= 5.3.1-14ubuntu2.1)
+Suggests: gobjc-5-multilib, gcc-5-doc (>= 5.2.1-23), libobjc4-dbg (>= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gobjc-5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 7571576
+MD5sum: 6343df6306c4c9b0eaa1580ddeea5f32
+SHA1: 6ea1901c145aa406d4888032e9d81aa19dc07fa0
+SHA256: 625bcdb2f33bda1213ef172f8152297cc0b3a5cf14e07d1489a155fbd64f1ee2
+Description: GNU Objective-C compiler
+Homepage: http://gcc.gnu.org/
+Description-md5: ef51de6b57526dc4a161944678606486
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gobjc-5-multilib
+Priority: optional
+Section: universe/devel
+Installed-Size: 6
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gobjc-5 (= 5.3.1-14ubuntu2.1), gcc-5-multilib (= 5.3.1-14ubuntu2.1), lib32objc-5-dev (= 5.3.1-14ubuntu2.1), libx32objc-5-dev (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/gobjc-5-multilib_5.3.1-14ubuntu2.1_amd64.deb
+Size: 970
+MD5sum: 4fa29f17d54a2b0e418bbba06cdcb15b
+SHA1: 2c9a36ba53033d52348c7b5f82eab09471f30be4
+SHA256: d02b8488c99553b174b9b65e9cd666c6d1fb4fac3dba270079e216c320fa1fb1
+Description: GNU Objective-C compiler (multilib support)
+Homepage: http://gcc.gnu.org/
+Description-md5: b79f5c8e5ac0b4d1089b9028a80813f3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gtk-doc-tools
+Priority: optional
+Section: universe/gnome
+Installed-Size: 2770
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: gtk-doc
+Version: 1.25-1ubuntu1.1
+Depends: perl, python (>= 2.3), jade (>= 1.2.1-35), docbook-dsssl, docbook-xml (>= 4.3), docbook-xsl (>= 1.64.1.0), docbook-to-man, xsltproc (>= 1.1.15), gnome-common
+Recommends: pkg-config (>= 0.19.0)
+Suggests: dblatex
+Filename: pool/universe/g/gtk-doc/gtk-doc-tools_1.25-1ubuntu1.1_all.deb
+Size: 290994
+MD5sum: 2d22ff82e0ef7d8335d0773bc6dfb11f
+SHA1: a40ad72eb64ff5f1fb26e9fdab0768e2b9bf8456
+SHA256: d9eddaa229e0b58f640c5cad0a24aef26bc4536af9bd419aad9a2a6303154f00
+Description: GTK+ documentation tools
+Multi-Arch: foreign
+Homepage: http://www.gtk.org/gtk-doc/
+Description-md5: d81800b98624f248b7995144c6f0cbf1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: haproxy-doc
+Priority: extra
+Section: universe/doc
+Installed-Size: 2085
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HAProxy Maintainers <pkg-haproxy-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: haproxy
+Version: 1.6.3-1ubuntu0.1
+Depends: libjs-bootstrap (<< 4), libjs-jquery, libjs-sphinxdoc (>= 1.0)
+Filename: pool/universe/h/haproxy/haproxy-doc_1.6.3-1ubuntu0.1_all.deb
+Size: 297056
+MD5sum: 25205f912b7dab96ca4c32655ff9ce82
+SHA1: 89c4c0f137eee560268c2b2326b000ae71b5802a
+SHA256: 12fffeb281f03636bdacaafdc34f3cb40e298a0e24e7cf42c0d2b5c1f01957b8
+Description: fast and reliable load balancing reverse proxy (HTML documentation)
+Homepage: http://haproxy.1wt.eu/
+Description-md5: f72de64c8c07f125957ba405924efb5e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: kinit
+Priority: optional
+Section: universe/libs
+Installed-Size: 781
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 5.18.0-0ubuntu1.1
+Depends: libc6 (>= 2.15), libcap2 (>= 1:2.10), libkf5configcore5 (>= 4.97.0), libkf5coreaddons5 (>= 4.99.0), libkf5crash5 (>= 4.96.0), libkf5i18n5 (>= 4.97.0), libkf5kiocore5 (>= 4.96.0), libkf5kiowidgets5 (>= 4.96.0), libkf5service-bin, libkf5service5 (>= 4.96.0), libkf5windowsystem5 (>= 4.99.0), libqt5core5a (>= 5.5.0), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libstdc++6 (>= 4.1.1), libx11-6
+Filename: pool/universe/k/kinit/kinit_5.18.0-0ubuntu1.1_amd64.deb
+Size: 120350
+MD5sum: 3110c627903c94c5d812e37e8136041e
+SHA1: 16c2a759e5c05b947ad131da83dd4ec73cc5a530
+SHA256: 66f66382eb44523d85a100d4fb6deb72098c7eda13f09da79c857a3f07ae38de
+Description: process launcher to speed up launching KDE applications
+Homepage: https://projects.kde.org/projects/frameworks/kinit
+Description-md5: 597bc846f516146d5a2d0f6d47ede49b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: kubuntu-desktop, kubuntu-full, edubuntu-desktop-gnome, ubuntustudio-video
+
+Package: kinit-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 1401
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Source: kinit
+Version: 5.18.0-0ubuntu1.1
+Depends: kinit (= 5.18.0-0ubuntu1.1)
+Filename: pool/universe/k/kinit/kinit-dbg_5.18.0-0ubuntu1.1_amd64.deb
+Size: 1218462
+MD5sum: 4bac0251352e5f67568a2c1653d7f57f
+SHA1: 6bfa9edb14b8fb1e7174f488b376e7dcbeca6061
+SHA256: 6b684637cc16067ab673910691f8479f5ec0625cf4283d01be9e61f2ee2dcd49
+Description: process launcher to speed up launching KDE applications
+Homepage: https://projects.kde.org/projects/frameworks/kinit
+Build-Ids: 4bddf30cf5463893de64597b97c26ddc685fb5ef 4fffc8171932ccd9ba0dcd8f576387a37dafbec7 5deb516a1c1af7c24e9f3fa250e2e2fe074f231c 6ea776cc47253fc06b12d94f0a31763dc855915d 86bcdbab2bce090e24e3d9b0d47a390b1162c4bf 93a3819b68c68f4aa93d34d2ebd92bd27b96bd4c a40b96c9e1a0412bf5872beec79fc1344fee4956 c8917c5b52bb7d37885c0c142a504cf099754d68 cabf04f83be0ee79c3fdeee1473e9f14567d8ffc
+Description-md5: 84a7e482eb7be5dd012e7d3b8c6f9540
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: kinit-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 36
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Source: kinit
+Version: 5.18.0-0ubuntu1.1
+Depends: kinit (= 5.18.0-0ubuntu1.1)
+Filename: pool/universe/k/kinit/kinit-dev_5.18.0-0ubuntu1.1_amd64.deb
+Size: 6544
+MD5sum: e123bfc9bfffdb8f88dc03cb518b2f90
+SHA1: 6f60bc12922c7d81e06f90361e6909ec0f911f38
+SHA256: e5f5a0474246e312aff177d84f83fdd0a3c8677ec2e612ecbc16fc2d868db2b0
+Description: process launcher to speed up launching KDE applications
+Homepage: https://projects.kde.org/projects/frameworks/kinit
+Description-md5: 1e9fbe33a21a421c70b8a94bcf094a46
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: lib32go7
+Priority: optional
+Section: universe/libs
+Installed-Size: 21558
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Replaces: lib32go3
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), lib32gcc1 (>= 1:4.2), libc6-i386 (>= 2.10)
+Filename: pool/universe/g/gcc-5/lib32go7_5.3.1-14ubuntu2.1_amd64.deb
+Size: 5050968
+MD5sum: 8e9c212636f76e0989d236e0db57bc1f
+SHA1: 88bb9af09aacc469738d2cd74780a9323aa4bac0
+SHA256: 23e6836bc82beb5f1d3b1d8d1ad6db8015b2a53c0d28884881a7509b8d5f2924
+Description: Runtime library for GNU Go applications (32bit)
+Homepage: http://gcc.gnu.org/
+Description-md5: 7174520aedfeba49e54b8c36f55b7e95
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: lib32go7-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 6
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), lib32go7 (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/lib32go7-dbg_5.3.1-14ubuntu2.1_amd64.deb
+Size: 946
+MD5sum: 9751b82a71bc2c2c03d46cd136b2215c
+SHA1: cc6da7dd10eeea4254b993188571d1de849830e6
+SHA256: fccd00b6e3549d421f00abab21eee0f2aaa60bcc9a3faa773391d9a5a5d0f3da
+Description: Runtime library for GNU Go applications (32 bit debug symbols)
+Homepage: http://gcc.gnu.org/
+Description-md5: c72834060f6b473c88c959fce8644a48
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgd-tools
+Priority: optional
+Section: universe/graphics
+Installed-Size: 147
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: libgd2
+Version: 2.1.1-4ubuntu0.16.04.1
+Depends: libc6 (>= 2.7), libgd3 (>= 2.1.0~alpha~), perl
+Suggests: libgd-dev
+Filename: pool/universe/libg/libgd2/libgd-tools_2.1.1-4ubuntu0.16.04.1_amd64.deb
+Size: 17476
+MD5sum: b855ca56edfab7864075d89c191411e5
+SHA1: a086c8c9e44dca7ed60dc5e33169c760e1cdb801
+SHA256: 6bee8d3acedf15d8320b32c84d3b7653a51f36939554010c2539e069e517ddc8
+Description: GD command line tools and example code
+Homepage: http://www.libgd.org/
+Description-md5: a44edd93634f43d7184a7456c237f804
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgimp2.0
+Priority: optional
+Section: universe/libs
+Installed-Size: 5002
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Architecture: amd64
+Source: gimp
+Version: 2.8.16-1ubuntu1.1
+Depends: libc6 (>= 2.15), libcairo2 (>= 1.10.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk2.0-0 (>= 2.24.10), libpango-1.0-0 (>= 1.29.4), libpangocairo-1.0-0 (>= 1.29.4)
+Recommends: gimp-data (>= 2.8.16), gimp-data (<= 2.8.16-z)
+Filename: pool/universe/g/gimp/libgimp2.0_2.8.16-1ubuntu1.1_amd64.deb
+Size: 775448
+MD5sum: f94d1fa8ff02505522c986abd5fcedc2
+SHA1: 834605f6ec965c1e0f56c4bf57ff803adebd72e3
+SHA256: f06fa36099f9e413dcaedf19df23074ae0ed855b99cc44771f76554c527f6018
+Description: Libraries for the GNU Image Manipulation Program
+Homepage: http://www.gimp.org/
+Description-md5: 87c9f62281987fda19082f1b5cc2c95c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+Task: edubuntu-desktop-gnome, ubuntustudio-publishing, ubuntustudio-photography, ubuntustudio-graphics
+
+Package: libgimp2.0-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 1844
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Architecture: amd64
+Source: gimp
+Version: 2.8.16-1ubuntu1.1
+Depends: libc6 (>= 2.4), libgimp2.0 (= 2.8.16-1ubuntu1.1), libglib2.0-0 (>= 2.30.2), libgtk2.0-dev (>= 2.12.5), pkg-config
+Suggests: libgimp2.0-doc
+Filename: pool/universe/g/gimp/libgimp2.0-dev_2.8.16-1ubuntu1.1_amd64.deb
+Size: 85918
+MD5sum: e6f141f12e0043aecdcf1afc2b3748f6
+SHA1: 054d27130b37842f78a681f5b73f513b77a7fda6
+SHA256: 4faf800793953f7dc1f11f0952a9fc4e2852c686517db23495b226ba49f59af6
+Description: Headers and other files for compiling plugins for GIMP
+Homepage: http://www.gimp.org/
+Description-md5: c7c7d24560c6f749d332154868167ed5
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgimp2.0-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 7040
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ari Pollak <ari@debian.org>
+Architecture: all
+Source: gimp
+Version: 2.8.16-1ubuntu1.1
+Depends: lynx | www-browser
+Filename: pool/universe/g/gimp/libgimp2.0-doc_2.8.16-1ubuntu1.1_all.deb
+Size: 351452
+MD5sum: cf500b11e2a6fd7dc67eee4dbc042677
+SHA1: 00b875897f02e5f4182128c1fc395dc0dc9d4c13
+SHA256: c725323cbd85db37bf8b4a380fe4e6872ff34bd53d95c4a099a53afddc902500
+Description: Developers' Documentation for the GIMP library
+Homepage: http://www.gimp.org/
+Description-md5: 8acaa3767b69bc8f021740c983e4e23a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnat-5
+Priority: optional
+Section: universe/libs
+Installed-Size: 3706
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libc6 (>= 2.15), libgcc1 (>= 1:4.2)
+Filename: pool/universe/g/gcc-5/libgnat-5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 927786
+MD5sum: be05bfecbcc2372427a8689f20e89140
+SHA1: 789869b5ef4aeceab559978d7e609d284674b155
+SHA256: e4dbbe5d2752dffd229779972d84d7ed8b47bd45d9e2ac6c14c532741349c0bb
+Description: runtime for applications compiled with GNAT (shared library)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: 27cdab3b846cfe71a546e1fbdc98570c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnat-5-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 8574
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libgnat-5 (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/libgnat-5-dbg_5.3.1-14ubuntu2.1_amd64.deb
+Size: 1713770
+MD5sum: 98388536cd963ac118eaac7cbce25a29
+SHA1: 6d2db5dabe89f182b2e58b70935f78ed2038908f
+SHA256: 205a01d5d304cf16a6146c8e6f388b84979eb1975a013048cf455cc10dbf8663
+Description: runtime for applications compiled with GNAT (debugging symbols)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: a1f30e9b04fb19502b1c456fd0019eb1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnatprj5
+Priority: optional
+Section: universe/libs
+Installed-Size: 2329
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libgnat-5 (= 5.3.1-14ubuntu2.1), libgnatvsn5 (= 5.3.1-14ubuntu2.1), libc6 (>= 2.14), libgcc1 (>= 1:3.0)
+Filename: pool/universe/g/gcc-5/libgnatprj5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 652192
+MD5sum: 184bd039c1617afeebf976a1813cb90b
+SHA1: 7875a6993d43b19f263f5ef2a15a3ad8f1929370
+SHA256: 2bde9a5fe86cefb6ff1d80bf02f21b1400b0b5799787b9f6581d4fc4ee2df5bd
+Description: GNU Ada compiler Project Manager (shared library)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: cf808c029e0061472cc5f696126966f0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnatprj5-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 7245
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libgnatprj5 (= 5.3.1-14ubuntu2.1)
+Suggests: gnat
+Filename: pool/universe/g/gcc-5/libgnatprj5-dbg_5.3.1-14ubuntu2.1_amd64.deb
+Size: 1501720
+MD5sum: 37f72714c930d744201ed1ad1fa6f4fa
+SHA1: 7784819cdc03f9846af0a086b6a0fd3b7ea3e526
+SHA256: a8223c3b57b4df441b3607236d61e04225043ddf56a046c79276eb6d398a9b25
+Description: GNU Ada compiler Project Manager (debugging symbols)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: 0eabb3b5fbe5e4f083c3f0baf7b6a80b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnatprj5-dev
+Priority: extra
+Section: universe/libdevel
+Installed-Size: 24780
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gnat-5 (= 5.3.1-14ubuntu2.1), libgnatprj5 (= 5.3.1-14ubuntu2.1), libgnatvsn5-dev (= 5.3.1-14ubuntu2.1)
+Conflicts: libgnatprj-dev (<< 5), libgnatprj4.1-dev, libgnatprj4.3-dev, libgnatprj4.4-dev, libgnatprj4.5-dev, libgnatprj4.6-dev, libgnatprj4.9-dev
+Filename: pool/universe/g/gcc-5/libgnatprj5-dev_5.3.1-14ubuntu2.1_amd64.deb
+Size: 3263232
+MD5sum: 57ddd68dd460d6a72d513eff9bfc8b5a
+SHA1: 21ab3c1d730fe530fd2f3bbdfe8b6a7e1cfa685f
+SHA256: 4ca41dbcd3053b6fd4325b28ac9b53050b9e3605727f8121cf38fbf04a6215e4
+Description: GNU Ada compiler Project Manager (development files)
+Homepage: http://gcc.gnu.org/
+Description-md5: ee8c8bb38216ee28da6c5f1eb6380715
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnatvsn5
+Priority: optional
+Section: universe/libs
+Installed-Size: 1176
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libgnat-5 (= 5.3.1-14ubuntu2.1), libc6 (>= 2.14), libgcc1 (>= 1:3.0)
+Filename: pool/universe/g/gcc-5/libgnatvsn5_5.3.1-14ubuntu2.1_amd64.deb
+Size: 292514
+MD5sum: 707da09b9dbe32ed5a1b9d594c99bf25
+SHA1: 41e899169f588980c3138050395be9a3845e26fc
+SHA256: 5810ca7be83ebd883087948cd90a32bf05f13619768988337a57d8d1f1104492
+Description: GNU Ada compiler selected components (shared library)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: 75e330fcf9a585cbfe2857d4468e3c84
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnatvsn5-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 2313
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libgnatvsn5 (= 5.3.1-14ubuntu2.1)
+Suggests: gnat
+Filename: pool/universe/g/gcc-5/libgnatvsn5-dbg_5.3.1-14ubuntu2.1_amd64.deb
+Size: 474238
+MD5sum: 64bb28fdf1d51ef455bc7e5d24b1d96f
+SHA1: 291f2fc0cb9c4f4dccacbe9fcd65a59b491c408a
+SHA256: 58de73f3a2ef2ff04bb560ddf24d62e152dac5fcf2d1cc8ddcabe6538af3c99d
+Description: GNU Ada compiler selected components (debugging symbols)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: 814414c51c0b951882f9da1be21702ba
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgnatvsn5-dev
+Priority: extra
+Section: universe/libdevel
+Installed-Size: 11436
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), gnat-5 (= 5.3.1-14ubuntu2.1), libgnatvsn5 (= 5.3.1-14ubuntu2.1)
+Conflicts: libgnatvsn-dev (<< 5), libgnatvsn4.1-dev, libgnatvsn4.3-dev, libgnatvsn4.4-dev, libgnatvsn4.5-dev, libgnatvsn4.6-dev, libgnatvsn4.9-dev
+Filename: pool/universe/g/gcc-5/libgnatvsn5-dev_5.3.1-14ubuntu2.1_amd64.deb
+Size: 1470012
+MD5sum: a05956ec5ea41e8d31abac3c58cc9be7
+SHA1: 653974dda1e974ad28a5c01e6466745719d58bbe
+SHA256: bccc193a46759dbaa0ee37eec3da97b64f6efad7559e04dac166853fb8692204
+Description: GNU Ada compiler selected components (development files)
+Homepage: http://gcc.gnu.org/
+Description-md5: fa344c0d231c640dd6ef6c54f6b9640a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libgo7-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 6
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libgo7 (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/libgo7-dbg_5.3.1-14ubuntu2.1_amd64.deb
+Size: 948
+MD5sum: 8c2feacca34b6f339d57f05bb88dec67
+SHA1: fa100f0b579d74dfd39bd07bc1649566b52b0925
+SHA256: 3110c2683c6292f6bfff6efb0f9da8020747835c2d9fe336bcdc602e63e620b2
+Description: Runtime library for GNU Go applications (debug symbols)
+Multi-Arch: same
+Homepage: http://gcc.gnu.org/
+Description-md5: e9237330081a278c3cbccde9c5c63b3a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: libimobiledevice-utils
+Priority: optional
+Section: universe/utils
+Installed-Size: 378
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: gtkpod Maintainers <pkg-gtkpod-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: libimobiledevice
+Version: 1.2.0+dfsg-3~ubuntu0.2
+Depends: libc6 (>= 2.15), libgcrypt20 (>= 1.6.1), libgnutls30 (>= 3.4.0), libimobiledevice6 (>= 1.2.0), libplist3 (>= 1.11), libtasn1-6 (>= 4.5), libusbmuxd4 (>= 1.0.10)
+Filename: pool/universe/libi/libimobiledevice/libimobiledevice-utils_1.2.0+dfsg-3~ubuntu0.2_amd64.deb
+Size: 80686
+MD5sum: 90df61e1658cbd008d909b8c46b2695d
+SHA1: 83568c432daa4ccc6f435a0faeb155476b4c917e
+SHA256: cd6990753d5b06282ead0060ff320f7334eb89b1fc1c12a5d38c927e533e2d1f
+Description: Library for communicating with iPhone and iPod Touch devices
+Homepage: http://libimobiledevice.org/
+Description-md5: 67c848cadcb0e4665fbbe126820e4bd8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: ubuntu-mate-desktop
+
+Package: libmariadbd-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 30030
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: libmysqld-dev
+Depends: libmariadbd18 (= 10.0.25-0ubuntu0.16.04.1)
+Breaks: libmysqld-dev
+Filename: pool/universe/m/mariadb-10.0/libmariadbd-dev_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 4724930
+MD5sum: 18b7e40b63e6ced6ec4616e4b36a90b7
+SHA1: 6f1fd1ed532228d0bc6b0dbcbb7e1b52d7bbbe40
+SHA256: bd17b95ae21ba5a753a501850f9775667b5604ce070a1a140c09b3b65679cce7
+Description: MariaDB embedded database, development files
+Homepage: http://mariadb.org/
+Description-md5: f1579889611a2ce406c3c321e37d32d9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libmariadbd18
+Priority: optional
+Section: universe/libs
+Installed-Size: 15361
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: libmariadbd-dev (<< 10.0.25-0ubuntu0.16.04.1), libmysqld-dev
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.17), libpcre3, libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.0)
+Breaks: libmariadbd-dev (<< 10.0.25-0ubuntu0.16.04.1), libmysqld-dev
+Filename: pool/universe/m/mariadb-10.0/libmariadbd18_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 3870350
+MD5sum: eb0381a16539a0ed266ff3988a95578b
+SHA1: 449d1a408dbb0f777d8f3792cf1f5c9a25f3d468
+SHA256: 1c82fb14527a305e7199d862495b28b80aec8278ef2ec0a5918fb1a31a16e24b
+Description: MariaDB embedded database
+Multi-Arch: same
+Homepage: http://mariadb.org/
+Description-md5: b71218845912e72ccdc4b53a9a6e8bf3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libndp-tools
+Priority: optional
+Section: universe/net
+Installed-Size: 33
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Andrew Ayer <agwa@andrewayer.name>
+Architecture: amd64
+Source: libndp
+Version: 1.4-2ubuntu0.16.04.1
+Depends: libndp0 (= 1.4-2ubuntu0.16.04.1), libc6 (>= 2.15)
+Filename: pool/universe/libn/libndp/libndp-tools_1.4-2ubuntu0.16.04.1_amd64.deb
+Size: 8724
+MD5sum: 76c5817ec6d5c3a90071c92b15131eda
+SHA1: 083a0c354f87fe5cc14fd31443999eb90f5f935e
+SHA256: 002d56b49a9ed2a885dfdf0a5bb347ebddc8ca2cb023dbad0e8c1a2ea83f3529
+Description: Library for Neighbor Discovery Protocol (tools)
+Homepage: http://libndp.org
+Description-md5: 1746febcf3808f082d79e52c552895b8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libnss-winbind
+Priority: optional
+Section: universe/net
+Installed-Size: 141
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: samba
+Version: 2:4.3.9+dfsg-0ubuntu0.16.04.2
+Replaces: libpam-winbind (<< 2:3.6.5-2), samba (<= 2.2.3-2), winbind (<< 2:3.5.11~dfsg-3), winbind4
+Depends: samba-common (= 2:4.3.9+dfsg-0ubuntu0.16.04.2), winbind (= 2:4.3.9+dfsg-0ubuntu0.16.04.2), libbsd0 (>= 0.0), libc6 (>= 2.14), libtalloc2 (>= 2.0.4~git20101213), libwbclient0 (= 2:4.3.9+dfsg-0ubuntu0.16.04.2), samba-libs (= 2:4.3.9+dfsg-0ubuntu0.16.04.2)
+Pre-Depends: dpkg (>= 1.15.6~)
+Suggests: libpam-winbind
+Breaks: libpam-winbind (<< 2:3.6.5-2), winbind (<< 2:3.5.11~dfsg-3)
+Filename: pool/universe/s/samba/libnss-winbind_4.3.9+dfsg-0ubuntu0.16.04.2_amd64.deb
+Size: 12306
+MD5sum: 5ec10a204d511b6af65710ece7388e62
+SHA1: 7e4a4ed0538e77cf8eb76af923e4336a6254b316
+SHA256: bf839b1bf516a301380f25ac6e25dff9ebc78b01b0212728a786fddd11bb6ace
+Description: Samba nameservice integration plugins
+Multi-Arch: same
+Homepage: http://www.samba.org
+Description-md5: 223d38d764a9bb35ad3be4c8d048957d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libpam-sshauth
+Priority: extra
+Section: universe/admin
+Installed-Size: 53
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: LTSP Debian Maintainers <pkg-ltsp-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 0.3.1-1ubuntu2
+Depends: libc6 (>= 2.8), libpam0g (>= 0.99.7.1), libssh2-1 (>= 1.2.8)
+Filename: pool/universe/libp/libpam-sshauth/libpam-sshauth_0.3.1-1ubuntu2_amd64.deb
+Size: 15546
+MD5sum: c4a92cb63ce5bb82a63f9b3da997d2dc
+SHA1: 19f760a5966d97db444208b99d398a505f72cf8d
+SHA256: ece1e1d1eea38b77471737f7d2c5e9788f38369a36e0b32fe37f58f7ee636072
+Description: authenticate using an SSH server
+Description-md5: 46cb70cdcce955079662f4e1d8bc8e6b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libpam-winbind
+Priority: optional
+Section: universe/net
+Installed-Size: 174
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: samba
+Version: 2:4.3.9+dfsg-0ubuntu0.16.04.2
+Replaces: samba (<= 2.2.3-2), samba-doc (<< 2:4.0.5~), winbind (<< 2:3.5.11~dfsg-3), winbind4
+Depends: libpam-runtime (>= 1.0.1-6), libpam0g (>= 1.1.3-2~), samba-common (= 2:4.3.9+dfsg-0ubuntu0.16.04.2), winbind (= 2:4.3.9+dfsg-0ubuntu0.16.04.2), libbsd0 (>= 0.0), libc6 (>= 2.14), libtalloc2 (>= 2.0.4~git20101213), libwbclient0 (>= 2:4.0.3+dfsg1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Suggests: libnss-winbind
+Conflicts: samba-doc (<< 2:4.0.5~)
+Breaks: winbind (<< 2:3.5.11~dfsg-3)
+Filename: pool/universe/s/samba/libpam-winbind_4.3.9+dfsg-0ubuntu0.16.04.2_amd64.deb
+Size: 28292
+MD5sum: f573e8cb57405733ead5795b977a34dc
+SHA1: 93ec59d0111662401767b263fbac0be3a4add73d
+SHA256: f317d7189a3d7e99ea06c39b88b5103e1eacf7708638ae8f39302776b83e9922
+Description: Windows domain authentication integration plugin
+Multi-Arch: same
+Homepage: http://www.samba.org
+Description-md5: fba9076429d270720a91324cff071fed
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libphp7.0-embed
+Priority: optional
+Section: universe/php
+Installed-Size: 4186
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: libphp-embed, phpapi-20151012
+Depends: libmagic1, mime-support, php7.0-common (= 7.0.4-7ubuntu2.1), tzdata, ucf, libc6 (>= 2.15), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Suggests: php-pear
+Conflicts: libphp5-embed (<< 5.6.16+dfsg-4~)
+Filename: pool/universe/p/php7.0/libphp7.0-embed_7.0.4-7ubuntu2.1_amd64.deb
+Size: 1216090
+MD5sum: 8e56c2695e2152631d31247cfe69bbca
+SHA1: ae363ecdcbdde18865898f1be00b0861688bf059
+SHA256: 9858b5f387976ea667fc7200ebab31ab554e2d42090faf9b74c07fc1681dcc00
+Description: HTML-embedded scripting language (Embedded SAPI library)
+Homepage: http://www.php.net/
+Description-md5: 36e972824d22a774161a2307b46da6a3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice
+Priority: optional
+Section: universe/editors
+Installed-Size: 17
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: amd64
+Version: 1:5.1.4-0ubuntu1
+Depends: fonts-sil-gentium-basic, libreoffice-base, libreoffice-calc, libreoffice-core (= 1:5.1.4-0ubuntu1), libreoffice-draw, libreoffice-impress, libreoffice-math, libreoffice-report-builder-bin, libreoffice-writer, libreoffice-avmedia-backend-gstreamer, fonts-dejavu, libreoffice-java-common (>= 1:5.1.4~), python3-uno (>= 4.4.0~beta2)
+Recommends: fonts-liberation | ttf-mscorefonts-installer, libpaper-utils, libreoffice-gnome | libreoffice-kde
+Suggests: cups-bsd, hunspell-dictionary, hyphen-hyphenation-patterns, iceweasel | firefox | icedove | thunderbird | iceape-browser | mozilla-browser, imagemagick | graphicsmagick-imagemagick-compat, libgl1, libreoffice-grammarcheck, libreoffice-help-5.1, libreoffice-l10n-5.1, libsane, libxrender1, myspell-dictionary, mythes-thesaurus, openclipart2-libreoffice | openclipart-libreoffice, pstoedit, unixodbc, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-bad, gstreamer1.0-libav, default-jre | gcj-jre | openjdk-7-jre | openjdk-6-jre | sun-java5-jre | sun-java6-jre | java5-runtime | jre, libreoffice-officebean
+Conflicts: libreoffice-dev (<= 1:5.0.3~rc1-2), libreoffice-dev-doc (<= 1:5.0.3~rc1-2)
+Filename: pool/universe/libr/libreoffice/libreoffice_5.1.4-0ubuntu1_amd64.deb
+Size: 3966
+MD5sum: 3f9d8d3b2de95cf1f4ace0dba1838158
+SHA1: 7ef59fa60b1447a7a387b323a0398874d150e709
+SHA256: c23ac36e14b2b51f18557350f307571db06cadf1167db7983a539a04f4ec13f3
+Description: office productivity suite (metapackage)
+Homepage: http://www.libreoffice.org
+Description-md5: 8d0b0c942da2b380f38eaf9234561571
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-kde
+Priority: optional
+Section: universe/kde
+Installed-Size: 291
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: amd64
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Replaces: libreoffice-core (= 1:3.5.0~beta2-1), libreoffice-core (= 1:4.3.0~beta1-1), openoffice.org-kde (<< 1:3.3.0~)
+Depends: libreoffice-core (= 1:5.1.4-0ubuntu1), kde-runtime (>> 4:4.10), libc6 (>= 2.4), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.15.0), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.3.4), libkfile4 (>= 4:4.3.4), libkio5 (>= 4:4.3.4), libqtcore4 (>= 4:4.8), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 5), libx11-6, uno-libs3 (>= 4.4.0~alpha), ure
+Recommends: libreoffice-style-breeze
+Suggests: kmail, konqueror
+Filename: pool/universe/libr/libreoffice/libreoffice-kde_5.1.4-0ubuntu1_amd64.deb
+Size: 86088
+MD5sum: d86bcaad351bff27ba1652a5c17ac3a1
+SHA1: 3c2dbd33284ca94f7ee7b7b2d471f48f16ce73d1
+SHA256: bb19c025f47e5a3616d2326a87b9cbd49df2e7087d7ed5e729acdc655a62dc17
+Description: office productivity suite -- KDE integration
+Enhances: libreoffice
+Homepage: http://www.libreoffice.org
+Description-md5: 11be113a48ef25e49b3cb824c072798a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: kubuntu-desktop, kubuntu-full
+
+Package: libreoffice-librelogo
+Priority: optional
+Section: universe/misc
+Installed-Size: 263
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Depends: libreoffice-core (>= 1:3.4~), libreoffice-script-provider-python, libreoffice-writer
+Filename: pool/universe/libr/libreoffice/libreoffice-librelogo_5.1.4-0ubuntu1_all.deb
+Size: 52124
+MD5sum: fc1d350f72981e4371a1faf92c499713
+SHA1: b86ee3cb2aa75b1d0dbe7fbfe38453039c45dab2
+SHA256: 269e0565c684c7865a073ee28a5b9b3d1cbcadf3ce1586d11580639fbd475769
+Description: Logo-like progamming language for LibreOffice
+Homepage: http://librelogo.org
+Description-md5: 71fe1726b20ed521137fe79b55cd374b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-mysql-connector
+Priority: optional
+Section: universe/misc
+Installed-Size: 657
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: amd64
+Source: libreoffice (1:5.1.4-0ubuntu1)
+Version: 1.0.2+LibO5.1.4-0ubuntu1
+Depends: libreoffice-core, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libmysqlcppconn7v5, libstdc++6 (>= 5.2), uno-libs3 (>= 4.4.0~alpha), ure
+Suggests: mariadb-server | mysql-server (>= 5.1)
+Conflicts: libreoffice-common (<< 1:3.5~), libreoffice-core (<< 1:3.5~), ure (<< 1.5.1+OOo3.1.1-15)
+Filename: pool/universe/libr/libreoffice/libreoffice-mysql-connector_1.0.2+LibO5.1.4-0ubuntu1_amd64.deb
+Size: 131356
+MD5sum: 42ae1e29035ffb45b00edc8d376b31f0
+SHA1: bea564beedcc68dce1cbcb78b08a33b2ad9c549b
+SHA256: 49eaefddb7c55682b9d431164581ea19368867375fa17588413375f035db557d
+Description: MariaDB/MySQL Connector extension for LibreOffice
+Homepage: http://extensions.services.openoffice.org/en/project/mysql_connector
+Description-md5: a911b8b20116e62af2fea609f2117a03
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-report-builder
+Priority: optional
+Section: universe/misc
+Installed-Size: 2542
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Provides: libreoffice-reportdesigner
+Depends: libreoffice-core, libreoffice-java-common, libreoffice-report-builder-bin (>= 1:5.1.4), libreoffice-common (= 1:5.1.4-0ubuntu1), libcommons-logging-java (>= 1.1.1-9)
+Pre-Depends: default-jre | gcj-jre | openjdk-7-jre | openjdk-6-jre | sun-java5-jre | sun-java6-jre | java5-runtime | jre
+Conflicts: libreoffice-common (<< 1:3.5~), libreoffice-core (<< 1:3.5~), ure (<< 1.5.1+OOo3.1.1-15)
+Filename: pool/universe/libr/libreoffice/libreoffice-report-builder_5.1.4-0ubuntu1_all.deb
+Size: 2070814
+MD5sum: 671d4dcb453b97cae21e73932589ca0f
+SHA1: cef776e501e80f336e64c7b2e0776675b8f1fbd9
+SHA256: 06f6af8260175da6fcf1d201a1c1d5a3302ead1ff24342382635169360ba3235
+Description: LibreOffice component for building database reports
+Enhances: libreoffice-base
+Homepage: http://www.libreoffice.org
+Description-md5: 8239ceaa4ebaf25c2b15325d48eb907c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-report-builder-bin
+Priority: optional
+Section: universe/misc
+Installed-Size: 3069
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: amd64
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Depends: libreoffice-base, libreoffice-core (= 1:5.1.4-0ubuntu1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Filename: pool/universe/libr/libreoffice/libreoffice-report-builder-bin_5.1.4-0ubuntu1_amd64.deb
+Size: 761496
+MD5sum: 19f3f20628bf54626d9ff0ceecd334ee
+SHA1: a2b2631f10cfeb1e5dbe53a397d1489f08d3c850
+SHA256: d328383000940566feffe7e7f48b8340dda0f9f6fcfd0cebbcd87dc4cf9bb29b
+Description: LibreOffice component for building database reports -- libraries
+Homepage: http://www.libreoffice.org
+Description-md5: 4de9416ad29a7951be39b95f83055e84
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-script-provider-bsh
+Priority: optional
+Section: universe/java
+Installed-Size: 94
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Replaces: libreoffice-java-common (<< 1:3.4~)
+Depends: libreoffice-common (= 1:5.1.4-0ubuntu1), libreoffice-core (>= 1:3.5.0~alpha0~), libreoffice-java-common, libbsh-java, default-jre | gcj-jre | openjdk-7-jre | openjdk-6-jre | sun-java5-jre | sun-java6-jre | java5-runtime | jre
+Filename: pool/universe/libr/libreoffice/libreoffice-script-provider-bsh_5.1.4-0ubuntu1_all.deb
+Size: 29348
+MD5sum: bcce68b13da2f947729c3937f99e4535
+SHA1: 5ca1c0a7ecf28dfe302ab473f786d529a761d6f0
+SHA256: 15cb6e59cc774a6fa0fa3c74ba790223826612fd882b46351e174c7452cf17f3
+Description: BeanShell script support provider for LibreOffice scripting framework
+Homepage: http://www.libreoffice.org
+Description-md5: 720bef09745ce9eb4902772fb5c437d8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-script-provider-js
+Priority: optional
+Section: universe/web
+Installed-Size: 676
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Replaces: libreoffice-common (<< 1:3.4~)
+Depends: libreoffice-common (= 1:5.1.4-0ubuntu1), libreoffice-core (>= 1:3.5.0~alpha0~), libreoffice-java-common, default-jre | gcj-jre | openjdk-7-jre | openjdk-6-jre | sun-java5-jre | sun-java6-jre | java5-runtime | jre
+Filename: pool/universe/libr/libreoffice/libreoffice-script-provider-js_5.1.4-0ubuntu1_all.deb
+Size: 614220
+MD5sum: ddcb063b5533877fc47bb913806fd139
+SHA1: f6c444cf1271cee9b6c55366cee019be2f373410
+SHA256: ac368b20f3b4f30ec5be867daef0327ae2e05235f8856347c26eb7d93473da4e
+Description: JavaScript script support provider for LibreOffice scripting framework
+Homepage: http://www.libreoffice.org
+Description-md5: 41b18315e9be2aaa24a28415b907118e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-script-provider-python
+Priority: optional
+Section: universe/python
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Replaces: python-uno (<< 1:3.5.2-2), python3-uno (<< 1:3.5.2-2)
+Depends: libreoffice-common (= 1:5.1.4-0ubuntu1), libreoffice-core (>= 1:3.5.0~alpha0~), python3-uno (>= 4.4.0~beta2)
+Breaks: libreoffice-common (<< 1:3.5~), libreoffice-core (<< 1:3.5~)
+Filename: pool/universe/libr/libreoffice/libreoffice-script-provider-python_5.1.4-0ubuntu1_all.deb
+Size: 12304
+MD5sum: ec26ca51579a14c73838414329226b77
+SHA1: 929112c2dd3006f9620ffe91f4e3c3fbed1ab149
+SHA256: f60e7b97d4b7a17a11a0a6bcc27afe87831d7af8bcb1832badf183996602cfdf
+Description: Python script support provider for LibreOffice scripting framework
+Homepage: http://www.libreoffice.org
+Description-md5: 019117f2dc708fc6c1179714b81e2076
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-sdbc-postgresql
+Priority: optional
+Section: universe/misc
+Installed-Size: 936
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: amd64
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Depends: libreoffice-core (= 1:5.1.4-0ubuntu1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libpq5 (>= 9.0~), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Suggests: postgresql (>= 8.4)
+Breaks: ure (<< 1.5.1+OOo3.1.1-15)
+Filename: pool/universe/libr/libreoffice/libreoffice-sdbc-postgresql_5.1.4-0ubuntu1_amd64.deb
+Size: 230474
+MD5sum: f49c317b1476eef9599cf25e7dd5cfff
+SHA1: 55571d6a4ffcd03b66caa58451226b762464d33f
+SHA256: 6acb407beb3742ee687adb83e0f9da34bef67cf5c6ee683722fb847d47359036
+Description: PostgreSQL SDBC driver for LibreOffice
+Enhances: libreoffice-base-drivers
+Homepage: http://wiki.documentfoundation.org/PostgreSQL-SDBC
+Description-md5: 06f71158aa78dbe7201679601bd1279b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-style-elementary
+Priority: optional
+Section: universe/x11
+Installed-Size: 2196
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Provides: libreoffice-style, libreoffice-style-default
+Depends: libreoffice-style-galaxy, libreoffice-common (= 1:5.1.4-0ubuntu1)
+Filename: pool/universe/libr/libreoffice/libreoffice-style-elementary_5.1.4-0ubuntu1_all.deb
+Size: 1403616
+MD5sum: d6f2a63185e4959df75c150bdd619783
+SHA1: 5f244859bec87b7e1994f41298aef560832f5048
+SHA256: 9a446540a4798cea26c863fa1789b261bda4f953cad43ccdc849e5684441a03a
+Description: office productivity suite -- Elementary symbol style
+Enhances: libreoffice-core
+Homepage: http://www.libreoffice.org
+Description-md5: cbc38c7a50e39207b8dfa4ff104c0e71
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: xubuntu-desktop, ubuntustudio-desktop
+
+Package: libreoffice-style-hicontrast
+Priority: optional
+Section: universe/editors
+Installed-Size: 881
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Replaces: libreoffice-common (<< 1:3.3.0~rc4-2)
+Provides: libreoffice-style
+Depends: libreoffice-style-galaxy, libreoffice-common (= 1:5.1.4-0ubuntu1)
+Suggests: gtk2-engines
+Filename: pool/universe/libr/libreoffice/libreoffice-style-hicontrast_5.1.4-0ubuntu1_all.deb
+Size: 335282
+MD5sum: 07fccd0bfd1e4c178bdf2331889915be
+SHA1: 11cf6393ccd3bf11a3dc23de46537e17feb720c6
+SHA256: c79b4f312eb589f163df650de0c9dfd836d242e3c2fbf1ce8b2817ecb6550a84
+Description: office productivity suite -- Hicontrast symbol style
+Enhances: libreoffice-core
+Homepage: http://www.libreoffice.org
+Description-md5: 07b279fea9dc1f504ef997f9507c51d9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-style-human
+Priority: optional
+Section: universe/editors
+Installed-Size: 1689
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Provides: libreoffice-style, libreoffice-style-default
+Depends: libreoffice-style-galaxy, libreoffice-common (= 1:5.1.4-0ubuntu1)
+Suggests: crystalcursors, kde-icons-crystal
+Filename: pool/universe/libr/libreoffice/libreoffice-style-human_5.1.4-0ubuntu1_all.deb
+Size: 1056444
+MD5sum: 44195c283d7a00af6b178c67435709ac
+SHA1: 6fd7db9608e38c3d0d2e55dc525909d0ad0d32ac
+SHA256: 16fdcbbee68344da3c313d3f5b759a3cb71599e66f6e3b49868c2b06f2bc7512
+Description: office productivity suite -- Human symbol style
+Enhances: libreoffice-core
+Homepage: http://www.libreoffice.org
+Description-md5: 69f18f7852988e1365a9a97ee69965b1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: ubuntu-mate-desktop, ubuntu-mate-cloudtop
+
+Package: libreoffice-style-oxygen
+Priority: optional
+Section: universe/editors
+Installed-Size: 1958
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Replaces: libreoffice-common (<< 1:3.3.0~rc4-2)
+Provides: libreoffice-style
+Depends: libreoffice-style-tango, libreoffice-common (= 1:5.1.4-0ubuntu1)
+Suggests: kde-icons-oxygen, oxygencursors
+Filename: pool/universe/libr/libreoffice/libreoffice-style-oxygen_5.1.4-0ubuntu1_all.deb
+Size: 1334440
+MD5sum: e74052f0b5b8944eeef180f86d74da68
+SHA1: cf7646f4917ab038d88ced4d4eadbe6f49394733
+SHA256: f40b2d0c82fdfd48918941724f6d28aa3825ff7d4cbedb3c03f14480412e154c
+Description: office productivity suite -- Oxygen symbol style
+Enhances: libreoffice-core
+Homepage: http://www.libreoffice.org
+Description-md5: 87c07a1760d5171f3863d8dc426c52d9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: kubuntu-desktop, kubuntu-full
+
+Package: libreoffice-style-sifr
+Priority: optional
+Section: universe/editors
+Installed-Size: 628
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Provides: libreoffice-style
+Depends: libreoffice-style-breeze, libreoffice-common (= 1:5.1.4-0ubuntu1)
+Filename: pool/universe/libr/libreoffice/libreoffice-style-sifr_5.1.4-0ubuntu1_all.deb
+Size: 310062
+MD5sum: a3599a05ba671e9d558f038af399745e
+SHA1: 1d39eda73e7546d324eaae3849e390621f9115f6
+SHA256: 9bb5ca354d73058c13b9551b18d8a74e81a430612550fbeeb54762cba058687b
+Description: office productivity suite -- Sifr symbol style
+Enhances: libreoffice-core
+Homepage: http://www.libreoffice.org
+Description-md5: 0fd5516a8dab8f6841c284edea8786d7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-subsequentcheckbase
+Priority: extra
+Section: universe/libs
+Installed-Size: 3245
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice
+Version: 1:5.1.4-0ubuntu1
+Depends: ant (>= 1.7.0), ant-optional (>= 1.7.0), autoconf, automake, bc, bison, build-essential, bzip2, debhelper (>= 7.2.3~), default-jdk (>= 2:1.7-52.1), dh-python, doxygen (>= 1.8.4), dpkg-dev (>= 1.16.1), fastjar, flex (>= 2.3.35), fontconfig, fonts-liberation, gdb, gettext, gobject-introspection (>= 1.32.0), gperf, java-common (>= 0.49), javahelper (>= 0.37~), junit4 (>= 4.8.2-2), kdelibs5-dev (>= 4:4.3.4), libabw-dev (>= 0.1), libarchive-zip-perl, libbluetooth-dev, libboost-date-time-dev (>= 1.58), libboost-dev (>= 1.58), libboost-iostreams-dev (>= 1.58), libbsh-java, libcairo2-dev, libcdr-dev (>= 0.1), libclucene-dev (>= 2.3.3.4-4.1), libcmis-dev (>= 0.5.0-3ubuntu1), libcommons-logging-java (>= 1.1.1-9), libcppunit-dev (>= 1.13.2-2.1), libcups2-dev, libcurl4-gnutls-dev, libdbus-glib-1-dev (>= 0.70), libe-book-dev (>= 0.1.1), libeot-dev, libetonyek-dev (>= 0.1.4), libexpat1-dev, libexttextcat-dev (>= 3.4.1), libfontconfig1-dev, libfreehand-dev (>= 0.1), libfreetype6-dev (>= 2.2.0), libgirepository1.0-dev (>= 1.32), libglew-dev, libglib2.0-dev (>= 2.15.0), libglm-dev (>= 0.9.6.3), libgraphite2-dev (>= 0.9.3), libgstreamer-plugins-base1.0-dev, libgstreamer1.0-dev, libgtk-3-dev (>= 3.8~), libgtk2.0-dev (>= 2.10), libharfbuzz-dev (>= 0.9.18), libhsqldb1.8.0-java (>> 1.8.0.10), libhunspell-dev (>= 1.1.5-2), libhyphen-dev (>= 2.4), libice-dev, libicu-dev (>= 52), libjpeg-dev, liblangtag-dev (>= 0.4), liblcms2-dev, libldap2-dev, liblpsolve55-dev (>= 5.5.0.13-5+b1), libmdds-dev (>= 0.12), libmspub-dev (>= 0.1), libmwaw-dev (>= 0.3.6), libmysqlclient-dev, libmysqlcppconn-dev (>= 1.1.3-6ubuntu1), libmythes-dev (>= 2:1.2), libneon27-gnutls-dev, libnss3-dev (>= 3.12.3), libodfgen-dev (>= 0.1), liborcus-dev (>= 0.9.2-2), libpagemaker-dev, libpng12-dev, libpoppler-cpp-dev, libpoppler-dev (>= 0.12.0), libpoppler-private-dev, libpq-dev (>= 9.0~), libqt4-dev (>= 4:4.8), librdf0-dev (>= 1.0.16-2), libreoffice, libreoffice-sdbc-hsqldb, librevenge-dev, libsane-dev, libsm-dev, libssl-dev (>= 0.9.8), libsuitesparse-dev (>= 1:3.4.0), libvigraimpex-dev, libvisio-dev (>= 0.1), libwpd-dev (>= 0.10), libwpg-dev (>= 0.3), libwps-dev (>= 0.4.2), libx11-dev, libxaw7-dev, libxext-dev, libxinerama-dev, libxkbfile-dev, libxml2-dev, libxml2-utils, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, libxtst-dev, lp-solve (>= 5.5.0.13-5+b1), make (>= 3.81-8.2), maven-repo-helper, pkg-config, python3, python3-dev (>= 3.3), ucpp, unixodbc-dev (>= 2.2.11), unzip, x11proto-render-dev, xsltproc, zip, zlib1g-dev, libreoffice-common (= 1:5.1.4-0ubuntu1)
+Filename: pool/universe/libr/libreoffice/libreoffice-subsequentcheckbase_5.1.4-0ubuntu1_all.deb
+Size: 2854630
+MD5sum: 102862a8b6792100ca6ae615340ee9ae
+SHA1: 9d2880cda054ec35f627674750195f768fd13db4
+SHA256: 4d8e8f222297b957d13231d9f359fec62eef8be9da003601162dc084d076bb44
+Description: LibreOffice java test libraries
+Homepage: http://www.libreoffice.org
+Description-md5: 472ba21116a41f060e278769f9e1684d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libreoffice-wiki-publisher
+Priority: optional
+Section: universe/misc
+Installed-Size: 667
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: all
+Source: libreoffice (1:5.1.4-0ubuntu1)
+Version: 1.2.0+LibO5.1.4-0ubuntu1
+Depends: libreoffice-core (>= 1:3.4~), libreoffice-java-common
+Suggests: mediawiki
+Conflicts: libreoffice-common (<< 1:3.5~), libreoffice-core (<< 1:3.5~), ure (<< 1.5.1+OOo3.1.1-15)
+Filename: pool/universe/libr/libreoffice/libreoffice-wiki-publisher_1.2.0+LibO5.1.4-0ubuntu1_all.deb
+Size: 130966
+MD5sum: 45ea54128bc666464c18d55dbd8c105a
+SHA1: 446b107cac2a7280095b4eff039dac1a19871375
+SHA256: cd6a8ecb77ac73e3bd4b7024ebdc8d9240745a881021594ef0395c5b2f22d601
+Description: LibreOffice extension for working with MediaWiki articles
+Enhances: libreoffice-writer
+Homepage: http://extensions.services.openoffice.org/project/wikipublisher
+Description-md5: a66aaa282ae4941588a4d314d1ebbf79
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libservlet3.0-java
+Priority: optional
+Section: universe/java
+Installed-Size: 419
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Filename: pool/universe/t/tomcat7/libservlet3.0-java_7.0.68-1ubuntu0.1_all.deb
+Size: 302492
+MD5sum: 81eef178171fe2c7a0e3a9b3f5e6aa9c
+SHA1: 4ef8e16fc5c36f7de3dd0f7fd01ccff1146a0619
+SHA256: 7b0ef3acadab8e8856120eb3b8f5945d45f7734720f5af39e4c8928712082206
+Description: Servlet 3.0 and JSP 2.2 Java API classes
+Homepage: http://tomcat.apache.org
+Description-md5: 53f7075916141a8eb225df97286c9451
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libservlet3.0-java-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 3113
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Suggests: libservlet3.0-java (>= 7.0.68-1ubuntu0.1)
+Filename: pool/universe/t/tomcat7/libservlet3.0-java-doc_7.0.68-1ubuntu0.1_all.deb
+Size: 184142
+MD5sum: 15c6534fb2d1f2ad059622bd2f2f01c9
+SHA1: fe1c85157795e957f065ab2f7a4a947afab4ebab
+SHA256: e5376fbe67a8b2e1fe08c36a11428e73bca6c978ddb4a82fe0401290f27314e7
+Description: Servlet 3.0 and JSP 2.2 Java API documentation
+Homepage: http://tomcat.apache.org
+Description-md5: 105d3349377c356c2f157766657d4639
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libtasn1-3-bin
+Priority: optional
+Section: universe/libs
+Installed-Size: 18
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: all
+Source: libtasn1-6
+Version: 4.7-3ubuntu0.16.04.1
+Depends: libtasn1-bin (>= 4.7-3ubuntu0.16.04.1)
+Filename: pool/universe/libt/libtasn1-6/libtasn1-3-bin_4.7-3ubuntu0.16.04.1_all.deb
+Size: 2292
+MD5sum: 9bb396e3436399108abefbf66f2022e9
+SHA1: 806ab4aec21984fb50a5fc0e0ce2e9afbe213fdc
+SHA256: a570844cce1ce8184d95033998d518605f4ffd7526b39c4a2318053e46e5b4cd
+Description: transitional libtasn1-3-bin package
+Homepage: http://www.gnu.org/software/libtasn1/
+Description-md5: 9b8edec27d06e44855d970a28ccda9e7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libtasn1-bin
+Priority: extra
+Section: universe/devel
+Installed-Size: 73
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: libtasn1-6
+Version: 4.7-3ubuntu0.16.04.1
+Replaces: libtasn1-3-bin
+Depends: libc6 (>= 2.17), libtasn1-6 (>= 4.5)
+Breaks: libtasn1-3-bin (<< 3)
+Filename: pool/universe/libt/libtasn1-6/libtasn1-bin_4.7-3ubuntu0.16.04.1_amd64.deb
+Size: 15480
+MD5sum: 216cabdc3c19b24b482d9963036bdf6d
+SHA1: cc71b8aaf21b09f072f297782a990c06669e58ed
+SHA256: 16203355b65a869b21df9609901b73401d5319cf07afed0ea6dbb9785ed58c2c
+Description: Manage ASN.1 structures (binaries)
+Multi-Arch: foreign
+Homepage: http://www.gnu.org/software/libtasn1/
+Description-md5: 732971f746a6a2ec0311889ae799da20
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libtomcat7-java
+Priority: optional
+Section: universe/java
+Installed-Size: 4162
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Depends: libecj-java (>= 3.10.1~), libcommons-pool-java, libcommons-dbcp-java, libservlet3.0-java (>= 7.0.68-1ubuntu0.1)
+Suggests: tomcat7 (>= 7.0.68-1ubuntu0.1)
+Conflicts: libtomcat6-java
+Filename: pool/universe/t/tomcat7/libtomcat7-java_7.0.68-1ubuntu0.1_all.deb
+Size: 3715302
+MD5sum: 7e2967c6733e19410f2a25a0d47dfdaf
+SHA1: 3048d42e472a2d156eb21a3fcaa8c175b0e78200
+SHA256: 58d831310ba34e3768896bf217e74fceae2f6fb293326da65d9a4ec410c98e61
+Description: Servlet and JSP engine -- core libraries
+Homepage: http://tomcat.apache.org
+Description-md5: 7a2563c1a7c79379004bc6464d285af0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libusbmuxd-tools
+Priority: optional
+Section: universe/utils
+Installed-Size: 32
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: gtkpod Maintainers <pkg-gtkpod-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: libusbmuxd
+Version: 1.0.10-2ubuntu0.1
+Replaces: usbmuxd (<< 1.0.8-4~)
+Depends: libc6 (>= 2.15), libusbmuxd4 (>= 1.0.10)
+Filename: pool/universe/libu/libusbmuxd/libusbmuxd-tools_1.0.10-2ubuntu0.1_amd64.deb
+Size: 8290
+MD5sum: 1fc04f9f52ddbe73d874ec181f6e5860
+SHA1: 381939eafc2737a387f7515d38f95b667a32cfb3
+SHA256: 10dae2347ef29cb50b5a3b502250dae509126b56bbf8c9b512a1bc979e75d284
+Description: USB multiplexor daemon for iPhone and iPod Touch devices - tools
+Multi-Arch: foreign
+Homepage: http://marcansoft.com/blog/iphonelinux/usbmuxd/
+Description-md5: 7fb3e81611d2578a4c491c5fd6dcde75
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libx32go7
+Priority: optional
+Section: universe/libs
+Installed-Size: 25639
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Replaces: libx32go3
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libc6-x32 (>= 2.16), libx32gcc1 (>= 1:4.2)
+Filename: pool/universe/g/gcc-5/libx32go7_5.3.1-14ubuntu2.1_amd64.deb
+Size: 6196920
+MD5sum: f997b31abc3d85d956d37dd08352b678
+SHA1: 262f521f297c7855674ea551fa3c3e4899574d51
+SHA256: b584dee41e5a18f5e5b9c5d4f4bc5a2077bbb6217749fb6fea72a33e7e413427
+Description: Runtime library for GNU Go applications (x32)
+Homepage: http://gcc.gnu.org/
+Description-md5: 274d67a4807b2168ae6370f3e1f6a565
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: libx32go7-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 6
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: amd64
+Source: gcc-5
+Version: 5.3.1-14ubuntu2.1
+Depends: gcc-5-base (= 5.3.1-14ubuntu2.1), libx32go7 (= 5.3.1-14ubuntu2.1)
+Filename: pool/universe/g/gcc-5/libx32go7-dbg_5.3.1-14ubuntu2.1_amd64.deb
+Size: 946
+MD5sum: d3120e2a199571e5a4a47ce20633015e
+SHA1: e34017c87374c1961ed76060b2814ad71f349078
+SHA256: f01d59dc00b1c013f93509f530337cfe6635f5890618a2258d7529afefe2aa1c
+Description: Runtime library for GNU Go applications (x32 debug symbols)
+Homepage: http://gcc.gnu.org/
+Description-md5: ecdc36ec2c26f4d5b8faf65a52d45fa4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: mariadb-client
+Priority: optional
+Section: universe/database
+Installed-Size: 60
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Depends: mariadb-client-10.0 (>= 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-client_10.0.25-0ubuntu0.16.04.1_all.deb
+Size: 12988
+MD5sum: a884a513c6747459012a7b32668397c0
+SHA1: a65023c79a19b731d059d2838fe7c696246d25ce
+SHA256: 7197c78bbf28dff70f0dd41528baa457b77b4214fee41702fa69efe18da41711
+Description: MariaDB database client (metapackage depending on the latest version)
+Homepage: http://mariadb.org/
+Description-md5: 2e04f284c927cfb4a5b1050a825be647
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-client-10.0
+Priority: optional
+Section: universe/database
+Installed-Size: 22365
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-client-5.5, mariadb-server-10.0 (<< 10.0.13-1~), mysql-client, mysql-client-5.5, mysql-client-5.6, mysql-client-5.7, virtual-mysql-client
+Provides: virtual-mysql-client
+Depends: debianutils (>= 1.6), libdbd-mysql-perl (>= 1.2202), libdbi-perl, libterm-readkey-perl, mariadb-client-core-10.0 (>= 10.0.25-0ubuntu0.16.04.1), perl, libc6 (>= 2.17), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Conflicts: mysql-client-core-5.5, mysql-client-core-5.6, mysql-client-core-5.7
+Breaks: mariadb-client-5.5, mariadb-server-10.0 (<< 10.0.13-1~), mysql-client, mysql-client-5.5, mysql-client-5.6, mysql-client-5.7, virtual-mysql-client
+Filename: pool/universe/m/mariadb-10.0/mariadb-client-10.0_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 1166162
+MD5sum: edec1cc8d360dc323f53146fb337e67f
+SHA1: f6c8f8437a129434a6b967e3e777433c43ca9d2c
+SHA256: f6784ba020748223f4a7d23683681c08824192626a10c986cf85c4b3cf45ba9e
+Description: MariaDB database client binaries
+Homepage: http://mariadb.org/
+Description-md5: 7b5610b71c2642b63e6ffcb5b15bba8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-client-core-10.0
+Priority: optional
+Section: universe/database
+Installed-Size: 20820
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-client-10.0 (<< 10.0.24-6~), mariadb-client-core-5.5, mysql-client-core-5.5, mysql-client-core-5.6, mysql-client-core-5.7, virtual-mysql-client-core
+Provides: virtual-mysql-client-core
+Depends: mariadb-common (>= 10.0.25-0ubuntu0.16.04.1), libaio1 (>= 0.3.93), libc6 (>= 2.17), libncurses5 (>= 6), libpcre3, libreadline5 (>= 5.2), libstdc++6 (>= 5.2), libtinfo5 (>= 6), zlib1g (>= 1:1.2.0)
+Conflicts: mysql-client-5.5, mysql-client-5.6, mysql-client-5.7
+Breaks: mariadb-client-10.0 (<< 10.0.24-6~), mariadb-client-core-5.5, mysql-client-core-5.5, mysql-client-core-5.6, mysql-client-core-5.7, virtual-mysql-client-core
+Filename: pool/universe/m/mariadb-10.0/mariadb-client-core-10.0_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 4193966
+MD5sum: e87100777cdce90a08bf002c5728a732
+SHA1: 259897873d30199fb8c341962e4b597706aed844
+SHA256: 3913e14f2adf6326c8386ea86232db12229a901bb36c5ab6bd1b35f07c0e15db
+Description: MariaDB database core client binaries
+Homepage: http://mariadb.org/
+Description-md5: 2862a38a5ead2e1df7366bf661e03278
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-common
+Priority: optional
+Section: universe/database
+Installed-Size: 68
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Depends: mysql-common (>= 5.6.25)
+Filename: pool/universe/m/mariadb-10.0/mariadb-common_10.0.25-0ubuntu0.16.04.1_all.deb
+Size: 16706
+MD5sum: edf654bbd7c9810b828e87f239785e1f
+SHA1: 1993df823a13cfb94ff7e880f2f85609559db1b5
+SHA256: aaedc26979690e94228a5b0ae0a64c6e2a1bade8cac2da754fb70b05cd89fa2a
+Description: MariaDB common metapackage
+Multi-Arch: foreign
+Homepage: http://mariadb.org/
+Description-md5: a8bf2c1aebcb16934e54a7cb04adbfb4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-plugin-connect
+Priority: optional
+Section: universe/database
+Installed-Size: 1443
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-connect-engine-10.0, mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Depends: libxml2 (>= 2.7.4), mariadb-server-10.0 | mariadb-galera-server-10.0, unixodbc, libc6 (>= 2.14), libodbc1 (>= 2.3.1), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.2.3.4)
+Conflicts: mariadb-connect-engine-10.0
+Breaks: mariadb-connect-engine-10.0, mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-plugin-connect_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 425154
+MD5sum: fed2612b7f688ba21c8b95d204123906
+SHA1: fb655b88df70361ef4963b057cefbcea1e4d5057
+SHA256: ca1f59b77e3ff49595665525deecf9aa8084cd394b149796b1b2ab0bfca82bee
+Description: Connect storage engine for MariaDB
+Homepage: http://mariadb.org/
+Description-md5: a80bd9647c2961ca648b4365a4644855
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-plugin-mroonga
+Priority: optional
+Section: universe/database
+Installed-Size: 3329
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Depends: mariadb-server-10.0 | mariadb-galera-server-10.0, libc6 (>= 2.14), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.2.0)
+Breaks: mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-plugin-mroonga_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 876056
+MD5sum: 615ef339cefd324f8f8c34547acbae95
+SHA1: 8184e944e03efde448576311c0f37677c8eda81d
+SHA256: ad07e73c789e5a1219934d97b052e197494514f43fe1a2892b547c20791e2692
+Description: Mroonga storage engine for MariaDB
+Homepage: http://mariadb.org/
+Description-md5: 38f273fa8679ace3c47de32b8f1ad726
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-plugin-oqgraph
+Priority: optional
+Section: universe/database
+Installed-Size: 243
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-oqgraph-engine-10.0, mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Depends: libjudydebian1, mariadb-server-10.0 | mariadb-galera-server-10.0, libc6 (>= 2.14), libstdc++6 (>= 5.2)
+Conflicts: mariadb-oqgraph-engine-10.0
+Breaks: mariadb-oqgraph-engine-10.0, mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-plugin-oqgraph_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 71938
+MD5sum: 478b29c0bd819171bbea346a7f86b13c
+SHA1: 9d4d30ba9836de34c55f1bd39252b81c9a83ae7d
+SHA256: 831e1c7e16837d716bf73a6333b44ce94ce21709d73cda5f52eff42d8fd2b9bf
+Description: OQGraph storage engine for MariaDB
+Homepage: http://mariadb.org/
+Description-md5: 1fb0e876d57cfdc1cff69872c8dc754b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-plugin-spider
+Priority: optional
+Section: universe/database
+Installed-Size: 913
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Depends: mariadb-server-10.0 | mariadb-galera-server-10.0, libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Breaks: mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-plugin-spider_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 281946
+MD5sum: 79e016e045766602510e075613de7a08
+SHA1: f8f3f20410efbc886461e2bb56784260be0b772e
+SHA256: 7aa0dba346b07ed48840cbdf58fdad66eeff0fbdf6990279b2a3700b6a7fb6e9
+Description: Spider storage engine for MariaDB
+Homepage: http://mariadb.org/
+Description-md5: d76a34438e840feb3c047b60c612ba7b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-plugin-tokudb
+Priority: optional
+Section: universe/database
+Installed-Size: 2354
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Depends: mariadb-server-10.0 | mariadb-galera-server-10.0, libc6 (>= 2.14), libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.0)
+Breaks: mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-plugin-tokudb_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 746938
+MD5sum: 11ceebb40f4ab33c08c17b3fa36d297f
+SHA1: 49478a62d1d2446d6ce8ecaa47e9a2a1520d1e59
+SHA256: d40fcb0a626c00397f6a4a21fc4989f2300256c2541cfbc37bf981b0c35ae706
+Description: TokuDB storage engine for MariaDB
+Homepage: http://mariadb.org/
+Description-md5: 31667cb988ed1d50b7ef032158e16474
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-server
+Priority: optional
+Section: universe/database
+Installed-Size: 60
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Depends: mariadb-server-10.0 (>= 10.0.25-0ubuntu0.16.04.1)
+Filename: pool/universe/m/mariadb-10.0/mariadb-server_10.0.25-0ubuntu0.16.04.1_all.deb
+Size: 13104
+MD5sum: b75f5868694012e4ce07591df6d8a147
+SHA1: 28463002d583368f6d70b826054d4a95c6e47ecf
+SHA256: 0177376236cbccb56a44429a614eb238d313823d65dd7c41820544aeb1137c99
+Description: MariaDB database server (metapackage depending on the latest version)
+Homepage: http://mariadb.org/
+Description-md5: 184dec3a9fb41c1cd31a78f54fa02394
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-server-10.0
+Priority: optional
+Section: universe/database
+Installed-Size: 65098
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-galera-server, mariadb-galera-server-5.5, mariadb-server-5.5, mariadb-tokudb-engine-10.0, mariadb-tokudb-engine-5.5, mysql-client-5.5, mysql-server, mysql-server-5.5, mysql-server-5.6, mysql-server-5.7, virtual-mysql-server
+Provides: virtual-mysql-server
+Depends: libdbi-perl, lsb-base (>= 3.0-10), mariadb-client-10.0 (>= 10.0.25-0ubuntu0.16.04.1), mariadb-server-core-10.0 (>= 10.0.25-0ubuntu0.16.04.1), passwd, perl (>= 5.6), psmisc, debconf (>= 0.5) | debconf-2.0, libaio1 (>= 0.3.93), libc6 (>= 2.17), libpam0g (>= 0.99.7.1), libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.0)
+Pre-Depends: adduser (>= 3.40), debconf, mariadb-common (>= 10.0.25-0ubuntu0.16.04.1)
+Recommends: libhtml-template-perl
+Suggests: mailx, mariadb-test, tinyca
+Conflicts: mariadb-tokudb-engine-10.0, mariadb-tokudb-engine-5.5, mysql-server-core-5.5, mysql-server-core-5.6, mysql-server-core-5.7
+Breaks: mariadb-galera-server, mariadb-galera-server-5.5, mariadb-server-5.5, mariadb-tokudb-engine-10.0, mariadb-tokudb-engine-5.5, mysql-client-5.5, mysql-server, mysql-server-5.5, mysql-server-5.6, mysql-server-5.7, virtual-mysql-server
+Filename: pool/universe/m/mariadb-10.0/mariadb-server-10.0_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 4244128
+MD5sum: 2ac18e2884240dc1efd879f48a017106
+SHA1: 3e3062fbd5dd3eddf107f5bd014afb39eaef7576
+SHA256: b037a0b87c3a92f79ac90a4abebd4f1b50c6661c1ffe80b78821c92d73a008d4
+Description: MariaDB database server binaries
+Homepage: http://mariadb.org/
+Description-md5: ae76dbcde4bf3e79b8228e6dad967834
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-server-core-10.0
+Priority: optional
+Section: universe/database
+Installed-Size: 22600
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-client-10.0 (<< 10.0.25-0ubuntu0.16.04.1), mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1), mariadb-server-core-5.5, mysql-client-5.5, mysql-client-5.6, mysql-client-5.7, mysql-server-core-5.5, mysql-server-core-5.6, mysql-server-core-5.7, virtual-mysql-server-core
+Provides: virtual-mysql-server-core
+Depends: mariadb-common (>= 10.0.25-0ubuntu0.16.04.1), libaio1 (>= 0.3.93), libc6 (>= 2.17), libpcre3, libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.0)
+Conflicts: mariadb-galera-server-5.5, mysql-server-5.5, mysql-server-5.6, mysql-server-5.7
+Breaks: mariadb-client-10.0 (<< 10.0.25-0ubuntu0.16.04.1), mariadb-server-10.0 (<< 10.0.25-0ubuntu0.16.04.1), mariadb-server-core-5.5, mysql-client-5.5, mysql-client-5.6, mysql-server-core-5.5, mysql-server-core-5.6, mysql-server-core-5.7, virtual-mysql-server-core
+Filename: pool/universe/m/mariadb-10.0/mariadb-server-core-10.0_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 4333772
+MD5sum: 1659662b395d5f804c4ee3d8891baef0
+SHA1: a366e1042c23629febf30a4d9447e9aeff2a30e7
+SHA256: d0185ddc7d06d58628186bf5d46ecf06f86e7366d185692c0fd972e716763756
+Description: MariaDB database core server files
+Homepage: http://mariadb.org/
+Description-md5: a01f76260dfbedfdfbfcd8ff440b8a4c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-test
+Priority: optional
+Section: universe/database
+Installed-Size: 36029
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-test-10.0, mariadb-test-5.5, mysql-testsuite, mysql-testsuite-5.5, mysql-testsuite-5.6, mysql-testsuite-5.7, virtual-mysql-testsuite
+Provides: virtual-mysql-testsuite
+Depends: mariadb-client-10.0 (= 10.0.25-0ubuntu0.16.04.1), mariadb-server-10.0 (= 10.0.25-0ubuntu0.16.04.1), mariadb-test-data (= 10.0.25-0ubuntu0.16.04.1), libaio1 (>= 0.3.93), libc6 (>= 2.17), libpcre3, libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.0)
+Suggests: patch
+Breaks: mariadb-test-10.0, mariadb-test-5.5, mysql-testsuite, mysql-testsuite-5.5, mysql-testsuite-5.6, mysql-testsuite-5.7, virtual-mysql-testsuite
+Filename: pool/universe/m/mariadb-10.0/mariadb-test_10.0.25-0ubuntu0.16.04.1_amd64.deb
+Size: 8184266
+MD5sum: 4c2a7b0aeb606a2010566caaf0a94fa7
+SHA1: 26864b5260cd69f2640f8eff9d0c6ea159e0f15e
+SHA256: 09507c2f388b4f7dff6fa9712a26c7fdc61def878f85943cb8c065eae8193656
+Description: MariaDB database regression test suite
+Homepage: http://mariadb.org/
+Description-md5: 88232ad1a9463948e9a1f1d33923b547
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mariadb-test-data
+Priority: optional
+Section: universe/database
+Installed-Size: 292117
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mariadb-10.0
+Version: 10.0.25-0ubuntu0.16.04.1
+Replaces: mariadb-test-10.0, mariadb-test-5.5, mariadb-test-data-10.0, mysql-testsuite, mysql-testsuite-5.5, mysql-testsuite-5.6, mysql-testsuite-5.7
+Breaks: mariadb-test-10.0, mariadb-test-5.5, mariadb-test-data-10.0, mysql-testsuite, mysql-testsuite-5.5, mysql-testsuite-5.6, mysql-testsuite-5.7
+Filename: pool/universe/m/mariadb-10.0/mariadb-test-data_10.0.25-0ubuntu0.16.04.1_all.deb
+Size: 16130262
+MD5sum: a3fbb2b66334844081843430a87fef33
+SHA1: 70ec7a3e36d98802a2c362df51c1c50637951648
+SHA256: 73a4beaa78c6e3d4f86ca7eed6d4934cb258b8739c20e4406dc6d4e33b105cfe
+Description: MariaDB database regression test suite - data files
+Homepage: http://mariadb.org/
+Description-md5: 4e2584329df41bfe2241de957d88c44a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mysql-source-5.7
+Priority: optional
+Section: universe/database
+Installed-Size: 62675
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mysql-5.7
+Version: 5.7.12-0ubuntu1
+Filename: pool/universe/m/mysql-5.7/mysql-source-5.7_5.7.12-0ubuntu1_amd64.deb
+Size: 60830130
+MD5sum: cc425962a8ee23750b3ca0c0262b8d80
+SHA1: 45f56b40deeb6278acd77bb3d0993897f5f84c3e
+SHA256: 9e4c8f0a8a896df2bf0474a52592f8a0cd6bb9c17f8ff3c2bb3ae1aecafa70e3
+Description: MySQL source
+Homepage: http://dev.mysql.com/
+Description-md5: 88f58941059fab032315a68e3122ac60
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mysql-testsuite
+Priority: optional
+Section: universe/database
+Installed-Size: 155
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: all
+Source: mysql-5.7
+Version: 5.7.12-0ubuntu1
+Depends: mysql-testsuite-5.7
+Filename: pool/universe/m/mysql-5.7/mysql-testsuite_5.7.12-0ubuntu1_all.deb
+Size: 9992
+MD5sum: 252742bb0405c345421de1b2b3c16c42
+SHA1: 8870a2e3d24109fc74282f64687c007bcb23003c
+SHA256: 2b1325253eeaa67f614123d8f5cd387767b21775e4fdbbbc6e9f12b601fcebce
+Description: MySQL regression tests
+Homepage: http://dev.mysql.com/
+Description-md5: e045843e436e014e0fa5bcb7763bc7e1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mysql-testsuite-5.7
+Priority: optional
+Section: universe/database
+Installed-Size: 271058
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian MySQL Maintainers <pkg-mysql-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: mysql-5.7
+Version: 5.7.12-0ubuntu1
+Replaces: mysql-client-5.5, mysql-client-5.6, mysql-server-5.5, mysql-server-5.6, mysql-testsuite-5.5, mysql-testsuite-5.6 (<< 5.7), virtual-mysql-testsuite
+Provides: virtual-mysql-testsuite
+Depends: mysql-client-5.7 (= 5.7.12-0ubuntu1), mysql-server-5.7 (= 5.7.12-0ubuntu1), python, libaio1 (>= 0.3.93), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.2.0)
+Conflicts: mysql-testsuite-5.5, virtual-mysql-testsuite
+Breaks: mysql-client-5.5 (>= 5.5), mysql-client-5.6 (>= 5.6), mysql-server-5.5 (>= 5.5), mysql-server-5.6 (>= 5.6), mysql-testsuite-5.6 (<< 5.7)
+Filename: pool/universe/m/mysql-5.7/mysql-testsuite-5.7_5.7.12-0ubuntu1_amd64.deb
+Size: 21473926
+MD5sum: 7747108cbf63aa0ccacaba7441ed99b7
+SHA1: 4270c10d2adac2e85f2f4d0afbe509ca971fe699
+SHA256: 2e3a7c2ae3c0594347545ad51efd75e37f6b8bebc661aeb66ca8889499eef1b8
+Description: MySQL 5.7 testsuite
+Homepage: http://dev.mysql.com/
+Description-md5: 0557f3dcf33248a2caf2c603c14917dd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: nginx-extras
+Priority: optional
+Section: universe/httpd
+Installed-Size: 1842
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: amd64
+Source: nginx
+Version: 1.10.0-0ubuntu0.16.04.2
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.0-0ubuntu0.16.04.2), perl (>= 5.22.1-9), perlapi-5.22.1, libc6 (>= 2.14), libexpat1 (>= 2.0.1), libgd3 (>= 2.1.0~alpha~), libgeoip1, libluajit-5.1-2, libpam0g (>= 0.99.7.1), libpcre3, libperl5.22 (>= 5.22.1), libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.0-0ubuntu0.16.04.2)
+Conflicts: nginx-core, nginx-full, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Filename: pool/universe/n/nginx/nginx-extras_1.10.0-0ubuntu0.16.04.2_amd64.deb
+Size: 629122
+MD5sum: e1dd1f8aea3eca03efb8b761336b1679
+SHA1: 47ca192b0a3f5eac7883b3e422e450d5da7ad14a
+SHA256: 1ddfad563e4b1ca71b90f334985e23b99f20be0e04a72856f5c0c0dc1f66b7ad
+Description: nginx web/proxy server (extended version)
+Homepage: http://nginx.net
+Description-md5: a0597673af5eeeedac6c8c97e4758895
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: nginx-extras-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 6154
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: amd64
+Source: nginx
+Version: 1.10.0-0ubuntu0.16.04.2
+Depends: nginx-extras (= 1.10.0-0ubuntu0.16.04.2)
+Conflicts: nginx-core-dbg, nginx-full-dbg, nginx-light-dbg
+Filename: pool/universe/n/nginx/nginx-extras-dbg_1.10.0-0ubuntu0.16.04.2_amd64.deb
+Size: 5897324
+MD5sum: 8887cf9bbf13291b7c6d5d5cc941434b
+SHA1: a244f9f1f097df0bf030e83a628e16f41f563f5a
+SHA256: e227aa7a5e0388d60c769df71eaa9300e168c3a3bdd0bd1695d0385df2032245
+Description: nginx web/proxy server (extended version) - debugging symbols
+Homepage: http://nginx.net
+Build-Ids: d8e320b76d9f0a578b6607b8c8905b9308292a4d f1f2704401bfb9a2cf6689a8c8f1b98f8395abdb
+Description-md5: dfe40e4b526a7896997294d525c6e22f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: nginx-full
+Priority: optional
+Section: universe/httpd
+Installed-Size: 1310
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: amd64
+Source: nginx
+Version: 1.10.0-0ubuntu0.16.04.2
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.0-0ubuntu0.16.04.2), libc6 (>= 2.14), libexpat1 (>= 2.0.1), libgd3 (>= 2.1.0~alpha~), libgeoip1, libpam0g (>= 0.99.7.1), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.0-0ubuntu0.16.04.2)
+Conflicts: nginx-core, nginx-extras, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Filename: pool/universe/n/nginx/nginx-full_1.10.0-0ubuntu0.16.04.2_amd64.deb
+Size: 452616
+MD5sum: dddb8c71608c718929453bdfe33fe722
+SHA1: fa18c38d733fc1058bb34c1e3ba65b9db4af70b2
+SHA256: c24d85b89a2a7978bda6eab14741d62374c98d826bc3d7ac5397637026e6812b
+Description: nginx web/proxy server (standard version)
+Homepage: http://nginx.net
+Description-md5: 74b8684b54a7a4d1c5a88eb98dcb635b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: nginx-full-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 3975
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: amd64
+Source: nginx
+Version: 1.10.0-0ubuntu0.16.04.2
+Depends: nginx-full (= 1.10.0-0ubuntu0.16.04.2)
+Conflicts: nginx-core-dbg, nginx-extras-dbg, nginx-light-dbg
+Filename: pool/universe/n/nginx/nginx-full-dbg_1.10.0-0ubuntu0.16.04.2_amd64.deb
+Size: 3787108
+MD5sum: ad99cdd14554999cf5cb84e133a5a3da
+SHA1: 7ce6d5e612511cd48b49fed7b28ee2e93541bd09
+SHA256: 48ac1bc994294d0d1b48af7d3864664ec835447f236a94ffd658551fbb971234
+Description: nginx web/proxy server (standard version) - debugging symbols
+Homepage: http://nginx.net
+Build-Ids: d48808ca3d9f08cc4d5da0cfcee9148b2a7ec95f
+Description-md5: 4fc48d7c2fc05abcfaf9ba94a20baab2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: nginx-light
+Priority: optional
+Section: universe/httpd
+Installed-Size: 866
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: amd64
+Source: nginx
+Version: 1.10.0-0ubuntu0.16.04.2
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.0-0ubuntu0.16.04.2), libc6 (>= 2.14), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.0-0ubuntu0.16.04.2)
+Conflicts: nginx-core, nginx-extras, nginx-full
+Breaks: nginx (<< 1.4.5-1)
+Filename: pool/universe/n/nginx/nginx-light_1.10.0-0ubuntu0.16.04.2_amd64.deb
+Size: 314984
+MD5sum: 29168d9664212a2f70aef98096fe8480
+SHA1: a1ae3152556aac46b8e37d81229c014992a285b7
+SHA256: 52e9ebed94c7cf9b1dcf5b4e7a66fe9217702746dad8537b08cbe0df80c084d0
+Description: nginx web/proxy server (basic version)
+Homepage: http://nginx.net
+Description-md5: 6dcfb9f65ac8749762b5d819cc4f3e2f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: nginx-light-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 2536
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Architecture: amd64
+Source: nginx
+Version: 1.10.0-0ubuntu0.16.04.2
+Depends: nginx-light (= 1.10.0-0ubuntu0.16.04.2)
+Conflicts: nginx-core-dbg, nginx-extras-dbg, nginx-full-dbg
+Filename: pool/universe/n/nginx/nginx-light-dbg_1.10.0-0ubuntu0.16.04.2_amd64.deb
+Size: 2413684
+MD5sum: 8c2a5ed3a3f80e0187dddfa58f13ec0a
+SHA1: b35460e8066dd5c6593905925900bce98549e2a2
+SHA256: 7004e7ae8f4fdb3099daac802d1922ae9e3fe5a893bff20b654edeaa163b71d4
+Description: nginx web/proxy server (basic version) - debugging symbols
+Homepage: http://nginx.net
+Build-Ids: ea81e37d65da88478f349db19af8fe0154dfda10
+Description-md5: edb5bef4d4f6057eb92dd3469c513461
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 9m
+
+Package: openjdk-8-jre-zero
+Priority: extra
+Section: universe/java
+Installed-Size: 6598
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Architecture: amd64
+Source: openjdk-8
+Version: 8u91-b14-0ubuntu4~16.04.1
+Depends: openjdk-8-jre-headless (= 8u91-b14-0ubuntu4~16.04.1), libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Filename: pool/universe/o/openjdk-8/openjdk-8-jre-zero_8u91-b14-0ubuntu4~16.04.1_amd64.deb
+Size: 1983010
+MD5sum: 5e50f0883c1c4423e64f6f2720313f8c
+SHA1: 9a90898770b7acd30d768119873378127bd6eae5
+SHA256: 2ad9e490b3e9aa86eefc75bc95ba9798e4751a4fe5d9eb4b1c023a577d3e78d7
+Description: Alternative JVM for OpenJDK, using Zero/Shark
+Multi-Arch: same
+Homepage: http://openjdk.java.net/
+Description-md5: ca0db1fb38a237b982a1de5e6d632720
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: oxideqt-codecs-extra
+Priority: extra
+Section: universe/libs
+Installed-Size: 3447
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Source: oxide-qt
+Version: 1.15.8-0ubuntu0.16.04.1
+Replaces: liboxideqtcore0 (<< 1.0.0~bzr488), oxideqt-codecs
+Depends: libc6 (>= 2.14)
+Conflicts: oxideqt-codecs
+Breaks: liboxideqtcore0 (<< 1.0.0~bzr488)
+Filename: pool/universe/o/oxide-qt/oxideqt-codecs-extra_1.15.8-0ubuntu0.16.04.1_amd64.deb
+Size: 901220
+MD5sum: 2cf7f15185a9429fecfb903ffd9de850
+SHA1: 388fea574b2c38ace5b5a525ead630b9aa5b6b4b
+SHA256: 930e7168e201faf2533848b327d90b1af51939d799f9e0fe3a054c12b88a76ba
+Description: Web browser engine for Qt (codecs)
+Multi-Arch: same
+Homepage: https://launchpad.net/oxide
+Description-md5: f99bdcbc4e4fe3bb375ded6ccadbcfb4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-touch
+
+Package: perlmagick
+Priority: optional
+Section: universe/perl
+Installed-Size: 80
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>
+Architecture: all
+Source: imagemagick
+Version: 8:6.8.9.9-7ubuntu5.1
+Depends: libimage-magick-perl
+Filename: pool/universe/i/imagemagick/perlmagick_6.8.9.9-7ubuntu5.1_all.deb
+Size: 13674
+MD5sum: b7c0055cae2cb51d63d6846b667c7bde
+SHA1: d368f6c4c59c57bcb21546abb372f7aa3fc6ffc7
+SHA256: b948aa96fab3c21f1f6f9d7fd474a83fd3eaa96eaab5be49f09169e37e745f79
+Description: Perl interface to ImageMagick -- transition package
+Multi-Arch: foreign
+Homepage: http://www.imagemagick.org/
+Description-md5: 0caf15d082fa7d2b12c7f7f50f74cd62
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-bcmath
+Priority: optional
+Section: universe/php
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-bcmath
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14)
+Filename: pool/universe/p/php7.0/php7.0-bcmath_7.0.4-7ubuntu2.1_amd64.deb
+Size: 15620
+MD5sum: 7c5694623ecc7b7d055247c583f21cfe
+SHA1: 7e7b7ad8f8038f7795dccd632d6f387da5cc1a95
+SHA256: 200717bf0dfbb701e3655f6571707065794a813ecd77e6768b0f669327669256
+Description: Bcmath module for PHP
+Homepage: http://www.php.net/
+Description-md5: 8f9f425714b203a9b7d1f3678f64c107
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-bz2
+Priority: optional
+Section: universe/php
+Installed-Size: 51
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-bz2
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libbz2-1.0, libc6 (>= 2.14)
+Filename: pool/universe/p/php7.0/php7.0-bz2_7.0.4-7ubuntu2.1_amd64.deb
+Size: 9904
+MD5sum: cdad100895a186b1ad5fd4c8be03ed09
+SHA1: 690834e4ec67165e832590f5efab1eb73121ef3a
+SHA256: 6d895dccc9390209fca1085356f4f192b7b775a08fa1f0f6f2343c04c71d2652
+Description: bzip2 module for PHP
+Homepage: http://www.php.net/
+Description-md5: 6221ff838ed81a370f3420140a1ccf42
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-enchant
+Priority: optional
+Section: universe/php
+Installed-Size: 51
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-enchant
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libenchant1c2a (>= 1.6.0)
+Filename: pool/universe/p/php7.0/php7.0-enchant_7.0.4-7ubuntu2.1_amd64.deb
+Size: 9226
+MD5sum: 64012fae948bd426058003f089979d57
+SHA1: 9cf84f9668903fb790c731eacec0fe231750443a
+SHA256: 2d07929fb934763e164450615608b53443b16fe9f9a7d90c8cbbeb6a1a5cb35a
+Description: Enchant module for PHP
+Homepage: http://www.php.net/
+Description-md5: 687582edca33aa141d3f62c1294fcb07
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-fpm
+Priority: optional
+Section: universe/php
+Installed-Size: 4369
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-fpm, phpapi-20151012
+Depends: libmagic1, mime-support, php7.0-cli, php7.0-common (= 7.0.4-7ubuntu2.1), php7.0-json, php7.0-opcache, tzdata, ucf, init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), libapparmor1 (>= 2.7.0~beta1+bzr1772), libc6 (>= 2.15), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), libsystemd0, libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Suggests: php-pear
+Conflicts: php5-fpm (<< 5.6.16+dfsg-4~)
+Filename: pool/universe/p/php7.0/php7.0-fpm_7.0.4-7ubuntu2.1_amd64.deb
+Size: 1283526
+MD5sum: 9accf69c3c082d5982584bf911ed27be
+SHA1: d4dda221651f4de1cf7afeec103db83a249bdf4c
+SHA256: 27f09fdc314079b4cc5f9554bacb2bbe131eb7eddd7cace1ff82354d169e75aa
+Description: server-side, HTML-embedded scripting language (FPM-CGI binary)
+Homepage: http://www.php.net/
+Description-md5: aca9a4aafd2a321720e8bf05403438fc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-imap
+Priority: optional
+Section: universe/php
+Installed-Size: 119
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-imap
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc-client2007e, libc6 (>= 2.14)
+Filename: pool/universe/p/php7.0/php7.0-imap_7.0.4-7ubuntu2.1_amd64.deb
+Size: 29430
+MD5sum: 4a6b09761dd81c9554d49c3119539e8e
+SHA1: fa46a6896ce78ba5753c4b3e6bbd59e2cd6a6c4b
+SHA256: 2556402d006a0c3f1721b59546dd25508ea71966a058130532485b30dbf352ff
+Description: IMAP module for PHP
+Homepage: http://www.php.net/
+Description-md5: 73ce2e5dbb1377bc41524b600892883b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-interbase
+Priority: optional
+Section: universe/php
+Installed-Size: 151
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-interbase, php-pdo-firebird, php7.0-pdo-firebird
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
+Filename: pool/universe/p/php7.0/php7.0-interbase_7.0.4-7ubuntu2.1_amd64.deb
+Size: 40772
+MD5sum: ea0467e6cb590811ca11b102bffa0ebc
+SHA1: 4b2994a6cf52c80c287d2f8bd05359887de2653d
+SHA256: 4d7c632a20d10bbdbe56a1f56c83b5d5a59b738bd041721332f9712b56bbee1b
+Description: Interbase module for PHP
+Homepage: http://www.php.net/
+Description-md5: 40c18d15eeba50ef5700d72e1e45d586
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-intl
+Priority: optional
+Section: universe/php
+Installed-Size: 507
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-intl
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libicu55 (>= 55.1-1~)
+Filename: pool/universe/p/php7.0/php7.0-intl_7.0.4-7ubuntu2.1_amd64.deb
+Size: 125664
+MD5sum: a3601a07dac60a4ab0daaef33da3853d
+SHA1: 54045e6f4bceb2fbffd79f4b24d159a5cb06a041
+SHA256: 0d0dbeb1d871c40b2f17a77f22ee2e50b28b80921ceb449291a8b8bef42a2519
+Description: Internationalisation module for PHP
+Homepage: http://www.php.net/
+Description-md5: 576352b0c1559ceb07b3161367c69f39
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-mbstring
+Priority: optional
+Section: universe/php
+Installed-Size: 1462
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-mbstring
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14)
+Filename: pool/universe/p/php7.0/php7.0-mbstring_7.0.4-7ubuntu2.1_amd64.deb
+Size: 464048
+MD5sum: e77e5cc1e1787d13c90a6094debb294b
+SHA1: a7b03eb44c8e9fcdcec6eece130af61ba6dda0fb
+SHA256: 01f5aeee6be404ab6d4551da901c4b5182d4bac9b3aae81ff3ac19117b703e92
+Description: MBSTRING module for PHP
+Homepage: http://www.php.net/
+Description-md5: 741a0b4b31628c18e80bdef4f0ec8141
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-mcrypt
+Priority: optional
+Section: universe/php
+Installed-Size: 71
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-mcrypt
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libmcrypt4
+Filename: pool/universe/p/php7.0/php7.0-mcrypt_7.0.4-7ubuntu2.1_amd64.deb
+Size: 14402
+MD5sum: 5a827a13e816ba2166dbcad65d62de62
+SHA1: b99be7215d926831f5d5b2bbdb2408f321ccffa4
+SHA256: 984c7792f20c3b0e7c3ff69f7dea80de25f764fcea27b4f8b914fd1e1737c4f8
+Description: libmcrypt module for PHP
+Homepage: http://www.php.net/
+Description-md5: 96673b2530a6fc30699e194fda12f804
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-phpdbg
+Priority: optional
+Section: universe/php
+Installed-Size: 4447
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-phpdbg, phpapi-20151012
+Depends: libmagic1, mime-support, php7.0-common (= 7.0.4-7ubuntu2.1), tzdata, ucf, libc6 (>= 2.15), libedit2 (>= 2.11-20080614), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Recommends: php-readline
+Conflicts: php5-phpdbg (<< 5.6.16+dfsg-4~)
+Filename: pool/universe/p/php7.0/php7.0-phpdbg_7.0.4-7ubuntu2.1_amd64.deb
+Size: 1312352
+MD5sum: b6dfe04841750008da2ac726e53ae598
+SHA1: 8c2d310a9f72c9ab4a659abcd72ad38c8209d4fa
+SHA256: 6d600149030a0848133c6908d146e30c035976d6713a3b309f1e77bbd0164ca8
+Description: server-side, HTML-embedded scripting language (PHPDBG binary)
+Homepage: http://www.php.net/
+Description-md5: 47d090fa3cc551f561570d2ed3ec7937
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-soap
+Priority: optional
+Section: universe/php
+Installed-Size: 327
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-soap
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libxml2 (>= 2.7.4)
+Filename: pool/universe/p/php7.0/php7.0-soap_7.0.4-7ubuntu2.1_amd64.deb
+Size: 111958
+MD5sum: 9f211eef0f5a3a6319aa1ab927112b88
+SHA1: 11ba1ac29eb38710bea8025015c7168653074e63
+SHA256: 2b00dc3d74f0ab4f53996e500f554583b949e2895e42c5b70ed4365ca658f986
+Description: SOAP module for PHP
+Homepage: http://www.php.net/
+Description-md5: 8ca6ca2ae4fbc6127f6522e73f05005a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-sybase
+Priority: optional
+Section: universe/php
+Installed-Size: 51
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-pdo-dblib, php7.0-pdo-dblib
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libsybdb5 (>= 0.63)
+Filename: pool/universe/p/php7.0/php7.0-sybase_7.0.4-7ubuntu2.1_amd64.deb
+Size: 9780
+MD5sum: be80275bb0e85045cb0da4537106acf4
+SHA1: 84e111d60a18125e299e9e665c140ca8af37285d
+SHA256: 81692a92900764dd963b2442e30182ccb57b5a180ec5819c8feee81f0f328da2
+Description: Sybase module for PHP
+Homepage: http://www.php.net/
+Description-md5: c5f3c0b4521b40ee671df4ab3452df1d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-xsl
+Priority: optional
+Section: universe/php
+Installed-Size: 6
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: all
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Depends: php7.0-common (= 7.0.4-7ubuntu2.1), php7.0-xml
+Filename: pool/universe/p/php7.0/php7.0-xsl_7.0.4-7ubuntu2.1_all.deb
+Size: 882
+MD5sum: 085dc93f15cfe7306116b067afa0cef4
+SHA1: d7b6867fb74b145529865bbc8b983c35601ac55e
+SHA256: 478a8a5910a39c20b3195c2e892c62a69f975d52a2b8fd92e9108d2c4a781a4c
+Description: XSL module for PHP (dummy)
+Homepage: http://www.php.net/
+Description-md5: 93c8fc5e2935346a001f328e898c3cff
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: php7.0-zip
+Priority: optional
+Section: universe/php
+Installed-Size: 87
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: php7.0
+Version: 7.0.4-7ubuntu2.1
+Provides: php-zip
+Depends: php-common (>= 1:33), ucf, php7.0-common (= 7.0.4-7ubuntu2.1), libc6 (>= 2.14), libzip4 (>= 1.0)
+Filename: pool/universe/p/php7.0/php7.0-zip_7.0.4-7ubuntu2.1_amd64.deb
+Size: 19824
+MD5sum: 912aebd41661f50d97fbae2a7ed6c8df
+SHA1: b834de939d07c9be5c7f79d2067b7304b8daa4b7
+SHA256: 4382de98312462b158709e0cb694e2ceede519f6affd45792da36ffb09126f35
+Description: Zip module for PHP
+Homepage: http://www.php.net/
+Description-md5: e148c478613188b645a0ec42c87f0518
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pinba-engine-mysql
+Priority: extra
+Section: universe/database
+Installed-Size: 19
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Bernat <bernat@debian.org>
+Architecture: all
+Version: 1.1.0-1ubuntu1.1
+Depends: pinba-engine-mysql-5.7
+Filename: pool/universe/p/pinba-engine-mysql/pinba-engine-mysql_1.1.0-1ubuntu1.1_all.deb
+Size: 7894
+MD5sum: 840aafa0643b510f2ad015849d39e137
+SHA1: d141f61a7315046f1240adfaa3d4caf8f41f232c
+SHA256: 6c76a50948f540d15741787f5d6c492c8602aa2293e0d732ae8e4915dbbe831b
+Description: realtime statistics server for PHP using MySQL (metapackage)
+Homepage: http://pinba.org/
+Description-md5: 644581976d98def9573c801dbe7cc0a6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pinba-engine-mysql-5.7
+Priority: extra
+Section: universe/database
+Installed-Size: 408
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Bernat <bernat@debian.org>
+Architecture: amd64
+Source: pinba-engine-mysql
+Version: 1.1.0-1ubuntu1.1
+Replaces: pinba-engine-mysql-5.6 (<< 1.1.0-1ubuntu1~)
+Depends: libc6 (>= 2.14), libevent-2.0-5 (>= 2.0.10-stable), libjemalloc1 (>= 2.1.1), libjudydebian1, debconf (>= 0.5) | debconf-2.0, mysql-server-core-5.7 (>= 5.7.12), mysql-server-core-5.7 (<< 5.7.13), dbconfig-common
+Recommends: mysql-client-5.7
+Breaks: pinba-engine-mysql-5.6 (<< 1.1.0-1ubuntu1~)
+Filename: pool/universe/p/pinba-engine-mysql/pinba-engine-mysql-5.7_1.1.0-1ubuntu1.1_amd64.deb
+Size: 92690
+MD5sum: ba4b097eed74fbd9ae9cc87808b6eeed
+SHA1: 914043436d325a4ac752b53bb492cb0c40431786
+SHA256: 903fbce82175c273330c44b4aba63fd02dfe996529f7eef573e4b3c9f58ff94e
+Description: realtime statistics server for PHP using MySQL as a read-only interface
+Homepage: http://pinba.org/
+Description-md5: 4c7e95e58bc4c1085dd1427ba8f6123e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-imobiledevice
+Priority: optional
+Section: universe/python
+Installed-Size: 601
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: gtkpod Maintainers <pkg-gtkpod-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: libimobiledevice
+Version: 1.2.0+dfsg-3~ubuntu0.2
+Replaces: python-iphone, python-libiphone
+Provides: python2.7-imobiledevice
+Depends: libc6 (>= 2.14), libimobiledevice6 (>= 1.1.7), libplist3 (>= 1.11), libpython2.7 (>= 2.7), python (<< 2.8), python (>= 2.7~)
+Conflicts: python-iphone, python-libiphone
+Filename: pool/universe/libi/libimobiledevice/python-imobiledevice_1.2.0+dfsg-3~ubuntu0.2_amd64.deb
+Size: 141576
+MD5sum: 52be013851eaf5431cfc1045bfa2ddf8
+SHA1: 0ed20214bbbc1787e5edc56cac88701a20f04bf7
+SHA256: 672a02e1beaef36ba23b5dd37be8929bf00665f7d31bb0687180efba05ea10e3
+Description: Library for communicating with iPhone and iPod Touch devices
+Homepage: http://libimobiledevice.org/
+Description-md5: 18c07eca7104650f7295d89566b0486f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qemu
+Priority: optional
+Section: universe/metapackages
+Installed-Size: 458
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1:2.5+dfsg-5ubuntu10.1
+Depends: qemu-system (>= 1:2.5+dfsg-5ubuntu10.1), qemu-user (>= 1:2.5+dfsg-5ubuntu10.1), qemu-utils (>= 1:2.5+dfsg-5ubuntu10.1)
+Suggests: qemu-user-static
+Filename: pool/universe/q/qemu/qemu_2.5+dfsg-5ubuntu10.1_amd64.deb
+Size: 83050
+MD5sum: 5a1c445f552564726159b4b8efd76af4
+SHA1: 2bc74385b38733acf87ec2df7d401364e5303807
+SHA256: f4247b0e0e80a8e9e6767dfde6014d067d3fec8ccd47088000793ce77af1dc5c
+Description: fast processor emulator
+Multi-Arch: foreign
+Homepage: http://www.qemu.org/
+Description-md5: 976dc9e06bc50e9bc7637e1a34042953
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qemu-guest-agent
+Priority: optional
+Section: universe/misc
+Installed-Size: 503
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: qemu
+Version: 1:2.5+dfsg-5ubuntu10.1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.4), libglib2.0-0 (>= 2.16.0)
+Filename: pool/universe/q/qemu/qemu-guest-agent_2.5+dfsg-5ubuntu10.1_amd64.deb
+Size: 131162
+MD5sum: de2c79076ddaa8073f097d1c4ea523e2
+SHA1: cd8db6b4e5fca66c2cf62a0ea78a40eedead2694
+SHA256: 79a8934fd98d2dd7151b6829922d50b96609a10ef12af623a7b5dbc680c19990
+Description: Guest-side qemu-system agent
+Multi-Arch: foreign
+Homepage: http://www.qemu.org/
+Description-md5: c2bc281a0e5a8e6c2185b336580fd595
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qemu-user
+Priority: optional
+Section: universe/misc
+Installed-Size: 51138
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: qemu
+Version: 1:2.5+dfsg-5ubuntu10.1
+Replaces: qemu-kvm (<< 1.2.0.dfsg-1)
+Depends: libc6 (>= 2.16), libgcc1 (>= 1:4.7), libglib2.0-0 (>= 2.24.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+Recommends: qemu-user-binfmt
+Suggests: sudo
+Breaks: qemu-kvm (<< 1.2.0.dfsg-1)
+Filename: pool/universe/q/qemu/qemu-user_2.5+dfsg-5ubuntu10.1_amd64.deb
+Size: 6798266
+MD5sum: 9635b8571e571ef84e621231d69f895b
+SHA1: d780334e85c8872f91a479baa8cf1f128432ff58
+SHA256: c29d70da62d0cdecfece8991920f51a3bc2da0db1a45ed30329d4768d74cc4b9
+Description: QEMU user mode emulation binaries
+Multi-Arch: foreign
+Homepage: http://www.qemu.org/
+Description-md5: b7a34d8d1377ca0beb573e0e2b4ce914
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qemu-user-binfmt
+Priority: optional
+Section: universe/otherosfs
+Installed-Size: 20
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: qemu
+Version: 1:2.5+dfsg-5ubuntu10.1
+Depends: qemu-user (= 1:2.5+dfsg-5ubuntu10.1), binfmt-support
+Conflicts: qemu-user-static
+Filename: pool/universe/q/qemu/qemu-user-binfmt_2.5+dfsg-5ubuntu10.1_amd64.deb
+Size: 2622
+MD5sum: b5d373468687a3fe7f20bc23b95790b7
+SHA1: e67c171e1f3079dab0c5fc39c94236e95b6da280
+SHA256: 8db72b68883468dbbcae31b7978fddcdb2313097f01c25b1656d9104cbe5e998
+Description: QEMU user mode binfmt registration for qemu-user
+Multi-Arch: foreign
+Homepage: http://www.qemu.org/
+Description-md5: b9d172841422ce933839d1a34cce7b20
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qemu-user-static
+Priority: optional
+Section: universe/otherosfs
+Installed-Size: 83752
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: qemu
+Version: 1:2.5+dfsg-5ubuntu10.1
+Provides: qemu-user-binfmt
+Recommends: binfmt-support
+Suggests: sudo
+Conflicts: qemu-user-binfmt
+Filename: pool/universe/q/qemu/qemu-user-static_2.5+dfsg-5ubuntu10.1_amd64.deb
+Size: 7631584
+MD5sum: e45e1a1824ca6e72ba39018908a49baa
+SHA1: d13c50ffbb90b572c6c6c2ce0d530f5b77186f91
+SHA256: 982d5dac914ca9e83043b7a8a0864fcdc46fd6abac5432a4737d39a15be4de13
+Description: QEMU user mode emulation binaries (static version)
+Built-Using: gcc-5 (= 5.3.1-14ubuntu2), gccgo-6 (= 6.0.1-0ubuntu1), glib2.0 (= 2.48.0-1ubuntu4), glibc (= 2.23-0ubuntu3), zlib (= 1:1.2.8.dfsg-2ubuntu4)
+Multi-Arch: foreign
+Homepage: http://www.qemu.org/
+Description-md5: 5d8ec17cec68244efa918fa841e2964c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntu-sdk
+
+Package: registry-tools
+Priority: optional
+Section: universe/net
+Installed-Size: 220
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: samba
+Version: 2:4.3.9+dfsg-0ubuntu0.16.04.2
+Replaces: samba-doc (<< 2:4.0.5~)
+Depends: libc6 (>= 2.8), libpopt0 (>= 1.14), libreadline6 (>= 6.0), libtalloc2 (>= 2.0.4~git20101213), samba-libs (= 2:4.3.9+dfsg-0ubuntu0.16.04.2)
+Conflicts: samba-doc (<< 2:4.0.5~)
+Filename: pool/universe/s/samba/registry-tools_4.3.9+dfsg-0ubuntu0.16.04.2_amd64.deb
+Size: 28102
+MD5sum: 573636bc0519b868b1db8e458e631209
+SHA1: 9704dcaa8f09741a8e45307e414f90f4e5c56838
+SHA256: c4cfb5188caf29e824e75610e507edc5e118f3710bec50c13d15c20134c4e3ca
+Description: tools for viewing and manipulating the Windows registry
+Homepage: http://www.samba.org
+Description-md5: 7266dad7d5ee9360537ffc04ec7157f3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: samba-testsuite
+Priority: optional
+Section: universe/net
+Installed-Size: 7572
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Samba Maintainers <pkg-samba-maint@lists.alioth.debian.org>
+Architecture: amd64
+Source: samba
+Version: 2:4.3.9+dfsg-0ubuntu0.16.04.2
+Replaces: samba-doc (<< 2:4.0.5~), samba-libs (<< 2:4.0.10+dfsg-4), samba-tools, samba4-testsuite
+Depends: samba-common-bin, libattr1 (>= 1:2.4.46-8), libbsd0 (>= 0.0), libc6 (>= 2.14), libldb1 (>= 0.9.21), libpopt0 (>= 1.14), libreadline6 (>= 6.0), libsmbclient (>= 2:4.0.3+dfsg1), libtalloc2 (>= 2.1.0), libtdb1 (>= 1.2.7+git20101214), libtevent0 (>= 0.9.26), libwbclient0 (= 2:4.3.9+dfsg-0ubuntu0.16.04.2), samba-libs (= 2:4.3.9+dfsg-0ubuntu0.16.04.2)
+Suggests: subunit
+Conflicts: samba-doc (<< 2:4.0.5~), samba-libs (<< 2:4.0.10+dfsg-4)
+Filename: pool/universe/s/samba/samba-testsuite_4.3.9+dfsg-0ubuntu0.16.04.2_amd64.deb
+Size: 1634212
+MD5sum: ae116a1cefe11e5f8bd33e0a4fd37653
+SHA1: 216ceddd2c25dbecac82247ef0df7d0096b41d69
+SHA256: 587b8866d02539c4eb28b5d01511454bc93e0d687b342f5ba61a9d3b730a84d3
+Description: test suite from Samba
+Homepage: http://www.samba.org
+Description-md5: 9909252a54b8d1689d0ad0af3791b792
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: squid-cgi
+Priority: optional
+Section: universe/web
+Installed-Size: 239
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: amd64
+Source: squid3
+Version: 3.5.12-1ubuntu7.2
+Replaces: squid3-cgi
+Provides: squid3-cgi
+Depends: apache2 | httpd, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Conflicts: squid3-cgi
+Filename: pool/universe/s/squid3/squid-cgi_3.5.12-1ubuntu7.2_amd64.deb
+Size: 60944
+MD5sum: fb7bd52a585108a2a8fc74b0f81b7677
+SHA1: f6cdb1f24a7054377072c8daba5c842569cad305
+SHA256: eabd5104798708cf6df0f6ae4f54c11782d9f45a7b610ef285cd0d06f9b61b43
+Description: Full featured Web Proxy cache (HTTP proxy) - control CGI
+Homepage: http://www.squid-cache.org
+Description-md5: f5629ee1f0974ccbb0cb7626340a3ec3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: squid-purge
+Priority: optional
+Section: universe/web
+Installed-Size: 208
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: amd64
+Source: squid3
+Version: 3.5.12-1ubuntu7.2
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 4.9)
+Filename: pool/universe/s/squid3/squid-purge_3.5.12-1ubuntu7.2_amd64.deb
+Size: 51898
+MD5sum: 89a906324528863fac2604fc45bf2bc5
+SHA1: b2dc4379aa52146e266a8daf145a349ac30d12b5
+SHA256: abddb33e1583f62e0a27eaee105e35b07d1ba4818d9770ad9826800a0645a64b
+Description: Full featured Web Proxy cache (HTTP proxy) - control utility
+Homepage: http://www.squid-cache.org
+Description-md5: 1f0ac66043729b3fb7702aa802ebdf9b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: squidclient
+Priority: optional
+Section: universe/web
+Installed-Size: 243
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Luigi Gangitano <luigi@debian.org>
+Architecture: amd64
+Source: squid3
+Version: 3.5.12-1ubuntu7.2
+Replaces: squid3-client
+Provides: squid3-client
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libgnutls30 (>= 3.4.2), libgssapi-krb5-2 (>= 1.10+dfsg~), libstdc++6 (>= 5.2)
+Conflicts: squid3-client
+Filename: pool/universe/s/squid3/squidclient_3.5.12-1ubuntu7.2_amd64.deb
+Size: 63772
+MD5sum: cac18d3ee0cd89b8748f4ccf8ddbf109
+SHA1: b8c243e4ad96bc7cec86a0a12665fcae33854852
+SHA256: fea1dab2c049825a26dabdd07293372506103f9ed553572927cb77dd168dde25
+Description: Full featured Web Proxy cache (HTTP proxy) - control utility
+Homepage: http://www.squid-cache.org
+Description-md5: 496a594ac08f6190d306007269da1e8c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: thunderbird-globalmenu
+Priority: optional
+Section: universe/web
+Installed-Size: 116
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: thunderbird
+Version: 1:38.8.0+build1-0ubuntu0.16.04.1
+Depends: thunderbird
+Filename: pool/universe/t/thunderbird/thunderbird-globalmenu_38.8.0+build1-0ubuntu0.16.04.1_amd64.deb
+Size: 8226
+MD5sum: 7ca9d5c2c8a1b8771b1ef3d1c8319f0d
+SHA1: 913b0698038ee0a438e89b6a28b05196eeb9d3e3
+SHA256: 799c242cc00b5348745b7b645a40940e1740e17adda52c19d7e1a5252b0b7560
+Description: Email, RSS and newsgroup client (transitional package)
+Description-md5: fd9f1e7c342cabe4de92af51203c160c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: thunderbird-mozsymbols
+Priority: extra
+Section: universe/debug
+Installed-Size: 33786
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: thunderbird
+Version: 1:38.8.0+build1-0ubuntu0.16.04.1
+Filename: pool/universe/t/thunderbird/thunderbird-mozsymbols_38.8.0+build1-0ubuntu0.16.04.1_amd64.deb
+Size: 34155998
+MD5sum: 054a6ca9aded493521de4e84a6527b82
+SHA1: ec43f934a85b006554248a422cc4ecc11eb4937d
+SHA256: 7c4d373bb0d6fc51c2b82542c20d5010d5f6baea709f25c59aed8bd7c127f584
+Description: Email, RSS and newsgroup client - Breakpad symbols
+Description-md5: ac1a6a5ccd00092e19efbf6f6f9538a0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: thunderbird-testsuite
+Priority: extra
+Section: universe/misc
+Installed-Size: 119
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: thunderbird
+Version: 1:38.8.0+build1-0ubuntu0.16.04.1
+Depends: thunderbird (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-gnome-support (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-bn-bd (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-en-gb (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-en-us (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-es-ar (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-es-es (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-fy-nl (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ga-ie (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-nb-no (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-nn-no (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-pa-in (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-pt-br (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-pt-pt (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-sv-se (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ta-lk (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-zh-cn (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-zh-tw (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-af (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ar (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ast (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-be (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-bg (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-bn (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-br (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ca (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-cs (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-cy (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-da (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-de (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-dsb (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-el (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-en (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-es (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-et (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-eu (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-fi (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-fr (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-fy (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ga (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-gd (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-gl (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-he (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-hr (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-hsb (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-hu (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-hy (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-id (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-is (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-it (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ja (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ka (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ko (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-lt (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-mk (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-nb (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-nl (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-nn (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-pa (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-pl (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-pt (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-rm (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ro (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ru (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-si (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-sk (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-sl (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-sq (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-sr (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-sv (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-ta (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-tr (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-uk (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-vi (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-zh-hans (= 1:38.8.0+build1-0ubuntu0.16.04.1), thunderbird-locale-zh-hant (= 1:38.8.0+build1-0ubuntu0.16.04.1), python, dbus-x11, xvfb, make, metacity, gnome-session, gnome-settings-daemon, ubuntu-settings, light-themes, unzip, libgl1-mesa-dri
+Filename: pool/universe/t/thunderbird/thunderbird-testsuite_38.8.0+build1-0ubuntu0.16.04.1_amd64.deb
+Size: 8928
+MD5sum: 3abe4738a0d9b120ecc922dc87be059e
+SHA1: dc8646ad805a76a1ced83799c0c0cd78c9d8153f
+SHA256: 1c25af77561269334211377141f0395d3ec104a553832150150f3e3547973b2c
+Description: Email, RSS and newsgroup client - testsuite
+Description-md5: 743f5679caf063b6d5ed211311011154
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat7
+Priority: optional
+Section: universe/java
+Installed-Size: 295
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 7.0.68-1ubuntu0.1
+Depends: tomcat7-common (>= 7.0.68-1ubuntu0.1), ucf, adduser, debconf (>= 0.5) | debconf-2.0
+Recommends: authbind
+Suggests: tomcat7-docs (>= 7.0.68-1ubuntu0.1), tomcat7-admin (>= 7.0.68-1ubuntu0.1), tomcat7-examples (>= 7.0.68-1ubuntu0.1), tomcat7-user (>= 7.0.68-1ubuntu0.1), libtcnative-1 (>= 1.1.32~)
+Filename: pool/universe/t/tomcat7/tomcat7_7.0.68-1ubuntu0.1_all.deb
+Size: 36720
+MD5sum: a0fa8b1425304af450b164dd0984e8e3
+SHA1: da960f502337505677bde31ad16dfce022ae1c48
+SHA256: b4df2c8f3001bc5ba52b467a0860eb957df03627b4bb89246e770b514682c8be
+Description: Servlet and JSP engine
+Homepage: http://tomcat.apache.org
+Description-md5: 71d2a54f759941814ab4cf7873094b26
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat7-admin
+Priority: optional
+Section: universe/java
+Installed-Size: 150
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Depends: tomcat7-common (>= 7.0.68-1ubuntu0.1)
+Filename: pool/universe/t/tomcat7/tomcat7-admin_7.0.68-1ubuntu0.1_all.deb
+Size: 27368
+MD5sum: b970be703cc830e6f131fc3885091dd2
+SHA1: 16d0c473334aa9d6ba3d719c6e7fe564ce055f7a
+SHA256: 6e0e58bf4721d83c9cdba722ec58aff3342f1004272ec7db5964bcf392cb1081
+Description: Servlet and JSP engine -- admin web applications
+Homepage: http://tomcat.apache.org
+Description-md5: 07b3738a38d2448ee2c0b77d4dbd745d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat7-common
+Priority: optional
+Section: universe/java
+Installed-Size: 375
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Depends: libtomcat7-java (>= 7.0.68-1ubuntu0.1), default-jre-headless | java6-runtime-headless | java6-runtime | java-6-runtime
+Filename: pool/universe/t/tomcat7/tomcat7-common_7.0.68-1ubuntu0.1_all.deb
+Size: 265554
+MD5sum: 11630774857643b56fce5e64a8c682cd
+SHA1: 4af5dfbe9314e20ccb16da7b7cffa90f833e6318
+SHA256: 3a811b2a2621388399968d1d18d69e4b8928289782b67ed949262afd15700626
+Description: Servlet and JSP engine -- common files
+Homepage: http://tomcat.apache.org
+Description-md5: f1b8817985b6e745bfe6216aa2086c4b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat7-docs
+Priority: optional
+Section: universe/doc
+Installed-Size: 3910
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Depends: tomcat7-common (>= 7.0.68-1ubuntu0.1)
+Filename: pool/universe/t/tomcat7/tomcat7-docs_7.0.68-1ubuntu0.1_all.deb
+Size: 579536
+MD5sum: 742fe10f7b04e90e7d12077ecec703cd
+SHA1: 93091839bf69632cdb34cefcbe30a32193d381bf
+SHA256: a2bc2bda8816dc865c9a397c94c8b2c5c064353ec542c7d908906d1b9d8b352b
+Description: Servlet and JSP engine -- documentation
+Homepage: http://tomcat.apache.org
+Description-md5: 523c216160e93c3df0c2e38305883e9c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat7-examples
+Priority: optional
+Section: universe/java
+Installed-Size: 1281
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Depends: tomcat7-common (>= 7.0.68-1ubuntu0.1), libjstl1.1-java, libjakarta-taglibs-standard-java
+Filename: pool/universe/t/tomcat7/tomcat7-examples_7.0.68-1ubuntu0.1_all.deb
+Size: 184618
+MD5sum: ab4ee66d79c83cc25d8c57768bf65bb8
+SHA1: 65f69868e61480fe357bdd479c84d74c2cf9b883
+SHA256: dea58101f96bd44d980284259ce92bc15ec2a7c09a252bd18f204c8b6add34f4
+Description: Servlet and JSP engine -- example web applications
+Homepage: http://tomcat.apache.org
+Description-md5: 3fd8302e7ffe454afd9ba42730f7a01a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat7-user
+Priority: optional
+Section: universe/java
+Installed-Size: 224
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat7
+Version: 7.0.68-1ubuntu0.1
+Depends: tomcat7-common (>= 7.0.68-1ubuntu0.1), netcat
+Suggests: tomcat7-docs (>= 7.0.68-1ubuntu0.1), tomcat7-admin (>= 7.0.68-1ubuntu0.1), tomcat7-examples (>= 7.0.68-1ubuntu0.1), tomcat7 (>= 7.0.68-1ubuntu0.1)
+Filename: pool/universe/t/tomcat7/tomcat7-user_7.0.68-1ubuntu0.1_all.deb
+Size: 25212
+MD5sum: e710bf1a65bd6969d6b5f27a05ca4cfc
+SHA1: 828d4689b5428605d9c84778a8f3fd8fb71c040f
+SHA256: d2a84eb9aa75e7ae1152f37cca50f2619306f14ecf09d5c3a25cf4dd6b467514
+Description: Servlet and JSP engine -- tools to create user instances
+Homepage: http://tomcat.apache.org
+Description-md5: f0f735a1a5d3acaabdc873d63b8b405b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tomcat8-user
+Priority: optional
+Section: universe/java
+Installed-Size: 233
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: tomcat8
+Version: 8.0.32-1ubuntu1.1
+Depends: netcat, tomcat8-common (>= 8.0.32-1ubuntu1.1)
+Suggests: tomcat8 (>= 8.0.32-1ubuntu1.1), tomcat8-admin (>= 8.0.32-1ubuntu1.1), tomcat8-docs (>= 8.0.32-1ubuntu1.1), tomcat8-examples (>= 8.0.32-1ubuntu1.1)
+Filename: pool/universe/t/tomcat8/tomcat8-user_8.0.32-1ubuntu1.1_all.deb
+Size: 30706
+MD5sum: 86bb621e62254d50164b1dac87bce979
+SHA1: e0fa86513cd412796a9af545e5641d3cee262587
+SHA256: 33bd248dc332f48b3e48775737837b9c735ccded8c12d8770cc2eb57bed9a1f5
+Description: Apache Tomcat 8 - Servlet and JSP engine -- tools to create user instances
+Homepage: http://tomcat.apache.org
+Description-md5: fe19024bad571e95ae7d6b858fb2f1d8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: vim-haproxy
+Priority: optional
+Section: universe/net
+Installed-Size: 43
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian HAProxy Maintainers <pkg-haproxy-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: haproxy
+Version: 1.6.3-1ubuntu0.1
+Recommends: vim-addon-manager
+Filename: pool/universe/h/haproxy/vim-haproxy_1.6.3-1ubuntu0.1_all.deb
+Size: 8260
+MD5sum: f7f649025a2ce578bd21b487e0c3092d
+SHA1: 3de7f7840e070f36a2d35677f9f7faac177efeb9
+SHA256: 7e62f4372aaefaaa80970add0a438334cdf91b3c54829249d4c01a9b10cc63eb
+Description: syntax highlighting for HAProxy configuration files
+Homepage: http://haproxy.1wt.eu/
+Description-md5: f0f210c34582537684988d90bc2d6337
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-hypervisor-4.4-amd64
+Priority: optional
+Section: universe/kernel
+Installed-Size: 46
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Depends: xen-system-amd64
+Filename: pool/universe/x/xen/xen-hypervisor-4.4-amd64_4.6.0-1ubuntu4.1_amd64.deb
+Size: 5146
+MD5sum: 118c2b1564b09b4ff86f4375a8a48ab3
+SHA1: 2ca62c2869c2833b186734d433601ad644c53d3f
+SHA256: 88a39a49454a17c47b9b163bf574e5fb2a2bd6ce05a4c74ad5f7e467232b5d61
+Description: Transitional package for upgrade
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-hypervisor-4.5-amd64
+Priority: optional
+Section: universe/kernel
+Installed-Size: 46
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Depends: xen-system-amd64
+Filename: pool/universe/x/xen/xen-hypervisor-4.5-amd64_4.6.0-1ubuntu4.1_amd64.deb
+Size: 5146
+MD5sum: 31ce26a96053a065fbc2f39d134e3cbb
+SHA1: 4863103f4a3024fc7566a5efe19faf0adc517c67
+SHA256: 02a488fc8022f92b5e48c028786b6541ca26a06053d497236a2ae080a0550b21
+Description: Transitional package for upgrade
+Description-md5: 9c7ab425352141164176c2ccee4593e6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-hypervisor-4.6-amd64
+Priority: optional
+Section: universe/kernel
+Installed-Size: 2994
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Replaces: xen-hypervisor-4.4-amd64 (<< 4.5.0), xen-hypervisor-4.5-amd64 (<< 4.6.0)
+Provides: xen-hypervisor, xen-hypervisor-4.6, xen-hypervisor-amd64
+Recommends: xen-utils-4.6
+Breaks: xen-hypervisor-4.4-amd64 (<< 4.5.0), xen-hypervisor-4.5-amd64 (<< 4.6.0)
+Filename: pool/universe/x/xen/xen-hypervisor-4.6-amd64_4.6.0-1ubuntu4.1_amd64.deb
+Size: 1727218
+MD5sum: 502e43066e4c447f5ce3445871bc2a8b
+SHA1: c7ad9026bfe6df00522ae85eec316e50e6d5781e
+SHA256: db1e669ad3e92a518ddc86a0d417f0cab429dbcdfd9bf9b9d0c36945f2baf040
+Description: Xen Hypervisor on AMD64
+Description-md5: 30d22c56057f827a5cc3329925199782
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-system-amd64
+Priority: optional
+Section: universe/kernel
+Installed-Size: 46
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Provides: xen-system
+Depends: xen-hypervisor-4.6-amd64, xen-utils-4.6
+Filename: pool/universe/x/xen/xen-system-amd64_4.6.0-1ubuntu4.1_amd64.deb
+Size: 5208
+MD5sum: 782e6db0cdbd78e3406ae4ee40bc7273
+SHA1: c091901f5882ae5948683f59e40dd52e0750a980
+SHA256: d8a433cef2b8768e4a74922d575cbfb2d5bb35be0953a9e1aa26cb2822c8b250
+Description: Xen System on AMD64 (meta-package)
+Description-md5: f9a399da9b1f85d66b7c24b24d068efc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-utils-4.6
+Priority: optional
+Section: universe/kernel
+Installed-Size: 1760
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Provides: xen-utils
+Depends: e2fslibs (>= 1.37), libc6 (>= 2.15), libncurses5 (>= 6), libtinfo5 (>= 6), libxen-4.6 (>= 4.6.0), libxenstore3.0 (>= 4.1.0~rc6), libyajl2 (>= 2.0.4), python2.7, python:any (>= 2.6.6-7~), xen-utils-common (>= 4.6.0-1ubuntu4.1)
+Recommends: bridge-utils, xen-hypervisor-4.6, qemu-system-x86, grub-xen-host
+Filename: pool/universe/x/xen/xen-utils-4.6_4.6.0-1ubuntu4.1_amd64.deb
+Size: 456214
+MD5sum: 27cb8da03e2cdcc046a885e9ac28d99d
+SHA1: 12306e75224e0fc92799a7d1c9f7f45edb831109
+SHA256: 623cea2a88e8bca35f770cac5b2d23f56ffb4e95fea1c9d2d119c3e230272f5c
+Description: XEN administrative tools
+Built-Using: seabios (= 1.8.2-1ubuntu1)
+Description-md5: bd953dd4214727fe5759b05287bffcbe
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xen-utils-common
+Priority: optional
+Section: universe/kernel
+Installed-Size: 431
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: all
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Depends: lsb-base, python, udev, xenstore-utils, ucf
+Filename: pool/universe/x/xen/xen-utils-common_4.6.0-1ubuntu4.1_all.deb
+Size: 219864
+MD5sum: c472d9d467a5a17a25e26b5da5609c90
+SHA1: 59e377d464785016a82c53b42ea76c561dff7903
+SHA256: 3566cf09421187cfdaed3f450ecad319701c0073b9d905bab0b8361d1686586e
+Description: Xen administrative tools - common files
+Description-md5: 1f4106fa79ae4eaa3fa5874a33091fc9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xenstore-utils
+Priority: optional
+Section: universe/admin
+Installed-Size: 199
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Xen Team <pkg-xen-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: xen
+Version: 4.6.0-1ubuntu4.1
+Replaces: xen-utils-common (<= 3.1.0-1)
+Depends: libc6 (>= 2.14), libxenstore3.0 (>= 4.1.0~rc6)
+Conflicts: xen-utils-common (<= 3.1.0-1)
+Filename: pool/universe/x/xen/xenstore-utils_4.6.0-1ubuntu4.1_amd64.deb
+Size: 11866
+MD5sum: e57b82f10568f0e17f7f23d1dcdb01b4
+SHA1: 31e5dd98018c738489c91986d7ac5a812052711b
+SHA256: 982bdf647f8a83e69b9ecaf535cf12bfbf1aa144aa37d3261d22228f9389bd6c
+Description: Xenstore command line utilities for Xen
+Description-md5: e3e63e0a92be70a959445a4cc75dc8fb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: xul-ext-calendar-timezones
+Priority: optional
+Section: universe/web
+Installed-Size: 116
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: thunderbird
+Version: 1:38.8.0+build1-0ubuntu0.16.04.1
+Filename: pool/universe/t/thunderbird/xul-ext-calendar-timezones_38.8.0+build1-0ubuntu0.16.04.1_amd64.deb
+Size: 10106
+MD5sum: 61d0c5f61462bb0b4e489212fa9c0a6e
+SHA1: 6357b5a4c7c37e4f910c8a16ffbc9dd5f029d7a5
+SHA256: 6767aaa54115a690a486b4ec5018f4aa48e1a0ab236f6c049a247c93c92dab9a
+Description: Calendar Extension for Thunderbird (transitional package)
+Description-md5: aa51586667f70f4444de07214c475b6d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: ubuntu-mate-desktop
+
+Package: xul-ext-gdata-provider
+Priority: optional
+Section: universe/web
+Installed-Size: 391
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: thunderbird
+Version: 1:38.8.0+build1-0ubuntu0.16.04.1
+Depends: xul-ext-lightning (= 1:38.8.0+build1-0ubuntu0.16.04.1)
+Filename: pool/universe/t/thunderbird/xul-ext-gdata-provider_38.8.0+build1-0ubuntu0.16.04.1_amd64.deb
+Size: 60478
+MD5sum: 2e4fbf252733955f7aefd2076125baed
+SHA1: 3255c3ab450011187d286e849e89fa742552e395
+SHA256: 2d3db31d38a656e347cc438534e8509a2aa13307c69c8552fc89c22b72378f73
+Description: Calendar Extension for Thunderbird - Google Calendar support
+Enhances: thunderbird, xul-ext-lightning
+Description-md5: f62489adb0c47d7399cead39c714c174
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: ubuntu-mate-desktop
+
+Package: xul-ext-lightning
+Priority: optional
+Section: universe/web
+Installed-Size: 5715
+Maintainer: Ubuntu Mozilla Team <ubuntu-mozillateam@lists.ubuntu.com>
+Architecture: amd64
+Source: thunderbird
+Version: 1:38.8.0+build1-0ubuntu0.16.04.1
+Depends: thunderbird (= 1:38.8.0+build1-0ubuntu0.16.04.1), libc6 (>= 2.7), libstdc++6 (>= 4.1.1)
+Recommends: xul-ext-gdata-provider, xul-ext-calendar-timezones
+Filename: pool/universe/t/thunderbird/xul-ext-lightning_38.8.0+build1-0ubuntu0.16.04.1_amd64.deb
+Size: 1520694
+MD5sum: c60e40ae1a89f4222da9fef583ef297a
+SHA1: 76e5fab064679fb1b5e176e6e1bb847d368da31e
+SHA256: 12e4b503cf52a0f278f1e78913bcb35d75f98b7d656c3b13ad443f95a2e6b6c2
+Description: Calendar Extension for Thunderbird
+Enhances: thunderbird
+Description-md5: a0293e147dba3d166b3727a30a6634a0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 3y
+Task: ubuntu-mate-desktop
+

@@ -1,0 +1,32 @@
+!PrimeState
+dependency_paths: !!set {usr/lib/x86_64-linux-gnu: null, usr/lib/x86_64-linux-gnu/mesa: null,
+  usr/lib/x86_64-linux-gnu/mesa-egl: null}
+directories: !!set {Icon: null, Icon/128x128: null, Icon/16x16: null, Icon/256x256: null,
+  Icon/32x32: null, Icon/48x48: null, Packages: null}
+files: !!set {Icon/128x128/sublime-text.png: null, Icon/16x16/sublime-text.png: null,
+  Icon/256x256/sublime-text.png: null, Icon/32x32/sublime-text.png: null, Icon/48x48/sublime-text.png: null,
+  Packages/ASP.sublime-package: null, Packages/ActionScript.sublime-package: null,
+  Packages/AppleScript.sublime-package: null, Packages/Batch File.sublime-package: null,
+  Packages/C#.sublime-package: null, Packages/C++.sublime-package: null, Packages/CSS.sublime-package: null,
+  Packages/Clojure.sublime-package: null, Packages/Color Scheme - Default.sublime-package: null,
+  Packages/D.sublime-package: null, Packages/Default.sublime-package: null, Packages/Diff.sublime-package: null,
+  Packages/Erlang.sublime-package: null, Packages/Go.sublime-package: null, Packages/Graphviz.sublime-package: null,
+  Packages/Groovy.sublime-package: null, Packages/HTML.sublime-package: null, Packages/Haskell.sublime-package: null,
+  Packages/Java.sublime-package: null, Packages/JavaScript.sublime-package: null,
+  Packages/LaTeX.sublime-package: null, Packages/Language - English.sublime-package: null,
+  Packages/Lisp.sublime-package: null, Packages/Lua.sublime-package: null, Packages/Makefile.sublime-package: null,
+  Packages/Markdown.sublime-package: null, Packages/Matlab.sublime-package: null,
+  Packages/OCaml.sublime-package: null, Packages/Objective-C.sublime-package: null,
+  Packages/PHP.sublime-package: null, Packages/Pascal.sublime-package: null, Packages/Perl.sublime-package: null,
+  Packages/Python.sublime-package: null, Packages/R.sublime-package: null, Packages/Rails.sublime-package: null,
+  Packages/Regular Expressions.sublime-package: null, Packages/RestructuredText.sublime-package: null,
+  Packages/Ruby.sublime-package: null, Packages/Rust.sublime-package: null, Packages/SQL.sublime-package: null,
+  Packages/Scala.sublime-package: null, Packages/ShellScript.sublime-package: null,
+  Packages/TCL.sublime-package: null, Packages/Text.sublime-package: null, Packages/Textile.sublime-package: null,
+  Packages/Theme - Default.sublime-package: null, Packages/Vintage.sublime-package: null,
+  Packages/XML.sublime-package: null, Packages/YAML.sublime-package: null, changelog.txt: null,
+  crash_reporter: null, plugin_host: null, python3.3.zip: null, sublime.py: null,
+  sublime_plugin.py: null, sublime_text: null, sublime_text.desktop: null}
+project_options: {}
+properties:
+  snap: ['*']

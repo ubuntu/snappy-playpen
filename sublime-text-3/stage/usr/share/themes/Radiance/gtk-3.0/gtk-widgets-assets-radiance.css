@@ -1,0 +1,23 @@
+.menu .check {
+    -gtk-icon-source: url("assets/check-menuitem-unselected.png");
+}
+
+.menu .radio {
+    -gtk-icon-source: url("assets/check-menuitem-unselected.png");
+}
+
+.menu .check:checked {
+    -gtk-icon-source: url("assets/check-menuitem-dark.png");
+}
+
+.menu .check:checked:insensitive {
+    -gtk-icon-source: url("assets/check-menuitem-insensitive-dark.png");
+}
+
+.menu .radio:checked {
+    -gtk-icon-source: url("assets/radio-menuitem-dark.png");
+}
+
+.menu .radio:checked:insensitive {
+    -gtk-icon-source: url("assets/radio-menuitem-insensitive-dark.png");
+}

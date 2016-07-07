@@ -1,0 +1,428 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: LLVM/Clang
+Source: http://llvm.org/releases/download.html
+
+Files: *
+Copyright: 2003-2007 University of Illinois at Urbana-Champaign.
+License: U-OF-I-BSD-LIKE
+
+Files: */install-sh
+Copyright: 1994 X Consortium
+License: LLVM
+ This script is licensed under the LLVM license, with the following
+ additional copyrights and restrictions:
+ .
+ Copyright 1991 by the Massachusetts Institute of Technology
+ .
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting 
+ documentation, and that the name of M.I.T. not be used in advertising or
+ publicity pertaining to distribution of the software without specific,
+ written prior permission.  M.I.T. makes no representations about the
+ suitability of this software for any purpose.  It is provided "as is"
+ without express or implied warranty.
+ .
+ ==============================================================================
+ LLVM Release License
+ ==============================================================================
+ University of Illinois/NCSA
+ Open Source License
+ .
+ Copyright (c) 2003-2013 University of Illinois at Urbana-Champaign.
+ All rights reserved.
+ .
+ Developed by:
+ .
+     LLVM Team
+ .
+     University of Illinois at Urbana-Champaign
+ .
+     http://llvm.org
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal with
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+     * Redistributions of source code must retain the above copyright notice,
+       this list of conditions and the following disclaimers.
+ .
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimers in the
+       documentation and/or other materials provided with the distribution.
+ .
+     * Neither the names of the LLVM Team, University of Illinois at
+       Urbana-Champaign, nor the names of its contributors may be used to
+       endorse or promote products derived from this Software without specific
+       prior written permission.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+ SOFTWARE.
+
+Files: clang/lib/Headers/*
+Copyright: 2003-2007 University of Illinois at Urbana-Champaign
+License: Expat
+
+Files: clang/lib/Headers/iso646.h
+Copyright: 2008 Eli Friedman
+License: Expat
+
+Files: clang/lib/Headers/limits.h
+Copyright: 2009 Chris Lattner
+License: Expat
+
+Files: clang/lib/Headers/stdarg.h
+Copyright: 2008 Eli Friedman
+License: Expat
+
+Files: clang/lib/Headers/stdbool.h
+Copyright: 2008 Eli Friedman
+License: Expat
+
+Files: clang/lib/Headers/stddef.h
+Copyright: 2008 Eli Friedman
+License: Expat
+
+Files: clang/lib/Headers/stdint.h
+Copyright: 2009 Chris Lattner
+License: Expat
+
+Files: clang/lib/Headers/tgmath.h
+Copyright: 2009 Howard Hinnant
+License: Expat
+
+Files: compiler-rt/*
+Copyright: 2009-2013 Craig van Vliet
+           2009-2013 Edward O'Callaghan
+           2009-2013 Howard Hinnant
+License: U-OF-I-BSD-LIKE or MIT
+
+Files: compiler-rt/lib/BlocksRuntime/Block.h
+Copyright: 2008-2010 Apple, Inc.
+License: MIT
+
+Files: compiler-rt/lib/BlocksRuntime/Block_private.h
+Copyright: 2008-2010 Apple, Inc.
+License: MIT
+
+Files: compiler-rt/lib/BlocksRuntime/data.c
+Copyright: 2008-2010 Apple, Inc.
+License: MIT
+
+Files: compiler-rt/lib/BlocksRuntime/runtime.c
+Copyright: 2008-2010 Apple, Inc.
+License: MIT
+
+Files: include/llvm/Support/*
+Copyright: 2003-2013 University of Illinois at Urbana-Champaign.
+           Copyright (C) 2004 eXtensible Systems, Inc.
+License: U-OF-I-BSD-LIKE
+
+Files: lib/Support/reg*
+Copyright: 1992, 1993, 1994 Henry Spencer
+           1992, 1993, 1994 The Regents of the University of California
+License: BSD-3-clause
+
+Files: lib/Target/ARM/*
+Copyright: ARM Limited
+License: ARM
+ ARM Limited
+ .
+ Software Grant License Agreement ("Agreement")
+ .
+ Except for the license granted herein to you, ARM Limited ("ARM") reserves all
+ right, title, and interest in and to the Software (defined below).
+ .
+ Definition
+ .
+ "Software" means the code and documentation as well as any original work of
+ authorship, including any modifications or additions to an existing work, that
+ is intentionally submitted by ARM to llvm.org (http://llvm.org) ("LLVM") for
+ inclusion in, or documentation of, any of the products owned or managed by LLVM
+ (the "Work"). For the purposes of this definition, "submitted" means any form of
+ electronic, verbal, or written communication sent to LLVM or its
+ representatives, including but not limited to communication on electronic
+ mailing lists, source code control systems, and issue tracking systems that are
+ managed by, or on behalf of, LLVM for the purpose of discussing and improving
+ the Work, but excluding communication that is conspicuously marked otherwise.
+ .
+ 1. Grant of Copyright License. Subject to the terms and conditions of this
+    Agreement, ARM hereby grants to you and to recipients of the Software
+    distributed by LLVM a perpetual, worldwide, non-exclusive, no-charge,
+    royalty-free, irrevocable copyright license to reproduce, prepare derivative
+    works of, publicly display, publicly perform, sublicense, and distribute the
+    Software and such derivative works.
+ .
+ 2. Grant of Patent License. Subject to the terms and conditions of this
+    Agreement, ARM hereby grants you and to recipients of the Software
+    distributed by LLVM a perpetual, worldwide, non-exclusive, no-charge,
+    royalty-free, irrevocable (except as stated in this section) patent license
+    to make, have made, use, offer to sell, sell, import, and otherwise transfer
+    the Work, where such license applies only to those patent claims licensable
+    by ARM that are necessarily infringed by ARM's Software alone or by
+    combination of the Software with the Work to which such Software was
+    submitted. If any entity institutes patent litigation against ARM or any
+    other entity (including a cross-claim or counterclaim in a lawsuit) alleging
+    that ARM's Software, or the Work to which ARM has contributed constitutes
+    direct or contributory patent infringement, then any patent licenses granted
+    to that entity under this Agreement for the Software or Work shall terminate
+    as of the date such litigation is filed.
+ .
+ Unless required by applicable law or agreed to in writing, the software is
+ provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ either express or implied, including, without limitation, any warranties or
+ conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+Files: lldb/*
+Copyright: 2010, 2012 Apple Inc.
+License: NCSA
+ University of Illinois/NCSA
+ Open Source License
+ .
+ Copyright (c) 2010 Apple Inc.
+ All rights reserved.
+ .
+ Developed by:
+ .
+     LLDB Team
+ .
+     http://lldb.llvm.org/
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal with
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+     * Redistributions of source code must retain the above copyright notice,
+       this list of conditions and the following disclaimers.
+ .
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimers in the
+       documentation and/or other materials provided with the distribution.
+ .
+     * Neither the names of the LLDB Team, copyright holders, nor the names of 
+       its contributors may be used to endorse or promote products derived from 
+       this Software without specific prior written permission.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+ SOFTWARE.
+
+Files: lldb/test/pexpect-2.4/*
+Copyright: 2008 Noah Spurrier
+License: Expat
+
+License: Expat
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Files: lldb/test/unittest2/*
+Copyright: 1999-2003 Steve Purcell
+           2003-2010 Python Software Foundation
+License: Python
+ This module is free software, and you may redistribute it and/or modify
+ it under the same terms as Python itself, so long as this copyright message
+ and disclaimer are retained in their original form.
+ .
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT,
+ SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF
+ THIS CODE, EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+ DAMAGE.
+ .
+ THE AUTHOR SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE.  THE CODE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS,
+ AND THERE IS NO OBLIGATION WHATSOEVER TO PROVIDE MAINTENANCE,
+ SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+Files: polly/*
+Copyright: 2009-2013 Polly Team
+License: Polly
+ ==============================================================================
+ Polly Release License
+ ==============================================================================
+ University of Illinois/NCSA
+ Open Source License
+ .
+ Copyright (c) 2009-2013 Polly Team
+ All rights reserved.
+ .
+ Developed by:
+ .
+     Polly Team
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal with
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+     * Redistributions of source code must retain the above copyright notice,
+       this list of conditions and the following disclaimers.
+ .
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimers in the
+       documentation and/or other materials provided with the distribution.
+ .
+     * Neither the names of the Polly Team, copyright holders, nor the names of
+       its contributors may be used to endorse or promote products derived from
+       this Software without specific prior written permission.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+ SOFTWARE.
+
+Files: polly/lib/JSON/*
+Copyright: Polly Team
+License: public-domain
+ **FIXME**
+ polly/lib/JSON/LICENSE.txt claims that these files are in the public domain, but
+ the machine-readable copyright spec requires additional clarification.
+
+Files: polly/tools/GPURuntime/*
+Copyright: Polly Team
+License: U-OF-I-BSD-LIKE or MIT
+
+Files: test/YAMLParser/*
+Copyright: 2006 Kirill Simonov
+License: MIT
+
+Files: lldb/tools/debugserver/source/MacOSX/stack_logging.h
+Copyright: 1999-2007 Apple Inc.
+License: Apple
+ This file contains Original Code and/or Modifications of Original Code
+ as defined in and that are subject to the Apple Public Source License
+ Version 2.0 (the 'License'). You may not use this file except in
+ compliance with the License. Please obtain a copy of the License at
+ http://www.opensource.apple.com/apsl/ and read it before using this
+ file.
+ .
+ The Original Code and all software distributed under the License are
+ distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER
+ EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,
+ INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.
+ Please see the License for the specific language governing rights and
+ limitations under the License.
+
+Files: utils/unittest/googletest/*
+Copyright: 2006-2008, Google Inc.
+License: BSD-3-Clause
+
+License: BSD-3-Clause
+ This software is provided 'as-is', without any express or implied
+ warranty.  In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
+
+License: U-OF-I-BSD-LIKE
+ ==============================================================================
+ LLVM Release License
+ ==============================================================================
+ University of Illinois/NCSA
+ Open Source License
+ .
+ Copyright (c) 2003-2013 University of Illinois at Urbana-Champaign.
+ All rights reserved.
+ .
+ Developed by:
+ .
+     LLVM Team
+ .
+     University of Illinois at Urbana-Champaign
+ .
+     http://llvm.org
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal with
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+     * Redistributions of source code must retain the above copyright notice,
+       this list of conditions and the following disclaimers.
+ .
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimers in the
+       documentation and/or other materials provided with the distribution.
+ .
+     * Neither the names of the LLVM Team, University of Illinois at
+       Urbana-Champaign, nor the names of its contributors may be used to
+       endorse or promote products derived from this Software without specific
+       prior written permission.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE
+ SOFTWARE.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ THE SOFTWARE.

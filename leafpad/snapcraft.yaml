@@ -1,34 +1,25 @@
 name: leafpad
-version: 1
+version: "1"
 summary: GTK+ based simple text editor
 description: |
    Leafpad is a simple GTK+ based text editor, the user interface is similar
    to Notepad. It aims to be lighter than GEdit and KWrite, and to be as
    useful as them.
-confinement: devmode
+confinement: strict
 
 apps:
   leafpad:
-    command: usr/bin/leafpad.wrapper
-    plugs: [home, unity7, opengl, network, x11]
+    command: desktop-launch leafpad
+    plugs: [home, unity7, opengl, network, x11, gsettings]
 
 parts:
   leafpad:
+    source: https://github.com/oluc/leafpad.git
     plugin: autotools
-    source: https://github.com/oluc/leafpad
-    source-type: git
     snap:
       - -usr/share/doc
-  env:
-    plugin: copy
-    files:
-      leafpad.wrapper: usr/bin/leafpad.wrapper
-      gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
-      loaders.cache: usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache
-    stage-packages:
-      - fontconfig-config
+    build-packages:
+      - build-essential
+      - intltool
+    after: [desktop/gtk2]
 
-build-packages:
-  - build-essential
-  - libgtk2.0-dev
-  - intltool

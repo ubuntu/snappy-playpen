@@ -1,0 +1,90 @@
+Package: skype
+Description-md5: a398bc8cee97c4027d64bae3fa223f58
+Description-en: client for Skype VOIP and instant messaging service
+ Skype is software that enables the world's conversations.  Millions of
+ individuals and businesses use Skype to make free video and voice calls,
+ send instant messages and share files with other Skype users.  Every day,
+ people also use Skype to make low-cost calls to landlines and mobiles.
+ .
+ * Make free Skype-to-Skype calls to anyone else, anywhere in the world.
+ * Call to landlines and mobiles at great rates.
+ * Group chat with up to 200 people or conference call with up to 25 others.
+ * Free to download.
+
+Package: adobe-flashplugin
+Description-md5: 4414ca68dbd37fdc3008c70a8a107946
+Description-en: Adobe Flash Player plugin
+ Adobe® Flash® Player is a cross-platform, browser-based application runtime
+ that provides uncompromised viewing of expressive applications, content, and
+ videos across browsers and operating systems.
+ .
+ This package provides plugins compatible with both Chromium and Mozilla based
+ web browsers
+
+Package: adobe-flash-properties-gtk
+Description-md5: c0ca975b4427ced66609fa3dfdd8cac5
+Description-en: GTK+ control panel for Adobe Flash Player plugin
+ Adobe® Flash® Player is a cross-platform, browser-based application runtime
+ that provides uncompromised viewing of expressive applications, content, and
+ videos across browsers and operating systems.
+ .
+ This package provides the GTK+ control panel for the Flash plugin.
+
+Package: adobe-flash-properties-kde
+Description-md5: 278f8fa35a532d8eb8005cd83c4e88e0
+Description-en: KDE control panel Adobe Flash Player plugin
+ Adobe® Flash® Player is a cross-platform, browser-based application runtime
+ that provides uncompromised viewing of expressive applications, content, and
+ videos across browsers and operating systems.
+ .
+ This package provides the KDE control panel for the Flash plugin.
+
+Package: gce-daemon
+Description-md5: 06a4cd9a54dd896c539eb4c8edaef69d
+Description-en: Google daemon for configuring instances
+ Runs in the background and creates new users per instance metadata.
+ Configures SSH keys.
+
+Package: gce-startup-scripts
+Description-md5: 9de81cf821a9dde6584671507ea460f3
+Description-en: Google Compute Engine Start-up scripts
+ Reference scripts for first-boot initialization on Google Compute Engine.
+
+Package: gce-imagebundle
+Description-md5: 90baabcdf37a66430a86c9c317fcb2a0
+Description-en: Bundle image for use on Google Compute Engine
+ Provides Google GCE scripts for bundling images.
+ This package is deprecated.
+
+Package: google-cloud-sdk
+Description-md5: 633ed1e69235db3da94c02ebf49323ed
+Description-en: Google Cloud SDK for interacting with Google Cloud services.
+ The command-line tools for Google App Engine, Compute Engine,
+ Cloud Storage, BigQuery, Cloud SQL, and Cloud DNS are bundled as part of
+ the Cloud SDK.
+ .
+ This is a packaged distribution of the Google Cloud SDK. For up-to-date
+ versions please see https://developers.google.com/cloud/sdk.
+
+Package: gce-cloud-config
+Description-md5: df659787f100694d1fcd363d5e5e5044
+Description-en: Configuration for Ubuntu on Google Compute Engine
+ Configuration for using both Cloud-init and the Google Startup scripts
+ on Google Compute Engine. This package allows Cloud-init and the Startup
+ scripts to work together.
+
+Package: skype-bin
+Description-md5: f2005b237d6c04263da07144edba3749
+Description-en: client for Skype VOIP and instant messaging service - binary files
+ Skype is software that enables the world's conversations.  Millions of
+ individuals and businesses use Skype to make free video and voice calls,
+ send instant messages and share files with other Skype users.  Every day,
+ people also use Skype to make low-cost calls to landlines and mobiles.
+ .
+ * Make free Skype-to-Skype calls to anyone else, anywhere in the world.
+ * Call to landlines and mobiles at great rates.
+ * Group chat with up to 200 people or conference call with up to 25 others.
+ * Free to download.
+ .
+ This package contains the binary data.
+

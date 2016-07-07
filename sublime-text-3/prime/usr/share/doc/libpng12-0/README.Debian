@@ -1,0 +1,31 @@
+libpng for Debian
+-----------------
+
+There have been changes in the way libpng is handled. Currently, there
+are 2 versions of libpng in Debian at a time : libpng10 and libpng12,
+formerly known as libpng2 and libpng3.
+
+* The libpng10-0 and libpng12-0 packages contain the runtime for apps
+  built with these new libraries.
+* libpng2 and libpng3 contain compatibility symlinks to let apps built
+  with older versions work correctly.
+* libpng10-dev and libpng12-dev are the corresponding development
+  packages. You should only use libpng10-dev to build packages using
+  gdk-imlib1.
+* libpng2-dev and libpng3-dev provide compatibility symlinks to build
+  applications still build-depending on those.
+
+A package linking with libpng should use as build-depends :
+* libpng-dev for small packages not depending on other libraries which
+  use or may use libpng.
+* libpng10-dev for packages also linking with gdk-imlib1 or gnome 1.
+* libpng12-dev for packages also linking with SDL, Gnome 2, Qt, or any
+  other library using libpng12.
+
+This version diverges from upstream in 3 ways :
+1) the library is explicitly linked with -lm -lz
+2) libpng.so.3 is just a compatibility symlink
+3) symbols are versioned
+
+ -- Junichi Uekawa <dancer@debian.org>, Mon Oct 28 2002 12:27:54
+ -- Josselin Mouette <joss@debian.org>, Tue Jun 10 2003 18:16:17 +0200

@@ -1,0 +1,46 @@
+This directory contains the ATK library.
+
+For more information about ATK and accessibility in GNOME, see:
+ http://projects.gnome.org/accessibility
+
+Dependencies
+============
+
+ATK requires GLib >= 2.31.2. Information about GLib is available from
+http://www.gtk.org/.
+
+Getting the source code
+=======================
+
+You can get the source code of each ATK release as a tarball:
+https://download.gnome.org/sources/atk/
+
+You can also clone the ATK master branch from GNOME repository:
+https://git.gnome.org/browse/atk
+
+Building
+========
+
+To buid ATK from a release tarball, the usual is using autotool, as:
+
+  $ ./configure
+  $ make
+  # make install
+
+To build ATK from a Git clone, run the autogen.sh script instead of
+the configure one. Before running autogen.sh or configure, make sure
+you have libtool in your path.
+
+Note that autogen.sh runs configure for you.  If you wish to pass
+options like --prefix=/usr to configure you can give those options
+to autogen.sh and they will be passed on to configure.
+
+How to report bugs
+==================
+
+Bugs should be reported to the GNOME bug tracking system:
+  http://bugzilla.gnome.org/enter_bug.cgi?product=atk
+
+You will need to create an account for yourself.
+
+You can also mail the mailing list gnome-accessibility-devel@gnome.org

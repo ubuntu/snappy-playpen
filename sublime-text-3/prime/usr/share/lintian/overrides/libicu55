@@ -1,0 +1,3 @@
+# libicu55 installs multiple shared libraries, none of which is
+# actually called libicu.so.55, but all of which are libicu*.so.55.
+libicu55: package-name-doesnt-match-sonames

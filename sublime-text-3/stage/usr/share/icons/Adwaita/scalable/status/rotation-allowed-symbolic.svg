@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16.047" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer9" transform="translate(-181 -356.99)">
+  <path id="rect20667-6" style="color:#000000;text-indent:0;block-progression:tb;text-decoration-line:none;enable-background:new;text-transform:none;fill:#bebebe" d="m187.23 356.99c-0.51426 0.00067-1.0206 0.17688-1.4062 0.5625l-4.25 4.25c-0.77127 0.77127-0.75662 2.0733 0 2.8438l0.47197 0.37332h2.8438l-1.9095-1.8108 4.25-4.2188 7.7188 7.7812c0.0152 0.0154 0.0435 0.0191 0.0312 0.0312l-4.25 4.25-1.7354-1.8992v2.8125l0.29787 0.46171 0.0312 0.0312c0.77124 0.77124 2.0413 0.77124 2.8125 0l4.25-4.25c0.77125-0.77125 0.76539-2.0416 0-2.8125l-7.75-7.8438c-0.38574-0.38831-0.89198-0.56317-1.4062-0.5625z"/>
+  <path id="rect15033" style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;fill:#bebebe;mix-blend-mode:normal;image-rendering:auto;isolation:auto;paint-order:normal" d="m182.73 370.01 2.8091 2.8091 2.8105-2.8105z"/>
+  <path id="path15040" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;shape-rendering:auto;solid-color:#000000;text-decoration-line:none;fill:#bebebe;mix-blend-mode:normal;block-progression:tb;text-indent:0;image-rendering:auto;white-space:normal;text-decoration-style:solid;isolation:auto;paint-order:normal;text-transform:none" d="m182.02 366.02v1h1.4219c0.47201 0 0.87449 0.14019 1.1465 0.37305 0.272 0.23287 0.43946 0.55123 0.43946 1.041v2.2422h1v-2.2422c0-0.7446-0.30367-1.3833-0.78906-1.7988-0.4854-0.41557-1.1266-0.61524-1.7969-0.61524h-1.4219z"/>
+ </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<schemalist>
+  <schema id="org.gnome.desktop.datetime" path="/org/gnome/desktop/datetime/">
+    <key name="automatic-timezone" type="b">
+      <default>false</default>
+      <summary>Automatically update timezone</summary>
+      <description>Whether to automatically update the timezone using geolocation.</description>
+    </key>
+  </schema>
+</schemalist>

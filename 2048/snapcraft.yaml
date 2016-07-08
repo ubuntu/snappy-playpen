@@ -6,7 +6,7 @@ confinement: strict
 
 apps:
   game-2048:
-    command: desktop-launch $SNAP/usr/lib/x86_64-linux-gnu/qt5/bin/qmlscene $SNAP/2048.qml
+    command: desktop-launch $SNAP/usr/lib/*/qt5/bin/qmlscene $SNAP/2048.qml
     plugs: [unity7, opengl, x11]
 
 parts:

@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=qcomicbook
+GenericName=ComicBook Viewer
+GenericName[fi]=Sarjakuvakatselin
+GenericName[pl]=Przeglądarka komiksów
+GenericName[tr]=Çizgi Roman Görüntüleyicisi
+Comment=QComicBook is a viewer for comic book archives (cbz, cbr, cbt). QComicBook has specific features like page preview, thumbnails view, bookmarks, manga mode for easing comicbook reading.
+Comment[fi]=QComicBook on sarjakuva-arkistojen katselin (cbz, cbr ja cbt), jossa on lukemista helpottavia ominaisuuksia, kuten sivujen esikatselu, pienoiskuvat, kirjanmerkit ja mangatila.
+Comment[tr]=QComicBook cbz, cbr, cbt biçimindeki çizgi roman arşivlerini görüntülemek için kullanılır. Sayfa ön görünümü, sayfa döşeme, yer imi, mangalar için sayfa sırasını ters gösterme gibi çizgi roman okumayı kolaylaştırıcı özellikleri bulunuyor.
+Comment[pl]=Przeglądarka do archiwów z komiksami
+Exec=qcomicbook
+Icon=${SNAP}/meta/gui/qcomicbook.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Application;Graphics;Viewer;
+MimeType=application/x-cbz;application/x-cbr;application/x-cbt;

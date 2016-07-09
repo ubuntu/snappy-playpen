@@ -18,6 +18,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `dosbox`           |                           |
 | :white_check_mark:  | `cloudfoundry-cli` |                           |
 | :white_check_mark:  | `consul`           |                           |
+| :white_check_mark:  | `click-parser`     | [click-parser][click-parser] |
 | :red_circle:        | `deis-workflow-cli`|                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
 | :white_check_mark:  | `galculator`       |                           |
@@ -48,6 +49,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach

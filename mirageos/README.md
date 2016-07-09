@@ -7,14 +7,13 @@ package manager.
 ## Current state
 
 Working features:
- - The snap builds.
- - The binary on prime/bin/mirage works.
+ - The snap builds and runs in devmode.
+
+To do:
+ - More testing to check if all the features are working.
+ - Find the missing permissions to remove devmode.
 
 Known issues:
- - Even on devmode, when executing mirageos.mirage, it fails with:
-   /bin/sh: 1: /usr/bin/tput: Permission denied
-   /bin/sh: 1: /bin/stty: Permission denied
-   Fatal error: exception (Sys_error ".: Permission denied")
  - The required packages are defined in the source branch, in the mirage.opam
    file. There must be a way to install from this file, instead of redefining
    the dependencies, install them and call make. If we find how to do this,

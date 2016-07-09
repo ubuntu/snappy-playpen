@@ -1,0 +1,125 @@
+name: gazebo
+version: 7.2.0
+summary: A dynamic multi-robot simulator
+description: |
+  Gazebo simulates multiple robots in a 3D environment, with extensive dynamic
+  interaction between objects.
+confinement: devmode
+
+apps:
+  gazebo:
+    command: bin/gazebo
+
+parts:
+  gazebo:
+    source: https://bitbucket.org/osrf/gazebo
+    source-type: mercurial
+    source-tag: gazebo7_7.2.0
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    build-packages:
+      - build-essential
+      - debhelper
+      - mesa-utils
+      - cppcheck
+      - xsltproc
+      - python-psutil
+      - python
+      - bc
+      - netcat-openbsd
+      - net-tools
+      - libfreeimage-dev
+      - libprotoc-dev
+      - libprotobuf-dev
+      - protobuf-compiler
+      - freeglut3-dev
+      - libcurl4-openssl-dev
+#      - libqt4-dev
+      - libqtwebkit-dev
+      - libtinyxml-dev
+      - libtar-dev
+      - libtbb-dev
+      - libogre-1.9-dev
+      - libxml2-dev
+      - pkg-config
+      - libltdl-dev
+      - libgts-dev
+      - libboost-thread-dev
+      - libboost-signals-dev
+      - libboost-system-dev
+      - libboost-filesystem-dev
+      - libboost-program-options-dev
+      - libboost-regex-dev
+      - libboost-iostreams-dev
+      - libbullet-dev
+      - libsimbody-dev
+      - libignition-math2-dev
+      - libignition-transport-dev
+      - libtinyxml2-dev
+      - libsdformat4-dev
+      - libavformat-dev
+      - libavcodec-dev
+      - libgraphviz-dev
+      - libswscale-dev
+      - ruby-ronn
+      - libgdal-dev
+      - libopenal-dev
+      - libtcmalloc-minimal4
+      - libusb-1.0-0-dev
+      - libqwtplot3d-qt4-dev
+    after: [ignition-math, sdformat, libignition-transport, libdart, desktop/qt4]
+
+  ignition-math:
+    source: https://bitbucket.org/ignitionrobotics/ign-math
+    source-type: mercurial
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+
+  sdformat:
+    source: https://bitbucket.org/osrf/sdformat
+    source-type: mercurial
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    after: [ignition-math]
+
+  libignition-transport:
+    source: https://bitbucket.org/ignitionrobotics/ign-transport
+    source-type: mercurial
+    source-tag: ignition-transport_1.2.0
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    build-packages:
+      - build-essential
+      - uuid-dev
+      - libprotobuf-dev
+      - protobuf-compiler
+      - libzmq3-dev
+      - ruby-ronn
+    after: [ign-tools]
+
+  ign-tools:
+    source: https://bitbucket.org/ignitionrobotics/ign-tools
+    source-type: mercurial
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    build-packages:
+      - ruby-ronn
+      - ruby-dev
+
+  libdart:
+    source: https://github.com/dartsim/dart
+    source-type: git
+    source-tag: v4.3.6
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    build-packages:
+      - libeigen3-dev
+      - libfcl-dev
+      - libassimp-dev
+      - freeglut3-dev
+      - libxi-dev
+      - libxmu-dev
+      - libflann-dev
+      - libtinyxml-dev
+      - libtinyxml2-dev
+      - liburdfdom-dev

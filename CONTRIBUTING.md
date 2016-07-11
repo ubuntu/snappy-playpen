@@ -1,7 +1,7 @@
 # Contributing to Snappy Playpen
 
 Snappy Playpen is a learning project, so we don't place too many restrictions
-on the projects add to it.
+on the projects that are added to it.
 
 ## Best practices
 
@@ -23,9 +23,9 @@ repo if we can't get it to work after a month without updates.
 Use `snap-template` with our formatted `README.md` to kickstart your project.
 
 
-## Pushing to github
+## Pushing to GitHub
 
-If you haven't used github yet, here's how you can go about getting started
+If you haven't used GitHub yet, here's how you can go about getting started
 and contributing your fixes to Snappy Playpen:
 
  - [set up git](https://help.github.com/articles/set-up-git/)

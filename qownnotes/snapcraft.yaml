@@ -15,6 +15,7 @@ apps:
       - x11
       - network
       - network-bind
+      - home
 
 parts:
   qownnotes:

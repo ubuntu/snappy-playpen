@@ -1,0 +1,48 @@
+name: docker
+version: "1.11.2"
+summary: Docker
+description: |
+  Docker complements kernel namespacing with a high-level API which operates at
+  the process level. It runs unix processes with strong guarantees of isolation
+  and repeatability across servers.
+  .
+  Docker is a great building block for automating distributed systems:
+  large-scale web deployments, database clusters, continuous deployment systems,
+  private PaaS, service-oriented architectures, etc.
+  .
+  This package contains the daemon and client. Using docker.io on non-amd64 hosts
+  is not supported at this time. Please be careful when using it on anything
+  besides amd64.
+  .
+  Also, note that kernel version 3.8 or above is required for proper operation of
+  the daemon process, and that any lower versions may have subtle and/or glaring
+  issues.
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+  docker:
+    command: docker
+  dockerd:
+    command: docker daemon
+    daemon: simple
+  docker-containerd:
+    command: docker-containerd
+  docker-containerd-ctr:
+    command: docker-containerd-ctr
+  docker-containerd-shim:
+    command: docker-containerd-shim
+  docker-runc:
+    command: docker-runc
+
+parts:
+  docker:
+    source: https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz
+    plugin: copy
+    files:
+      '*': './usr/bin/'
+    stage-packages:
+      - iptables
+      - git
+      - procps
+      - xz-utils
+      

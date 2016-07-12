@@ -39,7 +39,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `plank`            |                           | autotools, vala           |
 | :white_check_mark:  | `qcomicbook`       |                           | cmake, qt5                |
 | :red_circle:        | `qdriverstation`   |                           | frc, qmake, qt5, robotics |
-| :white_check_mark:  | `qownnotes`        |                           | qmake, qt5, tar           |
+| :white_check_mark:  | `qownnotes`        | [qownnotes][qownnotes]    | qmake, qt5, tar           |
 | :white_check_mark:  | `ristretto`        |                           | qmake, qt5, tar           |
 | :white_check_mark:  | `scummvm`          |                           | autotools                 |
 | :white_check_mark:  | `shotwell`         |                           | autotools, vala           |

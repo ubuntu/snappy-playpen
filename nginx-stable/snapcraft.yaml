@@ -10,25 +10,23 @@ confinement: devmode
 
 apps:
   nginx:
-    command: nginx
+    command: $SNAP/sbin/nginx
     stop-command: nginx -s quit
     daemon: simple
     plugs: [network, network-bind]
 
 parts:
   nginx:
-    source: http://hg.nginx.org/nginx/archive/cb783d9cc197.tar.gz
-    source-type: tar
-    source-subdir: /nginx-cb783d9cc197/auto/
-    plugin: autotools
+    source: http://hg.nginx.org/nginx/archive/default.tar.gz
+    plugin: x_autotools
     configflags:
-      - --sbin-path=
-      - --conf-path=
-      - --pid-path=
-      - --error-log-path=
-      - --http-log-path=
-      - --user=
-      - --group=
+      #- --sbin-path=$SNAP/sbin/
+      #- --conf-path=$SNAP/conf/
+      #- --pid-path=
+      #- --error-log-path=$SNAP_DATA/log/error.log
+      #- --http-log-path=
+      #- --user=
+      #- --group=
       - --with-http_ssl_module
       - --with-http_realip_module
       - --with-http_addition_module
@@ -52,33 +50,14 @@ parts:
       - --with-http_v2_module
       - --with-ipv6
     build-packages:
-      - build-essential
       - autoconf
+      - build-essential
       - libpcre2-posix0
       - libpcre3
       - libpcre3-dev
+      - libssl-dev
       - pcre2-utils
       - pcredz
       - pcregrep
       - zlib1g
       - zlib1g-dev
-    #stage-packages:
-    
-#Preparing to pull nginx 
-#Pulling nginx 
-#Preparing to build nginx 
-#Building nginx 
-#autoreconf -i
-#autoreconf: 'configure.ac' or 'configure.in' is required
-#Command '['/bin/sh', '/tmp/tmpbm__y22a', 'autoreconf', '-i']' returned
-#non-zero exit status 1
-#Command '['lxc', 'exec', 'snapcraft-nonmonarchically-wurtzitic-eddie',
-#'--', 'snapcraft', 'snap', '--output', 'nginx_1.11.1_amd64.snap']'
-#returned non-zero exit status 1
-
-    #### The problem is that `configure` is in a directory beside
-    #### where it should be:
-    ####     parts/nginx/auto/       not
-    ####     parts/nginx/src/        where it should be
-    #                           Need to use `organize:` - watch Popey's video
-    #                           again!

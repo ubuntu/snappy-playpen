@@ -1,4 +1,4 @@
-# $PROJECT snap
+# **nginx** snap
 
 This project will someday build a working snap of `nginx` webserver.
 

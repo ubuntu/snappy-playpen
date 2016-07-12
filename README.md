@@ -58,6 +58,7 @@ This project currently includes the following snaps:
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
+[qownnotes]: https://uappexplorer.com/app/qownnotes.pbek
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
 [vault]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [wallpaperdownloader]: https://uappexplorer.com/app/wallpaperdownloader.egarcia

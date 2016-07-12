@@ -1,0 +1,22 @@
+name: game-2048
+version: 1
+summary: 2048 game
+description: clone written in pure QML. No C++ wrappers needed.
+confinement: strict
+
+apps:
+  game-2048:
+    command: desktop-launch $SNAP/usr/lib/*/qt5/bin/qmlscene $SNAP/2048.qml
+    plugs: [unity7, opengl, x11]
+
+parts:
+  game-2048:
+    plugin: copy
+    source: https://github.com/MartinBriza/2048.qml
+    source-type: git
+    files:
+      2048.qml: 2048.qml
+    stage-packages:
+      - qml-module-qtquick2
+      - qmlscene
+    after: [desktop/qt5]

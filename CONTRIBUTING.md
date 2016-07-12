@@ -1,7 +1,11 @@
 # Contributing to Snappy Playpen
 
 Snappy Playpen is a learning project, so we don't place too many restrictions
-on the projects add to it. For your project to be added, it is important that:
+on the projects that are added to it.
+
+## Best practices
+
+For your project to be added, it is important that:
 
  - it builds by just running `snapcraft cleanbuild` in the directory
  - you add a `README.md` file to your directory which explains
@@ -17,3 +21,14 @@ Please note that we are going to consider removing a non-working snap from the
 repo if we can't get it to work after a month without updates.
 
 Use `snap-template` with our formatted `README.md` to kickstart your project.
+
+
+## Pushing to GitHub
+
+If you haven't used GitHub yet, here's how you can go about getting started
+and contributing your fixes to Snappy Playpen:
+
+ - [set up git](https://help.github.com/articles/set-up-git/)
+ - [create your own fork](https://help.github.com/articles/fork-a-repo/)
+ - [configure your fork for remote use](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+ - [here's how to add a file](https://help.github.com/articles/adding-a-file-to-a-repository-from-the-command-line/)

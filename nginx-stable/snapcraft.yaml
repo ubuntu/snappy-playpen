@@ -10,7 +10,7 @@ confinement: devmode
 
 apps:
   nginx:
-    command: $SNAP/sbin/nginx
+    command: usr/nginx/nginx
     stop-command: nginx -s quit
     daemon: simple
     plugs: [network, network-bind]
@@ -18,13 +18,13 @@ apps:
 parts:
   nginx:
     source: http://hg.nginx.org/nginx/archive/default.tar.gz
-    plugin: x_autotools
+    plugin: autotools_nginx
     configflags:
-      #- --sbin-path=$SNAP/sbin/
-      #- --conf-path=$SNAP/conf/
-      #- --pid-path=
-      #- --error-log-path=$SNAP_DATA/log/error.log
-      #- --http-log-path=
+      - --sbin-path=/usr/nginx/nginx
+      - --conf-path=/usr/nginx/nginx.conf
+      - --pid-path=/usr/nginx/nginx.pid
+      - --error-log-path=/log/error.log
+      - --http-log-path=/log/access.log
       #- --user=
       #- --group=
       - --with-http_ssl_module

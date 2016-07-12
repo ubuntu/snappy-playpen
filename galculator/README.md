@@ -7,14 +7,13 @@ MATE application suite.
 
 Working features:
 
- * Galculator can perform calcualtions and uses the default Ubuntu MATE
+ * Galculator can perform calculations and uses the default set theme.
  theme.
 
 Known issues:
 
   * .png are not being rendered. For example, borders around buttons.
-  * Some menu item don't render correctly.
 
 TODO:
 
-  * Fix .png and menu rendering.
+  * Fix .png.

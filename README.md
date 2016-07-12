@@ -16,7 +16,9 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
 | :white_check_mark:  | `dcos-cli`         |                           |
 | :white_check_mark:  | `dosbox`           |                           |
+| :white_check_mark:  | `cloudfoundry-cli` |                           |
 | :white_check_mark:  | `consul`           |                           |
+| :white_check_mark:  | `click-parser`     | [click-parser][click-parser] |
 | :red_circle:        | `deis-workflow-cli`|                           |
 | :white_check_mark:  | `ffmpeg`           |                           |
 | :white_check_mark:  | `galculator`       |                           |
@@ -29,11 +31,13 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `minetest`         |                           |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
 | :white_check_mark:  | `mpv`              |                           |
-| :red_circle:        | `openjdk-demo`     |                           |
+| :white_check_mark:  | `openjdk-demo`     |                           |
 | :white_check_mark:  | `ristretto`        |                           |
 | :white_check_mark:  | `smplayer`         |                           |
 | :red_circle:        | `plank`            |                           |
 | :white_check_mark:  | `qcomicbook`       |                           |
+| :red_circle:        | `qdriverstation`   |                           |
+| :white_check_mark:  | `qownnotes`        | coming soon               |
 | :white_check_mark:  | `scummvm`          |                           |
 | :white_check_mark:  | `shotwell`         |                           |
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
@@ -42,14 +46,17 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
 | :white_check_mark:  | `vlc`              |                           |
+| :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] |
 | :white_check_mark:  | `youtube-dl`       |                           |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
+[click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
 [vault]: https://uappexplorer.com/app/kpcli-elopio.elopio
+[wallpaperdownloader]: https://uappexplorer.com/app/wallpaperdownloader.egarcia
 
 
 If the apps is listed in the second column, you can easily install it from the

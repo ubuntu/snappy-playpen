@@ -3,7 +3,6 @@
 This project creates a working snap of ScummVM.
 
 To get this done, we need to do the following:
- - add custom launcher
  - build from current git
 
 ## Current state

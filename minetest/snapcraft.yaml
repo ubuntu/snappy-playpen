@@ -6,12 +6,12 @@ description: |
   under the LGPL (version 2.1 or later). It supports both survival and
   creative modes along with multiplayer support, dynamic lighting, and an
   "infinite" map generator.
-confinement: devmode
+confinement: strict
 
 apps:
   minetest:
     command: minetest
-    plugs: [x11, network, network-bind, unity7, opengl, home]
+    plugs: [x11, network, network-bind, unity7, opengl, home, pulseaudio]
 
 parts:
   launcher:
@@ -45,9 +45,11 @@ parts:
       - libogg-dev
       - libopenal-dev
       - libpng12-dev
+      - libpulse-dev
       - libsqlite3-dev
       - libvorbis-dev
       - libx11-dev
       - zlib1g-dev
     stage-packages:
       - libgl1-mesa-dri
+      - libpulse0

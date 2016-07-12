@@ -1,8 +1,8 @@
 # MirageOS snap
 
 This is a ocaml project for creating unikernels.
-There is no deb package, and it's interesting because it's a new language and
-package manager.
+There is no deb package. It's interesting because it uses a language and a
+package manager I haven't used in snapcraft before.
 
 ## Current state
 

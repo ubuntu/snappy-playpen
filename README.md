@@ -20,6 +20,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `click-parser`     | [click-parser][click-parser] | nodejs                 |
 | :white_check_mark:  | `dcos-cli`         |                           | python3                   |
 | :red_circle:        | `deis-workflow-cli`|                           | go                        |
+| :white_check_mark:  | `docker-machine`   |                           | custom go plugin          |
 | :white_check_mark:  | `dosbox`           |                           | autotools                 |
 | :white_check_mark:  | `ffmpeg`           |                           | autotools                 |
 | :white_check_mark:  | `galculator`       |                           | autotools, gtk3           |

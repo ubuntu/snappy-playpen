@@ -1,0 +1,23 @@
+name: docker-machine
+version: 0.8.0-rc2
+summary: Machine management for a container-centric world
+description: |
+  Machine lets you create Docker hosts on your computer, on cloud providers,
+  and inside your own data center. It creates servers, installs Docker on them,
+  then configures the Docker client to talk to them.
+confinement: strict
+
+apps:
+  machine:
+    command: bin/machine
+    plugs: [network, network-bind]
+
+parts:
+  machine:
+    plugin: machine
+    source: https://github.com/docker/machine
+    source-type: git
+    source-tag: v0.8.0-rc2
+    go-importpath: github.com/docker/machine
+    go-buildpath: cmd/machine.go
+    build-packages: [g++]

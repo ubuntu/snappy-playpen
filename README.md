@@ -33,6 +33,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | copy, perl                |
 | :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |
 | :white_check_mark:  | `minetest`         |                           | cmake, copy               |
+| :white_check_mark:  | `mirageos`         |                           | caml, opam, make              |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  | curses, autotools         |
 | :white_check_mark:  | `mpv`              |                           | autotools, waf            |
 | :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
@@ -53,7 +54,6 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `vlc`              |                           | autotools                 |
 | :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] | maven  |
 | :white_check_mark:  | `youtube-dl`       |                           | autotools, python3        |
-
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio

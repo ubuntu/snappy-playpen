@@ -12,7 +12,7 @@ confinement: strict
 apps:
   residualvm:
     command: residualvm
-    plugs: [x11, home, pulseaudio, opengl]
+    plugs: [x11, home, pulseaudio, opengl, unity7]
 
 parts:
   residualvm:

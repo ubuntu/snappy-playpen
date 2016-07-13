@@ -21,6 +21,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `dcos-cli`         |                           | python3                   |
 | :red_circle:        | `deis-workflow-cli`|                           | go                        |
 | :white_check_mark:  | `dosbox`           |                           | autotools                 |
+| :white_check_mark:  | `docker-compose`   |                           | python3                   |
 | :white_check_mark:  | `ffmpeg`           |                           | autotools                 |
 | :white_check_mark:  | `galculator`       |                           | autotools, gtk3           |
 | :white_check_mark:  | `gitter-im`        |                           | copy, gtk3, wget          |

@@ -1,0 +1,8 @@
+#/bin/bash
+
+set -x
+
+cp -n $SNAP/etc/settings.json $SNAP_USER_DATA/settings.json
+
+cd $SNAP_DATA
+exec  $SNAP/bin/etherpad-lite --settings $SNAP_USER_DATA/settings.json

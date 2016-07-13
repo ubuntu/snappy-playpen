@@ -3,4 +3,6 @@
 **/snap
 **/prime
 **/*.snap
+**/*.bz2
+**/squashfs-root
 **/*.tar*

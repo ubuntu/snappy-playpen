@@ -11,6 +11,8 @@ parts:
         source: git://github.com/hikiko/hexchat.git
 
         build-packages:
+            - liblua5.3-dev
+            - libluajit-5.1-dev
             - debhelper
             - dh-autoreconf
             - imagemagick

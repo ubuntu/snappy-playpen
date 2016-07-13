@@ -2,15 +2,16 @@ name: ubuntu-clock-app
 version: 3.6+snap2
 summary: Ubuntu Clock app
 description: The clock app for all Ubuntu devices
+confinement: strict
 
 apps:
-  clock:
+  ubuntu-clock-app:
     command: clock
     plugs: [unity7,opengl]
 
 parts:
   clock:
-    source: lp:~dpm/ubuntu-clock-app/snap-all-things
+    source: lp:ubuntu-clock-app
     plugin: cmake
     configflags: [-DCMAKE_INSTALL_PREFIX=/usr, -DCLICK_MODE=off]
     build-packages:

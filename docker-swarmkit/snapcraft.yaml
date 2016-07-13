@@ -1,0 +1,27 @@
+name: docker-swarmkit
+version: master
+summary: A toolkit for orchestrating distributed systems at any scale
+description: |
+  SwarmKit is a toolkit for orchestrating distributed systems at any scale. It
+  includes primitives for node discovery, raft-based consensus, task scheduling
+  and more.
+confinement: devmode
+
+apps:
+  swarmd:
+    command: bin/swarmd
+  swarmctl:
+    command: bin/swarmctl
+  swarm-bench:
+    command: bin/swarm-bench
+  external-ca-example:
+    command: bin/external-ca-example
+  protoc-gen-gogoswarm:
+    command: bin/protoc-gen-gogoswarm
+
+parts:
+  swarmkit:
+    plugin: swarmkit
+    source: https://github.com/docker/swarmkit
+    source-type: git
+    go-importpath: github.com/docker/swarmkit

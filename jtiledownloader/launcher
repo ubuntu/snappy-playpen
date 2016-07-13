@@ -8,4 +8,8 @@ export XDG_DATA_HOME=$SNAP/usr/share
 # Font Config
 export FONTCONFIG_PATH=$SNAP/etc/fonts/config.d
 export FONTCONFIG_FILE=$SNAP/etc/fonts/fonts.conf
+
+# Use the GTK 2 theme. Requires `stage-packages: [light-themes]`
+export GTK2_RC_FILES=$SNAP/usr/share/themes/Ambiance/gtk-2.0/gtkrc
+
 java -jar -Duser.home=$SNAP_USER_DATA $SNAP/jTileDownloader/jTileDownloader-0-6-1.jar

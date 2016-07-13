@@ -17,13 +17,13 @@ To get this done, we need to do the following:
 Working features:
  - Tested in devmode only
  - App GUI starts
- - Tiles download requests seem to be blocked, but this seems to be an issue
-   with the app running outside the snap too
 
 Known issues:
  - Theming does not work.
  - The app tries to create an appConfig.xml file upon each start. It would be
    nice to instruct it to create it in a writable location.
+ - Tiles download requests are blocked if you use the Mapnik server, but this seems to be an issue
+   with the external server. Same issue happens if you run the app manually outside the snap.
 
 TODO:
  - Add a desktop file and icon to launch it from the dash

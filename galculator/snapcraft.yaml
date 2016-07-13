@@ -1,5 +1,5 @@
 name: galculator
-version: 2.1.4
+version: "2.1.4"
 summary: scientific calculator
 description: |
  galculator is a scientific calculator. It supports different number
@@ -8,19 +8,14 @@ description: |
  functions, etc) and other useful functions (memory, etc) at the moment.
  galculator can be used in algebraic mode as well as in Reverse Polish
  Notation (RPN).
+confinement: strict
 
 apps:
   galculator:
-    command: galculator.wrapper
-    plugs:
-      - home
-      - x11
+    command: desktop-launch galculator
+    plugs: [home, x11, unity7, gsettings]
 
 parts:
-  wrapper:
-    plugin: copy
-    files:
-      galculator.wrapper: galculator.wrapper
   galculator:
     source: https://github.com/galculator/galculator.git
     plugin: autotools
@@ -33,22 +28,15 @@ parts:
       - libpng12-dev
       - libxml-parser-perl
     stage-packages:
-      - libglib2.0-0
-      - libgtk-3-0
       - libpango-1.0-0
       - libpng12-0
       - libquadmath0
-      - dconf-gsettings-backend
       - librsvg2-common
       - libwmf0.2-7-gtk
-      - libgdk-pixbuf2.0-0
-
+    after: [desktop/gtk3]
   integration:
     plugin: nil
     stage-packages:
-      - dmz-cursor-theme
-      - light-themes
-      - ttf-ubuntu-font-family
       - ubuntu-mate-icon-themes
       - ubuntu-mate-themes
     snap:

@@ -8,13 +8,8 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - video playing
+ - Video playing
 
 Known issues:
-  - Theming
-  - No sound in strict confinement
-
-TODO:
- - Add icon
- 
+  - 
 

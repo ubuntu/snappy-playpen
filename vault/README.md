@@ -11,5 +11,4 @@ Working features:
  - everything
 
 Known issues:
- - the project had to be added to the snapcraft.yaml as a go-package instead
-   of as source. Reported in https://bugs.launchpad.net/snapcraft/+bug/1583426
+ - only uploaded to the store for amd64.

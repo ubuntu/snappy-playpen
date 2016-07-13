@@ -1,19 +1,32 @@
 name: vlc
-version: daily
+version: "daily"
 summary: Read, capture, broadcast your multimedia streams
-description: VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs, podcasts, and multimedia streams from various network sources.
+description: |
+  VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+  DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+  podcasts, and multimedia streams from various network sources.
 confinement: strict
 
 apps:
   vlc:
-    command: qt5-launch vlc
-    plugs: [unity7, network, home]
+    command: desktop-launch vlc
+    plugs:
+      - unity7
+      - network
+      - network-bind
+      - home
+      - opengl
+      - pulseaudio
+      - mount-observe
+      - optical-drive
+      - camera
+    slots:
+      - mpris
 
 parts:
   vlc:
-    plugin: x_vlcautotools
-    source-type: git
     source: https://github.com/videolan/vlc.git
+    plugin: x_vlcautotools
     build-packages:
       - autopoint
       - debhelper
@@ -123,7 +136,8 @@ parts:
       - qtbase5-dev
       - zlib1g-dev
       - zsh
-    after: [qt5conf]
+    after: [desktop/qt5]
+
   env:
     plugin: nil
     stage-packages:
@@ -132,7 +146,6 @@ parts:
       - libavcodec-ffmpeg56
       - libavcodec-ffmpeg-extra56
       - libavutil-ffmpeg54
-      - libc6
       - libcaca0
       - libcairo2
       - libegl1-mesa
@@ -148,14 +161,9 @@ parts:
       - libglib2.0-0
       - libpulse0
       - libqt5core5a
-      - libqt5gui5
-      - libqt5gui5-gles
-      - libqt5widgets5
-      - libqt5x11extras5
       - librsvg2-2
       - libsdl-image1.2
       - libsdl1.2debian
-      - libstdc++6
       - libva-drm1
       - libva-x11-1
       - libva1
@@ -173,4 +181,4 @@ parts:
       - libxinerama1
       - libxpm4
       - zlib1g
-    after: [vlc]
+    after: [vlc] # VLC build fails if stage packages are present

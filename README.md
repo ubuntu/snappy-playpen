@@ -41,7 +41,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `plank`            |                           | autotools, vala           |
 | :white_check_mark:  | `qcomicbook`       |                           | cmake, qt5                |
 | :red_circle:        | `qdriverstation`   |                           | frc, qmake, qt5, robotics |
-| :white_check_mark:  | `qownnotes`        |                           | qmake, qt5, tar           |
+| :white_check_mark:  | `qownnotes`        | [qownnotes][qownnotes]    | qmake, qt5, tar           |
 | :white_check_mark:  | `ristretto`        |                           | qmake, qt5, tar           |
 | :white_check_mark:  | `scummvm`          |                           | autotools                 |
 | :white_check_mark:  | `shotwell`         |                           | autotools, vala           |
@@ -59,6 +59,7 @@ This project currently includes the following snaps:
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach
+[qownnotes]: https://uappexplorer.com/app/qownnotes.pbek
 [clock]: https://uappexplorer.com/app/ubuntu-clock-app.ubuntucoredev
 [vault]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [wallpaperdownloader]: https://uappexplorer.com/app/wallpaperdownloader.egarcia

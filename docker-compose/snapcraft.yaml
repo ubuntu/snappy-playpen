@@ -1,5 +1,5 @@
 name: docker-compose
-version: 1.8.0-rc22
+version: 1.8.0-rc2
 summary: Define and run multi-container applications with Docker
 description: |
   Compose is a tool for defining and running multi-container Docker

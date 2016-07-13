@@ -10,17 +10,8 @@ parts:
         source: git://github.com/hikiko/hexchat.git
 
         build-packages:
-            - hexchat-common
-            - libc6
-            - libcanberra0
-            - libdbus-glib-1-2
-            - libgdk-pixbuf2.0-0
-            - libglib2.0-0
-            - libgtk2.0-0
-            - libnotify4
-            - libpango-1.0-0
-            - libproxy1v5
-            - libssl1.0.0
+            - liblua5.3-dev
+            - libluajit-5.1-dev
 
         snap:
             - -lib/pkgconfig

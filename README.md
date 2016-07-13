@@ -11,43 +11,48 @@ A place to test snapcraft, learn creating snaps and share best practices.
 
 This project currently includes the following snaps:
 
-| State               | App                | Snap name in the store    |
-| ------------------- | ------------------ | ------------------------- |
-| :white_check_mark:  | `2048`             |                           |
-| :white_check_mark:  | `atom`             | [atom-cwayne][atom]       |
-| :white_check_mark:  | `dosbox`           |                           |
-| :white_check_mark:  | `cloudfoundry-cli` |                           |
-| :white_check_mark:  | `consul`           |                           |
-| :white_check_mark:  | `click-parser`     | [click-parser][click-parser] |
-| :red_circle:        | `deis-workflow-cli`|                           |
-| :white_check_mark:  | `ffmpeg`           |                           |
-| :white_check_mark:  | `galculator`       |                           |
-| :red_circle:        | `heroku`           |                           |
-| :white_check_mark:  | `imagemagick6-stable`|                         |
-| :red_circle:        | `imagemagick7-git` |                           |
-| :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       |
-| :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     |
-| :white_check_mark:  | `leafpad`          |                           |
-| :white_check_mark:  | `minetest`         |                           |
-| :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  |
-| :white_check_mark:  | `mpv`              |                           |
-| :white_check_mark:  | `openjdk-demo`     |                           |
-| :white_check_mark:  | `ristretto`        |                           |
-| :white_check_mark:  | `smplayer`         |                           |
-| :red_circle:        | `plank`            |                           |
-| :white_check_mark:  | `qcomicbook`       |                           |
-| :red_circle:        | `qdriverstation`   |                           |
-| :white_check_mark:  | `qownnotes`        | coming soon               |
-| :white_check_mark:  | `scummvm`          |                           |
-| :white_check_mark:  | `shotwell`         |                           |
-| :white_check_mark:  | `ubuntukylin-icon-theme` |                     |
-| :white_check_mark:  | `tinyproxy`        |                           |
-| :white_check_mark:  | `tyrant-unleashed-optimizer` |                 |
-| :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] |
-| :white_check_mark:  | `vault`            | [vault-elopio][vault]     |
-| :white_check_mark:  | `vlc`              |                           |
-| :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] |
-| :white_check_mark:  | `youtube-dl`       |                           |
+| State               | App                | Snap name in the store    | Uses                      |
+| ------------------- | ------------------ | ------------------------- | ------------------------- |
+| :white_check_mark:  | `2048`             |                           | qt5, qml, copy            |
+| :white_check_mark:  | `atom`             | [atom-cwayne][atom]       | electron, grunt, nodejs   |
+| :white_check_mark:  | `cloudfoundry-cli` |                           | go                        |
+| :white_check_mark:  | `consul`           |                           | go                        |
+| :white_check_mark:  | `click-parser`     | [click-parser][click-parser] | nodejs                 |
+| :white_check_mark:  | `dcos-cli`         |                           | python3                   |
+| :red_circle:        | `deis-workflow-cli`|                           | go                        |
+| :white_check_mark:  | `dosbox`           |                           | autotools                 |
+| :white_check_mark:  | `docker-compose`   |                           | python3                   |
+| :white_check_mark:  | `ffmpeg`           |                           | autotools                 |
+| :white_check_mark:  | `galculator`       |                           | autotools, gtk3           |
+| :white_check_mark:  | `gitter-im`        |                           | copy, gtk3, wget          |
+| :red_circle:        | `heroku`           |                           | go                        |
+| :white_check_mark:  | `idea`             |                           | ant, antIntellij, java, openjdk |
+| :white_check_mark:  | `imagemagick6-stable`|                         | autotools                 |
+| :red_circle:        | `imagemagick7-git` |                           | autotools                 |
+| :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       | cmake, qt5                |
+| :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | copy, perl                |
+| :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |
+| :white_check_mark:  | `minetest`         |                           | cmake, copy               |
+| :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  | curses, autotools         |
+| :white_check_mark:  | `mpv`              |                           | autotools, waf            |
+| :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
+| :white_check_mark:  | `openttd`          |                           | copy, qt5                 |
+| :red_circle:        | `plank`            |                           | autotools, vala           |
+| :white_check_mark:  | `qcomicbook`       |                           | cmake, qt5                |
+| :red_circle:        | `qdriverstation`   |                           | frc, qmake, qt5, robotics |
+| :white_check_mark:  | `qownnotes`        |                           | qmake, qt5, tar           |
+| :white_check_mark:  | `ristretto`        |                           | qmake, qt5, tar           |
+| :white_check_mark:  | `scummvm`          |                           | autotools                 |
+| :white_check_mark:  | `shotwell`         |                           | autotools, vala           |
+| :white_check_mark:  | `smplayer`         |                           | qt5, stage-package        |
+| :white_check_mark:  | `tinyproxy`        |                           | copy, daemon, stage-package |
+| :white_check_mark:  | `tyrant-unleashed-optimizer` |                 | make                      |
+| :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] | qmake, qt5                |
+| :white_check_mark:  | `ubuntukylin-icon-theme` |                     | copy_and_edit, theme      |
+| :white_check_mark:  | `vault`            | [vault-elopio][vault]     | go                        |
+| :white_check_mark:  | `vlc`              |                           | autotools                 |
+| :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] | maven  |
+| :white_check_mark:  | `youtube-dl`       |                           | autotools, python3        |
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass

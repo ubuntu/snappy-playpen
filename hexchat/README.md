@@ -1,4 +1,4 @@
-# $PROJECT hexchat
+# $PROJECT hexchat snap
 
 This project creates a working snap of hexchat.
 

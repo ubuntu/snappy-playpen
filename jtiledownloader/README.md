@@ -10,7 +10,7 @@ caching](https://unav-go.github.io/offline/).
 To get this done, we need to do the following:
  - use the copy plugin to download and unpack a .zip file into a .jar file
  - use a custom launcher to set up the environment variables required for
-   Java and use `java -tar` to execute the .jar file
+   Java and use `java -jar` to execute the .jar file
 
 ## Current state
 

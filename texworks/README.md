@@ -1,17 +1,16 @@
 # TeXworks snap
 
-This project creates a non working snap of TeXworks built from git.
-texlive is not included.
+This project creates a working snap of TeXworks built from git.
+texlive is included from upstream.
 
 ## Current state
 
 Working features:
-  - Editor starts
+  - Everything
 
 Known issues:
-  - texlive folder not recognized properly:
-    - files in usr/share/texmf, program searches share/texmf 
-  - qt theme not recognized
+  - if installed without --devmode the menu is not visible (tested only on unity7)
+  - You need to confirm the texlive install
 
 TODO:
- 
+ Check menu without --devmode

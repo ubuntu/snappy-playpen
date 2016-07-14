@@ -14,7 +14,6 @@ parts:
             - autoconf-archive
             - liblua5.3-dev
             - libluajit-5.1-dev
-            - debhelper
             - dh-autoreconf
             - imagemagick
             - intltool

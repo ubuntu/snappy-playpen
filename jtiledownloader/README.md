@@ -7,6 +7,8 @@ app to download OpenStreetMap tiles for offline map caching.
 Snapping inspired by [uNav's instructions for offline
 caching](https://unav-go.github.io/offline/).
 
+There is an [alternative approach to creating the snap](https://github.com/ogra1/jtiledownloader), by Oliver Grawert.
+
 To get this done, we need to do the following:
  - use the copy plugin to download and unpack a .zip file into a .jar file
  - use a custom launcher to set up the environment variables required for

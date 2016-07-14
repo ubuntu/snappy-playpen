@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ "$SNAP_ARCH" = "amd64" ]; then
+  ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" = "armhf" ]; then
+  ARCH="arm-linux-gnueabihf"
+else
+  ARCH="$SNAP_ARCH-linux-gnu"
+fi
+
+export JAVA_HOME=$SNAP/usr/lib/jvm/java-8-openjdk-$SNAP_ARCH
+export PATH=$JAVA_HOME/jre/bin:$PATH
+
+# Not good, needed for fontconfig
+export XDG_DATA_HOME=$SNAP/usr/share
+# Font Config
+export FONTCONFIG_PATH=$SNAP/etc/fonts/config.d
+export FONTCONFIG_FILE=$SNAP/etc/fonts/fonts.conf
+
+# Use the GTK 2 theme.
+export GTK2_RC_FILES=$SNAP/usr/share/themes/Ambiance/gtk-2.0/gtkrc
+export GTK_PATH=$SNAP/usr/lib/$ARCH/gtk-2.0
+
+java -jar -Duser.home=$SNAP_USER_DATA $SNAP/jTileDownloader/jTileDownloader-0-6-1.jar

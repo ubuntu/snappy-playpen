@@ -28,7 +28,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `idea`             |                           | ant, antIntellij, java, openjdk |
 | :white_check_mark:  | `imagemagick6-stable`|                         | autotools                 |
 | :red_circle:        | `imagemagick7-git` |                           | autotools                 |
-| :white_check_mark:  | `jtiledownloader`  |                           | copy, jar, java           |
+| :white_check_mark:  | `jtiledownloader`  | [jtiledownloader][]       | copy, jar, java           |
 | :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       | cmake, qt5                |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | copy, perl                |
 | :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |
@@ -56,6 +56,7 @@ This project currently includes the following snaps:
 
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass
+[jtiledownloader]: https://uappexplorer.com/app/jtiledownloader.ogra
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio
 [moon-buggy]: https://uappexplorer.com/app/moon-buggy.dholbach

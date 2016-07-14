@@ -14,9 +14,13 @@ export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH:$LD_LIBRARY_PATH
 export XKB_CONFIG_ROOT=$SNAP/usr/share/X11/xkb
 
 # Qt Platform to Mir
-#export QT_QPA_PLATFORM=ubuntumirclient
+export QT_QPA_PLATFORM=ubuntumirclient
 export QTCHOOSER_NO_GLOBAL_DIR=1
 export QT_SELECT=snappy-qt5
+
+# Mir runtime
+export MIR_SOCKET=$XDG_RUNTIME_DIR/mir_socket
+export MIR_CLIENT_PLATFORM_PATH=$SNAP/usr/lib/$ARCH/mir/client-platform
 
 # Qt Libs
 export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/qt5/libs:$LD_LIBRARY_PATH
@@ -56,5 +60,7 @@ export APP_DIR=$SNAP
 # ensure the snappy gl libs win
 export LD_LIBRARY_PATH="$SNAP_LIBRARY_PATH:$LD_LIBRARY_PATH"
 
+env
+
 cd $SNAP
-exec $SNAP/usr/bin/qmlscene $SNAP/usr/share/ubuntu-clock-app/ubuntu-clock-app.qml
+exec $SNAP/usr/bin/qmlscene $SNAP/usr/share/ubuntu-clock-app/ubuntu-clock-app.qml --desktop_file_hint=unity8

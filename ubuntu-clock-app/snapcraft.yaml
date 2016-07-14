@@ -2,7 +2,7 @@ name: ubuntu-clock-app
 version: "3.8.480"
 summary: Ubuntu Clock app
 description: The clock app for all Ubuntu devices
-confinement: strict
+confinement: devmode
 
 apps:
   ubuntu-clock-app:
@@ -15,7 +15,6 @@ parts:
     plugin: cmake
     configflags: [-DCMAKE_INSTALL_PREFIX=/usr, -DCLICK_MODE=off]
     build-packages:
-      - build-essential
       - cmake
       - gettext
       - intltool
@@ -34,11 +33,12 @@ parts:
       - qtdeclarative5-dev-tools
       - qtdeclarative5-folderlistmodel-plugin
       - qtdeclarative5-ubuntu-ui-toolkit-plugin
-      - xvfb
     stage-packages:
       - ubuntu-sdk-libs
       - qtubuntu-desktop
       - qml-module-qtsysteminfo
+      - qtmir-desktop
+      - mir-graphics-drivers-desktop
     snap:
       - -usr/share/doc
       - -usr/include

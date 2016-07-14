@@ -29,6 +29,7 @@ parts:
       - libssl-dev
       - libtool
       - python-dev
+      - network-bind
     snap:
       - -lib/pkgconfig
     after: [desktop/gtk2]

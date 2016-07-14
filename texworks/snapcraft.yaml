@@ -5,14 +5,18 @@ description: |
   TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents,
   with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean,
   simple interface accessible to casual and non-technical users.
-confinement: devmode
+confinement: strict
 
 apps:
   texworks:
-    command: desktop-launch $SNAP/bin/texworks
+    command: texworks-launcher
     plugs: [home, x11, unity7]
 
 parts:
+  texworks-launcher:
+    plugin: copy
+    files:
+      texworks-launcher: bin/texworks-launcher
   texworks:
     plugin: cmake
     source: https://github.com/TeXworks/texworks.git

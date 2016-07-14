@@ -31,8 +31,8 @@ parts:
       - python-dev
     snap:
       - -lib/pkgconfig
-
+    after: [desktop/gtk2]
 apps:
   hexchat:
-    command: bin/hexchat
+    command: desktop-launch $SNAP/bin/hexchat
     plugs: [network, x11]

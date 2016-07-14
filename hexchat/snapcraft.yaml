@@ -29,11 +29,10 @@ parts:
       - libssl-dev
       - libtool
       - python-dev
-      - network-bind
     snap:
       - -lib/pkgconfig
     after: [desktop/gtk2]
 apps:
   hexchat:
     command: desktop-launch $SNAP/bin/hexchat
-    plugs: [network, x11]
+    plugs: [network, x11, network-bind]

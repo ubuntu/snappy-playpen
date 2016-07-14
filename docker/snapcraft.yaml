@@ -1,5 +1,5 @@
 name: docker
-version: "1.11.2"
+version: "1.12.0-rc4"
 summary: Docker
 description: |
   Docker complements kernel namespacing with a high-level API which operates at
@@ -23,20 +23,23 @@ apps:
   docker:
     command: docker
   dockerd:
-    command: docker daemon
+    command: dockerd -g $SNAP_DATA
     daemon: simple
   docker-containerd:
     command: docker-containerd
+    daemon: simple
   docker-containerd-ctr:
     command: docker-containerd-ctr
   docker-containerd-shim:
     command: docker-containerd-shim
   docker-runc:
     command: docker-runc
+  docker-proxy:
+    command: docker-proxy
 
 parts:
   docker:
-    source: https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz
+    source: https://test.docker.com/builds/Linux/x86_64/docker-1.12.0-rc4.tgz
     plugin: copy
     files:
       '*': './usr/bin/'
@@ -45,4 +48,3 @@ parts:
       - git
       - procps
       - xz-utils
-      

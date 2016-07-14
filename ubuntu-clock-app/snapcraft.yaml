@@ -7,7 +7,7 @@ confinement: strict
 apps:
   ubuntu-clock-app:
     command: clock
-    plugs: [unity7,opengl]
+    plugs: [unity7, opengl, network, network-bind]
 
 parts:
   clock:

@@ -11,9 +11,13 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - all
+ - Most features of the app work.
 
 Known issues:
 
  - we can't use the desktop/qt5 launcher yet
  - we need to slim down the package size 
+ - Preferences not saved
+ - Alarms not saved
+ - Added timezones not saved.
+ - Some errors when starting up: http://paste.ubuntu.com/19359075/

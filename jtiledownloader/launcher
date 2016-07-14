@@ -8,7 +8,7 @@ else
   ARCH="$SNAP_ARCH-linux-gnu"
 fi
 
-export JAVA_HOME=$SNAP/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=$SNAP/usr/lib/jvm/java-8-openjdk-$SNAP_ARCH
 export PATH=$JAVA_HOME/jre/bin:$PATH
 
 # Not good, needed for fontconfig

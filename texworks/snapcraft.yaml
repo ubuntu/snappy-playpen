@@ -5,6 +5,7 @@ description: |
   TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents,
   with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean,
   simple interface accessible to casual and non-technical users.
+confinement: devmode
 
 apps:
   texworks:
@@ -17,16 +18,19 @@ parts:
     source: https://github.com/TeXworks/texworks.git
     source-tag: release-0.6.1
     build-packages:
+      - gcc
+      - g++
       - debhelper
       - pkg-config
       - cmake
       - libhunspell-dev
-      - qtbase5-dev
-      - libpoppler-qt5-dev
+      - libqt4-dev
+      - libpoppler-qt4-dev
       - liblua5.2-dev
       - python-dev
       - zlib1g-dev
       - libsynctex-dev
+      - libfontconfig1-dev
     stage-packages:
       - libc6
       - libgcc1
@@ -39,11 +43,12 @@ parts:
       - libqtcore4
       - libqtgui4
       - libstdc++6
-      - libsynctex1
-      - lmodern
-      - tex-common
-      - texlive-base
-      - texlive-binaries
-      - texlive-latex-base
-      - texlive-latex-base-doc
-    after: [desktop/qt5]
+      - zlib1g
+    after: [desktop/qt4]
+  texlive:
+    plugin: texlive
+    source: http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    files:
+      '*': './'
+    build-packages:
+      - wget

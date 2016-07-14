@@ -10,33 +10,31 @@ description: |
 confinement: strict
 
 parts:
-    hexchat:
-        plugin: autotools 
-        source: git://github.com/hikiko/hexchat.git
+  hexchat:
+    plugin: autotools 
+    source: git://github.com/hikiko/hexchat.git
 
-        build-packages:
-            - autoconf-archive
-            - liblua5.3-dev
-            - libluajit-5.1-dev
-            - dh-autoreconf
-            - imagemagick
-            - intltool
-            - libcanberra-dev
-            - libdbus-glib-1-dev
-            - libglib2.0-dev
-            - libgtk2.0-dev
-            - libnotify-dev
-            - libpci-dev
-            - libperl-dev
-            - libproxy-dev
-            - libssl-dev
-            - libtool
-            - python-dev
-        snap:
-            - -lib/pkgconfig
-        after: [desktop/gtk2]
+    build-packages:
+      - autoconf-archive
+      - liblua5.3-dev
+      - imagemagick
+      - intltool
+      - libcanberra-dev
+      - libdbus-glib-1-dev
+      - libglib2.0-dev
+      - libgtk2.0-dev
+      - libnotify-dev
+      - libpci-dev
+      - libperl-dev
+      - libproxy-dev
+      - libssl-dev
+      - libtool
+      - python-dev
+    snap:
+        - -lib/pkgconfig
+    after: [desktop/gtk2]
 
 apps:
-    hexchat:
-        command: desktop-launch hexchat
-        plugs: [network, network-bind, unity7]
+  hexchat:
+    command: desktop-launch hexchat
+    plugs: [network, network-bind, unity7]

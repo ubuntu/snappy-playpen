@@ -11,7 +11,7 @@ confinement: strict
 parts:
   hexchat:
     plugin: autotools 
-    source: git://github.com/hikiko/hexchat.git
+    source: https://github.com/hikiko/hexchat.git
     build-packages:
       - autoconf-archive
       - liblua5.3-dev

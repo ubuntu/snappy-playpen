@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=hexchat
+GenericName=Hexchat IRC client
+Comment=IRC client for X based on X-Chat 2
+Exec=${SNAP}/bin/hexchat
+Icon=${SNAP}/meta/gui/hexchat.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Application;IRC;Chat
+Mimetype=application/x-chat;

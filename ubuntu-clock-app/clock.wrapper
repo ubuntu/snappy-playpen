@@ -13,10 +13,16 @@ export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH:$LD_LIBRARY_PATH
 # XKB config
 export XKB_CONFIG_ROOT=$SNAP/usr/share/X11/xkb
 
-# Qt Platform to Mir
-#export QT_QPA_PLATFORM=ubuntumirclient
 export QTCHOOSER_NO_GLOBAL_DIR=1
 export QT_SELECT=snappy-qt5
+
+if [ "$DESKTOP_SESSION" == "unity8" ]; then
+	# Qt Platform to Mir
+	export QT_QPA_PLATFORM=ubuntumirclient
+	# Mir runtime
+	export MIR_SOCKET=$XDG_RUNTIME_DIR/mir_socket
+	export MIR_CLIENT_PLATFORM_PATH=$SNAP/usr/lib/$ARCH/mir/client-platform
+fi
 
 # Qt Libs
 export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/qt5/libs:$LD_LIBRARY_PATH
@@ -57,4 +63,7 @@ export APP_DIR=$SNAP
 export LD_LIBRARY_PATH="$SNAP_LIBRARY_PATH:$LD_LIBRARY_PATH"
 
 cd $SNAP
-exec $SNAP/usr/bin/qmlscene $SNAP/usr/share/ubuntu-clock-app/ubuntu-clock-app.qml
+
+# Note: --desktop_file_hint=unity8 seems to be required by Unity 8 only,
+# and not to have any effect in Unity 7. I'm unclear on why it's needed [dpm].
+exec $SNAP/usr/bin/qmlscene $SNAP/usr/share/ubuntu-clock-app/ubuntu-clock-app.qml --desktop_file_hint=unity8

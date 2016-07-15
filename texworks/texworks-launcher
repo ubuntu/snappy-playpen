@@ -1,4 +1,4 @@
 #! /bin/sh
 
-export PATH="$SNAP/usr/local/2016/bin/x86_64-linux/:$PATH"
+export PATH="$SNAP/usr/local/bin/x86_64-linux/:$PATH"
 desktop-launch texworks

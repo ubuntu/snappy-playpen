@@ -12,8 +12,6 @@ Working features:
 
 Known issues:
   - No theme for the main UI
-  - Has to be installed with devmode
 
 TODO:
  - Fix opengl render
- - Fix devmode

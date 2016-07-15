@@ -8,6 +8,10 @@ description: |
   customizable notifications. For more information on IRC, see
   http://irchelp.org/.
 confinement: strict
+apps:
+  hexchat:
+    command: desktop-launch $SNAP/bin/hexchat
+    plugs: [network, network-bind, x11, unity7]
 parts:
   hexchat:
     plugin: autotools 
@@ -31,7 +35,3 @@ parts:
     snap:
       - -lib/pkgconfig
     after: [desktop/gtk2]
-apps:
-  hexchat:
-    command: desktop-launch $SNAP/bin/hexchat
-    plugs: [network, network-bind, x11, unity7]

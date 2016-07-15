@@ -4,7 +4,7 @@ This project creates a working snap of HexChat.
 
 ## Current state
 
-Working features: The snap can successfully install hexchat
+Working features: The snap can successfully install HexChat
 
 Known issues: This snap currently uses a fork of HexChat
 (https://github.com/hikiko/hexchat) until a compile error in the master hexchat

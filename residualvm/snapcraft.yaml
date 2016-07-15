@@ -1,0 +1,50 @@
+name: residualvm
+version: "0.3git"
+summary: ResidualVM
+description: |
+    ResidualVM is a cross-platform 3D game interpreter which allows you
+    to play LucasArts' Lua-based 3D adventures: Grim Fandango and
+    Escape from Monkey Island, provided you already have their data files.
+    ResidualVM just replaces the executables shipped with the games,
+    allowing you to play them on systems for which they were never designed!
+confinement: strict
+
+apps:
+  residualvm:
+    command: residualvm
+    plugs: [x11, home, pulseaudio, opengl, unity7]
+
+parts:
+  residualvm:
+    plugin: autotools
+    source: https://github.com/residualvm/residualvm.git
+    source-type: git
+    stage-packages:
+      - libasound2
+      - libc6
+      - libfreetype6
+      - libgl1-mesa-glx
+      - libmad0
+      - libsdl1.2debian
+      - libstdc++6
+      - libvorbisfile3
+      - zlib1g
+    build-packages:
+      - g++
+      - debhelper
+      - autotools-dev
+      - fonts-freefont-ttf
+      - libasound2-dev
+      - libfreetype6-dev
+      - libgl1-mesa-dev
+      - libsdl1.2-dev
+      - libz3-dev
+      - python
+      - zip
+      - libfaad-dev
+      - libflac-dev
+      - libfluidsynth-dev
+      - libmad0-dev
+      - libvorbisidec-dev
+      - libpng12-dev
+      - timidity

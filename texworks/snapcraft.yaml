@@ -1,5 +1,5 @@
 name: texworks
-version: git
+version: "0.6.1"
 summary: TeXworks
 description: |
   TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents,

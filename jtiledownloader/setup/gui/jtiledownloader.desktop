@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=jTileDownloader
+Comment=Download map tiles
+Icon=${SNAP}/meta/gui/icon.png
+Exec=jtiledownloader
+Terminal=false
+Categories=Utility;

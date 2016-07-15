@@ -5,7 +5,7 @@ description: |
   TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents,
   with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean,
   simple interface accessible to casual and non-technical users.
-confinement: strict
+confinement: devmode
 
 apps:
   texworks:

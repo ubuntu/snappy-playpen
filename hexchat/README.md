@@ -1,4 +1,4 @@
-# HEXCHAT snap
+# HexChat snap
 
 This project creates a working snap of HexChat.
 

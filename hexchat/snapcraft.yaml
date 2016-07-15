@@ -34,4 +34,4 @@ parts:
 apps:
   hexchat:
     command: desktop-launch $SNAP/bin/hexchat
-    plugs: [network, x11, network-bind, unity7]
+    plugs: [network, network-bind, x11, unity7]

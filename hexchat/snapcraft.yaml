@@ -8,12 +8,10 @@ description: |
   customizable notifications. For more information on IRC, see
   http://irchelp.org/.
 confinement: strict
-
 parts:
   hexchat:
     plugin: autotools 
     source: git://github.com/hikiko/hexchat.git
-
     build-packages:
       - autoconf-archive
       - liblua5.3-dev

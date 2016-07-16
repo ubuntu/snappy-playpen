@@ -1,16 +1,16 @@
 name: qownnotes
-version: 16.07.3
+version: 16.07.6
 summary: Plain-text file notepad with markdown support and ownCloud integration
 confinement: strict
 description: |
-  QOwnNotes is the open source (GPL) plain-text file notepad with markdown support 
-  and todo list manager for GNU/Linux, Mac OS X and Windows, that (optionally) works 
+  QOwnNotes is the open source (GPL) plain-text file notepad with markdown support
+  and todo list manager for GNU/Linux, Mac OS X and Windows, that (optionally) works
   together with the notes application of ownCloud.
   http://www.qownnotes.org/
 
 apps:
   qownnotes:
-    command: desktop-launch usr/bin/QOwnNotes
+    command: ./wrapper.sh
     plugs:
       - x11
       - network
@@ -19,7 +19,7 @@ apps:
 
 parts:
   qownnotes:
-    source: http://downloads.sourceforge.net/project/qownnotes/src/qownnotes-16.07.3.tar.xz
+    source: http://downloads.sourceforge.net/project/qownnotes/src/qownnotes-16.07.6.tar.xz
     source-type: tar
     plugin: qmake
     qt-version: qt5
@@ -29,6 +29,8 @@ parts:
       - qtdeclarative5-dev
       - libqt5svg5-dev
       - qttools5-dev-tools
+    stage:
+      - -usr/share/pkgconfig
     after: [desktop/qt5]
   env:
     plugin: nil
@@ -43,4 +45,10 @@ parts:
       - libqt5xml5
       - libqt5printsupport5
       - libqt5declarative5
-    after: [qt5conf]
+    stage:
+      - -usr/share/pkgconfig
+    after: [desktop/qt5]
+  launcher:
+    plugin: copy
+    files:
+      wrapper.sh: wrapper.sh

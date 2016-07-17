@@ -6,7 +6,7 @@ confinement: strict
 apps:
   champ:
     command: champ_wrapper
-    plugs: [network, opengl, network-bind, x11, pulse]
+    plugs: [network, opengl, network-bind, x11, pulseaudio]
 
 parts:
   ffmpeg:

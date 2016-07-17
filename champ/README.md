@@ -17,7 +17,4 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - video playback
-
-Known issues:
-  - Must be installed with --devmode
+ - all

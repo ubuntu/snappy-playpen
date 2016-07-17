@@ -1,0 +1,102 @@
+name: champ
+version: "0.0.1~git"
+summary: Plex 2nd screen player
+description: Please see https://github.com/dz0ny/champ for more information
+confinement: strict
+apps:
+  champ:
+    command: champ_wrapper
+    plugs: [network, opengl, network-bind, x11, pulse]
+
+parts:
+  ffmpeg:
+    source: git://source.ffmpeg.org/ffmpeg.git
+    source-tag: n3.1.1
+    plugin: autotools
+    configflags:
+      - --prefix=/
+      - --enable-pic
+      - --enable-gpl
+      - --enable-libfreetype
+      - --enable-libmp3lame
+      - --enable-libopus
+      - --enable-libtheora
+      - --enable-libvorbis
+      - --enable-libvpx
+      - --enable-gnutls
+      - --enable-libx264
+      - --enable-libx265
+      - --enable-nonfree
+      - --disable-encoders
+      - --disable-muxers
+      - --disable-indevs
+      - --disable-ffplay
+      - --disable-ffprobe
+      - --disable-ffmpeg
+      - --disable-ffserver
+      - --disable-debug
+      - --disable-doc
+    build-packages:
+      - git
+      - g++
+      - make
+      - yasm
+      - autoconf
+      - libtool
+      - cmake
+      - pkg-config
+      - automake
+      - build-essential
+      - libass-dev
+      - libfreetype6-dev
+      - libsdl1.2-dev
+      - libtheora-dev
+      - libva-dev
+      - libvdpau-dev
+      - libvorbis-dev
+      - libxcb1-dev
+      - libxcb-shm0-dev
+      - libxcb-xfixes0-dev
+      - texinfo
+      - zlib1g-dev
+      - libx264-dev
+      - libx265-dev
+      - libmp3lame-dev
+      - libopus-dev
+      - libvpx-dev
+      - libgnutls-dev
+      - libc6-dev
+  mpv:
+    source: https://github.com/mpv-player/mpv.git
+    source-tag: v0.18.1
+    plugin: waf
+    configflags:
+      - --prefix=/
+      - --enable-libmpv-shared
+      - --disable-tv
+      - --disable-dvbin
+      - --disable-libbluray
+      - --disable-dvdread
+      - --disable-cdda
+      - --disable-cplayer
+      - --disable-debug-build
+      - --disable-manpage-build
+      - --disable-html-build
+      - --disable-pdf-build
+
+    stage-packages:
+      - libgl1-mesa-dri
+
+    build-packages:
+      - libc6-dev
+      - libarchive-dev
+    after: [ffmpeg]
+  champ:
+    source: https://github.com/dz0ny/champ.git
+    plugin: gosrc
+    after: [mpv]
+  launcher:
+    plugin: copy
+    files:
+      champ_wrapper: bin/champ_wrapper
+    after: [champ]

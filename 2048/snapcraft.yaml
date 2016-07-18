@@ -19,4 +19,6 @@ parts:
     stage-packages:
       - qml-module-qtquick2
       - qmlscene
+    stage:
+      - -usr/share/pkgconfig
     after: [desktop/qt5]

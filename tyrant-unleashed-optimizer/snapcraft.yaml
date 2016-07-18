@@ -18,7 +18,7 @@ apps:
 parts:
   tyrant-unleashed-optimizer:
     source: https://github.com/andor9/tyrant_optimize.git
-    plugin: x_toumakefixup
+    plugin: toumakefixup
     build-packages:
       - g++
       - make

@@ -1,0 +1,15 @@
+name: etcd
+version: 3.0.3
+summary: A distributed key-value store for shared configuration and service discovery.
+description: todo
+
+confinement: devmode
+
+apps:
+  etcdctl:
+    command: bin/etcdctl
+
+parts:
+  etcdctl:
+    plugin: go
+    go-packages: [github.com/coreos/etcd/etcdctl]

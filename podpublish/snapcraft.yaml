@@ -35,12 +35,9 @@ parts:
       - libopenjp2-7-dev
       - libssl-dev
       - libtiff5-dev
-      - libwebp-dev
       - pkg-config
       - zlib1g-dev
     stage-packages:
-      - ffmpeg
-      - libavcodec-ffmpeg-extra56
       - liblcms2-2
       - libffi6
       - libfreetype6
@@ -49,7 +46,6 @@ parts:
       - libpulse0
       - libssl1.0.0
       - libtiff5
-      - libwebp5
       - zlib1g
     snap:
       - -usr/share/bug
@@ -59,3 +55,33 @@ parts:
       - -usr/share/include
       - -usr/share/man
       - -usr/share/X11/XErrorDB
+
+  ffmpeg:
+    source: http://ffmpeg.org/releases/ffmpeg-3.1.1.tar.bz2
+    plugin: autotools
+    configflags: [--enable-gpl, --enable-libass, --enable-libfreetype, --enable-libmp3lame, --enable-libopus, --enable-libtheora, --enable-libvorbis, --enable-libvpx, --enable-libx264, --enable-libx265, --enable-nonfree]
+    build-packages:
+      - yasm
+      - libtool
+      - cmake
+      - pkg-config
+      - build-essential
+      - libass-dev
+      - libfreetype6-dev
+      - libsdl1.2-dev
+      - libtheora-dev
+      - libva-dev
+      - libvdpau-dev
+      - libvorbis-dev
+      - libxcb1-dev
+      - libxcb-shm0-dev
+      - libxcb-xfixes0-dev
+      - texinfo
+      - zlib1g-dev
+      - libx264-dev
+      - libmp3lame-dev
+      - libopus-dev
+      - libx265-dev
+      - libvpx-dev
+    organize:
+      usr/local/bin: usr/bin

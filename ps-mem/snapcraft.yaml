@@ -11,5 +11,5 @@ apps:
 
 parts:
   ps-mem:
-    plugin: python3
     source: https://github.com/pixelb/ps_mem.git
+    plugin: python3

@@ -40,6 +40,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
 | :white_check_mark:  | `openttd`          |                           | copy, qt5                 |
 | :red_circle:        | `plank`            |                           | autotools, vala           |
+| :white_check_mark:  | `ps-mem`           |                           | python3                   |
 | :white_check_mark:  | `qcomicbook`       |                           | cmake, qt5                |
 | :red_circle:        | `qdriverstation`   |                           | frc, qmake, qt5, robotics |
 | :white_check_mark:  | `qownnotes`        | [qownnotes][qownnotes]    | qmake, qt5, tar           |

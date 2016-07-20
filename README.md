@@ -26,6 +26,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `galculator`       |                           | autotools, gtk3           |
 | :white_check_mark:  | `gitter-im`        |                           | copy, gtk3, wget          |
 | :red_circle:        | `heroku`           |                           | go                        |
+| :white_check_mark:  | `hexchat`          | [unofficial-hexchat][unofficial-hexchat] | autotools, gtk2, perl, python2, lua |
 | :white_check_mark:  | `idea`             |                           | ant, antIntellij, java, openjdk |
 | :white_check_mark:  | `imagemagick6-stable`|                         | autotools                 |
 | :red_circle:        | `imagemagick7-git` |                           | autotools                 |
@@ -60,6 +61,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `youtube-dl`       |                           | autotools, python3        |
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass
+[unofficial-hexchat]: https://uappexplorer.com/app/unofficial-hexchat.diddledan
 [jtiledownloader]: https://uappexplorer.com/app/jtiledownloader.ogra
 [keepassx-elopio]: https://uappexplorer.com/app/keepassx-elopio.elopio
 [kpcli]: https://uappexplorer.com/app/kpcli-elopio.elopio

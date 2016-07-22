@@ -13,7 +13,7 @@ apps:
 
 parts:
   moon-buggy:
-    source: https://github.com/sergiusens/moon-buggy
+    source: https://github.com/sergiusens/moon-buggy.git
     plugin: autotools
     snap:
       - bin/moon-buggy

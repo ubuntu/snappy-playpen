@@ -26,7 +26,7 @@ apps:
     command: dockerd -g $SNAP_DATA
     daemon: simple
   docker-containerd:
-    command: docker-containerd
+    command: docker-containerd --listen "$SNAP_DATA/run/containerd/containerd.sock" --state-dir "$SNAP_DATA/run/containerd"
     daemon: simple
   docker-containerd-ctr:
     command: docker-containerd-ctr

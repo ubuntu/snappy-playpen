@@ -1,0 +1,20 @@
+name: arduino  # the name of the snap
+version: 1.6.9  # the version of the snap
+summary: Arduino IDE  # 79 char long summary
+description: Open-source electronics prototyping platform  # a longer description for the snap
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+    arduino:
+        command: desktop-launch ${SNAP}/arduino
+        plugs: [x11, unity7, home, network, serial-port]
+
+parts:
+    upstream:
+        #source: /tmp/arduino-1.6.9/
+        source: https://www.arduino.cc/download.php?f=/arduino-1.6.9-linux64.tar.xz
+        source-type: tar
+        plugin: copy
+        files:
+            '*': './'
+        after: [desktop/gtk2]

@@ -7,11 +7,11 @@ confinement: strict
 
 apps:
   cf:
-    command: bin/main
+    command: bin/cli
     plugs: [network, network-bind]
 
 parts:
     cli:
       plugin: go
-      go-packages: [github.com/cloudfoundry/cli/main]
+      go-packages: [github.com/cloudfoundry/cli]
       build-packages: [g++, git]

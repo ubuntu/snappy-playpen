@@ -64,6 +64,7 @@ parts:
       - libasound2-dev
       - libass-dev
       - libboost-dev
+      - libbluetooth-dev
       - libbz2-dev
       - libcap-dev
       - libcdio-dev

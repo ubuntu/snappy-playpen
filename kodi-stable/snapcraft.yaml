@@ -54,7 +54,6 @@ parts:
       - curl
       - cvs
       - default-jre
-      - dcadec-dev
       - fp-compiler
       - gawk
       - gdc

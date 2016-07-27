@@ -73,7 +73,6 @@ parts:
       - libcpluff0-dev
       - libdbus-1-dev
       - libdvdread-dev
-      - libdvd-pkg
       - libfontconfig1-dev
       - libegl1-mesa-dev
       - libfreetype6-dev

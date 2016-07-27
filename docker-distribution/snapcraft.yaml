@@ -1,0 +1,24 @@
+name: docker-distribution
+version: v2.5.0-rc.2
+summary:  The Docker toolset to pack, ship, store, and deliver content
+description: |
+  The Distribution project has the further long term goal of providing a secure tool
+  chain for distributing content. The specifications, APIs and tools should be as
+  useful with Docker as they are without.
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
+
+apps:
+  digest:
+    command: bin/digest
+  registry:
+    command: bin/registry
+  registry-api-descriptor-template:
+    command: bin/registry-api-descriptor-template
+
+parts:
+  distribution:
+    plugin: distribution
+    source: https://github.com/docker/distribution
+    source-type: git
+    source-tag: v2.5.0-rc.2
+    go-importpath: github.com/docker/distribution

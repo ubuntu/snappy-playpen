@@ -83,6 +83,7 @@ parts:
       - libjpeg-dev
       - liblzo2-dev
       - libmicrohttpd-dev
+      - libmpeg2-4-dev
       - libmodplug-dev
       - libmysqlclient-dev
       - libnfs-dev
@@ -147,6 +148,7 @@ parts:
       - liblzma5
       - liblzo2-2
       - libmicrohttpd10
+      - libmpeg2-4
       - libmysqlclient20
       - libpcre3
       - libpcrecpp0v5
@@ -178,11 +180,21 @@ parts:
       - -bin/kodi-standalone
       - -bin/xbmc
       - -bin/xbmc-standalone
-    after: [libdvdcss2, wrappers-copy]
+    after: [libdvdcss2, wrappers-copy, libdcadec]
   libdvdcss2:
     source: https://code.videolan.org/videolan/libdvdcss.git
     source-tag: 1.4.0
     plugin: autotools
+    build-packages:
+      - automake
+      - git-core
+      - build-essential
+    stage-packages:
+      - libc6
+  libdcadec:
+    source: https://github.com/foo86/dcadec.git
+    source-tag: v0.2.0
+    plugin: make
     build-packages:
       - automake
       - git-core

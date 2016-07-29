@@ -202,6 +202,8 @@ parts:
     source: https://github.com/foo86/dcadec.git
     source-tag: v0.2.0
     plugin: make
+    make-parameters:
+      - PREFIX=
     build-packages:
       - automake
       - git-core

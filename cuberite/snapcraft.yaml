@@ -1,0 +1,36 @@
+name: cuberite
+version: 0  # the version of the snap
+summary: Performant open source Minecraft server written in C++.
+description: This is my-snap's description  # a longer description for the snap
+confinement: strict
+
+apps:
+    cuberite:
+        command: bin/Cuberite.wrapper
+        daemon: forking
+        plugs:
+            - network
+            - network-bind
+            - log-observe
+
+parts:
+    cuberite:
+        plugin: cmake
+        source: https://github.com/cuberite/cuberite.git
+        configflags:
+            - -DCMAKE_BUILD_TYPE=Release
+            - -DCROSSCOMPILE=ON
+        build-packages:
+            - gcc
+            - g++
+    release:
+        after: [cuberite]
+        plugin: copy
+        source: parts/cuberite/src/Server
+        files:
+            "*": "."
+    wrapper:
+        plugin: copy
+        source: .
+        files:
+            Cuberite.wrapper: bin/Cuberite.wrapper

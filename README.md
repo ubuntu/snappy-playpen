@@ -2,7 +2,7 @@
 
 A place to test snapcraft, learn creating snaps and share best practices.
 
-[Get started >](http://developer.ubuntu.com/desktop)
+[Get started >](http://snapcraft.io)
 
 [Basic snap and snapcraft notions >](http://snapcraft.io/create/)
 
@@ -122,7 +122,7 @@ announce these on the [snapcraft mailing list][ml].
 ## Snapping your software
 
 The best place to get started with `snapd` and `snapcraft` is on the
-[Developer Portal][devportal]. Check out the examples, and simply by running
+http://snapcraft.io. Check out the examples, and simply by running
 `snapcraft init` you should be on the way to creating your first snap.
 
 In the beginning it is a good idea to use
@@ -165,8 +165,7 @@ Find more support resources on the [Developer Portal][support].
 [guidelines]: https://github.com/ubuntu/snappy-playpen/blob/master/CONTRIBUTING.md
 [ml]: https://lists.ubuntu.com/mailman/listinfo/snapcraft
 [irc]: http://webchat.freenode.net/?channels=snappy
-[devportal]: https://developer.ubuntu.com/desktop
 [security]: https://developer.ubuntu.com/en/snappy/guides/security/
-[support]: https://developer.ubuntu.com/en/snappy/support/
+[support]: http://snapcraft.io/community/
 [gitter]: https://gitter.im/ubuntu/snappy-playpen
 [publish]: https://developer.ubuntu.com/en/snappy/build-apps/upload-your-snap/

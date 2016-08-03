@@ -39,6 +39,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  | curses, autotools         |
 | :white_check_mark:  | `mpv`              |                           | autotools, waf            |
 | :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
+| :white_check_mark:  | `openjfx-modena`   |                           | java, openjdk, openjfx    |
 | :white_check_mark:  | `openttd`          |                           | copy, qt5                 |
 | :red_circle:        | `plank`            |                           | autotools, vala           |
 | :white_check_mark:  | `ps-mem`           |                           | python3                   |

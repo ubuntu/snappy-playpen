@@ -1,0 +1,19 @@
+name: openjfx-modena
+version: 1
+summary: JavaFX Modena Sample Application
+description: JavaFX Modena Sample Application
+confinement: strict
+
+apps:
+  modena:
+    command: desktop-launch $SNAP/bin/modena.sh
+    plugs: [unity7, opengl, home, network, network-bind, pulseaudio]
+
+parts:
+  modena:
+    plugin: copy
+    files:
+      modena.sh: bin/modena.sh
+      Modena.jar: Modena.jar
+    stage-packages: [openjdk-8-jre, openjfx]
+    after: [desktop/gtk2]

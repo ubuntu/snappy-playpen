@@ -1,5 +1,5 @@
 name: docker-distribution
-version: v2.5.0-rc.2
+version: "v2.5.0-rc.2"
 summary:  The Docker toolset to pack, ship, store, and deliver content
 description: |
   The Distribution project has the further long term goal of providing a secure tool
@@ -17,8 +17,7 @@ apps:
 
 parts:
   distribution:
-    plugin: distribution
-    source: https://github.com/docker/distribution
-    source-type: git
+    source: https://github.com/docker/distribution.git
     source-tag: v2.5.0-rc.2
+    plugin: distribution
     go-importpath: github.com/docker/distribution

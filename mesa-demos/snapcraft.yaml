@@ -1,0 +1,47 @@
+name: mesa-demos
+version: "0.1"
+summary: Mesa demos (for Intel GPU) for X11
+description: |
+  Mesa OpenGL, OpenGL|ES1, OpenGL|ES2 demos.
+  Only validated with Intel GPU, so far.
+  Only a few of the demos are included in the snap.
+  Having lp:1583259 would help when adding other demos
+  as there are many of them.
+confinement: devmode
+
+apps:
+  teapot:
+    command: teapot
+    plugs: [x11, opengl]
+  gears:
+    command: gears
+    plugs: [x11, opengl]
+  tunnel2:
+    command: tunnel2
+    plugs: [x11, opengl]
+  es2info:
+    command: es2info
+    plugs: [x11, opengl]
+  es2tri:
+    command: es2tri
+    plugs: [x11, opengl]
+  es2gears:
+    command: es2gears
+    plugs: [x11, opengl]
+
+parts:
+  mesa-demos:
+    source: git://anongit.freedesktop.org/git/mesa/demos
+    source-type: git
+    plugin: cmake
+    stage-packages:
+      - xserver-xorg-video-intel
+  wrappers:
+    plugin: copy
+    files:
+      demo-teapot.wrapper: teapot
+      demo-gears.wrapper: gears
+      demo-tunnel2.wrapper: tunnel2
+      demo-es2info.wrapper: es2info
+      demo-es2tri.wrapper: es2tri
+      demo-es2gears.wrapper: es2gears

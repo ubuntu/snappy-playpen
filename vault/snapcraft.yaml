@@ -21,4 +21,4 @@ parts:
     source-tag: v0.6.1-rc1
     plugin: go
     go-importpath: github.com/hashicorp/vault
-    build-packages: [git]
+    build-packages: [git, g++, libsasl2-dev]

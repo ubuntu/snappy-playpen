@@ -37,6 +37,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | copy, perl                |
 | :white_check_mark:  | `kodi-stable`      |                           | autotools                 |
 | :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |
+| :white_check_mark:  | `mesa-demos`       |                           | opengl, opengles, egl     |
 | :white_check_mark:  | `minetest`         |                           | cmake, copy               |
 | :white_check_mark:  | `mirageos`         |                           | caml, opam, make              |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  | curses, autotools         |

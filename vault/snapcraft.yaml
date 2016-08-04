@@ -1,4 +1,4 @@
-name: vault-elopio
+name: vault
 version: "0.6.1-rc1"
 summary: Vault is a tool for securely accessing secrets.
 description: |

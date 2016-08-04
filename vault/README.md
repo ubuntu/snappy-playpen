@@ -8,7 +8,7 @@ up-to-date make it a nice use case for snappy.
 ## Current state
 
 Working features:
- - everything
+ - Testing in progress: https://gist.github.com/elopio/e8481471a9b3964ccf5bf9f0c09605a9
 
 Known issues:
  - only uploaded to the store for amd64.

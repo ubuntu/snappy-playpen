@@ -7,7 +7,7 @@ description: |
     Cuberite can run on Windows, *nix and Android operating systems. This includes Android phones and tablets as well as Raspberry Pis.
 
     We currently support Release 1.8 and 1.9 Minecraft protocol versions.
-confinement: devmode
+confinement: strict
 
 apps:
     cuberite:
@@ -28,6 +28,9 @@ parts:
         build-packages:
             - gcc
             - g++
+        snap:
+            - -include
+            - -lib
     release:
         after: [cuberite]
         plugin: copy

@@ -18,6 +18,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `cloudfoundry-cli` |                           | go                        |
 | :white_check_mark:  | `consul`           |                           | go                        |
 | :white_check_mark:  | `click-parser`     | [click-parser][click-parser] | nodejs                 |
+| :white_check_mark:  | `cuberite    `     |                           | cmake                     |
 | :white_check_mark:  | `dcos-cli`         |                           | python3                   |
 | :red_circle:        | `deis-workflow-cli`|                           | go                        |
 | :white_check_mark:  | `dosbox`           |                           | autotools                 |

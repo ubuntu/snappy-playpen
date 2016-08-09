@@ -1,0 +1,44 @@
+name: cuberite
+version: 20160804
+summary: Performant open source Minecraft server written in C++.
+description: |
+    Cuberite is a Minecraft-compatible multiplayer game server that is written in C++ and designed to be efficient with memory and CPU, as well as having a flexible Lua Plugin API. Cuberite is compatible with the vanilla Minecraft client.
+
+    Cuberite can run on Windows, *nix and Android operating systems. This includes Android phones and tablets as well as Raspberry Pis.
+
+    We currently support Release 1.8 and 1.9 Minecraft protocol versions.
+confinement: devmode
+
+apps:
+    cuberite:
+        command: bin/Cuberite.wrapper
+        daemon: forking
+        plugs:
+            - network
+            - network-bind
+            - log-observe
+
+parts:
+    cuberite:
+        plugin: cmake
+        source: https://github.com/cuberite/cuberite.git
+        configflags:
+            - -DCMAKE_BUILD_TYPE=Release
+            - -DNO_NATIVE_OPTIMIZATION=ON
+        build-packages:
+            - gcc
+            - g++
+        snap:
+            - -include
+            - -lib
+    release:
+        after: [cuberite]
+        plugin: copy
+        source: parts/cuberite/src/Server
+        files:
+            "*": "."
+    wrapper:
+        plugin: copy
+        source: .
+        files:
+            Cuberite.wrapper: bin/Cuberite.wrapper

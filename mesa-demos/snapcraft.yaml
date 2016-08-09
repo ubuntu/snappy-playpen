@@ -11,22 +11,22 @@ confinement: devmode
 
 apps:
   teapot:
-    command: teapot
+    command: demo.wrapper demos teapot
     plugs: [x11, opengl]
   gears:
-    command: gears
+    command: demo.wrapper demos gears
     plugs: [x11, opengl]
   tunnel2:
-    command: tunnel2
+    command: demo.wrapper demos tunnel2
     plugs: [x11, opengl]
   es2info:
-    command: es2info
+    command: demo.wrapper egl/opengles2 es2info
     plugs: [x11, opengl]
   es2tri:
-    command: es2tri
+    command: demo.wrapper egl/opengles2 es2tri
     plugs: [x11, opengl]
   es2gears:
-    command: es2gears
+    command: demo.wrapper egl/opengles2 es2gears
     plugs: [x11, opengl]
 
 parts:
@@ -39,9 +39,5 @@ parts:
   wrappers:
     plugin: copy
     files:
-      demo-teapot.wrapper: teapot
-      demo-gears.wrapper: gears
-      demo-tunnel2.wrapper: tunnel2
-      demo-es2info.wrapper: es2info
-      demo-es2tri.wrapper: es2tri
-      demo-es2gears.wrapper: es2gears
+      demo.wrapper: demo.wrapper
+ 

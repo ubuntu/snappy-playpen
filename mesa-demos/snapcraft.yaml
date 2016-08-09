@@ -20,13 +20,13 @@ apps:
     command: demo.wrapper demos tunnel2
     plugs: [x11, opengl]
   es2info:
-    command: demo.wrapper egl/opengles2 es2info
+    command: demo.wrapper egl/opengles2 es2_info
     plugs: [x11, opengl]
   es2tri:
     command: demo.wrapper egl/opengles2 es2tri
     plugs: [x11, opengl]
   es2gears:
-    command: demo.wrapper egl/opengles2 es2gears
+    command: demo.wrapper egl/opengles2 es2gears_x11
     plugs: [x11, opengl]
 
 parts:
@@ -40,4 +40,3 @@ parts:
     plugin: copy
     files:
       demo.wrapper: demo.wrapper
- 

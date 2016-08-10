@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #      Copyright (C) 2009-2013 Team XBMC
 #      http://xbmc.org
@@ -27,6 +27,16 @@ APP="${bindir}/${bin_name} --standalone $@"
 
 # Path for Kodi data.
 export KODI_HOME="$datarootdir/kodi"
+
+if [ "$SNAP_ARCH" == "amd64" ]; then
+	ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" == "armhf" ]; then
+	ARCH="arm-linux-gnueabihf"
+else
+	ARCH="$SNAP_ARCH-linux-gnu"
+fi
+export LIBGL_DRIVERS_PATH=$SNAP/usr/lib/$ARCH/dri
+
 
 PULSE_START="$(which start-pulseaudio-x11)"
 if [ -n "$PULSE_START" ]; then

@@ -145,6 +145,7 @@ parts:
       - libfreetype6
       - libfribidi0
       - libgcc1
+      - libgl1-mesa-dri
       - libgl1-mesa-glx
       - libglew1.13
       - libgmp10

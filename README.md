@@ -34,6 +34,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `jtiledownloader`  | [jtiledownloader][]       | copy, jar, java           |
 | :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       | cmake, qt5                |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | copy, perl                |
+| :white_check_mark:  | `kodi-stable`      |                           | autotools                 |
 | :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |
 | :white_check_mark:  | `minetest`         |                           | cmake, copy               |
 | :white_check_mark:  | `mirageos`         |                           | caml, opam, make              |

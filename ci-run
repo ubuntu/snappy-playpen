@@ -11,9 +11,10 @@ fi
 root_dir=`pwd`
 return_code=0
 for dir in $projects_to_test; do
-    # Don't include files in root and template directory
+    # Don't include files in root, template and testing directories
     [ ! -d $dir ] && continue
     [ "$dir" = "snap-template" ] && continue
+    [ "$dir" = "testing" ] && continue
 
     echo "Testing $dir"
     cd ${root_dir}/$dir

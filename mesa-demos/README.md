@@ -20,7 +20,6 @@ Known issues:
   - Only a few of the demos are included in the snap. Currently, each demo requires an env var to be set which is achieved through a wrapper. Having [lp:1583259](https://bugs.launchpad.net/snappy/+bug/1583259) would help when adding the others wholesale.
   - 'strict' mode is not yet supported due to [lp:1611978](https://bugs.launchpad.net/snappy/+bug/1611978)
 
-
 TODO:
  - Validate on post-Xenial
  - Validate on non-Intel GPUs

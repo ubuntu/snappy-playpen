@@ -1,0 +1,16 @@
+#!/bin/bash
+
+for file in brewing.txt crafting.txt favicon.png furnace.txt items.ini monsters.ini README.txt; do
+    if [ ! -f "$SNAP_USER_DATA/$file" ]; then
+        cp --preserve=mode "$SNAP/$file" "$SNAP_USER_DATA"
+    fi
+done
+
+for dir in lang Plugins Prefabs webadmin; do
+    if [ ! -d "$SNAP_USER_DATA/$dir" ]; then
+        cp -r --preserve=mode "$SNAP/$dir" "$SNAP_USER_DATA"
+    fi
+done
+
+cd "$SNAP_USER_DATA"
+exec "$SNAP"/Cuberite -d

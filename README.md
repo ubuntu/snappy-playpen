@@ -2,7 +2,7 @@
 
 A place to test snapcraft, learn creating snaps and share best practices.
 
-[Get started >](http://developer.ubuntu.com/desktop)
+[Get started >](http://snapcraft.io)
 
 [Basic snap and snapcraft notions >](http://snapcraft.io/create/)
 
@@ -18,6 +18,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `cloudfoundry-cli` |                           | go                        |
 | :white_check_mark:  | `consul`           |                           | go                        |
 | :white_check_mark:  | `click-parser`     | [click-parser][click-parser] | nodejs                 |
+| :white_check_mark:  | `cuberite    `     |                           | cmake                     |
 | :white_check_mark:  | `dcos-cli`         |                           | python3                   |
 | :red_circle:        | `deis-workflow-cli`|                           | go                        |
 | :white_check_mark:  | `dosbox`           |                           | autotools                 |
@@ -33,6 +34,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `jtiledownloader`  | [jtiledownloader][]       | copy, jar, java           |
 | :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       | cmake, qt5                |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | copy, perl                |
+| :white_check_mark:  | `kodi-stable`      |                           | autotools                 |
 | :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |
 | :white_check_mark:  | `minetest`         |                           | cmake, copy               |
 | :white_check_mark:  | `mirageos`         |                           | caml, opam, make              |
@@ -122,7 +124,7 @@ announce these on the [snapcraft mailing list][ml].
 ## Snapping your software
 
 The best place to get started with `snapd` and `snapcraft` is on the
-[Developer Portal][devportal]. Check out the examples, and simply by running
+http://snapcraft.io. Check out the examples, and simply by running
 `snapcraft init` you should be on the way to creating your first snap.
 
 In the beginning it is a good idea to use
@@ -165,8 +167,7 @@ Find more support resources on the [Developer Portal][support].
 [guidelines]: https://github.com/ubuntu/snappy-playpen/blob/master/CONTRIBUTING.md
 [ml]: https://lists.ubuntu.com/mailman/listinfo/snapcraft
 [irc]: http://webchat.freenode.net/?channels=snappy
-[devportal]: https://developer.ubuntu.com/desktop
 [security]: https://developer.ubuntu.com/en/snappy/guides/security/
-[support]: https://developer.ubuntu.com/en/snappy/support/
+[support]: http://snapcraft.io/community/
 [gitter]: https://gitter.im/ubuntu/snappy-playpen
 [publish]: https://developer.ubuntu.com/en/snappy/build-apps/upload-your-snap/

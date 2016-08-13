@@ -9,4 +9,4 @@ Working features:
  - Testing in progress: https://gist.github.com/elopio/061584d5c5f4e3297104f34dec96d906
 
 Known issues:
- - None
+ - Login prompts fail: https://bugs.launchpad.net/snappy/+bug/1612871

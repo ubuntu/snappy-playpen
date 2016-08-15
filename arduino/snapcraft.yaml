@@ -2,7 +2,7 @@ name: arduino
 version: 1.6.10
 summary: Arduino IDE
 description: Open-source electronics prototyping platform
-confinement: devmode
+confinement: strict
 
 apps:
     arduino:
@@ -17,8 +17,8 @@ parts:
         stage-packages:
             - libxtst6
         snap:
-            - usr/lib/x86_64-linux-gnu/libXtst.so.6
-            - usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+            - usr/lib/*-linux-gnu/libXtst.so.6
+            - usr/lib/*-linux-gnu/libXtst.so.6.1.0
     upstream:
         source: https://www.arduino.cc/download.php?f=/arduino-1.6.10-linux64.tar.xz
         source-type: tar

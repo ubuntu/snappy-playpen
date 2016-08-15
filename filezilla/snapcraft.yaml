@@ -1,0 +1,60 @@
+name: filezilla
+version: "3.20.0"
+summary: FileZilla is the free FTP solution
+description: |
+  FileZilla is a full-featured FTP client with an easy-to-use GUI.
+  .
+  It is written in C++ and uses the wxWidgets library.
+  .
+  FileZilla includes the following features:
+    * Supports FTP, FTP over SSL/TLS (FTPS) and SSH File Transfer Protocol (SFTP)
+    * IPv6 support
+    * Available in more than 40 languages
+    * Supports resume and transfer of large files >4GB
+    * Easy to use Site Manager and transfer queue
+    * Bookmarks
+    * Drag & drop support
+    * Speed limits
+    * Filename filters
+    * Directory comparison
+    * Network configuration wizard
+    * Remote file editing
+    * Keep-alive
+    * HTTP/1.1, SOCKS5 and FTP Proxy support
+    * Logging to file
+    * Synchronized directory browsing
+    * Remote file search
+    * Tabbed interface to connect to multiple servers
+
+confinement: strict
+
+apps:
+  filezilla:
+    command: desktop-launch $SNAP/bin/filezilla
+    plugs: [X11, network, network-bind, home, unity7]
+
+parts:
+  libfilezilla:
+    plugin: autotools
+    source: https://svn.filezilla-project.org/svn/libfilezilla/trunk
+    source-type: svn
+    build-packages:
+      - gcc
+      - g++
+  filezilla:
+    after: [libfilezilla, desktop/gtk3]
+    plugin: autotools
+    source: https://svn.filezilla-project.org/svn/FileZilla3/tags/3.20.0
+    source-type: svn
+    build-packages:
+      - gettext
+      - imagemagick
+      - libdbus-1-dev
+      - libgnutls28-dev
+      - libgtk2.0-dev
+      - libpugixml-dev
+      - libsqlite3-dev
+      - libwxgtk3.0-dev
+      - pkg-config
+      - wx-common
+      - xdg-utils

@@ -28,8 +28,18 @@ parts:
         snap:
             - -install.sh
             - -uninstall.sh
+            - -java/lib/ext/jfxrt.jar
+            - -java/lib/jfxswt.jar
+            - -java/lib/*/libjfxwebkit.so
+            - -java/lib/*/libjfxmedia.so
         after: [libxtst, desktop-gtk2]
     launcher:
         plugin: copy
         files:
             arduino-snap: arduino-snap
+    desktop-gtk2:
+        snap:
+            - -usr/share/icons/*
+            - -usr/lib/x86_64-linux-gnu/libicu-*
+            - -usr/lib/x86_64-linux-gnu/libLLVM-*
+        

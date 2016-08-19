@@ -9,7 +9,14 @@ confinement: strict
 apps:
   geany:
     command: gtk-launch geany
-    plugs: [x11, unity7, home]
+    plugs: [x11, unity7, home, geany-plugins-plug]
+
+plugs:
+  geany-plugins-plug:
+    content: geany-plugins-all
+    default-provider: geany-plugins
+    interface: content
+    target: plugins
 
 parts:
     geany:

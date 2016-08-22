@@ -1,8 +1,8 @@
 name: otter-browser  # the name of the snap
 version: 0.9.11-dev  # the version of the snap
-summary: This is my-snap's summary  # 79 char long summary
-description: This is my-snap's description  # a longer description for the snap
-confinement: strict  # use "strict" to enforce system access only via declared interfaces
+summary: Classic Opera (12.x) UI using Qt5  # 79 char long summary
+description: Project aiming to recreate the best aspects of the classic Opera (12.x) UI using Qt5  
+confinement: devmode  # use "strict" to enforce system access only via declared interfaces
 
 apps:
     otter-app:

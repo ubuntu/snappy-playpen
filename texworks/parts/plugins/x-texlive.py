@@ -3,12 +3,12 @@ import os
 from subprocess import Popen, PIPE
 
 import snapcraft
-from snapcraft.plugins import copy
+from snapcraft.plugins import dump
 
-class TexLivePlugin(snapcraft.plugins.copy.CopyPlugin):
+class TexLivePlugin(snapcraft.plugins.dump.DumpPlugin):
 
     def build(self):
-        super(copy.CopyPlugin, self).build()
+        super(dump.DumpPlugin, self).build()
 
         # Install TexLive with the standard installer
         env = self._build_environment()

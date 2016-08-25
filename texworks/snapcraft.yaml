@@ -14,8 +14,9 @@ apps:
 
 parts:
   texworks-launcher:
-    plugin: copy
-    files:
+    plugin: dump
+    source: .
+    organize:
       texworks-launcher: bin/texworks-launcher
   texworks:
     plugin: cmake
@@ -48,11 +49,9 @@ parts:
       - libqtgui4
       - libstdc++6
       - zlib1g
-    after: [desktop/qt4]
+    after: [desktop-qt4]
   texlive:
     plugin: texlive
     source: http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    files:
-      '*': './'
     build-packages:
       - wget

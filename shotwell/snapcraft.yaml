@@ -10,14 +10,19 @@ description: |
 confinement: strict
 
 apps:
-  shotwell-git:
-    command: desktop-launch shotwell
+  shotwell:
+    command: shotwell-launcher "$@"
     plugs: [x11, unity7, home, network]
 
 parts:
+  shotwell-launcher:
+    source: .
+    plugin: dump
+    organize:
+      shotwell-launcher: bin/shotwell-launcher
   shotwell:
     source: git://git.gnome.org/shotwell.git
-    #source-tag: shotwell-0.23.5
+    source-tag: shotwell-0.23.5
     plugin: autotools
     build-packages:
       - desktop-file-utils

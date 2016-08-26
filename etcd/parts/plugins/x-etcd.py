@@ -1,6 +1,10 @@
 """This is a hacked version  of snapcraft's go plugin.
 
-It was modifyied to use etcd's build script
+It was modifyied to use etcd's build script.
+
+This plugin uses the common plugin keywords as well as those for "sources".
+For more information check the 'plugins' topic for the former and the
+'sources' topic for the latter.
 
 Additionally, this plugin uses the following plugin-specific keywords:
 

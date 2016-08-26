@@ -16,11 +16,11 @@ Working features:
       es2gears
   
 Known issues:
-  - Only validated with Intel (i965, i915) GPU drivers, so far.
+  - Validated on Intel (i965, i915) and on NVidia with nvidia-361 (361.42-0ubuntu2) proprietary driver.
   - Only a few of the demos are included in the snap. Currently, each demo requires an env var to be set which is achieved through a wrapper. Having [lp:1583259](https://bugs.launchpad.net/snappy/+bug/1583259) would help when adding the others wholesale.
   - 'strict' mode is not yet supported due to [lp:1611978](https://bugs.launchpad.net/snappy/+bug/1611978)
 
 TODO:
  - Validate on post-Xenial
- - Validate on non-Intel GPUs
+ - Validate on AMD GPUs
  - Add other demos once [lp:1583259](https://bugs.launchpad.net/snappy/+bug/1583259) is available

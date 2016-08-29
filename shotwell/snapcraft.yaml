@@ -1,5 +1,5 @@
 name: shotwell
-version: 0.23.2
+version: 0.23.5
 summary: Shotwell photo manager
 description: |
   Shotwell is a digital photo organizer designed for the GNOME desktop
@@ -10,14 +10,19 @@ description: |
 confinement: strict
 
 apps:
-  shotwell-git:
-    command: gtk-launch shotwell
-    plugs: [x11, unity7, home]
+  shotwell:
+    command: shotwell-launcher "$@"
+    plugs: [x11, unity7, home, network]
 
 parts:
+  shotwell-launcher:
+    source: .
+    plugin: dump
+    organize:
+      shotwell-launcher: bin/shotwell-launcher
   shotwell:
     source: git://git.gnome.org/shotwell.git
-    source-tag: shotwell-0.23.2
+    source-tag: shotwell-0.23.5
     plugin: autotools
     build-packages:
       - desktop-file-utils
@@ -74,4 +79,4 @@ parts:
       - librsvg2-common
       - dbus-x11
       - dconf-tools
-    after: [gtkconf]
+    after: [desktop-gtk3]

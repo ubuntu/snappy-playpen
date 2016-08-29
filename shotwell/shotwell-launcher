@@ -1,0 +1,7 @@
+#! /bin/bash
+if [ ! -z "$1" ]
+  then
+    pwd=$PWD/
+fi
+cd $SNAP
+desktop-launch shotwell "$pwd$@"

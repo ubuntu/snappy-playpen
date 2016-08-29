@@ -14,7 +14,7 @@ parts:
         source: https://github.com/OtterBrowser/otter-browser.git
         plugin: cmake
         build-packages:
-        - libdpkg-perl 
+        - build-essential 
         - libqt5webkit5-dev
         - libqt5xmlpatterns5-dev
         - qtmultimedia5-dev

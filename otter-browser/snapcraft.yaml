@@ -23,4 +23,4 @@ parts:
         - libqt5gui5
         - libcanberra-gtk-module
         - overlay-scrollbar
-        after: [desktop/qt5]
+        after: [desktop-qt5]

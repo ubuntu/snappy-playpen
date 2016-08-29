@@ -27,4 +27,4 @@ parts:
       - xfce4-dev-tools
     stage-packages:
       - tumbler
-    after: [desktop/gtk2]
+    after: [desktop-gtk2]

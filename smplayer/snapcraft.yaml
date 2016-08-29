@@ -57,4 +57,4 @@ parts:
       - libxinerama1
       - libxpm4
       - zlib1g
-    after: [desktop/qt5]
+    after: [desktop-qt5]

@@ -15,4 +15,4 @@ parts:
     plugin: antIntellij
     build-packages: [openjdk-8-jdk, openjfx]
     stage-packages: [openjdk-8-jdk, openjfx]
-    after: [desktop/gtk2]
+    after: [desktop-gtk2]

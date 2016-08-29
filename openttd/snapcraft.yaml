@@ -23,4 +23,4 @@ parts:
     plugin: copy
     files:
       '*': './'
-    after: [desktop/qt5]
+    after: [desktop-qt5]

@@ -25,4 +25,4 @@ parts:
       - qttools5-dev-tools
       - libgcrypt20-dev
       - zlib1g-dev
-    after: [desktop/qt5]
+    after: [desktop-qt5]

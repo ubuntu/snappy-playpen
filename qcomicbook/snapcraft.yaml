@@ -29,5 +29,5 @@ parts:
         - unace
         - tar
         - p7zip
-    after: [desktop/qt5]
+    after: [desktop-qt5]
 

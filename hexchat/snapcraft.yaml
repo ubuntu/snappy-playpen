@@ -27,4 +27,4 @@ parts:
       - libperl-dev
       - liblua5.3-dev
     after:
-      - desktop/gtk2
+      - desktop-gtk2

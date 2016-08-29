@@ -33,7 +33,7 @@ parts:
       - libquadmath0
       - librsvg2-common
       - libwmf0.2-7-gtk
-    after: [desktop/gtk3]
+    after: [desktop-gtk3]
   integration:
     plugin: nil
     stage-packages:

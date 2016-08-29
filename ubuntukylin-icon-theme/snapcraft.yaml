@@ -33,4 +33,4 @@ parts:
         "Name=.*$": "Name=ubuntukylin-icon-theme-snap"
     stage-packages:
       - gsettings-desktop-schemas
-    after: [desktop/glib-only]
+    after: [desktop-glib-only]

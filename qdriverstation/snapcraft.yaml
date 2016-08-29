@@ -21,7 +21,7 @@ parts:
       - qtmultimedia5-dev
       - qtdeclarative5-dev 
       - qttools5-dev-tools 
-    after: [desktop/qt5]
+    after: [desktop-qt5]
   env:
     plugin: nil
     stage-packages:

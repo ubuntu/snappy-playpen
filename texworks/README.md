@@ -6,10 +6,8 @@ texlive is included from upstream.
 ## Current state
 
 Working features:
-  - Everything
+  - Everything, even in strict confinement
 
 Known issues:
-  - if installed without --devmode the menu is not visible (tested only on unity7)
 
 TODO:
- Check menu without --devmode

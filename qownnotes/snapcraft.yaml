@@ -1,5 +1,5 @@
 name: qownnotes
-version: 16.07.6
+version: 16.08.20
 summary: Plain-text file notepad with markdown support and ownCloud integration
 confinement: strict
 description: |
@@ -10,7 +10,7 @@ description: |
 
 apps:
   qownnotes:
-    command: desktop-launch usr/bin/QOwnNotes
+    command: desktop-launch usr/bin/QOwnNotes --snap
     plugs:
       - x11
       - network
@@ -18,7 +18,7 @@ apps:
 
 parts:
   qownnotes:
-    source: http://downloads.sourceforge.net/project/qownnotes/src/qownnotes-16.07.6.tar.xz
+    source: http://downloads.sourceforge.net/project/qownnotes/src/qownnotes-16.08.10.tar.xz
     source-type: tar
     plugin: qmake
     qt-version: qt5

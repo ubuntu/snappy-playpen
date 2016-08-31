@@ -13,7 +13,7 @@ This project currently includes the following snaps:
 
 | State               | App                | Snap name in the store    | Uses                      |
 | ------------------- | ------------------ | ------------------------- | ------------------------- |
-| :white_check_mark:  | `2048`             |                           | qt5, qml, copy            |
+| :white_check_mark:  | `2048`             |                           | qt5, qml, dump            |
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       | electron, grunt, nodejs   |
 | :white_check_mark:  | `cloudfoundry-cli` |                           | go                        |
 | :white_check_mark:  | `consul`           |                           | go                        |

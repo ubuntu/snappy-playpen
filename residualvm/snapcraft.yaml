@@ -11,7 +11,7 @@ confinement: strict
 
 apps:
   residualvm:
-    command: residualvm
+    command: residualvm --themepath="/snap/residualvm/current/share/residualvm"
     plugs: [x11, home, pulseaudio, opengl, unity7]
 
 parts:

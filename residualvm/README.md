@@ -8,10 +8,9 @@ To get this done, we need to do the following:
 ## Current state
 
 Working features:
- - Games with the software render
+ - Games with the software/opengl render
+ - Theme path set in the command
 
 Known issues:
-  - No theme for the main UI
 
 TODO:
- - Fix opengl render

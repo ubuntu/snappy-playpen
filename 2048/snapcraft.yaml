@@ -11,11 +11,9 @@ apps:
 
 parts:
   game-2048:
-    plugin: copy
+    plugin: dump
     source: https://github.com/MartinBriza/2048.qml
     source-type: git
-    files:
-      2048.qml: 2048.qml
     stage-packages:
       - qml-module-qtquick2
       - qmlscene

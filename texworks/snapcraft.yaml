@@ -20,6 +20,7 @@ parts:
       texworks-launcher: bin/texworks-launcher
   texworks:
     plugin: cmake
+    configflags: ['-DESIRED_QT_VERSION=5']
     source: https://github.com/TeXworks/texworks.git
     source-tag: release-0.6.1
     build-packages:
@@ -29,8 +30,11 @@ parts:
       - pkg-config
       - cmake
       - libhunspell-dev
-      - libqt4-dev
-      - libpoppler-qt4-dev
+      - qtbase5-dev
+      - qtscript5-dev
+      - qtdeclarative5-dev
+      - qttools5-dev
+      - libpoppler-qt5-dev
       - liblua5.2-dev
       - python-dev
       - zlib1g-dev
@@ -40,16 +44,18 @@ parts:
       - libc6
       - libgcc1
       - libhunspell-1.3-0
-      - libpoppler-qt4-4
-      - libqt4-dbus
-      - libqt4-script
-      - libqt4-scripttools
-      - libqt4-xml
-      - libqtcore4
-      - libqtgui4
+      - libpoppler-qt5-1
+      - libqt5dbus5
+      - libqt5script5
+      - libqt5scripttools5
+      - libqt5xml5
+      - libqt5core5a
+      - libqt5gui5
+      - libqt5widgets5
+      - libqt5concurrent5
       - libstdc++6
       - zlib1g
-    after: [desktop-qt4]
+    after: [desktop-qt5]
   texlive:
     plugin: texlive
     source: http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz

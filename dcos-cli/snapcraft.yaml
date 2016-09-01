@@ -9,7 +9,7 @@ confinement: strict
 
 apps:
   dcos:
-    command: usr/bin/dcos
+    command: dcos
     plugs: [network]
 
 parts:

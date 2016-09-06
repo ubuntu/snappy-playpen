@@ -1,5 +1,5 @@
 name: qownnotes
-version: 16.09.2
+version: "16.09.2"
 summary: Plain-text file notepad with markdown support and ownCloud integration
 confinement: strict
 description: |

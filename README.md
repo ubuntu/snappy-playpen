@@ -40,6 +40,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `mirageos`         |                           | caml, opam, make              |
 | :white_check_mark:  | `moon-buggy`       | [moon-buggy][moon-buggy]  | curses, autotools         |
 | :white_check_mark:  | `mpv`              |                           | autotools, waf            |
+| :red_circle:        | `nginx`            |                           | autotools                 |
 | :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
 | :white_check_mark:  | `openttd`          |                           | copy, qt5                 |
 | :red_circle:        | `plank`            |                           | autotools, vala           |

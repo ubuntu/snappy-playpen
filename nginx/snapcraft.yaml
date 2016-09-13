@@ -1,0 +1,21 @@
+name: nginx
+version: master
+summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+description: |
+  This is my-snap's description. You have a paragraph or two to tell the
+  most important story about your snap. Keep it under 100 words though,
+  we live in tweetspace and your description wants to look good in the snap
+  store.
+
+grade: devel
+confinement: strict
+
+apps:
+  nginx:
+    command: nginx
+    plugs: [network, network-bind]
+
+parts:
+  nginx:
+    source: .
+    plugin: autotools

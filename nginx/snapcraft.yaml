@@ -15,5 +15,6 @@ apps:
 
 parts:
   nginx:
-    source: .
+    source: http://hg.nginx.org/nginx
+    source-type: mercurial
     plugin: autotools

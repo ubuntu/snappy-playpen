@@ -18,4 +18,4 @@ parts:
     source: git://git.code.sf.net/p/zsh/code
     plugin: autotools
     install-via: prefix
-    build-packages: [yodl]
+    build-packages: [yodl, libncursesw5-dev]

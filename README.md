@@ -61,6 +61,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `vlc`              |                           | autotools                 |
 | :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] | maven  |
 | :white_check_mark:  | `youtube-dl`       |                           | autotools, python3        |
+| :white_check_mark:  | `zsh`              |                           | autotools                 |
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18
 [click-parser]: https://uappexplorer.com/app/click-parser.bhdouglass
 [unofficial-hexchat]: https://uappexplorer.com/app/unofficial-hexchat.diddledan

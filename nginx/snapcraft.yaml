@@ -18,3 +18,4 @@ parts:
     source: http://hg.nginx.org/nginx
     source-type: mercurial
     plugin: autotools
+    build-packages: [libpcre3-dev, zlib1g-dev]

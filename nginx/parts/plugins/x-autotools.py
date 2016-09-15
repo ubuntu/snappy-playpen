@@ -1,6 +1,6 @@
 """This is a modified version of snapcraft's autotools plugin.
 
-It calls nginx' ./auto/configure
+It calls the ./auto/configure of nginx.
 
     - configflags:
       (list of strings)

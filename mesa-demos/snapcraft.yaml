@@ -35,11 +35,23 @@ parts:
     source-type: git
     plugin: cmake
     build-packages:
-        - gcc
-        - g++
-    stage-packages:
-      - xserver-xorg-video-intel
+      - gcc
+      - g++
+      - pkg-config
+      - libegl1-mesa-dev
+      - libgl1-mesa-dev
+      - libgles1-mesa-dev
+      - libgles2-mesa-dev
+      - freeglut3-dev
+      - libglew-dev
   wrappers:
+    stage-packages:
+      - libegl1-mesa
+      - libgl1-mesa-glx
+      - libgles1-mesa
+      - libgles2-mesa
+      - freeglut3
+      - libglew1.13
     plugin: dump
     source: .
     organize:

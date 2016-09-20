@@ -19,6 +19,7 @@ parts:
   # This script contains all the commands needed (sets env variables, launches the jar file...) to
   # execute the application
   exec:
-    plugin: copy
-    files:
+    plugin: dump
+    source: .
+    organize:
       wallpaperdownloader.sh: bin/wallpaperdownloader.sh

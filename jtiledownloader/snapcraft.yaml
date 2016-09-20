@@ -13,12 +13,11 @@ apps:
 
 parts:
     jtiledownloader:
-        plugin: copy
+        plugin: dump
         source:  http://svn.openstreetmap.org/applications/utils/downloading/JTileDownloader/trunk/release/jTileDownloader-0-6-1.zip
-        files:
-            "*": .
         stage-packages: [gtk2-engines-murrine, light-themes, openjdk-8-jre]
     launcher:
-        plugin: copy
-        files:
+        plugin: dump
+        source: .
+        organize:
             launcher: bin/launcher

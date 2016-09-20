@@ -1,9 +1,9 @@
 name: mesa-demos
 version: "0.1"
-summary: Mesa demos (for Intel GPU) for X11
+grade: stable
+summary: Mesa demos for X11
 description: |
   Mesa OpenGL, OpenGL|ES1, OpenGL|ES2 demos.
-  Only validated with Intel GPU, so far.
   Only a few of the demos are included in the snap.
   Having lp:1583259 would help when adding other demos
   as there are many of them.
@@ -34,9 +34,13 @@ parts:
     source: git://anongit.freedesktop.org/git/mesa/demos
     source-type: git
     plugin: cmake
+    build-packages:
+        - gcc
+        - g++
     stage-packages:
       - xserver-xorg-video-intel
   wrappers:
-    plugin: copy
-    files:
-      demo.wrapper: demo.wrapper
+    plugin: dump
+    source: .
+    organize:
+      demo.wrapper: bin/demo.wrapper

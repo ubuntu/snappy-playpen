@@ -15,6 +15,7 @@ This project currently includes the following snaps:
 | ------------------- | ------------------ | ------------------------- | ------------------------- |
 | :white_check_mark:  | `2048`             |                           | qt5, qml, dump            |
 | :white_check_mark:  | `atom`             | [atom-cwayne][atom]       | electron, grunt, nodejs   |
+| :white_check_mark:  | `baka-mplayer`     |                           | qt5, qml, mpv             |
 | :white_check_mark:  | `cloudfoundry-cli` |                           | go                        |
 | :white_check_mark:  | `consul`           |                           | go                        |
 | :white_check_mark:  | `click-parser`     | [click-parser][click-parser] | nodejs                 |

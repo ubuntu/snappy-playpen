@@ -1,0 +1,37 @@
+name: baka-mplayer
+version: "2.0.4"
+grade: stable
+summary: The mpv based media player
+description: Baka MPlayer is a free and open source, cross-platform, libmpv based multimedia player. Its simple design reflects the idea for an uncluttered and enjoyable environment for watching tv shows. 
+confinement: strict 
+apps:
+  baka-mplayer:
+    command: desktop-launch $SNAP/usr/bin/baka-mplayer 
+    plugs: [network, unity7, x11, opengl, home, pulseaudio]
+
+parts:
+  baka-mplayer:
+    plugin: qmake
+    qt-version: qt5
+    source: https://github.com/u8sand/Baka-MPlayer.git
+    source-branch: release
+    options: 
+       - ./src
+       - CONFIG+=release
+       - CONFIG+=install_translations
+    build-packages:
+        - build-essential
+        - libx11-dev
+        - libice-dev 
+        - libmpv-dev
+        - libqt5svg5-dev
+        - libqt5x11extras5-dev
+        - pkg-config
+        - qtbase5-dev
+        - qtdeclarative5-dev
+        - qttools5-dev-tools
+    stage-packages:
+        - mpv
+        - youtube-dl
+        - fonts-noto
+    after: [ desktop-qt5]

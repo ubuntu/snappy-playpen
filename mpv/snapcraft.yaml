@@ -23,8 +23,8 @@ apps:
 
 parts:
   launcher:
-    plugin: dump
     source: .
+    plugin: dump
     organize:
       mpv: bin/mpv
   ffmpeg:

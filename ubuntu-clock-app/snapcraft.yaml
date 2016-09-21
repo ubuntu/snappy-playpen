@@ -44,8 +44,8 @@ parts:
       - -usr/share/doc
       - -usr/include
   environment:
-    plugin: dump
     source: .
+    plugin: dump
     organize:
       clock.wrapper: bin/clock
       snappy-qt5.conf: etc/xdg/qtchooser/snappy-qt5.conf

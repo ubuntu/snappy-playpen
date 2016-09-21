@@ -15,8 +15,8 @@ apps:
 
 parts:
   launcher:
-    plugin: dump
     source: .
+    plugin: dump
     organize:
       minetest: minetest
   minetestgame:

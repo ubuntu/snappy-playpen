@@ -12,6 +12,6 @@ apps:
 
 parts:
   tinyproxy:
-    plugin: dump
     source: .
+    plugin: dump
     stage-packages: [tinyproxy]

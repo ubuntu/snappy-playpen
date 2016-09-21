@@ -212,8 +212,8 @@ parts:
     stage-packages:
       - libc6
   wrappers-copy:
-    plugin: dump
     source: .
+    plugin: dump
     organize:
       wrapper_kodi.sh: bin/wrapper_kodi.sh
       wrapper_kodi-standalone.sh: bin/wrapper_kodi-standalone.sh

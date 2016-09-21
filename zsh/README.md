@@ -1,6 +1,6 @@
 # Z shell snap
 
-This project creates a devmode working snap of the Z shell.
+This project creates a snap of the Z shell.
 A shell is interesting because it conflicts with the isolation principle of
 snaps, so it is a nice experiment for the playpen.
 

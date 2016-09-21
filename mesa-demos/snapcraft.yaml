@@ -1,0 +1,58 @@
+name: mesa-demos
+version: "0.1"
+grade: stable
+summary: Mesa demos for X11
+description: |
+  Mesa OpenGL, OpenGL|ES1, OpenGL|ES2 demos.
+  Only a few of the demos are included in the snap.
+  Having lp:1583259 would help when adding other demos
+  as there are many of them.
+confinement: devmode
+
+apps:
+  teapot:
+    command: demo.wrapper demos teapot
+    plugs: [x11, opengl]
+  gears:
+    command: demo.wrapper demos gears
+    plugs: [x11, opengl]
+  tunnel2:
+    command: demo.wrapper demos tunnel2
+    plugs: [x11, opengl]
+  es2info:
+    command: demo.wrapper egl/opengles2 es2_info
+    plugs: [x11, opengl]
+  es2tri:
+    command: demo.wrapper egl/opengles2 es2tri
+    plugs: [x11, opengl]
+  es2gears:
+    command: demo.wrapper egl/opengles2 es2gears_x11
+    plugs: [x11, opengl]
+
+parts:
+  mesa-demos:
+    source: git://anongit.freedesktop.org/git/mesa/demos
+    source-type: git
+    plugin: cmake
+    build-packages:
+      - gcc
+      - g++
+      - pkg-config
+      - libegl1-mesa-dev
+      - libgl1-mesa-dev
+      - libgles1-mesa-dev
+      - libgles2-mesa-dev
+      - freeglut3-dev
+      - libglew-dev
+  wrappers:
+    stage-packages:
+      - libegl1-mesa
+      - libgl1-mesa-glx
+      - libgles1-mesa
+      - libgles2-mesa
+      - freeglut3
+      - libglew1.13
+    plugin: dump
+    source: .
+    organize:
+      demo.wrapper: bin/demo.wrapper

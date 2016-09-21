@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$SNAP_ARCH" == "amd64" ]; then
+	ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" == "armhf" ]; then
+	ARCH="arm-linux-gnueabihf"
+else
+	ARCH="$SNAP_ARCH-linux-gnu"
+fi
+
+# Tell libGL where to find the drivers
+export LIBGL_DRIVERS_PATH=$SNAP/usr/lib/$ARCH/dri
+cd $SNAP/$1
+exec "./$2"

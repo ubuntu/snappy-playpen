@@ -1,0 +1,21 @@
+name: zsh
+version: master
+summary: a shell designed for interactive use, and a powerful scripting language
+description: |
+  The Z-Shell, "zsh" for short, is a command interpreter for UNIX systems. zsh
+  is a particularly powerful shell with lots of interactive features allowing
+  you to do the maximum work with the minimum fuss.
+
+grade: devel
+confinement: devmode
+
+apps:
+  zsh:
+    command: zsh
+
+parts:
+  zsh:
+    source: git://git.code.sf.net/p/zsh/code
+    plugin: autotools
+    install-via: prefix
+    build-packages: [libncursesw5-dev, yodl]

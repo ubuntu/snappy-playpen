@@ -11,10 +11,7 @@ apps:
     plugs: [network, network-bind]
 
 parts:
-  server:
-    plugin: nil
+  tinyproxy:
+    source: .
+    plugin: dump
     stage-packages: [tinyproxy]
-  glue:
-    plugin: copy
-    files:
-      launcher.sh: launcher.sh

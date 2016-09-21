@@ -20,7 +20,5 @@ apps:
 parts:
   openttd:
     source: http://binaries.openttd.org/releases/1.6.1/openttd-1.6.1-linux-generic-amd64.tar.gz
-    plugin: copy
-    files:
-      '*': './'
-    after: [desktop-qt5]
+    plugin: dump
+    after: [desktop/qt5]

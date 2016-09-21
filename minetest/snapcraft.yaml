@@ -15,6 +15,7 @@ apps:
 
 parts:
   launcher:
+    source: .
     plugin: copy
     files:
       minetest: minetest

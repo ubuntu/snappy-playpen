@@ -14,6 +14,7 @@ description: |
   * Wayland support 
   * Support for playing URLs of popular streaming sites
   * Screenshot improvements
+confinement: strict
 
 apps:
   mpv:
@@ -22,8 +23,9 @@ apps:
 
 parts:
   launcher:
-    plugin: copy
-    files:
+    source: .
+    plugin: dump
+    organize:
       mpv: bin/mpv
   ffmpeg:
     source: git://source.ffmpeg.org/ffmpeg.git

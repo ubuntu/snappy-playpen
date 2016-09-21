@@ -12,13 +12,14 @@ apps:
 parts:
   # Pulls the code from the original source (master branch)
   wallpaperdownloader:
-    plugin: maven
     source: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader.git
+    plugin: maven
 
   # It will copy wallpaperdownloader script into /bin/
   # This script contains all the commands needed (sets env variables, launches the jar file...) to
   # execute the application
   exec:
-    plugin: copy
-    files:
+    source: .
+    plugin: dump
+    organize:
       wallpaperdownloader.sh: bin/wallpaperdownloader.sh

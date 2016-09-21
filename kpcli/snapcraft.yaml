@@ -13,8 +13,8 @@ apps:
 parts:
   kpcli:
     source: https://github.com/alecsammon/kpcli.git
-    plugin: copy
-    files:
+    plugin: dump
+    organize:
       kpcli.pl: scripts/kpcli.pl
     stage-packages:
       - perl-base
@@ -26,6 +26,7 @@ parts:
       - libterm-readline-gnu-perl
       - libclone-perl
   launcher:
-    plugin: copy
-    files:
+    plugin: dump
+    source: .
+    organize:
       run.sh: scripts/run.sh

@@ -11,7 +11,8 @@ apps:
 
 parts:
   openjdk-demo:
-    plugin: copy
-    files:
+    source: .
+    plugin: dump
+    organize:
       FileChooserDemo.sh: bin/FileChooserDemo.sh
     stage-packages: [openjdk-8-jre, openjdk-8-demo]

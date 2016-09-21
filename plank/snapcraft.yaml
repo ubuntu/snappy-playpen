@@ -39,7 +39,8 @@ parts:
         - libwnck-3-0
         - libbamf3-2
   launcher:
-    plugin: copy
-    files:
+    source: .
+    plugin: dump
+    organize:
       launcher: bin/plank.run
 

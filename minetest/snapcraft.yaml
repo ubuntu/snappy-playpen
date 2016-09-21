@@ -16,13 +16,13 @@ apps:
 parts:
   launcher:
     source: .
-    plugin: dump
-    organize:
+    plugin: copy
+    files:
       minetest: minetest
   minetestgame:
     source: https://github.com/minetest/minetest_game.git
-    plugin: dump
-    organize:
+    plugin: copy
+    files:
       '*': 'games/minetest_game/'
   minetest:
     source: https://github.com/minetest/minetest.git

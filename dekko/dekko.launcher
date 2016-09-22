@@ -1,0 +1,85 @@
+#!/bin/bash
+
+if [ "$SNAP_ARCH" == "amd64" ]; then
+	ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" == "armhf" ]; then
+	ARCH="arm-linux-gnueabihf"
+else
+	ARCH="$SNAP_ARCH-linux-gnu"
+fi
+
+export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH:$LD_LIBRARY_PATH
+
+# XKB config
+export XKB_CONFIG_ROOT=$SNAP/usr/share/X11/xkb
+
+export QTCHOOSER_NO_GLOBAL_DIR=1
+export QT_SELECT=snappy-qt5
+
+if [ "$DESKTOP_SESSION" == "unity8" ]; then
+	# Qt Platform to Mir
+	export QT_QPA_PLATFORM=ubuntumirclient
+	# Mir runtime
+	export MIR_SOCKET=$XDG_RUNTIME_DIR/mir_socket
+	export MIR_CLIENT_PLATFORM_PATH=$SNAP/usr/lib/$ARCH/mir/client-platform
+fi
+
+# Qt Libs
+export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/qt5/libs:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/pulseaudio:$LD_LIBRARY_PATH
+
+# Qt Modules
+export QT_PLUGIN_PATH=$SNAP/usr/lib/$ARCH/qt5/plugins
+export QML2_IMPORT_PATH=$QML2_IMPORT_PATH:$SNAP/usr/lib/$ARCH/qt5/qml
+export QML2_IMPORT_PATH=$QML2_IMPORT_PATH:$SNAP/lib/$ARCH
+export QML2_IMPORT_PATH=$QML2_IMPORT_PATH:$SNAP/usr/lib/qt5/qml
+
+# Mesa Libs
+export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/mesa:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH/mesa-egl:$LD_LIBRARY_PATH
+
+# XDG Config
+export XDG_CONFIG_DIRS=$SNAP/etc/xdg:$XDG_CONFIG_DIRS
+export XDG_CONFIG_DIRS=$SNAP/usr/xdg:$XDG_CONFIG_DIRS
+# Note: this doesn't seem to work, QML's LocalStorage either ignores
+# or fails to use $SNAP_USER_DATA if defined here
+export XDG_DATA_DIRS=$SNAP_USER_DATA:$XDG_DATA_DIRS
+export XDG_DATA_DIRS=$SNAP/usr/share:$XDG_DATA_DIRS
+
+# Not good, needed for fontconfig
+export XDG_DATA_HOME=$SNAP/usr/share
+
+# Font Config
+export FONTCONFIG_PATH=$SNAP/etc/fonts/config.d
+export FONTCONFIG_FILE=$SNAP/etc/fonts/fonts.conf
+
+# Tell libGL where to find the drivers
+export LIBGL_DRIVERS_PATH=$SNAP/usr/lib/$ARCH/dri
+
+# Necessary for the SDK to find the translations directory
+export APP_DIR=$SNAP
+
+# ensure the snappy gl libs win
+export LD_LIBRARY_PATH="$SNAP_LIBRARY_PATH:$LD_LIBRARY_PATH"
+
+##############################################################
+# Dekko specific configurations                              #
+##############################################################
+
+# libs - why don't we have multiarch???
+export LD_LIBRARY_PATH=$SNAP/usr/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$SNAP/usr/lib/Dekko:$LD_LIBRARY_PATH
+
+# plugins - plugins in these dirs are loaded on demand at runtime
+export QMF_PLUGINS=$SNAP/usr/lib/qmf/plugins5
+export DEKKO_PLUGINS=$SNAP/usr/lib/Dekko/plugins
+
+# echo "QMF_PLUGINS Path is: $QMF_PLUGINS"
+# echo "DEKKO_PLUGINS Path is: $DEKKO_PLUGINS"
+
+echo "WARNING: Disabling oxide sandbox features, relying on snap confinement now!"
+export OXIDE_NO_SANDBOX=1
+
+cd $SNAP
+# echo "Launching dekko now"
+exec $SNAP/usr/bin/dekko $@

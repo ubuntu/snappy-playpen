@@ -1,0 +1,70 @@
+name: dekko
+version: 0.9.1
+summary: Dekko email client
+description: Email client for ubuntu devices
+confinement: strict
+grade: devel
+
+apps:
+    dekko:
+        command: dekko-launch
+        plugs: [
+            unity7, # for desktop features
+            opengl, # pretty obvious
+            network, # access network
+            network-bind, # more network access
+            home, # access home directory for adding attachments etc
+            browser-support, # make oxide happy in strict mode
+            # silence QNetwork* classes. We could probably remove
+            # this for unity8 as we can use the connectivity api
+            network-observe,
+            network-control
+        ]
+parts:
+    dekko:
+        source: http://code.dekkoproject.org/dekko-dev/dekko.git
+        plugin: cmake
+        configflags: [
+            -DSNAP_MODE=On # DO NOT DISABLE
+            # -DENABLE_POP3_SUPPORT=On # Currently still experimental...
+            # -DENABLE_LOGGING=On, # enable additional logging in the daemon
+            # -DENABLE_QML_DEBUG=On, # this should work with the network-bind plug.
+            # -DENABLE_UBUNTU_CONNECTIVITY=On, # Only usable on Unity8.
+            # -DUSE_ONLINE_ACCOUNTS=On # Still experimental
+        ]
+        build-packages:
+            - build-essential
+            - cmake
+            - qtpim5-dev
+            - qtbase5-dev
+            - qtbase5-dbg
+            - qtbase5-dev-tools-dbg
+            - qtbase5-dev-tools
+            - zlib1g
+            - zlib1g-dev
+            - qttools5-dev-tools
+            - libconnectivity-qt1-dev
+            - libaccounts-qt5-dev
+            - qtdeclarative5-private-dev
+            - qtscript5-private-dev
+            - qml-module-qtquick-privatewidgets
+            - libqt5svg5-dev
+            - libsignon-qt5-dev
+            - libsasl2-dev
+            - signon-plugin-sasl-dev
+            - signon-plugin-oauth2-dev
+            - ubuntu-sdk-libs
+        stage-packages:
+            - ubuntu-sdk-libs
+            - qtubuntu-desktop
+            - qml-module-qtsysteminfo
+            - qml-module-qtquick-dialogs
+            - qtmir-desktop
+            - mir-graphics-drivers-desktop
+            - libnotify-bin
+    launcher:
+        source: .
+        plugin: dump
+        organize:
+            dekko.launcher: bin/dekko-launch
+            snappy-qt5.conf: etc/xdg/qtchooser/snappy-qt5.conf

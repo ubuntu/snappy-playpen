@@ -22,6 +22,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `cuberite    `     |                           | cmake                     |
 | :white_check_mark:  | `dcos-cli`         |                           | python3                   |
 | :red_circle:        | `deis-workflow-cli`|                           | go                        |
+| :white_check_mark:  | `dekko`            |                           | qt5, qml, dump, oxide, cmake |
 | :white_check_mark:  | `dosbox`           |                           | autotools                 |
 | :white_check_mark:  | `docker-compose`   |                           | python3                   |
 | :white_check_mark:  | `ffmpeg`           |                           | autotools                 |

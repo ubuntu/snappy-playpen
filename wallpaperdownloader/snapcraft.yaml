@@ -1,25 +1,33 @@
 name: wallpaperdownloader
-version: "2.1"
+version: "2.3"
 summary: Download and manage your favorite wallpapers from the Internet
 description: WallpaperDownloader is a simple GUI Java based application for downloading and managing wallpapers from the Internet
+grade: stable
 confinement: strict
 
 apps:
   wallpaperdownloader:
     command: wallpaperdownloader.sh
-    plugs: [x11, network-bind, home]
+    plugs: [x11, network-bind, home, gsettings]
 
 parts:
   # Pulls the code from the original source (master branch)
+  # desktop/gtk3 is a snapcraft part (snapcraft-desktop-helpers) from the Wiki: https://wiki.ubuntu.com/snapcraft/parts
+  # It enables desktop integration and gsettings manipulation from the confined application
+  # It is necessary to use gsettings interface (see above) in order to have a fully functional
+  # desktop/gtk3 part
+  # Github repository for snapcraft-desktop-helpers: https://github.com/ubuntu/snapcraft-desktop-helpers
   wallpaperdownloader:
-    source: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader.git
     plugin: maven
+    source: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader.git
+    stage-packages:
+      # mate-desktop-common is necessary to have MATE gsettings schemas available for the application
+      - mate-desktop-common
+    after: [desktop/gtk3]
 
   # It will copy wallpaperdownloader script into /bin/
   # This script contains all the commands needed (sets env variables, launches the jar file...) to
   # execute the application
   exec:
-    source: .
     plugin: dump
-    organize:
-      wallpaperdownloader.sh: bin/wallpaperdownloader.sh
+    source: scripts

@@ -8,9 +8,14 @@ For more information, please visit the official [Wiki](https://bitbucket.org/elo
 
 Working features:
  - The application is working fine. You can even change the downloads folder (by default inside snap directory) to a directory within the user's home folder.
- - Now, the application is integrated with the Desktop. A Desktop Launcher has been created and a menu entry too under `Utility` category.
+ - The application is integrated with the Desktop. A Desktop Launcher has been created and a menu entry too under `Utility` category.
+ - It uses gsettings interface and snapcraft-desktop-helpers wiki remote part to integrate the application with the desktop and manage host dconf database via gsettings for, for 
+example, 
+changing the current wallpaper
 
 Known issues:
   - Open `downloads folder` button is not working. An exception is thrown: 
 
       Error trying to open the Downloads directory. Error: Failed to show URI:file:/home/egarcia/snap/wallpaperdownloader/1/.wallpaperdownloader/downloads/)
+
+  - xdg-open integration for launching the default browser doesn't work

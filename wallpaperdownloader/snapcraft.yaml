@@ -18,8 +18,8 @@ parts:
   # desktop/gtk3 part
   # Github repository for snapcraft-desktop-helpers: https://github.com/ubuntu/snapcraft-desktop-helpers
   wallpaperdownloader:
-    plugin: maven
     source: https://bitbucket.org/eloy_garcia_pca/wallpaperdownloader.git
+    plugin: maven
     stage-packages:
       # mate-desktop-common is necessary to have MATE gsettings schemas available for the application
       - mate-desktop-common

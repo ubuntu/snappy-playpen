@@ -23,7 +23,7 @@ parts:
     stage-packages:
       # mate-desktop-common is necessary to have MATE gsettings schemas available for the application
       - mate-desktop-common
-    after: [desktop/gtk3]
+    after: [desktop-gtk3]
 
   # It will copy wallpaperdownloader script into /bin/
   # This script contains all the commands needed (sets env variables, launches the jar file...) to

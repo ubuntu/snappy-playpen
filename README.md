@@ -62,7 +62,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `ubuntukylin-icon-theme` |                     | copy_and_edit, theme      |
 | :white_check_mark:  | `vault`            | [vault-elopio][vault]     | go                        |
 | :white_check_mark:  | `vlc`              |                           | autotools                 |
-| :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] | maven  |
+| :white_check_mark:  | `wallpaperdownloader`| [wallpaperdownloader][wallpaperdownloader] | maven, stage-package, snapcraft-desktop-helpers part, gsettings  |
 | :white_check_mark:  | `youtube-dl`       |                           | autotools, python3        |
 | :white_check_mark:  | `zsh`              |                           | autotools                 |
 [atom]: https://uappexplorer.com/app/atom-cwayne.cwayne18

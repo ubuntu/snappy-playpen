@@ -10,16 +10,15 @@ confinement: strict
 apps:
   gradio:
     command: desktop-launch gradio
-    plugs: [home, unity7, gsettings]
+    plugs: [home, unity7, gsettings, opengl]
 
 parts:
   gradio:
     source: https://github.com/haecker-felix/gradio.git
-    plugin: cmake
+    plugin: autotools
     build-packages:
       - gcc
       - g++
-      - cmake
       - debhelper
       - valac
       - libglib2.0-dev
@@ -30,6 +29,7 @@ parts:
       - libwebkit2gtk-4.0-dev
       - libgstreamer1.0-dev
       - libgstreamer-plugins-base1.0-dev
+      - intltool
     stage-packages:
       - libc6
       - libgdk-pixbuf2.0-0
@@ -41,3 +41,8 @@ parts:
       - libsoup2.4-1
       - libwebkit2gtk-4.0-37
     after: [desktop-gtk3]
+  gschemas:
+    plugin: dump
+    source: .
+    organize:
+      'gschemas.compiled': 'usr/share/glib-2.0/schemas/gschemas.compiled'

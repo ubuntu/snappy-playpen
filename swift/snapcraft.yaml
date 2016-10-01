@@ -1,0 +1,24 @@
+name: swift # you probably want to 'snapcraft register <name>'
+version: '0.2' # just for humans, typically '1.2+git' or '1.3.2'
+summary: swift compiler # 79 char long summary
+description: swift compiler built from zip
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  swift:
+    snap: [./*]
+    stage-packages:
+      - clang
+    #precompiled version
+    source: https://swift.org/builds/swift-3.0-release/ubuntu1510/swift-3.0-RELEASE/swift-3.0-RELEASE-ubuntu15.10.tar.gz
+    plugin: dump
+    #git version
+    #source: https://github.com/apple/swift
+    #source-tag: swift-3.0.0-RELEASE
+    #plugin: cmake
+    #build-packages: [git, cmake, ninja-build, clang, python, uuid-dev, libicu-dev, icu-devtools, libbsd-dev, libedit-dev, libxml2-dev, libsqlite3-dev, swig, libpython-dev, libncurses5-dev, pkg-config, libblocksruntime-dev, libcurl4-openssl-dev]
+apps:
+  swift:
+    command: bin/swift

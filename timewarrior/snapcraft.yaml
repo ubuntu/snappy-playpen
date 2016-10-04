@@ -1,0 +1,18 @@
+name: timew
+version: 1.0.0
+summary: feature-rich console based todo list manager
+description: |
+ Timewarrior is a time tracking utility that offers simple stopwatch
+ features as well as sophisticated calendar-base backfill, along with
+ flexible reporting. It is a portable, well supported and very active, Open Source project.
+confinement: strict
+apps:
+  timew:
+    command: bin/timew
+parts:
+  timew:
+    plugin: cmake
+    source: https://git.tasktools.org/scm/tm/timew.git
+    source-type: git
+    source-tag: v1.0.0
+    build-packages: [build-essential]

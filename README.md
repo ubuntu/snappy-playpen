@@ -58,6 +58,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `smplayer`         |                           | qt5, stage-package        |
 | :white_check_mark:  | `taskwarrior`      |                           | dump, cmake               |
 | :white_check_mark:  | `texworks`         |                           | dump, qt4, cmake          |
+| :white_check_mark:  | `timewarrior`      |                           | cmake                     |
 | :white_check_mark:  | `tinyproxy`        |                           | dump, daemon, stage-package |
 | :white_check_mark:  | `tyrant-unleashed-optimizer` |                 | make                      |
 | :white_check_mark:  | `ubuntu-clock-app` | [ubuntu-clock-app][clock] | qmake, qt5                |

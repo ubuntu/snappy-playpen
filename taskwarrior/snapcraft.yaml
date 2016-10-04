@@ -1,0 +1,24 @@
+name: taskwarrior
+version: 2.5.1
+summary: feature-rich console based todo list manager
+description: |
+ Taskwarrior is a sophisticated command line todo list and task
+ manager with a lot of features
+confinement: strict
+apps:
+  taskwarrior:
+    command: scripts/taskwarrior.sh
+    plugs: [network]
+parts:
+  taskwarrior:
+    plugin: cmake
+    source: https://git.tasktools.org/scm/tm/task.git
+    source-type: git
+    source-tag: 2.5.1
+    build-packages: [build-essential, uuid-dev, libgnutls-dev]
+    stage-packages: [libgnutls30, libstdc++6, libuuid1]
+  launcher:
+    plugin: dump
+    source: .
+    organize:
+      taskwarrior.sh: scripts/taskwarrior.sh

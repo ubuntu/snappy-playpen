@@ -1,0 +1,14 @@
+# timwarrior snap
+
+This project creates a working snap of [timewarrior](http://timewarrior.net/).
+Timewarrior is Free and Open Source Software that tracks time from the command line.
+
+## Current state
+
+Working features:
+
+ - every feature should work
+
+Known issues:
+
+ - can't access man pages

@@ -1,0 +1,13 @@
+# taskwarrior snap
+
+This project creates a working snap of [taskwarrior](https://taskwarrior.org). It's a command line todo list manager!
+
+## Current state
+
+Working features:
+
+ - every feature should work
+
+Known issues:
+
+ - can't access man pages

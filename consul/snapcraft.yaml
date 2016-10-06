@@ -11,7 +11,14 @@ confinement: strict
 apps:
   consul:
     command: consul-snap
-    plugs: [network, network-bind]
+    plugs: [network, network-bind, tools]
+
+plugs:
+  tools:
+    interface: content
+    content: healthcheck-toolbox
+    target: tools
+    default-provider: healthcheck-toolbox-example:toolbox
 
 parts:
   consul:
@@ -21,4 +28,4 @@ parts:
   script:
     source: .
     plugin: dump
-    snap: ["consul-snap"]
+    snap: ["consul-snap", "tools"]

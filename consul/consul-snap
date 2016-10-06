@@ -14,4 +14,17 @@ if [ "$commandoption" = "--help" ] && [ $# -gt 0 ]; then
   shift
 fi
 
+# add tools to our PATH and links for health checkers
+if [ "$SNAP_ARCH" = "amd64" ]; then
+  ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" = "armhf" ]; then
+  ARCH="arm-linux-gnueabihf"
+else
+  ARCH="$SNAP_ARCH-linux-gnu"
+fi
+BASE="$SNAP/tools"
+export PATH="$BASE/usr/sbin:$BASE/usr/bin:$BASE/sbin:$BASE/bin:$PATH"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$BASE/usr/lib:$BASE/usr/lib/$ARCH"
+
+# start consul
 exec consul $commandoption $subcommand -data-dir $SNAP_USER_DATA/data -config-dir $SNAP_USER_DATA/config.d "$@"

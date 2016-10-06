@@ -1,5 +1,5 @@
 name: consul
-version: "0.6.4"
+version: "0.7.1"
 summary: Consul is a tool for service discovery, monitoring and configuration
 description: |
   Consul is distributed, highly available, and extremely scalable.

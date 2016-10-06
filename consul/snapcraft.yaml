@@ -11,7 +11,7 @@ confinement: strict
 apps:
   consul:
     command: consul-snap
-    plugs: [network, network-bind, tools]
+    plugs: [network, network-bind, network-observe, tools]
 
 plugs:
   tools:

@@ -5,7 +5,7 @@ description: |
   Consul is distributed, highly available, and extremely scalable.
   Consul provides service discovery, health checking, key/value storage and
   multi-datacenter.
-confinement: devmode
+confinement: strict
 
 apps:
   consul:

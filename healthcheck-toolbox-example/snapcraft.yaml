@@ -1,0 +1,22 @@
+name: healthcheck-toolbox-example
+version: "0.1"
+summary: Health checks toolbox example for use as content interfaces
+description: |
+  List of usual tools to implement health checks, providing a slot compatible
+  with multiple snaps, like the consul one.
+  This ones contains some utilities like curl.
+grade: stable
+confinement: strict
+
+slots:
+  toolbox:
+    interface: content
+    content: healthcheck-toolbox
+    read: [.]
+
+parts:
+  tools:
+    source: .
+    plugin: dump
+    stage-packages:
+      - curl

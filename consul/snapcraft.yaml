@@ -1,19 +1,31 @@
 name: consul
-version: "0.6.4"
+version: "0.7.1"
 summary: Consul is a tool for service discovery, monitoring and configuration
 description: |
   Consul is distributed, highly available, and extremely scalable.
   Consul provides service discovery, health checking, key/value storage and
   multi-datacenter.
-confinement: devmode
+grade: stable
+confinement: strict
 
 apps:
   consul:
-    command: bin/consul
-    plugs: [network, network-bind]
+    command: consul-snap
+    plugs: [network, network-bind, network-observe, tools]
+
+plugs:
+  tools:
+    interface: content
+    content: healthcheck-toolbox
+    target: tools
+    default-provider: healthcheck-toolbox-example:toolbox
 
 parts:
   consul:
     source: https://github.com/hashicorp/consul.git
     plugin: go
     go-importpath: github.com/hashicorp/consul
+  script:
+    source: .
+    plugin: dump
+    snap: ["consul-snap", "tools"]

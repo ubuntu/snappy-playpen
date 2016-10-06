@@ -8,7 +8,18 @@ xenial.
 ## Current state
 
 Working features:
- - The steps mentioned in https://www.consul.io/intro/getting-started/agent.html
+ - The steps mentioned in https://www.consul.io/intro/getting-started/*
 
-Known issues:
- - More testing is needed for all the features.
+## Notes:
+
+You can use healthcheck-toolbox-example snap for adding some checkers utility
+like curl enablement. This one will be downloaded from the store, installed and
+connected automatically if no other snap on your system provides
+healthcheck-toolbox content interface on your system.
+
+If you want to add a ping health check, you need to connect to network-observe
+slot from the core snap.
+
+A vagrant file is always provided to follow the getting-started intro on
+a snap system, based on ubuntu:
+https://www.consul.io/intro/getting-started/join.html.

@@ -1,0 +1,30 @@
+#!/bin/sh
+# Wrapper to direct datadir and config dir to writable paths by default.
+# This is still overridable (only last argument is taken) by the command
+# line user entry.
+# Handle special cases like --help <subcommand>.
+
+if [ $# -gt 0 ]; then
+  commandoption="$1"
+  shift
+fi
+
+if [ "$commandoption" = "--help" ] && [ $# -gt 0 ]; then
+  subcommand="$1"
+  shift
+fi
+
+# add tools to our PATH and links for health checkers
+if [ "$SNAP_ARCH" = "amd64" ]; then
+  ARCH="x86_64-linux-gnu"
+elif [ "$SNAP_ARCH" = "armhf" ]; then
+  ARCH="arm-linux-gnueabihf"
+else
+  ARCH="$SNAP_ARCH-linux-gnu"
+fi
+BASE="$SNAP/tools"
+export PATH="$BASE/usr/sbin:$BASE/usr/bin:$BASE/sbin:$BASE/bin:$PATH"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$BASE/usr/lib:$BASE/usr/lib/$ARCH"
+
+# start consul
+exec consul $commandoption $subcommand -data-dir $SNAP_USER_DATA/data -config-dir $SNAP_USER_DATA/config.d "$@"

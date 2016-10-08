@@ -1,0 +1,228 @@
+name: kdenlive-devel  # the name of the snap
+version: "master"
+summary: Kdenlive development version  # 79 char long summary
+grade: "devel"
+description: Kdenlive git master with MLT, Frei0r, OpenCV git versions  # a longer description for the snap
+confinement: "devmode"
+
+
+apps:
+  kdenlive-devel:
+    command: scripts/setpath.sh
+    plugs: [unity7, x11, home, opengl, pulseaudio, locale-control]
+
+parts:
+  opencv-contrib-snap:
+    source: https://github.com/opencv/opencv_contrib.git
+    source-type: git
+    plugin: dump
+
+  opencv-snap:
+    source: https://github.com/opencv/opencv.git
+    source-type: git
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr, -DOPENCV_EXTRA_MODULES_PATH=../../opencv-contrib-snap/src/modules, -DBUILD_opencv_aruco=OFF, -DBUILD_opencv_bgsegm=OFF, -DBUILD_opencv_bioinspired=OFF, -DBUILD_opencv_ccalib=OFF, -DBUILD_opencv_cnn_3dobj=OFF, -DBUILD_opencv_cvv=OFF, -DBUILD_opencv_dnn=OFF, -DBUILD_opencv_dnns_easily_fooled=OFF, -DBUILD_opencv_dpm=OFF, -DBUILD_opencv_fuzzy=OFF, -DBUILD_opencv_hdf=OFF, -DBUILD_opencv_line_descriptor=OFF, -DBUILD_opencv_matlab=OFF, -DBUILD_opencv_optflow=OFF, -DBUILD_opencv_plot=OFF, -DBUILD_opencv_reg=OFF, -DBUILD_opencv_rgbd=OFF, -DBUILD_opencv_saliency=OFF, -DBUILD_opencv_sfm=OFF, -DBUILD_opencv_stereo=OFF, -DBUILD_opencv_structured_light=OFF, -DBUILD_opencv_surface_matching=OFF, -DBUILD_opencv_xfeatures2d=OFF, -DBUILD_opencv_xobjdetect=OFF, -DBUILD_opencv_xphoto=OFF, -DBUILD_opencv_calib3d=OFF, -DBUILD_opencv_cudaarithm=OFF, -DBUILD_opencv_cudabgsegm=OFF, -DBUILD_opencv_cudacodec=OFF, -DBUILD_opencv_cudafilters=OFF, -DBUILD_opencv_cudalegacy=OFF, -DBUILD_opencv_cudaobjdetect=OFF, -DBUILD_opencv_cudaoptflow=OFF, -DBUILD_opencv_cudastereo=OFF, -DBUILD_opencv_cudawarping=OFF, -DBUILD_opencv_cudev=OFF, -DBUILD_opencv_java=OFF, -DBUILD_opencv_shape=OFF, -DBUILD_opencv_stitching=OFF, -DBUILD_opencv_superres=OFF, -DBUILD_opencv_ts=OFF, -DBUILD_opencv_videoio=OFF, -DBUILD_opencv_videostab=OFF, -DBUILD_opencv_viz=OFF]
+    after: [opencv-contrib-snap]
+    build-packages:
+      - build-essential
+      - extra-cmake-modules
+      - pkg-config
+      - libavformat-dev
+      - libavdevice-dev
+      - libswscale-dev
+      - libgavl-dev
+      - libcairo2-dev
+      - libpython2.7
+      - libpython-stdlib
+      - libpython3.5
+      - libpython3-stdlib
+      - python-numpy
+      - python3-numpy
+
+  vidstab-snap:
+    source: https://github.com/georgmartius/vid.stab.git
+    source-type: git
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+
+  frei0r-snap:
+    source: https://github.com/dyne/frei0r.git
+    source-type: git
+    plugin: cmake
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    after: [opencv-snap, vidstab-snap]
+    build-packages:
+      - build-essential
+      - extra-cmake-modules
+      - pkg-config
+      - libavformat-dev
+      - libavdevice-dev
+      - libswscale-dev
+      - libgavl-dev
+      - libcairo2-dev
+
+  mlt-snap:  # Replace with a part name of your liking
+    # Get more information about plugins by running
+    # snapcraft help plugins
+    # and more information about the available plugins
+    # by running
+    # snapcraft list-plugins
+    #source: /home/three/src/kdenlive
+    source: https://github.com/mltframework/mlt.git
+    source-type: git
+    plugin: autotools
+    after: [desktop-qt5, frei0r-snap]
+    configflags: [--enable-gpl, --prefix=/usr]
+    build-packages:
+      - libgtk2.0-dev
+      - libexif-dev
+      - libmovit-dev
+      - libsdl1.2-dev
+      - libsox-dev
+      - libxml2-dev
+      - ladspa-sdk
+      - qtscript5-dev
+      - libqt5svg5-dev 
+      - libqt5opengl5-dev
+      - qtdeclarative5-dev
+      - libepoxy-dev
+      - libeigen3-dev
+      - libfftw3-dev
+      - libsamplerate0-dev
+      - intltool
+      - swig
+      - libmp3lame-dev
+      - libjack-dev
+      - libglew-dev
+      - libqt5opengl5
+      - libepoxy0
+      - libglew1.13
+      - libqt5widgets5
+      - libgl1-mesa-dev
+      - libglu1-mesa-dev
+
+  kdenlive-devel:  # Replace with a part name of your liking
+    # Get more information about plugins by running
+    # snapcraft help plugins
+    # and more information about the available plugins
+    # by running
+    # snapcraft list-plugins
+    #source: /home/three/src/kdenlive
+    source: git://anongit.kde.org/kdenlive.git
+    source-type: git
+    plugin: cmake
+    after: [desktop-qt5, mlt-snap]
+    configflags: [-DCMAKE_INSTALL_PREFIX=/usr]
+    build-packages:
+      - libkf5crash-dev
+      - kdoctools-dev
+      - libkf5archive-dev
+      - libkf5config-dev
+      - libkf5configwidgets-dev
+      - libkf5widgetsaddons-dev
+      - libkf5completion-dev
+      - libkf5coreaddons-dev
+      - libkf5auth-dev
+      - libkf5codecs-dev
+      - libkf5guiaddons-dev
+      - libkf5i18n-dev
+      - libkf5windowsystem-dev
+      - libkf5dbusaddons-dev
+      - libkf5itemviews-dev
+      - libkf5iconthemes-dev
+      - libkf5jobwidgets-dev
+      - libkf5service-dev
+      - libkf5solid-dev
+      - libkf5sonnet-dev
+      - libkf5textwidgets-dev
+      - libkf5attica-dev
+      - libkf5globalaccel-dev
+      - libkf5xmlgui-dev
+      - libkf5bookmarks-dev
+      - kio-dev
+      - libkf5notifications-dev
+      - libkf5notifyconfig-dev
+      - libkf5newstuff-dev
+      - libkf5filemetadata-dev
+
+    stage-packages:
+      - kded5
+      - kinit
+      - kio
+      - oxygen-icon-theme
+      - breeze
+      - frameworkintegration
+      - qml-module-qtquick2
+      - libkf5archive5
+      - libkf5bookmarks5
+      - libkf5completion5
+      - libkf5configcore5
+      - libkf5configgui5
+      - libkf5configwidgets5
+      - libkf5coreaddons5
+      - libkf5dbusaddons5
+      - libkf5guiaddons5
+      - libkf5i18n5
+      - libkf5iconthemes5
+      - libkf5itemviews5
+      - libkf5jobwidgets5
+      - libkf5kiocore5
+      - libkf5kiofilewidgets5
+      - libkf5kiowidgets5
+      - libkf5newstuff5
+      - libkf5notifications5
+      - libkf5notifyconfig5
+      - libkf5plotting5
+      - libkf5service-bin
+      - libkf5service5
+      - libkf5solid5
+      - libkf5textwidgets5
+      - libkf5widgetsaddons5
+      - libkf5xmlgui5
+      - libsdl1.2debian
+      - libavdevice-ffmpeg56
+      - libavresample-ffmpeg2
+      - libavformat-ffmpeg56
+      - libavcodec-ffmpeg56
+      - libavutil-ffmpeg54
+      - libpostproc-ffmpeg53
+      - libswscale-ffmpeg3
+      - libswresample-ffmpeg1
+      - ffmpeg
+      - libqt5xml5
+      - libqt5opengl5
+      - libepoxy0
+      - libglew1.13
+      - libglu1-mesa
+      - libgl1-mesa-dri
+      - libqt5widgets5
+      - libqt5gui5
+      - libqt5svg5
+      - libpangoft2-1.0-0
+      - libpango-1.0-0
+      - libmovit4
+      - libjack-jackd2-0
+      - libgtk2.0-0
+      - libglib2.0-0
+      - libgl1-mesa-glx
+      - libgdk-pixbuf2.0-0
+      - libgcc1
+      - libfftw3-double3
+      - libexif12
+      - libc6
+      - libqt5core5a
+      - libsamplerate0
+      - libsox2
+      - libx11-6
+      - libxml2
+      - swh-plugins
+      - libstdc++6
+      - librtaudio4v5
+      - qml-module-qtquick-controls
+      - locales-all
+
+  setpath:
+    plugin: dump
+    source: .
+    organize:
+      setpath.sh: scripts/setpath.sh

@@ -7,9 +7,9 @@ confinement: devmode
 
 apps:
   ps-mem:
-    command: usr/bin/ps_mem
+    command: bin/ps_mem
 
 parts:
   ps-mem:
     source: https://github.com/pixelb/ps_mem.git
-    plugin: python3
+    plugin: python

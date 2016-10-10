@@ -3,10 +3,11 @@ version: "3.8.480"
 summary: Ubuntu Clock app
 description: The clock app for all Ubuntu devices
 confinement: devmode
+grade: devel
 
 apps:
   ubuntu-clock-app:
-    command: clock
+    command: desktop-launch $SNAP/bin/clock "$@"
     plugs: [unity7, opengl, network, network-bind]
 
 parts:
@@ -39,10 +40,13 @@ parts:
       - qtubuntu-desktop
       - qml-module-qtsysteminfo
       - qtmir-desktop
+      - qtorganizer5-eds
       - mir-graphics-drivers-desktop
     snap:
       - -usr/share/doc
       - -usr/include
+    after:
+      - desktop-gtk3
   environment:
     source: .
     plugin: dump

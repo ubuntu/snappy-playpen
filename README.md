@@ -30,6 +30,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `gitter-im`        |                           | copy, gtk3, wget          |
 | :white_check_mark:  | `grive    `        |                           | cmake                     |
 | :white_check_mark:  | `hellogl  `        |                           | cmake, opengl             |
+| :white_check_mark:  | `hellomako`        |                           | python                    |
 | :white_check_mark:  | `healthcheck-toolbox interface` | [healthcheck-toolbox-example][healthcheck-toolbox-example] | dump |
 | :red_circle:        | `heroku`           |                           | go                        |
 | :white_check_mark:  | `hexchat`          | [unofficial-hexchat][unofficial-hexchat] | autotools, gtk2, perl, python2, lua |

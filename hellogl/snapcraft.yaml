@@ -1,0 +1,31 @@
+name: hellogl
+version: "0.1"
+summary: minimal opengl app
+description: puts up a square
+confinement: strict
+
+build-packages:
+  - freeglut3-dev
+  - gcc
+  - libc6-dev
+  - libgl1-mesa-dev
+  - libxi-dev
+  - libxmu-dev
+
+apps:
+  hellogl:
+    plugs:
+      - x11
+      - opengl
+    # FIXME: remove opengl-launch once base wrappers set LIBGL_DRIVERS_PATH
+    command: opengl-launch $SNAP/bin/hellogl
+    # Many apps do this instead, but it requires e.g. 'after: [desktop-gtk2]', which makes the snap huge
+    #command: desktop-launch $SNAP/bin/hellogl
+
+parts:
+  hellogl:
+    source: .
+    plugin: cmake
+    stage-packages:
+      # Pull in drivers to be pointed to by LIBGL_DRIVERS_PATH
+      - libgl1-mesa-dri

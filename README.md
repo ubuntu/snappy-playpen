@@ -38,6 +38,7 @@ This project currently includes the following snaps:
 | :red_circle:        | `imagemagick7-git` |                           | autotools                 |
 | :white_check_mark:  | `jtiledownloader`  | [jtiledownloader][]       | dump, jar, java           |
 | :white_check_mark:  | `keepassx`         | [keepassx-elopio][]       | cmake, qt5                |
+| :white_check_mark:  | `kdenlive`         |                           | cmake, qt5, opengl        |
 | :white_check_mark:  | `kpcli`            | [kpcli-elopio][kpcli]     | dump, perl                |
 | :white_check_mark:  | `kodi-stable`      |                           | autotools                 |
 | :white_check_mark:  | `leafpad`          |                           | autotools, gtk2, lubuntu, xubuntu |

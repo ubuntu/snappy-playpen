@@ -1,0 +1,12 @@
+#!/bin/sh
+# See https://bugs.launchpad.net/snappy/+bug/1584178
+
+case "$SNAP_ARCH" in
+amd64) ARCH="x86_64-linux-gnu";;
+armhf) ARCH="arm-linux-gnueabihf";;
+*)     ARCH="$SNAP_ARCH-linux-gnu";;
+esac
+
+# Tell libGL where to find the drivers
+export LIBGL_DRIVERS_PATH=$SNAP/usr/lib/$ARCH/dri
+exec "$@"

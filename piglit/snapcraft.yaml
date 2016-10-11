@@ -1,0 +1,65 @@
+name: piglit
+version: "0.1"
+summary: OpenGL test suite
+description: Tries thousands of OpenGL test cases, reports which ones fail
+confinement: strict
+
+build-packages:
+  - freeglut3-dev
+  - g++
+  - libc6-dev
+  - libgl1-mesa-dev
+  - libgles2-mesa-dev
+  - libpng12-dev
+  - libwaffle-dev
+  - pkg-config
+  - python3-dev
+
+apps:
+  piglit:
+    # Here's the command we want to give:
+    #command: piglit
+    # but that doesn't find python, so:
+    #command: python3 piglit
+    # but that doesn't find the opengl drivers, so set LIBGL_DRIVERS_PATH:
+    #command: opengl-launch python3 $SNAP/bin/piglit
+    # but cmake sets binaries' rpath to /lib/piglit/lib, so add the missing $SNAP:
+    #command: env LD_LIBRARY_PATH=$SNAP/lib/piglit/lib:$LD_LIBRARY_PATH opengl-launch python3 $SNAP/bin/piglit
+    # but piglit throws UnicodeDecodeError, so:
+    command: env LC_ALL=C.UTF-8 LD_LIBRARY_PATH=$SNAP/lib/piglit/lib:$LD_LIBRARY_PATH opengl-launch python3 $SNAP/bin/piglit
+    plugs:
+      - home
+      - log-observe   # for dmesg
+      - opengl
+      - python
+      - x11
+
+parts:
+  # Idiom for installing python dependencies and bundling python
+  piglit-python:
+    plugin: python
+    source: .
+    python-packages:
+      - Mako==1.0.4
+      - numpy==1.11.2
+      - six>=1.9
+    stage-packages:
+      - python3
+
+  # Idiom for including a wrapper script
+  piglit-copy:
+    plugin: dump
+    source: bin
+    organize:
+      opengl-launch: bin/opengl-launch
+
+  # Finally, plain old cmake build, plus bundle opengl drivers:
+  piglit:
+    after:
+      - piglit-copy
+      - piglit-python
+    plugin: cmake
+    source: git://anongit.freedesktop.org/git/piglit
+    stage-packages:
+      - libgl1-mesa-dri
+      - util-linux    # for dmesg

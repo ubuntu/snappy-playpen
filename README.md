@@ -49,6 +49,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `mpv`              |                           | autotools, waf            |
 | :white_check_mark:  | `openjdk-demo`     |                           | java, openjdk             |
 | :white_check_mark:  | `openttd`          |                           | dump, qt5                 |
+| :white_check_mark:  | `piglit`           |                           | cmake, python, opengl     |
 | :red_circle:        | `plank`            |                           | autotools, vala           |
 | :white_check_mark:  | `ps-mem`           |                           | python3                   |
 | :white_check_mark:  | `qcomicbook`       |                           | cmake, qt5                |

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# NOTE: Maybe there is a bug in alsa
+export ALSA_CONFIG_PATH=$SNAP/usr/share/alsa/alsa.conf
+
+export XDG_RUNTIME_DIR=$SNAP_USER_DATA/.tmp
+mkdir -p $XDG_RUNTIME_DIR
+
+exec "$SNAP/dist/electronic-wechat-linux-x64/electronic-wechat" "$@"

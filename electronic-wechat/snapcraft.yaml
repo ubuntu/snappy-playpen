@@ -1,0 +1,54 @@
+name: electronic-wechat
+version: '1.4.0'
+summary: A better WeChat on macOS and Linux. Built with Electron.
+description: |
+  Electronic WeChat is a unoffical WeChat client. A better WeChat on
+  macOS and Linux. Built with Electron.
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+apps:
+  electronic-wechat:
+    command: desktop-launch $SNAP/wechat.wrapper
+    plugs:
+      - unity7
+      - opengl
+      - network
+      - pulseaudio
+      - home
+      - browser-support
+      - gsettings
+      - x11
+
+parts:
+  electronic-wechat:
+    plugin: electronic-wechat
+    source: https://github.com/geeeeeeeeek/electronic-wechat/archive/v1.4.0.tar.gz
+    stage-packages:
+      - libnss3
+      - fontconfig-config
+      - gnome-themes-standard
+      - fonts-wqy-microhei
+      - libasound2-data
+      - fcitx-frontend-gtk2
+      - overlay-scrollbar-gtk2
+      - libatk-adaptor
+      - libcanberra-gtk-module
+    filesets:
+      no-easy-install-files:
+        - -usr/sbin/update-icon-caches
+        - -README.md
+    stage:
+      - $no-easy-install-files
+    snap:
+      - $no-easy-install-files
+
+  wechat-copy:
+    plugin: dump
+    source: .
+    filesets:
+      wechat.wrapper: wechat.wrapper
+    after: 
+      - electronic-wechat
+      - desktop-gtk2

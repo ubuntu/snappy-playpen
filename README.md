@@ -25,6 +25,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `dekko`            |                           | qt5, qml, dump, oxide, cmake |
 | :white_check_mark:  | `dosbox`           |                           | autotools                 |
 | :white_check_mark:  | `docker-compose`   |                           | python3                   |
+| :white_check_mark:  | `electronic-wechat`|                           | electron, nodejs, dump    |
 | :white_check_mark:  | `ffmpeg`           |                           | autotools                 |
 | :white_check_mark:  | `galculator`       |                           | autotools, gtk3           |
 | :white_check_mark:  | `gitter-im`        |                           | copy, gtk3, wget          |

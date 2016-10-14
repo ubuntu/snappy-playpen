@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Electronic Wechat
+Comment=A better WeChat on macOS and Linux. Built with Electron.
+GenericName=Wechat
+Name[zh_CN]=微信
+Comment[zh_CN]=Mac OS X 和 Linux 下更好用的微信客户端. 更多功能, 更少bug. 使用Electron构建.
+GenericName[zh_CN]=微信Electron客户端
+Terminal=false
+Type=Application
+StartupNotify=true
+StartupWMClass=Electronic Wechat
+Categories=Network;
+Version=1.4.0
+Keywords=WeChat;Electron;微信;Web
+Icon=${SNAP}/meta/gui/icon.png
+Exec=electronic-wechat %U

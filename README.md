@@ -29,6 +29,7 @@ This project currently includes the following snaps:
 | :white_check_mark:  | `galculator`       |                           | autotools, gtk3           |
 | :white_check_mark:  | `gitter-im`        |                           | copy, gtk3, wget          |
 | :white_check_mark:  | `grive    `        |                           | cmake                     |
+| :white_check_mark:  | `gogs     `        |                           | go,dump, copy             |
 | :white_check_mark:  | `hellogl  `        |                           | cmake, opengl             |
 | :white_check_mark:  | `healthcheck-toolbox interface` | [healthcheck-toolbox-example][healthcheck-toolbox-example] | dump |
 | :red_circle:        | `heroku`           |                           | go                        |

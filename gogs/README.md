@@ -3,7 +3,7 @@
 This project creates a working snap of GOGS = a go based git service
 
 
-install snap - snap install gogs-mysql
+install snap - snap install gogs
 
 point a browser to localhost:3001
 To run as is, you will need to provide the mysql passwrd wich is stored in 

@@ -1,0 +1,21 @@
+name: hellomako
+version: "0.1"
+summary: Demo of using python module
+description: prints hello if it was able to load the Mako templating module
+confinement: strict
+
+apps:
+  hellomako:
+    command: hellomako
+
+parts:
+  hellomako:
+    plugin: python
+    source: .
+    python-packages:
+      - Mako==1.0.4
+    stage-packages:
+      - python3
+  hellomako-copy:
+    plugin: dump
+    source: bin

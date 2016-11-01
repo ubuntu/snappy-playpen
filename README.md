@@ -1,14 +1,19 @@
 # The snappy playpen
+## Project status
 
-A place to test snapcraft, learn creating snaps and share best practices.
+The Snappy Playpen used to be place, where we learned from each other and documented best-practices. This was useful in the very first days of `snapcraft`, but after more and more discussions we realised that it's time to merge the best examples into the [snapcraft code](https://github.com/snapcore/snapcraft) itself. This is where most eyeballs go.
 
-[Get started >](http://snapcraft.io)
+## Learning
 
-[Basic snap and snapcraft notions >](http://snapcraft.io/create/)
+If you are new and want to get started, check out the docs here:
+ * [Get started >](http://snapcraft.io)
+ * [Basic snap and snapcraft notions >](http://snapcraft.io/create/)
+
+## Contributing examples
+
+If you feel you created a great example and want to get it included somewhere, bring it up on the [snapcraft mailing list][ml].
 
 ## Current project status
-[![Build Status](https://api.travis-ci.org/ubuntu/snappy-playpen.svg?branch=master)](https://travis-ci.org/ubuntu/snappy-playpen) - **passing** means all snaps are automatically built correctly
-
 This project currently includes the following snaps:
 
 | State               | App                | Snap name in the store    | Uses                      |
@@ -89,78 +94,6 @@ This project currently includes the following snaps:
 If the apps is listed in the second column, you can easily install it from the
 store by just running: `sudo snap install <snap name>`.
 
-## Why?
-
-As `snapd` and its underlying technologies are new and we want to figure the
-best use of it together, we want to create a space, where we collectively
-
- - collaborate on creating snaps
- - demonstrate best-practices
- - provide an incubator for new projects to be snapped
-
-This is the snappy playpen.
-
-
-## How it all works
-
-No matter if you
-
- - are involved with an upstream project who wants to get their software snapped
- - are somebody who is interested in providing a snap for an app
- - are working on a device which needs its software snapped
- - are somebody who's curious about technology
- - think this is interesting
-
-we want you to get involved.
-
-### Fixing issues
-
-If you want to provide a fix for one of the apps in this repository, simply
-follow [our contributor guidelines][guidelines] and file a pull request.
-
-### Adding new snaps
-
-If you are working on a new, interesting snap and
-
- - got it working: follow the [guidelines][guidelines] and file a pull request
- - need help to get it working: send a mail to the
-   [snapcraft mailing list][ml], introduce the project and push up a branch
-   of your playpen fork to github, so others can take a look and help out
-
-### Events
-
-Over time we want to have "sprints", in which we focus on a certain piece of
-software, or where we invite interested upstream developers. We are going to
-announce these on the [snapcraft mailing list][ml].
-
-## Snapping your software
-
-The best place to get started with `snapd` and `snapcraft` is on the
-http://snapcraft.io. Check out the examples, and simply by running
-`snapcraft init` you should be on the way to creating your first snap.
-
-In the beginning it is a good idea to use
-
-```yaml
-confinement: devmode
-```
-
-in your `snapcraft.yaml` declaration. It will relax the security requirements
-so you can get your snap fully working first and then look into the
-[security bits][security] next. Just set the `confinement` value to `strict`
-when you are done.
-
-If you are collaborating with a team of developers on your snap, you might
-want to run your snap build using `snapcraft cleanbuild` once you're happy with
-everything. It will make sure that the build also passes in a clean container.
-This way you will avoid surprises about missing `build-packages` and other
-local modifications.
-
-Once everything is fully working, consider asking the upstream project to add
-your `snapcraft.yaml` file to their repository. Publishing to the store is
-easy. Maybe they are going to be interested in knowing that that for every new
-release or milestone, a [new snap in the store][publish] is only a matter of
-running `snapcraft upload`.
 
 
 ## Getting in touch

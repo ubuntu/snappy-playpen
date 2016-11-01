@@ -1,0 +1,109 @@
+name: gogs
+summary:  golang based git server and ui
+description: golang based git service and ui
+version: 0.1
+
+apps:
+  gogs:
+    command: ./launcher.sh
+    daemon: simple
+    plugs: [network, network-bind]
+  mysql:
+    command: start_mysql
+    stop-command: support-files/mysql.server stop
+    daemon: simple
+    restart-condition: always
+    plugs: [network, network-bind]
+  mysql-client:
+    command: mysql --defaults-file=$SNAP_DATA/mysql/root.ini
+    plugs: [network, network-bind]
+ 
+parts:
+  gogs:
+    plugin: go
+    source: git://github.com/gogits/gogs
+    stage-packages: [git]
+    go-buildtags: [sqlite3, tidb, pam, cert]
+  conf:
+    plugin: dump 
+    source: ./conf
+  folders:
+    plugin: dump
+    source: ./parts/gogs/src/
+    after: [gogs]
+    snap: [LICENSE, README.md, README_ZH.md, templates, public, scripts]
+
+  boost:
+    plugin: copy
+    source: http://sourceforge.net/projects/boost/files/boost/1.59.0/boost_1_59_0.tar.gz
+    files:
+      '*': boost/
+    snap:
+      - -*
+
+  mysql:
+    plugin: cmake
+    source: https://github.com/kyrofa/mysql-server.git
+    source-type: git
+    source-branch: feature/support_no_setpriority
+    after: [boost]
+    configflags:
+      - -DWITH_BOOST=$SNAPCRAFT_STAGE/boost
+      - -DWITH_INNODB_PAGE_CLEANER_PRIORITY=OFF
+      - -DCMAKE_INSTALL_PREFIX=/
+      - -DBUILD_CONFIG=mysql_release
+      - -DWITH_UNIT_TESTS=OFF
+      - -DWITH_EMBEDDED_SERVER=OFF
+      - -DWITH_EMBEDDED_SHARED_LIBRARY=OFF
+      - -DWITH_ARCHIVE_STORAGE_ENGINE=OFF
+      - -DWITH_BLACKHOLE_STORAGE_ENGINE=OFF
+      - -DWITH_FEDERATED_STORAGE_ENGINE=OFF
+      - -DWITH_PARTITION_STORAGE_ENGINE=OFF
+      - -DINSTALL_MYSQLTESTDIR=
+    build-packages:
+      - wget
+      - g++
+      - cmake
+      - bison
+      - libncurses5-dev
+      - libaio-dev
+    stage:
+      # Remove scripts that we'll be replacing with our own
+      - -support-files/mysql.server
+    snap:
+      # Remove scripts that we'll be replacing with our own
+      - -support-files/mysql.server
+
+      # Remove unused binaries that waste space
+      - -bin/innochecksum
+      - -bin/lz4_decompress
+      - -bin/myisam*
+      - -bin/mysqladmin
+      - -bin/mysqlbinlog
+      - -bin/mysql_client_test
+      - -bin/mysql_config*
+      - -bin/mysqld_multi
+      - -bin/mysqldump*
+      - -bin/mysqlimport
+      - -bin/mysql_install_db
+      - -bin/mysql_plugin
+      - -bin/mysqlpump
+      - -bin/mysql_secure_installation
+      - -bin/mysqlshow
+      - -bin/mysqlslap
+      - -bin/mysql_ssl_rsa_setup
+      - -bin/mysqltest
+      - -bin/mysql_tzinfo_to_sql
+      - -bin/perror
+      - -bin/replace
+      - -bin/resolveip
+      - -bin/resolve_stack_dump
+      - -bin/zlib_decompress
+
+  # Copy over our MySQL scripts
+  mysql-customizations:
+    plugin: dump
+    source: ./mysql 
+    organize:
+      start_mysql: bin/start_mysql
+      mysql.server: support-files/mysql.server

@@ -101,8 +101,7 @@ store by just running: `sudo snap install <snap name>`.
 If you have questions or want to get to know the people behind `snapd` and
 friends, there are many ways to get in touch:
 
- - We are on [gitter][gitter]. Just hit us up there, it's easy.
- - There is also the [snapcraft mailing list][ml].
+ - We are on the [snapcraft mailing list][ml].
  - If you are on IRC, we are on `#snappy` [irc channel on Freenode][irc].
 
 Get in touch and talk to us!
@@ -114,5 +113,4 @@ Find more support resources on the [Developer Portal][support].
 [irc]: http://webchat.freenode.net/?channels=snappy
 [security]: https://developer.ubuntu.com/en/snappy/guides/security/
 [support]: http://snapcraft.io/community/
-[gitter]: https://gitter.im/ubuntu/snappy-playpen
 [publish]: https://developer.ubuntu.com/en/snappy/build-apps/upload-your-snap/

@@ -19,3 +19,6 @@ Known issues:
       Error trying to open the Downloads directory. Error: Failed to show URI:file:/home/egarcia/snap/wallpaperdownloader/1/.wallpaperdownloader/downloads/)
 
   - xdg-open integration for launching the default browser doesn't work
+
+  - xfconf doesn't work in XFCE desktop environments because there is no interface like gsettings to manipulate xml configuration files in XFCE. Because of this, wallpapers cannot 
+be set if the applications is installed as a snap package in XFCE desktop environments.

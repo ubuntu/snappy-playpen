@@ -1,4 +1,10 @@
-# The snappy playpen
+# DEPRECATED - The snappy playpen
+
+This project is not updated any more. Good examples should be moved to
+
+ * http://snapcraft.io
+ * https://github.com/snapcore/snapcraft
+
 ## Project status
 
 The Snappy Playpen used to be place, where we learned from each other and documented best-practices. This was useful in the very first days of `snapcraft`, but after more and more discussions we realised that it's time to merge the best examples into the [snapcraft code](https://github.com/snapcore/snapcraft) itself. This is where most eyeballs go.

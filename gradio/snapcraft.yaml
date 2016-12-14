@@ -1,0 +1,48 @@
+name: gradio
+version: '0.4'
+summary: Internet Radio
+description: |
+    A GTK3 app for finding and listening to internet radio stations
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: strict
+
+apps:
+  gradio:
+    command: desktop-launch gradio
+    plugs: [home, unity7, gsettings, opengl]
+
+parts:
+  gradio:
+    source: https://github.com/haecker-felix/gradio.git
+    plugin: autotools
+    build-packages:
+      - gcc
+      - g++
+      - debhelper
+      - valac
+      - libglib2.0-dev
+      - libgtk-3-dev
+      - libjson-glib-dev
+      - libgio2.0-cil-dev
+      - libsoup2.4-dev
+      - libwebkit2gtk-4.0-dev
+      - libgstreamer1.0-dev
+      - libgstreamer-plugins-base1.0-dev
+      - intltool
+    stage-packages:
+      - libc6
+      - libgdk-pixbuf2.0-0
+      - libgee-0.8-2
+      - libglib2.0-0
+      - libgstreamer1.0-0
+      - libgtk-3-0
+      - libjson-glib-1.0-0
+      - libsoup2.4-1
+      - libwebkit2gtk-4.0-37
+    after: [desktop-gtk3]
+  gschemas:
+    plugin: dump
+    source: .
+    organize:
+      'gschemas.compiled': 'usr/share/glib-2.0/schemas/gschemas.compiled'

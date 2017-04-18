@@ -1,0 +1,3 @@
+use-xdg-dirs-to-get-file-paths.patch
+ignore-sound-tab-if-missing-indicator.patch
+use-snappy-desktop-id.patch

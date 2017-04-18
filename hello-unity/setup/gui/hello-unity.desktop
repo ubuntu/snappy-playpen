@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=HelloUnity
+X-GNOME-FullName=Hello Unity
+Comment=Unity Integration Showcase
+Categories=GNOME;Utility;
+Exec=hello-unity
+Icon=${SNAP}/usr/share/pixmaps/hello-unity.svg
+Terminal=false
+Type=Application
+Version=0.4

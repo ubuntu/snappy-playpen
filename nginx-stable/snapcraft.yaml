@@ -1,0 +1,63 @@
+name: nginx
+version: "1.11.1"
+summary: nginx is an HTTP and reverse proxy server
+description: |
+  nginx ("engine x") is an HTTP and reverse proxy server, a mail proxy server,
+  and a generic TCP/UDP proxy server, originally written by Igor Sysoev.  For a
+  long time, it has been running on many heavily loaded Russian sites including
+  Yandex, Mail.Ru, VK, and Rambler.
+confinement: devmode
+
+apps:
+  nginx:
+    command: usr/nginx/nginx
+    stop-command: nginx -s quit
+    daemon: simple
+    plugs: [network, network-bind]
+
+parts:
+  nginx:
+    source: http://hg.nginx.org/nginx/archive/default.tar.gz
+    plugin: autotools_nginx
+    configflags:
+      - --sbin-path=/usr/nginx/nginx
+      - --conf-path=/usr/nginx/nginx.conf
+      - --pid-path=/usr/nginx/nginx.pid
+      - --error-log-path=/log/error.log
+      - --http-log-path=/log/access.log
+      #- --user=
+      #- --group=
+      - --with-http_ssl_module
+      - --with-http_realip_module
+      - --with-http_addition_module
+      - --with-http_sub_module
+      - --with-http_dav_module
+      - --with-http_flv_module
+      - --with-http_mp4_module
+      - --with-http_gunzip_module
+      - --with-http_gzip_static_module
+      - --with-http_random_index_module
+      - --with-http_secure_link_module
+      - --with-http_stub_status_module
+      - --with-http_auth_request_module
+      - --with-threads
+      - --with-stream
+      - --with-stream_ssl_module
+      - --with-http_slice_module
+      - --with-mail
+      - --with-mail_ssl_module
+      - --with-file-aio
+      - --with-http_v2_module
+      - --with-ipv6
+    build-packages:
+      - autoconf
+      - build-essential
+      - libpcre2-posix0
+      - libpcre3
+      - libpcre3-dev
+      - libssl-dev
+      - pcre2-utils
+      - pcredz
+      - pcregrep
+      - zlib1g
+      - zlib1g-dev

@@ -4,12 +4,12 @@ summary: lightweight picture-viewer for the Xfce desktop environment
 description: |
   Ristretto is a fast and lightweight picture-viewer for the Xfce desktop
   environment.
-confinement: devmode
+confinement: strict
 
 apps:
   ristretto:
-    command: gtk-launch ristretto
-    plugs: [home, network, unity7, x11]
+    command: desktop-launch ristretto
+    plugs: [home, network, unity7, x11, gsettings]
 
 parts:
   ristretto:
@@ -22,16 +22,9 @@ parts:
       - libdbus-glib-1-dev
       - libexif-dev
       - libexo-1-dev
-      - libgtk2.0-dev
       - libxfce4ui-1-dev
       - intltool
       - xfce4-dev-tools
     stage-packages:
-      - fontconfig-config
-      - fonts-freefont-ttf
-      - hicolor-icon-theme
-      - libglib2.0-bin
-      - libgtk2.0-bin
-      - shared-mime-info
       - tumbler
-    after: [gtkconf]
+    after: [desktop/gtk2]

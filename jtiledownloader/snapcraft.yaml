@@ -1,0 +1,24 @@
+name: jtiledownloader
+version: "0.6.1"
+summary: A Java application for downloading OpenStreetMap tiles 
+description: |
+ jTileDownloader allows downloading OpenStreetMap files for offline
+ map caching
+confinement: strict
+
+apps:
+    jtiledownloader:
+        command: bin/launcher
+        plugs: [home, x11, network, network-bind]
+
+parts:
+    jtiledownloader:
+        plugin: copy
+        source:  http://svn.openstreetmap.org/applications/utils/downloading/JTileDownloader/trunk/release/jTileDownloader-0-6-1.zip
+        files:
+            "*": .
+        stage-packages: [gtk2-engines-murrine, light-themes, openjdk-8-jre]
+    launcher:
+        plugin: copy
+        files:
+            launcher: bin/launcher

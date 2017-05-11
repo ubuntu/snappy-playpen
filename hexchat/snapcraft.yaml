@@ -1,0 +1,30 @@
+name: hexchat
+version: "2.12.1"
+summary: HexChat IRC Client
+description: |
+  HexChat is a graphical IRC client with a GTK+ GUI. Features include Python
+  and Perl scripting support, a plugin API, multiple server/channel windows,
+  spell checking, multiple authentication methods including SASL, and
+  customizable notifications. For more information on IRC, see
+  http://irchelp.org/.
+confinement: strict
+apps:
+  hexchat:
+    command: desktop-launch $SNAP/bin/hexchat
+    plugs: [unity7, gsettings, pulseaudio, network, network-bind, home]
+parts:
+  hexchat:
+    source: https://dl.hexchat.net/hexchat/hexchat-2.12.1.tar.xz
+    plugin: autotools
+    snap:
+      - -lib/pkgconfig
+    build-packages:
+      - intltool
+      - libtool
+      - libproxy-dev
+      - libssl-dev
+      - python-dev
+      - libperl-dev
+      - liblua5.3-dev
+    after:
+      - desktop/gtk2

@@ -12,8 +12,8 @@ confinement: strict
 
 apps:
   galculator:
-    command: gtk-launch galculator
-    plugs: [home, x11]
+    command: desktop-launch galculator
+    plugs: [home, x11, unity7, gsettings]
 
 parts:
   galculator:
@@ -28,22 +28,15 @@ parts:
       - libpng12-dev
       - libxml-parser-perl
     stage-packages:
-      - libglib2.0-0
-      - libgtk-3-0
       - libpango-1.0-0
       - libpng12-0
       - libquadmath0
-      - dconf-gsettings-backend
       - librsvg2-common
       - libwmf0.2-7-gtk
-      - libgdk-pixbuf2.0-0
-    after: [gtkconf]
+    after: [desktop/gtk3]
   integration:
     plugin: nil
     stage-packages:
-      - dmz-cursor-theme
-      - light-themes
-      - ttf-ubuntu-font-family
       - ubuntu-mate-icon-themes
       - ubuntu-mate-themes
     snap:

@@ -1,0 +1,15 @@
+name: ps-mem
+version: "3.8"
+summary: A utility to accurately report the core memory usage for a program
+description: |
+
+confinement: devmode
+
+apps:
+  ps-mem:
+    command: usr/bin/ps_mem
+
+parts:
+  ps-mem:
+    source: https://github.com/pixelb/ps_mem.git
+    plugin: python3

@@ -1,0 +1,18 @@
+name: idea
+version: "snapshot"
+summary: IntelliJ Idea Community Edition
+description: IntelliJ IDEA Community Edition
+confinement: devmode
+
+apps:
+  idea:
+    command: desktop-launch $SNAP/usr/share/idea/bin/idea.sh
+    plugs: [home, unity7, x11]
+
+parts:
+  idea:
+    source: https://github.com/JetBrains/intellij-community.git
+    plugin: antIntellij
+    build-packages: [openjdk-8-jdk, openjfx]
+    stage-packages: [openjdk-8-jdk, openjfx]
+    after: [desktop/gtk2]

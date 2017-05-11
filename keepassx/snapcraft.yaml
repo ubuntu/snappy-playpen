@@ -5,12 +5,12 @@ description: |
   KeePassX is an application for people with extremly high demands on secure
   personal data management. It has a light interface, is cross platform and
   published under the terms of the GNU General Public License.
-confinement: devmode
+confinement: strict
 
 apps:
   keepassx:
-    command: qt5-launch keepassx
-    plugs: [unity7, opengl]
+    command: desktop-launch keepassx
+    plugs: [unity7, opengl, gsettings, home]
 
 parts:
   keepassx:
@@ -19,22 +19,10 @@ parts:
     plugin: cmake
     build-packages:
       - g++
-      - qtbase5-dev
-      - libqt4-dev
+      - libqt4-dev # upstream cmake needs libqt4-dev to find qt5-core
       - libqt5x11extras5-dev
       - qttools5-dev
       - qttools5-dev-tools
       - libgcrypt20-dev
       - zlib1g-dev
-    stage-packages:
-      - libgtk2.0-0
-      - libqt5gui5
-      - unity-gtk2-module
-      - appmenu-qt5
-      - dconf-gsettings-backend
-    after: [qt5conf]
-  glibcompiledassets:
-    plugin: copy
-    files:
-      gschemas.compiled: usr/share/glib-2.0/schemas/gschemas.compiled
-      giomodule.cache: usr/lib/x86_64-linux-gnu/gio/modules/giomodule.cache
+    after: [desktop/qt5]

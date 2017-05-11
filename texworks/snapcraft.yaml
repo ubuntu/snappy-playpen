@@ -1,0 +1,58 @@
+name: texworks
+version: "0.6.1"
+summary: TeXworks
+description: |
+  TeXworks is an environment for authoring TeX (LaTeX, ConTeXt, etc) documents,
+  with a Unicode-based, TeX-aware editor, integrated PDF viewer, and a clean,
+  simple interface accessible to casual and non-technical users.
+confinement: devmode
+
+apps:
+  texworks:
+    command: texworks-launcher
+    plugs: [home, x11, unity7]
+
+parts:
+  texworks-launcher:
+    plugin: copy
+    files:
+      texworks-launcher: bin/texworks-launcher
+  texworks:
+    plugin: cmake
+    source: https://github.com/TeXworks/texworks.git
+    source-tag: release-0.6.1
+    build-packages:
+      - gcc
+      - g++
+      - debhelper
+      - pkg-config
+      - cmake
+      - libhunspell-dev
+      - libqt4-dev
+      - libpoppler-qt4-dev
+      - liblua5.2-dev
+      - python-dev
+      - zlib1g-dev
+      - libsynctex-dev
+      - libfontconfig1-dev
+    stage-packages:
+      - libc6
+      - libgcc1
+      - libhunspell-1.3-0
+      - libpoppler-qt4-4
+      - libqt4-dbus
+      - libqt4-script
+      - libqt4-scripttools
+      - libqt4-xml
+      - libqtcore4
+      - libqtgui4
+      - libstdc++6
+      - zlib1g
+    after: [desktop/qt4]
+  texlive:
+    plugin: texlive
+    source: http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    files:
+      '*': './'
+    build-packages:
+      - wget

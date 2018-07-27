@@ -1,8 +1,9 @@
 name: arduino
-version: 1.6.10
+version: 1.8.4
 summary: Arduino IDE
 description: Open-source electronics prototyping platform
 confinement: strict
+grade: stable
 
 apps:
     arduino:
@@ -16,16 +17,14 @@ parts:
         plugin: nil
         stage-packages:
             - libxtst6
-        snap:
+        prime:
             - usr/lib/*-linux-gnu/libXtst.so.6
             - usr/lib/*-linux-gnu/libXtst.so.6.1.0
     upstream:
-        source: https://www.arduino.cc/download.php?f=/arduino-1.6.10-linux64.tar.xz
+        source: https://www.arduino.cc/download.php?f=/arduino-1.8.4-linux64.tar.xz
         source-type: tar
-        plugin: copy
-        files:
-            '*': './'
-        snap:
+        plugin: dump
+        prime:
             - -install.sh
             - -uninstall.sh
             - -java/lib/ext/jfxrt.jar
@@ -34,12 +33,13 @@ parts:
             - -java/lib/*/libjfxmedia.so
         after: [libxtst, desktop-gtk2]
     launcher:
-        plugin: copy
-        files:
-            arduino-snap: arduino-snap
+        plugin: dump
+        source: .
+        prime:
+            - arduino-snap
     desktop-gtk2:
-        snap:
+        prime:
             - -usr/share/icons/*
             - -usr/lib/x86_64-linux-gnu/libicu-*
             - -usr/lib/x86_64-linux-gnu/libLLVM-*
-        
+ 
